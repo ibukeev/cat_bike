@@ -1,21 +1,32 @@
 # Cat Bike LED Installation Project Plan
 
-| Workstream | Task | Priority | Task Details | Status |
-|---|---|---:|---|---|
-| Project Definition | Define final bike goals | High | Decide target look, LED zones, riding vs parked modes, and minimum playa-ready requirements. | Not Started |
-| Visual Design | Photograph bike for layout planning | High | Capture side, front, rear, and top views for annotated LED placement diagrams. | Not Started |
-| Visual Design | Create LED placement concept | High | Mark proposed LED zones: frame, fork, rack, wheels, basket, underglow, or other visible areas. | Not Started |
-| Electrical | Estimate LED count and power draw | High | Calculate max and typical current for selected LED type, brightness limits, and Pixelblaze output plan. | Not Started |
-| Electrical | Select battery and protection | High | Choose battery voltage/capacity, fuse, switch, connectors, charging method, and runtime target. | Not Started |
-| Electrical | Design wiring harness | High | Document wire gauges, connector types, power injection points, strain relief, and service disconnects. | Not Started |
-| Controller | Define Pixelblaze setup | High | Record controller model, pin usage, network setup, mounting location, and configuration notes. | Not Started |
-| Software | Create Pixelblaze pattern set | Medium | Build base patterns for visibility, ambient motion, parked/show mode, and low-power operation. | Not Started |
-| Software | Define LED segment map | High | Map physical LED zones to Pixelblaze indices so patterns can target bike sections predictably. | Not Started |
-| Mechanical | Plan mounts and enclosures | High | Choose mounting method for LEDs, battery, controller, wiring, and weather/dust protection. | Not Started |
-| BOM | Build parts list | High | Track LEDs, battery, controller, wires, connectors, fuses, mounts, adhesives, tools, and spares. | Not Started |
-| Safety | Define safety checklist | High | Include fuse check, insulation, strain relief, charging safety, heat checks, and emergency disconnect. | Not Started |
-| Testing | Bench test electronics | High | Test controller, LEDs, wiring, current draw, brightness limits, and runtime before bike installation. | Not Started |
-| Testing | Bike installation test | High | Verify mounting security, steering clearance, wheel clearance, vibration resistance, and cable routing. | Not Started |
-| Testing | Night visibility test | Medium | Check appearance, brightness, visibility angles, power draw, and pattern readability outdoors at night. | Not Started |
-| Playa Readiness | Prepare repair kit | Medium | List spare LEDs, wire, connectors, fuses, tape, zip ties, tools, and backup power components. | Not Started |
-| Documentation | Document final build | Medium | Add photos, wiring diagrams, BOM updates, Pixelblaze notes, and lessons learned. | Not Started |
+## Priority Definitions
+
+- `P0`: Blocking work needed to make the bike rideable, safe, and buildable.
+- `P1`: Important work for the Bio-Luminescent Abyssinian identity and playa-ready experience.
+- `P2`: Enhancements, showpiece upgrades, polish, and later-phase improvements.
+
+| Workstream | Task | Priority | Task Details | Artefacts | Status |
+|---|---|---:|---|---|---|
+| Project Definition | Define final bike goals | P0 | Use the Bio-Luminescent Abyssinian concept as the current visual direction. Decide target look, LED zones, riding vs parked modes, and minimum playa-ready requirements. | [Concept brief](design/bio-luminescent-abyssinian-concept.md) | In Progress |
+| Project Definition | Define build phases | P0 | Split the project into playa-ready minimum, cat identity layer, and showpiece upgrades so fabrication and wiring can proceed in manageable steps. | [Concept brief](design/bio-luminescent-abyssinian-concept.md) | In Progress |
+| Visual Design | Document Bio-Luminescent Abyssinian concept | P1 | Capture the keeper elements: gold frame base, faceted copper/rose-gold cat head, cyan/aqua/magenta glow, fiber-optic whiskers, illuminated tail, body glow, and optional wheel effects. | [Concept brief](design/bio-luminescent-abyssinian-concept.md) | In Progress |
+| Visual Design | Photograph bike for layout planning | P0 | Capture side, front, rear, and top views for annotated LED placement diagrams. | [LED zone plan](design/led-zone-plan.md) | Not Started |
+| Visual Design | Create LED placement concept | P0 | Mark proposed LED zones: frame, fork, rear rack, basket, cat head, eyes, whiskers, tail, underglow, and optional wheels. | [LED zone plan](design/led-zone-plan.md) | In Progress |
+| Electrical | Estimate LED count and power draw | P0 | Calculate max and typical current for selected LED type, brightness limits, and Pixelblaze output plan. | [Power budget](../hardware/electrical/power-budget.md) | In Progress |
+| Electrical | Select battery and protection | P0 | Choose battery voltage/capacity, fuse, switch, connectors, charging method, and runtime target. | [Power budget](../hardware/electrical/power-budget.md), [Initial parts list](bom/initial-parts-list.md) | Not Started |
+| Electrical | Design wiring harness | P0 | Document wire gauges, connector types, power injection points, strain relief, and service disconnects. | [Power budget](../hardware/electrical/power-budget.md), [LED zone plan](design/led-zone-plan.md) | Not Started |
+| Controller | Define Pixelblaze setup | P0 | Record controller model, pin usage, network setup, mounting location, and configuration notes. | [LED zone plan](design/led-zone-plan.md), [Power budget](../hardware/electrical/power-budget.md) | Not Started |
+| Software | Create Pixelblaze pattern set | P1 | Build base patterns for visibility, ambient bioluminescent motion, parked/show mode, and low-power operation. | [Concept brief](design/bio-luminescent-abyssinian-concept.md), [LED zone plan](design/led-zone-plan.md) | Not Started |
+| Software | Define LED segment map | P0 | Map physical LED zones to Pixelblaze indices so patterns can target bike sections predictably, especially cat head, eyes, whiskers, tail, frame, rack, and optional wheels. | [LED zone plan](design/led-zone-plan.md) | In Progress |
+| Mechanical | Plan mounts and enclosures | P0 | Choose mounting method for LEDs, battery, controller, wiring, and weather/dust protection. Prioritize serviceable, removable parts for playa repair. | [Cat head mount plan](../hardware/mechanical/mounts/cat-head-mount-plan.md), [Initial parts list](bom/initial-parts-list.md) | Not Started |
+| Mechanical | Plan cat head mount | P0 | Design a front cat head/mask mount that does not block steering, brake cables, rider sightline, or the existing headlight. | [Cat head mount plan](../hardware/mechanical/mounts/cat-head-mount-plan.md) | In Progress |
+| Mechanical | Plan tail mount | P1 | Design a lightweight illuminated tail mounted to the rear rack or basket area, with clearance for cargo and rider movement. | [Concept brief](design/bio-luminescent-abyssinian-concept.md), [Initial parts list](bom/initial-parts-list.md) | In Progress |
+| BOM | Build parts list | P0 | Track LEDs, battery, controller, wires, connectors, fuses, mounts, adhesives, tools, and spares. | [Initial parts list](bom/initial-parts-list.md) | In Progress |
+| Safety | Define safety checklist | P0 | Include fuse check, insulation, strain relief, charging safety, heat checks, and emergency disconnect. | [Power budget](../hardware/electrical/power-budget.md), [Cat head mount plan](../hardware/mechanical/mounts/cat-head-mount-plan.md) | Not Started |
+| Safety | Check ride clearance | P0 | Verify sculpture, whiskers, tail, wiring, and LED mounts do not interfere with pedaling, steering, braking, tires, chain, rider clothing, or cargo. | [Cat head mount plan](../hardware/mechanical/mounts/cat-head-mount-plan.md), [LED zone plan](design/led-zone-plan.md) | Not Started |
+| Testing | Bench test electronics | P0 | Test controller, LEDs, wiring, current draw, brightness limits, and runtime before bike installation. | [Power budget](../hardware/electrical/power-budget.md) | Not Started |
+| Testing | Bike installation test | P0 | Verify mounting security, steering clearance, wheel clearance, vibration resistance, and cable routing. | [Cat head mount plan](../hardware/mechanical/mounts/cat-head-mount-plan.md), [LED zone plan](design/led-zone-plan.md) | Not Started |
+| Testing | Night visibility test | P1 | Check appearance, brightness, visibility angles, power draw, and pattern readability outdoors at night. | [Concept brief](design/bio-luminescent-abyssinian-concept.md), [LED zone plan](design/led-zone-plan.md) | Not Started |
+| Playa Readiness | Prepare repair kit | P1 | List spare LEDs, wire, connectors, fuses, tape, zip ties, tools, and backup power components. | [Initial parts list](bom/initial-parts-list.md) | Not Started |
+| Documentation | Document final build | P2 | Add photos, wiring diagrams, BOM updates, Pixelblaze notes, and lessons learned. | [Concept brief](design/bio-luminescent-abyssinian-concept.md), [LED zone plan](design/led-zone-plan.md), [Power budget](../hardware/electrical/power-budget.md), [Cat head mount plan](../hardware/mechanical/mounts/cat-head-mount-plan.md), [Initial parts list](bom/initial-parts-list.md) | Not Started |
