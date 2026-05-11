@@ -18,6 +18,14 @@ This document tracks the planned lighting zones for the Bio-Luminescent Abyssini
 | Body panels | Medium | Organic glowing side silhouette | Optional removable diffusers or ribs. |
 | Wheels | Low | High-impact motion effect | Treat as later upgrade because power and durability are harder. |
 
+## Phase Dependency Notes
+
+- Phase 1 should include only independent LED zones and the wiring backbone.
+- Cat head LEDs belong with the cat head build because their placement depends on the head geometry.
+- Tail LEDs belong with the tail build because their placement depends on the tail structure.
+- Body panel LEDs belong with the panel build because they may mount to the internal side of the panels.
+- Future zones should get reserved power/data interfaces before their final LEDs are installed.
+
 ## Pixelblaze Segment Draft
 
 | Segment | Planned Physical Zone | Status |

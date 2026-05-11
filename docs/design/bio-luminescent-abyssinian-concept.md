@@ -4,6 +4,14 @@
 
 The current visual direction is a Bio-Luminescent Abyssinian cat bike: a warm gold RadRunner base with a faceted copper or rose-gold cat identity, cyan/aqua/magenta glow, fiber-optic whiskers, and an illuminated tail.
 
+## Final Bike Goals
+
+- Rideable and safe during both day and night use.
+- Durable enough to survive dust, moisture, vibration, transport, and normal Burning Man riding.
+- Built iteratively so every completed phase adds usable value if time runs short.
+- Easy to disassemble after Burning Man so Olga can keep using the bike year round.
+- Extendable later without forcing a major rebuild of the electrical or mechanical system.
+
 ## Keeper Elements
 
 - Gold/yellow bike frame remains visible as the base structure.
@@ -17,31 +25,49 @@ The current visual direction is a Bio-Luminescent Abyssinian cat bike: a warm go
 
 ## Build Interpretation
 
-The concept should be translated into serviceable, removable layers rather than a single large shell. The priority is a durable rideable bike first, then sculpture and show effects.
+The concept should be translated into serviceable, removable layers rather than a single large shell. The priority is a durable, rideable bike first, then sculpture and show effects. Each phase should leave the bike in a useful state even if later phases are delayed.
 
 ## Phases
 
-### Playa-Ready Minimum
+### Phase 1: Electrical and Independent Lighting Foundation
 
-- Frame, fork, rear rack, and basket lighting.
 - Controller, battery, fuse, switch, and enclosure.
-- Basic bioluminescent Pixelblaze patterns.
+- Main wiring backbone with serviceable connectors.
+- Reserved power/data interfaces for later cat head, tail, panels, and optional wheels.
+- Independent LED zones that do not depend on future sculpture panels, such as frame underglow, fork/front visibility, rear rack, and basket lighting.
+- Basic bioluminescent Pixelblaze patterns for rideable night visibility.
 - Strain relief and dust-resistant wiring.
 
-### Cat Identity Layer
+### Phase 2A: Cat Head
 
-- Cat head or mask.
+- Mechanical cat head or mask that reads as part of the bike during the day.
 - Illuminated eyes.
-- Fiber-optic whiskers.
-- Illuminated tail.
+- Cat head facet glow or accent lighting.
+- Fiber-optic or LED whiskers.
 - Copper or rose-gold faceted finish.
+- Quick-disconnect wiring and a removable mount.
 
-### Showpiece Upgrades
+### Phase 2B: Tail
 
-- Diffuser panels or translucent body ribs.
-- Wheel lighting.
+- Lightweight tail mounted to the rear rack or basket area.
+- Illuminated tail effects.
+- Quick-disconnect wiring and a removable mount.
+- Cargo and rider clearance preserved.
+
+### Phase 3: Body Panels and Integrated LEDs
+
+- Removable diffuser panels or translucent body ribs.
+- LEDs mounted to the internal side of panels or internal ribs once the panel geometry is real.
+- Quick-disconnects to the Phase 1 wiring backbone.
 - More advanced segmented patterns.
 - Parked/show mode.
+
+### Phase 4: Showpiece Upgrades
+
+- Wheel lighting.
+- Richer parked/show modes.
+- Underglow refinement.
+- Spare and repair kit polish.
 
 ## Constraints
 
