@@ -43,7 +43,7 @@ The concept should be translated into serviceable, removable layers rather than 
 - Mechanical cat head or mask that reads as part of the bike during the day.
 - Illuminated eyes.
 - Cat head facet glow or accent lighting.
-- Fiber-optic or LED whiskers.
+- Fiber-optic whiskers lit by hidden LEDs inside the cat head.
 - Copper or rose-gold faceted finish.
 - Quick-disconnect wiring and a removable mount.
 
@@ -79,6 +79,9 @@ The concept should be translated into serviceable, removable layers rather than 
 ## Open Questions
 
 - Should the cat head attach to the handlebar, head tube, front rack area, or a separate bracket?
-- Should the whiskers be passive side-glow fiber, active LED filament, or fiber driven by hidden LEDs?
 - Should the tail be rigid, flexible, or semi-flexible?
 - Are wheel effects worth including in the first build?
+
+## Current Decisions
+
+- Whiskers should use side-glow fiber optics lit by hidden LEDs inside the cat head, rather than LEDs mounted directly along the whiskers.
