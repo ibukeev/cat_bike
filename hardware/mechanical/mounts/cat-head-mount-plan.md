@@ -4,6 +4,8 @@
 
 Plan a front-mounted cat head or mask that gives the bike its Bio-Luminescent Abyssinian identity without compromising ride safety or serviceability.
 
+Lighting details are tracked separately in [Cat Head Lighting Plan](../../electrical/leds/cat-head-lighting-plan.md).
+
 ## Design Goals
 
 - Faceted copper or rose-gold cat face.
