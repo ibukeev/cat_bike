@@ -1,0 +1,59 @@
+physical_node_id,row_source,symmetry_candidate_id,source_physical_node_id,front_node,front_node_source,side_node,side_node_source,top_node,top_node_source,candidate_status,notes
+P001,manual_confirmed,,,F019,trace,S017,trace,T025,trace,,user confirmed T025 = F019 = S017
+P002,manual_confirmed,,,F026,trace,S025,trace,T033,trace,,user confirmed F026 = T033 = S025
+P003,manual_confirmed,,,F034,trace,S032,trace,T038,trace,,user confirmed T038 = F034 = S032
+P004,manual_confirmed,,,F038,trace,S036,trace,,,,user confirmed S036 = F038
+P005,manual_confirmed,,,F043,trace,S038,trace,,,,user reaffirmed F043 = S038
+P006,manual_confirmed,,,F015,trace,S013,trace,,,,user reaffirmed F015 = S013
+P007,manual_confirmed,,,F001,trace,S001,trace,T002,trace,,user confirmed F001 = T002 = S001
+P008,manual_confirmed,,,F009,trace,S008,trace,T014,trace,,user confirmed F009 = S008 = T014
+P009,manual_confirmed,,,F011,trace,S010,trace,T017,trace,,user corrected mapping: T017 = F011 = S010; replaced previous F010 = S010
+P010,manual_confirmed,,,F004,trace,,,T012,trace,,user confirmed F004 = T012; side mapping parked
+P011,manual_confirmed,,,F029,trace,S027,trace,T032,trace,,user confirmed S027 = F029 = T032
+P012,manual_confirmed,,,F031,trace,S028,trace,T030,trace,,user confirmed T030 = F031 = S028
+P013,manual_confirmed,,,F041,trace,S035,trace,T036,trace,,user confirmed F041 = S035 = T036
+P014,manual_confirmed,,,F028,trace,S026,trace,T027,trace,,user confirmed T027 = F028 = S026
+P015,manual_confirmed,,,F021,trace,S021,trace,T024,trace,,user confirmed S021 = F021 = T024
+P016,manual_confirmed,,,F014,trace,S014,trace,T015,trace,,user confirmed F014 = T015 = S014
+P017,manual_confirmed,,,F022,trace,S022,trace,T021,trace,,user confirmed S022 = F022 = T021
+P018,manual_confirmed,,,F020,trace,S018,trace,T019,trace,,user confirmed T019 = F020 = S018
+P019,manual_confirmed,,,F016,trace,S016,trace,T020,trace,,user confirmed S016 = F016 = T020
+P020,manual_confirmed,,,F023,trace,S023,trace,T016,trace,,user confirmed S023 = F023 = T016
+P021,manual_confirmed,,,F024,trace,S024,trace,,,,user reaffirmed F024 = S024
+P022,manual_confirmed,,,F017,trace,,,T022,trace,,user confirmed F017 = T022; side mapping parked
+P023,manual_confirmed,,,F010,trace,,,T018,trace,,user confirmed F010 = T018; side mapping parked
+P024,manual_confirmed,,,F003,trace,,,T003,trace,,user confirmed T003 = F003; side mapping parked
+P025,manual_confirmed,,,F002,trace,,,T008,trace,,user confirmed F002 = T008; side mapping parked
+P026,manual_confirmed,,,F012,trace,S012,trace,T013,trace,,user confirmed T013 = F012 = S012
+P027,manual_confirmed,,,F007,trace,S004,trace,T010,trace,,user confirmed S004 = F007 = T010
+P028,manual_confirmed,,,F005,trace,,,T007,trace,,user confirmed T007 = F005; side mapping parked
+P029,manual_confirmed,,,F039,trace,S034,trace,,,,user confirmed S034 = F039
+P030,manual_confirmed,,,F037,trace,S033,trace,,,,user confirmed S033 = F037
+P031,manual_confirmed,,,F035,trace,S031,trace,,,,user confirmed F035 = S031
+P032,manual_confirmed,,,F032,trace,S030,trace,,,,user confirmed S030 = F032
+P033,symmetry_promoted,SYM001,P001,F018,trace,,,T026,trace,ready_for_review,symmetry promoted from SYM001; source=P001; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P034,symmetry_promoted,SYM002,P002,F025,trace,,,T034,trace,ready_for_review,symmetry promoted from SYM002; source=P002; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P035,symmetry_promoted,SYM003,P005,F042,trace,,,,,ready_for_review,symmetry promoted from SYM003; source=P005; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P036,symmetry_promoted,SYM004,P006,F_EST_SYM004,symmetry_estimate,,,,,needs_manual_trace_or_estimate,symmetry promoted from SYM004; source=P006; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P037,symmetry_promoted,SYM005,P007,F_EST_SYM005,symmetry_estimate,,,T_EST_SYM005,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM005; source=P007; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P038,symmetry_promoted,SYM006,P008,F_EST_SYM006,symmetry_estimate,,,T_EST_SYM006,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM006; source=P008; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P039,symmetry_promoted,SYM007,P009,F_EST_SYM007,symmetry_estimate,,,T_EST_SYM007,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM007; source=P009; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P040,symmetry_promoted,SYM008,P011,F030,trace,,,T031,trace,ready_for_review,symmetry promoted from SYM008; source=P011; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P041,symmetry_promoted,SYM009,P012,F_EST_SYM009,symmetry_estimate,,,T029,trace,partial_trace_match,symmetry promoted from SYM009; source=P012; candidate_status=partial_trace_match; side projection intentionally omitted for hidden-side mirror
+P042,symmetry_promoted,SYM010,P013,F040,trace,,,T037,trace,ready_for_review,symmetry promoted from SYM010; source=P013; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P043,symmetry_promoted,SYM011,P014,F_EST_SYM011,symmetry_estimate,,,T028,trace,partial_trace_match,symmetry promoted from SYM011; source=P014; candidate_status=partial_trace_match; side projection intentionally omitted for hidden-side mirror
+P044,symmetry_promoted,SYM012,P015,F_EST_SYM012,symmetry_estimate,,,T023,trace,partial_trace_match,symmetry promoted from SYM012; source=P015; candidate_status=partial_trace_match; side projection intentionally omitted for hidden-side mirror
+P045,symmetry_promoted,SYM013,P016,F_EST_SYM013,symmetry_estimate,,,T_EST_SYM013,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM013; source=P016; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P046,symmetry_promoted,SYM014,P017,F_EST_SYM014,symmetry_estimate,,,T_EST_SYM014,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM014; source=P017; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P047,symmetry_promoted,SYM015,P018,F_EST_SYM015,symmetry_estimate,,,T_EST_SYM015,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM015; source=P018; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P048,symmetry_promoted,SYM016,P019,F_EST_SYM016,symmetry_estimate,,,T_EST_SYM016,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM016; source=P019; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P049,symmetry_promoted,SYM017,P020,F_EST_SYM017,symmetry_estimate,,,T_EST_SYM017,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM017; source=P020; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P050,symmetry_promoted,SYM018,P021,F_EST_SYM018,symmetry_estimate,,,,,needs_manual_trace_or_estimate,symmetry promoted from SYM018; source=P021; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P051,symmetry_promoted,SYM019,P025,F_EST_SYM019,symmetry_estimate,,,T_EST_SYM019,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM019; source=P025; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P052,symmetry_promoted,SYM020,P026,F_EST_SYM020,symmetry_estimate,,,T_EST_SYM020,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM020; source=P026; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P053,symmetry_promoted,SYM021,P027,F_EST_SYM021,symmetry_estimate,,,T_EST_SYM021,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM021; source=P027; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P054,symmetry_promoted,SYM022,P028,F_EST_SYM022,symmetry_estimate,,,T_EST_SYM022,symmetry_estimate,needs_manual_trace_or_estimate,symmetry promoted from SYM022; source=P028; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P055,symmetry_promoted,SYM023,P029,F_EST_SYM023,symmetry_estimate,,,,,needs_manual_trace_or_estimate,symmetry promoted from SYM023; source=P029; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P056,symmetry_promoted,SYM024,P030,F_EST_SYM024,symmetry_estimate,,,,,needs_manual_trace_or_estimate,symmetry promoted from SYM024; source=P030; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P057,symmetry_promoted,SYM025,P031,F_EST_SYM025,symmetry_estimate,,,,,needs_manual_trace_or_estimate,symmetry promoted from SYM025; source=P031; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P058,symmetry_promoted,SYM026,P032,F_EST_SYM026,symmetry_estimate,,,,,needs_manual_trace_or_estimate,symmetry promoted from SYM026; source=P032; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror

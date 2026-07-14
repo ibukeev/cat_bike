@@ -14,6 +14,12 @@ Lighting details are tracked separately in [Cat Head Lighting Plan](../../electr
 - Fiber-optic whiskers exiting both sides, lit by hidden LEDs inside the head.
 - Removable mount for transport and repair.
 
+Current visual reference:
+
+- [cat-head-reference-v1.png](../../../assets/references/cat-head/cat-head-reference-v1.png)
+- [cat-head-reference-v3.png](../../../assets/references/cat-head/cat-head-reference-v3.png) - preferred current visual/style reference.
+- [cat-head-reference-v4.png](../../../assets/references/cat-head/cat-head-reference-v4.png) - preferred current fabrication/reference-sheet direction.
+
 ## Candidate Mount Locations
 
 | Location | Pros | Risks |

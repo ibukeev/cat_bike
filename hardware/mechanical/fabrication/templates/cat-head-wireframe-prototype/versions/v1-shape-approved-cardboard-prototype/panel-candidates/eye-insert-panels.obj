@@ -1,0 +1,30 @@
+# V1 translucent eye insert panels
+# Coordinates are millimeters: X left/right, Y depth, Z up.
+# Import this with candidate-panels-3d.obj when you want the filled eye pieces.
+mtllib eye-insert-panels.mtl
+
+o insert_INSERT_EYE_RIGHT_P015_P017_P016_P019
+usemtl eye_translucent_insert
+v 22.231000 -33.475000 -25.737000
+v 69.376000 -19.025000 -30.945000
+v 68.285000 -7.531000 8.451000
+v 29.307000 -24.847000 0.593000
+f 1 2 3 4
+usemtl eye_insert_edge
+l 1 2
+l 2 3
+l 3 4
+l 4 1
+
+o insert_INSERT_EYE_LEFT_P044_P046_P045_P048
+usemtl eye_translucent_insert
+v -22.231000 -33.475000 -25.737000
+v -69.376000 -19.025000 -30.945000
+v -68.285000 -7.531000 8.451000
+v -29.307000 -24.847000 0.593000
+f 5 6 7 8
+usemtl eye_insert_edge
+l 5 6
+l 6 7
+l 7 8
+l 8 5

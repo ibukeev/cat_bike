@@ -1,0 +1,163 @@
+rod_id,node_a,node_b,source_views,source_edges,constraint_quality,rod_color
+PSR001,P001,P002,Front Side Top,Front:FE017 Side:SE014 Top:TE003,high_confidence,#16a34a
+PSR002,P001,P009,Front Side Top,Front:FE050 Side:SE050 Top:TE039,high_confidence,#16a34a
+PSR003,P001,P015,Front Side Top,Front:FE041 Side:SE015 Top:TE013,high_confidence,#16a34a
+PSR004,P001,P019,Front Side Top,Front:FE048 Side:SE022 Top:TE040,high_confidence,#16a34a
+PSR005,P001,P022,Front Top,Front:FE052 Top:TE014,manual_partial,#64748b
+PSR006,P001,P033,Front Top,Front:FE016 Top:TE004,symmetry_traced,#2563eb
+PSR007,P002,P011,Front Side,Front:FE025 Side:SE010,high_confidence,#16a34a
+PSR008,P002,P059,ManualEdit,manual:F027-F026,moderate_estimate,#f59e0b
+PSR009,P003,P004,Front Side,Front:FE008 Side:SE044,manual_partial,#64748b
+PSR010,P003,P011,Front Side Top,Front:FE020 Side:SE001 Top:TE006,high_confidence,#16a34a
+PSR011,P003,P013,Front Side Top,Front:FE006 Side:SE004 Top:TE024,high_confidence,#16a34a
+PSR012,P003,P040,Front Top,Front:FE021 Top:TE009,symmetry_traced,#2563eb
+PSR013,P003,P042,Front Top,Front:FE007 Top:TE023,symmetry_traced,#2563eb
+PSR014,P003,P059,ManualEdit,manual:F034-F027,moderate_estimate,#f59e0b
+PSR015,P004,P005,Side,Side:SE042,manual_partial,#64748b
+PSR016,P004,P013,Front Side,Front:FE005 Side:SE041,manual_partial,#64748b
+PSR017,P004,P035,ManualEdit,manual:F038-F042,heavy_estimate,#dc2626
+PSR018,P004,P042,Front,Front:FE004,manual_partial,#64748b
+PSR019,P005,P013,Front,Front:FE001,manual_partial,#64748b
+PSR020,P005,P029,Front,Front:FE009,manual_partial,#64748b
+PSR021,P005,P035,Front,Front:FE002,heavy_estimate,#dc2626
+PSR022,P007,P008,Front Side Top,Front:FE071 Side:SE013 Top:TE051,high_confidence,#16a34a
+PSR023,P007,P025,Front Top,Front:FE067 Top:TE053,manual_partial,#64748b
+PSR024,P007,P027,ManualEdit,manual-ear-base-crease:P007-P027,high_confidence,#16a34a
+PSR025,P007,P028,Front Top,Front:FE069 Top:TE052,manual_partial,#64748b
+PSR026,P007,P069,ManualEdit,manual-coordinate-connect:P069-P007,heavy_estimate,#dc2626
+PSR027,P008,P027,ManualEdit,manual-ear-base-split:P008-P027,high_confidence,#16a34a
+PSR028,P009,P010,Front Top,Front:FE064 Top:TE035,manual_partial,#64748b
+PSR029,P009,P016,Front Side Top,Front:FE056 Side:SE052 Top:TE042,high_confidence,#16a34a
+PSR030,P009,P019,Front Side Top,Front:FE049 Side:SE051 Top:TE041,high_confidence,#16a34a
+PSR031,P009,P022,Front Top,Front:FE055 Top:TE038,manual_partial,#64748b
+PSR032,P009,P023,Front Top,Front:FE054 Top:TE036,manual_partial,#64748b
+PSR033,P009,P027,Front Side Top,Front:FE058 Side:SE054 Top:TE044,high_confidence,#16a34a
+PSR034,P010,P023,Front Top,Front:FE073 Top:TE034,manual_partial,#64748b
+PSR035,P010,P024,Front Top,Front:FE062 Top:TE063,manual_partial,#64748b
+PSR036,P010,P027,Front Top,Front:FE063 Top:TE064,manual_partial,#64748b
+PSR037,P010,P039,Symmetry,mirror_to_center:P009-P010,heavy_estimate,#dc2626
+PSR038,P010,P053,Symmetry,mirror_to_center:P010-P027,heavy_estimate,#dc2626
+PSR039,P011,P012,Front Side Top,Front:FE019 Side:SE002 Top:TE028,high_confidence,#16a34a
+PSR040,P011,P015,Front Side Top,Front:FE040 Side:SE016 Top:TE027,high_confidence,#16a34a
+PSR041,P012,P013,Front Side Top,Front:FE018 Side:SE003 Top:TE025,high_confidence,#16a34a
+PSR042,P012,P014,Front Side Top,Front:FE028 Side:SE019 Top:TE029,high_confidence,#16a34a
+PSR043,P012,P015,Front Side Top,Front:FE042 Side:SE017 Top:TE026,high_confidence,#16a34a
+PSR044,P013,P030,Front Side,Front:FE011 Side:SE020,manual_partial,#64748b
+PSR045,P014,P015,Front Side Top,Front:FE043 Side:SE018 Top:TE012,high_confidence,#16a34a
+PSR046,P014,P017,Front Side Top,Front:FE030 Side:SE029 Top:TE011,high_confidence,#16a34a
+PSR047,P014,P030,Side,Side:SE021,manual_partial,#64748b
+PSR048,P015,P017,Front Side Top,Front:FE044 Side:SE027 Top:TE010,high_confidence,#16a34a
+PSR049,P015,P018,Front Side Top,Front:FE047 Side:SE024 Top:TE033,high_confidence,#16a34a
+PSR050,P015,P019,Front Side,Front:FE045 Side:SE023,high_confidence,#16a34a
+PSR051,P016,P017,Front Side Top,Front:FE037 Side:SE030 Top:TE030,high_confidence,#16a34a
+PSR052,P016,P018,Front Side Top,Front:FE038 Side:SE025 Top:TE031,high_confidence,#16a34a
+PSR053,P016,P019,Front Side Top,Front:FE046 Side:SE026 Top:TE043,high_confidence,#16a34a
+PSR054,P016,P020,Front Side Top,Front:FE036 Side:SE031 Top:TE049,high_confidence,#16a34a
+PSR055,P016,P026,Front Side Top,Front:FE035 Side:SE056 Top:TE046,manual_partial,#64748b
+PSR056,P016,P027,Front Side Top,Front:FE057 Side:SE053 Top:TE045,high_confidence,#16a34a
+PSR057,P017,P018,Front Side Top,Front:FE039 Side:SE028 Top:TE032,high_confidence,#16a34a
+PSR058,P017,P020,Front Side Top,Front:FE031 Side:SE032 Top:TE048,high_confidence,#16a34a
+PSR059,P020,P021,Side,Side:SE034,manual_partial,#64748b
+PSR060,P020,P026,Side Top,Side:SE057 Top:TE047,manual_partial,#64748b
+PSR061,P020,P030,Side,Side:SE033,manual_partial,#64748b
+PSR062,P021,P026,Front,Front:FE034,manual_partial,#64748b
+PSR063,P021,P031,Front Side,Front:FE033 Side:SE047,manual_partial,#64748b
+PSR064,P021,P032,Side,Side:SE035,manual_partial,#64748b
+PSR065,P021,P071,ManualEdit,manual-coordinate-connect:P071-P021,heavy_estimate,#dc2626
+PSR066,P022,P023,Front Top,Front:FE053 Top:TE037,manual_partial,#64748b
+PSR067,P022,P033,Front Symmetry Top,Front:FE051 Top:TE015 mirror_to_center:P001-P022,manual_partial,#64748b
+PSR068,P022,P039,Symmetry,mirror_to_center:P009-P022,heavy_estimate,#dc2626
+PSR069,P023,P039,Symmetry,mirror_to_center:P009-P023,heavy_estimate,#dc2626
+PSR070,P024,P028,Top,Top:TE062,manual_partial,#64748b
+PSR071,P024,P054,Symmetry,mirror_to_center:P024-P028,heavy_estimate,#dc2626
+PSR072,P024,P064,ManualEdit,manual-connect:S011-P024,heavy_estimate,#dc2626
+PSR073,P024,P065,ManualEdit,manual-connect:S009-P024,heavy_estimate,#dc2626
+PSR074,P024,P067,ManualEdit,manual-mirror-connect:P067-P024,heavy_estimate,#dc2626
+PSR075,P024,P068,ManualEdit,manual-mirror-connect:P068-P024,heavy_estimate,#dc2626
+PSR076,P025,P026,Top,Top:TE054,manual_partial,#64748b
+PSR077,P026,P027,Front Side,Front:FE059 Side:SE055,manual_partial,#64748b
+PSR078,P026,P067,ManualEdit,manual-ear-edge:P026-P067,heavy_estimate,#dc2626
+PSR079,P026,P069,ManualEdit,manual-ear-corner-direct:P026-P069,heavy_estimate,#dc2626
+PSR080,P027,P028,ManualEdit,manual-ear-base-split:P027-P028,manual_partial,#64748b
+PSR081,P028,P067,ManualEdit,manual-coordinate-connect:P067-P028,heavy_estimate,#dc2626
+PSR082,P028,P069,ManualEdit,manual-coordinate-connect:P069-P028,heavy_estimate,#dc2626
+PSR083,P029,P030,Front Side,Front:FE010 Side:SE038,manual_partial,#64748b
+PSR084,P029,P031,Front Side,Front:FE012 Side:SE045,manual_partial,#64748b
+PSR085,P029,P032,Side,Side:SE037,manual_partial,#64748b
+PSR086,P030,P032,Front Side,Front:FE014 Side:SE036,manual_partial,#64748b
+PSR087,P031,P032,Front Side,Front:FE013 Side:SE046,manual_partial,#64748b
+PSR088,P031,P071,ManualEdit,manual-coordinate-connect:P031-P071,heavy_estimate,#dc2626
+PSR089,P031,P072,ManualEdit,manual-coordinate-connect:P072-P031,heavy_estimate,#dc2626
+PSR090,P033,P034,Front Symmetry Top,Front:FE015 Top:TE005 mirror:P001-P002,symmetry_traced,#2563eb
+PSR091,P033,P039,Symmetry,mirror:P001-P009,heavy_estimate,#dc2626
+PSR092,P033,P044,Symmetry Top,Top:TE016 mirror:P001-P015,moderate_estimate,#f59e0b
+PSR093,P033,P048,Symmetry,mirror:P001-P019,heavy_estimate,#dc2626
+PSR094,P034,P040,Front Symmetry,Front:FE022 mirror:P002-P011,symmetry_traced,#2563eb
+PSR095,P034,P059,ManualEdit,manual:F027-F025,moderate_estimate,#f59e0b
+PSR096,P035,P042,Front Symmetry,Front:FE003 mirror:P005-P013,heavy_estimate,#dc2626
+PSR097,P035,P055,Symmetry,mirror:P005-P029,heavy_estimate,#dc2626
+PSR098,P037,P038,Symmetry,mirror:P007-P008,heavy_estimate,#dc2626
+PSR099,P037,P051,Symmetry,mirror:P007-P025,heavy_estimate,#dc2626
+PSR100,P037,P053,ManualEdit,manual-ear-base-crease:P037-P053,heavy_estimate,#dc2626
+PSR101,P037,P054,Symmetry,mirror:P007-P028,heavy_estimate,#dc2626
+PSR102,P037,P066,ManualEdit,manual-coordinate-connect:P066-P037,heavy_estimate,#dc2626
+PSR103,P038,P053,ManualEdit,manual-ear-base-split:P038-P053,heavy_estimate,#dc2626
+PSR104,P039,P045,Symmetry,mirror:P009-P016,heavy_estimate,#dc2626
+PSR105,P039,P048,Symmetry,mirror:P009-P019,heavy_estimate,#dc2626
+PSR106,P039,P053,Symmetry,mirror:P009-P027,heavy_estimate,#dc2626
+PSR107,P040,P041,Symmetry Top,Top:TE019 mirror:P011-P012,moderate_estimate,#f59e0b
+PSR108,P040,P044,Symmetry Top,Top:TE020 mirror:P011-P015,moderate_estimate,#f59e0b
+PSR109,P041,P042,Symmetry Top,Top:TE022 mirror:P012-P013,moderate_estimate,#f59e0b
+PSR110,P041,P043,Symmetry Top,Top:TE018 mirror:P012-P014,moderate_estimate,#f59e0b
+PSR111,P041,P044,Symmetry Top,Top:TE021 mirror:P012-P015,moderate_estimate,#f59e0b
+PSR112,P042,P056,Symmetry,mirror:P013-P030,heavy_estimate,#dc2626
+PSR113,P043,P044,Symmetry Top,Top:TE017 mirror:P014-P015,moderate_estimate,#f59e0b
+PSR114,P043,P046,Symmetry,mirror:P014-P017,heavy_estimate,#dc2626
+PSR115,P043,P056,Symmetry,mirror:P014-P030,heavy_estimate,#dc2626
+PSR116,P044,P046,Symmetry,mirror:P015-P017,heavy_estimate,#dc2626
+PSR117,P044,P047,Symmetry,mirror:P015-P018,heavy_estimate,#dc2626
+PSR118,P044,P048,Symmetry,mirror:P015-P019,heavy_estimate,#dc2626
+PSR119,P045,P046,Symmetry,mirror:P016-P017,heavy_estimate,#dc2626
+PSR120,P045,P047,Symmetry,mirror:P016-P018,heavy_estimate,#dc2626
+PSR121,P045,P048,Symmetry,mirror:P016-P019,heavy_estimate,#dc2626
+PSR122,P045,P049,Symmetry,mirror:P016-P020,heavy_estimate,#dc2626
+PSR123,P045,P052,Symmetry,mirror:P016-P026,heavy_estimate,#dc2626
+PSR124,P045,P053,Symmetry,mirror:P016-P027,heavy_estimate,#dc2626
+PSR125,P046,P047,Symmetry,mirror:P017-P018,heavy_estimate,#dc2626
+PSR126,P046,P049,Symmetry,mirror:P017-P020,heavy_estimate,#dc2626
+PSR127,P049,P050,Symmetry,mirror:P020-P021,heavy_estimate,#dc2626
+PSR128,P049,P052,Symmetry,mirror:P020-P026,heavy_estimate,#dc2626
+PSR129,P049,P056,Symmetry,mirror:P020-P030,heavy_estimate,#dc2626
+PSR130,P050,P052,Symmetry,mirror:P021-P026,heavy_estimate,#dc2626
+PSR131,P050,P057,Symmetry,mirror:P021-P031,heavy_estimate,#dc2626
+PSR132,P050,P058,Symmetry,mirror:P021-P032,heavy_estimate,#dc2626
+PSR133,P050,P060,ManualEdit,manual-side:S024-S029,heavy_estimate,#dc2626
+PSR134,P050,P062,ManualEdit,manual-side:S024-S019,heavy_estimate,#dc2626
+PSR135,P051,P052,Symmetry,mirror:P025-P026,heavy_estimate,#dc2626
+PSR136,P052,P053,Symmetry,mirror:P026-P027,heavy_estimate,#dc2626
+PSR137,P052,P064,ManualEdit,manual-ear-edge:P052-P064,heavy_estimate,#dc2626
+PSR138,P052,P066,ManualEdit,manual-ear-corner-direct:P052-P066,heavy_estimate,#dc2626
+PSR139,P053,P054,ManualEdit,manual-ear-base-split:P053-P054,heavy_estimate,#dc2626
+PSR140,P054,P064,ManualEdit,manual-connect:S011-P054,heavy_estimate,#dc2626
+PSR141,P054,P066,ManualEdit,manual-connect:S007-P054,heavy_estimate,#dc2626
+PSR142,P055,P056,Symmetry,mirror:P029-P030,heavy_estimate,#dc2626
+PSR143,P055,P057,Symmetry,mirror:P029-P031,heavy_estimate,#dc2626
+PSR144,P055,P058,Symmetry,mirror:P029-P032,heavy_estimate,#dc2626
+PSR145,P056,P058,Symmetry,mirror:P030-P032,heavy_estimate,#dc2626
+PSR146,P057,P058,Symmetry,mirror:P031-P032,heavy_estimate,#dc2626
+PSR147,P057,P060,ManualEdit,manual-side:S029-S031,heavy_estimate,#dc2626
+PSR148,P060,P062,ManualEdit,manual-side:S019-S029,heavy_estimate,#dc2626
+PSR149,P060,P063,ManualEdit,manual-side:S029-S020,heavy_estimate,#dc2626
+PSR150,P060,P072,ManualEdit,manual-mirror-connect:P072-P060,heavy_estimate,#dc2626
+PSR151,P062,P063,ManualEdit,manual-side:S020-S019,heavy_estimate,#dc2626
+PSR152,P062,P064,ManualEdit,manual-side:S019-S011,heavy_estimate,#dc2626
+PSR153,P063,P064,ManualEdit,manual-side:S011-S020,heavy_estimate,#dc2626
+PSR154,P063,P065,ManualEdit,manual-side:S020-S009,heavy_estimate,#dc2626
+PSR155,P064,P065,ManualEdit,manual-side:S009-S011,heavy_estimate,#dc2626
+PSR156,P065,P068,ManualEdit,manual-coordinate-connect:P068-P065,heavy_estimate,#dc2626
+PSR157,P067,P068,ManualEdit,manual-mirror-connect:P067-P068,heavy_estimate,#dc2626
+PSR158,P067,P071,ManualEdit,manual-mirror-connect:P071-P067,heavy_estimate,#dc2626
+PSR159,P068,P070,ManualEdit,manual-mirror-connect:P070-P068,heavy_estimate,#dc2626
+PSR160,P070,P071,ManualEdit,manual-coordinate-connect:P071-P070,heavy_estimate,#dc2626
+PSR161,P070,P072,ManualEdit,manual-coordinate-connect:P070-P072,heavy_estimate,#dc2626
+PSR162,P071,P072,ManualEdit,manual-coordinate-connect:P072-P071,heavy_estimate,#dc2626

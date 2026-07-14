@@ -50,6 +50,30 @@ fp-info-cache
 *.stl.tmp
 *.gcode
 *.3mf.tmp
+*.blend[0-9]
+
+# Mechanical fabrication build products and local history
+hardware/mechanical/fabrication/**/output/
+hardware/mechanical/fabrication/**/previous-step-artifacts/
+hardware/mechanical/fabrication/**/*.tar.gz
+hardware/mechanical/fabrication/templates/Archive/
+hardware/mechanical/fabrication/templates/Additional materials /
+hardware/mechanical/fabrication/cat-head-paper-prototype-instructions.md
+
+# Cat-head prototype exports that are regenerated from scripts and CSV data
+hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/gemini-3d-*
+hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/pre-*/
+hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/v1-cardboard-test-*/
+hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/v1-shape-approved-cardboard-prototype/cad/
+hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/v1-shape-approved-cardboard-prototype/panel-candidates/*.html
+
+# Reproducible cardboard fabrication exports; keep generators and source data
+hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/templates/
+hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/assembly/*.html
+hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/assembly/sheet-guides/
+
+# Raster preview duplicated by the canonical cat-head vector trace
+assets/references/cat-head/gemini_SVG.png
 
 # Logs and generated reports
 *.log

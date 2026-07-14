@@ -1,0 +1,59 @@
+physical_node_id,front_node,side_node,top_node,status,notes
+P001,F019,S017,T025,confirmed,user confirmed T025 = F019 = S017
+P002,F026,S025,T033,confirmed,user confirmed F026 = T033 = S025
+P003,F034,S032,T038,confirmed,user confirmed T038 = F034 = S032
+P004,F038,S036,,confirmed,user confirmed S036 = F038
+P005,F043,S038,,confirmed,user reaffirmed F043 = S038
+P006,F015,S013,,confirmed,user reaffirmed F015 = S013
+P007,F001,S001,T002,confirmed,user confirmed F001 = T002 = S001
+P008,F009,S008,T014,confirmed,user confirmed F009 = S008 = T014
+P009,F011,S010,T017,confirmed,user corrected mapping: T017 = F011 = S010; replaced previous F010 = S010
+P010,F004,,T012,confirmed,user confirmed F004 = T012; side mapping parked
+P011,F029,S027,T032,confirmed,user confirmed S027 = F029 = T032
+P012,F031,S028,T030,confirmed,user confirmed T030 = F031 = S028
+P013,F041,S035,T036,confirmed,user confirmed F041 = S035 = T036
+P014,F028,S026,T027,confirmed,user confirmed T027 = F028 = S026
+P015,F021,S021,T024,confirmed,user confirmed S021 = F021 = T024
+P016,F014,S014,T015,confirmed,user confirmed F014 = T015 = S014
+P017,F022,S022,T021,confirmed,user confirmed S022 = F022 = T021
+P018,F020,S018,T019,confirmed,user confirmed T019 = F020 = S018
+P019,F016,S016,T020,confirmed,user confirmed S016 = F016 = T020
+P020,F023,S023,T016,confirmed,user confirmed S023 = F023 = T016
+P021,F024,S024,,confirmed,user reaffirmed F024 = S024
+P022,F017,,T022,confirmed,user confirmed F017 = T022; side mapping parked
+P023,F010,,T018,confirmed,user confirmed F010 = T018; side mapping parked
+P024,F003,,T003,confirmed,user confirmed T003 = F003; side mapping parked
+P025,F002,,T008,confirmed,user confirmed F002 = T008; side mapping parked
+P026,F012,S012,T013,confirmed,user confirmed T013 = F012 = S012
+P027,F007,S004,T010,confirmed,user confirmed S004 = F007 = T010
+P028,F005,,T007,confirmed,user confirmed T007 = F005; side mapping parked
+P029,F039,S034,,confirmed,user confirmed S034 = F039
+P030,F037,S033,,confirmed,user confirmed S033 = F037
+P031,F035,S031,,confirmed,user confirmed F035 = S031
+P032,F032,S030,,confirmed,user confirmed S030 = F032
+P033,F018,,T026,confirmed,symmetry promoted from SYM001; source=P001; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P034,F025,,T034,confirmed,symmetry promoted from SYM002; source=P002; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P035,F042,,,confirmed,symmetry promoted from SYM003; source=P005; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P036,F_EST_SYM004,,,confirmed,symmetry promoted from SYM004; source=P006; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P037,F_EST_SYM005,,T_EST_SYM005,confirmed,symmetry promoted from SYM005; source=P007; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P038,F_EST_SYM006,,T_EST_SYM006,confirmed,symmetry promoted from SYM006; source=P008; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P039,F_EST_SYM007,,T_EST_SYM007,confirmed,symmetry promoted from SYM007; source=P009; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P040,F030,,T031,confirmed,symmetry promoted from SYM008; source=P011; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P041,F_EST_SYM009,,T029,confirmed,symmetry promoted from SYM009; source=P012; candidate_status=partial_trace_match; side projection intentionally omitted for hidden-side mirror
+P042,F040,,T037,confirmed,symmetry promoted from SYM010; source=P013; candidate_status=ready_for_review; side projection intentionally omitted for hidden-side mirror
+P043,F_EST_SYM011,,T028,confirmed,symmetry promoted from SYM011; source=P014; candidate_status=partial_trace_match; side projection intentionally omitted for hidden-side mirror
+P044,F_EST_SYM012,,T023,confirmed,symmetry promoted from SYM012; source=P015; candidate_status=partial_trace_match; side projection intentionally omitted for hidden-side mirror
+P045,F_EST_SYM013,,T_EST_SYM013,confirmed,symmetry promoted from SYM013; source=P016; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P046,F_EST_SYM014,,T_EST_SYM014,confirmed,symmetry promoted from SYM014; source=P017; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P047,F_EST_SYM015,,T_EST_SYM015,confirmed,symmetry promoted from SYM015; source=P018; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P048,F_EST_SYM016,,T_EST_SYM016,confirmed,symmetry promoted from SYM016; source=P019; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P049,F_EST_SYM017,,T_EST_SYM017,confirmed,symmetry promoted from SYM017; source=P020; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P050,F_EST_SYM018,,,confirmed,symmetry promoted from SYM018; source=P021; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P051,F_EST_SYM019,,T_EST_SYM019,confirmed,symmetry promoted from SYM019; source=P025; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P052,F_EST_SYM020,,T_EST_SYM020,confirmed,symmetry promoted from SYM020; source=P026; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P053,F_EST_SYM021,,T_EST_SYM021,confirmed,symmetry promoted from SYM021; source=P027; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P054,F_EST_SYM022,,T_EST_SYM022,confirmed,symmetry promoted from SYM022; source=P028; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P055,F_EST_SYM023,,,confirmed,symmetry promoted from SYM023; source=P029; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P056,F_EST_SYM024,,,confirmed,symmetry promoted from SYM024; source=P030; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P057,F_EST_SYM025,,,confirmed,symmetry promoted from SYM025; source=P031; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror
+P058,F_EST_SYM026,,,confirmed,symmetry promoted from SYM026; source=P032; candidate_status=needs_manual_trace_or_estimate; side projection intentionally omitted for hidden-side mirror

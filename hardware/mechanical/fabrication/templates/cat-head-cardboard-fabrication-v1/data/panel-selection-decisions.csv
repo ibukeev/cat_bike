@@ -1,0 +1,94 @@
+source_panel_id,decision,reason
+MANQ001,accepted_then_triangulated,fits approved surface without overusing an edge
+MANQ002,accepted_then_triangulated,fits approved surface without overusing an edge
+MANQ003,accepted_then_triangulated,fits approved surface without overusing an edge
+MANQ006,accepted_then_triangulated,fits approved surface without overusing an edge
+MANQ007,accepted_then_triangulated,fits approved surface without overusing an edge
+MANQ008,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD001,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD002,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD003,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD004,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD005,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD006,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD008,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD010,excluded_conflicting_alternative,would create a third face on P009-P010 P010-P039 P022-P039 P009-P022
+QUAD013,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD014,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD017,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD018,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD019,excluded_conflicting_alternative,would create a third face on P027-P028 P028-P067 P026-P067
+QUAD020,excluded_conflicting_alternative,would create a third face on P027-P028 P028-P069 P026-P069
+QUAD021,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD022,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD023,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD025,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD027,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD028,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD031,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD032,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD033,excluded_conflicting_alternative,would create a third face on P053-P054 P054-P064 P052-P064
+QUAD034,excluded_conflicting_alternative,would create a third face on P053-P054 P054-P066 P052-P066
+QUAD035,accepted_then_triangulated,fits approved surface without overusing an edge
+QUAD036,accepted_then_triangulated,fits approved surface without overusing an edge
+TRI001,accepted_triangle,exact planar face from approved OBJ
+TRI002,accepted_triangle,exact planar face from approved OBJ
+TRI003,accepted_triangle,exact planar face from approved OBJ
+TRI004,accepted_triangle,exact planar face from approved OBJ
+TRI005,accepted_triangle,exact planar face from approved OBJ
+TRI006,accepted_triangle,exact planar face from approved OBJ
+TRI007,accepted_triangle,exact planar face from approved OBJ
+TRI008,accepted_triangle,exact planar face from approved OBJ
+TRI009,accepted_triangle,exact planar face from approved OBJ
+TRI010,accepted_triangle,exact planar face from approved OBJ
+TRI011,accepted_triangle,exact planar face from approved OBJ
+TRI012,accepted_triangle,exact planar face from approved OBJ
+TRI013,accepted_triangle,exact planar face from approved OBJ
+TRI014,accepted_triangle,exact planar face from approved OBJ
+TRI015,accepted_triangle,exact planar face from approved OBJ
+TRI016,accepted_triangle,exact planar face from approved OBJ
+TRI017,accepted_triangle,exact planar face from approved OBJ
+TRI018,accepted_triangle,exact planar face from approved OBJ
+TRI019,accepted_triangle,exact planar face from approved OBJ
+TRI020,accepted_triangle,exact planar face from approved OBJ
+TRI021,accepted_triangle,exact planar face from approved OBJ
+TRI022,accepted_triangle,exact planar face from approved OBJ
+TRI025,accepted_triangle,exact planar face from approved OBJ
+TRI026,accepted_triangle,exact planar face from approved OBJ
+TRI027,accepted_triangle,exact planar face from approved OBJ
+TRI028,accepted_triangle,exact planar face from approved OBJ
+TRI029,accepted_triangle,exact planar face from approved OBJ
+TRI030,accepted_triangle,exact planar face from approved OBJ
+TRI031,accepted_triangle,exact planar face from approved OBJ
+TRI032,accepted_triangle,exact planar face from approved OBJ
+TRI033,accepted_triangle,exact planar face from approved OBJ
+TRI034,accepted_triangle,exact planar face from approved OBJ
+TRI035,accepted_triangle,exact planar face from approved OBJ
+TRI036,accepted_triangle,exact planar face from approved OBJ
+TRI037,accepted_triangle,exact planar face from approved OBJ
+TRI038,accepted_triangle,exact planar face from approved OBJ
+TRI039,accepted_triangle,exact planar face from approved OBJ
+TRI040,accepted_triangle,exact planar face from approved OBJ
+TRI041,accepted_triangle,exact planar face from approved OBJ
+TRI042,accepted_triangle,exact planar face from approved OBJ
+TRI043,accepted_triangle,exact planar face from approved OBJ
+TRI044,accepted_triangle,exact planar face from approved OBJ
+TRI045,accepted_triangle,exact planar face from approved OBJ
+TRI046,accepted_triangle,exact planar face from approved OBJ
+TRI047,accepted_triangle,exact planar face from approved OBJ
+TRI048,accepted_triangle,exact planar face from approved OBJ
+TRI049,accepted_triangle,exact planar face from approved OBJ
+TRI050,accepted_triangle,exact planar face from approved OBJ
+TRI053,accepted_triangle,exact planar face from approved OBJ
+TRI054,accepted_triangle,exact planar face from approved OBJ
+TRI055,accepted_triangle,exact planar face from approved OBJ
+TRI056,accepted_triangle,exact planar face from approved OBJ
+TRI057,accepted_triangle,exact planar face from approved OBJ
+TRI058,accepted_triangle,exact planar face from approved OBJ
+TRI059,accepted_triangle,exact planar face from approved OBJ
+TRI060,accepted_triangle,exact planar face from approved OBJ
+TRI061,accepted_triangle,exact planar face from approved OBJ
+TRI062,accepted_triangle,exact planar face from approved OBJ
+TRI063,accepted_triangle,exact planar face from approved OBJ
+TRI064,accepted_triangle,exact planar face from approved OBJ
+TRI065,accepted_triangle,exact planar face from approved OBJ

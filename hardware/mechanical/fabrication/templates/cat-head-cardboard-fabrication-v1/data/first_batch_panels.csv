@@ -1,0 +1,38 @@
+panel_id,panel_type,zone,selection_reason,node_ids,edge_ids,computed_edge_lengths_mm,area_mm2,perimeter_mm,planarity_error_mm,max_constraint_risk,cut_recommendation,sheet_id,sheet_x_mm,sheet_y_mm,template_width_mm,template_height_mm,rotated_on_sheet
+QUAD004,quad,center_face,front_depth,P003 P040 P034 P059,E031 E032 E033 E026,31.76 11.81 13.48 29.79,387.37,86.84,7.297,3,split_or_test_fit,S01,18.0,18.0,47.76,34.94,no
+QUAD002,quad,center_face,front_depth,P002 P011 P003 P059,E022 E025 E026 E027,11.81 31.59 29.79 13.48,386.49,86.67,7.332,3,split_or_test_fit,S01,73.758,18.0,35.85,47.45,no
+QUAD022,quad,center_face,front_depth centerline,P033 P034 P040 P044,E004 E032 E064 E065,43.48 11.81 39.45 14.74,535.2,109.49,1.044,3,single_piece_ok,S01,117.605,18.0,60.31,29.86,no
+QUAD001,quad,center_face,front_depth centerline,P001 P002 P011 P015,E002 E022 E023 E024,43.48 11.81 39.45 14.74,535.2,109.49,1.044,0,single_piece_ok,S01,185.916,18.0,60.31,29.86,no
+MANQ001,quad,center_face,front_depth centerline,P033 P001 P002 P034,E001 E002 E003 E004,26.16 43.48 26.95 43.48,1154.63,140.07,0.0,1,single_piece_ok,S01,18.0,73.446,42.95,59.48,no
+TRI004,triangle,center_face,front_depth centerline,P001 P022 P033,E095 E097 E001,23.84 23.84 26.16,260.7,73.84,0.0,2,single_piece_ok,S01,68.954,73.446,39.84,37.87,no
+TRI032,triangle,center_face,front_depth centerline,P022 P033 P039,E097 E126 E047,23.84 53.56 42.15,485.2,119.56,0.0,4,single_piece_ok,S01,116.795,73.446,50.82,56.7,no
+TRI002,triangle,center_face,front_depth centerline,P001 P009 P022,E092 E048 E095,53.56 42.15 23.84,485.15,119.56,0.0,2,single_piece_ok,S01,175.611,73.446,69.56,34.12,no
+TRI031,triangle,center_face,front_depth centerline,P022 P023 P039,E113 E114 E047,36.37 27.92 42.15,501.12,106.44,0.0,4,single_piece_ok,S01,18.0,140.927,52.37,43.56,no
+TRI017,triangle,center_face,front_depth centerline,P009 P022 P023,E048 E113 E108,42.15 36.37 27.92,501.12,106.44,0.0,2,single_piece_ok,S01,78.37,140.927,58.15,39.78,no
+QUAD010,quad,center_face,front_depth centerline,P009 P010 P039 P022,E045 E046 E047 E048,61.29 61.20 42.15 42.15,2358.49,206.79,16.252,4,split_or_test_fit,S01,144.524,140.927,90.45,64.44,no
+TRI018,triangle,center_face,front_depth centerline,P010 P023 P039,E107 E114 E046,49.00 27.92 61.20,669.18,138.11,0.0,4,single_piece_ok,S02,18.0,18.0,70.76,43.31,no
+TRI013,triangle,center_face,front_depth centerline,P009 P010 P023,E045 E107 E108,61.29 49.00 27.92,668.6,138.2,0.0,2,single_piece_ok,S02,96.764,18.0,77.29,37.82,no
+TRI020,triangle,right_cheek,front_depth,P011 P012 P015,E028 E116 E023,24.61 44.96 39.45,484.24,109.03,0.0,0,single_piece_ok,S02,182.051,18.0,40.61,55.35,no
+TRI021,triangle,right_cheek,front_depth,P012 P014 P015,E050 E117 E116,24.83 42.94 44.96,521.63,112.73,0.0,0,single_piece_ok,S02,230.665,18.0,40.83,58.02,no
+TRI022,triangle,right_cheek,front_depth,P014 P015 P017,E117 E118 E051,42.94 49.58 29.34,626.84,121.86,0.0,0,single_piece_ok,S02,18.0,84.02,58.94,45.2,no
+TRI025,triangle,right_cheek,front_depth,P016 P017 P020,E119 E052 E120,41.05 27.21 43.89,544.47,112.16,0.0,0,single_piece_ok,S02,84.938,84.02,57.05,42.53,no
+TRI003,triangle,right_cheek,front_depth centerline,P001 P015 P019,E024 E096 E094,14.74 28.60 26.38,192.98,69.72,0.0,0,single_piece_ok,S02,149.991,84.02,30.74,42.18,no
+TRI026,triangle,right_cheek,front_depth,P016 P020 P026,E120 E121 E122,43.89 58.81 51.35,1092.65,154.06,0.0,2,single_piece_ok,S02,188.734,84.02,59.89,65.79,no
+TRI001,triangle,right_cheek,front_depth centerline,P001 P009 P019,E092 E093 E094,53.56 32.06 26.38,311.14,112.0,0.0,0,single_piece_ok,S02,18.0,157.808,69.56,27.62,no
+TRI015,triangle,right_cheek,front_depth,P009 P016 P019,E110 E111 E093,47.80 43.37 32.06,677.46,123.23,0.0,0,single_piece_ok,S02,95.561,157.808,63.8,44.35,no
+TRI027,triangle,right_cheek,front_depth,P016 P026 P027,E122 E061 E112,51.35 60.61 66.70,1485.07,178.66,0.0,2,single_piece_ok,S03,18.0,18.0,67.35,73.84,no
+TRI016,triangle,right_cheek,front_depth,P009 P016 P027,E110 E112 E109,47.80 66.70 53.36,1263.73,167.85,0.0,0,single_piece_ok,S03,93.354,18.0,63.8,68.88,no
+TRI048,triangle,left_cheek,front_depth,P040 P041 P044,E034 E146 E064,24.61 44.96 39.45,484.24,109.03,0.0,3,single_piece_ok,S03,165.154,18.0,40.61,55.35,no
+TRI049,triangle,left_cheek,front_depth,P041 P043 P044,E075 E147 E146,24.83 42.94 44.96,521.63,112.73,0.0,3,single_piece_ok,S03,213.768,18.0,40.83,58.02,no
+TRI050,triangle,left_cheek,front_depth,P043 P044 P046,E147 E148 E076,42.94 49.58 29.34,626.84,121.86,0.0,4,single_piece_ok,S03,18.0,99.836,58.94,45.2,no
+TRI053,triangle,left_cheek,front_depth,P045 P046 P049,E149 E077 E150,41.05 27.21 43.89,544.47,112.16,0.0,4,single_piece_ok,S03,84.938,99.836,57.05,42.53,no
+TRI042,triangle,left_cheek,front_depth centerline,P033 P044 P048,E065 E138 E137,14.74 28.60 26.38,192.98,69.72,0.0,4,single_piece_ok,S03,149.991,99.836,30.74,42.18,no
+TRI054,triangle,left_cheek,front_depth,P045 P049 P052,E150 E151 E152,43.89 58.81 51.35,1092.65,154.06,0.0,4,single_piece_ok,S03,188.734,99.836,59.89,65.79,no
+TRI041,triangle,left_cheek,front_depth centerline,P033 P039 P048,E126 E136 E137,53.56 32.06 26.38,311.14,112.0,0.0,4,single_piece_ok,S03,18.0,173.624,69.56,27.62,no
+TRI046,triangle,left_cheek,front_depth,P039 P045 P048,E143 E144 E136,47.80 43.37 32.06,677.46,123.23,0.0,4,single_piece_ok,S04,18.0,18.0,63.8,44.35,no
+TRI055,triangle,left_cheek,front_depth,P045 P052 P053,E152 E086 E145,51.35 60.61 66.70,1485.07,178.66,0.0,4,single_piece_ok,S04,89.8,18.0,67.35,73.84,no
+TRI047,triangle,left_cheek,front_depth,P039 P045 P053,E143 E145 E115,47.80 66.70 53.36,1263.73,167.85,0.0,4,single_piece_ok,S04,165.154,18.0,63.8,68.88,no
+TRI019,triangle,forehead,front_depth centerline forehead,P010 P039 P053,E046 E115 E006,61.20 53.36 42.32,1106.68,156.87,0.0,4,single_piece_ok,S04,18.0,99.836,77.2,52.17,no
+TRI014,triangle,forehead,front_depth centerline forehead,P009 P010 P027,E045 E009 E109,61.29 42.51 53.36,1111.75,157.16,0.0,2,single_piece_ok,S04,103.198,99.836,77.29,52.28,no
+MANQ002,quad,forehead,front_depth centerline forehead,P024 P010 P053 P054,E005 E006 E007 E008,30.10 42.32 17.76 39.48,933.18,129.66,3.109,4,split_or_test_fit,S04,188.485,99.836,46.1,58.3,no
+MANQ003,quad,forehead,front_depth centerline forehead,P024 P010 P027 P028,E005 E009 E010 E011,30.10 42.51 17.76 39.22,933.32,129.59,3.054,2,split_or_test_fit,S05,18.0,18.0,46.1,58.47,no

@@ -1,0 +1,232 @@
+obj_part_1_based,obj_part_0_based,object_type,rod_id,node_a,node_b,physical_node_id,source_edges,constraint_quality,x_mm,y_mm_depth,z_mm_up
+1,0,rod_cylinder,PSR001,P001,P002,,Front:FE017 Side:SE014 Top:TE003,high_confidence,,,
+2,1,rod_cylinder,PSR002,P001,P009,,Front:FE050 Side:SE050 Top:TE039,high_confidence,,,
+3,2,rod_cylinder,PSR003,P001,P015,,Front:FE041 Side:SE015 Top:TE013,high_confidence,,,
+4,3,rod_cylinder,PSR004,P001,P019,,Front:FE048 Side:SE022 Top:TE040,high_confidence,,,
+5,4,rod_cylinder,PSR005,P001,P022,,Front:FE052 Top:TE014,manual_partial,,,
+6,5,rod_cylinder,PSR006,P001,P033,,Front:FE016 Top:TE004,symmetry_traced,,,
+7,6,rod_cylinder,PSR007,P002,P011,,Front:FE025 Side:SE010,high_confidence,,,
+8,7,rod_cylinder,PSR008,P002,P059,,manual:F027-F026,moderate_estimate,,,
+9,8,rod_cylinder,PSR009,P003,P004,,Front:FE008 Side:SE044,manual_partial,,,
+10,9,rod_cylinder,PSR010,P003,P011,,Front:FE020 Side:SE001 Top:TE006,high_confidence,,,
+11,10,rod_cylinder,PSR011,P003,P013,,Front:FE006 Side:SE004 Top:TE024,high_confidence,,,
+12,11,rod_cylinder,PSR012,P003,P040,,Front:FE021 Top:TE009,symmetry_traced,,,
+13,12,rod_cylinder,PSR013,P003,P042,,Front:FE007 Top:TE023,symmetry_traced,,,
+14,13,rod_cylinder,PSR014,P003,P059,,manual:F034-F027,moderate_estimate,,,
+15,14,rod_cylinder,PSR015,P004,P005,,Side:SE042,manual_partial,,,
+16,15,rod_cylinder,PSR016,P004,P013,,Front:FE005 Side:SE041,manual_partial,,,
+17,16,rod_cylinder,PSR017,P004,P035,,manual:F038-F042,heavy_estimate,,,
+18,17,rod_cylinder,PSR018,P004,P042,,Front:FE004,manual_partial,,,
+19,18,rod_cylinder,PSR019,P005,P013,,Front:FE001,manual_partial,,,
+20,19,rod_cylinder,PSR020,P005,P029,,Front:FE009,manual_partial,,,
+21,20,rod_cylinder,PSR021,P005,P035,,Front:FE002,heavy_estimate,,,
+22,21,rod_cylinder,PSR022,P007,P008,,Front:FE071 Side:SE013 Top:TE051,high_confidence,,,
+23,22,rod_cylinder,PSR023,P007,P025,,Front:FE067 Top:TE053,manual_partial,,,
+24,23,rod_cylinder,PSR024,P007,P027,,manual-ear-base-crease:P007-P027,high_confidence,,,
+25,24,rod_cylinder,PSR025,P007,P028,,Front:FE069 Top:TE052,manual_partial,,,
+26,25,rod_cylinder,PSR026,P007,P069,,manual-coordinate-connect:P069-P007,heavy_estimate,,,
+27,26,rod_cylinder,PSR027,P008,P027,,manual-ear-base-split:P008-P027,high_confidence,,,
+28,27,rod_cylinder,PSR028,P009,P010,,Front:FE064 Top:TE035,manual_partial,,,
+29,28,rod_cylinder,PSR029,P009,P016,,Front:FE056 Side:SE052 Top:TE042,high_confidence,,,
+30,29,rod_cylinder,PSR030,P009,P019,,Front:FE049 Side:SE051 Top:TE041,high_confidence,,,
+31,30,rod_cylinder,PSR031,P009,P022,,Front:FE055 Top:TE038,manual_partial,,,
+32,31,rod_cylinder,PSR032,P009,P023,,Front:FE054 Top:TE036,manual_partial,,,
+33,32,rod_cylinder,PSR033,P009,P027,,Front:FE058 Side:SE054 Top:TE044,high_confidence,,,
+34,33,rod_cylinder,PSR034,P010,P023,,Front:FE073 Top:TE034,manual_partial,,,
+35,34,rod_cylinder,PSR035,P010,P024,,Front:FE062 Top:TE063,manual_partial,,,
+36,35,rod_cylinder,PSR036,P010,P027,,Front:FE063 Top:TE064,manual_partial,,,
+37,36,rod_cylinder,PSR037,P010,P039,,mirror_to_center:P009-P010,heavy_estimate,,,
+38,37,rod_cylinder,PSR038,P010,P053,,mirror_to_center:P010-P027,heavy_estimate,,,
+39,38,rod_cylinder,PSR039,P011,P012,,Front:FE019 Side:SE002 Top:TE028,high_confidence,,,
+40,39,rod_cylinder,PSR040,P011,P015,,Front:FE040 Side:SE016 Top:TE027,high_confidence,,,
+41,40,rod_cylinder,PSR041,P012,P013,,Front:FE018 Side:SE003 Top:TE025,high_confidence,,,
+42,41,rod_cylinder,PSR042,P012,P014,,Front:FE028 Side:SE019 Top:TE029,high_confidence,,,
+43,42,rod_cylinder,PSR043,P012,P015,,Front:FE042 Side:SE017 Top:TE026,high_confidence,,,
+44,43,rod_cylinder,PSR044,P013,P030,,Front:FE011 Side:SE020,manual_partial,,,
+45,44,rod_cylinder,PSR045,P014,P015,,Front:FE043 Side:SE018 Top:TE012,high_confidence,,,
+46,45,rod_cylinder,PSR046,P014,P017,,Front:FE030 Side:SE029 Top:TE011,high_confidence,,,
+47,46,rod_cylinder,PSR047,P014,P030,,Side:SE021,manual_partial,,,
+48,47,rod_cylinder,PSR048,P015,P017,,Front:FE044 Side:SE027 Top:TE010,high_confidence,,,
+49,48,rod_cylinder,PSR049,P015,P018,,Front:FE047 Side:SE024 Top:TE033,high_confidence,,,
+50,49,rod_cylinder,PSR050,P015,P019,,Front:FE045 Side:SE023,high_confidence,,,
+51,50,rod_cylinder,PSR051,P016,P017,,Front:FE037 Side:SE030 Top:TE030,high_confidence,,,
+52,51,rod_cylinder,PSR052,P016,P018,,Front:FE038 Side:SE025 Top:TE031,high_confidence,,,
+53,52,rod_cylinder,PSR053,P016,P019,,Front:FE046 Side:SE026 Top:TE043,high_confidence,,,
+54,53,rod_cylinder,PSR054,P016,P020,,Front:FE036 Side:SE031 Top:TE049,high_confidence,,,
+55,54,rod_cylinder,PSR055,P016,P026,,Front:FE035 Side:SE056 Top:TE046,manual_partial,,,
+56,55,rod_cylinder,PSR056,P016,P027,,Front:FE057 Side:SE053 Top:TE045,high_confidence,,,
+57,56,rod_cylinder,PSR057,P017,P018,,Front:FE039 Side:SE028 Top:TE032,high_confidence,,,
+58,57,rod_cylinder,PSR058,P017,P020,,Front:FE031 Side:SE032 Top:TE048,high_confidence,,,
+59,58,rod_cylinder,PSR059,P020,P021,,Side:SE034,manual_partial,,,
+60,59,rod_cylinder,PSR060,P020,P026,,Side:SE057 Top:TE047,manual_partial,,,
+61,60,rod_cylinder,PSR061,P020,P030,,Side:SE033,manual_partial,,,
+62,61,rod_cylinder,PSR062,P021,P026,,Front:FE034,manual_partial,,,
+63,62,rod_cylinder,PSR063,P021,P031,,Front:FE033 Side:SE047,manual_partial,,,
+64,63,rod_cylinder,PSR064,P021,P032,,Side:SE035,manual_partial,,,
+65,64,rod_cylinder,PSR065,P021,P071,,manual-coordinate-connect:P071-P021,heavy_estimate,,,
+66,65,rod_cylinder,PSR066,P022,P023,,Front:FE053 Top:TE037,manual_partial,,,
+67,66,rod_cylinder,PSR067,P022,P033,,Front:FE051 Top:TE015 mirror_to_center:P001-P022,manual_partial,,,
+68,67,rod_cylinder,PSR068,P022,P039,,mirror_to_center:P009-P022,heavy_estimate,,,
+69,68,rod_cylinder,PSR069,P023,P039,,mirror_to_center:P009-P023,heavy_estimate,,,
+70,69,rod_cylinder,PSR070,P024,P028,,Top:TE062,manual_partial,,,
+71,70,rod_cylinder,PSR071,P024,P054,,mirror_to_center:P024-P028,heavy_estimate,,,
+72,71,rod_cylinder,PSR072,P024,P064,,manual-connect:S011-P024,heavy_estimate,,,
+73,72,rod_cylinder,PSR073,P024,P065,,manual-connect:S009-P024,heavy_estimate,,,
+74,73,rod_cylinder,PSR074,P024,P067,,manual-mirror-connect:P067-P024,heavy_estimate,,,
+75,74,rod_cylinder,PSR075,P024,P068,,manual-mirror-connect:P068-P024,heavy_estimate,,,
+76,75,rod_cylinder,PSR076,P025,P026,,Top:TE054,manual_partial,,,
+77,76,rod_cylinder,PSR077,P026,P027,,Front:FE059 Side:SE055,manual_partial,,,
+78,77,rod_cylinder,PSR078,P026,P067,,manual-ear-edge:P026-P067,heavy_estimate,,,
+79,78,rod_cylinder,PSR079,P026,P069,,manual-ear-corner-direct:P026-P069,heavy_estimate,,,
+80,79,rod_cylinder,PSR080,P027,P028,,manual-ear-base-split:P027-P028,manual_partial,,,
+81,80,rod_cylinder,PSR081,P028,P067,,manual-coordinate-connect:P067-P028,heavy_estimate,,,
+82,81,rod_cylinder,PSR082,P028,P069,,manual-coordinate-connect:P069-P028,heavy_estimate,,,
+83,82,rod_cylinder,PSR083,P029,P030,,Front:FE010 Side:SE038,manual_partial,,,
+84,83,rod_cylinder,PSR084,P029,P031,,Front:FE012 Side:SE045,manual_partial,,,
+85,84,rod_cylinder,PSR085,P029,P032,,Side:SE037,manual_partial,,,
+86,85,rod_cylinder,PSR086,P030,P032,,Front:FE014 Side:SE036,manual_partial,,,
+87,86,rod_cylinder,PSR087,P031,P032,,Front:FE013 Side:SE046,manual_partial,,,
+88,87,rod_cylinder,PSR088,P031,P071,,manual-coordinate-connect:P031-P071,heavy_estimate,,,
+89,88,rod_cylinder,PSR089,P031,P072,,manual-coordinate-connect:P072-P031,heavy_estimate,,,
+90,89,rod_cylinder,PSR090,P033,P034,,Front:FE015 Top:TE005 mirror:P001-P002,symmetry_traced,,,
+91,90,rod_cylinder,PSR091,P033,P039,,mirror:P001-P009,heavy_estimate,,,
+92,91,rod_cylinder,PSR092,P033,P044,,Top:TE016 mirror:P001-P015,moderate_estimate,,,
+93,92,rod_cylinder,PSR093,P033,P048,,mirror:P001-P019,heavy_estimate,,,
+94,93,rod_cylinder,PSR094,P034,P040,,Front:FE022 mirror:P002-P011,symmetry_traced,,,
+95,94,rod_cylinder,PSR095,P034,P059,,manual:F027-F025,moderate_estimate,,,
+96,95,rod_cylinder,PSR096,P035,P042,,Front:FE003 mirror:P005-P013,heavy_estimate,,,
+97,96,rod_cylinder,PSR097,P035,P055,,mirror:P005-P029,heavy_estimate,,,
+98,97,rod_cylinder,PSR098,P037,P038,,mirror:P007-P008,heavy_estimate,,,
+99,98,rod_cylinder,PSR099,P037,P051,,mirror:P007-P025,heavy_estimate,,,
+100,99,rod_cylinder,PSR100,P037,P053,,manual-ear-base-crease:P037-P053,heavy_estimate,,,
+101,100,rod_cylinder,PSR101,P037,P054,,mirror:P007-P028,heavy_estimate,,,
+102,101,rod_cylinder,PSR102,P037,P066,,manual-coordinate-connect:P066-P037,heavy_estimate,,,
+103,102,rod_cylinder,PSR103,P038,P053,,manual-ear-base-split:P038-P053,heavy_estimate,,,
+104,103,rod_cylinder,PSR104,P039,P045,,mirror:P009-P016,heavy_estimate,,,
+105,104,rod_cylinder,PSR105,P039,P048,,mirror:P009-P019,heavy_estimate,,,
+106,105,rod_cylinder,PSR106,P039,P053,,mirror:P009-P027,heavy_estimate,,,
+107,106,rod_cylinder,PSR107,P040,P041,,Top:TE019 mirror:P011-P012,moderate_estimate,,,
+108,107,rod_cylinder,PSR108,P040,P044,,Top:TE020 mirror:P011-P015,moderate_estimate,,,
+109,108,rod_cylinder,PSR109,P041,P042,,Top:TE022 mirror:P012-P013,moderate_estimate,,,
+110,109,rod_cylinder,PSR110,P041,P043,,Top:TE018 mirror:P012-P014,moderate_estimate,,,
+111,110,rod_cylinder,PSR111,P041,P044,,Top:TE021 mirror:P012-P015,moderate_estimate,,,
+112,111,rod_cylinder,PSR112,P042,P056,,mirror:P013-P030,heavy_estimate,,,
+113,112,rod_cylinder,PSR113,P043,P044,,Top:TE017 mirror:P014-P015,moderate_estimate,,,
+114,113,rod_cylinder,PSR114,P043,P046,,mirror:P014-P017,heavy_estimate,,,
+115,114,rod_cylinder,PSR115,P043,P056,,mirror:P014-P030,heavy_estimate,,,
+116,115,rod_cylinder,PSR116,P044,P046,,mirror:P015-P017,heavy_estimate,,,
+117,116,rod_cylinder,PSR117,P044,P047,,mirror:P015-P018,heavy_estimate,,,
+118,117,rod_cylinder,PSR118,P044,P048,,mirror:P015-P019,heavy_estimate,,,
+119,118,rod_cylinder,PSR119,P045,P046,,mirror:P016-P017,heavy_estimate,,,
+120,119,rod_cylinder,PSR120,P045,P047,,mirror:P016-P018,heavy_estimate,,,
+121,120,rod_cylinder,PSR121,P045,P048,,mirror:P016-P019,heavy_estimate,,,
+122,121,rod_cylinder,PSR122,P045,P049,,mirror:P016-P020,heavy_estimate,,,
+123,122,rod_cylinder,PSR123,P045,P052,,mirror:P016-P026,heavy_estimate,,,
+124,123,rod_cylinder,PSR124,P045,P053,,mirror:P016-P027,heavy_estimate,,,
+125,124,rod_cylinder,PSR125,P046,P047,,mirror:P017-P018,heavy_estimate,,,
+126,125,rod_cylinder,PSR126,P046,P049,,mirror:P017-P020,heavy_estimate,,,
+127,126,rod_cylinder,PSR127,P049,P050,,mirror:P020-P021,heavy_estimate,,,
+128,127,rod_cylinder,PSR128,P049,P052,,mirror:P020-P026,heavy_estimate,,,
+129,128,rod_cylinder,PSR129,P049,P056,,mirror:P020-P030,heavy_estimate,,,
+130,129,rod_cylinder,PSR130,P050,P052,,mirror:P021-P026,heavy_estimate,,,
+131,130,rod_cylinder,PSR131,P050,P057,,mirror:P021-P031,heavy_estimate,,,
+132,131,rod_cylinder,PSR132,P050,P058,,mirror:P021-P032,heavy_estimate,,,
+133,132,rod_cylinder,PSR133,P050,P060,,manual-side:S024-S029,heavy_estimate,,,
+134,133,rod_cylinder,PSR134,P050,P062,,manual-side:S024-S019,heavy_estimate,,,
+135,134,rod_cylinder,PSR135,P051,P052,,mirror:P025-P026,heavy_estimate,,,
+136,135,rod_cylinder,PSR136,P052,P053,,mirror:P026-P027,heavy_estimate,,,
+137,136,rod_cylinder,PSR137,P052,P064,,manual-ear-edge:P052-P064,heavy_estimate,,,
+138,137,rod_cylinder,PSR138,P052,P066,,manual-ear-corner-direct:P052-P066,heavy_estimate,,,
+139,138,rod_cylinder,PSR139,P053,P054,,manual-ear-base-split:P053-P054,heavy_estimate,,,
+140,139,rod_cylinder,PSR140,P054,P064,,manual-connect:S011-P054,heavy_estimate,,,
+141,140,rod_cylinder,PSR141,P054,P066,,manual-connect:S007-P054,heavy_estimate,,,
+142,141,rod_cylinder,PSR142,P055,P056,,mirror:P029-P030,heavy_estimate,,,
+143,142,rod_cylinder,PSR143,P055,P057,,mirror:P029-P031,heavy_estimate,,,
+144,143,rod_cylinder,PSR144,P055,P058,,mirror:P029-P032,heavy_estimate,,,
+145,144,rod_cylinder,PSR145,P056,P058,,mirror:P030-P032,heavy_estimate,,,
+146,145,rod_cylinder,PSR146,P057,P058,,mirror:P031-P032,heavy_estimate,,,
+147,146,rod_cylinder,PSR147,P057,P060,,manual-side:S029-S031,heavy_estimate,,,
+148,147,rod_cylinder,PSR148,P060,P062,,manual-side:S019-S029,heavy_estimate,,,
+149,148,rod_cylinder,PSR149,P060,P063,,manual-side:S029-S020,heavy_estimate,,,
+150,149,rod_cylinder,PSR150,P060,P072,,manual-mirror-connect:P072-P060,heavy_estimate,,,
+151,150,rod_cylinder,PSR151,P062,P063,,manual-side:S020-S019,heavy_estimate,,,
+152,151,rod_cylinder,PSR152,P062,P064,,manual-side:S019-S011,heavy_estimate,,,
+153,152,rod_cylinder,PSR153,P063,P064,,manual-side:S011-S020,heavy_estimate,,,
+154,153,rod_cylinder,PSR154,P063,P065,,manual-side:S020-S009,heavy_estimate,,,
+155,154,rod_cylinder,PSR155,P064,P065,,manual-side:S009-S011,heavy_estimate,,,
+156,155,rod_cylinder,PSR156,P065,P068,,manual-coordinate-connect:P068-P065,heavy_estimate,,,
+157,156,rod_cylinder,PSR157,P067,P068,,manual-mirror-connect:P067-P068,heavy_estimate,,,
+158,157,rod_cylinder,PSR158,P067,P071,,manual-mirror-connect:P071-P067,heavy_estimate,,,
+159,158,rod_cylinder,PSR159,P068,P070,,manual-mirror-connect:P070-P068,heavy_estimate,,,
+160,159,rod_cylinder,PSR160,P070,P071,,manual-coordinate-connect:P071-P070,heavy_estimate,,,
+161,160,rod_cylinder,PSR161,P070,P072,,manual-coordinate-connect:P070-P072,heavy_estimate,,,
+162,161,rod_cylinder,PSR162,P071,P072,,manual-coordinate-connect:P072-P071,heavy_estimate,,,
+163,162,node_sphere,,,,P001,,high_confidence,13.078,-38.322,-15.245
+164,163,node_sphere,,,,P002,,high_confidence,13.477,-66.517,-48.345
+165,164,node_sphere,,,,P003,,high_confidence,0.126,-66.884,-78.131
+166,165,node_sphere,,,,P004,,manual_partial,-0.901,-53.315,-93.961
+167,166,node_sphere,,,,P005,,manual_partial,20.978,-40.174,-110.0
+168,167,node_sphere,,,,P007,,high_confidence,100.678,50.875,110.0
+169,168,node_sphere,,,,P008,,high_confidence,46.45,16.08,43.175
+170,169,node_sphere,,,,P009,,high_confidence,27.005,-15.535,31.183
+171,170,node_sphere,,,,P010,,manual_partial,-0.101,26.305,66.831
+172,171,node_sphere,,,,P011,,high_confidence,20.519,-59.814,-55.058
+173,172,node_sphere,,,,P012,,high_confidence,42.611,-51.213,-61.676
+174,173,node_sphere,,,,P013,,high_confidence,27.003,-55.85,-96.386
+175,174,node_sphere,,,,P014,,high_confidence,55.045,-31.401,-53.353
+176,175,node_sphere,,,,P015,,high_confidence,22.231,-33.475,-25.737
+177,176,node_sphere,,,,P016,,high_confidence,68.285,-7.531,8.451
+178,177,node_sphere,,,,P017,,high_confidence,69.376,-19.025,-30.945
+179,178,node_sphere,,,,P018,,high_confidence,52.637,-18.912,-16.89
+180,179,node_sphere,,,,P019,,high_confidence,29.307,-24.847,0.593
+181,180,node_sphere,,,,P020,,high_confidence,82.229,4.96,-31.249
+182,181,node_sphere,,,,P021,,manual_partial,84.626,66.884,-36.674
+183,182,node_sphere,,,,P022,,manual_partial,0.001,-26.302,0.658
+184,183,node_sphere,,,,P023,,manual_partial,0.0,-8.565,32.41
+185,184,node_sphere,,,,P024,,manual_partial,0.142,56.344,68.768
+186,185,node_sphere,,,,P025,,manual_partial,101.277,42.283,75.26
+187,186,node_sphere,,,,P026,,manual_partial,82.174,41.495,14.838
+188,187,node_sphere,,,,P027,,high_confidence,41.37,28.466,57.726
+189,188,node_sphere,,,,P028,,manual_partial,37.198,44.938,62.884
+190,189,node_sphere,,,,P029,,manual_partial,39.743,10.71,-94.287
+191,190,node_sphere,,,,P030,,manual_partial,43.159,-11.336,-83.497
+192,191,node_sphere,,,,P031,,manual_partial,59.297,58.675,-78.085
+193,192,node_sphere,,,,P032,,manual_partial,61.717,34.799,-70.569
+194,193,node_sphere,,,,P033,,symmetry_traced,-13.078,-38.322,-15.245
+195,194,node_sphere,,,,P034,,symmetry_traced,-13.477,-66.517,-48.345
+196,195,node_sphere,,,,P035,,heavy_estimate,-20.978,-40.174,-110.0
+197,196,node_sphere,,,,P037,,heavy_estimate,-100.678,50.875,110.0
+198,197,node_sphere,,,,P038,,heavy_estimate,-46.45,16.08,43.175
+199,198,node_sphere,,,,P039,,heavy_estimate,-27.005,-15.535,31.183
+200,199,node_sphere,,,,P040,,symmetry_traced,-20.519,-59.814,-55.058
+201,200,node_sphere,,,,P041,,moderate_estimate,-42.611,-51.213,-61.676
+202,201,node_sphere,,,,P042,,symmetry_traced,-27.003,-55.85,-96.386
+203,202,node_sphere,,,,P043,,moderate_estimate,-55.045,-31.401,-53.353
+204,203,node_sphere,,,,P044,,moderate_estimate,-22.231,-33.475,-25.737
+205,204,node_sphere,,,,P045,,heavy_estimate,-68.285,-7.531,8.451
+206,205,node_sphere,,,,P046,,heavy_estimate,-69.376,-19.025,-30.945
+207,206,node_sphere,,,,P047,,heavy_estimate,-52.637,-18.912,-16.89
+208,207,node_sphere,,,,P048,,heavy_estimate,-29.307,-24.847,0.593
+209,208,node_sphere,,,,P049,,heavy_estimate,-82.229,4.96,-31.249
+210,209,node_sphere,,,,P050,,heavy_estimate,-84.626,66.884,-36.674
+211,210,node_sphere,,,,P051,,heavy_estimate,-101.277,42.283,75.26
+212,211,node_sphere,,,,P052,,heavy_estimate,-82.174,41.495,14.838
+213,212,node_sphere,,,,P053,,heavy_estimate,-41.37,28.466,57.726
+214,213,node_sphere,,,,P054,,heavy_estimate,-37.198,44.938,62.884
+215,214,node_sphere,,,,P055,,heavy_estimate,-39.743,10.71,-94.287
+216,215,node_sphere,,,,P056,,heavy_estimate,-43.159,-11.336,-83.497
+217,216,node_sphere,,,,P057,,heavy_estimate,-59.297,58.675,-78.085
+218,217,node_sphere,,,,P058,,heavy_estimate,-61.717,34.799,-70.569
+219,218,node_sphere,,,,P060,,heavy_estimate,-20.0,88.632,-66.699
+220,219,node_sphere,,,,P062,,heavy_estimate,-60.0,101.002,-19.332
+221,220,node_sphere,,,,P063,,heavy_estimate,-40.0,112.679,-21.822
+222,221,node_sphere,,,,P064,,heavy_estimate,-50.0,97.93,29.133
+223,222,node_sphere,,,,P065,,heavy_estimate,-20.0,105.568,30.809
+224,223,node_sphere,,,,P066,,heavy_estimate,-54.945,73.222,32.9
+225,224,node_sphere,,,,P067,,heavy_estimate,50.0,97.93,29.133
+226,225,node_sphere,,,,P068,,heavy_estimate,20.0,105.568,30.809
+227,226,node_sphere,,,,P069,,heavy_estimate,54.945,73.222,32.9
+228,227,node_sphere,,,,P070,,heavy_estimate,40.0,112.679,-21.822
+229,228,node_sphere,,,,P071,,heavy_estimate,60.0,101.002,-19.332
+230,229,node_sphere,,,,P072,,heavy_estimate,20.0,88.632,-66.699
+231,230,node_sphere,,,,P059,,moderate_estimate,0.0,-66.517,-48.345
