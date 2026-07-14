@@ -1,0 +1,153 @@
+view,node_id,x_px,y_px,snap_count,degree,node_source,symmetry_candidate_id,notes
+Front,F001,732.276,275.108,4,4,trace,,
+Front,F002,729.361,373.948,2,2,trace,,
+Front,F003,437.041,392.736,2,2,trace,,
+Front,F004,436.698,398.341,4,4,trace,,
+Front,F005,543.093,409.765,2,2,trace,,
+Front,F006,594.263,421.605,1,1,trace,,
+Front,F007,550.733,424.982,4,4,trace,,
+Front,F008,636.265,429.876,3,3,trace,,
+Front,F009,568.813,468.122,2,2,trace,,
+Front,F010,436.748,497.957,3,3,trace,,
+Front,F011,517.98,498.842,7,7,trace,,
+Front,F012,667.128,520.085,5,5,trace,,
+Front,F013,694.356,527.936,2,2,trace,,
+Front,F014,640.439,567.084,7,7,trace,,
+Front,F015,672.506,569.959,1,1,trace,,
+Front,F016,526.941,588.1,4,4,trace,,
+Front,F017,436.875,589.85,4,4,trace,,
+Front,F018,395.842,633.915,3,3,trace,,
+Front,F019,476.853,635.267,6,6,trace,,
+Front,F020,592.797,640.419,3,3,trace,,
+Front,F021,505.452,665.552,7,7,trace,,
+Front,F022,642.156,681.37,5,5,trace,,
+Front,F023,679.932,682.235,3,3,trace,,
+Front,F024,684.31,689.963,2,2,trace,,
+Front,F025,395.526,726.633,3,3,trace,,
+Front,F026,477.576,729.785,3,3,trace,,
+Front,F027,437.096,741.55,3,3,trace,,
+Front,F028,602.744,744.471,4,4,trace,,
+Front,F029,501.241,752.099,4,4,trace,,
+Front,F030,371.536,754.356,2,2,trace,,
+Front,F031,567.879,771.784,4,4,trace,,
+Front,F032,618.01,798.354,2,2,trace,,
+Front,F033,436.638,799.735,2,2,trace,,
+Front,F034,436.536,818.092,6,6,trace,,
+Front,F035,611.005,818.488,3,3,trace,,
+Front,F036,576.322,829.88,2,2,trace,,
+Front,F037,564.301,840.024,3,3,trace,,
+Front,F038,436.789,853.67,3,3,trace,,
+Front,F039,554.417,867.377,3,3,trace,,
+Front,F040,355.574,871.209,3,3,trace,,
+Front,F041,516.985,873.351,5,5,trace,,
+Front,F042,378.685,910.102,2,2,trace,,
+Front,F043,493.361,910.227,3,3,trace,,
+Side,S001,1985.324,276.053,3,3,trace,,
+Side,S002,2037.027,342.327,2,2,trace,,
+Side,S003,2073.419,420.132,1,1,trace,,
+Side,S004,1928.035,427.918,3,3,trace,,
+Side,S005,2002.428,432.12,1,1,trace,,
+Side,S006,1944.031,443.808,2,2,trace,,
+Side,S007,2085.077,449.654,4,4,trace,,
+Side,S008,1892.185,468.78,2,2,trace,,
+Side,S009,2159.984,505.684,3,3,trace,,
+Side,S010,1786.342,507.258,4,4,trace,,
+Side,S011,2137.878,510.507,5,5,trace,,
+Side,S012,2001.661,520.917,4,4,trace,,
+Side,S013,2017.706,530.008,2,2,trace,,
+Side,S014,1827.412,570.252,7,7,trace,,
+Side,S015,2052.824,584.9,5,5,trace,,
+Side,S016,1773.756,594.581,4,4,trace,,
+Side,S017,1730.676,638.845,4,4,trace,,
+Side,S018,1800.181,643.193,3,3,trace,,
+Side,S019,2146.77,650.007,5,5,trace,,
+Side,S020,2180.565,657.172,4,4,trace,,
+Side,S021,1752.718,669.124,7,7,trace,,
+Side,S022,1808.252,683.376,5,5,trace,,
+Side,S023,1900.976,684.266,5,5,trace,,
+Side,S024,2048.03,707.809,6,6,trace,,
+Side,S025,1638.503,735.387,3,3,trace,,
+Side,S026,1776.789,749.612,4,4,trace,,
+Side,S027,1674.094,751.841,4,4,trace,,
+Side,S028,1708.046,770.358,4,4,trace,,
+Side,S029,2110.969,786.344,4,4,trace,,
+Side,S030,1955.173,795.127,4,4,trace,,
+Side,S031,2024.271,818.373,4,4,trace,,
+Side,S032,1662.63,819.032,4,4,trace,,
+Side,S033,1821.655,828.109,5,5,trace,,
+Side,S034,1885.458,863.021,4,4,trace,,
+Side,S035,1712.519,869.159,5,5,trace,,
+Side,S036,1700.165,874.774,3,3,trace,,
+Side,S037,1770.603,899.694,3,3,trace,,
+Side,S038,1738.196,910.311,2,2,trace,,
+Top,T001,436.109,1284.968,2,2,trace,,
+Top,T002,701.965,1292.687,4,4,trace,,
+Top,T003,437.233,1293.322,4,4,trace,,
+Top,T004,599.65,1302.838,2,2,trace,,
+Top,T005,561.622,1318.787,1,1,trace,,
+Top,T006,553.595,1323.687,1,1,trace,,
+Top,T007,537.365,1331.592,4,4,trace,,
+Top,T008,707.855,1340.497,2,2,trace,,
+Top,T009,638.694,1351.963,1,1,trace,,
+Top,T010,552.61,1376.643,3,3,trace,,
+Top,T011,599.021,1386.625,1,1,trace,,
+Top,T012,436.255,1394.105,4,4,trace,,
+Top,T013,660.601,1408.64,5,5,trace,,
+Top,T014,563.067,1418.19,2,2,trace,,
+Top,T015,613.632,1501.531,7,7,trace,,
+Top,T016,651.688,1503.0,3,3,trace,,
+Top,T017,506.077,1507.631,7,7,trace,,
+Top,T018,436.747,1511.094,3,3,trace,,
+Top,T019,573.988,1546.335,3,3,trace,,
+Top,T020,510.101,1555.524,3,3,trace,,
+Top,T021,617.876,1556.448,5,5,trace,,
+Top,T022,436.635,1570.603,4,4,trace,,
+Top,T023,382.513,1588.326,4,4,trace,,
+Top,T024,492.124,1589.025,6,6,trace,,
+Top,T025,469.616,1595.996,6,6,trace,,
+Top,T026,404.614,1596.185,4,4,trace,,
+Top,T027,577.673,1603.017,3,3,trace,,
+Top,T028,298.993,1603.209,2,2,trace,,
+Top,T029,329.638,1655.28,4,4,trace,,
+Top,T030,543.407,1656.265,4,4,trace,,
+Top,T031,385.833,1673.934,4,4,trace,,
+Top,T032,486.865,1674.616,4,4,trace,,
+Top,T033,471.078,1678.332,2,2,trace,,
+Top,T034,400.363,1678.711,2,2,trace,,
+Top,T035,438.601,1688.828,4,4,trace,,
+Top,T036,506.985,1692.562,2,2,trace,,
+Top,T037,369.975,1694.312,2,2,trace,,
+Top,T038,437.617,1708.769,4,4,trace,,
+Front,F_EST_SYM004,200.99,569.959,0,0,symmetry_estimate,SYM004,estimated mirror projection; no traced Front node within tolerance
+Front,F_EST_SYM005,141.22,275.108,0,0,symmetry_estimate,SYM005,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM005,171.529,1292.687,0,0,symmetry_estimate,SYM005,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM006,304.683,468.122,0,0,symmetry_estimate,SYM006,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM006,310.427,1418.19,0,0,symmetry_estimate,SYM006,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM007,355.516,498.842,0,0,symmetry_estimate,SYM007,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM007,367.417,1507.631,0,0,symmetry_estimate,SYM007,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM009,305.617,771.784,0,0,symmetry_estimate,SYM009,estimated mirror projection; no traced Front node within tolerance
+Front,F_EST_SYM011,270.752,744.471,0,0,symmetry_estimate,SYM011,estimated mirror projection; no traced Front node within tolerance
+Front,F_EST_SYM012,368.044,665.552,0,0,symmetry_estimate,SYM012,estimated mirror projection; no traced Front node within tolerance
+Front,F_EST_SYM013,233.057,567.084,0,0,symmetry_estimate,SYM013,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM013,259.862,1501.531,0,0,symmetry_estimate,SYM013,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM014,231.34,681.37,0,0,symmetry_estimate,SYM014,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM014,255.618,1556.448,0,0,symmetry_estimate,SYM014,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM015,280.699,640.419,0,0,symmetry_estimate,SYM015,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM015,299.506,1546.335,0,0,symmetry_estimate,SYM015,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM016,346.555,588.1,0,0,symmetry_estimate,SYM016,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM016,363.393,1555.524,0,0,symmetry_estimate,SYM016,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM017,193.564,682.235,0,0,symmetry_estimate,SYM017,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM017,221.806,1503.0,0,0,symmetry_estimate,SYM017,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM018,189.186,689.963,0,0,symmetry_estimate,SYM018,estimated mirror projection; no traced Front node within tolerance
+Front,F_EST_SYM019,144.135,373.948,0,0,symmetry_estimate,SYM019,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM019,165.639,1340.497,0,0,symmetry_estimate,SYM019,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM020,206.368,520.085,0,0,symmetry_estimate,SYM020,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM020,212.893,1408.64,0,0,symmetry_estimate,SYM020,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM021,322.763,424.982,0,0,symmetry_estimate,SYM021,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM021,320.884,1376.643,0,0,symmetry_estimate,SYM021,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM022,330.403,409.765,0,0,symmetry_estimate,SYM022,estimated mirror projection; no traced Front node within tolerance
+Top,T_EST_SYM022,336.129,1331.592,0,0,symmetry_estimate,SYM022,estimated mirror projection; no traced Top node within tolerance
+Front,F_EST_SYM023,319.079,867.377,0,0,symmetry_estimate,SYM023,estimated mirror projection; no traced Front node within tolerance
+Front,F_EST_SYM024,309.195,840.024,0,0,symmetry_estimate,SYM024,estimated mirror projection; no traced Front node within tolerance
+Front,F_EST_SYM025,262.491,818.488,0,0,symmetry_estimate,SYM025,estimated mirror projection; no traced Front node within tolerance
+Front,F_EST_SYM026,255.486,798.354,0,0,symmetry_estimate,SYM026,estimated mirror projection; no traced Front node within tolerance

@@ -1,0 +1,33 @@
+physical_node_id,front_node,side_node,top_node,status,notes
+P001,F019,S017,T025,confirmed,user confirmed T025 = F019 = S017
+P002,F026,S025,T033,confirmed,user confirmed F026 = T033 = S025
+P003,F034,S032,T038,confirmed,user confirmed T038 = F034 = S032
+P004,F038,S036,,confirmed,user confirmed S036 = F038
+P005,F043,S038,,confirmed,user reaffirmed F043 = S038
+P006,F015,S013,,confirmed,user reaffirmed F015 = S013
+P007,F001,S001,T002,confirmed,user confirmed F001 = T002 = S001
+P008,F009,S008,T014,confirmed,user confirmed F009 = S008 = T014
+P009,F011,S010,T017,confirmed,user corrected mapping: T017 = F011 = S010; replaced previous F010 = S010
+P010,F004,,T012,confirmed,user confirmed F004 = T012; side mapping parked
+P011,F029,S027,T032,confirmed,user confirmed S027 = F029 = T032
+P012,F031,S028,T030,confirmed,user confirmed T030 = F031 = S028
+P013,F041,S035,T036,confirmed,user confirmed F041 = S035 = T036
+P014,F028,S026,T027,confirmed,user confirmed T027 = F028 = S026
+P015,F021,S021,T024,confirmed,user confirmed S021 = F021 = T024
+P016,F014,S014,T015,confirmed,user confirmed F014 = T015 = S014
+P017,F022,S022,T021,confirmed,user confirmed S022 = F022 = T021
+P018,F020,S018,T019,confirmed,user confirmed T019 = F020 = S018
+P019,F016,S016,T020,confirmed,user confirmed S016 = F016 = T020
+P020,F023,S023,T016,confirmed,user confirmed S023 = F023 = T016
+P021,F024,S024,,confirmed,user reaffirmed F024 = S024
+P022,F017,,T022,confirmed,user confirmed F017 = T022; side mapping parked
+P023,F010,,T018,confirmed,user confirmed F010 = T018; side mapping parked
+P024,F003,,T003,confirmed,user confirmed T003 = F003; side mapping parked
+P025,F002,,T008,confirmed,user confirmed F002 = T008; side mapping parked
+P026,F012,S012,T013,confirmed,user confirmed T013 = F012 = S012
+P027,F007,S004,T010,confirmed,user confirmed S004 = F007 = T010
+P028,F005,,T007,confirmed,user confirmed T007 = F005; side mapping parked
+P029,F039,S034,,confirmed,user confirmed S034 = F039
+P030,F037,S033,,confirmed,user confirmed S033 = F037
+P031,F035,S031,,confirmed,user confirmed F035 = S031
+P032,F032,S030,,confirmed,user confirmed S030 = F032

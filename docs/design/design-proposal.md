@@ -77,6 +77,21 @@ MVP non-goals:
 
 ## Cat Head Design Proposal
 
+Current visual reference:
+
+- [cat-head-reference-v1.png](../../assets/references/cat-head/cat-head-reference-v1.png)
+- [cat-head-reference-v3.png](../../assets/references/cat-head/cat-head-reference-v3.png) - preferred current visual/style reference.
+- [cat-head-reference-v4.png](../../assets/references/cat-head/cat-head-reference-v4.png) - preferred current fabrication/reference-sheet direction.
+
+Reference interpretation:
+
+| Reference | Role | Keep | Modify for MVP |
+|---|---|---|---|
+| `cat-head-reference-v1.png` | Early visual direction | Elegant face, copper facets, cyan eyes | Simplify neck/base and reduce whisker density |
+| `cat-head-reference-v2.png` | Access/mount thinking | Rear access plate, wire exit, practical module logic | Avoid the large visible rectangular base |
+| `cat-head-reference-v3.png` | Best beauty/style reference | Face silhouette, diffused glow, polished copper faceting | Simplify lower neck/base and reduce whiskers |
+| `cat-head-reference-v4.png` | Best fabrication reference | Front/side/rear views, rear access panel, hidden mount points, wire exit | Treat labels and dimensions as design intent, not exact CAD |
+
 ### Overall Direction
 
 The cat head should be a removable front module that rotates with the handlebars. It should feel like a faceted copper/rose-gold mask with controlled internal glow, not a soft costume head and not a heavy metal sculpture.
@@ -205,6 +220,35 @@ The first build should be intentionally rough:
 7. Hold or temporarily mount it near the handlebar/stem area.
 8. Photograph front, side, and three-quarter views.
 9. Decide whether to scale up/down before adding real lighting.
+
+Use `cat-head-reference-v1.png` as the current visual target, with these MVP modifications:
+
+- Simplify the neck/base into a compact hidden mount interface.
+- Reduce whiskers to roughly 6-9 flexible strands per side.
+- Use larger facets where possible so the shell can be cut from foamcore, cardboard, acrylic, or PETG.
+- Prefer diffused cheek/muzzle glow over visible LED matrix panels.
+- Add a rear access/wire-exit plan that is not visible from the front.
+
+Use `cat-head-reference-v3.png` and `cat-head-reference-v4.png` as the active pair:
+
+- `cat-head-reference-v3.png` defines the desired style and emotional read.
+- `cat-head-reference-v4.png` defines the practical module direction: front/side/rear references, rear access panel, wire exit, and hidden mount points.
+
+MVP build spec translated from V4:
+
+| Feature | MVP Target |
+|---|---|
+| Starting envelope | 14 in wide x 12 in tall x 8 in deep |
+| Structure | Cardboard, foamcore, or heavy cardstock low-poly shell |
+| Face finish | Copper/rose-gold mirror film or metallic test finish on selected facets |
+| Seam treatment | Dark seam lines, tape, paint, or shadow gaps to preserve facet definition |
+| Eyes | Two cyan/aqua diffused slanted eye shapes |
+| Face glow | 1-3 frosted translucent glowing facets, likely forehead/cheek/muzzle |
+| Whiskers | 6-9 flexible strands per side, exiting from cheek/muzzle area |
+| Rear service | Simple rear access panel or removable back area |
+| Wire exit | Lower rear grommet or protected cable exit |
+| Mount interface | Hidden rear/backplate points for temporary bracket and later final bracket |
+| Safety | Lightweight shell, no sharp whisker tips, safety tether for bike tests |
 
 Good MVP result:
 

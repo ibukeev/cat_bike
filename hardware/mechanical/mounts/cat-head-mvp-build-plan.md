@@ -14,6 +14,12 @@ This MVP is intentionally not the final playa-ready head. It should answer the i
 
 ## MVP Scope
 
+Current visual reference:
+
+- [cat-head-reference-v1.png](../../../assets/references/cat-head/cat-head-reference-v1.png)
+- [cat-head-reference-v3.png](../../../assets/references/cat-head/cat-head-reference-v3.png) - preferred current visual/style reference.
+- [cat-head-reference-v4.png](../../../assets/references/cat-head/cat-head-reference-v4.png) - preferred current fabrication/reference-sheet direction.
+
 ### Build
 
 - Cardboard, paper, or foamcore faceted cat head shell.
@@ -39,13 +45,54 @@ This MVP is intentionally not the final playa-ready head. It should answer the i
 | Step | Task | Done When |
 |---|---|---|
 | 1 | Choose origami/faceted cat PDF or pattern | Pattern file/link is saved or referenced. |
-| 2 | Build paper/cardboard/foamcore shell | Head exists at rough target scale. |
-| 3 | Add temporary finish | A few facets have mirror/copper/rose-gold treatment. |
-| 4 | Add temporary eyes | Eye openings/diffusers are visible. |
-| 5 | Add temporary whiskers | Whisker size and placement can be judged. |
-| 6 | Temporary mount to bike | Head can be held near handlebar/stem area. |
-| 7 | Clearance test | Full steering, brakes, headlight, cables, and rider sightline are checked. |
-| 8 | Photo review | Front and side photos are captured for iteration. |
+| 2 | Build paper prototype | Full-size paper head exists at rough target scale. |
+| 3 | Review paper prototype on bike | Front/side/rider-view photos confirm whether scale and silhouette are worth rebuilding. |
+| 4 | Build cardboard/foamcore shell | Head exists at rough target scale with stronger material. |
+| 5 | Add temporary finish | A few facets have mirror/copper/rose-gold treatment. |
+| 6 | Add temporary eyes | Eye openings/diffusers are visible. |
+| 7 | Add temporary whiskers | Whisker size and placement can be judged. |
+| 8 | Temporary mount to bike | Head can be held near handlebar/stem area. |
+| 9 | Clearance test | Full steering, brakes, headlight, cables, and rider sightline are checked. |
+| 10 | Photo review | Front and side photos are captured for iteration. |
+
+## Cardboard / Papercraft Approach
+
+The MVP should be treated as low-poly papercraft or tabbed cardboard construction, not pure origami.
+
+The accepted panel surface and reproducible workflow are tracked in [Cat Head Cardboard Fabrication V1](../fabrication/templates/cat-head-cardboard-fabrication-v1/README.md). Earlier paper-template experiments are local archive material rather than active design sources.
+
+Pure origami is not the right constraint for this head because the design needs:
+
+- A hollow internal volume for LEDs, wiring, and fiber-optic light engines.
+- A rear access panel.
+- A wire exit.
+- Hidden mount points or a backplate.
+- Different materials for mirrored opaque facets and translucent glowing facets.
+
+Recommended construction approach:
+
+1. Use the V4 fabrication reference as the shape guide.
+2. Start with a simplified low-poly cat mask pattern or existing papercraft cat template.
+3. Scale to the 14 in wide x 12 in tall x 8 in deep starting envelope.
+4. Build from cardstock first if the pattern is unknown.
+5. Rebuild in foamcore/cardboard after the shape feels right.
+6. Add tabs, tape, hot glue, or small internal strips as needed; the folds do not need to be mathematically pure.
+7. Leave the rear open or removable until LEDs, whisker routing, and the mount are understood.
+
+MVP simplification rules:
+
+- Use fewer, larger facets than the image shows.
+- Keep the eyes, ears, muzzle, and cheeks readable.
+- Do not model every small triangle from the AI reference.
+- Use temporary marked translucent facets before cutting final diffuser openings.
+- Keep the back practical even if the front is decorative.
+
+Done when:
+
+- A full-size cardboard/foamcore shell can be held at the bike handlebar/stem area.
+- The shell reads as the V3/V4 cat head from front and side.
+- Rear access, wire exit, and a possible mount area are physically visible.
+- Scale and clearance can be judged before adding real LEDs.
 
 ## Track 2: Temporary Electrical Support MVP
 
