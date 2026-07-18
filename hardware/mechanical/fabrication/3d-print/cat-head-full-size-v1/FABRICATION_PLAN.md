@@ -2,7 +2,7 @@
 
 ## Status
 
-- Current phase: Gate 1 — master geometry and panel-role review
+- Current phase: Gate 5 — full-size internal flange-tab and hidden-joint review
 - Locked height: 330 mm, chin to highest ear tip
 - Target completed head-module mass: at most 1.2 kg
 - Hard mass rejection limit: 1.5 kg
@@ -14,7 +14,7 @@ Create a serviceable, vibration-resistant 330 mm cat head using:
 
 - A hybrid ASA structural shell with integrated opaque facets.
 - Four body sections, two detachable ears, and a removable rear service cover.
-- Fourteen removable illuminated PETG facets plus two eye diffusers.
+- Twenty removable illuminated/light-transmitting facets plus two corrected eye diffusers.
 - Bolted joints; no glue as a primary structural connection.
 - Mechanical provisions for LEDs, wiring, seven whiskers per side, ventilation, and drainage.
 - Later integration of an aluminum backplate and two forward-projecting rails.
@@ -25,8 +25,11 @@ Create a serviceable, vibration-resistant 330 mm cat head using:
 - Use `accepted-panels-3d.obj` and `cardboard_panels.csv` as the authoritative geometry and facet-identity sources. Do not segment the solidified 100 mm STL.
 - Preserve the approved silhouette by uniformly scaling to 330 mm. Only the rear service plane, wall thickness, joints, and internal structure may change.
 - Design against a conservative MK4S envelope of 240 × 200 × 210 mm, allowing room for brim and placement tolerance.
-- Use 1.8 mm nominal ASA skin, 2.4–3.0 mm seam flanges/ribs, a 0.4 mm nozzle, and 0.20 mm layers.
-- Use black M3 screws with captive square nuts for major shell seams. Alignment keys carry shear; screws provide clamping.
+- Use 1.8 mm nominal ASA skin, 3.2 mm plain internal flange tabs where Gate 5
+  uses a seam joint, a 0.4 mm nozzle, and 0.20 mm layers.
+- Use black M3 through-bolts, washers, and loose M3 nyloc nuts for Gate 5
+  shell seams. The matching flange tabs provide the clamped interface; no
+  alignment keys are generated in this revision.
 - Use M2.5 screws and heat-set inserts for removable lightweight panels and retainers.
 - Export removable panels as both printable STL and flat DXF/SVG. Support 1.0–1.5 mm sheet/printed panels using a rear clamp and compressible gasket.
 - Keep opaque facets structural. Export their flat outlines for either mirror vinyl or thin non-structural cosmetic overlays.
@@ -36,11 +39,11 @@ Create a serviceable, vibration-resistant 330 mm cat head using:
 
 ### 1. Freeze the 330 mm master
 
-- [ ] Rebuild the surface from the accepted panel mesh while preserving panel IDs, original triangles/quads, eye openings, and zone metadata.
-- [ ] Scale to 303.8 mm wide × 330 mm tall while retaining the approved proportions.
-- [ ] Move the existing rear opening forward by no more than 10 mm if required to keep structural print sections within the safe printer envelope.
-- [ ] Generate front, side, top, and three-quarter comparison renders against the approved 100 mm proof.
-- [ ] Require all non-rear external vertices to match uniform scaling within 0.25 mm.
+- [x] Rebuild the surface from the accepted panel mesh while preserving panel IDs, original triangles/quads, eye openings, and zone metadata.
+- [x] Scale to 303.8 mm wide × 330 mm tall while retaining the approved proportions.
+- [x] Define a rear-service planning plane 10 mm forward of the source rear envelope; Gate 1 intentionally does not cut the exterior yet.
+- [x] Generate front, side, top, and isometric panel-role review views from the approved source surface.
+- [x] Verify all external vertices match the uniform scale transform exactly (0.0 mm generated residual).
 
 ### 2. Assign every facet a fabrication role
 
@@ -54,36 +57,59 @@ Create a versioned panel-role table assigning every source facet to exactly one 
 - `rear_service`
 - `internal_only`
 
-- [ ] Select fourteen glow facets, primarily symmetric pairs around the center forehead, cheeks, and lower muzzle.
-- [ ] Keep the eyes visually dominant and avoid illuminated ear panels.
-- [ ] Restore triangulated halves of an original planar quad to one four-corner insert when both halves share the same role.
-- [ ] Do not create bent multi-facet cosmetic inserts; multiple windows may share one internal LED cassette.
+- [x] Select twenty glow/light-transmitting panels from the purple annotations and completed mirrored side pairs; all former cyan candidates are opaque.
+- [x] Keep the eyes visually dominant and avoid illuminated ear panels.
+- [x] Record triangulated halves of an original planar quad as one four-corner removable-panel unit when both halves share the glow role.
+- [x] Keep each candidate glow unit to one source facet; do not create bent multi-facet cosmetic inserts.
+- [x] Review and approve the candidate role map before modeling any section seams or panel retainers. Approved 2026-07-15.
 
 **Approval Gate 1:** approve multiview renders showing opaque, glow, eye, and seam roles before joints are modeled.
 
+**Gate 1 decision:** approved. Freeze the 330 mm exterior, twenty purple
+glow/light-transmitting panels, corrected separate eye-material silhouettes,
+and two-facet mouth opening. A straight facial center seam is prohibited because
+it would cross approved centerline glow panels; the section-layout review must
+route around them or introduce a small center-front structural module.
+
 ### 3. Create printer-sized structural sections
 
-Start with six structural pieces:
+Start with seven structural pieces. The rear base is separate because the
+six-piece candidate left essentially no printer margin on one lower shell and
+mixed the future backplate interface into both lower halves:
 
 1. Left upper head
 2. Right upper head
 3. Left lower face/jaw
 4. Right lower face/jaw
-5. Left ear
-6. Right ear
+5. Rear base/backplate-interface section
+6. Left ear
+7. Right ear
 
-- [ ] Route the center and upper/lower seams along existing facet edges without crossing an eye or removable glow panel.
-- [ ] Confirm every oriented part fits 240 × 200 × 210 mm.
+- [x] Route the candidate center and upper/lower seams along existing facet edges without crossing an eye or removable glow panel.
+- [x] Confirm every candidate oriented part fits 240 × 200 × 210 mm using the Gate 2 orientation search; repeat in the slicer after walls/flanges are modeled.
+- [x] Visually approve and freeze the seven-section face-level topology. Approved 2026-07-15.
+- [x] Generate 1.8 mm inward shell baselines for all seven sections without moving the approved exterior.
+- [x] Repair pinched boundary vertex fans and verify every shell baseline is closed manifold.
+- [x] Re-run the printer-envelope orientation search after wall generation; all seven baselines fit.
+- [x] Close the two inherited bottom/throat openings integrally in the lower shells; reserve ventilation for protected rear-facing features.
 - [ ] If a part fails, move the belt seam to the next existing edge chain; do not distort the head or introduce an arbitrary visible planar cut.
-- [ ] Give body seams 12–15 mm internal flanges, keyed alignment, and M3 fasteners approximately every 50–70 mm.
-- [ ] Attach each ear with two tapered alignment features, an anti-rotation tongue, and two internally accessible M3 screws.
-- [ ] Reserve a rear service opening of at least 100 × 80 mm and a surrounding structural rim.
+- [x] Generate 18 pairs of matching 8 mm-deep, 3.2 mm-thick plain rectangular
+  internal flange tabs with M3 through-bolts, washers, loose nyloc nuts, and
+  shared-inner-bisector axes that recess every tab behind both exterior face
+  planes across every approved structural interface.
+- [x] Give each ear root a paired flange-tab connection with two internal M3 screws; no alignment dowel in this revision.
+- [x] Add 51 integral 2.5 mm-foot by 3 mm-high triangular gussets to every
+  source-panel connection internal to the four body shells, with at least
+  0.8 mm exterior recess and no separate reinforcement parts. Exclude flange
+  seams, exterior edges, rear base, and ears.
+- [x] Reserve a 100 × 80 mm rear service opening, a 10 × 10 mm internal rim, and lower structural tie rails.
 - [ ] Confirm every nut, screw, and panel retainer is reachable in the documented assembly order.
 
 ### 4. Validate assembly before full-size printing
 
-- [ ] Generate a 100 mm mechanical assembly model using the same six-section topology, regenerated miniature joints, M2 hardware, and color-coded dummy panels.
-- [ ] Generate full-size ASA/PETG coupons for the M3 body seam, captive nut pocket, ear root, M2.5 panel retainer, gasketed rabbet, and alignment keys.
+- [ ] Generate a 100 mm mechanical assembly model using the same seven-section topology, regenerated miniature joints, M2 hardware, and color-coded dummy panels.
+- [ ] Generate full-size ASA/PETG coupons for the M3 matching-tab body seam,
+  washer/nut access, ear root, M2.5 panel retainer, and gasketed rabbet.
 - [ ] Test clearance variants of 0.2, 0.3, 0.4, and 0.5 mm.
 - [ ] Select the smallest clearance that assembles by hand after cooling without sanding and has no more than 0.25 mm perceptible play.
 - [ ] Assemble and disassemble the miniature three times without damage.
@@ -103,7 +129,7 @@ Before freezing internal geometry, purchase or select and measure:
 
 Then add:
 
-- [ ] Fourteen independent glow windows and two eye diffusers.
+- [ ] Twenty independent glow windows and two eye diffusers.
 - [ ] Four to six removable internal LED cassettes serving groups of adjacent windows.
 - [ ] Replaceable eye-light carriers.
 - [ ] Seven rounded whisker ports per side and removable light-engine carriers.

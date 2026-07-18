@@ -45,3 +45,12 @@ Pull requests should include a short summary, testing performed, any hardware us
 ## Agent-Specific Instructions
 
 Before making file changes, align on intended behavior, scope, and constraints when the request is ambiguous. Keep edits focused, preserve user changes, and update this guide when repository tooling or structure changes.
+
+## Progress Preservation
+
+After each meaningful hardware-design, CAD, or generated-asset change, save a
+short resumable checkpoint to disk before handing off. Put it with the relevant
+design documentation and include: the current review/output files, accepted
+decisions and dimensions, validation performed and results, rejected or unsafe
+variants, the exact regeneration command, and the next physical-review steps.
+Update the checkpoint again whenever later work changes any of those facts.

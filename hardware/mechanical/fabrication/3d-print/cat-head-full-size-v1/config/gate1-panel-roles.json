@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "target_height_mm": 330.0,
+  "rear_service_plane_inset_mm": 10.0,
+  "eye_diffusers": [
+    {
+      "unit_id": "EYE_RIGHT",
+      "source_object_prefix": "insert_INSERT_EYE_RIGHT",
+      "description": "Superseded right-eye source placeholder; reference only and not rendered"
+    },
+    {
+      "unit_id": "EYE_LEFT",
+      "source_object_prefix": "insert_INSERT_EYE_LEFT",
+      "description": "Superseded left-eye source placeholder; reference only and not rendered"
+    }
+  ],
+  "glow_transmitting_panels": [
+    "TRI027", "TRI055", "TRI017", "TRI031", "TRI001", "TRI041",
+    "TRI002", "TRI032", "TRI003", "TRI042", "TRI004", "QUAD001",
+    "QUAD022", "MANQ001", "QUAD003", "QUAD005", "QUAD017", "QUAD031",
+    "QUAD021", "QUAD035"
+  ],
+  "mouth_opening_panels": ["TRI005", "TRI006"],
+  "eye_aperture_front_svg": [
+    [[322.34748, 229.32872], [300.82214, 258.30156], [265.07413, 272.88366], [273.79650, 238.78808]],
+    [[205.80703, 273.17588], [196.30112, 238.84755], [147.03125, 228.99772], [167.43947, 256.95946]]
+  ],
+  "review_notes": [
+    "This is a role-only review. No shell thickness, print-section split, seam flange, or mounting feature is present.",
+    "A selected quad remains one removable panel unit even though the accepted OBJ stores it as two triangles.",
+    "The rear-service plane is a planning reference only; it does not cut the Gate 1 exterior.",
+    "Only the panels marked purple in the annotated SVG are removable glow/light-transmitting panels; all former cyan candidates are opaque.",
+    "The eye silhouettes traced from the red annotations define the separate translucent eye material; the older cyan eye placeholders are not rendered."
+  ]
+}

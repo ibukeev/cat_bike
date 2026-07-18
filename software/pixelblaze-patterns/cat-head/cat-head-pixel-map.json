@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "module_id": "cat_head_330mm_v1",
+  "source_panel_role_file": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate1-panel-roles.json",
+  "pixel_type": "5 V RGB WS2812/SK6812-compatible",
+  "pixel_count": 52,
+  "max_current_per_pixel_ma": 60,
+  "theoretical_max_current_a": 3.12,
+  "brightness_caps": {
+    "commissioning": 0.2,
+    "riding": 0.35,
+    "show": 0.6,
+    "reserve": 0.15,
+    "absolute": 0.6
+  },
+  "connector": {
+    "family": "M12 A-coded 4-pin",
+    "minimum_environmental_rating": "IP67",
+    "minimum_contact_current_a": 4,
+    "pins": {
+      "1": "+5V",
+      "2": "RESERVED_ISOLATED",
+      "3": "GND",
+      "4": "DATA"
+    }
+  },
+  "segments": [
+    {
+      "id": "LEFT_WHISKERS",
+      "start": 0,
+      "count": 7,
+      "order": "top_to_bottom"
+    },
+    {
+      "id": "LEFT_WHISKER_RESERVED",
+      "start": 7,
+      "count": 1,
+      "enabled": false
+    },
+    {
+      "id": "LEFT_EYE",
+      "start": 8,
+      "count": 4,
+      "order": "inner_to_outer"
+    },
+    {
+      "id": "GLOW_FACETS",
+      "start": 12,
+      "count": 28,
+      "order": "gate1_pair_order_left_then_right"
+    },
+    {
+      "id": "RIGHT_EYE",
+      "start": 40,
+      "count": 4,
+      "order": "inner_to_outer"
+    },
+    {
+      "id": "RIGHT_WHISKERS",
+      "start": 44,
+      "count": 7,
+      "order": "top_to_bottom"
+    },
+    {
+      "id": "RIGHT_WHISKER_RESERVED",
+      "start": 51,
+      "count": 1,
+      "enabled": false
+    }
+  ],
+  "whiskers": {
+    "fiber_type": "bare side-emitting PMMA",
+    "fiber_diameter_mm": 2.0,
+    "ordered_length_m": 9.0,
+    "expected_delivery_date": "2026-07-16",
+    "sacrificial_coupon_cut_mm": 350,
+    "development_cut_mm": 320,
+    "minimum_internal_bend_radius_mm": 12,
+    "angle_reference": "degrees from outward horizontal; right mirrors left",
+    "left": [
+      {"id": "LW1", "pixel": 0, "visible_length_mm": 235, "fan_angle_deg": 18},
+      {"id": "LW2", "pixel": 1, "visible_length_mm": 250, "fan_angle_deg": 12},
+      {"id": "LW3", "pixel": 2, "visible_length_mm": 270, "fan_angle_deg": 6},
+      {"id": "LW4", "pixel": 3, "visible_length_mm": 285, "fan_angle_deg": 0},
+      {"id": "LW5", "pixel": 4, "visible_length_mm": 275, "fan_angle_deg": -6},
+      {"id": "LW6", "pixel": 5, "visible_length_mm": 255, "fan_angle_deg": -12},
+      {"id": "LW7", "pixel": 6, "visible_length_mm": 235, "fan_angle_deg": -18}
+    ],
+    "right": [
+      {"id": "RW1", "pixel": 44, "visible_length_mm": 235, "fan_angle_deg": 18},
+      {"id": "RW2", "pixel": 45, "visible_length_mm": 250, "fan_angle_deg": 12},
+      {"id": "RW3", "pixel": 46, "visible_length_mm": 270, "fan_angle_deg": 6},
+      {"id": "RW4", "pixel": 47, "visible_length_mm": 285, "fan_angle_deg": 0},
+      {"id": "RW5", "pixel": 48, "visible_length_mm": 275, "fan_angle_deg": -6},
+      {"id": "RW6", "pixel": 49, "visible_length_mm": 255, "fan_angle_deg": -12},
+      {"id": "RW7", "pixel": 50, "visible_length_mm": 235, "fan_angle_deg": -18}
+    ],
+    "reserved_pixels": [7, 51]
+  },
+  "eyes": [
+    {
+      "unit_id": "EYE_LEFT",
+      "pixels": [8, 9, 10, 11],
+      "order": "inner_to_outer",
+      "appearance": "uniform_frosted_glow"
+    },
+    {
+      "unit_id": "EYE_RIGHT",
+      "pixels": [40, 41, 42, 43],
+      "order": "inner_to_outer",
+      "appearance": "uniform_frosted_glow"
+    }
+  ],
+  "glow_facets": [
+    {
+      "pair_id": "GLOW_FOREHEAD_INNER",
+      "left": {"panel_id": "TRI019", "pixels": [12, 13]},
+      "right": {"panel_id": "TRI014", "pixels": [14, 15]}
+    },
+    {
+      "pair_id": "GLOW_FOREHEAD_UPPER",
+      "left": {"panel_id": "TRI047", "pixels": [16, 17]},
+      "right": {"panel_id": "TRI016", "pixels": [18, 19]}
+    },
+    {
+      "pair_id": "GLOW_FOREHEAD_OUTER",
+      "left": {"panel_id": "TRI055", "pixels": [20, 21]},
+      "right": {"panel_id": "TRI027", "pixels": [22, 23]}
+    },
+    {
+      "pair_id": "GLOW_CHEEK_UPPER",
+      "left": {"panel_id": "QUAD028", "pixels": [24, 25]},
+      "right": {"panel_id": "QUAD014", "pixels": [26, 27]}
+    },
+    {
+      "pair_id": "GLOW_CHEEK_LOWER",
+      "left": {"panel_id": "QUAD031", "pixels": [28, 29]},
+      "right": {"panel_id": "QUAD017", "pixels": [30, 31]}
+    },
+    {
+      "pair_id": "GLOW_MUZZLE_UPPER",
+      "left": {"panel_id": "TRI048", "pixels": [32, 33]},
+      "right": {"panel_id": "TRI020", "pixels": [34, 35]}
+    },
+    {
+      "pair_id": "GLOW_MUZZLE_LOWER",
+      "left": {"panel_id": "TRI042", "pixels": [36, 37]},
+      "right": {"panel_id": "TRI003", "pixels": [38, 39]}
+    }
+  ]
+}

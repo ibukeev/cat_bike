@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "temporary_panel_thickness_mm": 1.2,
+  "opaque_infill": {
+    "right_under_ear_loop": [5, 22, 23, 24, 6],
+    "left_under_ear_loop": [33, 34, 48, 47, 46],
+    "right_eye_outer_loop": [13, 16, 14, 15],
+    "left_eye_outer_loop": [40, 42, 41, 43],
+    "right_eye_inner_order": [2, 3, 0, 1],
+    "left_eye_inner_order": [0, 3, 2, 1]
+  },
+  "rear_service_opening": {
+    "width_mm": 100.0,
+    "height_mm": 80.0,
+    "center_x_mm": 0.0,
+    "center_y_mm": 255.0,
+    "center_z_mm": 95.0,
+    "cut_depth_mm": 80.0
+  },
+  "review_notes": [
+    "This is a coverage review assembly, not a set of fabrication-ready panel or joint files.",
+    "Purple temporary solids occupy every approved glow/light-transmitting opening.",
+    "Pale-cyan temporary eye solids use the corrected annotated silhouettes and the original eye carrier planes only for depth placement.",
+    "Opaque temporary backing panels close both rear/under-ear loops.",
+    "Opaque eye-surround rings close the original oversized eye openings so only the corrected eye shapes transmit light.",
+    "The red mouth opening and 100 x 80 mm rear service opening are the only intended large openings.",
+    "Rear ventilation and bottom drains are intentionally deferred until enclosure and joint coverage is approved."
+  ]
+}
