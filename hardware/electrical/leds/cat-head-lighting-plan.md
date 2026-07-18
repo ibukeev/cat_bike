@@ -2,127 +2,151 @@
 
 ## Purpose
 
-Define the draft lighting architecture for the Phase 2A removable cat head module.
+Define the locked lighting architecture for the Phase 2A removable 330 mm cat
+head module.
 
-This document covers eyes, illuminated facets, fiber-optic whisker light engines, wiring, and Pixelblaze segment behavior. Mechanical mounting is tracked separately in [Cat Head Mount Plan](../../mechanical/mounts/cat-head-mount-plan.md).
+This document covers eyes, illuminated facets, fiber-optic whisker light
+engines, wiring, and Pixelblaze segment behavior. Mechanical mounting is tracked
+separately in [Cat Head Mount Plan](../../mechanical/mounts/cat-head-mount-plan.md).
+
+The implementation sequence, physical approval gates, and acceptance criteria
+are controlled by the [330 mm Cat Head Lighting Development Plan](cat-head-lighting-development-plan.md).
 
 ## Current Design Direction
 
-- Cat head is a removable module.
-- Cat head rotates with the handlebars.
-- Preferred mount point is handlebar center / stem area.
+- Cat head is a removable module that rotates with the handlebars.
+- Head exterior is 330 mm chin-to-ear and 303.8 mm wide.
 - Head uses faceted copper/rose-gold/mirror visual language.
-- Whiskers use side-glow fiber optics lit by hidden LEDs inside the head.
-- Lighting should support the Bio-Luminescent Abyssinian identity without becoming harsh or distracting to the rider.
+- Fourteen removable facets and two eye inserts illuminate.
+- Seven side-glow fiber whiskers per side use one directly coupled pixel per
+  fiber.
+- Lighting supports the Bio-Luminescent Abyssinian identity without becoming
+  harsh or distracting to the rider.
 
 ## Lighting Zones
 
-| Zone | Visual Role | Draft Pixel Count | Notes |
+| Zone | Visual Role | Physical Pixels | Notes |
 |---|---|---:|---|
-| Eyes | Strong front identity and character | 8-16 | Bright cyan/aqua glow, possibly behind frosted diffuser. |
-| Facet glow panels | Bioluminescent face shimmer | 40-80 | Internal LEDs behind selected translucent facets. Not every facet needs to light. |
-| Whisker light engines | Fiber-optic whisker glow | 4-8 nominal, 16 high | Hidden LED clusters drive side-glow fiber bundles. |
+| Eyes | Strong front identity and character | 8 | Four RGB pixels behind each uniform frosted diffuser. |
+| Facet glow panels | Bioluminescent face shimmer | 28 | Two RGB pixels behind each of fourteen approved removable facets. |
+| Whisker light engines | Fiber-optic whisker glow | 16 | Two eight-pixel sticks; fourteen fibers illuminate and two pixels remain masked. |
 
-Draft nominal head estimate: 52-104 pixels.
+Locked head total: 52 physical pixels, with a conservative 3.12 A maximum at
+5 V and 60 mA per pixel.
 
 ## Whisker Architecture
 
-Use fiber optics, not LEDs directly along the whisker length.
+Use fiber optics, not LEDs installed along the whisker length.
 
-Recommended approach:
+Locked baseline:
 
-- Side-glow fiber strands exit through small holes on each side of the face.
-- Fiber bundles route back to hidden LED light engines inside the head.
-- One light engine can drive multiple fibers.
-- Use separate left/right groups if possible.
-- Fiber tips should be rounded, sanded smooth, or capped so they are not sharp.
-- Whiskers must remain flexible and must not contact hands, brake levers, cables, tire, or pedestrians during normal riding.
+- Use 2.0 mm bare side-emitting PMMA fiber, subject to the optical coupon gate.
+- Cut fourteen 320 mm development strands before final coupling and trimming.
+- Final visible lengths per side, top to bottom, are 235, 250, 270, 285, 275,
+  255, and 235 mm.
+- Initial fan angles are +18, +12, +6, 0, -6, -12, and -18 degrees.
+- Use one opaque eight-pixel carrier per cheek. Seven pixels couple directly to
+  seven fibers; the eighth pixel stays masked and renders black.
+- Hold polished fiber ends 0-0.5 mm from the LED surface in isolated optical
+  cells. Retain fibers mechanically without adhesive on their optical faces.
+- Use rounded, grommeted shell exits, at least a 12 mm internal bend radius, and
+  rounded soft-capped external tips.
+- Whiskers must not contact hands, brake levers, cables, tire, headlight, rider,
+  or pedestrians during normal riding.
 
-Possible control groups:
-
-| Group | Pixel Count | Behavior |
-|---|---:|---|
-| Left whiskers | 2-4 | Breathing, shimmer, or subtle traveling pulse. |
-| Right whiskers | 2-4 | Mirrored or offset from left side. |
-| Optional center/nose glow | 1-2 | Can tie whiskers into face lighting. |
+One-end injection changes a whole strand at once. Patterns may sweep across the
+seven independently controlled whiskers but cannot produce a traveling pulse
+along a single fiber.
 
 ## Eye Architecture
 
-Options:
-
-- Small pixel cluster behind frosted acrylic/PETG eye diffuser.
-- Short dense strip segment behind each eye.
-- Small module/ring only if it fits the faceted style.
+Each eye uses four densely spaced 5 V RGB pixels on a replaceable carrier behind
+a uniform frosted PETG diffuser. A black light cup prevents spill into adjacent
+facets and a reflective inner surface improves mixing. Full-size coupons compare
+1.0 and 1.5 mm diffuser material at 20, 25, and 30 mm LED setbacks.
 
 Behavior:
 
-- Default riding mode: steady cyan/aqua glow with subtle breathing.
-- Show mode: slow blink, shimmer, or gaze-like pulse.
+- Riding mode: steady cyan/aqua glow with subtle breathing.
+- Parked/show mode: brighter glow with a slow whole-eye blink.
+- Reserve mode: dim steady aqua.
 - Avoid fast strobe or high brightness near the rider.
 
 ## Facet Glow Architecture
 
-Not every facet should light. The head should mix:
+Exactly fourteen Gate 1 facets illuminate. The head mixes:
 
 - Opaque mirrored copper/rose-gold facets.
 - Translucent frosted facets with internal glow.
 - Dark or shadowed facet lines for structure.
 
-Lighting should come from inside the head:
+Lighting uses:
 
-- Short LED strip pieces or small pixel modules.
-- Diffused through frosted plastic or translucent film.
-- Mounted so individual raw LEDs are not directly visible unless intentionally used as pixel texture.
+- Two-pixel sections on four to six removable internal cassettes.
+- Frosted PETG selected through full-size optical coupons.
+- Opaque baffles so each approved panel remains visually distinct.
+- Enough LED setback that raw pixels are not visible from one metre.
 
 ## Connector and Wiring
 
-Preferred head connector:
+Use one IP67 M12 A-coded four-pin quick-disconnect rated for at least 4 A per
+contact near the handlebar/stem area. Use recessed/female powered contacts on
+the bike side, a tethered cap, and strain relief on both sides.
 
-- Waterproof 4-pin or 5-pin connector.
-- Quick-disconnect near handlebar/stem area.
-- Strain relief on both bike-side and head-side wiring.
+| M12 Pin | Typical Wire Color | Signal |
+|---:|---|---|
+| 1 | Brown | +5 V |
+| 2 | White | Reserved and isolated |
+| 3 | Blue | Ground |
+| 4 | Black | Pixel data |
 
-Minimum pins:
+Use an 18 AWG 5 V/ground path, a 4 A branch fuse, at least 1,000 uF of bulk
+capacitance at the head entrance, parallel module power, and serial pixel data.
 
-| Pin | Signal |
-|---|---|
-| 1 | +5V |
-| 2 | GND |
-| 3 | DATA |
-| 4 | Spare / future second data line / extra ground |
+## Pixelblaze Segment Map
 
-Use a capped connector on the bike harness when the head is removed.
-
-## Pixelblaze Segment Draft
-
-| Segment | Physical Zone | Status |
+| Local Range | Physical Zone | Order |
 |---|---|---|
-| S5A | Eyes | Draft |
-| S5B | Facet glow panels | Draft |
-| S5C | Fiber-optic whisker light engines | Draft |
+| H00-H06 | Left whiskers | Top to bottom |
+| H07 | Left reserved carrier pixel | Always black |
+| H08-H11 | Left eye | Inner to outer |
+| H12-H39 | Fourteen glow facets | Two pixels per Gate 1 panel |
+| H40-H43 | Right eye | Inner to outer |
+| H44-H50 | Right whiskers | Top to bottom |
+| H51 | Right reserved carrier pixel | Always black |
 
-If using one Pixelblaze data output, the cat head becomes a reserved range in the main pixel chain. If wiring becomes awkward, the available Pixelblaze Output Expander can be reconsidered, but it is not part of the Phase 1/first-head plan.
+The machine-readable allocation is stored in
+`software/pixelblaze-patterns/cat-head/cat-head-pixel-map.json`. The complete
+head remains the S5 range and terminating module on the initial single
+Pixelblaze output. Its absolute whole-bike offset is assigned after preceding
+zones are finalized.
 
 ## Mode Behavior
 
 | Mode | Eyes | Facets | Whiskers |
 |---|---|---|---|
-| Riding | Steady/breathing cyan-aqua | Low brightness shimmer | Gentle breathing |
-| Parked/show | Brighter glow, slow blink/pulse | Richer aqua/violet shimmer | Traveling pulse or shimmer |
-| Low-power reserve | Dim steady eyes | Off or very dim | Off or very dim |
+| Riding | Steady/breathing cyan-aqua | Low brightness shimmer | Slow mirrored fan wave |
+| Parked/show | Brighter glow and slow whole-eye blink | Richer aqua/violet/magenta shimmer | Mirrored or offset fan sweep |
+| Low-power reserve | Dim steady eyes | Off | Off |
+
+Brightness caps remain 35% riding, 60% parked/show, 15% reserve, and 60%
+absolute.
 
 ## Safety and Service Notes
 
 - No high-brightness strobe aimed at rider or pedestrians.
-- Keep LEDs accessible through a removable back or access panel.
-- Keep electronics inside the head protected from dust and moisture.
-- Add a safety tether for the head module.
-- Bench test head lighting before mounting to the bike.
+- Keep every carrier and cassette accessible through the removable rear cover.
+- Protect electronics from dust and moisture and preserve downward drainage.
+- Add a safety tether for the complete head module.
+- Bench test the complete head before mounting it to the bike.
+- Do not mark a lighting gate complete until its measurements and photographs
+  are recorded in the validation report.
 
-## Open Questions
+## Remaining Measurement Gates
 
-- Exact eye shape and diffuser material.
-- Which facets are translucent and which are mirrored.
-- Exact fiber strand count per side.
-- Exact connector family: M8/M12 vs waterproof LED pigtail style.
-- Final pixel order inside the head.
+- Record purchased fiber and LED part numbers and measured dimensions.
+- Select final eye/facet diffuser material and setback from full-size coupons.
+- Validate fiber preparation, coupling efficiency, retention, and tip treatment.
+- Verify full-white current, voltage drop, connector heating, and data integrity.
+- Verify complete-head service access, environmental performance, night
+  appearance, steering clearance, and whisker span on the bike.

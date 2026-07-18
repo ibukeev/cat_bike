@@ -1,0 +1,113 @@
+{
+  "schema_version": 6,
+  "printer_envelope_mm": [240.0, 200.0, 210.0],
+  "orientation_step_degrees": 15,
+  "shell_wall_thickness_mm": 1.8,
+  "joint_system": {
+    "module_max_spacing_mm": 60.0,
+    "module_length_mm": 34.0,
+    "flange_tab_thickness_mm": 3.2,
+    "flange_tab_depth_mm": 8.0,
+    "flange_shell_overlap_mm": 1.2,
+    "flange_face_clearance_mm": 0.3,
+    "minimum_tab_exterior_recess_mm": 0.25,
+    "m3_clearance_diameter_mm": 3.4,
+    "boolean_cut_extension_mm": 2.0,
+    "minimum_usable_seam_edge_mm": 22.0
+  },
+  "internal_panel_ribs": {
+    "target_sections": [
+      "left_lower_face",
+      "left_upper_head",
+      "right_lower_face",
+      "right_upper_head"
+    ],
+    "cross_section": "triangular",
+    "foot_width_mm": 2.5,
+    "rib_height_mm": 3.0,
+    "edge_inset_mm": 0.5,
+    "end_setback_mm": 6.0,
+    "junction_overlap_mm": 1.0,
+    "junction_minimum_angle_deg": 25.0,
+    "junction_maximum_angle_deg": 150.0,
+    "shell_overlap_mm": 1.0,
+    "minimum_exterior_recess_mm": 0.25
+  },
+  "integrated_joint_ownership": {
+    "left_ear__left_upper_head": {
+      "owner": "left_upper_head",
+      "receiver": "left_ear"
+    },
+    "left_lower_face__left_upper_head": {
+      "owner": "left_lower_face",
+      "receiver": "left_upper_head"
+    },
+    "left_lower_face__rear_base": {
+      "owner": "left_lower_face",
+      "receiver": "rear_base"
+    },
+    "left_lower_face__right_lower_face": {
+      "owner": "left_lower_face",
+      "receiver": "right_lower_face"
+    },
+    "left_upper_head__right_upper_head": {
+      "owner": "left_upper_head",
+      "receiver": "right_upper_head"
+    },
+    "rear_base__right_lower_face": {
+      "owner": "right_lower_face",
+      "receiver": "rear_base"
+    },
+    "right_ear__right_upper_head": {
+      "owner": "right_upper_head",
+      "receiver": "right_ear"
+    },
+    "right_lower_face__right_upper_head": {
+      "owner": "right_lower_face",
+      "receiver": "right_upper_head"
+    }
+  },
+  "validation": {
+    "minimum_flange_retained_volume_ratio": 0.7,
+    "maximum_flange_retained_volume_ratio": 0.99,
+    "minimum_flange_projected_length_ratio": 0.85,
+    "minimum_hidden_hardware_exterior_skin_mm": 1.5,
+    "minimum_shell_volume_ratio_vs_gate3": 0.9
+  },
+  "rear_service_opening": {
+    "width_mm": 100.0,
+    "height_mm": 80.0,
+    "center_x_mm": 0.0,
+    "center_y_mm": 255.0,
+    "center_z_mm": 95.0,
+    "cut_depth_mm": 80.0,
+    "rim_width_mm": 10.0,
+    "rim_depth_mm": 10.0,
+    "rim_center_y_mm": 263.0,
+    "rim_tie_length_mm": 65.0,
+    "rim_tie_x_offset_mm": 35.0
+  },
+  "excluded_joint_face_pairs": [
+    ["TRI008", "TRI007"]
+  ],
+  "fasteners": {
+    "body": "Internally accessed M3 through-bolts with washers and M3 nyloc nuts through matched flange tabs",
+    "ear": "Two internally accessed M3 through-bolts with washers and M3 nyloc nuts per matched ear-root tab pair",
+    "threadlocker": "medium-strength removable threadlocker only on metal-to-metal threads"
+  },
+  "deferred": [
+    "rear bike connector flange",
+    "aluminum backplate and rails",
+    "LED cassette attachment points",
+    "removable rear service cover and gasket",
+    "ventilation and drains"
+  ],
+  "review_notes": [
+    "Gate 5 is a full-size internal flange-tab candidate and must be physically validated with a 100 mm assembly and full-size coupons before production printing.",
+    "Each matching flange-tab pair and every light triangular rib on an internal source-panel connection is printed as part of its shell; Gate 5 exports no separate printed joiners.",
+    "Triangular internal panel ribs are limited to left_lower_face, left_upper_head, right_lower_face, and right_upper_head. They do not run along inter-shell flange seams, outer edges, the rear base, or either ear.",
+    "All M3 through-bolts, washers, and loose nyloc nuts are inside the head; the approved exterior has no fastener holes.",
+    "The rear-base section includes the 100 x 80 mm service opening and an integrated internal rim so final internal fasteners remain reachable.",
+    "The bike connector flange and rail load path remain deferred."
+  ]
+}

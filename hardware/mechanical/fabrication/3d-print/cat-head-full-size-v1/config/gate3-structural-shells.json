@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "wall_thickness_mm": 1.8,
+  "solidify_offset": -1.0,
+  "use_even_offset": false,
+  "printer_envelope_mm": [240.0, 200.0, 210.0],
+  "orientation_step_degrees": 15,
+  "bottom_closure_faces": {
+    "right_lower_face": [
+      [4, 26, 28]
+    ],
+    "left_lower_face": [
+      [32, 50, 52]
+    ]
+  },
+  "expected_surface_components": {
+    "right_upper_head": 1,
+    "left_upper_head": 1,
+    "right_lower_face": 2,
+    "left_lower_face": 2,
+    "rear_base": 1,
+    "right_ear": 1,
+    "left_ear": 1
+  },
+  "review_notes": [
+    "Wall thickness is generated inward using a stable normal offset; the approved exterior vertices remain unchanged.",
+    "This baseline closes exposed section and panel-window boundaries with 1.8 mm rim walls.",
+    "The center-split bottom halves are joined to their lower shells by the lower-shell closure geometry; only the eye-adjacent opaque islands remain separate and require internal frame ribs.",
+    "The mirrored bottom/throat openings inherited from the accepted surface are closed integrally by the lower shells.",
+    "Ventilation is reserved for protected rear-facing features; bottom drainage will use small deliberate holes rather than an open throat.",
+    "Seam flanges, keys, fastener pockets, and ear-root hardware are not included yet."
+  ]
+}

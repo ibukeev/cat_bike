@@ -6,7 +6,7 @@ Define the draft Pixelblaze controller setup for the Cat Bike LED installation.
 
 ## Current Decisions
 
-- Use one Pixelblaze controller.
+- Use one Pixelblaze V3 Standard-compatible controller.
 - Do not use multiple controllers for this bike unless future complexity forces it.
 - Mount the controller near the battery/power distribution enclosure, protected from dust, moisture, vibration, and cargo impacts.
 - Use one data output initially.
@@ -71,7 +71,7 @@ The final order must be documented in the LED segment map before writing zone-sp
 | S2 | Rear rack rib accents | Phase 1 | Draft |
 | S3 | Basket underside glow | Phase 1 | Draft |
 | S4 | Ground underglow | Phase 1 | Draft |
-| S5 | Cat head facets / eyes / whisker light engines | Phase 2A | Reserved |
+| S5 | 52-pixel cat head: whiskers, eyes, and fourteen glow facets | Phase 2A | Local map locked; absolute offset pending |
 | S6 | Tail | Phase 2B | Reserved |
 | S7 | Body panels | Phase 3 | Reserved |
 | S8 | Optional wheels | Phase 4 | Deferred |
@@ -84,7 +84,7 @@ Use it later only if:
 
 - The physical data wiring becomes awkward with one output.
 - Body panels need separate data paths.
-- The cat head becomes complex enough to justify a separate output.
+- A measured full-harness test shows that the terminating 52-pixel cat head cannot run reliably on the initial output.
 - Refresh rate or pixel count becomes a real limitation.
 
 ## Mode Plan
@@ -97,8 +97,8 @@ Use it later only if:
 
 ## Open Items
 
-- Confirm exact Pixelblaze model.
+- Acquire and configure the selected Pixelblaze V3 Standard-compatible controller.
 - Confirm controller power input plan.
-- Confirm final physical data order after LED locations are measured.
-- Create actual Pixelblaze segment map once pixel counts are known.
+- Assign the absolute S5 start offset after preceding whole-bike zones are measured.
+- Integrate the locked head-local 0-51 map into the whole-bike segment map.
 - Bench test current draw and brightness caps before bike installation.

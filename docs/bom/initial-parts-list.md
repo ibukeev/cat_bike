@@ -8,15 +8,15 @@ Track candidate parts for the Bio-Luminescent Abyssinian Cat Bike. This is a pla
 
 | Item | Qty | Status | Notes |
 |---|---:|---|---|
-| Pixelblaze controller | 1 | Needed | Confirm exact model and output needs. |
-| Addressable LEDs | TBD | Needed | Tentative system voltage: 5 V addressable LEDs. Choose strip density and waterproofing. |
+| Pixelblaze V3 Standard-compatible controller | 1 | Selected / needed | One central controller and one initial data output. |
+| Cat-head addressable LEDs | 52 | Inventory check | 5 V RGB WS2812/SK6812-compatible: 16 whisker, 8 eye, and 28 facet pixels. Existing parts may be used when protocol and voltage match. |
 | 12 V LiFePO4 battery | 1 | Recommended | Baseline: 20 Ah / about 256 Wh. Consider 30 Ah / about 384 Wh if mounting works. |
 | 12 V LiFePO4 charger | 1 | Recommended | Use charger intended for 12 V / 4S LiFePO4 batteries, typically 14.4-14.6 V output. 5 A is a practical default for 20 Ah. |
 | 12 V to 5 V buck converter | 1 | Needed | Size for Phase 1 plus future expansion; likely 5 V 20-30 A class depending on final branch plan. |
 | Fuse holder and fuses | TBD | Needed | Size after power estimate. |
 | Master switch or emergency disconnect | 1 | Needed | Must be reachable. |
 | XT60 connector pair | TBD | Needed | Battery/main 12 V connector decision. |
-| Waterproof LED branch connectors | TBD | Candidate | Compare M8/M12 waterproof circular connectors vs 3-pin 18 AWG waterproof LED pigtails. |
+| Cat-head M12 A-coded 4-pin connector pair and cap | 1 set | Selected / buy after coupons | IP67 and at least 4 A/contact; temporary connectors are acceptable for bench work. |
 | Wire | TBD | Needed | Gauge depends on current and run length. |
 | Heat shrink and sleeving | TBD | Needed | Dust and strain relief. |
 
@@ -26,12 +26,32 @@ Track candidate parts for the Bio-Luminescent Abyssinian Cat Bike. This is a pla
 |---|---:|---|---|
 | Cat mask/head base | 1 | Needed | Ready-made or fabricated. |
 | Copper/rose-gold finish material | TBD | Needed | Paint, film, or metallic panels. |
-| Translucent diffuser material | TBD | Needed | For facets, panels, eyes, or body glow. |
-| Side-glow fiber-optic strands | TBD | Needed | For whiskers; driven by hidden LEDs inside cat head. |
-| Hidden whisker LED light engines | TBD | Needed | Small 5 V LED clusters or pixels inside cat head to light fiber bundles. |
+| Frosted PETG diffuser samples | 1.0 and 1.5 mm | Needed for Gate L1 | Compare sheet and printed samples at 20, 25, and 30 mm setback. |
+| Bare 2.0 mm side-emitting PMMA fiber | 9 m | Ordered; due 2026-07-16 | User-confirmed order. Reserve one sacrificial coupon length before cutting fourteen 320 mm development strands. |
+| Eight-pixel RGB whisker light engines | 2 | Inventory check | One 5 V WS2812/SK6812-compatible stick per cheek; seven direct-coupled fibers and one masked pixel. |
 | Tail structure material | 1 | Needed | Flexible or rigid TBD. |
 | Mounting brackets | TBD | Needed | For cat head, tail, controller, battery, LEDs. |
 
+
+## Cat Head Lighting Prototype
+
+Use existing parts when they meet the listed interface. Record manufacturer,
+part number, measured dimensions, and quantity before Gate L1 approval.
+
+| Prototype Item | Qty | Timing | Notes |
+|---|---:|---|---|
+| Bare 2.0 mm side-glow PMMA fiber | 9 m | Ordered; due 2026-07-16 | Critical-path material secured for the first one-pixel/one-fiber coupon, cheek coupon, final strands, and repair stock. |
+| Optional 1.5 mm and 3.0 mm side-glow samples | 1 m each | Optional now | Compare flexibility and brightness without delaying the 2.0 mm baseline. |
+| 5 V addressable RGB pixel modules or strip | At least 16 pixels | Verify now | Existing WS2812/SK6812/NeoPixel parts are acceptable for whisker coupons. |
+| Dense 5 V RGB eye pixels | 8 pixels | Verify before eye coupon | Four pixels per eye. |
+| 5 V RGB facet pixels | 28 pixels | Verify before facet cassettes | Two pixels per approved glow panel. |
+| Current-limited 5 V bench supply | 2 A coupon / 5 A full head | Verify now | Temporary USB or bench power is acceptable for the first optical coupon. |
+| 1,000 uF capacitor, at least 10 V | 1 plus spare | Before full-head wiring | Install across 5 V and ground at the head entrance. |
+| Temporary 3-wire connectors | As needed | Use existing | Bench-only 5 V, ground, and data connections; M12 is not required for Gate L1. |
+| Black heat-shrink or opaque coupling tube | Assorted | Before fiber arrives | Blocks light leakage around temporary LED-to-fiber couplers. |
+| Fresh razor or POF cutter and fine abrasive | 1 set | Before fiber arrives | Produce square input faces and safely rounded external tips. |
+| TPU/silicone grommet and clear tip-cap samples | Assorted | During Gate L1 | Validate port abrasion protection and non-pokey external tips. |
+| IP67 M12 A-coded 4-pin connector and cap | 1 set | After optical coupons | Purchase only after confirming cable gauge, routing, and panel-mount geometry. |
 ## Mechanical and Safety
 
 | Item | Qty | Status | Notes |
@@ -58,7 +78,7 @@ Track candidate parts for the Bio-Luminescent Abyssinian Cat Bike. This is a pla
 - Dedicated LED battery vs bike battery tap. Decision: dedicated LED battery only; do not touch bike battery.
 - Battery type. Recommendation: standalone 12 V LiFePO4, one main battery, 20 Ah baseline or 30 Ah if mounting works.
 - Battery/main connector. Decision: XT60.
-- Removable LED branch connectors. Options: M8/M12 waterproof circular connectors or 3-pin 18 AWG waterproof LED pigtails.
+- Cat-head connector. Decision: IP67 M12 A-coded four-pin, at least 4 A/contact; purchase after optical coupons and routing confirmation.
 - Cat head construction method.
-- Whisker lighting method. Decision: side-glow fiber optics lit by hidden LEDs.
+- Whisker lighting method. Decision: fourteen individually addressable 2.0 mm side-glow fibers, one pixel per fiber.
 - Whether wheel lighting is first phase or deferred.

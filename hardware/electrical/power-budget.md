@@ -9,12 +9,12 @@ Estimate LED current, battery needs, fuse sizing, and runtime for the Cat Bike L
 - Controller: Pixelblaze or Pixelblaze-compatible setup.
 - Main visual palette: cyan/aqua/magenta/violet with brightness limits.
 - Bike use case: Burning Man night riding with a lower-power riding mode and brighter parked/show mode.
-- Tentative electrical decision: use 5 V addressable LEDs as the primary LED system.
+- Electrical decision: use 5 V addressable RGB LEDs as the primary LED system.
 - Electrical decision: use a dedicated LED battery only. Do not tap or modify the bike traction battery.
 - Phase 1 should include independent LED zones and reserved interfaces for later head, tail, panel, and wheel zones.
 - Battery and power distribution should be sized for the likely whole-bike build, not just the first installed Phase 1 zones.
 - Phase 1 should reserve fused branch capacity and connectors for later cat head, tail, and body panel loads.
-- Whiskers are planned as side-glow fiber optics lit by hidden LEDs inside the cat head, not LEDs installed along each whisker.
+- The 330 mm cat head uses fourteen individually controlled side-glow fibers, eight eye pixels, and twenty-eight facet pixels; see the [formal lighting development plan](leds/cat-head-lighting-development-plan.md).
 
 ## Phase 1 LED Count Estimate
 
@@ -39,9 +39,9 @@ The power system should support later expansion without rebuilding the main batt
 | Phase 1 | Rear rack rib accents | 40 | 70 | 100 | Active first build. |
 | Phase 1 | Basket underside glow | 30 | 50 | 80 | Active first build. |
 | Phase 1 | Ground underglow | 30 | 50 | 80 | Active first build; may overlap with frame/rack LEDs. |
-| Phase 2A | Cat head facets | 40 | 80 | 140 | Depends on mask/head size and diffuser method. |
-| Phase 2A | Eyes | 8 | 16 | 32 | Small but visually important. |
-| Phase 2A | Fiber-optic whisker light engines | 4 | 8 | 16 | Hidden LEDs drive side-glow fiber bundles; lower load than LED whiskers. |
+| Phase 2A | Cat head facets | 28 | 28 | 28 | Locked: two pixels behind each of fourteen approved facets. |
+| Phase 2A | Eyes | 8 | 8 | 8 | Locked: four pixels behind each uniform eye diffuser. |
+| Phase 2A | Fiber-optic whisker light engines | 16 | 16 | 16 | Locked: two eight-pixel sticks, fourteen direct-coupled fibers, two masked pixels. |
 | Phase 2B | Tail | 30 | 80 | 160 | Depends on length and density. |
 | Phase 3 | Body panels | 80 | 180 | 360 | Depends heavily on panel geometry and diffuser strategy. |
 | Phase 4 | Optional wheels | 0 | 0 | 240 | Deferred; do not size baseline requirement around this unless explicitly included. |
@@ -52,9 +52,9 @@ The power system should support later expansion without rebuilding the main batt
 | Phase 1 nominal | Installed starter zones only | 300 |
 | Phase 1 high | Installed starter zones only | 440 |
 | Whole bike low, no wheels | Phase 1 + head + eyes + fiber whiskers + tail + modest panels | 346 |
-| Whole bike nominal, no wheels | Phase 1 + head + eyes + fiber whiskers + tail + panels | 664 |
-| Whole bike high, no wheels | Phase 1 + head + eyes + fiber whiskers + tail + dense panels | 1,108 |
-| Whole bike high, with wheels | High whole-bike build plus optional wheels | 1,348 |
+| Whole bike nominal, no wheels | Phase 1 + locked 52-pixel head + tail + panels | 612 |
+| Whole bike high, no wheels | Phase 1 + locked 52-pixel head + tail + dense panels | 972 |
+| Whole bike high, with wheels | High whole-bike build plus optional wheels | 1,212 |
 
 ## Current Estimate Formula
 
@@ -85,11 +85,22 @@ These estimates assume 5 V addressable RGB pixels at 60 mA maximum per pixel. Re
 | Phase 1 nominal | 300 | 18.0 A | 2.3 A | 4.3 A |
 | Phase 1 high | 440 | 26.4 A | 3.3 A | 6.3 A |
 | Whole bike low, no wheels | 346 | 20.8 A | 2.6 A | 5.0 A |
-| Whole bike nominal, no wheels | 664 | 39.8 A | 5.0 A | 9.6 A |
-| Whole bike high, no wheels | 1,108 | 66.5 A | 8.3 A | 16.0 A |
-| Whole bike high, with wheels | 1,348 | 80.9 A | 10.1 A | 19.4 A |
+| Whole bike nominal, no wheels | 612 | 36.7 A | 4.6 A | 8.8 A |
+| Whole bike high, no wheels | 972 | 58.3 A | 7.3 A | 14.0 A |
+| Whole bike high, with wheels | 1,212 | 72.7 A | 9.1 A | 17.5 A |
 
-Planning implication: design the main distribution so it can eventually handle roughly 10-17 A practical whole-bike current without wheel effects, while fusing branches so Phase 1 can run safely at a smaller installed load.
+Planning implication: design the main distribution so it can eventually handle roughly 10-15 A practical whole-bike current without wheel effects, while fusing branches so Phase 1 can run safely at a smaller installed load.
+
+### Locked Cat Head Load
+
+| Cat Head Zone | Pixels | Theoretical Maximum | Maximum at 35% Riding Cap | Maximum at 60% Show Cap |
+|---|---:|---:|---:|---:|
+| Facets | 28 | 1.68 A | 0.59 A | 1.01 A |
+| Eyes | 8 | 0.48 A | 0.17 A | 0.29 A |
+| Whisker carriers | 16 | 0.96 A | 0.34 A | 0.58 A |
+| **Head total** | **52** | **3.12 A** | **1.09 A** | **1.87 A** |
+
+Use the full 3.12 A value for wire, connector, and bench-load validation. Normal operation remains brightness-limited.
 
 ## Battery Energy Scenarios
 
@@ -115,9 +126,9 @@ Approximate runtime at practical current:
 |---|---:|---:|---:|---:|---:|
 | Phase 1 nominal, conservative | 2.3 A | 11.5 W | 10.4 hr | 17.4 hr | 27.8 hr |
 | Phase 1 nominal, brighter | 4.3 A | 21.5 W | 5.6 hr | 9.3 hr | 14.9 hr |
-| Whole bike nominal, conservative | 5.0 A | 25.0 W | 4.8 hr | 8.0 hr | 12.8 hr |
-| Whole bike nominal, brighter | 9.6 A | 48.0 W | 2.5 hr | 4.2 hr | 6.7 hr |
-| Whole bike high, brighter | 16.0 A | 80.0 W | 1.5 hr | 2.5 hr | 4.0 hr |
+| Whole bike nominal, conservative | 4.6 A | 23.0 W | 5.2 hr | 8.7 hr | 13.9 hr |
+| Whole bike nominal, brighter | 8.8 A | 44.0 W | 2.7 hr | 4.5 hr | 7.3 hr |
+| Whole bike high, brighter | 14.0 A | 70.0 W | 1.7 hr | 2.9 hr | 4.6 hr |
 
 ## Battery Type Options
 
@@ -210,7 +221,7 @@ Tentative branch strategy:
 | Lower frame spine | Main Phase 1 frame lighting | 5 A | Size final fuse to actual wire and measured load. |
 | Fork/front | Fork gill accents and future front interface | 2-3 A | Keep front wiring light and protected. |
 | Rear rack/basket | Rear rack ribs and basket underside glow | 5 A | May be split later if basket and rack are removable separately. |
-| Cat head reserved | Future head facets, eyes, whisker light engines | 3-5 A | Use quick disconnect and strain relief. |
+| Cat head | Locked 52-pixel head load | 4 A | 18 AWG power path, M12 four-pin disconnect, and measured full-load validation. |
 | Tail reserved | Future illuminated tail | 3-5 A | Use quick disconnect and safety tether. |
 | Body panels reserved | Future panel-integrated LEDs | 5-10 A | Final value depends on panel LED count. |
 
@@ -249,7 +260,7 @@ Removable LED zone connector options:
 | Connector Type | Pros | Cons | Best Use | Status |
 |---|---|---|---|---|
 | 3-pin 18 AWG waterproof LED pigtails | Cheap, simple, compact, already matches `+5V/GND/DATA`, easy to buy in packs | Amp rating may be unclear; quality varies; limited to one data line; compatibility varies between sellers | Normal modest-current LED branches such as fork, rack/basket, tail, simple panel sections | Candidate |
-| M8/M12 waterproof circular connectors | More robust, threaded/locking, available in 3/4/5 pin, cleaner for serviceable modules | Bulkier, more expensive, soldering/crimping can be fiddly | Cat head, future panels, higher-confidence removable modules | Candidate |
+| M12 A-coded 4-pin, IP67, at least 4 A/contact | Threaded, keyed, sealed, serviceable, and rated for the locked head load | Bulkier and more expensive than an LED pigtail | Cat head | Decision |
 | XT30 | Good compact power connector | Power only, not waterproof by itself | Optional small power-only branch connector inside enclosure or protected area | Optional |
 | XT60 | High-current, common, polarized | Power only, not waterproof by itself | Battery/main 12 V connection | Decision |
 
@@ -259,7 +270,12 @@ Suggested 3-pin LED branch pinout:
 - `GND`
 - `DATA`
 
-For cat head and future panels, consider 4-pin or 5-pin connectors if we want a spare data line, second ground, separate power grouping, or future expansion.
+Locked cat-head M12 pinout:
+
+- Pin 1 / brown: `+5V`
+- Pin 2 / white: reserved and isolated
+- Pin 3 / blue: `GND`
+- Pin 4 / black: `DATA`
 
 ## Design Targets
 
@@ -278,7 +294,7 @@ For cat head and future panels, consider 4-pin or 5-pin connectors if we want a 
 - Use one main LED battery by default. Do not parallel smaller batteries unless the system is intentionally designed for that.
 - Use branch fuses to isolate removable zones and make field repair safer.
 - Use XT60 for the battery/main 12 V connector.
-- Keep M8/M12 waterproof circular connectors and 3-pin 18 AWG waterproof LED pigtails as candidate connector families for removable LED zones.
+- Use M12 A-coded four-pin for the cat head; keep waterproof LED pigtails and other circular connectors as candidates for remaining removable zones.
 
 Detailed draft wiring architecture is tracked in [Wiring Harness Architecture](wiring/wiring-harness-architecture.md).
 
@@ -302,7 +318,7 @@ Tentative brightness policy:
 
 ## Decisions Needed
 
-- LED voltage: 5 V vs 12 V addressable LEDs. Tentative decision: 5 V primary system.
+- LED voltage: decision is 5 V addressable RGB for the primary system and cat head.
 - Battery source: dedicated LED battery vs bike battery tap. Decision: dedicated LED battery only; do not touch bike battery.
 - Target runtime. Decision: 6-8 hours riding mode, 2-4 hours show/parked planning target, 1 hour low-power reserve.
 - Maximum acceptable LED brightness. Tentative decision: 25-35% riding, 50-60% show, 10-15% reserve, 60% initial absolute cap.
@@ -311,4 +327,4 @@ Tentative brightness policy:
 - Battery type. Decision: standalone 12 V LiFePO4 preferred; 20 Ah baseline, 30 Ah if mounting works.
 - Main fuse rating and branch fuse strategy. Tentative recommendation: 5 V 30 A buck converter, 15 A main fuse on 12 V side, fused 5 V branch distribution.
 - Power distribution enclosure location. Tentative decision: behind seat / front basket-rack area if space works; MVP fallback is inside-basket removable box.
-- Connector family for removable head, tail, panel, and basket/rack zones. Decision: XT60 for battery/main 12 V; removable LED zone connectors still choosing between M8/M12 waterproof circular connectors and 3-pin 18 AWG waterproof LED pigtails.
+- Connector family: XT60 for battery/main 12 V; M12 A-coded four-pin for the cat head; other removable zones remain undecided.
