@@ -10,7 +10,13 @@
     "flange_tab_depth_mm": 8.0,
     "flange_shell_overlap_mm": 1.2,
     "flange_face_clearance_mm": 0.3,
-    "minimum_tab_exterior_recess_mm": 0.25,
+    "minimum_tab_exterior_recess_mm": 3.0,
+    "ear_minimum_tab_exterior_recess_mm": 8.0,
+    "minimum_root_web_exterior_recess_mm": 0.35,
+    "flange_root_web_length_mm": 2.0,
+    "flange_root_web_thickness_mm": 1.2,
+    "flange_root_web_end_margin_mm": 0.2,
+    "flange_root_web_boolean_overlap_mm": 0.3,
     "m3_clearance_diameter_mm": 3.4,
     "boolean_cut_extension_mm": 2.0,
     "minimum_usable_seam_edge_mm": 22.0
@@ -26,11 +32,16 @@
     "foot_width_mm": 2.5,
     "rib_height_mm": 3.0,
     "edge_inset_mm": 0.5,
+    "supplementary_panel_side": {
+      "foot_width_mm": 1.2,
+      "rib_height_mm": 1.5,
+      "edge_inset_mm": 0.75,
+      "shell_overlap_mm": 1.4,
+      "end_setback_mm": 8.0
+    },
     "end_setback_mm": 6.0,
-    "junction_overlap_mm": 1.0,
-    "junction_minimum_angle_deg": 25.0,
-    "junction_maximum_angle_deg": 150.0,
-    "shell_overlap_mm": 1.0,
+    "junction_overlap_mm": 3.0,
+    "shell_overlap_mm": 0.5,
     "minimum_exterior_recess_mm": 0.25
   },
   "integrated_joint_ownership": {
@@ -74,18 +85,54 @@
     "minimum_hidden_hardware_exterior_skin_mm": 1.5,
     "minimum_shell_volume_ratio_vs_gate3": 0.9
   },
-  "rear_service_opening": {
-    "width_mm": 100.0,
-    "height_mm": 80.0,
-    "center_x_mm": 0.0,
-    "center_y_mm": 255.0,
-    "center_z_mm": 95.0,
-    "cut_depth_mm": 80.0,
-    "rim_width_mm": 10.0,
-    "rim_depth_mm": 10.0,
-    "rim_center_y_mm": 263.0,
-    "rim_tie_length_mm": 65.0,
-    "rim_tie_x_offset_mm": 35.0
+  "upper_planar_rear_frame": {
+    "alignment": "coplanar with the rear edges of left_upper_head and right_upper_head",
+    "lower_face_rear_panels_remain_continuous": true,
+    "old_lower_service_cut_removed": true,
+    "old_rectangular_rim_and_tie_rails_removed": true,
+    "structural_surround_width_mm": 20.0,
+    "inward_depth_mm": 18.0
+  },
+  "rear_base_flange_connections": {
+    "description": "Four continuous internal connector rails follow the rear-base outer interfaces. Six M3 paths pass from those rails through the deep rear-frame surround; there are no isolated tabs inside the opening.",
+    "minimum_tab_exterior_recess_mm": 0.25,
+    "frame_center_mm": [0.0, 264.01125, 171.74025],
+    "attached_sections": [
+      "left_lower_face",
+      "left_upper_head",
+      "right_lower_face",
+      "right_upper_head"
+    ],
+    "connections": [
+      {
+        "section": "left_upper_head",
+        "p0_mm": [-30.0, 258.678, 211.2135],
+        "p1_mm": [-60.0, 269.3445, 132.267],
+        "rail_end_setback_mm": 1.8,
+        "fractions": [0.25, 0.65]
+      },
+      {
+        "section": "right_upper_head",
+        "p0_mm": [30.0, 258.678, 211.2135],
+        "p1_mm": [60.0, 269.3445, 132.267],
+        "rail_end_setback_mm": 1.8,
+        "fractions": [0.25, 0.65]
+      },
+      {
+        "section": "left_lower_face",
+        "p0_mm": [-60.0, 269.3445, 132.267],
+        "p1_mm": [0.0, 269.3445, 132.267],
+        "rail_end_setback_mm": 1.8,
+        "fractions": [0.5]
+      },
+      {
+        "section": "right_lower_face",
+        "p0_mm": [0.0, 269.3445, 132.267],
+        "p1_mm": [60.0, 269.3445, 132.267],
+        "rail_end_setback_mm": 1.8,
+        "fractions": [0.5]
+      }
+    ]
   },
   "excluded_joint_face_pairs": [
     ["TRI008", "TRI007"]
@@ -104,10 +151,10 @@
   ],
   "review_notes": [
     "Gate 5 is a full-size internal flange-tab candidate and must be physically validated with a 100 mm assembly and full-size coupons before production printing.",
-    "Each matching flange-tab pair and every light triangular rib on an internal source-panel connection is printed as part of its shell; Gate 5 exports no separate printed joiners.",
-    "Triangular internal panel ribs are limited to left_lower_face, left_upper_head, right_lower_face, and right_upper_head. They do not run along inter-shell flange seams, outer edges, the rear base, or either ear.",
+    "Each matching flange-tab pair and both light triangular gussets on every internal source-panel connection are printed as part of their shell. A triangulated internal hub overlaps the full end section of every main gusset meeting at a shared source vertex; compact opposite-side gussets stop outside the hub zone. Gate 5 exports no separate printed joiners.",
+    "Triangular internal panel ribs and main-gusset hubs are limited to left_lower_face, left_upper_head, right_lower_face, and right_upper_head. They do not run along inter-shell flange seams, outer edges, the rear base, or either ear.",
     "All M3 through-bolts, washers, and loose nyloc nuts are inside the head; the approved exterior has no fastener holes.",
-    "The rear-base section includes the 100 x 80 mm service opening and an integrated internal rim so final internal fasteners remain reachable.",
+    "The rear-base section is a closed 20 mm-surround, 18 mm-deep trapezoidal frame with a reduced wiring/service opening. Four continuous concealed connector rails follow its outer interfaces and six internal M3 paths attach all four adjacent body shells; no isolated tabs remain inside the opening.",
     "The bike connector flange and rail load path remain deferred."
   ]
 }

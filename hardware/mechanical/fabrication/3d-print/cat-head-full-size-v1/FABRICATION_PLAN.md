@@ -2,7 +2,7 @@
 
 ## Status
 
-- Current phase: Gate 5 — full-size internal flange-tab and hidden-joint review
+- Current phase: Gate 7 - grouped translucent glow-panel insert review
 - Locked height: 330 mm, chin to highest ear tip
 - Target completed head-module mass: at most 1.2 kg
 - Hard mass rejection limit: 1.5 kg
@@ -93,16 +93,30 @@ mixed the future backplate interface into both lower halves:
 - [x] Re-run the printer-envelope orientation search after wall generation; all seven baselines fit.
 - [x] Close the two inherited bottom/throat openings integrally in the lower shells; reserve ventilation for protected rear-facing features.
 - [ ] If a part fails, move the belt seam to the next existing edge chain; do not distort the head or introduce an arbitrary visible planar cut.
-- [x] Generate 18 pairs of matching 8 mm-deep, 3.2 mm-thick plain rectangular
+- [x] Generate 16 pairs of matching 8 mm-deep, 3.2 mm-thick plain rectangular
   internal flange tabs with M3 through-bolts, washers, loose nyloc nuts, and
   shared-inner-bisector axes that recess every tab behind both exterior face
-  planes across every approved structural interface.
+  planes across every approved source-section interface. Add four continuous
+  concealed connector rails and six parallel through-bolt paths to attach the
+  rear base to all four adjacent body shells.
 - [x] Give each ear root a paired flange-tab connection with two internal M3 screws; no alignment dowel in this revision.
-- [x] Add 51 integral 2.5 mm-foot by 3 mm-high triangular gussets to every
-  source-panel connection internal to the four body shells, with at least
-  0.8 mm exterior recess and no separate reinforcement parts. Exclude flange
-  seams, exterior edges, rear base, and ears.
-- [x] Reserve a 100 × 80 mm rear service opening, a 10 × 10 mm internal rim, and lower structural tie rails.
+- [x] Add paired triangular gussets to both panel sides of every source-panel
+  connection internal to the four body shells: 55 main 2.5 mm-foot by 3 mm-high
+  gussets with at least 1.3 mm exterior recess and 55 compact 1.2 mm by 1.5 mm
+  opposing-side gussets with at least 0.4 mm exterior skin. Exclude flange
+  seams, exterior edges, rear base, and ears. Add 38 triangulated hubs at
+  every shared internal main-gusset endpoint, with full end-section overlap.
+- [x] Integrate center-split rear panels into both lower shells and replace the
+  massive rear frame with a compact 60 mm-top / 120 mm-bottom closed trapezoidal
+  rear-base frame on the sloped upper-head rear plane. Its 20 mm surround and
+  18 mm inward depth form a load-spreading ring around an approximately
+  20 mm-top / 80 mm-bottom / 39 mm-high wiring-and-fastener opening. Four
+  continuous hidden shell-side rails carry six M3 paths through the rear frame
+  and attach it to all four adjacent body shells. No isolated connector tabs
+  remain along the inner opening; the
+  lower rear panels are continuous and joined by their own hidden flange
+  modules. The old lower service cut, rectangular rim, and tie rails are
+  removed.
 - [ ] Confirm every nut, screw, and panel retainer is reachable in the documented assembly order.
 
 ### 4. Validate assembly before full-size printing
@@ -129,9 +143,15 @@ Before freezing internal geometry, purchase or select and measure:
 
 Then add:
 
-- [ ] Twenty independent glow windows and two eye diffusers.
+- [x] Represent all twenty approved glow facets with nine removable windows:
+  one combined twelve-facet centerline insert and eight isolated inserts.
+- [x] Add two corrected 1.5 mm eye diffusers in independent opaque 14 mm-deep
+  lightboxes, each reserving four addressable pixels and an 11 mm diffuser gap.
 - [ ] Four to six removable internal LED cassettes serving groups of adjacent windows.
-- [ ] Replaceable eye-light carriers.
+- [x] Add replaceable eye-light carriers with opaque removable rear caps, four
+  diffuser-retaining posts, two M2.5 cap fasteners, a sealed 4 mm wire port,
+  and two recessed internal M2.5 head-mount flanges per eye, centered on the
+  outer-side and lower eye edges.
 - [ ] Seven rounded whisker ports per side and removable light-engine carriers.
 - [ ] Wire channels, tie points, service loops, and strain relief.
 - [ ] Overlapping dust seams, gasketed removable panels, downward-facing drains, and protected vents.

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "source_head_height_mm": 330.0,
+  "small_model_head_height_mm": 100.0,
+  "printer_envelope_mm": [240.0, 200.0, 210.0],
+  "orientation_step_degrees": 15,
+  "module": {
+    "opening_clearance_mm": 0.3,
+    "front_bezel_thickness_mm": 1.5,
+    "diffuser_thickness_mm": 1.5,
+    "diffuser_perimeter_overlap_mm": 1.2,
+    "diffuser_pocket_clearance_mm": 0.3,
+    "baffle_wall_thickness_mm": 2.0,
+    "chamber_depth_mm": 14.0,
+    "rear_cap_gap_mm": 0.3,
+    "rear_cap_thickness_mm": 1.8,
+    "light_blocking_gasket_mm": 0.3,
+    "retainer_post_size_mm": 2.0,
+    "wire_port_diameter_mm": 4.0,
+    "led_pixels_per_eye": 4,
+    "minimum_led_diffuser_gap_mm": 9.0
+  },
+  "head_mount": {
+    "fastener": "two internal M2.5 through-bolts, four washers, and two loose nyloc nuts per eye",
+    "tab_length_mm": 12.0,
+    "tab_depth_mm": 8.0,
+    "tab_thickness_mm": 2.4,
+    "tab_face_gap_mm": 0.3,
+    "shell_overlap_mm": 3.0,
+    "attachment_bridge_width_mm": 4.0,
+    "attachment_bridge_thickness_mm": 2.0,
+    "attachment_bridge_end_overlap_mm": 1.2,
+    "front_recess_mm": 0.6,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "bolt_depth_from_eye_plane_mm": 4.8
+  },
+  "rear_cap": {
+    "fastener": "two M2.5 through-bolts with washers and loose nyloc nuts per eye",
+    "boss_diameter_mm": 6.0,
+    "boss_engagement_depth_mm": 4.0,
+    "boss_radial_offset_mm": 2.7,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "cap_perimeter_margin_mm": 1.2
+  },
+  "materials": {
+    "bucket_and_cap": "opaque ASA; black exterior with a white reflective chamber liner",
+    "diffuser": "1.5 mm frosted or milky translucent PETG"
+  },
+  "review_notes": [
+    "Each eye is a separate light-tight module so its four addressable pixels can use a different color from the head glow panels.",
+    "The corrected annotated eye silhouette remains the visible aperture; an opaque bezel fills the unused area of the original oversized eye opening.",
+    "Two recessed internal flange screws retain each eye module at the outer-side and lower eye edges without creating exterior holes. Where the corrected outer eye edge is separated from the structural shell, a hidden 4 x 2 mm bridge supplies a continuous printed attachment path.",
+    "The rear cap is removable with two internal M2.5 through-bolts and carries a flat adhesive LED-strip area plus four diffuser-retaining posts.",
+    "The 100 mm-head-scale exports are visual and assembly-fit models only; use the full-size module or coupon to test LEDs, hardware, diffusion, heat, and light leakage."
+  ]
+}

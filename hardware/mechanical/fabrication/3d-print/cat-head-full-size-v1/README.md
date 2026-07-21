@@ -14,10 +14,16 @@ Gate 1 was visually approved on 2026-07-15. It freezes:
 - twenty removable glow/light-transmitting panels selected in purple, including both completed mirrored side pairs.
 
 The seven-piece printer-sized section layout was approved on 2026-07-15. Gate 5
-now adds compact internal flange tabs, hidden section joints, and lightweight
-triangular gussets at every eligible internal source-panel connection in the
-four body shells. Lighting carriers and the bike-mount load path remain
-deferred.
+adds compact internal flange tabs, hidden section joints, lightweight
+triangular gussets on both panel sides at every eligible internal source-panel
+connection in the four body shells, and triangulated hubs at every shared main
+gusset endpoint. Gate 6 adds two isolated, removable eye lightboxes with
+frosted diffusers, opaque LED chambers, and two recessed internal head-mount
+flanges per eye.
+Gate 7 represents the twenty approved glow facets with nine removable
+translucent inserts: one combined twelve-facet centerline diffuser and eight
+isolated inserts. Concealed fixed hooks and internal M2.5 tabs retain them.
+Lighting carriers and the bike-mount load path remain deferred.
 
 ## Generate Gate 2 Section Review
 
@@ -35,12 +41,12 @@ assets are written under `output/gate2-section-layout/`:
 - `gate2-face-section-map.csv` — traceable face-to-section assignments;
 - `gate2-fit-report.json` — connectivity, orientation, and printer-envelope checks.
 
-The candidate uses four body shells, two removable ears, and a rear-base section.
-The large center-bottom facet is divided on the centerline and belongs to the
-two lower shells; it is not part of the rear-base section.
-The rear base creates printer margin and a clean future backplate/service-cover
-interface. `QUAD002` and `QUAD004`, the opaque eye-adjacent panels, will attach
-to their lower shells through internal rear frame ribs.
+The candidate uses four body shells, two removable ears, and a compact rear-base
+surround. The large center-bottom facet and the rear-facing `MANQ006` / `MANQ007`
+facets are divided on the centerline and belong to the two lower shells; they are
+not part of the rear-base section. The compact rear base frames the upper rear
+opening on the upper-head rear plane; the lower rear panels remain continuous.
+It reserves the future backplate/service-cover interface.
 
 ## Generate Gate 3 Structural Shell Baseline
 
@@ -71,7 +77,8 @@ lowest points later.
 ## Generate Gate 4 Complete Coverage Review
 
 This review adds temporary solids for all twenty glow panels and both corrected
-eyes, then cuts the planned 100 × 80 mm rear service opening:
+eyes, then cuts the legacy planned 100 × 80 mm rear service opening. This Gate 4
+review is superseded for fabrication by the compact Gate 5 rear frame:
 
 ~~~bash
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate4_assembly_review.py
@@ -118,13 +125,18 @@ source of truth.
 
 ## Generate Gate 5 Internal Flange Tabs
 
-Gate 5 adds 18 pairs of matching, plain rectangular internal flange tabs across
-the eight structural interfaces, plus 51 integral low-profile triangular
-gussets at every source-panel connection internal to the four body shells. The
-tabs and gussets are printed as part of the seven shell parts; use normal M3
-through-bolts, washers, and loose nyloc nuts. On
-angled seams, the M3 axis follows the shared inner bisector so both tabs remain
-hidden behind the exterior skin. There are no receiver-only parts,
+Gate 5 adds 16 pairs of matching, plain rectangular internal flange tabs at
+source-section seams. The rear base uses four continuous shell-integrated
+connector rails instead of isolated tab pairs; six M3 paths through those rails
+connect it to all four adjacent head shells. It also adds 110 integral
+low-profile triangular gussets
+on both sides of every source-panel connection internal to the four body shells
+and 38 triangulated hubs at every shared main-gusset endpoint. The tabs,
+gussets, and hubs are printed as part of the seven shell parts; use normal M3 through-bolts,
+washers, and loose nyloc nuts. On
+angled source-panel seams, the M3 axis follows the shared inner bisector so both
+tabs remain hidden behind the exterior skin. Rear-base rails follow the sloped
+rear-frame plane. There are no receiver-only parts,
 captive-nut pockets, separate printed joiners, dowels, or exterior fastener
 holes:
 
@@ -147,13 +159,60 @@ output/gate5-ribs-and-joints/:
   Gate 3 baseline-volume protection;
 - gate5-seam-audit.json — traceable source-facet seam map.
 
-The rear base includes a 100 x 80 mm service opening, 10 x 10 mm internal rim,
-and lower tie rails. The connector flange, rear cover/gasket, backplate, rails,
+The rear base is a compact 60 mm-top / 120 mm-bottom trapezoidal closed frame
+with a 20 mm structural surround and 18 mm of depth extending inward from the
+upper-head rear plane. Its remaining tapered access opening is approximately
+20 mm wide at the top, 80 mm wide at the bottom, and 39 mm high. It is intended
+for wiring, inspection, and nut access; full hand service remains available by
+removing a head section until a dedicated rear cover is designed. Four
+continuous concealed rails follow the adjacent shell interfaces and carry six
+M3 through-bolt paths: two per upper shell and one per lower shell. The deep
+rear-frame surround is the continuous mating member, so no isolated planks or
+tabs project into the opening. The lower rear panels remain continuous and
+their center seams receive hidden flange modules. The old lower service cut,
+rectangular rim, and tie rails are gone.
+The connector flange, rear cover/gasket, backplate, rails,
 lighting cassette points, ventilation/drain features, and user-directed final
 reinforcement remain later operations. See
 [GATE5_RIBS_AND_JOINTS.md](GATE5_RIBS_AND_JOINTS.md) for hardware and assembly
 constraints and [GATE5_RESUME_CHECKPOINT.md](GATE5_RESUME_CHECKPOINT.md) for
 the current resumable state.
+
+## Generate Gate 6 Eye Lightboxes
+
+Gate 6 preserves Gate 5 and adds three full-size parts per eye: an opaque
+bucket/bezel, a 1.5 mm frosted diffuser, and an opaque removable LED rear cap.
+Each chamber reserves four independently addressable pixels and 11 mm of
+diffusion distance. Two recessed internal M2.5 flange bolts, centered on the
+outer-side and lower eye edges, retain each module without exterior holes:
+
+~~~bash
+blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate6_eye_modules.py
+~~~
+
+Review `output/gate6-eye-modules/gate6-eye-modules-review.blend`. Print the
+eye parts from `eyes/` and use the revised seven-shell set from `shells/`,
+because both lower-face shells now contain matching paired eye-mount tabs. The
+`small-model-100mm/` exports are visual-fit parts only; use a full-size eye to
+validate LEDs, hardware, diffuser fit, heat, and light leakage. See
+[GATE6_EYE_MODULES.md](GATE6_EYE_MODULES.md) and
+[GATE6_RESUME_CHECKPOINT.md](GATE6_RESUME_CHECKPOINT.md).
+
+## Generate Gate 7 Glow-Panel Inserts
+
+Gate 7 preserves Gate 6 and adds nine printable 1.5 mm translucent PETG
+inserts. Each uses a hidden 3 mm overlap flange and black gasket seat. Eight
+single inserts use one fixed hook and one internal M2.5 retainer; the combined
+twelve-facet center insert uses two hooks and two retainers:
+
+~~~bash
+blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate7_glow_panel_inserts.py
+~~~
+
+Review `output/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend`.
+Print translucent parts from `glow-inserts/` and use the revised structural
+parts from `shells/`. See [GATE7_GLOW_PANEL_INSERTS.md](GATE7_GLOW_PANEL_INSERTS.md)
+and [GATE7_RESUME_CHECKPOINT.md](GATE7_RESUME_CHECKPOINT.md).
 
 ## Coordinate System
 

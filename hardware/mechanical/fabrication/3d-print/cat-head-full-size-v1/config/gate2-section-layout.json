@@ -5,7 +5,9 @@
   "orientation_step_degrees": 15,
   "right_ear_panels": ["QUAD008", "TRI010", "TRI011", "TRI012"],
   "left_ear_panels": ["QUAD025", "TRI043", "TRI044", "TRI045"],
-  "rear_base_panels": ["MANQ006", "MANQ007"],
+  "rear_base_panels": [],
+  "procedural_sections": ["rear_base"],
+  "lower_face_rear_split_panels": ["MANQ006", "MANQ007"],
   "lower_center_split_panel": "MANQ008",
   "rear_frame_bridged_opaque_islands": [
     "QUAD002", "QUAD004", "MANQ008_RIGHT", "MANQ008_LEFT"
@@ -13,7 +15,7 @@
   "review_notes": [
     "This is a face-level seven-section topology review, not a printable solid.",
     "Glow panels and mouth-opening facets are excluded from structural sections.",
-    "The rear-base section contains only the rear-facing MANQ006/MANQ007 surfaces for the future backplate/service-cover interface.",
+    "The rear-facing MANQ006/MANQ007 surfaces are split on the centerline and integrated into the lower-face shells; a compact separate rear-base frame follows the upper-head rear plane around the upper rear opening.",
     "The large bottom MANQ008 facet is subdivided on the centerline and integrated into the right and left lower-face shells.",
     "The two opaque panels adjacent to the corrected eyes and the two center-split bottom halves are surface islands; internal frame ribs will make them integral with their lower shells.",
     "Printer-fit checks use a 15-degree orientation search and require later slicer confirmation after walls and flanges exist."

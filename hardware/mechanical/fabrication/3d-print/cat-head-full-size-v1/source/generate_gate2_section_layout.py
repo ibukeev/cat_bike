@@ -112,6 +112,17 @@ def subdivide_lower_center_panel(model: ObjModel, source_panel_id: str) -> ObjMo
     return ObjModel(vertices=vertices, faces=faces)
 
 
+def subdivide_center_panels(model: ObjModel, config: dict[str, Any]) -> ObjModel:
+    """Split every configured center-spanning quad into left/right shell facets."""
+    panel_ids = [
+        config["lower_center_split_panel"],
+        *config.get("lower_face_rear_split_panels", []),
+    ]
+    for panel_id in panel_ids:
+        model = subdivide_lower_center_panel(model, panel_id)
+    return model
+
+
 def assign_faces(
     faces: list[ObjFace],
     vertices: list[Point],
@@ -123,6 +134,13 @@ def assign_faces(
     right_ear = set(config["right_ear_panels"])
     left_ear = set(config["left_ear_panels"])
     rear_base = set(config["rear_base_panels"])
+    rear_lower_assignments = {
+        f"{panel}_RIGHT": "right_lower_face"
+        for panel in config.get("lower_face_rear_split_panels", [])
+    } | {
+        f"{panel}_LEFT": "left_lower_face"
+        for panel in config.get("lower_face_rear_split_panels", [])
+    }
     lower_center_split_panel = config["lower_center_split_panel"]
     assignments: list[str] = []
     for face in faces:
@@ -132,6 +150,9 @@ def assign_faces(
             continue
         if panel_id == f"{lower_center_split_panel}_LEFT":
             assignments.append("left_lower_face")
+            continue
+        if panel_id in rear_lower_assignments:
+            assignments.append(rear_lower_assignments[panel_id])
             continue
         role = role_by_panel[panel_id]["role"]
         if role in {"removable_glow", "mouth_opening"}:
@@ -283,10 +304,11 @@ def main() -> None:
     source_bounds = bounds(source_model.vertices)
     scale, origin, _ = make_transform(source_bounds, float(gate1["target_height_mm"]))
     role_by_panel, _ = build_roles(units, gate1, scale)
-    model = subdivide_lower_center_panel(source_model, config["lower_center_split_panel"])
+    model = subdivide_center_panels(source_model, config)
     assignments = assign_faces(model.faces, model.vertices, role_by_panel, config, scale, origin)
 
     sections: dict[str, Any] = {}
+    procedural_sections = set(config.get("procedural_sections", []))
     for section in SECTION_ORDER:
         face_indices = [index for index, value in enumerate(assignments) if value == section]
         vertex_indices = sorted({vertex for index in face_indices for vertex in model.faces[index].indices})
@@ -297,15 +319,27 @@ def main() -> None:
             for component in components[1:]
             for index in component
         })
-        sections[section] = {
+        section_report = {
             "face_count": len(face_indices),
             "source_panel_ids": sorted({canonical_source_panel_id(model.faces[index].group) for index in face_indices}),
             "edge_connected_components": len(components),
             "component_face_counts": [len(component) for component in components],
             "detached_surface_island_panel_ids": island_panel_ids,
-            "axis_aligned_dimensions_mm": [round(value, 3) for value in dimensions(bounds(points))],
-            "orientation_search": best_fit(points, config["printer_envelope_mm"], int(config["orientation_step_degrees"])),
         }
+        if points:
+            section_report.update({
+                "axis_aligned_dimensions_mm": [round(value, 3) for value in dimensions(bounds(points))],
+                "orientation_search": best_fit(points, config["printer_envelope_mm"], int(config["orientation_step_degrees"])),
+            })
+        elif section in procedural_sections:
+            section_report.update({
+                "generated_geometry": "procedural compact rear-base frame; no source faces",
+                "axis_aligned_dimensions_mm": None,
+                "orientation_search": {"fits": True, "not_applicable": True},
+            })
+        else:
+            raise ValueError(f"{section} has no assigned source faces")
+        sections[section] = section_report
 
     report = {
         "gate": "Gate 2 section topology",
@@ -316,7 +350,10 @@ def main() -> None:
         "removable_glow_face_count": assignments.count("removable_glow"),
         "mouth_opening_face_count": assignments.count("mouth_opening"),
         "acceptance": {
-            "seven_structural_sections_present": all(sections[name]["face_count"] > 0 for name in SECTION_ORDER),
+            "seven_structural_sections_defined": all(
+                sections[name]["face_count"] > 0 or name in procedural_sections
+                for name in SECTION_ORDER
+            ),
             "all_detached_surface_islands_have_planned_rear_bridges": all(
                 panel_id in set(config["rear_frame_bridged_opaque_islands"])
                 for section in sections.values()
