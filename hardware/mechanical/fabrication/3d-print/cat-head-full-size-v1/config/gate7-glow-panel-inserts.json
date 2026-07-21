@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "source_head_height_mm": 330.0,
+  "small_model_head_height_mm": 100.0,
+  "printer_envelope_mm": [240.0, 200.0, 210.0],
+  "orientation_step_degrees": 15,
+  "shell_wall_thickness_mm": 1.8,
+  "insert": {
+    "material": "1.5 mm frosted or milky translucent PETG",
+    "visible_thickness_mm": 1.5,
+    "surface_setback_mm": 0.6,
+    "perimeter_clearance_mm": 0.35,
+    "perimeter_overlap_mm": 3.0,
+    "overlap_flange_thickness_mm": 1.2,
+    "gasket_gap_mm": 0.15
+  },
+  "visible_seam_cap": {
+    "description": "A shallow translucent cap overlaps the deeper 0.35 mm-clearance insert body. The cap nearly reaches opaque-panel and neighboring-pane boundaries, closing the dark visual gaps while preserving assembly clearance below it.",
+    "perimeter_clearance_mm": 0.05,
+    "surface_setback_mm": 0.15,
+    "thickness_mm": 0.5,
+    "minimum_body_overlap_mm": 0.04
+  },
+  "mount": {
+    "fastener": "internal M2.5 through-bolt with two washers and one loose nyloc nut",
+    "tab_length_mm": 10.0,
+    "tab_depth_mm": 7.0,
+    "tab_thickness_mm": 2.4,
+    "tab_face_gap_mm": 0.3,
+    "shell_overlap_mm": 1.2,
+    "front_recess_mm": 0.6,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "bolt_depth_from_surface_mm": 4.2,
+    "hook_length_mm": 10.0,
+    "hook_stem_width_mm": 2.4,
+    "hook_stem_depth_mm": 4.05,
+    "hook_lip_reach_mm": 0.4,
+    "hook_lip_thickness_mm": 1.2,
+    "hook_panel_clearance_mm": 0.3
+  },
+  "ear_root_interfaces": {
+    "right_ear_root_cluster": {
+      "ear_shell": "right_ear",
+      "body_shell": "right_upper_head",
+      "mount_entirely_to_body_shell": true,
+      "gate5_joint_pair": "right_ear__right_upper_head",
+      "connector_source_vertices": [24, 25],
+      "simplify_to_largest_face_per_source_panel": true,
+      "bridge_triangle_source_vertices": [23, 24, 25],
+      "bridge_connector_source_vertices": [24, 25],
+      "bridge_name": "right_ear_root_bridge"
+    },
+    "left_ear_root_cluster": {
+      "ear_shell": "left_ear",
+      "body_shell": "left_upper_head",
+      "mount_entirely_to_body_shell": true,
+      "gate5_joint_pair": "left_ear__left_upper_head",
+      "connector_source_vertices": [48, 49],
+      "simplify_to_largest_face_per_source_panel": true,
+      "bridge_triangle_source_vertices": [47, 49, 48],
+      "bridge_connector_source_vertices": [48, 49],
+      "bridge_name": "left_ear_root_bridge"
+    },
+    "ear_edge_total_overlap_mm": 7.0,
+    "connector_clearance_mm": 0.8,
+    "connector_corner_relief_depth_mm": 25.0,
+    "connector_side_tip_setback_mm": 10.0,
+    "description": "Each ear-root region is one simplified three-plane insert: the TRI pane, synthetic bridge triangle, and the QUAD pane's largest outer triangle share edges in one solidified surface mesh. A redundant smaller coplanar triangle contained inside each QUAD source panel is deliberately omitted. One hook and one bolt retainer mount to well-separated hidden upper-head edges, so the ear remains independently removable. Mirrored relief preserves clearance around the unchanged Gate 5 M3 flange tabs."
+  },
+  "combined_groups": {
+    "central_12_panel_cluster": [
+      "MANQ001", "QUAD001", "QUAD022", "TRI001", "TRI002", "TRI003",
+      "TRI004", "TRI017", "TRI031", "TRI032", "TRI041", "TRI042"
+    ],
+    "right_ear_root_cluster": ["TRI027", "QUAD021"],
+    "left_ear_root_cluster": ["TRI055", "QUAD035"]
+  },
+  "expected": {
+    "approved_panel_count": 20,
+    "printed_insert_count": 7,
+    "central_hook_count": 2,
+    "central_fastener_count": 2,
+    "single_hook_count": 1,
+    "single_fastener_count": 1
+  },
+  "review_notes": [
+    "Normal source panels are combined only when they share complete mesh edges. Each explicit ear-root cluster becomes edge-connected through its synthetic bridge triangle.",
+    "The twelve connected centerline facets become one non-planar printed diffuser. Each TRI/bridge/QUAD ear-root region becomes one simplified three-plane insert, leaving seven printed translucent parts total.",
+    "Each insert has a shallow 0.05 mm-clearance visible seam cap over its 0.35 mm-clearance deeper fit body. This closes ordinary pane-to-shell and pane-to-pane visual gaps without making the entire insert a zero-clearance assembly fit.",
+    "Every insert seats behind the shell with a translucent overlap flange and thin black gasket, so it cannot fall through its exterior opening.",
+    "Fixed internal hooks carry one side of each insert. Internal M2.5 flange tabs retain the opposite side; both sit beneath the opaque shell border rather than behind the illuminated aperture.",
+    "TRI027, its synthetic bridge, and the outer plane of QUAD021 form one right ear-root insert; TRI055, its bridge, and the outer plane of QUAD035 form the mirrored left insert. Redundant contained coplanar QUAD faces are omitted. Each cluster is generated as one three-plane edge-connected surface, solidified once, retained at two hidden upper-head edges, and uses a 25 mm top-only relief plus 10 mm localized top-side setbacks around the recessed structural M3 ear flange pair. The long front and rear pane boundaries remain in contact with the head.",
+    "The central insert uses two hooks on upper-head interfaces and two M2.5 retainers on lower-face interfaces. Each isolated insert uses one hook and one retainer.",
+    "LED cassettes and individual light-blocking chambers remain a later gate; Gate 7 only creates printable diffusers and their mechanical attachment."
+  ]
+}

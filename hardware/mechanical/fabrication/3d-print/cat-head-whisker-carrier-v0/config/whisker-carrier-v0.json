@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "design_status": "simplified two-part bench prototype; not fabrication release",
+  "led_strip": {
+    "family": "5 V WS2812B on uncoated flexible PCB",
+    "strip_width_mm": 10.0,
+    "four_pixel_cut_length_mm": 66.0,
+    "pixel_pitch_mm": 16.5,
+    "measured_total_thickness_mm": 2.0,
+    "solder_pad_length_mm": 2.0,
+    "pixels_per_row": 4,
+    "row_count": 2,
+    "row_center_spacing_mm": 14.0,
+    "serpentine_second_row": true
+  },
+  "fiber": {
+    "material": "MECCANIXITY PMMA side-glow cable",
+    "nominal_diameter_mm": 2.0,
+    "top_hole_diameter_mm": 2.15,
+    "guide_collar_outer_diameter_mm": 5.0,
+    "guide_collar_height_mm": 6.0,
+    "minimum_bend_radius_mm": 20.0,
+    "nominal_led_gap_mm": 0.35
+  },
+  "base": {
+    "body_length_mm": 74.0,
+    "total_length_with_mounting_ears_mm": 86.0,
+    "width_mm": 36.0,
+    "thickness_mm": 3.0,
+    "strip_channel_clearance_mm": 0.4,
+    "strip_channel_depth_mm": 0.5,
+    "head_mount_hole_x_mm": 40.0
+  },
+  "top": {
+    "length_mm": 74.0,
+    "width_mm": 36.0,
+    "thickness_mm": 6.0,
+    "cell_cavity_length_mm": 14.5,
+    "cell_cavity_width_mm": 10.5,
+    "cell_cavity_depth_mm": 2.4,
+    "wire_relief_length_mm": 5.0,
+    "wire_relief_width_mm": 26.0,
+    "wire_relief_depth_mm": 2.8
+  },
+  "assembly": {
+    "hole_x_mm": 33.5,
+    "hole_y_mm": 14.5,
+    "m2p5_clearance_diameter_mm": 2.8,
+    "m2p5_nut_trap_diameter_mm": 6.0,
+    "head_mount_clearance_diameter_mm": 3.4
+  },
+  "electrical_interface": {
+    "conductors": ["+5V", "GND", "DIN", "DOUT"],
+    "maximum_whisker_carrier_current_a": 0.48
+  }
+}

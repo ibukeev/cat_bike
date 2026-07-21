@@ -135,6 +135,71 @@ def create_section_object(
     return obj
 
 
+def create_compact_rear_base_frame(
+    frame: dict[str, float], material: bpy.types.Material
+) -> bpy.types.Object:
+    """Create a closed, sloped trapezoidal frame extending inside the head."""
+    top_y = float(frame["outer_top_y_mm"])
+    top_z = float(frame["outer_top_z_mm"])
+    bottom_y = float(frame["outer_bottom_y_mm"])
+    bottom_z = float(frame["outer_bottom_z_mm"])
+    top_width = float(frame["outer_top_width_mm"])
+    bottom_width = float(frame["outer_bottom_width_mm"])
+    rail = float(frame["rail_width_mm"])
+    depth = float(frame["inward_depth_mm"])
+    height = top_z - bottom_z
+    if height <= 2.0 * rail:
+        raise ValueError("Compact rear frame rails consume its full height")
+    if min(top_width, bottom_width) <= 2.0 * rail:
+        raise ValueError("Compact rear frame rails consume its full width")
+    if depth <= 0.0:
+        raise ValueError("Compact rear frame inward depth must be positive")
+
+    def plane_y(z: float) -> float:
+        return bottom_y + (z - bottom_z) * (top_y - bottom_y) / height
+
+    vertical = Vector((0.0, top_y - bottom_y, top_z - bottom_z)).normalized()
+    outward = vertical.cross(Vector((1.0, 0.0, 0.0))).normalized()
+    inward = -outward
+
+    inner_top_z = top_z - rail
+    inner_bottom_z = bottom_z + rail
+    front_vertices = [
+        (-top_width / 2.0, top_y, top_z),
+        (top_width / 2.0, top_y, top_z),
+        (bottom_width / 2.0, bottom_y, bottom_z),
+        (-bottom_width / 2.0, bottom_y, bottom_z),
+        (-(top_width - 2.0 * rail) / 2.0, plane_y(inner_top_z), inner_top_z),
+        ((top_width - 2.0 * rail) / 2.0, plane_y(inner_top_z), inner_top_z),
+        ((bottom_width - 2.0 * rail) / 2.0, plane_y(inner_bottom_z), inner_bottom_z),
+        (-(bottom_width - 2.0 * rail) / 2.0, plane_y(inner_bottom_z), inner_bottom_z),
+    ]
+    vertices = front_vertices + [
+        tuple(Vector(vertex) + inward * depth) for vertex in front_vertices
+    ]
+    faces = (
+        (0, 1, 5, 4), (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7),
+        (8, 12, 13, 9), (9, 13, 14, 10), (10, 14, 15, 11), (11, 15, 12, 8),
+        (0, 8, 9, 1), (1, 9, 10, 2), (2, 10, 11, 3), (3, 11, 8, 0),
+        (4, 5, 13, 12), (5, 6, 14, 13), (6, 7, 15, 14), (7, 4, 12, 15),
+    )
+    mesh = bpy.data.meshes.new("rear_base_mesh")
+    mesh.from_pydata(vertices, [], faces)
+    mesh.update(calc_edges=True)
+    obj = bpy.data.objects.new("rear_base", mesh)
+    bpy.context.collection.objects.link(obj)
+    obj.data.materials.append(material)
+
+    bpy.context.view_layer.objects.active = obj
+    obj.select_set(True)
+    bpy.ops.object.mode_set(mode="EDIT")
+    bpy.ops.mesh.select_all(action="SELECT")
+    bpy.ops.mesh.normals_make_consistent(inside=False)
+    bpy.ops.object.mode_set(mode="OBJECT")
+    obj.select_set(False)
+    return obj
+
+
 def mesh_stats(obj: bpy.types.Object) -> dict[str, object]:
     mesh = obj.data
     bm = bmesh.new()
@@ -255,7 +320,7 @@ def main() -> None:
     units = gate1.panel_units(source_model, gate1.read_panel_metadata(gate1.SOURCE_PANEL_CSV))
     scale, origin, _ = gate1.make_transform(gate1.bounds(source_model.vertices), float(gate1_config["target_height_mm"]))
     roles, _ = gate1.build_roles(units, gate1_config, scale)
-    model = gate2.subdivide_lower_center_panel(source_model, gate2_config["lower_center_split_panel"])
+    model = gate2.subdivide_center_panels(source_model, gate2_config)
     assignments = gate2.assign_faces(model.faces, model.vertices, roles, gate2_config, scale, origin)
 
     OUTPUT_PATH.mkdir(parents=True, exist_ok=True)
@@ -267,7 +332,14 @@ def main() -> None:
         source_faces = [model.faces[index].indices for index in face_indices]
         closure_faces = [tuple(face) for face in CONFIG.get("bottom_closure_faces", {}).get(section, [])]
         source_faces.extend(closure_faces)
-        obj = create_section_object(section, source_faces, model, scale, origin, material)
+        if section == "rear_base":
+            obj = create_compact_rear_base_frame(
+                CONFIG["compact_rear_base_frame"], material
+            )
+        else:
+            obj = create_section_object(
+                section, source_faces, model, scale, origin, material
+            )
         objects[section] = obj
         stats = mesh_stats(obj)
         stats["bottom_closure_face_count"] = len(closure_faces)
@@ -296,7 +368,7 @@ def main() -> None:
                 report_sections[section]["bottom_closure_face_count"] == 1
                 for section in ("right_lower_face", "left_lower_face")
             ),
-            "rear_frame_ribs_still_required": True,
+            "compact_rear_base_frame_generated": True,
         },
         "review_notes": CONFIG.get("review_notes", []),
     }
