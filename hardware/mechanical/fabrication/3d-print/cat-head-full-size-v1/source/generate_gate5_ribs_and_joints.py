@@ -599,11 +599,15 @@ def add_eye_ribs(
 
 
 def distribute_modules(
-    segments: list[dict[str, Any]], max_spacing: float
+    segments: list[dict[str, Any]],
+    max_spacing: float,
+    ear_minimum_count: int = 1,
 ) -> list[tuple[dict[str, Any], float, int]]:
     output = []
     for segment in segments:
         count = max(1, math.ceil(segment["length_mm"] / (2.0 * max_spacing)))
+        if any(section.endswith("_ear") for section in segment["sections"]):
+            count = max(count, ear_minimum_count)
         for module_index in range(count):
             output.append((segment, (module_index + 1) / (count + 1), count))
     return output
@@ -877,8 +881,8 @@ def joint_module_length(
     )
     if any(section.endswith("_ear") for section in segment["sections"]):
         module_length = min(
-            float(joint["module_length_mm"]),
-            float(segment["length_mm"]) * 0.90,
+            float(joint.get("ear_module_length_mm", joint["module_length_mm"])),
+            float(segment["length_mm"]) * 0.90 / allocation_count,
         )
     return module_length
 
@@ -1222,6 +1226,7 @@ def create_rear_base_connection_rail(
 ) -> tuple[str, bpy.types.Object, list[dict[str, Any]]]:
     """Create one continuous shell rail and its M3 paths through the rear frame."""
     joint = config["joint_system"]
+    rear_values = config["rear_base_flange_connections"]
     validation = config["validation"]
     section = str(connection["section"])
     p0 = Vector(connection["p0_mm"])
@@ -1245,25 +1250,39 @@ def create_rear_base_connection_rail(
     if bolt_axis.dot(toward_frame) < 0.0:
         bolt_axis.negate()
 
-    tab_thickness = float(joint["flange_tab_thickness_mm"])
-    tab_depth = float(joint["flange_tab_depth_mm"])
-    clearance = float(joint["flange_face_clearance_mm"])
+    tab_thickness = float(
+        rear_values.get(
+            "flange_tab_thickness_mm",
+            joint["flange_tab_thickness_mm"],
+        )
+    )
+    tab_depth = float(
+        rear_values.get("flange_tab_depth_mm", joint["flange_tab_depth_mm"])
+    )
+    clearance = float(
+        rear_values.get(
+            "flange_face_clearance_mm",
+            joint["flange_face_clearance_mm"],
+        )
+    )
     wall = float(config["shell_wall_thickness_mm"])
-    root_overlap = float(joint["flange_shell_overlap_mm"])
+    root_overlap = float(
+        rear_values.get(
+            "flange_shell_overlap_mm",
+            joint["flange_shell_overlap_mm"],
+        )
+    )
     cut_extension = float(joint["boolean_cut_extension_mm"])
     tab_depth_center = wall + tab_depth / 2.0 - root_overlap
     face_offset = tab_thickness / 2.0 + clearance / 2.0
     rail_center = (
         seam_center + inward * tab_depth_center - bolt_axis * face_offset
     )
-    rail = create_internal_flange_tab(
+    rail = box(
         name,
-        rail_length,
-        tangent,
         rail_center,
-        bolt_axis,
-        inward,
-        config,
+        (tangent, bolt_axis, inward),
+        (rail_length, tab_thickness, tab_depth),
         flange_material,
     )
     initial_volume = mesh_volume(rail)
@@ -1365,13 +1384,11 @@ def create_internal_flange_tab(
     flange_center: Vector,
     bolt_axis: Vector,
     inward: Vector,
-    config: dict[str, Any],
+    tab_thickness: float,
+    tab_depth: float,
     flange_material: bpy.types.Material,
 ) -> bpy.types.Object:
     """Make one plain rectangular tab: the same shape on either shell."""
-    joint = config["joint_system"]
-    tab_thickness = float(joint["flange_tab_thickness_mm"])
-    tab_depth = float(joint["flange_tab_depth_mm"])
     return box(
         name,
         flange_center,
@@ -1399,17 +1416,30 @@ def create_internal_flange_tabs(
     tangent = (p1 - p0).normalized()
     seam_point = p0.lerp(p1, fraction)
     module_length = joint_module_length(segment, allocation_count, config)
+    ear_joint = any(section.endswith("_ear") for section in segment["sections"])
     owner_local = side_geometry(
         name, segment, owner, seam_point, tangent, model, points
     )
     receiver_local = side_geometry(
         name, segment, receiver, seam_point, tangent, model, points
     )
-    tab_thickness = float(joint["flange_tab_thickness_mm"])
-    tab_depth = float(joint["flange_tab_depth_mm"])
+    tab_thickness = float(
+        joint.get("ear_flange_tab_thickness_mm", joint["flange_tab_thickness_mm"])
+        if ear_joint
+        else joint["flange_tab_thickness_mm"]
+    )
+    tab_depth = float(
+        joint.get("ear_flange_tab_depth_mm", joint["flange_tab_depth_mm"])
+        if ear_joint
+        else joint["flange_tab_depth_mm"]
+    )
     clearance = float(joint["flange_face_clearance_mm"])
     wall = float(config["shell_wall_thickness_mm"])
-    root_overlap = float(joint["flange_shell_overlap_mm"])
+    root_overlap = float(
+        joint.get("ear_flange_shell_overlap_mm", joint["flange_shell_overlap_mm"])
+        if ear_joint
+        else joint["flange_shell_overlap_mm"]
+    )
     cut_extension = float(joint["boolean_cut_extension_mm"])
 
     average_inward = -owner_local["normal"] - receiver_local["normal"]
@@ -1432,7 +1462,6 @@ def create_internal_flange_tabs(
     # Recess the whole matching pair far enough that every tab vertex remains
     # inside both source-face exterior planes.  This explicitly prevents the
     # receiver-tab exposure visible in the prior owner-plane construction.
-    ear_joint = any(section.endswith("_ear") for section in segment["sections"])
     requested_recess = float(
         joint["ear_minimum_tab_exterior_recess_mm"]
         if ear_joint
@@ -1478,7 +1507,8 @@ def create_internal_flange_tabs(
         owner_center,
         bolt_axis,
         inward,
-        config,
+        tab_thickness,
+        tab_depth,
         flange_material,
     )
     receiver_tab = create_internal_flange_tab(
@@ -1488,13 +1518,38 @@ def create_internal_flange_tabs(
         receiver_center,
         bolt_axis,
         inward,
-        config,
+        tab_thickness,
+        tab_depth,
         flange_material,
     )
-    root_web_length = float(joint["flange_root_web_length_mm"])
-    root_web_thickness = float(joint["flange_root_web_thickness_mm"])
-    root_web_margin = float(joint["flange_root_web_end_margin_mm"])
-    root_web_overlap = float(joint["flange_root_web_boolean_overlap_mm"])
+    root_web_length = float(
+        joint.get("ear_flange_root_web_length_mm", joint["flange_root_web_length_mm"])
+        if ear_joint
+        else joint["flange_root_web_length_mm"]
+    )
+    root_web_thickness = float(
+        joint.get("ear_flange_root_web_thickness_mm", joint["flange_root_web_thickness_mm"])
+        if ear_joint
+        else joint["flange_root_web_thickness_mm"]
+    )
+    root_web_margin = float(
+        joint.get("ear_flange_root_web_end_margin_mm", joint["flange_root_web_end_margin_mm"])
+        if ear_joint
+        else joint["flange_root_web_end_margin_mm"]
+    )
+    root_web_overlap = float(
+        joint.get("ear_flange_root_web_boolean_overlap_mm", joint["flange_root_web_boolean_overlap_mm"])
+        if ear_joint
+        else joint["flange_root_web_boolean_overlap_mm"]
+    )
+    solid_root_base = bool(
+        joint.get(
+            "solid_ear_flange_root_base"
+            if ear_joint
+            else "solid_flange_root_base",
+            False,
+        )
+    )
     root_requested_recess = float(joint["minimum_root_web_exterior_recess_mm"])
     root_half_dimensions = (
         root_web_length / 2.0,
@@ -1519,9 +1574,7 @@ def create_internal_flange_tabs(
         receiver_root_center += inward * root_required_shift
     if root_required_shift >= required_shift:
         raise ValueError(f"{name}: hidden root anchors do not precede recessed tabs")
-    root_web_offset = (
-        module_length / 2.0 - root_web_length / 2.0 - root_web_margin
-    )
+    root_web_offset = module_length / 2.0 - root_web_length / 2.0 - root_web_margin
     if root_web_offset <= root_web_length / 2.0:
         raise ValueError(f"{name}: flange root webs do not fit the module")
     # Extend only toward the recessed tab. This prevents a coplanar boolean
@@ -1546,19 +1599,46 @@ def create_internal_flange_tabs(
         require_manifold(tab, f"{name} {label} recessed root webs")
         if len(components(tab)) != 1:
             raise ValueError(f"{name}: {label} root webs did not join the tab")
+        if solid_root_base:
+            bpy.ops.object.select_all(action="DESELECT")
+            tab.select_set(True)
+            bpy.context.view_layer.objects.active = tab
+            bpy.ops.object.mode_set(mode="EDIT")
+            bpy.ops.mesh.select_all(action="SELECT")
+            bpy.ops.mesh.convex_hull(
+                delete_unused=True,
+                use_existing_faces=False,
+                make_holes=False,
+                join_triangles=True,
+            )
+            bpy.ops.object.mode_set(mode="OBJECT")
+            tab.select_set(False)
+            require_manifold(
+                tab, f"{name} {label} continuous solid root base"
+            )
     initial_volumes = {
         owner: mesh_volume(owner_tab),
         receiver: mesh_volume(receiver_tab),
     }
     fastener_center = (owner_center + receiver_center) / 2.0 + inward * (tab_depth * 0.20)
-    screw_points = (
-        [
-            fastener_center - tangent * (module_length * 0.25),
-            fastener_center + tangent * (module_length * 0.25),
-        ]
-        if ear_joint
-        else [fastener_center]
+    screw_count = int(
+        joint.get(
+            "ear_fastener_count_per_module" if ear_joint
+            else "body_fastener_count_per_module",
+            2 if ear_joint else 1,
+        )
     )
+    if screw_count < 1:
+        raise ValueError(f"{name}: flange module needs at least one fastener")
+    if screw_count == 1:
+        screw_points = [fastener_center]
+    else:
+        half_span = module_length * 0.28
+        screw_points = [
+            fastener_center
+            + tangent * (-half_span + 2.0 * half_span * index / (screw_count - 1))
+            for index in range(screw_count)
+        ]
     for screw_index, screw_point in enumerate(screw_points, start=1):
         for label, tab in ((owner, owner_tab), (receiver, receiver_tab)):
             axis_distances = [
@@ -1599,6 +1679,10 @@ def create_internal_flange_tabs(
     }
     minimum_ratio = float(validation["minimum_flange_retained_volume_ratio"])
     maximum_ratio = float(validation["maximum_flange_retained_volume_ratio"])
+    if solid_root_base:
+        maximum_ratio = float(
+            validation["maximum_solid_base_flange_retained_volume_ratio"]
+        )
     minimum_length_ratio = float(validation["minimum_flange_projected_length_ratio"])
     for section, tab in tabs.items():
         if len(components(tab)) != 1:
@@ -1643,6 +1727,7 @@ def create_internal_flange_tabs(
         "flange_root_web_count_per_tab": 2,
         "flange_root_web_length_mm": root_web_length,
         "flange_root_web_thickness_mm": root_web_thickness,
+        "flange_root_is_continuous_solid_base": solid_root_base,
         "fastener_axis": [round(value, 4) for value in bolt_axis],
         "fastener_axis_uses_shared_interior_bisector": True,
         "tabs_are_matching_plain_rectangles": True,
@@ -1904,7 +1989,9 @@ def main() -> None:
     )
     rear_frame_result = dict(config["upper_planar_rear_frame"])
     allocations = distribute_modules(
-        usable, float(config["joint_system"]["module_max_spacing_mm"])
+        usable,
+        float(config["joint_system"]["module_max_spacing_mm"]),
+        int(config["joint_system"].get("ear_minimum_module_count", 1)),
     )
     pair_counts: dict[str, int] = defaultdict(int)
     joint_tasks = []

@@ -23,7 +23,16 @@ flanges per eye.
 Gate 7 represents the twenty approved glow facets with nine removable
 translucent inserts: one combined twelve-facet centerline diffuser and eight
 isolated inserts. Concealed fixed hooks and internal M2.5 tabs retain them.
-Lighting carriers and the bike-mount load path remain deferred.
+Gate 8 is the current full-size feedback iteration. It reclassifies six
+eye-adjacent center facets as opaque structure, replaces the center diffuser
+with one six-panel insert, enlarges the hidden M3 flange system and ribs, and
+gives every matching flange a continuous solid shell-root base. Glow mounts
+are recessed 2 mm, and it adds two blind 20.50 mm aluminum-tube sockets
+directly to the upper-head shell STLs. Each socket stays at least 8 mm behind
+its local exterior plane, uses an inset triangular backing footprint, and has
+one transverse M4 retention path for nominal 19.05 mm Everbilt 6605 square
+aluminum tube. Final backplate brackets and full-load validation remain
+deferred.
 
 ## Generate Gate 2 Section Review
 
@@ -213,6 +222,22 @@ Review `output/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend`.
 Print translucent parts from `glow-inserts/` and use the revised structural
 parts from `shells/`. See [GATE7_GLOW_PANEL_INSERTS.md](GATE7_GLOW_PANEL_INSERTS.md)
 and [GATE7_RESUME_CHECKPOINT.md](GATE7_RESUME_CHECKPOINT.md).
+
+## Generate Gate 8 Full-Size Structural Iteration
+
+~~~bash
+blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate8_full_size_iteration.py
+blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/render_gate8_review.py
+~~~
+
+Review `output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`.
+Print only the individual files in its part subdirectories. Start with the
+one-piece integrated socket file in `test-coupons/`; `portal-clamps/` is empty
+because both sockets are included in the upper-head STLs. Gate 8 also
+clips internal ribs and seam rails to a validated 0.8 mm clearance envelope
+around every removable glow insert. See
+[GATE8_FULL_SIZE_STRUCTURAL_ITERATION.md](GATE8_FULL_SIZE_STRUCTURAL_ITERATION.md)
+and [GATE8_RESUME_CHECKPOINT.md](GATE8_RESUME_CHECKPOINT.md).
 
 ## Coordinate System
 

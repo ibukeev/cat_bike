@@ -2,7 +2,7 @@
 
 ## Status
 
-- Current phase: Gate 7 - grouped translucent glow-panel insert review
+- Current phase: Gate 8 - full-size structural feedback iteration review
 - Locked height: 330 mm, chin to highest ear tip
 - Target completed head-module mass: at most 1.2 kg
 - Hard mass rejection limit: 1.5 kg
