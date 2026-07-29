@@ -214,6 +214,86 @@ def radial_reference(
     )
 
 
+
+def square_frustum(
+    name: str,
+    center: Vector,
+    axis: Vector,
+    across: Vector,
+    outward: Vector,
+    start_offset: float,
+    start_width: float,
+    end_offset: float,
+    end_width: float,
+) -> bpy.types.Object:
+    """Create a closed square frustum aligned to the socket basis."""
+    vertices = []
+    for offset, width in (
+        (start_offset, start_width),
+        (end_offset, end_width),
+    ):
+        half = width / 2.0
+        plane_center = center + axis * offset
+        vertices.extend(
+            [
+                plane_center - across * half - outward * half,
+                plane_center + across * half - outward * half,
+                plane_center + across * half + outward * half,
+                plane_center - across * half + outward * half,
+            ]
+        )
+    faces = [
+        (0, 3, 2, 1),
+        (4, 5, 6, 7),
+        (0, 1, 5, 4),
+        (1, 2, 6, 5),
+        (2, 3, 7, 6),
+        (3, 0, 4, 7),
+    ]
+    mesh = bpy.data.meshes.new(f"{name}_mesh")
+    mesh.from_pydata([tuple(value) for value in vertices], [], faces)
+    mesh.update()
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.collection.objects.link(obj)
+    gate5.require_manifold(obj, f"{name} square frustum")
+    return obj
+
+
+def apply_socket_lead_in(
+    socket: bpy.types.Object,
+    name: str,
+    open_center: Vector,
+    axis: Vector,
+    across: Vector,
+    outward: Vector,
+    straight_opening_mm: float,
+    depth_mm: float,
+    expansion_each_side_mm: float,
+) -> dict[str, float]:
+    """Cut a 45-degree square lead-in while retaining the straight bore."""
+    overshoot = 0.1
+    mouth_width = straight_opening_mm + 2.0 * expansion_each_side_mm
+    cutter = square_frustum(
+        f"{name}_lead_in_cutter",
+        open_center,
+        axis,
+        across,
+        outward,
+        -overshoot,
+        mouth_width + 2.0 * overshoot,
+        depth_mm + overshoot,
+        straight_opening_mm - 2.0 * overshoot,
+    )
+    gate5.apply_boolean(socket, cutter, "DIFFERENCE", solver="MANIFOLD")
+    require_single_manifold(socket, f"{name} square lead-in")
+    return {
+        "depth_mm": depth_mm,
+        "expansion_each_side_mm": expansion_each_side_mm,
+        "mouth_width_mm": mouth_width,
+        "included_slope_deg": 45.0,
+    }
+
+
 def add_portal(
     side: str,
     shell: bpy.types.Object,
@@ -281,6 +361,20 @@ def add_portal(
         socket_values,
         materials["portal"],
     )
+    outer_width = opening + 2.0 * float(portal["socket_wall_mm"])
+    if abs(outer_width - float(portal["socket_outer_width_mm"])) > 1e-6:
+        raise ValueError(f"{side} socket outer envelope changed: {outer_width}")
+    lead_in_report = apply_socket_lead_in(
+        socket,
+        f"gate9_v6__{side}_tube_socket",
+        open_center,
+        axis,
+        across,
+        outward,
+        opening,
+        float(portal["socket_lead_in_depth_mm"]),
+        float(portal["socket_lead_in_expansion_each_side_mm"]),
+    )
     socket_reference = duplicate_object(
         socket, f"gate9_v6__{side}_socket_reference"
     )
@@ -325,7 +419,6 @@ def add_portal(
     true_union(shell, socket, f"{side} socket true union")
     shell_volume_after = gate5.mesh_volume(shell)
 
-    outer_width = opening + 2.0 * float(portal["socket_wall_mm"])
     seated_end_clearance = float(
         portal["rail_seated_end_clearance_mm"]
     )
@@ -504,6 +597,7 @@ def add_portal(
         "socket_outer_width_mm": outer_width,
         "socket_length_mm": insertion_depth,
         "socket_wall_mm": float(portal["socket_wall_mm"]),
+        "socket_lead_in": lead_in_report,
         "bolt_center_mm": socket_report["bolt_center_mm"],
         "bolt_axis": socket_report["bolt_axis"],
         "pre_union_overlap": pre_union,
@@ -582,6 +676,19 @@ def add_fit_coupon(
         material,
         length=float(portal["fit_coupon_length_mm"]),
     )
+    coupon_length = float(portal["fit_coupon_length_mm"])
+    coupon_lead_in = apply_socket_lead_in(
+        coupon,
+        "gate9_v6__socket_fit_coupon",
+        -axis * (coupon_length / 2.0),
+        axis,
+        across,
+        outward,
+        float(socket["printed_opening_width_mm"]),
+        float(portal["socket_lead_in_depth_mm"]),
+        float(portal["socket_lead_in_expansion_each_side_mm"]),
+    )
+    report["socket_lead_in"] = coupon_lead_in
     bpy.ops.object.select_all(action="DESELECT")
     coupon.select_set(True)
     bpy.context.view_layer.objects.active = coupon
@@ -593,8 +700,8 @@ def add_fit_coupon(
     require_single_manifold(coupon, "V6 socket fit coupon")
     report["stl_orientation"] = "one outer socket wall flat on print bed"
     report["physical_gate"] = (
-        "print in the intended ASA process; verify hand insertion, "
-        "seating, removal, and M4 drilling/bolt fit with actual tube"
+        "optional diagnostic after user-accepted coupon bypass; use only if "
+        "the final physical fit or bolted rattle is rejected"
     )
     return coupon, report
 
@@ -736,6 +843,29 @@ def main() -> None:
         ]
         for side in ("left", "right")
     )
+    lead_in_pass = all(
+        report["socket_lead_in"] == {
+            "depth_mm": float(
+                interface["rail_system"]["socket"]["lead_in_depth_mm"]
+            ),
+            "expansion_each_side_mm": float(
+                interface["rail_system"]["socket"][
+                    "lead_in_expansion_each_side_mm"
+                ]
+            ),
+            "mouth_width_mm": float(
+                interface["rail_system"]["socket"][
+                    "lead_in_mouth_width_mm"
+                ]
+            ),
+            "included_slope_deg": 45.0,
+        }
+        and abs(
+            report["socket_outer_width_mm"]
+            - float(config["portal"]["socket_outer_width_mm"])
+        ) <= 1e-6
+        for report in portal_reports.values()
+    )
     true_union_pass = all(
         report["pre_union_overlap"][
             "pad_to_original_shell_triangle_overlap_pairs"
@@ -797,7 +927,7 @@ def main() -> None:
     )
 
     validation = {
-        "shared_v03_interface_contract_passes": (
+        "shared_v04_interface_contract_passes": (
             interface_report["status"].startswith("PASS")
         ),
         "all_six_modified_parts_and_coupon_one_closed_manifold_component": (
@@ -806,8 +936,11 @@ def main() -> None:
         "portal_pads_and_sockets_have_true_overlapping_union_roots": (
             true_union_pass
         ),
-        "socket_openings_match_frozen_20p5_mm_contract": opening_pass,
-        "rail_axes_and_head_x_projected_roll_match_frozen_v03": (
+        "socket_openings_match_frozen_21p0_mm_contract": opening_pass,
+        "one_mm_lead_ins_and_32p5_mm_outer_envelopes_match_v04": (
+            lead_in_pass
+        ),
+        "rail_axes_and_head_x_projected_roll_match_frozen_v04": (
             axes_pass and cross_bolt_angle_pass
         ),
         "socket_and_pad_features_stay_behind_exterior_planes": (

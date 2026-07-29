@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Slice the two modified V6 upper shells and socket-fit coupon."""
+"""Slice the revised V6.1 upper shells and optional socket coupon."""
 
 from __future__ import annotations
 
@@ -192,8 +192,8 @@ def main() -> None:
         }
     report = {
         "status": (
-            "review-only V6 ASA slice feasibility for the two modified "
-            "upper shells and socket coupon; not a production-print release"
+            "review-only V6.1 ASA slice feasibility for the two modified "
+            "upper shells and optional diagnostic socket coupon; not a production-print release"
         ),
         "printer": "Original Prusa MK4/MK4S 0.4 mm nozzle",
         "material_profile": "Generic ASA architecture review",
@@ -205,7 +205,7 @@ def main() -> None:
         "exact_three_part_set": totals,
         "exact_current_eight_part_set": full_totals,
         "validation": {
-            "both_modified_upper_shells_and_coupon_have_margin_passing_slice": (
+            "both_modified_upper_shells_and_optional_coupon_have_margin_passing_slice": (
                 totals["available"]
                 and totals["all_parts_pass_margin"]
             ),
@@ -221,16 +221,14 @@ def main() -> None:
                 >= comparison.REQUIRED_XY_MARGIN_MM
             ),
         },
-        "physical_gate": [
-            "Print the socket coupon in the intended black ASA process.",
-            "Test the actual 19 x 19 x 2 mm tube in both insertion directions.",
-            "Confirm free hand insertion and removal without sanding.",
-            "Confirm the tube does not rattle excessively after ASA cooling.",
-            "Transfer-drill the coupon at the modeled M4 path and verify bolt, washers, nut, and tool access.",
+        "coupon_decision": [
+            "The user accepted bypassing the physical coupon and using the conservative 21.0 mm straight bore.",
+            "The 1.0 mm 45-degree lead-in expands the mouth to 23.0 mm while preserving the 32.5 mm outer envelope.",
+            "The retained coupon STL is optional diagnostic evidence only if later fit or rattle is rejected.",
+            "A thin hidden-face shim is permitted if bolted physical rattle is unacceptable.",
             "Do not drill or cut the final rails from the 158.172 mm reference length."
         ],
         "remaining_production_blockers": [
-            "Physical ASA socket coupon and actual tube fit have not passed.",
             "Final rail cut lengths, lower shoes, and anti-crush plugs are unresolved.",
             "Backplate perimeter holes and the complete lamp/steering envelope are unresolved.",
             "Ear, eye, wrapped-panel, and remaining shell-seam gates are unresolved."

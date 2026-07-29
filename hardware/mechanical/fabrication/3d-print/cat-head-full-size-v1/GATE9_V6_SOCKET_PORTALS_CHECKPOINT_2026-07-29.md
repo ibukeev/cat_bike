@@ -1,21 +1,26 @@
-# Gate 9 V6 Socket Portals Checkpoint — 2026-07-29
+# Gate 9 V6.1 Conservative-Fit Socket Portals Checkpoint — 2026-07-29
 
 ## Scope and release state
 
-V6 integrates the real square-tube socket geometry and corrected front/top
+V6.1 integrates the real square-tube socket geometry and corrected front/top
 portal directions into the clean V5 upper shells. The socket axes, roll,
 opening, insertion depth, lower targets, and M4 position come directly from
-the frozen `CAT-HEAD-SHELL-ALUMINUM-V0.3` interface.
+the coordinated `CAT-HEAD-SHELL-ALUMINUM-V0.4` interface.
 
-The digital socket gate passes. This is not authority to print the upper
-shells, cut final rails, or drill final rails. The small black-ASA socket
-coupon is the only next print authorized by this checkpoint.
+The digital socket gate passes. The user accepted bypassing the physical
+socket coupon in favor of a conservative 21.0 mm bore and 1 mm lead-in. This
+is still not authority to print the upper shells, cut final rails, or drill
+final rails because the remaining aluminum, lamp, ear, eye, panel, and seam
+gates are unresolved.
 
 Status:
-`review_candidate_passed_digital_socket_gate_physical_coupon_required`.
+`review_candidate_passed_digital_socket_gate_user_accepted_coupon_bypass`.
 
 ## Current review and output files
 
+- Shared interface: `hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v04.json`
+- Metal preflight config: `hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/config/frame-fixed-mount-v04-interface.json`
+- Metal preflight: `hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v04_interface.py`
 - Config:
   `config/gate9-socket-portals-candidate-v6.json`
 - Generator:
@@ -32,7 +37,7 @@ Status:
   `output/gate9-socket-portals-candidate-v6/gate9-socket-portals-candidate-v6.json`
 - Generated shell STLs:
   `output/gate9-socket-portals-candidate-v6/shells/`
-- Generated coupon STL:
+- Generated optional diagnostic coupon STL:
   `output/gate9-socket-portals-candidate-v6/test-coupons/gate9_v6_socket_fit_coupon.stl`
 - Generated renders:
   `output/gate9-socket-portals-candidate-v6/renders/`
@@ -44,11 +49,15 @@ the tracked source and config.
 
 ## Accepted interface and construction
 
-Frozen V0.3 values:
+Coordinated V0.4 values:
+
+V0.3 remains preserved for reproducibility. V0.4 changes only the printed socket
+allowance and lead-in; rail axes, targets, profile, backplate, and M4 geometry
+remain unchanged.
 
 - User-measured tube: 19 x 19 x 2 mm.
-- Socket opening: 20.5 x 20.5 mm.
-- Nominal clearance: 0.75 mm per side.
+- Socket straight opening: 21.0 x 21.0 mm.
+- Nominal clearance: 1.0 mm per side.
 - Socket insertion depth: 30.0 mm.
 - Lower rail targets: X = -40/+40, Y = 267.336, Z = 147.132 mm.
 - Accepted left axis: `[-0.09294, -0.94874, 0.30208]`.
@@ -61,12 +70,13 @@ Frozen V0.3 values:
 Retained provisional printed construction:
 
 - Blind internal sockets; no external tube pass-through and no removable cap.
-- Socket wall: 6.0 mm; outside width: 32.5 mm.
+- Socket wall: 5.75 mm; outside width remains 32.5 mm.
+- Square 45-degree lead-in: 1.0 mm deep, expanding the mouth to 23.0 x 23.0 mm.
 - Broad portal pad: 68% of the selected source facet, 16.0 mm thick, with
   1.0 mm shell overlap.
 - The pad is truly unioned to the upper shell and the socket is truly unioned
   through the pad. Append-only overlapping components are prohibited.
-- Minimum socket recess behind the source exterior plane: 8.2045 mm.
+- Minimum socket recess behind the source exterior plane: 8.3999 mm.
 - Portal-pad recess: 0.8 mm; neither side has an outside-plane vertex.
 - Provisional modeled rail ends 0.5 mm before the blind stop for collision
   testing. Final cut length remains deferred.
@@ -75,15 +85,16 @@ Retained provisional printed construction:
 
 Geometry:
 
-- The shared V0.3 interface validator passes.
+- The shared V0.4 interface validator passes.
 - All six current printed parts and the coupon are one closed manifold
   component with zero boundary and nonmanifold edges.
 - Each portal pad overlaps its shell in three triangle pairs before union.
 - Each portal pad overlaps its socket in seven triangle pairs before union.
-- Each upper shell gains approximately 43.94 cm3 of true-unioned portal
+- Each upper shell gains approximately 43.08 cm3 of true-unioned portal
   material without changing its exterior bounding dimensions.
-- Both 20.5 mm openings, frozen axes, mirrored lower targets, and head-X roll
-  match the interface.
+- Both 21.0 mm straight openings and 23.0 mm lead-in mouths match the
+  interface, together with the unchanged axes, mirrored lower targets, and
+  head-X roll.
 - Socket features and pads clear every other current printed part.
 - The 19 mm seated rail envelopes clear the owner socket walls by the modeled
   0.5 mm end gap and clear the installed rear bezel by 16.441 mm.
@@ -108,10 +119,10 @@ Slicer:
 
 Automated regression:
 
-- The targeted V5/V6 suite passes all 14 tests.
-- The repository-wide automated suite runs 34 tests with one unrelated existing
+- The targeted shared-interface/V5/V6 suite passes all 18 tests.
+- The repository-wide automated suite runs 35 tests with one unrelated existing
   error: `test_gate1_panel_ids_and_pair_order_match` raises `KeyError:
-  glow_pairs` in `test_cat_head_lighting_map.py`. This V6 change does not modify
+  glow_pairs` in `test_cat_head_lighting_map.py`. This V6.1 change does not modify
   the lighting-map inputs or test.
 
 These slices prove printer-envelope feasibility only. They are not tuned
@@ -122,7 +133,7 @@ production settings.
 - The Gate 8 append-only socket integration is rejected because it left many
   disconnected shell components.
 - Re-aiming a socket from a convenient local shell face is rejected; V6 uses
-  the frozen V0.3 axes exactly.
+  the coordinated V0.4 axes exactly.
 - External rail pass-throughs and cutting the finished shell are rejected.
 - A socket touching the shell at a few corners without a broad structural pad
   is rejected.
@@ -131,8 +142,9 @@ production settings.
   separately.
 - The 158.172 mm reference must not be copied onto the stock as a final cut
   length.
-- Digital 0.75 mm-per-side clearance is not a substitute for the ASA coupon:
-  actual tube corner radius and ASA shrink remain unknown.
+- No untested geometry can guarantee fit against tube burrs, damage, printer
+  calibration, or ASA shrink. The user explicitly accepted this residual risk;
+  use a thin hidden-face shim if bolted physical rattle is unacceptable.
 
 ## Exact regeneration commands
 
@@ -152,7 +164,7 @@ blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size
   -- --config hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-socket-portals-candidate-v6.json
 ```
 
-The V6 generator runs the V5 generator internally before adding the sockets.
+The V6.1 generator runs the V5 generator internally before adding the sockets.
 The current eight-part slicer roll-up uses the unchanged V5 lower shells,
 ears, rear bezel, and keel, so regenerate the V5 slice report first when it is
 not already present:
@@ -171,33 +183,30 @@ python3 hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/sl
 python3 -m unittest tests.automated.test_gate9_socket_portals_v6_summary
 ```
 
-## Next physical-review step
+```bash
+python3 hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v04_interface.py
+```
 
-Print only:
+## Next engineering step
 
-`output/gate9-socket-portals-candidate-v6/test-coupons/gate9_v6_socket_fit_coupon.stl`
+The socket coupon is no longer a required gate. Keep its STL only as an
+optional diagnostic if the eventual physical fit or bolted rattle is rejected.
 
-Use the intended black ASA process and the prescribed flat-wall orientation.
-Allow the coupon to cool completely before testing.
+Proceed in this dependency order:
 
-1. Insert both ends of the real 19 x 19 x 2 mm tube without sanding the
-   coupon.
-2. Repeat with the tube clocked through multiple 90-degree orientations to
-   expose stock squareness and corner-radius variation.
-3. Confirm it reaches the blind stop by hand and removes without cracking,
-   whitening, or tools.
-4. Record fit as free, appropriately snug, excessively loose, or impossible.
-5. Check for unacceptable rattle after full cooling.
-6. If the fit is acceptable, use only a sacrificial tube offcut for the M4
-   transfer-drill, bolt, washer, nut, and tool-access test. Do not drill a
-   final rail.
-7. Report the result before upper-shell printing. A failed coupon changes the
-   socket allowance; it does not authorize sanding the production shells.
+1. Use the V0.4 metal preflight to coordinate the aluminum session without
+   changing the accepted rail axes, targets, or 19 x 19 x 2 mm profile.
+2. Finalize the lower rail shoes, solid anti-crush load paths, actual rail cut
+   lengths, and backplate perimeter/shoe holes as one revision.
+3. Validate the complete lamp and steering-sweep envelopes against that
+   coordinated metal and printed-shell assembly.
+4. Close the remaining two-bolt ear, rooted-eye, wrapped-panel, and shell-seam
+   gates.
+5. Generate and review the complete prospective final ASA candidate before
+   releasing any expensive upper-shell or full-head print.
 
 ## Remaining production blockers
 
-- Physical socket coupon and actual tube fit.
-- Actual tube corner radius and ASA-process shrink.
 - Final rail cut lengths, lower shoes, and anti-crush plugs.
 - Backplate perimeter and lower-shoe holes.
 - Complete lamp and steering-sweep envelope.

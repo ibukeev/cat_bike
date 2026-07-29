@@ -12,6 +12,10 @@ from typing import Any
 
 DEFAULT_REVISION = "CAT-HEAD-SHELL-ALUMINUM-V0.3"
 DEFAULT_FILENAME = "cat-head-shell-aluminum-interface-v03.json"
+SUPPORTED_REVISIONS = {
+    "CAT-HEAD-SHELL-ALUMINUM-V0.3",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.4",
+}
 
 
 class InterfaceContractError(ValueError):
@@ -114,8 +118,8 @@ def validate_interface(interface: dict[str, Any]) -> dict[str, Any]:
     checks = {
         "revision_matches_schema": {
             "value": interface["interface_revision"],
-            "required": DEFAULT_REVISION,
-            "pass": interface["interface_revision"] == DEFAULT_REVISION,
+            "supported": sorted(SUPPORTED_REVISIONS),
+            "pass": interface["interface_revision"] in SUPPORTED_REVISIONS,
         },
         "rear_plane_normal_is_unit": {
             "value": _norm(normal),
@@ -233,7 +237,10 @@ def gate8_portal_contract(interface: dict[str, Any]) -> dict[str, Any]:
         "upper_target_left_mm": rails["upper_shell_search_targets_head_mm"]["left"],
         "lower_route_right_mm": rails["lower_targets_head_mm"]["right"],
         "lower_route_left_mm": rails["lower_targets_head_mm"]["left"],
-        "lower_route_basis": "Shared V0.3 lower targets on the aluminum rear-backplate plane",
+        "lower_route_basis": (
+            f"Shared {interface['interface_revision']} lower targets on the "
+            "aluminum rear-backplate plane"
+        ),
         "socket_roll_reference": socket["roll_reference"],
         "clamp_length_mm": socket["insertion_depth_mm"],
         "m4_clearance_diameter_mm": socket["cross_bolt_clearance_diameter_mm"],

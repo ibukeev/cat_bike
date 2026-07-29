@@ -42,6 +42,11 @@ METAL_PREFLIGHT = load_module(
     REPO_ROOT
     / "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v03_interface.py",
 )
+METAL_V04_PREFLIGHT = load_module(
+    "prepare_frame_fixed_mount_v04_interface",
+    REPO_ROOT
+    / "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v04_interface.py",
+)
 
 
 class CatHeadSharedInterfaceTest(unittest.TestCase):
@@ -87,6 +92,43 @@ class CatHeadSharedInterfaceTest(unittest.TestCase):
             shell_portal["lower_route_right_mm"],
             metal_rail["right_lower_target_head_mm"],
         )
+
+    def test_v04_conservative_socket_contract_and_metal_preflight_pass(self) -> None:
+        path = INTERFACE_DIR / "cat-head-shell-aluminum-interface-v04.json"
+        interface = json.loads(path.read_text(encoding="utf-8"))
+        report = validate_interface(interface)
+        self.assertTrue(report["status"].startswith("PASS"))
+        self.assertEqual(interface["head_envelope"], self.interface["head_envelope"])
+        self.assertEqual(interface["rear_interface_plane"], self.interface["rear_interface_plane"])
+        self.assertEqual(interface["aluminum_backplate"], self.interface["aluminum_backplate"])
+        self.assertEqual(
+            interface["rail_system"]["profile"],
+            self.interface["rail_system"]["profile"],
+        )
+        self.assertEqual(
+            interface["rail_system"]["accepted_axes_head"],
+            self.interface["rail_system"]["accepted_axes_head"],
+        )
+        self.assertEqual(
+            interface["rail_system"]["lower_targets_head_mm"],
+            self.interface["rail_system"]["lower_targets_head_mm"],
+        )
+        self.assertEqual(
+            interface["rail_system"]["modeled_installed_reference_length_mm"],
+            self.interface["rail_system"]["modeled_installed_reference_length_mm"],
+        )
+        self.assertEqual(interface["interface_revision"], "CAT-HEAD-SHELL-ALUMINUM-V0.4")
+        self.assertEqual(report["derived"]["socket_clearance_each_side_mm"], 1.0)
+        socket = interface["rail_system"]["socket"]
+        self.assertEqual(socket["printed_opening_width_mm"], 21.0)
+        self.assertEqual(socket["lead_in_depth_mm"], 1.0)
+        self.assertEqual(socket["lead_in_mouth_width_mm"], 23.0)
+        _, metal_report = METAL_V04_PREFLIGHT.load_resolved_config()
+        self.assertEqual(
+            metal_report["interface_revision"],
+            "CAT-HEAD-SHELL-ALUMINUM-V0.4",
+        )
+        self.assertTrue(all(metal_report["checks"].values()))
 
     def test_inconsistent_recorded_inside_dimension_fails(self) -> None:
         invalid = copy.deepcopy(self.interface)

@@ -22,11 +22,11 @@ class Gate9SocketPortalsV6SummaryTest(unittest.TestCase):
         interface = self.summary["frozen_interface"]
         self.assertEqual(
             self.summary["interface_revision"],
-            "CAT-HEAD-SHELL-ALUMINUM-V0.3",
+            "CAT-HEAD-SHELL-ALUMINUM-V0.4",
         )
         self.assertEqual(interface["tube_outside_mm"], [19.0, 19.0])
-        self.assertEqual(interface["socket_opening_mm"], [20.5, 20.5])
-        self.assertEqual(interface["nominal_clearance_each_side_mm"], 0.75)
+        self.assertEqual(interface["socket_opening_mm"], [21.0, 21.0])
+        self.assertEqual(interface["nominal_clearance_each_side_mm"], 1.0)
         self.assertEqual(interface["socket_insertion_depth_mm"], 30.0)
         self.assertEqual(interface["rail_reference_length_mm"], 158.172)
         self.assertEqual(
@@ -40,6 +40,11 @@ class Gate9SocketPortalsV6SummaryTest(unittest.TestCase):
             portals["measured_socket_exterior_recess_mm"],
             portals["minimum_required_socket_exterior_recess_mm"],
         )
+        self.assertEqual(portals["socket_outer_width_mm"], 32.5)
+        self.assertEqual(portals["socket_wall_mm"], 5.75)
+        self.assertEqual(portals["socket_lead_in_depth_mm"], 1.0)
+        self.assertEqual(portals["socket_lead_in_mouth_width_mm"], 23.0)
+        self.assertEqual(portals["socket_lead_in_slope_deg"], 45.0)
         self.assertGreater(
             portals["left"][
                 "pad_to_shell_triangle_overlap_pairs_before_union"
@@ -105,17 +110,23 @@ class Gate9SocketPortalsV6SummaryTest(unittest.TestCase):
         self.assertAlmostEqual(complete["total_support_g"], 388.317)
         self.assertEqual(
             self.summary["status"],
-            "review_candidate_passed_digital_socket_gate_physical_coupon_required",
+            "review_candidate_passed_digital_socket_gate_user_accepted_coupon_bypass",
         )
 
-    def test_physical_coupon_and_remaining_blockers_are_explicit(self):
-        coupon = self.summary["physical_coupon_gate"]
-        self.assertEqual(coupon["status"], "pending_physical_test")
-        self.assertIn("sacrificial", " ".join(coupon["steps"]).lower())
+    def test_coupon_bypass_and_remaining_blockers_are_explicit(self):
+        decision = self.summary["coupon_decision"]
+        self.assertEqual(
+            decision["decision"],
+            "user accepted bypassing the physical socket coupon",
+        )
+        self.assertEqual(decision["straight_socket_opening_mm"], [21.0, 21.0])
+        self.assertEqual(decision["lead_in_mouth_mm"], [23.0, 23.0])
+        self.assertEqual(decision["outer_socket_envelope_mm"], [32.5, 32.5])
+        self.assertTrue(decision["m4_cross_bolt_retained"])
+        self.assertTrue(decision["optional_diagnostic_coupon_retained"])
+        self.assertIn("shim", decision["permitted_rattle_mitigation"].lower())
         blockers = " ".join(self.summary["production_blockers"]).lower()
         for term in (
-            "coupon",
-            "corner radius",
             "rail cut",
             "shoe",
             "lamp",
