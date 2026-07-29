@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "status": "review_only_candidate_pass_not_production_release",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.3",
+  "architecture": {
+    "full_scale_width_mm": 330.0,
+    "rear_cassette_offset_mm": -70.0,
+    "lower_rail_x_mm": [
+      -40.0,
+      40.0
+    ],
+    "keel_source_face_ids": [
+      109,
+      110
+    ],
+    "lower_shell_omits_synthetic_closure_triangles": true,
+    "keel_cassette_seam_owner": "rear_cassette",
+    "keel_cassette_clearance_mm": 0.6
+  },
+  "aperture_frame": {
+    "rib_radius_mm": 4.5,
+    "hub_radius_mm": 5.5,
+    "target_exterior_recess_mm": 0.3,
+    "verified_minimum_exterior_recess_mm": 0.3,
+    "upper_left_vertex_47_trim_mm": 7.0,
+    "upper_right_vertex_23_trim_mm": 7.0
+  },
+  "topology": {
+    "left_upper_head": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        127.408,
+        137.661,
+        158.217
+      ],
+      "volume_mm3": 40287.307
+    },
+    "right_upper_head": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        127.203,
+        137.661,
+        158.217
+      ],
+      "volume_mm3": 40297.527
+    },
+    "left_lower_face": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        158.406,
+        200.892,
+        126.395
+      ],
+      "volume_mm3": 34919.164
+    },
+    "right_lower_face": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        132.387,
+        200.893,
+        126.395
+      ],
+      "volume_mm3": 33285.662
+    },
+    "bottom_keel": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        181.069,
+        148.803,
+        49.423
+      ],
+      "volume_mm3": 23521.378
+    }
+  },
+  "coarse_keepout_checks": {
+    "left_upper_frame_clears_rear_cassette": true,
+    "right_upper_frame_clears_rear_cassette": true,
+    "left_lower_frame_clears_rear_cassette": true,
+    "right_lower_frame_clears_rear_cassette": true,
+    "all_body_frames_clear_metal_envelopes": true,
+    "relieved_bottom_keel_clears_rear_cassette": true,
+    "relieved_bottom_keel_clears_metal_envelopes": true
+  },
+  "slicer": {
+    "profile": "Prusa V3 project profile with startup purge extrusion removed",
+    "part_count": 8,
+    "minimum_required_post_brim_xy_margin_mm": 10.0,
+    "minimum_post_brim_xy_margin_mm": 12.887,
+    "total_filament_g": 600.27,
+    "total_support_g": 285.272,
+    "total_support_volume_cm3": 266.6,
+    "total_time_seconds": 195335,
+    "parts": {
+      "left_upper_head": {
+        "rotation_xyz_deg": [
+          4,
+          4,
+          10
+        ],
+        "post_brim_xy_margin_mm": 39.718,
+        "filament_g": 133.18,
+        "support_g": 90.527,
+        "support_volume_cm3": 84.6,
+        "time_seconds": 40375,
+        "passed": true
+      },
+      "right_upper_head": {
+        "rotation_xyz_deg": [
+          126,
+          100,
+          124
+        ],
+        "post_brim_xy_margin_mm": 37.871,
+        "filament_g": 74.74,
+        "support_g": 35.018,
+        "support_volume_cm3": 32.727,
+        "time_seconds": 26026,
+        "passed": true
+      },
+      "left_lower_face": {
+        "rotation_xyz_deg": [
+          82,
+          166,
+          168
+        ],
+        "post_brim_xy_margin_mm": 31.651,
+        "filament_g": 137.67,
+        "support_g": 100.277,
+        "support_volume_cm3": 93.714,
+        "time_seconds": 43715,
+        "passed": true
+      },
+      "right_lower_face": {
+        "rotation_xyz_deg": [
+          10,
+          148,
+          108
+        ],
+        "post_brim_xy_margin_mm": 32.98,
+        "filament_g": 62.14,
+        "support_g": 29.429,
+        "support_volume_cm3": 27.502,
+        "time_seconds": 23385,
+        "passed": true
+      },
+      "left_ear": {
+        "rotation_xyz_deg": [
+          138,
+          110,
+          88
+        ],
+        "post_brim_xy_margin_mm": 60.993,
+        "filament_g": 19.03,
+        "support_g": 1.895,
+        "support_volume_cm3": 1.771,
+        "time_seconds": 7088,
+        "passed": true
+      },
+      "right_ear": {
+        "rotation_xyz_deg": [
+          138,
+          70,
+          88
+        ],
+        "post_brim_xy_margin_mm": 58.182,
+        "filament_g": 22.93,
+        "support_g": 5.522,
+        "support_volume_cm3": 5.161,
+        "time_seconds": 8900,
+        "passed": true
+      },
+      "rear_cassette": {
+        "rotation_xyz_deg": [
+          62,
+          122,
+          82
+        ],
+        "post_brim_xy_margin_mm": 12.887,
+        "filament_g": 125.18,
+        "support_g": 21.673,
+        "support_volume_cm3": 20.255,
+        "time_seconds": 37318,
+        "passed": true
+      },
+      "bottom_keel": {
+        "rotation_xyz_deg": [
+          4,
+          126,
+          90
+        ],
+        "post_brim_xy_margin_mm": 42.427,
+        "filament_g": 25.4,
+        "support_g": 0.931,
+        "support_volume_cm3": 0.87,
+        "time_seconds": 8528,
+        "passed": true
+      }
+    }
+  },
+  "production_holds": [
+    "Design the hidden bottom-keel-to-lower-shell and bottom-keel-to-rear-cassette flanges, alignment features, fasteners, seal, drain, and wire route.",
+    "Integrate the real 20.5 mm aluminum-tube sockets and the revised front/top portals.",
+    "Rebuild the eye bucket, eye mounts, and eye rear plate around the connected front frame.",
+    "Rebuild and validate glow-panel skirts, connectors, wrapped-panel clearance, and insertion/removal paths.",
+    "Replace the ear pin-against-pin arrangement with the accepted two-bolt ear interface.",
+    "Complete final seam reinforcement, collision, flange-meeting, and insertion-path validation for every shell pair.",
+    "Print and physically validate seam, socket, eye, and wrapped-panel coupons before authorizing the full ASA print.",
+    "Repeat all eight real Prusa slices after the final production geometry is frozen."
+  ]
+}
