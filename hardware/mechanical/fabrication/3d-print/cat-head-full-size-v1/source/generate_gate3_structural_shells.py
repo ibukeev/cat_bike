@@ -138,7 +138,7 @@ def create_section_object(
 def create_compact_rear_base_frame(
     frame: dict[str, float], material: bpy.types.Material
 ) -> bpy.types.Object:
-    """Create a closed, sloped trapezoidal frame extending inside the head."""
+    """Create a closed, sloped trapezoidal frame on the configured side of the rear plane."""
     top_y = float(frame["outer_top_y_mm"])
     top_z = float(frame["outer_top_z_mm"])
     bottom_y = float(frame["outer_bottom_y_mm"])
@@ -146,14 +146,14 @@ def create_compact_rear_base_frame(
     top_width = float(frame["outer_top_width_mm"])
     bottom_width = float(frame["outer_bottom_width_mm"])
     rail = float(frame["rail_width_mm"])
-    depth = float(frame["inward_depth_mm"])
+    depth = float(frame.get("frame_depth_mm", frame.get("inward_depth_mm", 0.0)))
     height = top_z - bottom_z
     if height <= 2.0 * rail:
         raise ValueError("Compact rear frame rails consume its full height")
     if min(top_width, bottom_width) <= 2.0 * rail:
         raise ValueError("Compact rear frame rails consume its full width")
     if depth <= 0.0:
-        raise ValueError("Compact rear frame inward depth must be positive")
+        raise ValueError("Compact rear frame depth must be positive")
 
     def plane_y(z: float) -> float:
         return bottom_y + (z - bottom_z) * (top_y - bottom_y) / height
@@ -174,8 +174,12 @@ def create_compact_rear_base_frame(
         ((bottom_width - 2.0 * rail) / 2.0, plane_y(inner_bottom_z), inner_bottom_z),
         (-(bottom_width - 2.0 * rail) / 2.0, plane_y(inner_bottom_z), inner_bottom_z),
     ]
+    depth_direction = str(frame.get("depth_direction", "inward"))
+    if depth_direction not in {"inward", "outward"}:
+        raise ValueError(f"Unknown rear-frame depth direction: {depth_direction}")
+    extension = inward if depth_direction == "inward" else outward
     vertices = front_vertices + [
-        tuple(Vector(vertex) + inward * depth) for vertex in front_vertices
+        tuple(Vector(vertex) + extension * depth) for vertex in front_vertices
     ]
     faces = (
         (0, 1, 5, 4), (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7),

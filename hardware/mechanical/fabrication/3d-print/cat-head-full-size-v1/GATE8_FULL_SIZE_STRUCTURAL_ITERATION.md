@@ -74,17 +74,28 @@ the locally available Everbilt 6605 nominal 3/4-inch square aluminum tube:
 - retention: one transverse 4.5 mm M4 clearance path, 10 mm inside the socket
   mouth, through both printed side walls and the drilled aluminum tube;
 - modeled tube route from the lower rear area to each upper portal: about
-  160.32 mm.
+  158.17 mm.
 
-Each socket is shifted about 18.17 mm farther inward than the earlier review
-geometry. Its nearest generated vertex is 8.499 mm behind the local exterior
-plane, and validation reports zero socket vertices outside either shell. Its
-mounting pad is a 68-percent inset copy of the actual triangular shell face,
-not an exterior rectangular pad, so it stays inside that face boundary as well
-as behind its plane. The tube stops inside the head. The sockets do not create
-exterior openings.
-Final tube cut lengths, lower backplate brackets, and load testing remain for
-the next physical-fit iteration.
+The original route was not compatible with the rear aluminum backplate: its
+straight axes missed the bottom of that plane by 14.179 mm, and its transverse
+M4 axes were rolled about 54.831 degrees from head-horizontal. The revised
+route terminates at `X = +/-40`, `Y = 267.336`, `Z = 147.132` mm, exactly on
+the rear-backplate plane and 15 mm above its lower edge. From each lower target
+the rail rises 17.662 degrees above head-forward and yaws 5.595 degrees away
+from the centerline. Socket roll now uses head X projected perpendicular to
+each rail, leaving the M4 axes only 5.333 degrees from head-horizontal.
+
+Each revised socket is shifted about 22.002 mm inward during placement. Its
+nearest generated vertex is 8.205 mm behind the local exterior plane, and
+validation reports zero socket vertices outside either shell. Its mounting pad
+is a 68-percent inset copy of the actual triangular shell face, not an exterior
+rectangular pad, so it stays inside that face boundary as well as behind its
+plane. The tube stops inside the head. The sockets do not create exterior
+openings. Final tube cut lengths, machined lower rail shoes, rear-base
+pass-throughs, backplate perimeter fasteners, and load testing remain for the
+next physical-fit iteration. The existing upper-head STLs and any upper-head
+G-code created before this axis/roll correction are obsolete and must not be
+printed.
 
 The lower M3 holes on the two sloped rear-base rails also move from 65 percent
 to 48 percent down each rail. Their distance from the lower inside corners is
@@ -150,6 +161,11 @@ The Gate 8 report currently passes all configured checks:
   stops, and contain one transverse M4 path;
 - the tube-fit opening is larger than the nominal 19.05 mm tube;
 - no exterior fastener holes were introduced.
+
+The revised portal report also records both lower targets on the aluminum
+backplate plane, 8.205 mm minimum exterior recess, 17.662 degree rail pitch,
+5.595 degree rail yaw, and 5.333 degree maximum M4-axis deviation from
+head-horizontal.
 
 PrusaSlicer `--info` also reports both upper socket shells, the rear base, and
 the one-piece socket coupon as manifold. A tiny inherited malformed hidden

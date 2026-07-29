@@ -1,0 +1,197 @@
+{
+  "name": "Cat head frame-fixed no-weld aluminum mount V0.2 rear-backplate handoff",
+  "status": "integration geometry review candidate; portal coupon, rail shoes, rear-base pass-throughs, paper and cardboard checks required before metal",
+  "units": "mm",
+  "bike_interface": {
+    "bike_model": "RadRunner 2",
+    "mount_mode": "fixed to the four factory front head-tube accessory bosses",
+    "boss_horizontal_center_spacing_mm": 30.0,
+    "boss_vertical_center_spacing_mm": 90.0,
+    "boss_face_diameter_mm": 18.0,
+    "existing_blank_bolt_under_head_length_mm": 14.0,
+    "thread_nominal": "M6; verify with the removed factory bolt before ordering hardware",
+    "frame_clearance_observation": "User physically confirmed that handlebar steering does not enter the four-boss connector area. The existing fork-mounted headlight occupies the volume below the connector; V0.2 raises the head rear interface 75 mm, but actual housing and beam clearance are still unvalidated.",
+    "headlight_decision": "Retain the existing fork-mounted headlight. Validate housing clearance and beam through the complete steering sweep with the actual Gate8 GLB or an accurate full-size cardboard head volume.",
+    "boss_plate": {
+      "material": "6061-T6 aluminum",
+      "thickness_mm": 4.75,
+      "width_mm": 60.0,
+      "height_mm": 115.0,
+      "corner_radius_mm": 6.0,
+      "frame_hole_diameter_mm": 6.6,
+      "side_web_hole_diameter_mm": 5.5,
+      "side_web_flange_hole_x_mm": 10.5,
+      "side_web_flange_hole_z_mm": [
+        -20.0,
+        20.0
+      ],
+      "tether_slot_width_mm": 16.0,
+      "tether_slot_height_mm": 8.0
+    }
+  },
+  "pose": {
+    "boss_plane_normal_elevation_deg": 11.2,
+    "boss_plane_angle_source": "Perspective-corrected estimate from the user side photo; validate with the 1:1 side template before metal release.",
+    "head_rear_plane_outward_normal_elevation_deg": 7.694665,
+    "yoke_pitch_relative_to_boss_plane_deg": -18.894665,
+    "yoke_center_forward_from_boss_plate_mm": 60.0,
+    "yoke_center_vertical_from_boss_pattern_mm": 75.0,
+    "headlight_reference": {
+      "measured_light_top_below_upper_boss_center_mm": 60.0,
+      "measurement_quality": "rough physical measurement supplied by user",
+      "light_top_relative_to_boss_pattern_center_mm": -15.0,
+      "status": "vertical datum only; the actual 330 mm Gate 8 shell overlaps this elevation in projection, so housing and beam clearance require the full 3D bike mockup",
+      "rejected_v01_clearance_claim": "The earlier 30.02 mm reference-envelope claim used a simplified 260 mm-high box and is invalid for the actual 330 mm shell."
+    }
+  },
+  "load_path": {
+    "side_webs": {
+      "quantity": 2,
+      "material": "5052-H32 aluminum",
+      "thickness_mm": 3.18,
+      "web_center_x_mm": 18.0,
+      "web_half_height_mm": 32.0,
+      "formed_centerline_length_mm": 96.046864,
+      "formed_geometry": "Diagonal central web connects a vertical rear bend line to the compact bike-adapter bend line at 60 mm forward and 75 mm upward.",
+      "rear_flange_width_mm": 15.0,
+      "front_flange_width_mm": 15.0,
+      "bend_inside_radius_mm": 3.18,
+      "bend_angle_deg": 90.0,
+      "fasteners": "Two M5 through-bolts, washers, and nyloc nuts at each rear flange and each front flange"
+    },
+    "front_adapter": {
+      "material": "6061-T6 aluminum",
+      "thickness_mm": 4.75,
+      "overall_width_mm": 90.0,
+      "overall_height_mm": 80.0,
+      "corner_radius_mm": 5.0,
+      "side_web_hole_diameter_mm": 5.5,
+      "side_web_flange_hole_x_mm": 10.5,
+      "side_web_flange_hole_v_mm": [
+        -20.0,
+        20.0
+      ],
+      "backplate_hole_diameter_mm": 6.6,
+      "backplate_hole_x_mm": 22.0,
+      "backplate_hole_v_mm": 20.0
+    }
+  },
+  "head_interface": {
+    "architecture": "The bike connector ends at a removable aluminum rear backplate. Two separate internal rails run from machined lower rail shoes on that plate to revised blind Gate 8 upper-shell sockets.",
+    "actual_gate8_shell_bounds_head_mm": {
+      "x_mm": [-151.915, 151.915],
+      "y_mm": [0.0, 269.345],
+      "z_mm": [0.0, 330.0]
+    },
+    "gate8_source_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-validation.json",
+    "rear_frame": {
+      "outer_top_width_mm": 60.0,
+      "outer_bottom_width_mm": 120.0,
+      "plane_height_mm": 79.663819,
+      "plane_center_head_mm": [0.0, 264.01125, 171.74025],
+      "outward_normal_head": [0.0, 0.990996, 0.133894],
+      "service_opening_top_width_mm": 20.0,
+      "service_opening_bottom_width_mm": 80.0,
+      "service_opening_height_mm": 39.663819
+    },
+    "aluminum_backplate": {
+      "material": "6061-T6 aluminum",
+      "thickness_mm": 3.0,
+      "outer_top_width_mm": 60.0,
+      "outer_bottom_width_mm": 120.0,
+      "height_mm": 79.663819,
+      "bike_adapter_hole_diameter_mm": 6.6,
+      "bike_adapter_hole_x_mm": 22.0,
+      "bike_adapter_hole_v_mm": 20.0,
+      "rail_lower_targets_head_mm": [[-40.0, 267.336, 147.132], [40.0, 267.336, 147.132]],
+      "perimeter_and_rail_shoe_holes_status": "Deferred until the rear-base pass-through coupon and mirrored machined rail shoes are physically reviewed; this plate is review geometry, not cut-ready."
+    },
+    "internal_rails": {
+      "profile": "Everbilt 6605 nominal 3/4-inch square aluminum tube",
+      "outer_width_mm": 19.05,
+      "socket_opening_mm": 20.5,
+      "right_lower_target_head_mm": [40.0, 267.336, 147.132],
+      "left_lower_target_head_mm": [-40.0, 267.336, 147.132],
+      "right_axis_head": [0.09294, -0.94874, 0.30208],
+      "left_axis_head": [-0.09294, -0.94874, 0.30208],
+      "reference_length_mm": 158.172,
+      "pitch_above_head_forward_deg": 17.662,
+      "yaw_from_head_centerline_deg": 5.595,
+      "socket_roll_reference": "head X projected perpendicular to each rail axis",
+      "cross_bolt_angle_from_head_x_deg": 5.333,
+      "top_retention": "One transverse M4 bolt per blind printed socket, 10 mm inside the mouth.",
+      "lower_retention": "Two mirrored machined 6061 solid-plug flange shoes, cross-bolted into the square tubes and through-bolted to the backplate; exact shoe geometry is the next release gate."
+    },
+    "portal_revision": {
+      "rejected_v01_axis_plane_miss_mm": 14.179,
+      "rejected_v01_cross_bolt_angle_from_head_x_deg": 54.831,
+      "selected_result": "Re-aimed rails terminate on the rear-backplate plane 15 mm above its lower edge; socket M4 axes are nearly horizontal and remain at least 8.205 mm behind the exterior shell plane.",
+      "old_upper_shell_outputs_invalidated": true
+    }
+  },
+  "rejected_v01_external_tubes": {
+    "profile": "Everbilt 6605 nominal 3/4-inch square aluminum tube",
+    "outer_width_mm": 19.05,
+    "design_socket_opening_mm": 20.5,
+    "center_spacing_at_yoke_mm": 116.0,
+    "reference_length_yoke_to_socket_stop_mm": 160.321,
+    "right_axis_bike_mount_coordinates": [
+      -0.00803,
+      0.96162,
+      0.27426
+    ],
+    "left_axis_bike_mount_coordinates": [
+      0.00803,
+      0.96162,
+      0.27426
+    ],
+    "right_across_yoke_uv": [
+      0.57599,
+      -0.817446
+    ],
+    "left_across_yoke_uv": [
+      -0.57599,
+      -0.817446
+    ],
+    "right_outward_yoke_uv": [
+      -0.817418,
+      -0.576007
+    ],
+    "left_outward_yoke_uv": [
+      -0.817418,
+      0.576007
+    ],
+    "root_adjustment": "Cut tubes oversize and leave their rear ends projecting through the 29 mm yoke openings during fit-up. Seat both upper ends against the blind Gate 8 socket stops, set head position, then mark and drill the lower clevis holes."
+  },
+  "rejected_v01_external_tube_clevis": {
+    "quantity_halves": 4,
+    "material": "5052-H32 aluminum",
+    "thickness_mm": 3.18,
+    "tube_side_clearance_each_mm": 0.5,
+    "cheek_length_from_yoke_mm": 52.0,
+    "cheek_width_mm": 30.0,
+    "base_foot_length_mm": 18.0,
+    "bend_inside_radius_mm": 3.18,
+    "bend_angle_deg": 90.0,
+    "base_hole_diameter_mm": 5.5,
+    "base_hole_outward_offsets_mm": [
+      -8.0,
+      8.0
+    ],
+    "tube_cross_bolt_diameter_mm": 5.5,
+    "tube_cross_bolt_axis_offsets_mm": [
+      20.0,
+      43.0
+    ],
+    "fasteners": "Eight M5 yoke mounting bolts plus four M5 transverse tube bolts, all with washers and nyloc nuts",
+    "anti_crush_sleeves": "Four fitted metal sleeves, one per transverse bolt. Final outside diameter and length require actual tube wall and inside-width measurement; sleeve ends must carry bolt clamp load without collapsing the hollow tube."
+  },
+  "hardware_release_notes": [
+    "The 60 mm headlight datum is a rough physical measurement. Do not release metal until the actual 330 mm Gate 8 shell and the bike headlight are checked together in a full-size 3D/cardboard mockup through the steering sweep.",
+    "Do not order frame bolts from the nominal model alone. Verify the factory M6 thread and blind-hole depth, then choose a length that reproduces the factory engagement without bottoming.",
+    "Use isolation washers or anti-seize appropriate to stainless-on-aluminum hardware and follow the verified fastener supplier torque guidance.",
+    "The side-web flat pattern depends on the selected fabricator's bend radius, K-factor, and tooling. The generated formed drawing is authoritative; the vendor must calculate its flat pattern.",
+    "Add an independent metal safety tether from the rear plate slot to the bike frame.",
+    "This V0.2 is not approved for metal or riding until the portal coupon, lower rail-shoe design, rear-base pass-throughs, paper template, cardboard volume mockup, full fit-up, proof load, vibration test, and progressive ride tests pass."
+  ]
+}

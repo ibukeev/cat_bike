@@ -1377,6 +1377,128 @@ def create_rear_base_connection_rail(
     return section, rail, records
 
 
+def create_rear_loaded_base_pads(
+    name: str,
+    connection: dict[str, Any],
+    config: dict[str, Any],
+    rear_frame: dict[str, Any],
+    rear_base: bpy.types.Object,
+    flange_material: bpy.types.Material,
+) -> tuple[str, list[bpy.types.Object], list[dict[str, Any]]]:
+    """Create large rear-normal M5 pads that never undercut base insertion."""
+    values = config["rear_base_flange_connections"]
+    validation = config["validation"]
+    section = str(connection["section"])
+    p0 = Vector(connection["p0_mm"])
+    p1 = Vector(connection["p1_mm"])
+    tangent = (p1 - p0).normalized()
+    inward = rear_base_inward_direction(rear_frame)
+    outward = -inward
+    frame_center = Vector(values["frame_center_mm"])
+    seam_center = p0.lerp(p1, 0.5)
+    toward_frame = frame_center - seam_center
+    toward_frame -= tangent * toward_frame.dot(tangent)
+    toward_frame -= inward * toward_frame.dot(inward)
+    if toward_frame.length < 0.01:
+        raise ValueError(f"{name}: cannot determine rear-frame radial direction")
+    toward_frame.normalize()
+
+    pad_length = float(values["pad_tangent_length_mm"])
+    pad_width = float(values["pad_radial_width_mm"])
+    pad_depth = float(values["pad_depth_mm"])
+    pad_recess = float(values["pad_minimum_exterior_recess_mm"])
+    fastener_inset = float(values["pad_fastener_inset_from_outer_edge_mm"])
+    pad_center_inset = float(values["pad_center_inset_from_outer_edge_mm"])
+    hole_diameter = float(values["m5_clearance_diameter_mm"])
+    tool_envelope = float(values["minimum_nut_tool_envelope_diameter_mm"])
+    frame_depth = float(
+        rear_frame.get("frame_depth_mm", rear_frame.get("inward_depth_mm", 0.0))
+    )
+    if rear_frame.get("depth_direction", "inward") != "outward":
+        raise ValueError("Rear-loaded base pads require an outward rear frame")
+    tangent_tool_clearance = pad_length / 2.0 - tool_envelope / 2.0
+    radial_tool_clearance = (
+        pad_width / 2.0
+        - abs(fastener_inset - pad_center_inset)
+        - tool_envelope / 2.0
+    )
+    tool_edge_clearance = min(tangent_tool_clearance, radial_tool_clearance)
+    if tool_edge_clearance < 6.0:
+        raise ValueError(f"{name}: nut/tool envelope lacks 6 mm pad edge clearance")
+
+    pads = []
+    records = []
+    for index, fraction in enumerate(connection["fractions"], start=1):
+        seam_point = p0.lerp(p1, float(fraction))
+        fastener_center = seam_point + toward_frame * fastener_inset
+        pad_center = (
+            seam_point
+            + toward_frame * pad_center_inset
+            + inward * (pad_recess + pad_depth / 2.0)
+        )
+        pad = box(
+            f"{name}_pad_{index:02d}",
+            pad_center,
+            (tangent, toward_frame, inward),
+            (pad_length, pad_width, pad_depth),
+            flange_material,
+        )
+        initial_volume = mesh_volume(pad)
+        pad_hole = cylinder(
+            f"{name}_pad_m5_{index:02d}",
+            fastener_center + outward * 2.0,
+            fastener_center + inward * (pad_recess + pad_depth + 2.0),
+            hole_diameter,
+        )
+        apply_boolean(pad, pad_hole, "DIFFERENCE", solver="MANIFOLD")
+        require_manifold(pad, f"{name} large pad M5 cut {index}")
+        retained_ratio = mesh_volume(pad) / initial_volume
+        if retained_ratio < float(validation["minimum_flange_retained_volume_ratio"]):
+            raise ValueError(f"{name}: rear pad retained ratio is too low")
+
+        base_hole = cylinder(
+            f"{name}_rear_base_m5_{index:02d}",
+            fastener_center + outward * (frame_depth + 2.0),
+            fastener_center + inward * 2.0,
+            hole_diameter,
+        )
+        apply_boolean(rear_base, base_hole, "DIFFERENCE", solver="MANIFOLD")
+        require_manifold(rear_base, f"{name} rear-loaded base M5 cut {index}")
+        pads.append(pad)
+        records.append({
+            "name": f"{name}_path_{index:02d}",
+            "sections": ["rear_base", section],
+            "owner": "rear_base",
+            "receiver": section,
+            "source_faces": ["procedural_rear_base_perimeter"],
+            "fastener_center_mm": [round(value, 4) for value in fastener_center],
+            "pad_dimensions_mm": [pad_length, pad_width, pad_depth],
+            "nut_tool_envelope_diameter_mm": tool_envelope,
+            "nut_tool_envelope_edge_clearance_mm": round(tool_edge_clearance, 3),
+            "rear_m5_screws": 1,
+            "internal_m3_screws": 0,
+            "captive_square_nuts": 0,
+            "loose_m3_nyloc_nuts": 0,
+            "alignment_dowels": 0,
+            "exterior_fastener_holes": 1,
+            "minimum_exterior_skin_mm": round(pad_recess, 3),
+            "minimum_tab_exterior_recess_mm": round(pad_recess, 3),
+            "fastener_axis": [round(value, 4) for value in inward],
+            "tabs_are_matching_plain_rectangles": False,
+            "receiver_tab_retained_volume_ratio": round(retained_ratio, 4),
+            "integrated_flange_tabs_valid": True,
+            "internal_tool_access_required": True,
+            "rear_loaded_screw_head": True,
+            "procedural_rear_base_attachment": True,
+            "continuous_rear_base_connector_rail": False,
+            "large_structural_mounting_pad": True,
+            "isolated_opening_tab": False,
+            "rear_base_internal_bore": True,
+            "rear_base_bore_length_mm": round(frame_depth + pad_depth, 3),
+        })
+    return section, pads, records
+
+
 def create_internal_flange_tab(
     name: str,
     module_length: float,
@@ -2023,28 +2145,40 @@ def main() -> None:
     for connection in rear_connection_config["connections"]:
         section = str(connection["section"])
         pair = f"rear_base__{section}"
-        name = f"rear_base_connector_rail_{section}"
-        rail_section, rail, records = create_rear_base_connection_rail(
-            name,
-            connection,
-            config,
-            rear_frame_config,
-            shells["rear_base"],
-            flange_material,
-        )
-        tabs_by_section[rail_section].append(rail)
+        if rear_connection_config.get("connection_mode") == "rear_loaded_large_pads":
+            name = f"rear_base_structural_pad_{section}"
+            pad_section, pads, records = create_rear_loaded_base_pads(
+                name, connection, config, rear_frame_config,
+                shells["rear_base"], flange_material,
+            )
+            tabs_by_section[pad_section].extend(pads)
+        else:
+            name = f"rear_base_connector_rail_{section}"
+            rail_section, rail, records = create_rear_base_connection_rail(
+                name, connection, config, rear_frame_config,
+                shells["rear_base"], flange_material,
+            )
+            tabs_by_section[rail_section].append(rail)
         pair_counts[pair] += len(records)
         joint_records.extend(records)
         rear_attachment_records.extend(records)
     rear_frame_result["attached_sections"] = list(
         rear_connection_config["attached_sections"]
     )
-    rear_frame_result["continuous_connector_rail_count"] = len(
-        rear_connection_config["connections"]
+    rear_frame_result["continuous_connector_rail_count"] = sum(
+        value.get("continuous_rear_base_connector_rail", False)
+        for value in rear_attachment_records
+    )
+    rear_frame_result["large_structural_pad_count"] = sum(
+        value.get("large_structural_mounting_pad", False)
+        for value in rear_attachment_records
     )
     rear_frame_result["isolated_opening_tab_count"] = 0
     rear_frame_result["internal_m3_attachment_count"] = sum(
         value["internal_m3_screws"] for value in rear_attachment_records
+    )
+    rear_frame_result["rear_m5_attachment_count"] = sum(
+        value.get("rear_m5_screws", 0) for value in rear_attachment_records
     )
 
     expected_component_counts = {
@@ -2058,6 +2192,7 @@ def main() -> None:
             )
         expected_components = expected_component_counts.get(section, 1)
         if len(components(shells[section])) > expected_components:
+            bpy.ops.wm.save_as_mainfile(filepath="/tmp/gate5-rear-pad-union-debug.blend")
             raise ValueError(
                 f"Flange-tab union increased {section} to "
                 f"{len(components(shells[section]))} components; expected at "
@@ -2201,7 +2336,9 @@ def main() -> None:
     )
     supplementary_rib_count = len(rib_records) - main_rib_count
     minimum_recorded_skin = min(
-        value["minimum_exterior_skin_mm"] for value in joint_records
+        value["minimum_exterior_skin_mm"]
+        for value in joint_records
+        if not value.get("procedural_rear_base_attachment", False)
     )
     report = {
         "gate": "Gate 5 internal flange tabs, hidden joints, and internal panel ribs",
@@ -2245,6 +2382,9 @@ def main() -> None:
         "internal_m3_screw_count": sum(
             value["internal_m3_screws"] for value in joint_records
         ),
+        "rear_m5_screw_count": sum(
+            value.get("rear_m5_screws", 0) for value in joint_records
+        ),
         "captive_m3_square_nut_count": sum(
             value["captive_square_nuts"] for value in joint_records
         ),
@@ -2287,10 +2427,16 @@ def main() -> None:
                 value["integrated_flange_tabs_valid"]
                 for value in joint_records
             ),
-            "all_joints_use_internal_fasteners": all(
+            "all_non_rear_joints_use_internal_fasteners": all(
                 value["internal_tool_access_required"]
                 and value["exterior_fastener_holes"] == 0
                 for value in joint_records
+                if not value.get("procedural_rear_base_attachment", False)
+            ),
+            "rear_base_has_six_intentional_rear_m5_paths": (
+                len(rear_attachment_records) == 6
+                and sum(value.get("rear_m5_screws", 0) for value in rear_attachment_records) == 6
+                and all(value["exterior_fastener_holes"] == 1 for value in rear_attachment_records)
             ),
             "hidden_hardware_preserves_minimum_exterior_skin": (
                 minimum_recorded_skin
@@ -2348,11 +2494,11 @@ def main() -> None:
                 for value in joint_records
                 if not value.get("procedural_rear_base_attachment", False)
             ),
-            "rear_base_uses_continuous_outer_connector_rails": (
-                len(rear_connection_config["connections"]) == 4
+            "rear_base_uses_large_structural_mounting_pads": (
+                len(rear_attachment_records) == 6
                 and all(
-                    value["continuous_rear_base_connector_rail"]
-                    and not value["isolated_opening_tab"]
+                    value.get("large_structural_mounting_pad", False)
+                    and value["nut_tool_envelope_edge_clearance_mm"] >= 6.0
                     for value in rear_attachment_records
                 )
             ),
@@ -2367,7 +2513,7 @@ def main() -> None:
                 and set(value["receiver"] for value in rear_attachment_records)
                 == set(rear_connection_config["attached_sections"])
             ),
-            "rear_base_continuous_rails_have_usable_internal_bores": all(
+            "rear_base_m5_paths_have_usable_through_bores": all(
                 value["rear_base_internal_bore"]
                 and value["rear_base_bore_length_mm"] > 0.0
                 for value in rear_attachment_records

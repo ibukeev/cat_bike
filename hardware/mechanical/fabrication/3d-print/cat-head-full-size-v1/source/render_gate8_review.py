@@ -70,7 +70,7 @@ def main() -> None:
             (0.0, 600.0, 180.0), True, (0.0, 112.0, 160.0), 58.0
         ),
         "gate8-integral-sockets-internal": (
-            (0.0, 48.0, 215.0), True, (0.0, 126.0, 203.0), 55.0
+            (0.0, 360.0, 190.0), True, (0.0, 145.0, 200.0), 62.0
         ),
     }
     rear_base = bpy.data.objects.get("rear_base")

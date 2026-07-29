@@ -7,7 +7,7 @@ import copy
 import json
 import sys
 from collections import defaultdict
-from math import radians
+from math import acos, degrees, radians
 from pathlib import Path
 from typing import Any
 
@@ -23,6 +23,7 @@ if str(SCRIPT_DIR) not in sys.path:
 
 import generate_gate1_master as gate1  # noqa: E402
 import generate_gate2_section_layout as gate2  # noqa: E402
+import generate_gate3_structural_shells as gate3  # noqa: E402
 import generate_gate5_ribs_and_joints as gate5  # noqa: E402
 import generate_gate6_eye_modules as gate6  # noqa: E402
 import generate_gate7_glow_panel_inserts as gate7  # noqa: E402
@@ -75,9 +76,19 @@ def configure_stage_outputs(config: dict[str, Any]) -> None:
         )
         for note in gate7.CONFIG["review_notes"]
     ]
+    gate3_blend = gate3.OUTPUT_DIR / "gate3-structural-shells.blend"
+    gate3_dependencies = [gate3.GATE3_CONFIG, Path(gate3.__file__)]
+    if not gate3_blend.exists() or gate3_blend.stat().st_mtime < max(
+        path.stat().st_mtime for path in gate3_dependencies
+    ):
+        print("Rebuilding Gate 3 for the current rear-base baseline")
+        gate3.main()
+
     final_stage_blend = STAGE7_DIR / "gate7-glow-panel-inserts-review.blend"
     stage_dependencies = [
         CONFIG_PATH,
+        *gate3_dependencies,
+        gate3_blend,
         Path(gate5.__file__),
         Path(gate6.__file__),
         Path(gate7.__file__),
@@ -905,6 +916,16 @@ def add_aluminum_portals(
     tube_references = []
     reports = {}
     depsgraph = bpy.context.evaluated_depsgraph_get()
+    horizontal = Vector((1.0, 0.0, 0.0))
+
+    def socket_basis(axis: Vector, normal: Vector) -> tuple[Vector, Vector]:
+        if values.get("socket_roll_reference") == "head_x_projected":
+            across = (horizontal - axis * horizontal.dot(axis)).normalized()
+            outward = axis.cross(across).normalized()
+            return across, outward
+        outward = (normal - axis * normal.dot(axis)).normalized()
+        return outward.cross(axis).normalized(), outward
+
     for side in ("right", "left"):
         shell_name = f"{side}_upper_head"
         target = Vector(values[f"upper_target_{side}_mm"])
@@ -913,8 +934,7 @@ def add_aluminum_portals(
             context, shell_name, target
         )
         axis = (surface - lower).normalized()
-        outward = (normal - axis * normal.dot(axis)).normalized()
-        across = outward.cross(axis).normalized()
+        across, outward = socket_basis(axis, normal)
         inner_surface = surface - normal * shell_wall
         clamp_length = float(values["clamp_length_mm"])
         minimum_exterior_recess = float(values["minimum_exterior_recess_mm"])
@@ -951,8 +971,7 @@ def add_aluminum_portals(
         placement_iterations = 0
         for placement_iterations in range(1, 6):
             axis = (open_center - lower).normalized()
-            outward = (normal - axis * normal.dot(axis)).normalized()
-            across = outward.cross(axis).normalized()
+            across, outward = socket_basis(axis, normal)
             clamp_center = open_center + axis * (clamp_length / 2.0)
             socket, socket_report = integrated_tube_socket(
                 f"gate8_{side}_tube_portal",
@@ -1016,6 +1035,12 @@ def add_aluminum_portals(
             "surface_anchor_mm": [round(value, 3) for value in surface],
             "lower_route_reference_mm": [round(value, 3) for value in lower],
             "tube_axis": [round(value, 5) for value in axis],
+            "socket_roll_reference": values.get(
+                "socket_roll_reference", "local_shell_normal"
+            ),
+            "cross_bolt_angle_from_head_x_deg": round(
+                degrees(acos(min(1.0, abs(across.dot(horizontal))))), 3
+            ),
             "tube_reference_length_mm": round(tube_vector.length, 3),
             "mount_pad_shell_triangle_intersections": pad_shell_intersections,
             "mount_pad_source_face_scale": pad_face_scale,
@@ -1308,7 +1333,10 @@ def export_gate8(
             reports["coupon"]["inner_width_mm"]
             > float(config["aluminum_upright_portals"]["tube_outer_width_mm"])
         ),
-        "no_new_exterior_fastener_holes": True,
+        "rear_base_has_six_intentional_rear_m5_paths": (
+            stage5_report["rear_m5_screw_count"] == 6
+            and stage5_report["exterior_fastener_hole_count"] == 6
+        ),
         "all_shells_fit_printer_orientation_search": all(
             value["orientation_search"]["fits"]
             for value in shell_metrics.values()
@@ -1324,6 +1352,7 @@ def export_gate8(
             "Opaque structural muzzle margins replace the eye-adjacent edges of the central diffuser.",
             "All matching flange modules use continuous solid shell-root bases; each ear retains one broad four-bolt saddle.",
             "Opaque shell seams gain continuous internal load-spreading rails.",
+            "A shallow rear-loaded base replaces the 18 mm undercut frame; six M5 bolts clamp it to 28 x 36 x 10 mm shell-integrated pads with 14 mm nut and tool envelopes.",
             "Glow-panel shell mounts are recessed 2.0 mm behind their exterior source planes.",
             "Panel ribs and seam rails are trimmed to a 0.8 mm clearance envelope around every removable glow insert.",
             (
@@ -1350,6 +1379,9 @@ def export_gate8(
             "total_internal_m3_fasteners": stage5_report[
                 "internal_m3_screw_count"
             ],
+            "rear_loaded_m5_fasteners": stage5_report["rear_m5_screw_count"],
+            "rear_pad_dimensions_mm": [28.0, 30.0, 10.0],
+            "rear_nut_tool_envelope_diameter_mm": 14.0,
         },
         "opaque_muzzle_frame": reports["muzzle"],
         "inter_shell_edge_rails": reports["seam_rails"],

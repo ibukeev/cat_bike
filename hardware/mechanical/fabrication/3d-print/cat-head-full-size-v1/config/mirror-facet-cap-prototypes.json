@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "source_head_height_mm": 330.0,
+  "source_gate": "Gate 8 full-size structural iteration",
+  "cap_material": "black ASA",
+  "cap_density_g_cm3": 1.07,
+  "mirror_face_print_orientation": "flat against a smooth build plate",
+  "perimeter_inset_mm": 0.9,
+  "corner_chamfer_mm": 0.8,
+  "prototype_thicknesses_mm": [0.6, 0.8],
+  "planarity_tolerance_mm": 0.05,
+  "printer_bed_mm": [240.0, 200.0],
+  "plate_margin_mm": 6.0,
+  "part_spacing_mm": 6.0,
+  "first_physical_trial": {
+    "side": "left",
+    "material": "black PETG",
+    "density_g_cm3": 1.27,
+    "build_sheet": "textured powder-coated PEI",
+    "thickness_mm": 0.8,
+    "selected_facets": [
+      {
+        "cap_id": "TRI042",
+        "source_panel_id": "TRI042",
+        "source_face_groups": ["TRI042"],
+        "location": "left center muzzle frame",
+        "expected_gate8_role": "integrated_opaque",
+        "purpose": "small left-side corner, trimming, and adhesive test"
+      },
+      {
+        "cap_id": "TRI019",
+        "source_panel_id": "TRI019",
+        "source_face_groups": ["TRI019"],
+        "location": "left forehead",
+        "expected_gate8_role": "integrated_opaque",
+        "purpose": "medium left-side triangular visible finish sample"
+      },
+      {
+        "cap_id": "QUAD025_B",
+        "source_panel_id": "QUAD025",
+        "source_face_groups": ["QUAD025-B"],
+        "location": "left ear outer plane, second triangulated plane",
+        "expected_gate8_role": "integrated_opaque",
+        "purpose": "largest left-side cap and broad bubbling/flatness test"
+      }
+    ]
+  },
+  "selected_facets": [
+    {
+      "cap_id": "TRI014",
+      "source_panel_id": "TRI014",
+      "source_face_groups": ["TRI014"],
+      "location": "right forehead",
+      "expected_gate8_role": "integrated_opaque",
+      "purpose": "medium triangular visible facet and ordinary film-finish sample"
+    },
+    {
+      "cap_id": "QUAD014_A",
+      "source_panel_id": "QUAD014",
+      "source_face_groups": ["QUAD014-A"],
+      "location": "right cheek, first triangulated plane",
+      "expected_gate8_role": "integrated_opaque",
+      "purpose": "first half of a source quad with 1.996 mm full-quad planarity residual"
+    },
+    {
+      "cap_id": "QUAD014_B",
+      "source_panel_id": "QUAD014",
+      "source_face_groups": ["QUAD014-B"],
+      "location": "right cheek, second triangulated plane",
+      "expected_gate8_role": "integrated_opaque",
+      "purpose": "second half of a source quad; tests an intentional diagonal black reveal"
+    },
+    {
+      "cap_id": "TRI003",
+      "source_panel_id": "TRI003",
+      "source_face_groups": ["TRI003"],
+      "location": "right center muzzle frame",
+      "expected_gate8_role": "integrated_opaque",
+      "purpose": "small Gate 8 reclassified opaque detail and narrow-corner handling check"
+    },
+    {
+      "cap_id": "QUAD008_A",
+      "source_panel_id": "QUAD008",
+      "source_face_groups": ["QUAD008-A"],
+      "location": "right ear outer plane, first triangulated plane",
+      "expected_gate8_role": "integrated_opaque",
+      "purpose": "first half of a large source quad with 0.870 mm full-quad planarity residual"
+    },
+    {
+      "cap_id": "QUAD008_B",
+      "source_panel_id": "QUAD008",
+      "source_face_groups": ["QUAD008-B"],
+      "location": "right ear outer plane, second triangulated plane",
+      "expected_gate8_role": "integrated_opaque",
+      "purpose": "largest individual sample, long-edge flatness check, and thin-ASA curl check"
+    }
+  ],
+  "film_test_plan": {
+    "minimum_colors": 2,
+    "preferred_colors": [
+      "rose gold mirror chrome",
+      "warm or champagne gold mirror chrome"
+    ],
+    "control_color": "silver mirror chrome",
+    "minimum_sample_size": "12 x 24 inches per color",
+    "application": "dry, on the smooth build-plate face, trimmed flush at the black cap edge"
+  },
+  "review_notes": [
+    "These caps are cosmetic prototypes only and do not alter the structural shell or approved glow-panel geometry.",
+    "TRI003 was a Gate 1 glow candidate but is intentionally opaque in Gate 8 and is valid for a mirror-cap trial.",
+    "Four representative source facets produce six planar caps because QUAD014 and QUAD008 each have a real diagonal bend and must be split into their two source triangles.",
+    "The 0.6 mm and 0.8 mm sets use the same 0.9 mm perimeter inset and 0.8 mm corner chamfer.",
+    "Print each plate with the future mirrored face on the smooth build plate. Do not add supports, ironing, or raised labels to that face.",
+    "A printed metallic or silk filament is not a mirror finish; every prototype still receives adhesive mirror film."
+  ]
+}

@@ -239,6 +239,28 @@ around every removable glow insert. See
 [GATE8_FULL_SIZE_STRUCTURAL_ITERATION.md](GATE8_FULL_SIZE_STRUCTURAL_ITERATION.md)
 and [GATE8_RESUME_CHECKPOINT.md](GATE8_RESUME_CHECKPOINT.md).
 
+## Generate Mirror-Facet Cap Prototypes
+
+The mirror-finish experiment uses four representative Gate 8 source facets.
+Two non-planar source quads split along their existing diagonals, producing six
+truly planar caps at both 0.6 mm and 0.8 mm thickness:
+
+~~~bash
+python3 hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_mirror_facet_cap_prototypes.py
+~~~
+
+Start with `mirror-facet-cap-left-starter-plate-0p8mm.stl`, a three-part
+black-PETG trial derived from the actual left muzzle, forehead, and ear facets
+for the currently printed left shell. Review the two complete thickness plates
+and 1:1 SVG under `output/mirror-facet-cap-prototypes/`. A textured starter
+print is valid for handling and bonding tests; repeat the chosen cap on a
+protected smooth sheet before final optical approval. Apply adhesive mirror
+film while each cap is fully supported on a flat table. See
+[MIRROR_FACET_CAP_PROTOTYPES.md](MIRROR_FACET_CAP_PROTOTYPES.md) for the
+Amazon film shortlist, application procedure, and acceptance checks, and
+[MIRROR_FACET_CAP_PROTOTYPES_RESUME_CHECKPOINT.md](MIRROR_FACET_CAP_PROTOTYPES_RESUME_CHECKPOINT.md)
+for the resumable state.
+
 ## Coordinate System
 
 - `X`: left/right, centered on the face.
