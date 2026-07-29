@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.4",
-  "status": "frozen after user-approved conservative no-coupon socket allowance; not a cut or drilling release",
+  "status": "V0.4 socket geometry frozen and aluminum-side M1 handoff digitally finalized; not a fabrication or riding release",
   "units": "mm",
   "coordinate_system": {
     "name": "Gate 8 head coordinates",
@@ -39,7 +39,34 @@
       "x_mm": [-22.0, 22.0],
       "local_v_mm": [-20.0, 20.0]
     },
-    "perimeter_and_rail_shoe_holes_status": "deferred pending rear-cassette, pass-through, hardware, and tool-envelope review"
+    "perimeter_and_rail_shoe_holes_status": "aluminum-side M1 pattern finalized for shell integration; physical coupon and regenerated ASA A-39 validation remain required",
+    "shell_attachment_hole_pattern": {
+      "quantity": 6,
+      "nominal": "M5",
+      "diameter_mm": 5.5,
+      "local_x_v_centers_mm": [
+        [-10.0, 30.0],
+        [10.0, 30.0],
+        [-20.0, 0.0],
+        [20.0, 0.0],
+        [-10.0, -30.0],
+        [10.0, -30.0]
+      ],
+      "washer_outer_diameter_mm": 10.0,
+      "shell_pad_tool_envelope_diameter_mm": 14.0
+    },
+    "rail_shoe_hole_pattern": {
+      "quantity_total": 6,
+      "nominal": "M5",
+      "diameter_mm": 5.5,
+      "right_local_x_v_centers_mm": [
+        [36.0, -30.0],
+        [47.4, -30.0],
+        [38.0, -9.0]
+      ],
+      "left_is_x_mirror": true,
+      "rear_washer_outer_diameter_mm": 10.0
+    }
   },
   "rail_system": {
     "quantity": 2,
@@ -51,7 +78,11 @@
       "derived_inside_width_mm": 15.0,
       "derived_inside_height_mm": 15.0,
       "available_stock_length_mm": 914.4,
-      "final_cut_length_status": "deferred until lower shoes, socket seating depth, and full fit-up are fixed"
+      "final_cut_length_status": "aluminum-side M1 finished length finalized from V6.1 stop, 0.5 mm seated clearance, and 8.0 mm lower shoe standoff",
+      "finished_cut_length_mm": 149.672,
+      "drawing_rounded_cut_length_mm": 149.7,
+      "finished_length_tolerance_mm": 0.25,
+      "rough_cut_length_mm": 151.0
     },
     "lower_targets_head_mm": {
       "left": [-40.0, 267.336, 147.132],
@@ -66,6 +97,10 @@
       "right": [0.09294, -0.94874, 0.30208]
     },
     "modeled_installed_reference_length_mm": 158.172,
+    "upper_seated_end_clearance_mm": 0.5,
+    "lower_shoe_standoff_along_axis_mm": 8.0,
+    "upper_m4_center_from_lower_cut_end_mm": 130.972,
+    "upper_m4_center_from_upper_cut_end_mm": 18.7,
     "review_display_length_mm": 300.0,
     "pitch_above_head_forward_deg": 17.662,
     "yaw_from_head_centerline_deg": 5.595,
@@ -86,12 +121,67 @@
       "cross_bolt_offset_from_open_end_mm": 10.0,
       "expected_cross_bolt_angle_from_head_x_deg": 5.333
     },
-    "lower_shoe_status": "deferred; must use a solid plug or equivalent anti-crush metal load path and be reviewed with the rear cassette"
+    "lower_shoe_status": "aluminum-side M1 monolithic 6061 solid-plug shoes finalized; current V6.1 rear bezel requires localized reintegration",
+    "lower_shoe": {
+      "quantity": 2,
+      "material": "6061-T6 aluminum billet",
+      "manufacturing": "mirrored monolithic CNC-machined shoes; no weld",
+      "plate_side": "inside/front face of the 3 mm aluminum backplate",
+      "foot_thickness_mm": 10.0,
+      "right_foot_local_x_v_polygon_mm": [
+        [29.5, -37.0],
+        [56.0, -37.0],
+        [44.0, -1.0],
+        [30.5, -1.0]
+      ],
+      "left_is_x_mirror": true,
+      "solid_plug": {
+        "nominal_width_mm": 14.7,
+        "nominal_height_mm": 14.7,
+        "long_edge_chamfer_mm": 1.2,
+        "nose_chamfer_mm": 1.0,
+        "start_offset_from_lower_target_along_axis_mm": 5.3,
+        "end_offset_from_lower_target_along_axis_mm": 45.0,
+        "tube_lower_cut_plane_offset_from_lower_target_along_axis_mm": 8.0,
+        "insertion_inside_tube_mm": 37.0,
+        "physical_fit_rule": "machine each plug to a light sliding fit in its actual deburred rail; target maximum diametral clearance 0.30 mm"
+      },
+      "rail_stop": {
+        "collar_start_offset_mm": 6.5,
+        "collar_end_offset_mm": 8.0,
+        "collar_across_axis_width_mm": 23.0,
+        "collar_other_axis_height_mm": 19.0
+      },
+      "rail_cross_bolts": {
+        "quantity_per_rail": 2,
+        "nominal": "M5",
+        "clearance_diameter_mm": 5.5,
+        "centers_from_tube_lower_cut_end_mm": [10.0, 25.0],
+        "axis": "head X projected perpendicular to the accepted rail axis",
+        "fastener": "M5 x 30 through-bolt, two washers, and M5 nyloc nut",
+        "fabrication": "fit and clamp each matched shoe/rail pair, then jig-drill the complete stack",
+        "head_side": "head/washer on the head-centerline-facing rail side; washer/nyloc on the outer-facing side",
+        "head_washer_stack_thickness_mm": 6.0,
+        "nut_washer_stack_thickness_mm": 6.0,
+        "head_washer_envelope_diameter_mm": 10.0,
+        "nut_washer_envelope_diameter_mm": 10.0,
+        "straight_tool_approach_diameter_mm": 14.0,
+        "straight_tool_approach_length_mm": 25.0
+      },
+      "backplate_fasteners": {
+        "quantity_per_shoe": 3,
+        "fastener": "M5 x 12 socket-head cap screw with 10 mm OD washer and removable medium-strength threadlocker",
+        "minimum_thread_engagement_mm": 8.0,
+        "blind_tap_depth_mm": 9.0
+      },
+      "anti_crush_load_path": "M5 head/washer to near tube wall to fitted solid 6061 plug to far tube wall to washer/nyloc; no unsupported hollow-wall clamp path"
+    }
   },
   "assembly_contract": {
     "primary_bike_connector_load_path": "metal only; printed polymer is excluded",
     "rear_service_direction": "rear-loaded after the main shell sections are joined",
-    "rails_installation": "final sequence deferred; validate insertion, seating, fastening, tool access, and removal with complete shell and rear cassette",
+    "rails_installation": "shoes bolt to the plate, matched rails seat at the 8 mm shoe stops and receive two lower M5 cross-bolts each, the assembly enters through the open rear aperture, rails seat in the unchanged V6.1 sockets, upper M4 bolts and six rear M5 shell fasteners are installed, then the regenerated bezel closes",
+    "rail_pass_through_policy": "no backplate cutout and no external shell pass-through; remove the open rear bezel for service",
     "lower_rail_target_change_policy": "retain X +/-40 for the first coordinated comparison; change only as one shell/backplate/shoe/socket revision"
   },
   "validation_tolerances": {
@@ -116,13 +206,21 @@
       "The larger allowance can produce perceptible unbolted rattle before the M4 fastener is installed."
     ]
   },
+  "metal_handoff_record": {
+    "date": "2026-07-29",
+    "revision": "CAT-HEAD-SHELL-ALUMINUM-V0.4-M1",
+    "decision": "Finalize the aluminum-side lower shoes, solid anti-crush plugs, rail cut/drill stations, and backplate shell/shoe holes while preserving every accepted V0.4 rail and socket datum.",
+    "digital_result": "PASS - V0.4 aluminum-side interface digitally finalized",
+    "current_shell_result": "Backplate, rails, fixed body shells, sockets, and bottom keel clear. The now-final 10 mm shoe feet have 28 localized triangle-overlap pairs with the provisional V6.1 rear bezel; the shell consumer must regenerate the bezel and six ASA pads from this M1 handoff.",
+    "rail_finished_cut_length_mm": 149.672,
+    "socket_geometry_changed": false,
+    "fabrication_authorized": false
+  },
   "open_items": [
     "actual tube corner radius",
     "tube alloy and temper",
-    "final rail cut lengths",
-    "lower rail shoe and anti-crush plug geometry",
-    "rail pass-through geometry",
-    "backplate perimeter and shoe holes",
+    "physical verification of actual rail inside dimensions and corner radii before plug machining",
+    "regenerated rear bezel and six ASA structural pads using the V0.4-M1 hole and shoe envelopes",
     "rear cassette seam, attachment, sealing, wiring, and drainage",
     "complete shell/metal/hardware/tool collision matrix",
     "optional physical socket coupon if the user later rejects fit or rattle",

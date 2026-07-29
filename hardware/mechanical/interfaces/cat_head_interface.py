@@ -184,6 +184,53 @@ def validate_interface(interface: dict[str, Any]) -> dict[str, Any]:
             "pass": min(target_edge_clearance.values()) > 0.0,
         },
     }
+    if "finished_cut_length_mm" in profile:
+        derived_final_cut = (
+            float(rails["modeled_installed_reference_length_mm"])
+            - float(rails["upper_seated_end_clearance_mm"])
+            - float(rails["lower_shoe_standoff_along_axis_mm"])
+        )
+        shell_pattern = backplate["shell_attachment_hole_pattern"]
+        shoe_pattern = backplate["rail_shoe_hole_pattern"]
+        lower_shoe = rails["lower_shoe"]
+        checks["finalized_rail_cut_matches_socket_and_shoe_datums"] = {
+            "value_mm": float(profile["finished_cut_length_mm"]),
+            "derived_mm": derived_final_cut,
+            "pass": abs(
+                float(profile["finished_cut_length_mm"])
+                - derived_final_cut
+            ) <= float(tolerances["derived_dimension_error_mm_max"]),
+        }
+        checks["finalized_backplate_has_six_shell_and_six_shoe_holes"] = {
+            "value": [
+                int(shell_pattern["quantity"]),
+                int(shoe_pattern["quantity_total"]),
+            ],
+            "pass": (
+                int(shell_pattern["quantity"]) == 6
+                and len(shell_pattern["local_x_v_centers_mm"]) == 6
+                and int(shoe_pattern["quantity_total"]) == 6
+                and len(shoe_pattern["right_local_x_v_centers_mm"]) == 3
+                and bool(shoe_pattern["left_is_x_mirror"])
+            ),
+        }
+        checks["finalized_shoe_has_solid_anti_crush_load_path"] = {
+            "value_mm": lower_shoe["solid_plug"][
+                "insertion_inside_tube_mm"
+            ],
+            "pass": (
+                float(
+                    lower_shoe["solid_plug"][
+                        "insertion_inside_tube_mm"
+                    ]
+                ) >= 30.0
+                and int(
+                    lower_shoe["rail_cross_bolts"][
+                        "quantity_per_rail"
+                    ]
+                ) == 2
+            ),
+        }
     passed = all(check["pass"] for check in checks.values())
     return {
         "status": "PASS - COORDINATED REVIEW INTERFACE ONLY" if passed else "FAIL",
@@ -277,6 +324,12 @@ def metal_head_interface_contract(interface: dict[str, Any]) -> dict[str, Any]:
                 rails["lower_targets_head_mm"]["left"],
                 rails["lower_targets_head_mm"]["right"],
             ],
+            "shell_attachment_hole_pattern": backplate.get(
+                "shell_attachment_hole_pattern"
+            ),
+            "rail_shoe_hole_pattern": backplate.get(
+                "rail_shoe_hole_pattern"
+            ),
         },
         "internal_rails": {
             "profile": profile["description"],
@@ -292,6 +345,20 @@ def metal_head_interface_contract(interface: dict[str, Any]) -> dict[str, Any]:
             "right_axis_head": rails["accepted_axes_head"]["right"],
             "left_axis_head": rails["accepted_axes_head"]["left"],
             "reference_length_mm": rails["modeled_installed_reference_length_mm"],
+            "finished_cut_length_mm": profile.get("finished_cut_length_mm"),
+            "finished_length_tolerance_mm": profile.get(
+                "finished_length_tolerance_mm"
+            ),
+            "upper_seated_end_clearance_mm": rails.get(
+                "upper_seated_end_clearance_mm"
+            ),
+            "lower_shoe_standoff_along_axis_mm": rails.get(
+                "lower_shoe_standoff_along_axis_mm"
+            ),
+            "upper_m4_center_from_lower_cut_end_mm": rails.get(
+                "upper_m4_center_from_lower_cut_end_mm"
+            ),
+            "lower_shoe": rails.get("lower_shoe"),
             "pitch_above_head_forward_deg": rails["pitch_above_head_forward_deg"],
             "yaw_from_head_centerline_deg": rails["yaw_from_head_centerline_deg"],
             "socket_roll_reference": socket["roll_reference"],

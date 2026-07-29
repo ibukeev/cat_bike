@@ -51,10 +51,12 @@ def load_resolved_config() -> tuple[dict[str, Any], dict[str, Any]]:
     coordinator = json.loads(COORDINATOR_PATH.read_text(encoding="utf-8"))
     base_path = repo_path(coordinator["base_config_path"])
     interface_path = repo_path(coordinator["shared_interface"]["path"])
+    final_path = repo_path(coordinator["final_config_path"])
     interface, interface_report = load_interface(
         interface_path,
         coordinator["shared_interface"]["required_revision"],
     )
+    final_config = json.loads(final_path.read_text(encoding="utf-8"))
     resolved = copy.deepcopy(json.loads(base_path.read_text(encoding="utf-8")))
     merge_dict(resolved["head_interface"], metal_head_interface_contract(interface))
     resolved["shared_interface"] = {
@@ -87,6 +89,38 @@ def load_resolved_config() -> tuple[dict[str, Any], dict[str, Any]]:
             and resolved["head_interface"]["internal_rails"]["outer_height_mm"] == 19.0
             and resolved["head_interface"]["internal_rails"]["wall_thickness_mm"] == 2.0
         ),
+        "final_config_uses_v04_interface": (
+            final_config["required_interface_revision"]
+            == interface["interface_revision"]
+        ),
+        "final_rail_cut_length_is_149p672_mm": (
+            float(final_config["rails"]["finished_cut_length_mm"])
+            == float(
+                interface["rail_system"]["profile"][
+                    "finished_cut_length_mm"
+                ]
+            )
+            == 149.672
+        ),
+        "final_backplate_has_six_shell_and_six_shoe_holes": (
+            len(
+                final_config["backplate"]["shell_attachment"][
+                    "local_x_v_centers_mm"
+                ]
+            ) == 6
+            and 2 * len(
+                final_config["backplate"]["shoe_attachment"][
+                    "right_local_x_v_centers_mm"
+                ]
+            ) == 6
+        ),
+        "final_shoes_use_37_mm_solid_plug_insertion": (
+            float(
+                final_config["lower_shoe"]["solid_plug"][
+                    "insertion_inside_tube_mm"
+                ]
+            ) == 37.0
+        ),
     }
     if not all(checks.values()):
         failed = [name for name, passed in checks.items() if not passed]
@@ -104,6 +138,10 @@ def load_resolved_config() -> tuple[dict[str, Any], dict[str, Any]]:
         "shared_interface": {
             "path": coordinator["shared_interface"]["path"],
             "sha256": file_sha256(interface_path),
+        },
+        "final_config": {
+            "path": coordinator["final_config_path"],
+            "sha256": file_sha256(final_path),
         },
         "resolved_head_interface": metal_head_interface_contract(interface),
         "ready_for_geometry_generation": bool(coordinator["generation_enabled"]),

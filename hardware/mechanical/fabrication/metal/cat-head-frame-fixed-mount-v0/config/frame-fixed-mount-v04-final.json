@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "status": "digitally finalized aluminum-side V0.4 handoff; not a fabrication or riding release",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v04.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.4",
+  "v61_socket_checkpoint_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/GATE9_V6_SOCKET_PORTALS_CHECKPOINT_2026-07-29.md",
+  "v61_socket_summary_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-socket-portals-v6-summary.json",
+  "v61_socket_blend_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-socket-portals-candidate-v6/gate9-socket-portals-candidate-v6.blend",
+  "output_namespace": "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/output/v04-finalized-interface",
+  "backplate": {
+    "shell_attachment": {
+      "quantity": 6,
+      "nominal": "M5",
+      "clearance_diameter_mm": 5.5,
+      "washer_outer_diameter_mm": 10.0,
+      "shell_pad_tool_envelope_diameter_mm": 14.0,
+      "local_x_v_centers_mm": [
+        [-10.0, 30.0],
+        [10.0, 30.0],
+        [-20.0, 0.0],
+        [20.0, 0.0],
+        [-10.0, -30.0],
+        [10.0, -30.0]
+      ],
+      "assembly": "rear-loaded M5 bolts through the aluminum plate into the shell-side structural pads; final shell consumer selects grip length and locking hardware after ASA pad integration"
+    },
+    "shoe_attachment": {
+      "quantity_per_shoe": 3,
+      "nominal": "M5",
+      "plate_clearance_diameter_mm": 5.5,
+      "rear_washer_outer_diameter_mm": 10.0,
+      "right_local_x_v_centers_mm": [
+        [36.0, -30.0],
+        [47.4, -30.0],
+        [38.0, -9.0]
+      ],
+      "left_is_x_mirror": true,
+      "fastener": "M5 x 12 socket-head cap screw, 10 mm OD washer, medium-strength removable threadlocker",
+      "thread_engagement_mm": 8.0,
+      "shoe_blind_tap_depth_mm": 9.0
+    },
+    "hardware_envelopes": {
+      "adapter_hardware_diameter_mm": 14.0,
+      "shell_attachment_tool_diameter_mm": 14.0,
+      "shoe_fastener_tool_diameter_mm": 10.0
+    },
+    "minimum_hole_edge_ligament_mm": {
+      "m6_adapter": 8.0,
+      "m5_shell": 5.0,
+      "m5_shoe": 5.5
+    },
+    "minimum_cut_hole_to_cut_hole_ligament_mm": 4.0,
+    "minimum_hardware_envelope_gap_mm": 0.1,
+    "minimum_adapter_hardware_to_shoe_foot_gap_mm": 0.5,
+    "minimum_tapped_hole_ligament_in_shoe_foot_mm": 3.5
+  },
+  "lower_shoe": {
+    "quantity": 2,
+    "material": "6061-T6 aluminum billet",
+    "manufacturing": "mirrored monolithic CNC-machined shoes; no weld",
+    "plate_side": "inside/front face of the 3 mm aluminum backplate",
+    "foot_thickness_mm": 10.0,
+    "right_foot_local_x_v_polygon_mm": [
+      [29.5, -37.0],
+      [56.0, -37.0],
+      [44.0, -1.0],
+      [30.5, -1.0]
+    ],
+    "left_is_x_mirror": true,
+    "solid_plug": {
+      "nominal_width_mm": 14.7,
+      "nominal_height_mm": 14.7,
+      "fit_requirement": "machine to a light sliding fit in each actual deburred rail; maximum target diametral clearance 0.30 mm",
+      "long_edge_chamfer_mm": 1.2,
+      "nose_chamfer_mm": 1.0,
+      "start_offset_from_lower_target_along_axis_mm": 5.3,
+      "end_offset_from_lower_target_along_axis_mm": 45.0,
+      "insertion_inside_tube_mm": 37.0
+    },
+    "rail_stop": {
+      "tube_lower_cut_plane_offset_from_lower_target_along_axis_mm": 8.0,
+      "collar_start_offset_mm": 6.5,
+      "collar_end_offset_mm": 8.0,
+      "collar_across_axis_width_mm": 23.0,
+      "collar_other_axis_height_mm": 19.0,
+      "description": "two 2 mm side shoulders created by a 23 x 19 x 1.5 mm collar; the collar is wider only on the head-X-projected cross-bolt axis so it clears the backplate"
+    },
+    "rail_cross_bolts": {
+      "quantity_per_rail": 2,
+      "nominal": "M5",
+      "clearance_diameter_mm": 5.5,
+      "centers_from_tube_lower_cut_end_mm": [10.0, 25.0],
+      "axis": "head X projected perpendicular to the accepted rail axis",
+      "fastener": "M5 x 30 through-bolt, two washers, M5 nyloc nut",
+      "fabrication": "fit and clamp each matched shoe/rail pair, then jig-drill the complete stack; do not separately drill unmatched parts",
+      "head_side": "head/washer on the head-centerline-facing rail side; washer/nyloc on the outer-facing side",
+      "head_washer_stack_thickness_mm": 6.0,
+      "nut_washer_stack_thickness_mm": 6.0,
+      "head_washer_envelope_diameter_mm": 10.0,
+      "nut_washer_envelope_diameter_mm": 10.0,
+      "straight_tool_approach_diameter_mm": 14.0,
+      "straight_tool_approach_length_mm": 25.0
+    },
+    "anti_crush_load_path": "M5 head and washer -> 2 mm near tube wall -> fitted solid 6061 plug -> 2 mm far tube wall -> washer and nyloc nut; the plug, not an unsupported hollow wall, reacts clamp load",
+    "prohibited": [
+      "welding the shoe to the tube or plate",
+      "using printed polymer in the bike-connector primary load path",
+      "tightening a cross-bolt across an empty hollow tube",
+      "forcing an oversize plug into the measured rail"
+    ]
+  },
+  "rails": {
+    "quantity": 2,
+    "finished_cut_length_mm": 149.672,
+    "drawing_rounded_cut_length_mm": 149.7,
+    "finished_length_tolerance_mm": 0.25,
+    "rough_cut_length_mm": 151.0,
+    "ends": "square cuts perpendicular to the tube axis; deburr inside and outside without shortening below finished tolerance",
+    "socket_stop_reference_length_mm": 158.172,
+    "upper_seated_end_clearance_mm": 0.5,
+    "lower_shoe_standoff_mm": 8.0,
+    "upper_m4_center_from_lower_cut_end_mm": 130.972,
+    "upper_m4_center_from_upper_cut_end_mm": 18.7,
+    "lower_m5_centers_from_lower_cut_end_mm": [10.0, 25.0],
+    "stock_required_finished_mm": 299.344,
+    "stock_required_including_two_rough_cuts_mm": 302.0,
+    "stock_available_mm": 914.4,
+    "stock_remaining_after_two_rough_cuts_mm": 612.4,
+    "matched_pair_rule": "label left/right and lower/upper ends before drilling; do not swap a rail away from its transfer-drilled shoe"
+  },
+  "service_interface": {
+    "backplate_rail_pass_through": "none",
+    "printed_shell_pass_through": "none; the rear bezel is removed and the rails enter through the open rear service aperture",
+    "sequence": [
+      "bolt the two fitted shoes to the inside/front face of the aluminum backplate",
+      "slide the labeled rails over the solid plugs until both lower cut ends contact the side-shoulder stops",
+      "install the four lower M5 through-bolts",
+      "offer the metal/backplate/rail assembly through the open rear service aperture",
+      "seat the rail upper ends in the unchanged 21 mm V6.1 sockets",
+      "install the two upper M4 socket cross-bolts",
+      "install the six rear-loaded M5 backplate-to-shell fasteners",
+      "install the open rear bezel only after all structural fasteners are torqued and witnessed"
+    ]
+  },
+  "validation": {
+    "rail_length_tolerance_mm": 0.001,
+    "frozen_socket_opening_mm": 21.0,
+    "minimum_plug_cross_hole_end_ligament_mm": 6.0,
+    "minimum_shoe_to_shell_sampled_clearance_mm": 0.6,
+    "minimum_rail_to_shell_sampled_clearance_mm": 0.6,
+    "require_no_new_backplate_rail_cutout": true
+  },
+  "release_holds": [
+    "the current V6.1 rear bezel has a localized collision with the now-final metal shoes; shell session must regenerate its rear bezel and six structural pads from this exact handoff and rerun the complete A-39 collision/service sequence",
+    "the actual rail inside dimensions and corner radii must be checked before machining the solid plugs",
+    "a physical rear-interface/shoe coupon must prove plug fit, access, clamp behavior, and repeatable assembly",
+    "complete headlight housing, beam, steering sweep, and cable clearance remain unresolved",
+    "stationary proof load, vibration inspection, independent metal tether, and progressive low-speed ride tests remain mandatory"
+  ]
+}

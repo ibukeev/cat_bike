@@ -1,7 +1,45 @@
-# Cat head frame-fixed aluminum mount V0.2
+# Cat head frame-fixed aluminum mount V0.4
 
-Status: **integration geometry review candidate; not released as a complete
-metal assembly or for riding**.
+Status: **V0.4-M1 aluminum-side interface digitally finalized; not released for metal fabrication or riding**.
+
+## Current V0.4-M1 handoff
+
+The accepted V0.4 rail axes, lower targets, socket roll, 21 mm straight socket opening, 1 mm lead-in, 30 mm insertion depth, and M4 upper retention are unchanged. The aluminum-owned details are now fixed for the shell session to integrate:
+
+- Two finished rail cuts are **149.672 +/-0.25 mm**; the 1:1 drawing rounds the shop callout to 149.7 mm. Rough-cut each rail to 151 mm and finish square.
+- Each rail seats 8 mm inward from its rear-plane axis target, remains 0.5 mm short of the V6.1 blind stop, and places the upper M4 center 130.972 mm from the lower cut end.
+- Each mirrored shoe is a monolithic 10 mm-foot 6061-T6 CNC part with a fitted 14.7 mm nominal square solid plug, 37 mm tube insertion, and two transfer-drilled lower M5 cross-bolts at 10 and 25 mm from the tube lower end. Heads face the centerline, nyloc nuts face outward, and each side reserves a 14 x 25 mm straight tool approach.
+- Three M5 screws attach each shoe to the backplate. The finalized right-side plate centers are `(36,-30)`, `(47.4,-30)`, and `(38,-9)` mm in local X/V; the left side mirrors X.
+- Six rear-loaded shell-attachment M5 holes form centered rows at X `+/-10`, V `+30`; X `+/-20`, V `0`; and X `+/-10`, V `-30` mm.
+- There is no backplate rail cutout and no exterior printed-shell pass-through. The complete metal/rail assembly enters through the open rear service aperture before the bezel closes.
+
+The generated metal preflight passes all frozen-interface, hole-ligament, tool-envelope, stock, cut-length, fixed-shell, rail, socket, and lower-keel checks. The final shoe feet intentionally expose a localized conflict with the provisional V6.1 rear bezel: 28 triangle-overlap pairs, isolated to that replaceable bezel. The shell session must regenerate the bezel and six ASA structural pads from the V0.4-M1 handoff and rerun A-39. The stronger metal shoe is not reduced to fit the obsolete provisional bezel.
+
+Current sources and tracked summary:
+
+- `config/frame-fixed-mount-v04-final.json`
+- `source/generate_frame_fixed_mount_v04.py`
+- `review/frame-fixed-mount-v04-final-summary.json`
+- `hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v04.json`
+
+Generated review outputs live under `output/v04-finalized-interface/` and include the backplate DXF/SVG, rail cut/drill SVG, mirrored shoe STLs, shoe plan, BLEND, three renders, and validation JSON. They are reproducible local review artifacts and remain ignored by Git.
+
+Run the preflight from the repository root:
+
+```bash
+python3 hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v04_interface.py
+```
+
+Regenerate against the locked V6.1 shell from the repository root:
+
+```bash
+blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-socket-portals-candidate-v6/gate9-socket-portals-candidate-v6.blend \
+  --python hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/generate_frame_fixed_mount_v04.py
+```
+
+## V0.2 architecture history
+
+The remainder of this document preserves the V0.2 concept history. Statements that its lower shoes, rail lengths, or backplate holes are deferred are superseded by the V0.4-M1 handoff above; the physical fabrication and riding gates are not superseded.
 
 This is the no-weld connector between the four RadRunner 2 head-tube bosses
 and the 330 mm Gate8 cat head. The head stays fixed to the bicycle frame while

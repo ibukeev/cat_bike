@@ -1,8 +1,8 @@
 # Cat Head Shell / Aluminum Rear Interface Control
 
 **Date:** 2026-07-28
-**Status:** Active cross-session coordination hold; no shared-interface CAD
-regeneration or metal cutting release
+**Status:** V0.4-M1 aluminum-side handoff finalized for shell integration;
+rear-bezel/ASA-pad regeneration and all fabrication release gates remain held
 **Integration authority:** User
 
 ## 1. Purpose
@@ -13,11 +13,10 @@ workstreams. It does not replace either workstream checkpoint:
 
 - Shell defects and required validation:
   `hardware/mechanical/CAT_HEAD_MOUNT_AND_SHELL_PHYSICAL_FIT_REVIEW_2026-07-28.md`
-- Aluminum V0.2 design state:
-  `hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/V0_RESUME_CHECKPOINT.md`
+- Aluminum V0.4-M1 finalized interface state:
+  `hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/V04_FINALIZED_INTERFACE_CHECKPOINT_2026-07-29.md`
 
-The current aluminum directory is an untracked active work product. The shell
-session must not edit its files. The aluminum session must not edit Gate 3,
+The aluminum V0.4-M1 files are the tracked handoff authority. The shell session must consume but not edit the aluminum-owned config, generator, summary, or checkpoint. The aluminum session must not edit Gate 3,
 Gate 5, or Gate 8 shell sources while their existing partial state is under
 review.
 
@@ -43,7 +42,7 @@ reference while the physical-feedback pass remains open.
 | Backplate perimeter fasteners, rail pass-throughs, wiring, drainage, tool access | Shared | Neither session may finalize independently. |
 | Final assembly and service sequence | Shared | Must be validated with complete shell, aluminum, rail, fastener, and tool envelopes. |
 
-## 4. Provisional shared baseline
+## 4. Retained shared geometry baseline
 
 The following values are the current V0.2 coordination baseline. They are
 frozen against unilateral changes but remain review-only and are not released
@@ -102,25 +101,29 @@ movement is still needed after full collision review, optimize rail X/V
 position, adapter holes, backplate outline, lower-shoe envelope, and upper
 socket axes as one shared interface change.
 
-## 5. Explicitly open shared interfaces
+## 5. V0.4-M1 closed and open shared interfaces
 
-The following items are not defined and must remain open in both sessions:
+The user authorized the aluminum workstream to close the metal-owned details without changing the accepted rail axes, targets, or 21 mm sockets. The authoritative dimensions and geometry are in `hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v04.json` and the aluminum checkpoint dated 2026-07-29.
 
-1. aluminum-backplate perimeter hole count, positions, and edge distances;
-2. lower rail-shoe geometry, solid plugs, anti-crush load path, and fasteners;
-3. rail pass-through geometry through the printed rear structure;
-4. rear ASA structure to aluminum-backplate attachment;
-5. rear cassette seam location, overlap, alignment, sealing, and removal path;
-6. cassette fastener, washer, nut, hand, and tool envelopes;
-7. drainage and wiring routes through the rear assembly;
-8. separation of structural load paths from cosmetic rear shell facets;
-9. complete installation and removal sequence;
-10. actual headlight housing, beam, steering, and cable clearance; and
-11. physical fit, drilling, and retention of the actual 19.05 mm rails in the
-    revised upper/front printed sockets.
+Closed for shell integration, but not released for fabrication:
 
-Existing review-only DXF, SVG, STL, BLEND, GLB, and validation outputs do not
-close these items.
+1. six backplate-to-shell M5 centers: local X/V `(-10,30)`, `(10,30)`, `(-20,0)`, `(20,0)`, `(-10,-30)`, and `(10,-30)` mm;
+2. six lower-shoe plate holes, three per side, using right-side centers `(36,-30)`, `(47.4,-30)`, `(38,-9)` mm and mirrored left X;
+3. mirrored monolithic 10 mm-foot 6061 shoes with fitted 14.7 mm nominal square solid plugs, 37 mm tube insertion, and two transfer-drilled lower M5 cross-bolts per rail;
+4. finished rail length `149.672 +/-0.25 mm`, lower M5 stations at 10 and 25 mm, and upper M4 station at 130.972 mm from the lower cut end; and
+5. no backplate rail cutout and no external shell pass-through; rail service occurs through the open rear aperture with the bezel removed.
+
+Still open and held:
+
+1. regenerated rear-bezel relief around the finalized shoes;
+2. six large ASA structural pads, their roots, locking hardware, and complete hand/tool envelopes around the finalized aluminum hole centers;
+3. rear cassette seam, overlap, alignment, sealing, removal path, wiring, and drainage;
+4. complete A-39 inserted, seated, fastened, and removal validation using the final metal and regenerated ASA geometry;
+5. actual rail inside dimensions/corner radii and the physical shoe/interface coupon;
+6. actual headlight housing, beam, steering, and cable clearance; and
+7. tether, proof-load, vibration, and progressive ride validation.
+
+The current V6.1 rear bezel has 28 localized triangle-overlap pairs with the final metal shoes. Backplate, rails, shoes, fixed body shells, sockets, and bottom keel otherwise pass the metal preflight. This conflict is an explicit shell-side regeneration input, not permission to weaken the metal shoe.
 
 ## 6. Rear cassette proposal C-001
 
@@ -190,6 +193,8 @@ No rear-interface metal or replacement structural shell is released until:
 | C-004 | 2026-07-28 | Rebuild the upper/front printed sockets to the coordinated V0.2 compound rail axes and socket roll; do not reuse pre-correction upper-shell G-code. | Required shared correction; regeneration held until feedback closes | Shell and aluminum |
 | C-006 | 2026-07-28 | Retain the overall V0.2 aluminum architecture and redesign the conflicting printed ASA rear base/shell around its complete envelope. | Concept accepted by user; interface details and fabrication remain open | Shell and aluminum |
 | C-007 | 2026-07-28 | Keep lower rail targets at X `±40` for the first ASA rear redesign; evaluate inward movement only if the complete collision review still requires it, including adapter-hole, backplate-edge, shoe/tool, upper-socket, and shell impacts. | Accepted baseline; conditional study deferred | Shell and aluminum |
+| C-008 | 2026-07-29 | Authorize the aluminum workstream to finalize lower shoes, anti-crush paths, rail cut/drill stations, and backplate perimeter/shoe holes from V0.4 without changing the 21 mm socket geometry. | Authorized and completed as V0.4-M1 | Aluminum, then shell integration |
+| C-009 | 2026-07-29 | Adopt the V0.4-M1 six-plus-six backplate hole patterns, 149.672 mm rails, and monolithic solid-plug shoes as the shell-integration handoff. Preserve the stronger shoe and regenerate the provisional rear bezel around its localized conflict. | Aluminum digital preflight passed; ASA rear-bezel/pad integration and A-39 pending | Shell and aluminum |
 
 ## 10. Next synchronization action
 
@@ -205,6 +210,4 @@ stock has been purchased. Its actual outside dimensions, wall thickness,
 alloy/temper if known, and available length remain to be physically verified.
 No plate or plate hole pattern is physically committed.
 
-Once both states are recorded, the user can either freeze the current V0.2
-interface for the rear-cassette study or authorize a coordinated interface
-revision.
+The next synchronization action is for the shell workstream to consume the V0.4-M1 shared interface, regenerate only its owned rear bezel and six structural ASA pads, and rerun A-39. No metal plate is ordered or cut, and the shell workstream must not alter the aluminum hole pattern, shoes, rail cut lengths, accepted axes/targets, or 21 mm sockets while doing that integration.

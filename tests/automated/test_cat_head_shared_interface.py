@@ -100,11 +100,31 @@ class CatHeadSharedInterfaceTest(unittest.TestCase):
         self.assertTrue(report["status"].startswith("PASS"))
         self.assertEqual(interface["head_envelope"], self.interface["head_envelope"])
         self.assertEqual(interface["rear_interface_plane"], self.interface["rear_interface_plane"])
-        self.assertEqual(interface["aluminum_backplate"], self.interface["aluminum_backplate"])
-        self.assertEqual(
-            interface["rail_system"]["profile"],
-            self.interface["rail_system"]["profile"],
-        )
+        for key in (
+            "material",
+            "thickness_mm",
+            "outer_top_width_mm",
+            "outer_bottom_width_mm",
+            "height_mm",
+            "adapter_hole_pattern",
+        ):
+            self.assertEqual(
+                interface["aluminum_backplate"][key],
+                self.interface["aluminum_backplate"][key],
+            )
+        for key in (
+            "description",
+            "outside_width_mm",
+            "outside_height_mm",
+            "wall_thickness_mm",
+            "derived_inside_width_mm",
+            "derived_inside_height_mm",
+            "available_stock_length_mm",
+        ):
+            self.assertEqual(
+                interface["rail_system"]["profile"][key],
+                self.interface["rail_system"]["profile"][key],
+            )
         self.assertEqual(
             interface["rail_system"]["accepted_axes_head"],
             self.interface["rail_system"]["accepted_axes_head"],
@@ -123,12 +143,67 @@ class CatHeadSharedInterfaceTest(unittest.TestCase):
         self.assertEqual(socket["printed_opening_width_mm"], 21.0)
         self.assertEqual(socket["lead_in_depth_mm"], 1.0)
         self.assertEqual(socket["lead_in_mouth_width_mm"], 23.0)
+        plate = interface["aluminum_backplate"]
+        self.assertEqual(
+            len(plate["shell_attachment_hole_pattern"][
+                "local_x_v_centers_mm"
+            ]),
+            6,
+        )
+        self.assertEqual(
+            plate["rail_shoe_hole_pattern"][
+                "right_local_x_v_centers_mm"
+            ],
+            [[36.0, -30.0], [47.4, -30.0], [38.0, -9.0]],
+        )
+        rails = interface["rail_system"]
+        self.assertEqual(
+            rails["profile"]["finished_cut_length_mm"],
+            149.672,
+        )
+        self.assertEqual(
+            rails["lower_shoe"]["solid_plug"][
+                "insertion_inside_tube_mm"
+            ],
+            37.0,
+        )
         _, metal_report = METAL_V04_PREFLIGHT.load_resolved_config()
         self.assertEqual(
             metal_report["interface_revision"],
             "CAT-HEAD-SHELL-ALUMINUM-V0.4",
         )
         self.assertTrue(all(metal_report["checks"].values()))
+        self.assertTrue(metal_report["ready_for_geometry_generation"])
+
+    def test_v04_final_metal_summary_passes_with_recorded_bezel_handoff(self) -> None:
+        path = (
+            REPO_ROOT
+            / "hardware/mechanical/fabrication/metal/"
+            "cat-head-frame-fixed-mount-v0/review/"
+            "frame-fixed-mount-v04-final-summary.json"
+        )
+        summary = json.loads(path.read_text(encoding="utf-8"))
+        self.assertTrue(summary["status"].startswith("PASS"))
+        self.assertTrue(all(summary["checks"].values()))
+        self.assertEqual(
+            summary["dimensions"]["rail_finished_cut_length_mm"],
+            149.672,
+        )
+        self.assertEqual(
+            summary["dimensions"]["backplate_hole_counts"],
+            {"adapter_m6": 4, "shell_m5": 6, "shoe_m5": 6},
+        )
+        collision = summary["current_v61_shell_collision_preflight"]
+        self.assertTrue(
+            collision["checks"][
+                "current_rear_bezel_shoe_conflict_is_isolated_and_recorded"
+            ]
+        )
+        self.assertGreater(
+            collision["current_rear_bezel_shoe_overlap_pair_count"],
+            0,
+        )
+        self.assertIn("regenerate", collision["required_shell_followup"])
 
     def test_inconsistent_recorded_inside_dimension_fails(self) -> None:
         invalid = copy.deepcopy(self.interface)
