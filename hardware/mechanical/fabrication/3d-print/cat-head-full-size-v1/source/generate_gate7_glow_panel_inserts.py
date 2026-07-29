@@ -174,6 +174,13 @@ def source_context() -> dict[str, Any]:
 
 def connected_panel_groups(context: dict[str, Any]) -> list[dict[str, Any]]:
     approved = set(context["config"]["glow_transmitting_panels"])
+    reclassified = set(CONFIG.get("opaque_reclassified_panels", []))
+    if not reclassified <= approved:
+        raise ValueError(
+            f"Opaque reclassification contains unapproved panels: "
+            f"{sorted(reclassified - approved)}"
+        )
+    approved -= reclassified
     adjacency = {panel: set() for panel in approved}
     model = context["model"]
     panel_by_face = context["panel_by_face"]
@@ -735,6 +742,22 @@ def choose_mounts(
     group: dict[str, Any], boundary: list[dict[str, Any]]
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     candidates = usable_mount_edges(boundary)
+    if CONFIG.get("combined_mount_modes", {}).get(group["name"]) == "upper_shared_edges":
+        hooks = []
+        screws = []
+        for owner in ("right_upper_head", "left_upper_head"):
+            owned = [record for record in candidates if record["owner"] == owner]
+            if not owned:
+                raise ValueError(f"{group['name']} has no shared upper edge on {owner}")
+            source = max(owned, key=lambda value: value["length"])
+            hook = dict(source)
+            screw = dict(source)
+            spacing = min(source["length"] * 0.24, 10.0)
+            hook["midpoint"] = source["midpoint"] - source["tangent"] * spacing
+            screw["midpoint"] = source["midpoint"] + source["tangent"] * spacing
+            hooks.append(hook)
+            screws.append(screw)
+        return hooks, screws
     ear_interface = CONFIG.get("ear_root_interfaces", {}).get(group["name"])
     if ear_interface and "ear_shell" in ear_interface:
         ear_edges = [
@@ -986,6 +1009,7 @@ def validate_ear_connector_clearance(
     allocations = gate5.distribute_modules(
         usable,
         float(gate5_config["joint_system"]["module_max_spacing_mm"]),
+        int(gate5_config["joint_system"].get("ear_minimum_module_count", 1)),
     )
     temporary_material = gate5.material(
         "Gate7_temporary_ear_clearance_validation", (0.25, 0.25, 0.25, 1.0)
@@ -1196,20 +1220,24 @@ def main() -> None:
     insert_metrics = {insert.name: part_metrics(insert) for insert in inserts}
     shell_metrics = {name: part_metrics(shell) for name, shell in shells.items()}
     expected = CONFIG["expected"]
+    central_group_name = CONFIG.get(
+        "central_group_name", "central_12_panel_cluster"
+    )
     central = next(
         report
         for report in group_reports
-        if report["name"] == "central_12_panel_cluster"
+        if report["name"] == central_group_name
     )
     noncentral = [report for report in group_reports if report is not central]
     acceptance = {
-        "all_20_approved_panels_covered": sum(
+        "all_configured_translucent_panels_covered": sum(
             report["source_panel_count"] for report in group_reports
         )
         == int(expected["approved_panel_count"]),
         "expected_printed_insert_count": len(inserts)
         == int(expected["printed_insert_count"]),
-        "central_12_panels_combined": central["source_panel_count"] == 12,
+        "central_group_has_expected_panel_count": central["source_panel_count"]
+        == int(expected.get("central_panel_count", 12)),
         "central_mount_count": central["hook_count"]
         == int(expected["central_hook_count"])
         and central["m2_5_fastener_count"]

@@ -2,7 +2,7 @@
 
 ## Status
 
-- Current phase: Gate 7 - grouped translucent glow-panel insert review
+- Current phase: Gate 8 - full-size structural feedback iteration review
 - Locked height: 330 mm, chin to highest ear tip
 - Target completed head-module mass: at most 1.2 kg
 - Hard mass rejection limit: 1.5 kg
@@ -198,6 +198,7 @@ Generated build artifacts belong under `output/release-v1/`; source scripts, con
 
 - [ ] Manifold, watertight structural meshes with no degenerate faces.
 - [ ] Every part fits the conservative MK4S envelope in its documented orientation.
+- [ ] For the next full-size revision, evaluate reducing the 330 mm head to approximately 315-317 mm (about 4-5%) and select the largest scale at which every shell passes a practical 240 x 200 x 210 mm slicer check, including extrusion width, supports, and skirt/brim toolpaths; an arbitrary three-axis bounding-box fit is not acceptance.
 - [ ] Minimum wall, flange, and fastener-edge distances are satisfied.
 - [ ] Symmetric panel roles and ear geometry remain symmetric.
 - [ ] Every source facet has exactly one fabrication role.

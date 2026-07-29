@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "wall_thickness_mm": 1.8,
   "solidify_offset": -1.0,
   "use_even_offset": false,
@@ -30,13 +30,14 @@
     "outer_top_width_mm": 60.0,
     "outer_bottom_width_mm": 120.0,
     "rail_width_mm": 20.0,
-    "inward_depth_mm": 18.0
+    "frame_depth_mm": 5.0,
+    "depth_direction": "outward"
   },
   "review_notes": [
     "Wall thickness is generated inward using a stable normal offset; the approved exterior vertices remain unchanged.",
     "This baseline closes exposed section and panel-window boundaries with 1.8 mm rim walls.",
     "The center-split bottom halves are joined to their lower shells by the lower-shell closure geometry; only the eye-adjacent opaque islands remain separate and require internal frame ribs.",
-    "The compact rear-base frame is coplanar with the sloped rear edges of the two upper-head shells, uses a 20 mm structural surround and extends 18 mm inward; the lower rear panels remain uncut.",
+    "The compact rear-base frame is coplanar with the sloped rear edges, uses a 20 mm structural surround, and extends 5 mm outward so it can be installed after the four main shells are assembled; the lower rear panels remain uncut.",
     "The mirrored bottom/throat openings inherited from the accepted surface are closed integrally by the lower shells.",
     "Ventilation is reserved for protected rear-facing features; bottom drainage will use small deliberate holes rather than an open throat.",
     "Seam flanges, keys, fastener pockets, and ear-root hardware are not included yet."

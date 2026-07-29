@@ -1,0 +1,261 @@
+{
+  "schema_version": 2,
+  "printer_envelope_mm": [240.0, 200.0, 210.0],
+  "orientation_step_degrees": 15,
+  "shell_wall_thickness_mm": 1.8,
+  "joint_system": {
+    "module_max_spacing_mm": 55.0,
+    "module_length_mm": 42.0,
+    "ear_module_length_mm": 34.0,
+    "flange_tab_thickness_mm": 4.5,
+    "flange_tab_depth_mm": 12.0,
+    "flange_shell_overlap_mm": 2.2,
+    "ear_flange_tab_thickness_mm": 3.8,
+    "ear_flange_tab_depth_mm": 8.0,
+    "ear_flange_shell_overlap_mm": 1.2,
+    "flange_face_clearance_mm": 0.35,
+    "minimum_tab_exterior_recess_mm": 3.0,
+    "ear_minimum_tab_exterior_recess_mm": 8.0,
+    "minimum_root_web_exterior_recess_mm": 0.35,
+    "solid_flange_root_base": true,
+    "solid_ear_flange_root_base": true,
+    "flange_root_web_length_mm": 5.0,
+    "flange_root_web_thickness_mm": 3.0,
+    "flange_root_web_end_margin_mm": 0.8,
+    "flange_root_web_boolean_overlap_mm": 0.6,
+    "ear_flange_root_web_length_mm": 2.0,
+    "ear_flange_root_web_thickness_mm": 1.2,
+    "ear_flange_root_web_end_margin_mm": 0.2,
+    "ear_flange_root_web_boolean_overlap_mm": 0.3,
+    "body_fastener_count_per_module": 2,
+    "ear_fastener_count_per_module": 4,
+    "ear_minimum_module_count": 1,
+    "m3_clearance_diameter_mm": 3.4,
+    "boolean_cut_extension_mm": 2.0,
+    "minimum_usable_seam_edge_mm": 22.0
+  },
+  "internal_panel_ribs": {
+    "target_sections": [
+      "left_lower_face",
+      "left_upper_head",
+      "right_lower_face",
+      "right_upper_head"
+    ],
+    "cross_section": "triangular",
+    "foot_width_mm": 4.0,
+    "rib_height_mm": 5.0,
+    "edge_inset_mm": 0.5,
+    "supplementary_panel_side": {
+      "foot_width_mm": 2.0,
+      "rib_height_mm": 3.0,
+      "edge_inset_mm": 0.75,
+      "shell_overlap_mm": 1.4,
+      "end_setback_mm": 6.0
+    },
+    "end_setback_mm": 4.0,
+    "junction_overlap_mm": 5.0,
+    "shell_overlap_mm": 0.8,
+    "minimum_exterior_recess_mm": 0.25
+  },
+  "inter_shell_edge_rails": {
+    "target_sections": [
+      "left_ear",
+      "left_lower_face",
+      "left_upper_head",
+      "right_ear",
+      "right_lower_face",
+      "right_upper_head"
+    ],
+    "minimum_length_mm": 22.0,
+    "end_setback_mm": 2.5,
+    "seam_inset_mm": 0.8,
+    "foot_width_mm": 6.0,
+    "inward_depth_mm": 7.0,
+    "shell_overlap_mm": 0.8
+  },
+  "insert_clearance_trimming": {
+    "clearance_mm": 0.8,
+    "boolean_overcut_mm": 1.5,
+    "target_materials": [
+      "Gate5_internal_panel_ribs",
+      "Gate8_continuous_inter_shell_edge_rails"
+    ],
+    "target_sections": [
+      "left_ear",
+      "left_lower_face",
+      "left_upper_head",
+      "right_ear",
+      "right_lower_face",
+      "right_upper_head"
+    ]
+  },
+  "glow_panel_mounts": {
+    "minimum_exterior_recess_mm": 2.0
+  },
+  "opaque_muzzle_frame": {
+    "description": "Six eye-adjacent source facets are reclassified as opaque shell panels, leaving a six-panel central diffuser with a panel-edge-defined light barrier and structural nose path.",
+    "central_group_name": "central_6_panel_cluster",
+    "central_translucent_panel_ids": [
+      "MANQ001", "TRI002", "TRI004", "TRI017", "TRI031", "TRI032"
+    ],
+    "opaque_reclassified_panel_ids": [
+      "QUAD001", "QUAD022", "TRI001", "TRI003", "TRI041", "TRI042"
+    ],
+    "opaque_panel_groups": {
+      "right_lower_face": ["QUAD001", "TRI003"],
+      "right_upper_head": ["TRI001"],
+      "left_lower_face": ["QUAD022", "TRI042"],
+      "left_upper_head": ["TRI041"]
+    },
+    "opaque_panel_thickness_mm": 1.8,
+    "root_inside_panel_mm": 3.0,
+    "root_inside_shell_mm": 1.2,
+    "root_depth_mm": 4.0,
+    "root_surface_setback_mm": 0.4
+  },
+  "aluminum_upright_portals": {
+    "tube_profile": "Everbilt 6605 nominal 3/4 inch square aluminum tube",
+    "tube_outer_width_mm": 19.05,
+    "tube_design_clearance_mm": 1.45,
+    "tube_reference_length_mm": 300.0,
+    "upper_target_right_mm": [63.0, 105.0, 225.0],
+    "upper_target_left_mm": [-63.0, 105.0, 225.0],
+    "lower_route_right_mm": [40.0, 267.336, 147.132],
+    "lower_route_left_mm": [-40.0, 267.336, 147.132],
+    "lower_route_basis": "Targets the V0.2 aluminum rear-backplate plane 15 mm above its lower edge; final rail shoes remain a separate metal fabrication item.",
+    "socket_roll_reference": "head_x_projected",
+    "clamp_length_mm": 30.0,
+    "clamp_wall_mm": 6.0,
+    "mount_pad_face_scale": 0.68,
+    "mount_pad_thickness_mm": 16.0,
+    "mount_pad_shell_overlap_mm": 1.0,
+    "minimum_exterior_recess_mm": 8.0,
+    "m4_clearance_diameter_mm": 4.5,
+    "bolt_offset_from_open_end_mm": 10.0,
+    "socket_end_overlap_mm": 0.8,
+    "fit_coupon_length_mm": 24.0
+  },
+  "integrated_joint_ownership": {
+    "left_ear__left_upper_head": {
+      "owner": "left_upper_head",
+      "receiver": "left_ear"
+    },
+    "left_lower_face__left_upper_head": {
+      "owner": "left_lower_face",
+      "receiver": "left_upper_head"
+    },
+    "left_lower_face__rear_base": {
+      "owner": "left_lower_face",
+      "receiver": "rear_base"
+    },
+    "left_lower_face__right_lower_face": {
+      "owner": "left_lower_face",
+      "receiver": "right_lower_face"
+    },
+    "left_upper_head__right_upper_head": {
+      "owner": "left_upper_head",
+      "receiver": "right_upper_head"
+    },
+    "rear_base__right_lower_face": {
+      "owner": "right_lower_face",
+      "receiver": "rear_base"
+    },
+    "right_ear__right_upper_head": {
+      "owner": "right_upper_head",
+      "receiver": "right_ear"
+    },
+    "right_lower_face__right_upper_head": {
+      "owner": "right_lower_face",
+      "receiver": "right_upper_head"
+    }
+  },
+  "validation": {
+    "minimum_flange_retained_volume_ratio": 0.58,
+    "maximum_flange_retained_volume_ratio": 0.99,
+    "minimum_flange_projected_length_ratio": 0.78,
+    "maximum_solid_base_flange_retained_volume_ratio": 1.08,
+    "minimum_hidden_hardware_exterior_skin_mm": 1.5,
+    "minimum_shell_volume_ratio_vs_gate3": 0.9
+  },
+  "upper_planar_rear_frame": {
+    "alignment": "coplanar with the rear edges of left_upper_head and right_upper_head",
+    "lower_face_rear_panels_remain_continuous": true,
+    "old_lower_service_cut_removed": true,
+    "old_rectangular_rim_and_tie_rails_removed": true,
+    "structural_surround_width_mm": 20.0,
+    "outward_depth_mm": 5.0,
+    "rear_installable_after_main_shell_assembly": true
+  },
+  "rear_base_flange_connections": {
+    "connection_mode": "rear_loaded_large_pads",
+    "description": "Six large shell-integrated pads accept rear-loaded M5 bolts through the shallow rear frame. Pads are sized around a 14 mm nut and tool envelope and do not undercut the base insertion path.",
+    "fastener_nominal": "M5",
+    "m5_clearance_diameter_mm": 5.5,
+    "pad_tangent_length_mm": 28.0,
+    "pad_radial_width_mm": 36.0,
+    "pad_center_inset_from_outer_edge_mm": 5.0,
+    "pad_depth_mm": 10.0,
+    "pad_minimum_exterior_recess_mm": 0.6,
+    "pad_fastener_inset_from_outer_edge_mm": 10.0,
+    "minimum_nut_tool_envelope_diameter_mm": 14.0,
+    "frame_center_mm": [0.0, 264.01125, 171.74025],
+    "attached_sections": [
+      "left_lower_face",
+      "left_upper_head",
+      "right_lower_face",
+      "right_upper_head"
+    ],
+    "connections": [
+      {
+        "section": "left_upper_head",
+        "p0_mm": [-30.0, 258.678, 211.2135],
+        "p1_mm": [-60.0, 269.3445, 132.267],
+        "fractions": [0.3, 0.7]
+      },
+      {
+        "section": "right_upper_head",
+        "p0_mm": [30.0, 258.678, 211.2135],
+        "p1_mm": [60.0, 269.3445, 132.267],
+        "fractions": [0.3, 0.7]
+      },
+      {
+        "section": "left_lower_face",
+        "p0_mm": [-60.0, 269.3445, 132.267],
+        "p1_mm": [0.0, 269.3445, 132.267],
+        "fractions": [0.75]
+      },
+      {
+        "section": "right_lower_face",
+        "p0_mm": [0.0, 269.3445, 132.267],
+        "p1_mm": [60.0, 269.3445, 132.267],
+        "fractions": [0.25]
+      }
+    ]
+  },
+  "excluded_joint_face_pairs": [
+    ["TRI008", "TRI007"]
+  ],
+  "deferred": [
+    "final aluminum upright bend angles and attachment to the bike backplate",
+    "LED cassette attachment points outside the eye modules",
+    "removable rear service cover and gasket",
+    "ventilation and drains",
+    "full-size material and vibration validation"
+  ],
+  "fasteners": {
+    "body": "Two internally accessed M3 through-bolts with washers and M3 nyloc nuts per enlarged matching flange module",
+    "ear": "One broad flange saddle per ear root with four internal M3 through-bolts, washers, and M3 nyloc nuts",
+    "aluminum_portal": "One transverse M4 through-bolt, two washers, and one M4 nyloc nut per integral upper-shell socket and drilled aluminum tube",
+    "rear_base": "Six rear-loaded M5 bolts with 10 mm washers and M5 nyloc nuts on 28 x 36 x 10 mm structural pads",
+    "threadlocker": "medium-strength removable threadlocker only on metal-to-metal threads"
+  },
+  "review_notes": [
+    "Gate 8 is the first full-size feedback iteration after the 100 mm print and remains a review/prototype candidate.",
+    "The central diffuser is narrowed by two opaque structural muzzle rails, which tie the weak nose halves into the lower and upper opaque shells while blocking eye-to-center light spill.",
+    "Every main flange module is larger and uses two M3 fasteners. Each ear has one broad four-fastener saddle plus continuous seam rails.",
+    "Internal triangular panel ribs are enlarged, and continuous rectangular rails now reinforce both sides of inter-shell opaque seams.",
+    "The rear base is a shallow 5 mm outward frame secured by six rear-loaded M5 bolts to 28 x 36 x 10 mm structural pads; the two horizontal centers are X +/-15 mm and each pad provides a 14 mm nut/tool envelope.",
+    "Two blind 20.50 mm sockets are integral with the upper-head shell STLs for nominal 19.05 mm Everbilt 6605 aluminum square tubing. One transverse M4 bolt passes through each printed socket and the drilled aluminum tube; there are no exterior shell holes or separate clamp caps.",
+    "Print the one-piece portal fit coupon and one representative flange/seam coupon before committing to full shell prints."
+  ]
+}
