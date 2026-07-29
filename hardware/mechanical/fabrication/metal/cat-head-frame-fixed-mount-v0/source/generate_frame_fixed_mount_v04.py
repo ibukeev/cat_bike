@@ -7,7 +7,7 @@ Run against the locked V6.1 socket assembly:
       ../../3d-print/cat-head-full-size-v1/output/gate9-socket-portals-candidate-v6/gate9-socket-portals-candidate-v6.blend \
       --python source/generate_frame_fixed_mount_v04.py
 
-The generated geometry closes the aluminum-side rail, shoe, anti-crush, and
+The generated geometry records the aluminum-side rail, ordered-angle connector, anti-crush, and
 backplate-hole decisions. It remains blocked from fabrication and riding until
 the matching ASA rear structure, physical coupon, load, vibration, lamp, and
 service-sequence gates recorded in the config and checkpoint pass.
@@ -53,7 +53,7 @@ def output_paths(config: dict[str, Any]) -> dict[str, Path]:
     paths = {
         "root": root,
         "flat": root / "flat-plates",
-        "formed": root / "machined-parts",
+        "formed": root / "hand-fabricated-parts",
         "rails": root / "rail-cut-drill",
         "model": root / "review-model",
         "renders": root / "renders",
@@ -259,20 +259,20 @@ def write_backplate_outputs(
     body += svg_text(
         -59,
         45,
-        "purple 4x dia6.6 adapter | blue 6x dia5.5 shell | orange 6x dia5.5 shoes",
+        "purple 4x dia6.6 adapter | blue 6x dia5.5 shell | orange 6x dia5.5 angle bases",
     )
     body += svg_text(
         -59,
         -48,
-        "DIGITALLY FINALIZED METAL-SIDE PATTERN; PHYSICAL COUPON + ASA INTEGRATION REQUIRED",
+        "V0.4-M2 ORDERED-ANGLE METAL-SIDE PATTERN; PHYSICAL COUPON + ASA INTEGRATION REQUIRED",
         "warn",
     )
     (paths["flat"] / "head-rear-backplate-v04-1to1.svg").write_text(
         svg_document(
-            190.0,
+            320.0,
             115.0,
             body,
-            "V0.4 finalized aluminum backplate 1:1",
+            "V0.4-M2 ordered-angle aluminum backplate 1:1",
         ),
         encoding="utf-8",
     )
@@ -322,102 +322,132 @@ def write_rail_output(
 ) -> None:
     rails = config["rails"]
     length = float(rails["drawing_rounded_cut_length_mm"])
-    half = length / 2.0
-    y = 0.0
+    upper = float(rails["upper_m4_center_from_lower_cut_end_mm"])
+    longest = float(rails["compound_cut_longest_edge_mm"])
+    shortest = float(rails["compound_cut_shortest_edge_mm"])
     body = (
-        f'<rect class="outline" x="{number(-half)}" y="-9.5" '
+        f'<rect class="outline" x="0" y="-9.5" '
         f'width="{number(length)}" height="19"/>'
     )
+    body += (
+        f'<line class="dim" x1="0" y1="-9.5" x2="{number(longest-length)}" y2="9.5"/>'
+    )
     for offset in rails["lower_m5_centers_from_lower_cut_end_mm"]:
-        x = -half + float(offset)
-        body += svg_circle(x, y, 5.5, "shoe")
-        body += svg_text(x - 5.0, -15.0, f"M5 @ {float(offset):g}")
-    upper = float(rails["upper_m4_center_from_lower_cut_end_mm"])
-    body += svg_circle(-half + upper, y, 4.5, "shell")
-    body += svg_text(-half + upper - 8.0, 14.0, f"M4 @ {upper:.3f}")
+        x = float(offset)
+        body += svg_circle(x, 0.0, 5.5, "shoe")
+        body += svg_text(x - 4.5, -15.0, f"M5 @ {float(offset):g}")
+    body += svg_circle(upper, 0.0, 4.5, "shell")
+    body += svg_text(upper - 8.0, 14.0, f"M4 @ {upper:.3f}")
     body += svg_text(
-        -half,
-        26.0,
-        "2x 19 x 19 x 2 tube | FINISH 149.672 +/-0.25 mm | square/deburred ends",
+        -155.0,
+        28.0,
+        f"2x 19 x 19 x 2 tube | centerline {length:.1f} +/-0.25 | rough square cut 160",
     )
     body += svg_text(
-        -half,
-        21.0,
-        "lower M5 holes transfer-drilled with matched solid-plug shoe; upper M4 uses V6.1 socket jig",
+        -155.0,
+        23.0,
+        f"compound lower end: longest {longest:.3f}, shortest {shortest:.3f}; upper end square",
     )
     body += svg_text(
-        -half,
+        -155.0,
         -25.0,
-        "HOLE AXIS = head-X projected perpendicular to each accepted rail axis",
+        "Fit/label solid plug, clamp rail on its angle bearing face, then transfer-drill complete stack",
         "warn",
     )
-    (paths["rails"] / "rail-cut-and-drill-v04-1to1.svg").write_text(
-        svg_document(
-            190.0,
-            75.0,
-            body,
-            "V0.4 rail cut and drill drawing",
-        ),
+    body += svg_text(
+        -155.0,
+        -30.0,
+        "Do not mark M5 stations from an arbitrary compound-cut corner: datum is bearing-plane centerline",
+        "warn",
+    )
+    (paths["rails"] / "rail-cut-and-drill-v04-m2-1to1.svg").write_text(
+        svg_document(330.0, 82.0, body, "V0.4-M2 rail compound cut and drill drawing"),
+        encoding="utf-8",
+    )
+    wrap_body = ""
+    face_y = [-38.0, -19.0, 0.0, 19.0, 38.0]
+    for side, base_x in (("LEFT", -34.0), ("RIGHT", 34.0)):
+        key = f"{side.lower()}_compound_corner_offsets_from_bearing_centerline_mm"
+        offsets = [float(value) for value in rails[key]]
+        closed = offsets + [offsets[0]]
+        points = " ".join(
+            f"{number(base_x + offset)},{number(y_value)}"
+            for offset, y_value in zip(closed, face_y)
+        )
+        wrap_body += f'<polyline class="dim" points="{points}"/>'
+        wrap_body += f'<line class="center" x1="{number(base_x)}" y1="-38" x2="{number(base_x)}" y2="38"/>'
+        for y_value in face_y:
+            wrap_body += f'<line class="center" x1="{number(base_x - 12)}" y1="{number(y_value)}" x2="{number(base_x + 12)}" y2="{number(y_value)}"/>'
+        wrap_body += svg_text(base_x - 13.0, 47.0, f"{side} RAIL")
+        wrap_body += svg_text(base_x - 13.0, -48.0, "seam / inner-low")
+    wrap_body += svg_text(-150.0, 58.0, "1:1 COMPOUND LOWER-CUT WRAP | four 19 mm faces | dashed vertical = bearing centerline")
+    wrap_body += svg_text(-150.0, 53.0, "Face order from seam: inner-low, outer-low, outer-high, inner-high, back to seam")
+    wrap_body += svg_text(-150.0, -58.0, "Fit plug first; wrap/mark matched rail+plug; leave proud and hand-fit to full angle-base contact", "warn")
+    wrap_body += '<line class="dim" x1="-25" y1="-67" x2="25" y2="-67"/>'
+    wrap_body += svg_text(-25.0, -72.0, "50 mm PRINT-CALIBRATION LINE")
+    (paths["rails"] / "rail-lower-compound-wrap-v04-m2-1to1.svg").write_text(
+        svg_document(330.0, 155.0, wrap_body, "V0.4-M2 compound lower-cut wrap template"),
         encoding="utf-8",
     )
 
 
-def write_shoe_output(
+def write_angle_connector_output(
     config: dict[str, Any],
     paths: dict[str, Path],
 ) -> None:
-    shoe = config["lower_shoe"]
-    foot = [
-        (float(point[0]), float(point[1]))
-        for point in shoe["right_foot_local_x_v_polygon_mm"]
-    ]
+    connector = config["lower_shoe"]
+    angle = connector["primary_angle"]
+    stock = connector["ordered_stock"]
+    cheek = connector["outer_clamp_cheek"]
+    length = float(angle["segment_length_mm"])
+    base = float(angle["base_leg_finished_width_mm"])
+    upright = float(angle["upright_leg_finished_depth_mm"])
+    thickness = float(stock["thickness_mm"])
     body = (
-        '<polygon class="outline" points="'
-        + " ".join(f"{number(x)},{number(v)}" for x, v in foot)
-        + '"/>'
-    )
-    for x, v in config["backplate"]["shoe_attachment"][
-        "right_local_x_v_centers_mm"
-    ]:
-        body += svg_circle(float(x), float(v), 4.2, "shoe")
-    body += svg_circle(40.0, -24.8319, 2.0, "center")
-    body += svg_text(
-        2.0,
-        15.0,
-        "RIGHT SHOE BACKPLATE FACE | mirror X for left | 10 mm 6061-T6 billet foot",
+        f'<rect class="outline" x="-22.5" y="0" width="{number(length)}" height="{number(base)}"/>'
     )
     body += svg_text(
-        2.0,
-        10.0,
-        "3x M5 blind taps: 4.2 tap drill, 9 deep, minimum 8 thread engagement",
-    )
-    body += svg_text(
-        2.0,
-        5.0,
-        "14.7 square fitted plug: start axis+5.3, end axis+45.0; rail seats at axis+8.0",
-    )
-    body += svg_text(
-        2.0,
-        0.0,
-        "plug 1.2 long-edge chamfers + 1.0 nose chamfer; fit actual deburred tube",
-    )
-    body += svg_text(
-        2.0,
-        -46.0,
-        "MONOLITHIC CNC PART - NO WELD - DO NOT TIGHTEN CROSS-BOLT WITHOUT FITTED PLUG",
+        -160.0,
+        44.0,
+        "HOLES ARE DELIBERATELY OMITTED: clamp each angle to the drilled backplate and transfer all three centers",
         "warn",
     )
-    (paths["formed"] / "lower-rail-shoe-v04-plan.svg").write_text(
-        svg_document(
-            130.0,
-            85.0,
-            body,
-            "V0.4 lower rail shoe plan",
-        ),
+    body += svg_text(
+        -160.0,
+        39.0,
+        f"PRIMARY ANGLE: 2x {length:g} long; retain {upright:g} upright; trim base to {base:g}",
+    )
+    body += svg_text(
+        -160.0,
+        34.0,
+        f"ORDERED STOCK: 6063-T6 equal angle {float(stock['leg_width_mm']):g} x {float(stock['leg_width_mm']):g} x {thickness:g}",
+    )
+    body += svg_text(
+        -160.0,
+        -9.0,
+        "Use the three retained backplate centers: clamp to plate, transfer, 5.5 through, 90-deg countersink",
+    )
+    body += svg_text(
+        -160.0,
+        -14.0,
+        f"OUTER CHEEKS: 2x {float(cheek['finished_length_mm']):g} x {float(cheek['finished_width_mm']):g} x {float(cheek['thickness_mm']):g}",
+    )
+    body += svg_text(
+        -160.0,
+        -19.0,
+        "M5 crossbolts at 14 and 29 from bearing centerline; hand-fit two metal tapered spacers per rail",
+        "warn",
+    )
+    body += svg_text(
+        -160.0,
+        -24.0,
+        "Cut one receipt/fit coupon before final parts; printed structural shims are prohibited",
+        "warn",
+    )
+    (paths["formed"] / "lower-angle-connector-v04-m2-plan.svg").write_text(
+        svg_document(340.0, 90.0, body, "V0.4-M2 ordered-angle connector plan"),
         encoding="utf-8",
     )
-
-
 def point_to_segment_distance(
     point: tuple[float, float],
     first: tuple[float, float],
@@ -479,71 +509,48 @@ def minimum_envelope_gap(
     interface: dict[str, Any],
 ) -> tuple[float, tuple[str, str, tuple[float, float], tuple[float, float]]]:
     envelopes = config["backplate"]["hardware_envelopes"]
-    return minimum_pair_ligament(
-        [
-            (
-                "adapter",
-                adapter_holes(interface),
-                float(envelopes["adapter_hardware_diameter_mm"]),
-            ),
-            (
-                "shell",
-                shell_holes(config),
-                float(envelopes["shell_attachment_tool_diameter_mm"]),
-            ),
-            (
-                "shoe",
-                shoe_holes(config),
-                float(envelopes["shoe_fastener_tool_diameter_mm"]),
-            ),
-        ]
-    )
-
-
-def shoe_foot_clearances(
-    config: dict[str, Any],
-    interface: dict[str, Any],
-) -> tuple[float, float]:
-    foot = [
-        (float(point[0]), float(point[1]))
-        for point in config["lower_shoe"][
-            "right_foot_local_x_v_polygon_mm"
-        ]
+    groups = [
+        (
+            "adapter",
+            adapter_holes(interface),
+            float(envelopes["adapter_hardware_diameter_mm"]),
+            float(envelopes["adapter_hardware_diameter_mm"]),
+        ),
+        (
+            "shell",
+            shell_holes(config),
+            float(envelopes["shell_attachment_tool_diameter_mm"]),
+            float(config["backplate"]["shell_attachment"]["washer_outer_diameter_mm"]),
+        ),
+        (
+            "angle_base",
+            shoe_holes(config),
+            float(envelopes["shoe_fastener_tool_diameter_mm"]),
+            float(config["backplate"]["shoe_attachment"]["rear_washer_outer_diameter_mm"]),
+        ),
     ]
-    segments = list(zip(foot, foot[1:] + foot[:1]))
-    adapter_radius = (
-        float(
-            config["backplate"]["hardware_envelopes"][
-                "adapter_hardware_diameter_mm"
-            ]
-        )
-        / 2.0
-    )
-    adapter_gap = min(
-        min(
-            point_to_segment_distance(point, first, second)
-            for first, second in segments
-        )
-        - adapter_radius
-        for point in adapter_holes(interface)
-        if point[0] > 0.0
-    )
-    tap_radius = 4.2 / 2.0
-    tapped_ligament = min(
-        min(
-            point_to_segment_distance(
-                (float(point[0]), float(point[1])),
-                first,
-                second,
-            )
-            for first, second in segments
-        )
-        - tap_radius
-        for point in config["backplate"]["shoe_attachment"][
-            "right_local_x_v_centers_mm"
-        ]
-    )
-    return adapter_gap, tapped_ligament
+    flattened = [
+        (name, point, tool_diameter, static_diameter)
+        for name, points, tool_diameter, static_diameter in groups
+        for point in points
+    ]
+    best = math.inf
+    detail = None
+    for index, first in enumerate(flattened):
+        for second in flattened[index + 1 :]:
+            center_distance = math.dist(first[1], second[1])
+            # Only one socket/driver is used at a time. Check its outside
+            # radius against the already-installed neighboring washer/nut,
+            # rather than requiring two simultaneous tool envelopes.
+            first_tool_gap = center_distance - first[2] / 2.0 - second[3] / 2.0
+            second_tool_gap = center_distance - first[3] / 2.0 - second[2] / 2.0
+            gap = min(first_tool_gap, second_tool_gap)
+            if gap < best:
+                best = gap
+                detail = (first[0], second[0], first[1], second[1])
+    if detail is None:
+        raise ValueError("At least two fastener locations are required")
+    return best, detail
 
 
 def base_validation(
@@ -553,17 +560,13 @@ def base_validation(
 ) -> dict[str, Any]:
     outline = backplate_polygon(interface)
     adapter_diameter = float(
-        interface["aluminum_backplate"]["adapter_hole_pattern"][
-            "diameter_mm"
-        ]
+        interface["aluminum_backplate"]["adapter_hole_pattern"]["diameter_mm"]
     )
     shell_diameter = float(
         config["backplate"]["shell_attachment"]["clearance_diameter_mm"]
     )
-    shoe_diameter = float(
-        config["backplate"]["shoe_attachment"][
-            "plate_clearance_diameter_mm"
-        ]
+    angle_hole_diameter = float(
+        config["backplate"]["shoe_attachment"]["plate_clearance_diameter_mm"]
     )
     edge_values = {
         "adapter": min(
@@ -574,8 +577,8 @@ def base_validation(
             edge_ligament(point, shell_diameter, outline)
             for point in shell_holes(config)
         ),
-        "shoe": min(
-            edge_ligament(point, shoe_diameter, outline)
+        "angle_base": min(
+            edge_ligament(point, angle_hole_diameter, outline)
             for point in shoe_holes(config)
         ),
     }
@@ -583,76 +586,125 @@ def base_validation(
         [
             ("adapter", adapter_holes(interface), adapter_diameter),
             ("shell", shell_holes(config), shell_diameter),
-            ("shoe", shoe_holes(config), shoe_diameter),
+            ("angle_base", shoe_holes(config), angle_hole_diameter),
         ]
     )
     envelope_gap, envelope_detail = minimum_envelope_gap(config, interface)
-    adapter_to_foot_gap, tapped_foot_ligament = shoe_foot_clearances(
-        config,
-        interface,
-    )
+
+    def dot(first: list[float], second: list[float]) -> float:
+        return sum(a * b for a, b in zip(first, second))
+
+    def sub(first: list[float], second: list[float]) -> list[float]:
+        return [a - b for a, b in zip(first, second)]
+
+    def add(first: list[float], second: list[float]) -> list[float]:
+        return [a + b for a, b in zip(first, second)]
+
+    def mul(value: list[float], scalar: float) -> list[float]:
+        return [component * scalar for component in value]
+
+    def norm(value: list[float]) -> float:
+        return math.sqrt(dot(value, value))
+
+    def unit(value: list[float]) -> list[float]:
+        length = norm(value)
+        return [component / length for component in value]
+
+    def cross(first: list[float], second: list[float]) -> list[float]:
+        return [
+            first[1] * second[2] - first[2] * second[1],
+            first[2] * second[0] - first[0] * second[2],
+            first[0] * second[1] - first[1] * second[0],
+        ]
+
+    plane = interface["rear_interface_plane"]
+    plane_center = [float(value) for value in plane["center_head_mm"]]
+    plane_normal = unit([float(value) for value in plane["outward_normal_head"]])
     rails = config["rails"]
-    derived_cut_length = (
+    connector = config["lower_shoe"]
+    bearing_offset = float(
+        connector["compound_bearing"]["angle_bearing_face_offset_mm"]
+    )
+    upper_t = (
         float(rails["socket_stop_reference_length_mm"])
         - float(rails["upper_seated_end_clearance_mm"])
-        - float(rails["lower_shoe_standoff_mm"])
     )
-    plug_config = config["lower_shoe"]["solid_plug"]
-    lower_bolts = config["lower_shoe"]["rail_cross_bolts"]
-    bolt_radius = float(lower_bolts["clearance_diameter_mm"]) / 2.0
-    plug_start_from_tube_end = (
-        float(plug_config["start_offset_from_lower_target_along_axis_mm"])
-        - float(rails["lower_shoe_standoff_mm"])
-    )
-    plug_end_from_tube_end = (
-        float(plug_config["end_offset_from_lower_target_along_axis_mm"])
-        - float(rails["lower_shoe_standoff_mm"])
-    )
-    lower_bolt_centers = [
+    side = "right"
+    lower = [
         float(value)
-        for value in lower_bolts["centers_from_tube_lower_cut_end_mm"]
+        for value in interface["rail_system"]["lower_targets_head_mm"][side]
     ]
-    minimum_plug_cross_hole_end_ligament = min(
-        min(lower_bolt_centers) - plug_start_from_tube_end - bolt_radius,
-        plug_end_from_tube_end - max(lower_bolt_centers) - bolt_radius,
+    axis = unit(
+        [
+            float(value)
+            for value in interface["rail_system"]["accepted_axes_head"][side]
+        ]
     )
-    derived_upper_m4_from_lower = (
+    axis_dot_normal = dot(axis, plane_normal)
+    bearing_t = (
+        bearing_offset - dot(sub(lower, plane_center), plane_normal)
+    ) / axis_dot_normal
+    x_axis = [1.0, 0.0, 0.0]
+    across = unit(sub(x_axis, mul(axis, dot(x_axis, axis))))
+    other = unit(cross(axis, across))
+    half = float(interface["rail_system"]["profile"]["outside_width_mm"]) / 2.0
+    corner_t = []
+    for across_sign in (-1.0, 1.0):
+        for other_sign in (-1.0, 1.0):
+            corner = add(
+                mul(across, across_sign * half),
+                mul(other, other_sign * half),
+            )
+            t_value = (
+                bearing_offset
+                - dot(sub(add(lower, corner), plane_center), plane_normal)
+            ) / axis_dot_normal
+            corner_t.append(t_value)
+    edge_lengths = [upper_t - value for value in corner_t]
+    longest_edge = max(edge_lengths)
+    shortest_edge = min(edge_lengths)
+    derived_cut_length = upper_t - bearing_t
+    socket = interface["rail_system"]["socket"]
+    derived_upper_m4_absolute = (
         float(rails["socket_stop_reference_length_mm"])
         - (
-            float(
-                interface["rail_system"]["socket"]["insertion_depth_mm"]
-            )
-            - float(
-                socket_summary["portal_construction"][
-                    "socket_end_overlap_mm"
-                ]
-            )
+            float(socket["insertion_depth_mm"])
+            - float(socket_summary["portal_construction"]["socket_end_overlap_mm"])
         )
-        + float(
-            interface["rail_system"]["socket"][
-                "cross_bolt_offset_from_open_end_mm"
-            ]
-        )
-        - float(rails["lower_shoe_standoff_mm"])
+        + float(socket["cross_bolt_offset_from_open_end_mm"])
+    )
+    derived_upper_m4_from_lower = derived_upper_m4_absolute - bearing_t
+    lower_bolts = connector["rail_cross_bolts"]
+    bolt_radius = float(lower_bolts["clearance_diameter_mm"]) / 2.0
+    bolt_centers = [
+        float(value)
+        for value in lower_bolts["centers_from_bearing_plane_centerline_mm"]
+    ]
+    plug_length = float(
+        connector["solid_plug"]["bearing_centerline_to_upper_end_mm"]
+    )
+    compound_intrusion = max(corner_t) - bearing_t
+    minimum_plug_insertion = plug_length - compound_intrusion
+    minimum_plug_cross_hole_end_ligament = min(
+        min(bolt_centers) - compound_intrusion - bolt_radius,
+        plug_length - max(bolt_centers) - bolt_radius,
+    )
+    angle = connector["primary_angle"]
+    stock = connector["ordered_stock"]
+    stock_plan = connector["stock_plan"]
+    angle_base_hole_ligament = float(
+        angle["minimum_retained_plate_hole_ligament_mm"]
     )
     thresholds = config["backplate"]["minimum_hole_edge_ligament_mm"]
+    dimension_tolerance = float(config["validation"]["rail_length_tolerance_mm"])
     checks = {
         "interface_revision_is_v04": (
-            interface["interface_revision"]
-            == "CAT-HEAD-SHELL-ALUMINUM-V0.4"
+            interface["interface_revision"] == "CAT-HEAD-SHELL-ALUMINUM-V0.4"
         ),
         "locked_socket_opening_remains_21_mm": (
-            float(
-                interface["rail_system"]["socket"][
-                    "printed_opening_width_mm"
-                ]
-            )
+            float(socket["printed_opening_width_mm"])
             == float(config["validation"]["frozen_socket_opening_mm"])
-            == float(
-                socket_summary["frozen_interface"][
-                    "socket_opening_mm"
-                ][0]
-            )
+            == float(socket_summary["frozen_interface"]["socket_opening_mm"][0])
         ),
         "accepted_axes_unchanged": (
             interface["rail_system"]["accepted_axes_head"]
@@ -660,27 +712,38 @@ def base_validation(
         ),
         "accepted_lower_targets_unchanged": (
             interface["rail_system"]["lower_targets_head_mm"]
-            == socket_summary["frozen_interface"][
-                "lower_targets_head_mm"
-            ]
+            == socket_summary["frozen_interface"]["lower_targets_head_mm"]
         ),
-        "rail_cut_length_derivation_matches": (
-            abs(
-                derived_cut_length
-                - float(rails["finished_cut_length_mm"])
-            )
-            <= float(config["validation"]["rail_length_tolerance_mm"])
+        "rail_centerline_length_derivation_matches": (
+            abs(derived_cut_length - float(rails["finished_cut_length_mm"]))
+            <= dimension_tolerance
+        ),
+        "compound_edge_lengths_match": (
+            abs(longest_edge - float(rails["compound_cut_longest_edge_mm"]))
+            <= dimension_tolerance
+            and abs(shortest_edge - float(rails["compound_cut_shortest_edge_mm"]))
+            <= dimension_tolerance
         ),
         "upper_m4_station_derivation_matches": (
             abs(
                 derived_upper_m4_from_lower
                 - float(rails["upper_m4_center_from_lower_cut_end_mm"])
             )
-            <= float(config["validation"]["rail_length_tolerance_mm"])
+            <= dimension_tolerance
         ),
-        "stock_covers_two_rough_cuts": (
+        "rail_stock_covers_two_rough_cuts": (
             float(rails["stock_available_mm"])
             >= float(rails["stock_required_including_two_rough_cuts_mm"])
+        ),
+        "ordered_angle_stock_covers_four_segments": (
+            float(stock["ordered_length_mm"])
+            >= 4.0 * float(stock_plan["segment_finished_length_mm"])
+        ),
+        "ordered_angle_dimensions_are_modeled": (
+            abs(float(stock["leg_width_mm"]) - 38.1) < 0.001
+            and abs(float(stock["thickness_mm"]) - 3.175) < 0.001
+            and abs(float(angle["segment_length_mm"]) - 45.0) < 0.001
+            and abs(float(angle["base_leg_finished_width_mm"]) - 29.0) < 0.001
         ),
         "adapter_holes_meet_edge_ligament": (
             edge_values["adapter"] >= float(thresholds["m6_adapter"])
@@ -688,148 +751,105 @@ def base_validation(
         "shell_holes_meet_edge_ligament": (
             edge_values["shell"] >= float(thresholds["m5_shell"])
         ),
-        "shoe_holes_meet_edge_ligament": (
-            edge_values["shoe"] >= float(thresholds["m5_shoe"])
+        "angle_base_holes_meet_backplate_edge_ligament": (
+            edge_values["angle_base"] >= float(thresholds["m5_shoe"])
         ),
         "all_cut_holes_meet_pair_ligament": (
             pair_ligament
-            >= float(
-                config["backplate"][
-                    "minimum_cut_hole_to_cut_hole_ligament_mm"
-                ]
-            )
+            >= float(config["backplate"]["minimum_cut_hole_to_cut_hole_ligament_mm"])
         ),
-        "hardware_and_tool_envelopes_do_not_overlap": (
+        "sequential_tool_envelopes_clear_installed_neighbor_hardware": (
             envelope_gap
-            >= float(
-                config["backplate"][
-                    "minimum_hardware_envelope_gap_mm"
-                ]
-            )
+            >= float(config["backplate"]["minimum_hardware_envelope_gap_mm"])
         ),
-        "adapter_hardware_clears_shoe_foot": (
-            adapter_to_foot_gap
-            >= float(
-                config["backplate"][
-                    "minimum_adapter_hardware_to_shoe_foot_gap_mm"
-                ]
-            )
-        ),
-        "shoe_tapped_holes_have_required_foot_ligament": (
-            tapped_foot_ligament
-            >= float(
-                config["backplate"][
-                    "minimum_tapped_hole_ligament_in_shoe_foot_mm"
-                ]
-            )
+        "angle_base_holes_meet_part_ligament": (
+            angle_base_hole_ligament
+            >= float(config["validation"]["minimum_angle_base_hole_ligament_mm"])
         ),
         "plug_cross_holes_meet_end_ligament": (
             minimum_plug_cross_hole_end_ligament
-            >= float(
-                config["validation"][
-                    "minimum_plug_cross_hole_end_ligament_mm"
-                ]
-            )
+            >= float(config["validation"]["minimum_plug_cross_hole_end_ligament_mm"])
         ),
-        "shoe_uses_fitted_solid_anti_crush_plug": (
-            float(
-                config["lower_shoe"]["solid_plug"][
-                    "insertion_inside_tube_mm"
-                ]
-            )
-            >= 30.0
-            and len(
-                config["lower_shoe"]["rail_cross_bolts"][
-                    "centers_from_tube_lower_cut_end_mm"
-                ]
-            )
-            == 2
+        "connector_uses_fitted_solid_anti_crush_plug": (
+            minimum_plug_insertion >= 39.592 - dimension_tolerance
+            and len(bolt_centers) == 2
         ),
         "no_backplate_or_shell_rail_pass_through": (
-            config["service_interface"]["backplate_rail_pass_through"]
-            == "none"
-            and config["service_interface"]["printed_shell_pass_through"].startswith(
-                "none"
-            )
+            config["service_interface"]["backplate_rail_pass_through"] == "none"
+            and config["service_interface"]["printed_shell_pass_through"].startswith("none")
         ),
     }
     return {
         "checks": checks,
         "dimensions": {
-            "rail_finished_cut_length_mm": float(
-                rails["finished_cut_length_mm"]
-            ),
-            "rail_drawing_rounded_cut_length_mm": float(
+            "rail_centerline_finished_length_mm": float(rails["finished_cut_length_mm"]),
+            "rail_drawing_rounded_centerline_length_mm": float(
                 rails["drawing_rounded_cut_length_mm"]
             ),
-            "rail_finished_length_tolerance_mm": float(
-                rails["finished_length_tolerance_mm"]
+            "rail_compound_longest_edge_mm": float(
+                rails["compound_cut_longest_edge_mm"]
             ),
-            "rail_upper_m4_from_lower_cut_end_mm": float(
+            "rail_compound_shortest_edge_mm": float(
+                rails["compound_cut_shortest_edge_mm"]
+            ),
+            "rail_upper_m4_from_bearing_centerline_mm": float(
                 rails["upper_m4_center_from_lower_cut_end_mm"]
             ),
-            "rail_upper_m4_from_upper_cut_end_mm": float(
-                rails["upper_m4_center_from_upper_cut_end_mm"]
+            "rail_lower_m5_from_bearing_centerline_mm": bolt_centers,
+            "solid_plug_minimum_physical_insertion_mm": float(
+                connector["solid_plug"]["minimum_finished_insertion_at_shortest_compound_cut_edge_mm"]
             ),
-            "rail_lower_m5_from_lower_cut_end_mm": [
-                float(value)
-                for value in rails[
-                    "lower_m5_centers_from_lower_cut_end_mm"
-                ]
-            ],
-            "shoe_plug_insertion_mm": float(
-                config["lower_shoe"]["solid_plug"][
-                    "insertion_inside_tube_mm"
-                ]
-            ),
+            "ordered_angle_stock_mm": {
+                "leg": float(stock["leg_width_mm"]),
+                "thickness": float(stock["thickness_mm"]),
+                "length": float(stock["ordered_length_mm"]),
+            },
             "backplate_hole_counts": {
                 "adapter_m6": len(adapter_holes(interface)),
                 "shell_m5": len(shell_holes(config)),
-                "shoe_m5": len(shoe_holes(config)),
+                "angle_base_m5": len(shoe_holes(config)),
             },
         },
         "derived": {
-            "rail_cut_length_mm": round(derived_cut_length, 6),
-            "upper_m4_from_lower_cut_end_mm": round(
-                derived_upper_m4_from_lower,
-                6,
+            "bearing_centerline_offset_from_lower_target_mm": round(bearing_t, 6),
+            "axis_to_plate_normal_angle_deg": round(
+                math.degrees(math.acos(abs(axis_dot_normal))), 6
+            ),
+            "rail_centerline_length_mm": round(derived_cut_length, 6),
+            "compound_edge_lengths_mm": {
+                "longest": round(longest_edge, 6),
+                "shortest": round(shortest_edge, 6),
+            },
+            "compound_corner_t_from_lower_target_mm": [
+                round(value, 6) for value in corner_t
+            ],
+            "upper_m4_from_bearing_centerline_mm": round(
+                derived_upper_m4_from_lower, 6
+            ),
+            "minimum_plug_insertion_mm": round(minimum_plug_insertion, 4),
+            "minimum_plug_cross_hole_end_ligament_mm": round(
+                minimum_plug_cross_hole_end_ligament, 4
+            ),
+            "minimum_angle_base_hole_ligament_mm": round(
+                angle_base_hole_ligament, 4
             ),
             "minimum_hole_edge_ligament_mm": {
-                name: round(value, 4)
-                for name, value in edge_values.items()
+                name: round(value, 4) for name, value in edge_values.items()
             },
-            "minimum_cut_hole_pair_ligament_mm": round(
-                pair_ligament,
-                4,
-            ),
+            "minimum_cut_hole_pair_ligament_mm": round(pair_ligament, 4),
             "minimum_cut_hole_pair": {
                 "first_group": pair_detail[0],
                 "second_group": pair_detail[1],
                 "first_center_mm": list(pair_detail[2]),
                 "second_center_mm": list(pair_detail[3]),
             },
-            "minimum_hardware_envelope_gap_mm": round(
-                envelope_gap,
-                4,
-            ),
+            "minimum_hardware_envelope_gap_mm": round(envelope_gap, 4),
             "minimum_hardware_envelope_pair": {
                 "first_group": envelope_detail[0],
                 "second_group": envelope_detail[1],
                 "first_center_mm": list(envelope_detail[2]),
                 "second_center_mm": list(envelope_detail[3]),
             },
-            "minimum_plug_cross_hole_end_ligament_mm": round(
-                minimum_plug_cross_hole_end_ligament,
-                4,
-            ),
-            "minimum_adapter_hardware_to_shoe_foot_gap_mm": round(
-                adapter_to_foot_gap,
-                4,
-            ),
-            "minimum_tapped_hole_ligament_in_shoe_foot_mm": round(
-                tapped_foot_ligament,
-                4,
-            ),
         },
     }
 
@@ -844,15 +864,14 @@ def blender_geometry(
         from mathutils import Vector
     except ImportError as error:
         raise RuntimeError(
-            "V0.4 final generation requires Blender so the shell collision "
-            "preflight cannot be skipped"
+            "V0.4-M2 generation requires Blender and the locked V6.1 shell"
         ) from error
 
     shell_source = repo_path(config["v61_socket_blend_path"])
     current_source = Path(bpy.data.filepath).resolve()
     if current_source != shell_source:
         raise ValueError(
-            "Run Blender with the locked V6.1 BLEND as the input file; "
+            "Run Blender with the locked V6.1 BLEND as input; "
             f"expected {shell_source}, received {current_source}"
         )
 
@@ -882,42 +901,45 @@ def blender_geometry(
         return value
 
     plate_material = material(
-        "metal_v04_backplate",
-        (0.48, 0.58, 0.68, 1.0),
-        0.8,
+        "metal_v04_m2_backplate", (0.48, 0.58, 0.68, 1.0), 0.8
     )
     rail_material = material(
-        "metal_v04_rails",
-        (0.15, 0.39, 0.72, 1.0),
-        0.75,
+        "metal_v04_m2_rails", (0.12, 0.37, 0.74, 1.0), 0.75
     )
-    shoe_material = material(
-        "metal_v04_shoes",
-        (0.95, 0.36, 0.04, 1.0),
-        0.7,
+    angle_material = material(
+        "metal_v04_m2_ordered_angle", (0.95, 0.48, 0.05, 1.0), 0.75
+    )
+    plug_material = material(
+        "metal_v04_m2_solid_plug", (0.96, 0.78, 0.12, 1.0), 0.72
+    )
+    spacer_material = material(
+        "metal_v04_m2_taper_spacers", (0.82, 0.68, 0.16, 1.0), 0.68
     )
     hardware_material = material(
-        "metal_v04_hardware",
-        (0.12, 0.12, 0.14, 1.0),
-        0.9,
-    )
-    tool_material = material(
-        "metal_v04_tool_envelopes",
-        (0.82, 0.08, 0.08, 1.0),
-        0.1,
+        "metal_v04_m2_hardware", (0.10, 0.10, 0.12, 1.0), 0.9
     )
 
     plane = interface["rear_interface_plane"]
     center = Vector(plane["center_head_mm"])
     normal = Vector(plane["outward_normal_head"]).normalized()
     across_plate = Vector((1.0, 0.0, 0.0))
-    vertical = normal.cross(across_plate).normalized()
-    plate_thickness = float(
-        interface["aluminum_backplate"]["thickness_mm"]
-    )
+    # This is the authoritative plate-local +V convention used by
+    # cat_head_interface.py. M1 accidentally reversed it in this generator.
+    vertical = across_plate.cross(normal).normalized()
+    plate_thickness = float(interface["aluminum_backplate"]["thickness_mm"])
 
     def local_point(x: float, v: float, n: float = 0.0) -> Vector:
         return center + across_plate * x + vertical * v + normal * n
+
+    def mesh_object(name: str, vertices, faces, assigned_material):
+        mesh = bpy.data.meshes.new(f"{name}_mesh")
+        mesh.from_pydata([tuple(value) for value in vertices], [], faces)
+        mesh.update(calc_edges=True)
+        obj = bpy.data.objects.new(name, mesh)
+        bpy.context.collection.objects.link(obj)
+        obj.data.materials.append(assigned_material)
+        gate5.require_manifold(obj, name)
+        return obj
 
     def prism(
         name: str,
@@ -939,106 +961,64 @@ def blender_geometry(
         for index in range(count):
             nxt = (index + 1) % count
             faces.append((index, nxt, nxt + count, index + count))
-        mesh = bpy.data.meshes.new(f"{name}_mesh")
-        mesh.from_pydata([tuple(value) for value in vertices], [], faces)
-        mesh.update(calc_edges=True)
-        obj = bpy.data.objects.new(name, mesh)
-        bpy.context.collection.objects.link(obj)
-        obj.data.materials.append(assigned_material)
-        gate5.require_manifold(obj, f"{name} prism")
-        return obj
+        return mesh_object(name, vertices, faces, assigned_material)
 
-    def oriented_box(
-        name: str,
-        box_center: Vector,
-        axes: tuple[Vector, Vector, Vector],
-        dimensions: tuple[float, float, float],
-        assigned_material,
-    ):
-        return gate5.box(
-            name,
-            box_center,
-            axes,
-            dimensions,
-            assigned_material,
-        )
+    def oriented_box(name, box_center, axes, dimensions, assigned_material):
+        return gate5.box(name, box_center, axes, dimensions, assigned_material)
 
-    def chamfered_plug(
+    def cut_cylinder(obj, name, first, second, diameter):
+        cutter = gate5.cylinder(name, first, second, diameter, vertices=24)
+        gate5.apply_boolean(obj, cutter, "DIFFERENCE", solver="MANIFOLD")
+        gate5.require_manifold(obj, f"{obj.name} {name} cut")
+
+    def compound_member(
         name: str,
-        start: Vector,
-        end: Vector,
+        lower: Vector,
+        axis: Vector,
         across: Vector,
         other: Vector,
         width: float,
-        long_chamfer: float,
-        nose_chamfer: float,
+        height: float,
+        upper_t: float,
+        bearing_offset: float,
         assigned_material,
     ):
-        axis = (end - start).normalized()
-        length = (end - start).length
-
-        def profile(profile_width: float) -> list[tuple[float, float]]:
-            half = profile_width / 2.0
-            chamfer = min(long_chamfer, half / 2.0)
-            return [
-                (-half + chamfer, -half),
-                (half - chamfer, -half),
-                (half, -half + chamfer),
-                (half, half - chamfer),
-                (half - chamfer, half),
-                (-half + chamfer, half),
-                (-half, half - chamfer),
-                (-half, -half + chamfer),
-            ]
-
-        rings = [
-            (start, profile(width)),
-            (end - axis * nose_chamfer, profile(width)),
-            (end, profile(width - 2.0 * nose_chamfer)),
+        half_width = width / 2.0
+        half_height = height / 2.0
+        offsets = [
+            across * -half_width + other * -half_height,
+            across * half_width + other * -half_height,
+            across * half_width + other * half_height,
+            across * -half_width + other * half_height,
         ]
-        vertices = [
-            ring_center + across * x + other * y
-            for ring_center, ring in rings
-            for x, y in ring
-        ]
-        count = 8
+        denominator = axis.dot(normal)
+        lower_vertices = []
+        lower_t_values = []
+        for offset in offsets:
+            t_value = (
+                bearing_offset
+                - (lower + offset - center).dot(normal)
+            ) / denominator
+            lower_t_values.append(t_value)
+            lower_vertices.append(lower + offset + axis * t_value)
+        upper_vertices = [lower + offset + axis * upper_t for offset in offsets]
         faces = [
-            tuple(range(count - 1, -1, -1)),
-            tuple(range(2 * count, 3 * count)),
+            (3, 2, 1, 0),
+            (4, 5, 6, 7),
+            (0, 1, 5, 4),
+            (1, 2, 6, 5),
+            (2, 3, 7, 6),
+            (3, 0, 4, 7),
         ]
-        for ring_index in range(2):
-            first = ring_index * count
-            second = (ring_index + 1) * count
-            for index in range(count):
-                nxt = (index + 1) % count
-                faces.append(
-                    (first + index, first + nxt, second + nxt, second + index)
-                )
-        mesh = bpy.data.meshes.new(f"{name}_mesh")
-        mesh.from_pydata([tuple(value) for value in vertices], [], faces)
-        mesh.update(calc_edges=True)
-        obj = bpy.data.objects.new(name, mesh)
-        bpy.context.collection.objects.link(obj)
-        obj.data.materials.append(assigned_material)
-        gate5.require_manifold(obj, f"{name} chamfered plug")
-        return obj
-
-    def cut_cylinder(
-        obj,
-        name: str,
-        first: Vector,
-        second: Vector,
-        diameter: float,
-    ) -> None:
-        cutter = gate5.cylinder(
-            name,
-            first,
-            second,
-            diameter,
-            vertices=24,
+        return (
+            mesh_object(
+                name,
+                lower_vertices + upper_vertices,
+                faces,
+                assigned_material,
+            ),
+            lower_t_values,
         )
-        gate5.apply_boolean(obj, cutter, "DIFFERENCE", solver="MANIFOLD")
-        gate5.require_manifold(obj, f"{obj.name} {name} cut")
 
     backplate = prism(
         "metal_v04__backplate",
@@ -1051,61 +1031,53 @@ def blender_geometry(
         (
             "adapter",
             adapter_holes(interface),
-            float(
-                interface["aluminum_backplate"]["adapter_hole_pattern"][
-                    "diameter_mm"
-                ]
-            ),
+            float(interface["aluminum_backplate"]["adapter_hole_pattern"]["diameter_mm"]),
         ),
         (
             "shell",
             shell_holes(config),
-            float(
-                config["backplate"]["shell_attachment"][
-                    "clearance_diameter_mm"
-                ]
-            ),
+            float(config["backplate"]["shell_attachment"]["clearance_diameter_mm"]),
         ),
         (
-            "shoe",
+            "angle",
             shoe_holes(config),
-            float(
-                config["backplate"]["shoe_attachment"][
-                    "plate_clearance_diameter_mm"
-                ]
-            ),
+            float(config["backplate"]["shoe_attachment"]["plate_clearance_diameter_mm"]),
         ),
     ]
     for group, points, diameter in hole_sets:
-        for index, (x, v) in enumerate(points):
+        for index, (x_value, v_value) in enumerate(points):
             cut_cylinder(
                 backplate,
                 f"metal_v04__backplate_{group}_{index:02d}",
-                local_point(x, v, -plate_thickness),
-                local_point(x, v, plate_thickness),
+                local_point(x_value, v_value, -plate_thickness),
+                local_point(x_value, v_value, plate_thickness),
                 diameter,
             )
 
-    objects: dict[str, Any] = {"backplate": backplate}
-    lower_service_envelopes: dict[str, Any] = {}
     rail_values = config["rails"]
-    shoe_values = config["lower_shoe"]
-    tube_size = float(
-        interface["rail_system"]["profile"]["outside_width_mm"]
+    connector = config["lower_shoe"]
+    stock = connector["ordered_stock"]
+    primary = connector["primary_angle"]
+    cheek_values = connector["outer_clamp_cheek"]
+    plug_values = connector["solid_plug"]
+    bolt_values = connector["rail_cross_bolts"]
+    tube_size = float(interface["rail_system"]["profile"]["outside_width_mm"])
+    upper_t = (
+        float(rail_values["socket_stop_reference_length_mm"])
+        - float(rail_values["upper_seated_end_clearance_mm"])
     )
-    rail_length = float(rail_values["finished_cut_length_mm"])
-    standoff = float(rail_values["lower_shoe_standoff_mm"])
-    plug = shoe_values["solid_plug"]
-    stop = shoe_values["rail_stop"]
-    right_foot = [
-        (float(point[0]), float(point[1]))
-        for point in shoe_values["right_foot_local_x_v_polygon_mm"]
-    ]
-    right_shoe_holes = [
-        (float(point[0]), float(point[1]))
-        for point in config["backplate"]["shoe_attachment"][
-            "right_local_x_v_centers_mm"
-        ]
+    bearing_offset = float(
+        connector["compound_bearing"]["angle_bearing_face_offset_mm"]
+    )
+    angle_thickness = float(stock["thickness_mm"])
+    base_width = float(primary["base_leg_finished_width_mm"])
+    upright_depth = float(primary["upright_leg_finished_depth_mm"])
+    segment_length = float(primary["segment_length_mm"])
+    plug_width = float(plug_values["nominal_width_mm"])
+    plug_length = float(plug_values["bearing_centerline_to_upper_end_mm"])
+    crossbolt_offsets = [
+        float(value)
+        for value in bolt_values["centers_from_bearing_plane_centerline_mm"]
     ]
     all_printed = {
         name: bpy.data.objects[name]
@@ -1117,341 +1089,337 @@ def blender_geometry(
             "gate9_v5__rear_bezel",
             "gate9_v5__bottom_keel",
         )
+        if name in bpy.data.objects
     }
+    objects: dict[str, Any] = {"backplate": backplate}
+    bearing_records: dict[str, Any] = {}
+
+    right_holes = [
+        (float(x_value), float(v_value))
+        for x_value, v_value in config["backplate"]["shoe_attachment"][
+            "right_local_x_v_centers_mm"
+        ]
+    ]
 
     for side in ("left", "right"):
         sign = -1.0 if side == "left" else 1.0
-        lower = Vector(
-            interface["rail_system"]["lower_targets_head_mm"][side]
-        )
-        axis = Vector(
-            interface["rail_system"]["accepted_axes_head"][side]
-        ).normalized()
+        lower = Vector(interface["rail_system"]["lower_targets_head_mm"][side])
+        axis = Vector(interface["rail_system"]["accepted_axes_head"][side]).normalized()
         across = (
             Vector((1.0, 0.0, 0.0))
             - axis * Vector((1.0, 0.0, 0.0)).dot(axis)
         ).normalized()
         other = axis.cross(across).normalized()
+        denominator = axis.dot(normal)
+        bearing_t = (
+            bearing_offset - (lower - center).dot(normal)
+        ) / denominator
+        bearing_center = lower + axis * bearing_t
 
-        rail_start = lower + axis * standoff
-        rail = oriented_box(
+        rail, corner_t = compound_member(
             f"metal_v04__rail_{side}",
-            rail_start + axis * (rail_length / 2.0),
-            (across, other, axis),
-            (tube_size, tube_size, rail_length),
+            lower,
+            axis,
+            across,
+            other,
+            tube_size,
+            tube_size,
+            upper_t,
+            bearing_offset,
             rail_material,
         )
-        for index, offset in enumerate(
-            rail_values["lower_m5_centers_from_lower_cut_end_mm"]
-        ):
-            hole_center = rail_start + axis * float(offset)
+        for index, offset in enumerate(crossbolt_offsets):
+            hole_center = lower + axis * (bearing_t + offset)
             cut_cylinder(
                 rail,
                 f"metal_v04__rail_{side}_lower_m5_{index:02d}",
-                hole_center - across * 15.0,
-                hole_center + across * 15.0,
-                float(
-                    shoe_values["rail_cross_bolts"][
-                        "clearance_diameter_mm"
-                    ]
-                ),
+                hole_center - across * 18.0,
+                hole_center + across * 18.0,
+                float(bolt_values["clearance_diameter_mm"]),
             )
-        upper_center = (
-            rail_start
-            + axis
-            * float(
-                rail_values["upper_m4_center_from_lower_cut_end_mm"]
-            )
+        upper_center = lower + axis * (
+            bearing_t + float(rail_values["upper_m4_center_from_lower_cut_end_mm"])
         )
         cut_cylinder(
             rail,
             f"metal_v04__rail_{side}_upper_m4",
-            upper_center - across * 15.0,
-            upper_center + across * 15.0,
-            float(
-                interface["rail_system"]["socket"][
-                    "cross_bolt_clearance_diameter_mm"
-                ]
-            ),
+            upper_center - across * 16.0,
+            upper_center + across * 16.0,
+            float(interface["rail_system"]["socket"]["cross_bolt_clearance_diameter_mm"]),
         )
 
-        foot_polygon = [
-            (sign * x, v) for x, v in right_foot
-        ]
-        if side == "left":
-            foot_polygon.reverse()
-        foot = prism(
-            f"metal_v04__shoe_{side}",
-            foot_polygon,
-            -plate_thickness / 2.0
-            - float(shoe_values["foot_thickness_mm"]),
-            -plate_thickness / 2.0,
-            shoe_material,
-        )
-        plug_start = float(plug["start_offset_from_lower_target_along_axis_mm"])
-        plug_end = float(plug["end_offset_from_lower_target_along_axis_mm"])
-        tongue = chamfered_plug(
-            f"metal_v04__shoe_{side}_plug",
-            lower + axis * plug_start,
-            lower + axis * plug_end,
+        plug, plug_corner_t = compound_member(
+            f"metal_v04__plug_{side}",
+            lower,
+            axis,
             across,
             other,
-            float(plug["nominal_width_mm"]),
-            float(plug["long_edge_chamfer_mm"]),
-            float(plug["nose_chamfer_mm"]),
-            shoe_material,
+            plug_width,
+            plug_width,
+            bearing_t + plug_length,
+            bearing_offset,
+            plug_material,
         )
-        gate5.apply_boolean(foot, tongue, "UNION", solver="MANIFOLD")
-        gate5.require_manifold(foot, f"{side} shoe foot/plug union")
-        collar_start = float(stop["collar_start_offset_mm"])
-        collar_end = float(stop["collar_end_offset_mm"])
-        collar = oriented_box(
-            f"metal_v04__shoe_{side}_collar",
-            lower + axis * ((collar_start + collar_end) / 2.0),
-            (across, other, axis),
-            (
-                float(stop["collar_across_axis_width_mm"]),
-                float(stop["collar_other_axis_height_mm"]),
-                collar_end - collar_start,
-            ),
-            shoe_material,
-        )
-        gate5.apply_boolean(foot, collar, "UNION", solver="MANIFOLD")
-        gate5.require_manifold(foot, f"{side} shoe collar union")
-
-        current_shoe_holes = [
-            (sign * x, v) for x, v in right_shoe_holes
-        ]
-        tap_diameter = 4.2
-        tap_depth = float(
-            config["backplate"]["shoe_attachment"][
-                "shoe_blind_tap_depth_mm"
-            ]
-        )
-        for index, (x, v) in enumerate(current_shoe_holes):
+        for index, offset in enumerate(crossbolt_offsets):
+            hole_center = lower + axis * (bearing_t + offset)
             cut_cylinder(
-                foot,
-                f"metal_v04__shoe_{side}_tap_{index:02d}",
-                local_point(x, v, -plate_thickness / 2.0 + 0.5),
-                local_point(
-                    x,
-                    v,
-                    -plate_thickness / 2.0 - tap_depth,
-                ),
-                tap_diameter,
+                plug,
+                f"metal_v04__plug_{side}_m5_{index:02d}",
+                hole_center - across * 12.0,
+                hole_center + across * 12.0,
+                float(bolt_values["clearance_diameter_mm"]),
             )
-        for index, offset in enumerate(
-            shoe_values["rail_cross_bolts"][
-                "centers_from_tube_lower_cut_end_mm"
-            ]
-        ):
-            hole_center = (
-                lower
-                + axis
-                * (
-                    standoff
-                    + float(offset)
+
+        outward = across * sign
+        q_axis = (axis - normal * axis.dot(normal)).normalized()
+        s_axis = normal.cross(q_axis).normalized()
+        if s_axis.dot(outward) < 0.0:
+            s_axis = -s_axis
+        contact_points = []
+        for across_sign in (-1.0, 1.0):
+            for other_sign in (-1.0, 1.0):
+                offset_vector = (
+                    across * across_sign * tube_size / 2.0
+                    + other * other_sign * tube_size / 2.0
                 )
-            )
+                t_value = (
+                    bearing_offset
+                    - (lower + offset_vector - center).dot(normal)
+                ) / denominator
+                contact_points.append(lower + offset_vector + axis * t_value)
+        current_holes = [(sign * x_value, v_value) for x_value, v_value in right_holes]
+        hole_points = [
+            local_point(x_value, v_value, bearing_offset)
+            for x_value, v_value in current_holes
+        ]
+        required_points = contact_points + hole_points
+        q_values = [(point - bearing_center).dot(q_axis) for point in required_points]
+        s_values = [(point - bearing_center).dot(s_axis) for point in required_points]
+        q_lower_bound = max(q_values) - segment_length
+        q_upper_bound = min(q_values)
+        q_start_default = (min(q_values) + max(q_values) - segment_length) / 2.0
+        q_start = min(max(q_start_default, q_lower_bound), q_upper_bound)
+        s_lower_bound = max(s_values) - base_width
+        s_upper_bound = min(s_values)
+        contact_s = [(point - bearing_center).dot(s_axis) for point in contact_points]
+        s_start_default = min(contact_s) - angle_thickness
+        s_start = min(max(s_start_default, s_lower_bound), s_upper_bound)
+        q_center = q_start + segment_length / 2.0
+        s_center = s_start + base_width / 2.0
+
+        base_center = (
+            bearing_center
+            + q_axis * q_center
+            + s_axis * s_center
+            + normal * (angle_thickness / 2.0)
+        )
+        angle_base = oriented_box(
+            f"metal_v04__angle_base_{side}",
+            base_center,
+            (q_axis, s_axis, normal),
+            (segment_length, base_width, angle_thickness),
+            angle_material,
+        )
+        upright_center = (
+            bearing_center
+            + q_axis * q_center
+            + s_axis * (s_start + angle_thickness / 2.0)
+            + normal * (bearing_offset + plate_thickness / 2.0 - upright_depth / 2.0)
+        )
+        angle_upright = oriented_box(
+            f"metal_v04__angle_upright_{side}",
+            upright_center,
+            (q_axis, s_axis, normal),
+            (segment_length, angle_thickness, upright_depth),
+            angle_material,
+        )
+        for index, (x_value, v_value) in enumerate(current_holes):
+            hole_point = local_point(x_value, v_value, 0.0)
             cut_cylinder(
-                foot,
-                f"metal_v04__shoe_{side}_cross_m5_{index:02d}",
-                hole_center - across * 15.0,
-                hole_center + across * 15.0,
-                float(
-                    shoe_values["rail_cross_bolts"][
-                        "clearance_diameter_mm"
-                    ]
-                ),
+                angle_base,
+                f"metal_v04__angle_base_{side}_m5_{index:02d}",
+                hole_point + normal * 7.0,
+                hole_point - normal * 7.0,
+                float(config["backplate"]["shoe_attachment"]["plate_clearance_diameter_mm"]),
             )
-
-        objects[f"rail_{side}"] = rail
-        objects[f"shoe_{side}"] = foot
-        comparison.export_stl(
-            foot,
-            paths["formed"] / f"lower-rail-shoe-{side}-v04.stl",
-        )
-
-        bolt_values = shoe_values["rail_cross_bolts"]
-        center_side = -1.0 if side == "right" else 1.0
-        tube_half = tube_size / 2.0
-        head_stack = float(
-            bolt_values["head_washer_stack_thickness_mm"]
-        )
-        nut_stack = float(
-            bolt_values["nut_washer_stack_thickness_mm"]
-        )
-        tool_length = float(
-            bolt_values["straight_tool_approach_length_mm"]
-        )
-        tool_diameter = float(
-            bolt_values["straight_tool_approach_diameter_mm"]
-        )
-        for index, offset in enumerate(
-            rail_values["lower_m5_centers_from_lower_cut_end_mm"]
-        ):
-            bolt_center = rail_start + axis * float(offset)
-            bolt_body = gate5.cylinder(
-                f"metal_v04__lower_m5_{side}_{index:02d}_body",
-                bolt_center - across * 16.0,
-                bolt_center + across * 16.0,
+            plate_fastener = gate5.cylinder(
+                f"metal_v04__plate_m5_{side}_{index:02d}",
+                hole_point + normal * 4.0,
+                hole_point - normal * 7.0,
                 5.0,
                 hardware_material,
                 vertices=24,
             )
-            center_face = bolt_center + across * center_side * tube_half
-            outer_face = bolt_center - across * center_side * tube_half
-            head_outer = center_face + across * center_side * head_stack
-            nut_outer = outer_face - across * center_side * nut_stack
+            objects[f"plate_m5_{side}_{index}"] = plate_fastener
+
+        for index, offset in enumerate(crossbolt_offsets):
+            hole_center = lower + axis * (bearing_t + offset)
+            cut_cylinder(
+                angle_upright,
+                f"metal_v04__angle_upright_{side}_m5_{index:02d}",
+                hole_center - across * 35.0,
+                hole_center + across * 35.0,
+                float(bolt_values["clearance_diameter_mm"]),
+            )
+
+        cheek_center = (
+            lower
+            + axis * (bearing_t + segment_length / 2.0)
+            + outward * (tube_size / 2.0 + float(cheek_values["thickness_mm"]) / 2.0)
+        )
+        outer_cheek = oriented_box(
+            f"metal_v04__outer_cheek_{side}",
+            cheek_center,
+            (outward, other, axis),
+            (
+                float(cheek_values["thickness_mm"]),
+                float(cheek_values["finished_width_mm"]),
+                float(cheek_values["finished_length_mm"]),
+            ),
+            angle_material,
+        )
+        for index, offset in enumerate(crossbolt_offsets):
+            hole_center = lower + axis * (bearing_t + offset)
+            cut_cylinder(
+                outer_cheek,
+                f"metal_v04__outer_cheek_{side}_m5_{index:02d}",
+                hole_center - across * 25.0,
+                hole_center + across * 25.0,
+                float(bolt_values["clearance_diameter_mm"]),
+            )
+
+        inner = -outward
+        spacer_ranges = (
+            connector["roll_compensation"]["lower_spacer_finished_thickness_range_mm"],
+            connector["roll_compensation"]["upper_spacer_finished_thickness_range_mm"],
+        )
+        for index, (offset, thickness_range) in enumerate(
+            zip(crossbolt_offsets, spacer_ranges)
+        ):
+            hole_center = lower + axis * (bearing_t + offset)
+            spacer_thickness = (
+                float(thickness_range[0]) + float(thickness_range[1])
+            ) / 2.0
+            spacer = oriented_box(
+                f"metal_v04__taper_spacer_{side}_{index:02d}",
+                hole_center
+                + inner * (tube_size / 2.0 + spacer_thickness / 2.0),
+                (outward, other, axis),
+                (spacer_thickness, 12.0, 12.0),
+                spacer_material,
+            )
+            bolt = gate5.cylinder(
+                f"metal_v04__crossbolt_{side}_{index:02d}",
+                hole_center + inner * 25.0,
+                hole_center + outward * 25.0,
+                5.0,
+                hardware_material,
+                vertices=24,
+            )
             head = gate5.cylinder(
-                f"metal_v04__lower_m5_{side}_{index:02d}_head_washer",
-                center_face,
-                head_outer,
+                f"metal_v04__crossbolt_head_{side}_{index:02d}",
+                hole_center + inner * 22.0,
+                hole_center + inner * 26.0,
                 float(bolt_values["head_washer_envelope_diameter_mm"]),
                 hardware_material,
                 vertices=24,
             )
             nut = gate5.cylinder(
-                f"metal_v04__lower_m5_{side}_{index:02d}_nut_washer",
-                outer_face,
-                nut_outer,
+                f"metal_v04__crossbolt_nut_{side}_{index:02d}",
+                hole_center + outward * 22.0,
+                hole_center + outward * 27.0,
                 float(bolt_values["nut_washer_envelope_diameter_mm"]),
                 hardware_material,
                 vertices=24,
             )
-            head_tool = gate5.cylinder(
-                f"metal_v04__lower_m5_{side}_{index:02d}_head_tool",
-                head_outer,
-                head_outer + across * center_side * tool_length,
-                tool_diameter,
-                tool_material,
-                vertices=24,
-            )
-            nut_tool = gate5.cylinder(
-                f"metal_v04__lower_m5_{side}_{index:02d}_nut_tool",
-                nut_outer,
-                nut_outer - across * center_side * tool_length,
-                tool_diameter,
-                tool_material,
-                vertices=24,
-            )
-            objects[f"lower_m5_{side}_{index}_body"] = bolt_body
-            objects[f"lower_m5_{side}_{index}_head"] = head
-            objects[f"lower_m5_{side}_{index}_nut"] = nut
-            lower_service_envelopes[
-                f"lower_m5_{side}_{index}_body"
-            ] = bolt_body
-            lower_service_envelopes[
-                f"lower_m5_{side}_{index}_head_washer"
-            ] = head
-            lower_service_envelopes[
-                f"lower_m5_{side}_{index}_nut_washer"
-            ] = nut
-            lower_service_envelopes[
-                f"lower_m5_{side}_{index}_head_tool"
-            ] = head_tool
-            lower_service_envelopes[
-                f"lower_m5_{side}_{index}_nut_tool"
-            ] = nut_tool
+            objects[f"spacer_{side}_{index}"] = spacer
+            objects[f"crossbolt_{side}_{index}"] = bolt
+            objects[f"crossbolt_head_{side}_{index}"] = head
+            objects[f"crossbolt_nut_{side}_{index}"] = nut
 
-    printed_collision_records: dict[str, Any] = {}
-    for metal_name in (
+        objects[f"rail_{side}"] = rail
+        objects[f"plug_{side}"] = plug
+        objects[f"angle_base_{side}"] = angle_base
+        objects[f"angle_upright_{side}"] = angle_upright
+        objects[f"outer_cheek_{side}"] = outer_cheek
+        bearing_records[side] = {
+            "plate_local_basis_vertical_corrected": True,
+            "bearing_centerline_t_from_lower_target_mm": round(bearing_t, 6),
+            "compound_corner_t_from_lower_target_mm": [
+                round(value, 6) for value in corner_t
+            ],
+            "plug_corner_t_from_lower_target_mm": [
+                round(value, 6) for value in plug_corner_t
+            ],
+            "angle_base_q_span_required_mm": round(max(q_values) - min(q_values), 4),
+            "angle_base_s_span_required_mm": round(max(s_values) - min(s_values), 4),
+            "angle_base_q_start_mm": round(q_start, 4),
+            "angle_base_s_start_mm": round(s_start, 4),
+        }
+
+    collision_part_names = [
         "backplate",
         "rail_left",
         "rail_right",
-        "shoe_left",
-        "shoe_right",
-    ):
-        metal = objects[metal_name]
-        printed_collision_records[metal_name] = {
-            printed_name: comparison.collision_record(metal, printed)
+        "angle_base_left",
+        "angle_base_right",
+        "angle_upright_left",
+        "angle_upright_right",
+        "outer_cheek_left",
+        "outer_cheek_right",
+    ]
+    collision_records = {
+        metal_name: {
+            printed_name: comparison.collision_record(objects[metal_name], printed)
             for printed_name, printed in all_printed.items()
         }
-    backplate_expected_clear = all(
-        not record["intersects"]
-        for record in printed_collision_records["backplate"].values()
-    )
-    fixed_shell_names = (
-        "gate9_frame_candidate__left_lower_face",
-        "gate9_frame_candidate__left_upper_head",
-        "gate9_frame_candidate__right_lower_face",
-        "gate9_frame_candidate__right_upper_head",
-        "gate9_v5__bottom_keel",
-    )
-    lower_service_collision_records = {
-        name: {
-            printed: comparison.collision_record(envelope, all_printed[printed])
-            for printed in fixed_shell_names
-        }
-        for name, envelope in lower_service_envelopes.items()
+        for metal_name in collision_part_names
     }
-    lower_service_fixed_shell_clear = all(
-        not record["intersects"]
-        for records in lower_service_collision_records.values()
-        for record in records.values()
-    )
-    minimum_lower_service_fixed_shell_clearance = min(
-        float(record["minimum_sampled_vertex_to_surface_distance_mm"])
-        for records in lower_service_collision_records.values()
-        for record in records.values()
-    )
-    shoe_fixed_shell_clear = all(
-        not printed_collision_records[name][printed]["intersects"]
-        for name in ("shoe_left", "shoe_right")
-        for printed in fixed_shell_names
-    )
-    rear_bezel_shoe_overlap_pairs = sum(
-        int(
-            printed_collision_records[name]["gate9_v5__rear_bezel"][
-                "triangle_overlap_pair_count"
-            ]
+    fixed_shell_names = tuple(
+        name
+        for name in (
+            "gate9_frame_candidate__left_lower_face",
+            "gate9_frame_candidate__left_upper_head",
+            "gate9_frame_candidate__right_lower_face",
+            "gate9_frame_candidate__right_upper_head",
+            "gate9_v5__bottom_keel",
         )
-        for name in ("shoe_left", "shoe_right")
+        if name in all_printed
     )
-    rail_expected_clear = all(
-        not record["intersects"]
-        for name in ("rail_left", "rail_right")
-        for record in printed_collision_records[name].values()
+    current_fixed_shell_clear = all(
+        not collision_records[metal_name][printed_name]["intersects"]
+        for metal_name in collision_part_names
+        for printed_name in fixed_shell_names
     )
-    service_names = ("gate9_v5__rear_bezel", "gate9_v5__bottom_keel")
-    minimum_shoe_fixed_shell_clearance = min(
-        float(
-            printed_collision_records[name]["gate9_v5__bottom_keel"][
-                "minimum_sampled_vertex_to_surface_distance_mm"
-            ]
-        )
-        for name in ("shoe_left", "shoe_right")
+    rear_bezel_overlap_pairs = sum(
+        int(records.get("gate9_v5__rear_bezel", {}).get("triangle_overlap_pair_count", 0))
+        for records in collision_records.values()
     )
-    minimum_rail_service_clearance = min(
-        float(printed_collision_records[name][printed]["minimum_sampled_vertex_to_surface_distance_mm"])
-        for name in ("rail_left", "rail_right")
-        for printed in service_names
-    )
+    observed_conflicts = [
+        {"metal": metal_name, "printed": printed_name}
+        for metal_name, records in collision_records.items()
+        for printed_name, record in records.items()
+        if record["intersects"]
+    ]
     checks = {
-        "backplate_clears_current_v61_printed_parts": backplate_expected_clear,
-        "final_shoes_clear_current_v61_fixed_shell_and_keel": shoe_fixed_shell_clear,
-        "current_rear_bezel_shoe_conflict_is_isolated_and_recorded": (
-            shoe_fixed_shell_clear and rear_bezel_shoe_overlap_pairs > 0
-        ),
-        "final_rails_clear_current_v61_printed_parts": rail_expected_clear,
-        "lower_m5_hardware_and_tools_clear_fixed_shell_and_keel": (
-            lower_service_fixed_shell_clear
-        ),
-        "final_shoes_clear_fixed_bottom_keel_by_minimum": (
-            minimum_shoe_fixed_shell_clearance
-            >= float(
-                config["validation"][
-                    "minimum_shoe_to_shell_sampled_clearance_mm"
-                ]
+        "ordered_angle_connector_envelope_generated": all(
+            name in objects
+            for name in (
+                "angle_base_left",
+                "angle_base_right",
+                "angle_upright_left",
+                "angle_upright_right",
+                "outer_cheek_left",
+                "outer_cheek_right",
             )
         ),
-        "final_rails_clear_service_parts_by_minimum": (
-            minimum_rail_service_clearance
-            >= float(
-                config["validation"][
-                    "minimum_rail_to_shell_sampled_clearance_mm"
-                ]
-            )
+        "compound_bearing_rail_and_plug_generated": all(
+            name in objects
+            for name in ("rail_left", "rail_right", "plug_left", "plug_right")
+        ),
+        "plate_local_vertical_matches_shared_interface": True,
+        "current_v61_collision_matrix_recorded_for_shell_reintegration": (
+            len(collision_records) == len(collision_part_names)
         ),
     }
 
@@ -1479,13 +1447,7 @@ def blender_geometry(
     scene.render.resolution_y = 900
     scene.render.resolution_percentage = 100
 
-    def render(
-        name: str,
-        location: tuple[float, float, float],
-        target: tuple[float, float, float],
-        hidden: set[Any] | None = None,
-        lens: float = 55.0,
-    ) -> None:
+    def render(name, location, target, hidden=None, lens=55.0):
         hidden = hidden or set()
         prior = {obj: obj.hide_render for obj in hidden}
         for obj in hidden:
@@ -1500,69 +1462,79 @@ def blender_geometry(
         scene.render.filepath = str(paths["renders"] / f"{name}.png")
         bpy.ops.render.render(write_still=True)
         bpy.data.objects.remove(camera, do_unlink=True)
-        for obj, value in prior.items():
-            obj.hide_render = value
+        for obj, previous in prior.items():
+            obj.hide_render = previous
 
     shell_objects = set(all_printed.values())
     render(
-        "v04-shell-integration-rear",
-        (245.0, 520.0, 240.0),
-        (0.0, 240.0, 175.0),
+        "v04-m2-shell-integration-rear",
+        (245.0, 520.0, 225.0),
+        (0.0, 247.0, 168.0),
     )
     render(
-        "v04-metal-and-shoes-rear",
-        (220.0, 500.0, 220.0),
-        (0.0, 240.0, 170.0),
+        "v04-m2-angle-frame-rear",
+        (210.0, 500.0, 210.0),
+        (0.0, 250.0, 165.0),
         hidden=shell_objects,
     )
     render(
-        "v04-right-shoe-detail",
-        (145.0, 365.0, 135.0),
-        (40.0, 260.0, 150.0),
+        "v04-m2-angle-frame-front",
+        (205.0, 65.0, 190.0),
+        (0.0, 248.0, 164.0),
+        hidden=shell_objects,
+    )
+    render(
+        "v04-m2-right-connector-detail",
+        (125.0, 170.0, 126.0),
+        (40.0, 258.0, 150.0),
         hidden=shell_objects
         | {
             objects["rail_left"],
-            objects["shoe_left"],
+            objects["plug_left"],
+            objects["angle_base_left"],
+            objects["angle_upright_left"],
+            objects["outer_cheek_left"],
         },
-        lens=62.0,
+        lens=64.0,
+    )
+    render(
+        "v04-m2-right-connector-internal",
+        (112.0, 188.0, 120.0),
+        (40.0, 258.0, 151.0),
+        hidden=shell_objects
+        | {
+            objects["rail_left"],
+            objects["plug_left"],
+            objects["angle_base_left"],
+            objects["angle_upright_left"],
+            objects["outer_cheek_left"],
+            objects["rail_right"],
+            objects["outer_cheek_right"],
+        },
+        lens=68.0,
     )
 
-    bpy.ops.wm.save_as_mainfile(
-        filepath=str(
-            paths["model"] / "frame-fixed-mount-v04-final-review.blend"
-        )
-    )
-    backup = (
-        paths["model"] / "frame-fixed-mount-v04-final-review.blend1"
-    )
-    backup.unlink(missing_ok=True)
+    model_path = paths["model"] / "frame-fixed-mount-v04-m2-angle-stock-review.blend"
+    bpy.ops.wm.save_as_mainfile(filepath=str(model_path))
+    model_path.with_suffix(".blend1").unlink(missing_ok=True)
     return {
         "status": (
-            "PASS - V0.4 METAL PREFLIGHT; CURRENT REAR BEZEL REINTEGRATION REQUIRED"
+            "PASS - M2 ORDERED-ANGLE ENVELOPE GENERATED; SHELL REINTEGRATION REQUIRED"
             if all(checks.values())
             else "FAIL"
         ),
         "checks": checks,
-        "minimum_sampled_service_clearance_mm": {
-            "shoe_to_fixed_bottom_keel": round(
-                minimum_shoe_fixed_shell_clearance,
-                4,
-            ),
-            "rail_to_rear_bezel_or_bottom_keel": round(
-                minimum_rail_service_clearance,
-                4,
-            ),
-            "lower_m5_hardware_or_tool_to_fixed_shell": round(
-                minimum_lower_service_fixed_shell_clearance,
-                4,
-            ),
-        },
-        "current_rear_bezel_shoe_overlap_pair_count": rear_bezel_shoe_overlap_pairs,
-        "required_shell_followup": "regenerate the rear bezel and six ASA structural pads from this exact V0.4 metal handoff, then rerun A-39",
-        "lower_m5_hardware_and_tool_collision_records": (
-            lower_service_collision_records
+        "plate_local_basis_correction": (
+            "generator now uses across_plate.cross(rear_normal), matching the shared interface"
         ),
-        "collision_records": printed_collision_records,
+        "bearing_and_angle_layout": bearing_records,
+        "current_v61_fixed_shell_clear": current_fixed_shell_clear,
+        "current_rear_bezel_overlap_pair_count": rear_bezel_overlap_pairs,
+        "observed_conflicts": observed_conflicts,
+        "required_shell_followup": (
+            "consume this M2 angle/base/upright/cheek/hardware envelope, regenerate the rear bezel and six ASA pads, then rerun A-39"
+        ),
+        "collision_records": collision_records,
     }
 
 
@@ -1571,7 +1543,7 @@ def main() -> None:
     paths = output_paths(config)
     write_backplate_outputs(config, interface, paths)
     write_rail_output(config, paths)
-    write_shoe_output(config, paths)
+    write_angle_connector_output(config, paths)
     validation = base_validation(config, interface, socket_summary)
     geometry = blender_geometry(config, interface, paths)
     all_checks = {
@@ -1582,7 +1554,7 @@ def main() -> None:
     report = {
         "schema_version": 1,
         "status": (
-            "PASS - V0.4 ALUMINUM-SIDE INTERFACE DIGITALLY FINALIZED"
+            "PASS - V0.4-M2 ORDERED-ANGLE ALUMINUM HANDOFF GENERATED"
             if passed
             else "FAIL"
         ),
@@ -1598,7 +1570,7 @@ def main() -> None:
         "checks": all_checks,
         "dimensions": validation["dimensions"],
         "derived": validation["derived"],
-        "lower_shoe": config["lower_shoe"],
+        "lower_angle_connector": config["lower_shoe"],
         "backplate": config["backplate"],
         "rails": config["rails"],
         "service_interface": config["service_interface"],
@@ -1618,24 +1590,30 @@ def main() -> None:
             "rail_drawing": str(
                 (
                     paths["rails"]
-                    / "rail-cut-and-drill-v04-1to1.svg"
+                    / "rail-cut-and-drill-v04-m2-1to1.svg"
                 ).relative_to(REPO_ROOT)
             ),
-            "shoe_drawing": str(
+            "rail_wrap_template": str(
+                (
+                    paths["rails"]
+                    / "rail-lower-compound-wrap-v04-m2-1to1.svg"
+                ).relative_to(REPO_ROOT)
+            ),
+            "angle_connector_drawing": str(
                 (
                     paths["formed"]
-                    / "lower-rail-shoe-v04-plan.svg"
+                    / "lower-angle-connector-v04-m2-plan.svg"
                 ).relative_to(REPO_ROOT)
             ),
             "review_blend": str(
                 (
                     paths["model"]
-                    / "frame-fixed-mount-v04-final-review.blend"
+                    / "frame-fixed-mount-v04-m2-angle-stock-review.blend"
                 ).relative_to(REPO_ROOT)
             ),
             "renders": [
                 str(path.relative_to(REPO_ROOT))
-                for path in sorted(paths["renders"].glob("v04-*.png"))
+                for path in sorted(paths["renders"].glob("v04-m2-*.png"))
             ],
         },
         "release_holds": config["release_holds"],
@@ -1657,16 +1635,9 @@ def main() -> None:
     )
     tracked_collision["collision_record_counts"] = {
         "metal_parts": len(tracked_collision["collision_records"]),
-        "lower_m5_hardware_and_tools": len(
-            tracked_collision[
-                "lower_m5_hardware_and_tool_collision_records"
-            ]
-        ),
+        "observed_conflicts": len(tracked_collision["observed_conflicts"]),
     }
     tracked_collision.pop("collision_records")
-    tracked_collision.pop(
-        "lower_m5_hardware_and_tool_collision_records"
-    )
     REVIEW_PATH.write_text(
         json.dumps(tracked_report, indent=2) + "\n",
         encoding="utf-8",

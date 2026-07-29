@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Resolve aluminum mount V0.4 review inputs from the shared interface.
 
-This preflight preserves the V0.2 generated review pack and performs no
-Blender generation, metal drawing export, cutting, or drilling release.
+This preflight resolves the V0.4-M2 ordered-angle handoff and performs no
+Blender generation, metal cutting, or drilling release.
 """
 
 from __future__ import annotations
@@ -93,16 +93,16 @@ def load_resolved_config() -> tuple[dict[str, Any], dict[str, Any]]:
             final_config["required_interface_revision"]
             == interface["interface_revision"]
         ),
-        "final_rail_cut_length_is_149p672_mm": (
+        "final_rail_centerline_length_is_152p476123_mm": (
             float(final_config["rails"]["finished_cut_length_mm"])
             == float(
                 interface["rail_system"]["profile"][
                     "finished_cut_length_mm"
                 ]
             )
-            == 149.672
+            == 152.476123
         ),
-        "final_backplate_has_six_shell_and_six_shoe_holes": (
+        "final_backplate_has_six_shell_and_six_angle_base_holes": (
             len(
                 final_config["backplate"]["shell_attachment"][
                     "local_x_v_centers_mm"
@@ -114,19 +114,22 @@ def load_resolved_config() -> tuple[dict[str, Any], dict[str, Any]]:
                 ]
             ) == 6
         ),
-        "final_shoes_use_37_mm_solid_plug_insertion": (
+        "final_angle_connectors_use_solid_plug_and_ordered_stock": (
             float(
                 final_config["lower_shoe"]["solid_plug"][
                     "insertion_inside_tube_mm"
                 ]
-            ) == 37.0
+            ) >= 39.592
+            and final_config["lower_shoe"]["ordered_stock"]["leg_width_mm"] == 38.1
+            and final_config["lower_shoe"]["ordered_stock"]["thickness_mm"] == 3.175
+            and final_config["lower_shoe"]["primary_angle"]["segment_length_mm"] == 45.0
         ),
     }
     if not all(checks.values()):
         failed = [name for name, passed in checks.items() if not passed]
         raise ValueError(f"Metal V0.4 interface preflight failed: {failed}")
     report = {
-        "status": "PASS - METAL V0.4 SHARED INTERFACE PREFLIGHT",
+        "status": "PASS - METAL V0.4-M2 ANGLE-STOCK SHARED INTERFACE PREFLIGHT",
         "consumer_id": coordinator["consumer_id"],
         "interface_revision": interface["interface_revision"],
         "interface_contract_status": interface_report["status"],

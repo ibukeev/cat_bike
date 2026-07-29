@@ -159,13 +159,13 @@ class CatHeadSharedInterfaceTest(unittest.TestCase):
         rails = interface["rail_system"]
         self.assertEqual(
             rails["profile"]["finished_cut_length_mm"],
-            149.672,
+            152.476123,
         )
         self.assertEqual(
             rails["lower_shoe"]["solid_plug"][
                 "insertion_inside_tube_mm"
             ],
-            37.0,
+            39.592,
         )
         _, metal_report = METAL_V04_PREFLIGHT.load_resolved_config()
         self.assertEqual(
@@ -186,22 +186,22 @@ class CatHeadSharedInterfaceTest(unittest.TestCase):
         self.assertTrue(summary["status"].startswith("PASS"))
         self.assertTrue(all(summary["checks"].values()))
         self.assertEqual(
-            summary["dimensions"]["rail_finished_cut_length_mm"],
-            149.672,
+            summary["dimensions"]["rail_centerline_finished_length_mm"],
+            152.476123,
         )
         self.assertEqual(
             summary["dimensions"]["backplate_hole_counts"],
-            {"adapter_m6": 4, "shell_m5": 6, "shoe_m5": 6},
+            {"adapter_m6": 4, "shell_m5": 6, "angle_base_m5": 6},
         )
         collision = summary["current_v61_shell_collision_preflight"]
         self.assertTrue(
             collision["checks"][
-                "current_rear_bezel_shoe_conflict_is_isolated_and_recorded"
+                "current_v61_collision_matrix_recorded_for_shell_reintegration"
             ]
         )
-        self.assertGreater(
-            collision["current_rear_bezel_shoe_overlap_pair_count"],
-            0,
+        self.assertEqual(
+            collision["collision_record_counts"]["metal_parts"],
+            9,
         )
         self.assertIn("regenerate", collision["required_shell_followup"])
 

@@ -193,7 +193,7 @@ def validate_interface(interface: dict[str, Any]) -> dict[str, Any]:
         shell_pattern = backplate["shell_attachment_hole_pattern"]
         shoe_pattern = backplate["rail_shoe_hole_pattern"]
         lower_shoe = rails["lower_shoe"]
-        checks["finalized_rail_cut_matches_socket_and_shoe_datums"] = {
+        checks["finalized_rail_cut_matches_socket_and_lower_bearing_datums"] = {
             "value_mm": float(profile["finished_cut_length_mm"]),
             "derived_mm": derived_final_cut,
             "pass": abs(
@@ -201,7 +201,7 @@ def validate_interface(interface: dict[str, Any]) -> dict[str, Any]:
                 - derived_final_cut
             ) <= float(tolerances["derived_dimension_error_mm_max"]),
         }
-        checks["finalized_backplate_has_six_shell_and_six_shoe_holes"] = {
+        checks["finalized_backplate_has_six_shell_and_six_angle_base_holes"] = {
             "value": [
                 int(shell_pattern["quantity"]),
                 int(shoe_pattern["quantity_total"]),
@@ -214,7 +214,7 @@ def validate_interface(interface: dict[str, Any]) -> dict[str, Any]:
                 and bool(shoe_pattern["left_is_x_mirror"])
             ),
         }
-        checks["finalized_shoe_has_solid_anti_crush_load_path"] = {
+        checks["finalized_connector_has_solid_anti_crush_load_path"] = {
             "value_mm": lower_shoe["solid_plug"][
                 "insertion_inside_tube_mm"
             ],
@@ -229,6 +229,20 @@ def validate_interface(interface: dict[str, Any]) -> dict[str, Any]:
                         "quantity_per_rail"
                     ]
                 ) == 2
+            ),
+        }
+        checks["m2_ordered_angle_stock_is_explicit"] = {
+            "value_mm": [
+                lower_shoe["ordered_stock"]["leg_width_mm"],
+                lower_shoe["ordered_stock"]["thickness_mm"],
+                lower_shoe["primary_angle"]["segment_length_mm"],
+                lower_shoe["primary_angle"]["base_leg_finished_width_mm"],
+            ],
+            "pass": (
+                abs(float(lower_shoe["ordered_stock"]["leg_width_mm"]) - 38.1) < 0.001
+                and abs(float(lower_shoe["ordered_stock"]["thickness_mm"]) - 3.175) < 0.001
+                and abs(float(lower_shoe["primary_angle"]["segment_length_mm"]) - 45.0) < 0.001
+                and abs(float(lower_shoe["primary_angle"]["base_leg_finished_width_mm"]) - 29.0) < 0.001
             ),
         }
     passed = all(check["pass"] for check in checks.values())
