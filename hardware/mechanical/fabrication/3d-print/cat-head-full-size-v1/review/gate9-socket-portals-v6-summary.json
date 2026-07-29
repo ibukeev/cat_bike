@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "status": "review_candidate_passed_digital_socket_gate_physical_coupon_required",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.3",
+  "requirements_addressed": {
+    "findings": [
+      "F-01",
+      "F-02"
+    ],
+    "acceptance_tests": {
+      "A-05_portal_rail_insertion": "digital pass; physical rail and socket coupon required",
+      "A-33_exterior_surface_preservation": "digital portal-local pass",
+      "A-34_body_shell_connected_topology": "digital pass for all six current shell parts",
+      "A-37_production_build_plate_fit": "digital slicer pass; still not a production release",
+      "A-38_portal_backplate_revision_lock": "digital interface lock pass; physical tube coupon pending"
+    }
+  },
+  "frozen_interface": {
+    "tube_outside_mm": [
+      19.0,
+      19.0
+    ],
+    "tube_wall_mm": 2.0,
+    "socket_opening_mm": [
+      20.5,
+      20.5
+    ],
+    "nominal_clearance_each_side_mm": 0.75,
+    "socket_insertion_depth_mm": 30.0,
+    "rail_reference_length_mm": 158.172,
+    "lower_targets_head_mm": {
+      "left": [
+        -40.0,
+        267.336,
+        147.132
+      ],
+      "right": [
+        40.0,
+        267.336,
+        147.132
+      ]
+    },
+    "accepted_axes_head": {
+      "left": [
+        -0.09294,
+        -0.94874,
+        0.30208
+      ],
+      "right": [
+        0.09294,
+        -0.94874,
+        0.30208
+      ]
+    },
+    "socket_roll_reference": "head_x_projected",
+    "cross_bolt_nominal": "M4",
+    "cross_bolt_clearance_diameter_mm": 4.5,
+    "cross_bolt_offset_from_open_end_mm": 10.0,
+    "cross_bolt_angle_from_head_x_deg": 5.333
+  },
+  "portal_construction": {
+    "method": "blind internal square sockets and broad face pads truly unioned into the V5 upper shells",
+    "socket_wall_mm": 6.0,
+    "socket_outer_width_mm": 32.5,
+    "socket_end_overlap_mm": 0.8,
+    "mount_pad_face_scale": 0.68,
+    "mount_pad_thickness_mm": 16.0,
+    "mount_pad_shell_overlap_mm": 1.0,
+    "minimum_required_socket_exterior_recess_mm": 8.0,
+    "measured_socket_exterior_recess_mm": 8.2045,
+    "measured_pad_exterior_recess_mm": 0.8,
+    "rail_seated_end_clearance_mm": 0.5,
+    "left": {
+      "source_face_index": 6,
+      "surface_anchor_mm": [
+        -68.33,
+        103.026,
+        213.68
+      ],
+      "open_center_mm": [
+        -51.987,
+        144.975,
+        186.092
+      ],
+      "bolt_center_mm": [
+        -52.916,
+        135.488,
+        189.113
+      ],
+      "pad_to_shell_triangle_overlap_pairs_before_union": 3,
+      "pad_to_socket_triangle_overlap_pairs_before_union": 7,
+      "shell_volume_added_mm3": 43941.531
+    },
+    "right": {
+      "source_face_index": 5,
+      "surface_anchor_mm": [
+        68.33,
+        103.026,
+        213.68
+      ],
+      "open_center_mm": [
+        51.987,
+        144.975,
+        186.092
+      ],
+      "bolt_center_mm": [
+        52.916,
+        135.488,
+        189.113
+      ],
+      "pad_to_shell_triangle_overlap_pairs_before_union": 3,
+      "pad_to_socket_triangle_overlap_pairs_before_union": 7,
+      "shell_volume_added_mm3": 43941.452
+    }
+  },
+  "topology": {
+    "left_upper_head": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        127.408,
+        137.661,
+        158.217
+      ],
+      "volume_mm3": 84228.838
+    },
+    "right_upper_head": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        127.203,
+        137.661,
+        158.217
+      ],
+      "volume_mm3": 84238.979
+    },
+    "left_lower_face": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        158.406,
+        200.892,
+        126.395
+      ],
+      "volume_mm3": 54509.272
+    },
+    "right_lower_face": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        132.387,
+        200.893,
+        126.395
+      ],
+      "volume_mm3": 52872.383
+    },
+    "rear_bezel": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        248.382,
+        99.645,
+        218.31
+      ],
+      "volume_mm3": 101972.73
+    },
+    "bottom_keel": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        173.2,
+        148.793,
+        49.575
+      ],
+      "volume_mm3": 32534.273
+    },
+    "socket_fit_coupon": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        32.5,
+        29.2,
+        32.5
+      ],
+      "volume_mm3": 20906.717
+    }
+  },
+  "rail_path_validation": {
+    "withdrawal_offsets_mm": [
+      0.0,
+      20.0,
+      50.0,
+      100.0,
+      160.0
+    ],
+    "left_all_sampled_positions_clear": true,
+    "right_all_sampled_positions_clear": true,
+    "minimum_seated_clearance_to_owner_socket_stop_mm": 0.5,
+    "seated_clearance_to_rear_bezel_mm": {
+      "left": 16.441,
+      "right": 16.441
+    },
+    "seated_clearance_to_bottom_keel_mm": {
+      "left": 111.4784,
+      "right": 112.4669
+    }
+  },
+  "m4_hardware_review": {
+    "bolt_body_minimum_clearance_to_modified_shell_mm": 0.229,
+    "head_washer_minimum_clearance_to_original_shell_skin_mm": 42.0229,
+    "nut_washer_minimum_clearance_to_original_shell_skin_mm": 21.0835,
+    "head_tool_minimum_clearance_to_modified_shell_mm": 4.5,
+    "nut_tool_minimum_clearance_to_modified_shell_mm": 4.9999,
+    "socket_face_contact_interpretation": "head/washer and nut/washer bearing contact with the unioned portal body is intentional"
+  },
+  "digital_validation": {
+    "shared_v03_interface_contract_passes": true,
+    "all_six_modified_parts_and_coupon_one_closed_manifold_component": true,
+    "portal_pads_and_sockets_have_true_overlapping_union_roots": true,
+    "socket_openings_match_frozen_20p5_mm_contract": true,
+    "rail_axes_and_head_x_projected_roll_match_frozen_v03": true,
+    "socket_and_pad_features_stay_behind_exterior_planes": true,
+    "portal_features_clear_other_printed_parts": true,
+    "seated_rails_and_sampled_straight_insertion_paths_clear": true,
+    "m4_hardware_and_straight_tool_approach_envelopes_clear": true,
+    "digital_v6_socket_portal_candidate_pass": true
+  },
+  "slicer": {
+    "status": "printer_envelope_feasibility_only",
+    "profile": "Generic ASA architecture review for Original Prusa MK4/MK4S with 0.4 mm nozzle",
+    "minimum_required_post_brim_xy_margin_mm": 10.0,
+    "changed_three_part_set": {
+      "part_count": 3,
+      "minimum_post_brim_xy_margin_mm": 39.272,
+      "total_filament_g": 289.35,
+      "total_support_g": 152.793,
+      "total_support_volume_cm3": 142.793,
+      "total_time_seconds": 91456,
+      "all_parts_pass_margin": true
+    },
+    "current_eight_part_set": {
+      "part_count": 8,
+      "minimum_post_brim_xy_margin_mm": 15.011,
+      "total_filament_g": 774.66,
+      "total_support_g": 388.317,
+      "total_support_volume_cm3": 362.904,
+      "total_time_seconds": 258373,
+      "all_parts_pass_margin": true
+    },
+    "parts": {
+      "left_upper_head": {
+        "rotation_xyz_deg": [
+          4,
+          4,
+          10
+        ],
+        "post_brim_xy_margin_mm": 39.718,
+        "filament_g": 162.9,
+        "support_g": 98.441
+      },
+      "right_upper_head": {
+        "rotation_xyz_deg": [
+          100,
+          100,
+          98
+        ],
+        "post_brim_xy_margin_mm": 39.272,
+        "filament_g": 112.73,
+        "support_g": 52.295
+      },
+      "socket_fit_coupon": {
+        "rotation_xyz_deg": [
+          0,
+          0,
+          0
+        ],
+        "post_brim_xy_margin_mm": 86.258,
+        "filament_g": 13.72,
+        "support_g": 2.057,
+        "estimated_time_seconds": 3520
+      }
+    }
+  },
+  "physical_coupon_gate": {
+    "required_material_process": "intended black ASA process",
+    "required_stock": "actual user-measured 19 x 19 x 2 mm square aluminum tube",
+    "steps": [
+      "Allow the ASA coupon to cool completely before measuring or inserting tube.",
+      "Test both ends and multiple clocked orientations of the actual tube without sanding the coupon.",
+      "Record whether insertion is free by hand, appropriately snug, excessively loose, or impossible.",
+      "Check full seating to the blind stop and removal without cracking or whitening.",
+      "Use a sacrificial tube offcut for the M4 transfer-drill and hardware test; do not drill a final rail.",
+      "Verify bolt, washer, nut, and straight tool access on the coupon."
+    ],
+    "pass_condition": "tube inserts and removes by hand after cooling, seats fully, has no damaging force or unacceptable rattle, and the M4 hardware test passes",
+    "status": "pending_physical_test"
+  },
+  "production_blockers": [
+    "The physical black-ASA socket coupon and actual 19 mm tube fit have not passed.",
+    "Actual tube corner radius and ASA process shrink remain unmeasured.",
+    "Final rail cut lengths, lower shoes, and anti-crush plugs are unresolved.",
+    "Backplate perimeter and lower-shoe holes are unresolved.",
+    "The complete lamp and steering-sweep envelope is unresolved.",
+    "Ear, eye, wrapped-panel, and remaining shell-seam gates are unresolved.",
+    "No upper shell or complete ASA print is released by this digital gate."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 6,
+  "status": "review-only V6 frozen-axis socket and front/top portal candidate; not a production print, tube-cut, or drilling release",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.3",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v03.json",
+  "source_v5_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-complementary-service-parts-candidate-v5.json",
+  "source_architecture_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-rear-architecture-comparison-v1.json",
+  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-socket-portals-candidate-v6",
+  "portal": {
+    "construction": "blind internal square sockets and broad face pads truly unioned into the V5 upper shells",
+    "shell_wall_thickness_mm": 1.8,
+    "socket_wall_mm": 6.0,
+    "socket_end_overlap_mm": 0.8,
+    "mount_pad_face_scale": 0.68,
+    "mount_pad_thickness_mm": 16.0,
+    "mount_pad_shell_overlap_mm": 1.0,
+    "minimum_socket_exterior_recess_mm": 8.0,
+    "fit_coupon_length_mm": 24.0,
+    "rail_seated_end_clearance_mm": 0.5,
+    "rail_withdrawal_test_offsets_mm": [
+      0.0,
+      20.0,
+      50.0,
+      100.0,
+      160.0
+    ]
+  },
+  "hardware_review": {
+    "m4_bolt_body_diameter_mm": 4.0,
+    "m4_head_envelope_diameter_mm": 7.5,
+    "m4_head_envelope_thickness_mm": 3.5,
+    "m4_washer_envelope_diameter_mm": 9.0,
+    "m4_washer_envelope_thickness_mm": 1.0,
+    "m4_nut_envelope_diameter_mm": 8.1,
+    "m4_nut_envelope_thickness_mm": 4.0,
+    "tool_approach_diameter_mm": 10.0,
+    "tool_approach_length_mm": 25.0
+  },
+  "acceptance_holds": [
+    "The V6 sockets must use the frozen V0.3 lower targets, accepted axes, head-X-projected roll, 20.5 mm opening, 30 mm insertion depth, and M4 cross-bolt location without local re-aiming.",
+    "Both portal pads and sockets must be true unions with their upper shells; append-only overlapping components are prohibited.",
+    "Every modified shell and the socket coupon must remain one closed manifold component.",
+    "No portal pad, socket wall, or hardware feature may protrude beyond the approved faceted exterior.",
+    "A seated 19 mm rail and the sampled straight withdrawal/insertion path must clear the complete printed shell set when the rear bezel is removed for service.",
+    "The seated rails must clear the installed rear bezel and bottom keel.",
+    "The M4 bolt body, head, washer, nut, and straight tool-approach envelopes must have usable internal access without an exterior shell hole.",
+    "The 19 mm tube and 20.5 mm socket coupon must be printed in the intended ASA process and physically accepted before upper-shell production printing or rail drilling.",
+    "Final rail cut length, lower shoes, anti-crush plugs, backplate perimeter holes, lamp envelope, ears, eyes, glow-panel mounts, and remaining shell seams stay blocked."
+  ]
+}
