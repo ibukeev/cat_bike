@@ -1,0 +1,90 @@
+{
+  "schema_version": 5,
+  "status": "review-only V5 complementary keel and metal-indexed rear-bezel candidate; not a production print or shared-interface release",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.3",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v03.json",
+  "source_v3_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-aperture-frame-and-keel-candidate-v3.json",
+  "source_v4_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-service-seams-candidate-v4.json",
+  "source_architecture_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-rear-architecture-comparison-v1.json",
+  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-complementary-service-parts-candidate-v5",
+  "minimum_sampled_seated_clearance_mm": 0.6,
+  "keel": {
+    "construction": "two source-aligned exterior facets with clearance and scuppers built into the boundary before solidification",
+    "wall_thickness_mm": 1.8,
+    "exterior_outset_mm": 3.0,
+    "wire_rib_outward_adjustment_mm": 3.0,
+    "lower_shell_side_clearance_mm": 2.5,
+    "rear_bezel_clearance_mm": 0.9,
+    "front_scupper_centers_x_mm": [
+      -12.0,
+      12.0
+    ],
+    "front_scupper_width_mm": 5.0,
+    "front_scupper_depth_mm": 16.0,
+    "minimum_open_scupper_area_mm2_each": 60.0
+  },
+  "rear_bezel": {
+    "construction": "legacy cassette exterior source facets rebuilt as a new open surface, with the shell seam inset and V0.3 metal aperture expanded before solidification",
+    "wall_thickness_mm": 1.8,
+    "body_seam_inset_mm": 3.0,
+    "metal_aperture_horizontal_clearance_mm": 14.0,
+    "metal_aperture_vertical_clearance_mm": 10.0,
+    "metal_aperture_outward_offset_mm": -8.0,
+    "source_outer_vertex_count": 23,
+    "source_outer_face_count": 23,
+    "body_seam_vertex_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      14,
+      21
+    ],
+    "metal_aperture_vertex_indices": [
+      11,
+      13,
+      15,
+      16,
+      20
+    ],
+    "preserved_lower_relief_vertex_indices": [
+      9,
+      18,
+      19,
+      22
+    ]
+  },
+  "service_sweeps": {
+    "keel_outward_test_offsets_mm": [
+      0.0,
+      5.0,
+      15.0,
+      30.0
+    ],
+    "rear_bezel_outward_test_offsets_mm": [
+      0.0,
+      10.0,
+      25.0,
+      50.0,
+      80.0
+    ]
+  },
+  "acceptance_holds": [
+    "The V5 keel and rear bezel must be newly constructed complementary boundary meshes; subtracting complete legacy shell solids is prohibited.",
+    "All four body shells, the new keel, and the new rear bezel must each remain one closed manifold component.",
+    "The seated keel must clear both lower shells and the rear bezel by at least the configured geometric ownership gap.",
+    "The rear bezel must clear all four body shells plus the frozen V0.3 backplate, rails, shoe envelopes, shoe-tool envelopes, and adapter hardware.",
+    "The keel must remove first from below; only then may the rear bezel remove rearward.",
+    "All eight retained M3 datum/slot fasteners must remain accessible from below and may not carry the primary bike-mount load.",
+    "Both forward drains must be open boundary scuppers with positive analytic opening area; no barely piercing drain Boolean is allowed.",
+    "The two cylindrical wire ribs and 20 mm split rear wire exit remain required.",
+    "This gate does not release the rail sockets, revised front/top portals, ears, eyes, glow-panel mounts, or final shell seams.",
+    "A support/brim-inclusive Prusa MK4 ASA slice remains required before physical coupon or full-shell printing."
+  ]
+}

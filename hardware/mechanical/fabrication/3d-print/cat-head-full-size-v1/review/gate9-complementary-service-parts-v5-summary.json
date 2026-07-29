@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "status": "review_candidate_passed_service_parts_not_production_release",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.3",
+  "architecture": {
+    "full_scale_width_mm": 330.0,
+    "lower_rail_x_mm": [
+      -40.0,
+      40.0
+    ],
+    "minimum_required_sampled_seated_clearance_mm": 0.6,
+    "minimum_measured_sampled_seated_clearance_mm": 0.834
+  },
+  "complementary_parts": {
+    "construction_rule": "new direct boundary meshes; no complete legacy shell-solid subtraction",
+    "wall_thickness_mm": 1.8,
+    "bottom_keel": {
+      "exterior_outset_mm": 3.0,
+      "lower_shell_side_clearance_mm": 2.5,
+      "rear_bezel_clearance_mm": 0.9,
+      "scupper_count": 2,
+      "scupper_width_mm": 5.0,
+      "scupper_depth_mm": 16.0,
+      "analytic_open_area_mm2_each": 80.0
+    },
+    "rear_bezel": {
+      "body_seam_inset_mm": 3.0,
+      "metal_aperture_horizontal_clearance_mm": 14.0,
+      "metal_aperture_vertical_clearance_mm": 10.0,
+      "metal_aperture_outward_offset_mm": -8.0
+    }
+  },
+  "service_interface": {
+    "fastener_count": 8,
+    "fastener_nominal": "M3x8 button-head stainless screw into short brass heat-set insert",
+    "insert_pocket_diameter_mm": 4.6,
+    "insert_pocket_depth_mm": 4.2,
+    "continuous_service_spine_count": 4,
+    "wire_rib_count": 2,
+    "wire_rib_diameter_mm": 3.0,
+    "wire_channel_clear_width_mm": 13.0,
+    "rear_wire_exit_width_mm": 20.0,
+    "removal_order": [
+      "bottom keel downward",
+      "rear bezel rearward"
+    ]
+  },
+  "topology": {
+    "left_upper_head": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        127.408,
+        137.661,
+        158.217
+      ],
+      "volume_mm3": 40287.307
+    },
+    "right_upper_head": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        127.203,
+        137.661,
+        158.217
+      ],
+      "volume_mm3": 40297.527
+    },
+    "left_lower_face": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        158.406,
+        200.892,
+        126.395
+      ],
+      "volume_mm3": 54509.272
+    },
+    "right_lower_face": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        132.387,
+        200.893,
+        126.395
+      ],
+      "volume_mm3": 52872.383
+    },
+    "rear_bezel": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        248.382,
+        99.645,
+        218.31
+      ],
+      "volume_mm3": 101972.73
+    },
+    "bottom_keel": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        173.2,
+        148.793,
+        49.575
+      ],
+      "volume_mm3": 32534.273
+    }
+  },
+  "seated_clearances_mm": {
+    "bottom_keel_to_left_lower_face": 0.834,
+    "bottom_keel_to_right_lower_face": 1.0986,
+    "bottom_keel_to_rear_bezel": 1.7119,
+    "rear_bezel_to_left_upper_head": 0.9329,
+    "rear_bezel_to_right_upper_head": 0.9328,
+    "rear_bezel_to_left_lower_face": 1.0271,
+    "rear_bezel_to_right_lower_face": 1.0271
+  },
+  "rear_bezel_to_frozen_metal_clearances_mm": {
+    "backplate": 8.7543,
+    "rail_left": 16.441,
+    "rail_right": 16.441,
+    "shoe_envelope_left": 10.9475,
+    "shoe_envelope_right": 10.9475,
+    "shoe_tool_envelope_left": 14.0202,
+    "shoe_tool_envelope_right": 14.0202,
+    "minimum_adapter_hardware": 21.8917
+  },
+  "digital_validation": {
+    "all_six_modified_printed_parts_one_closed_manifold_component": true,
+    "new_keel_and_rear_bezel_are_direct_boundary_constructions": true,
+    "seated_complementary_printed_parts_clear": true,
+    "minimum_sampled_seated_clearance_meets_requirement": true,
+    "modified_service_parts_clear_frozen_v03_metal_envelopes": true,
+    "ordered_keel_then_rear_bezel_service_sweeps_clear": true,
+    "two_boundary_scuppers_meet_minimum_analytic_open_area": true,
+    "protected_cylindrical_wire_ribs_and_rear_exit_meet_envelope": true,
+    "digital_v5_complementary_candidate_pass": true
+  },
+  "slicer": {
+    "status": "printer_envelope_feasibility_only",
+    "profile": "Generic ASA architecture review for Original Prusa MK4/MK4S with 0.4 mm nozzle",
+    "part_count": 8,
+    "minimum_required_post_brim_xy_margin_mm": 10.0,
+    "minimum_post_brim_xy_margin_mm": 15.011,
+    "total_filament_g": 706.95,
+    "total_support_g": 363.126,
+    "total_support_volume_cm3": 339.361,
+    "total_time_seconds": 236838,
+    "all_parts_pass_margin": true,
+    "parts": {
+      "left_upper_head": {
+        "rotation_xyz_deg": [
+          4,
+          4,
+          10
+        ],
+        "post_brim_xy_margin_mm": 39.718,
+        "filament_g": 133.18,
+        "support_g": 90.527
+      },
+      "right_upper_head": {
+        "rotation_xyz_deg": [
+          126,
+          100,
+          124
+        ],
+        "post_brim_xy_margin_mm": 37.871,
+        "filament_g": 74.74,
+        "support_g": 35.018
+      },
+      "left_lower_face": {
+        "rotation_xyz_deg": [
+          82,
+          166,
+          168
+        ],
+        "post_brim_xy_margin_mm": 31.651,
+        "filament_g": 150.77,
+        "support_g": 101.414
+      },
+      "right_lower_face": {
+        "rotation_xyz_deg": [
+          142,
+          130,
+          138
+        ],
+        "post_brim_xy_margin_mm": 31.91,
+        "filament_g": 131.31,
+        "support_g": 81.306
+      },
+      "left_ear": {
+        "rotation_xyz_deg": [
+          138,
+          110,
+          88
+        ],
+        "post_brim_xy_margin_mm": 60.993,
+        "filament_g": 19.03,
+        "support_g": 1.895
+      },
+      "right_ear": {
+        "rotation_xyz_deg": [
+          138,
+          70,
+          88
+        ],
+        "post_brim_xy_margin_mm": 58.182,
+        "filament_g": 22.93,
+        "support_g": 5.522
+      },
+      "rear_bezel": {
+        "rotation_xyz_deg": [
+          64,
+          122,
+          82
+        ],
+        "post_brim_xy_margin_mm": 15.011,
+        "filament_g": 136.82,
+        "support_g": 39.803
+      },
+      "bottom_keel": {
+        "rotation_xyz_deg": [
+          8,
+          56,
+          92
+        ],
+        "post_brim_xy_margin_mm": 43.214,
+        "filament_g": 38.17,
+        "support_g": 7.641
+      }
+    }
+  },
+  "resolved_from_v4": [
+    "The keel is complementary to both lower shells instead of intersecting them.",
+    "The rear service part is an open metal-indexed bezel that clears the frozen V0.3 backplate, rails, shoe envelopes, tool envelopes, and adapter hardware.",
+    "The drains are analytically open edge scuppers rather than barely piercing bores.",
+    "The ordered keel-first and rear-bezel-second service sweeps are clear."
+  ],
+  "production_blockers": [
+    "Integrate the real 20.5 mm rail sockets and revise the front/top portals to the frozen aluminum angles.",
+    "Integrate and validate the accepted two-bolt ear interface.",
+    "Replace the disconnected eye-frame geometry with a connected printable eye module.",
+    "Integrate the wrapped glow-panel mounting interfaces and adhesive land geometry.",
+    "Finish all remaining inter-shell seams, tool access, fastener access, and complete hardware sweeps.",
+    "Print physical seam, socket, eye, and wrapped-panel coupons before authorizing a full ASA print."
+  ]
+}
