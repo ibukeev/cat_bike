@@ -187,9 +187,13 @@ def root_box(
         ).dot(cavity_normal)
         for vertex in root.data.vertices
     ]
+    minimum_distance = min(signed_distances)
+    maximum_distance = max(signed_distances)
     return root, center, {
-        "maximum_cavity_plane_protrusion_mm": round(
-            max(signed_distances), 5
+        "cavity_reach_from_shell_skin_mm": round(maximum_distance, 5),
+        "shell_overlap_depth_mm": round(-minimum_distance, 5),
+        "root_total_span_mm": round(
+            maximum_distance - minimum_distance, 5
         ),
         "root_face_area_mm2": round(
             tangent_width * tangent_height, 3
@@ -218,6 +222,62 @@ def radial_reference(
         material,
         vertices=24,
     )
+
+
+def expanded_cylinder_copy(
+    source: bpy.types.Object,
+    name: str,
+    clearance_mm: float,
+    translation: Vector,
+) -> bpy.types.Object:
+    """Expand a cylindrical hardware envelope radially and axially."""
+    expanded = duplicate_object(source, name)
+    world_matrix = expanded.matrix_world.copy()
+    inverse_world = world_matrix.inverted()
+    world_vertices = [
+        world_matrix @ vertex.co for vertex in expanded.data.vertices
+    ]
+    center = sum(world_vertices, Vector()) / len(world_vertices)
+    cap_face = max(
+        expanded.data.polygons,
+        key=lambda polygon: len(polygon.vertices),
+    )
+    axis = (world_matrix.to_3x3() @ cap_face.normal).normalized()
+    for vertex, world in zip(expanded.data.vertices, world_vertices):
+        delta = world - center
+        axial = delta.dot(axis)
+        radial = delta - axis * axial
+        if abs(axial) > 1e-6:
+            axial += clearance_mm if axial > 0.0 else -clearance_mm
+        if radial.length > 1e-6:
+            radial *= (radial.length + clearance_mm) / radial.length
+        vertex.co = inverse_world @ (center + axis * axial + radial)
+    expanded.location += translation
+    expanded.data.update()
+    return expanded
+
+
+def crossbolt_service_tunnel(
+    name: str,
+    hardware: bpy.types.Object,
+    common_withdrawal: Vector,
+    travel_mm: float,
+    clearance_mm: float,
+    material: bpy.types.Material,
+) -> bpy.types.Object:
+    start = expanded_cylinder_copy(
+        hardware,
+        f"{name}_start",
+        clearance_mm,
+        Vector(),
+    )
+    end = expanded_cylinder_copy(
+        hardware,
+        f"{name}_end",
+        clearance_mm,
+        common_withdrawal * travel_mm,
+    )
+    return gate5.convex_hull_objects(name, [start, end], material)
 
 
 def collision_summary(
@@ -349,6 +409,7 @@ def attachment_specs(
 
 def add_structural_attachments(
     printed_parts: dict[str, bpy.types.Object],
+    metal_objects: dict[str, bpy.types.Object],
     interface: dict[str, Any],
     config: dict[str, Any],
     materials: dict[str, bpy.types.Material],
@@ -367,6 +428,7 @@ def add_structural_attachments(
     )
     pad_depth = float(values["pad_depth_mm"])
     pad_center_t = outer_face_t - pad_depth / 2.0
+    pad_inner_t = outer_face_t - pad_depth
     specs = attachment_specs(interface, config)
 
     originals = {
@@ -463,6 +525,33 @@ def add_structural_attachments(
             "tool_envelope_edge_mm": round(
                 min(width, height) / 2.0
                 - float(values["tool_approach_diameter_mm"]) / 2.0,
+                3,
+            ),
+            "captive_nut_pocket_min_wall_mm": round(
+                min(width, height) / 2.0
+                - float(
+                    values[
+                        "captive_nyloc_pocket_across_corners_mm"
+                    ]
+                )
+                / 2.0,
+                3,
+            ),
+            "captive_nut_flat_clearance_each_side_mm": round(
+                (
+                    float(
+                        values[
+                            "captive_nyloc_pocket_across_flats_mm"
+                        ]
+                    )
+                    - float(values["nyloc_envelope_across_flats_mm"])
+                )
+                / 2.0,
+                3,
+            ),
+            "solid_pad_depth_beyond_nut_pocket_mm": round(
+                pad_depth
+                - float(values["captive_nyloc_pocket_depth_mm"]),
                 3,
             ),
         }
@@ -620,6 +709,21 @@ def add_structural_attachments(
 
     feature_references: dict[str, bpy.types.Object] = {}
     pre_union_overlap: dict[str, int] = {}
+    service_tunnel_records: dict[str, Any] = {}
+    axes = interface["rail_system"]["accepted_axes_head"]
+    common_withdrawal = (
+        -Vector(axes["left"]).normalized()
+        - Vector(axes["right"]).normalized()
+    ).normalized()
+    travel_mm = max(
+        float(value)
+        for value in config["serviceable_socket"][
+            "rigid_common_withdrawal_offsets_mm"
+        ]
+    )
+    tunnel_clearance = float(
+        values["crossbolt_service_tunnel_clearance_mm"]
+    )
     for owner, features in owner_features.items():
         feature = voxel_fused_feature(
             f"gate9_v7__{owner}_rear_structure",
@@ -627,6 +731,57 @@ def add_structural_attachments(
             materials["structure"],
             float(values["truss_voxel_fuse_resolution_mm"]),
         )
+        if owner.endswith("_upper_head"):
+            side = owner.split("_", 1)[0]
+            before_volume = gate5.mesh_volume(feature)
+            removed_by_hardware = {}
+            for role in ("crossbolt", "crossbolt_head", "crossbolt_nut"):
+                for index in (0, 1):
+                    hardware_name = (
+                        f"metal_v05__{role}_{side}_{index:02d}"
+                    )
+                    tunnel = crossbolt_service_tunnel(
+                        f"gate9_v7__{side}_{role}_{index:02d}_service_tunnel",
+                        metal_objects[hardware_name],
+                        common_withdrawal,
+                        travel_mm,
+                        tunnel_clearance,
+                        materials["cutter"],
+                    )
+                    overlap = comparison.collision_record(tunnel, feature)
+                    preexisting_shell_overlap = comparison.collision_record(
+                        tunnel, originals[owner]
+                    )
+                    gate5.apply_boolean(
+                        feature,
+                        tunnel,
+                        "DIFFERENCE",
+                        solver="MANIFOLD",
+                    )
+                    require_single_manifold(
+                        feature,
+                        f"{owner} {hardware_name} service relief",
+                    )
+                    removed_by_hardware[hardware_name] = {
+                        "intersected_new_structure": overlap["intersects"],
+                        "triangle_overlap_pair_count": overlap[
+                            "triangle_overlap_pair_count"
+                        ],
+                        "intersects_preexisting_v6_shell": (
+                            preexisting_shell_overlap["intersects"]
+                        ),
+                    }
+            after_volume = gate5.mesh_volume(feature)
+            service_tunnel_records[side] = {
+                "travel_mm": travel_mm,
+                "radial_and_axial_clearance_mm": tunnel_clearance,
+                "new_structure_volume_before_mm3": round(before_volume, 3),
+                "new_structure_volume_after_mm3": round(after_volume, 3),
+                "new_structure_volume_removed_mm3": round(
+                    before_volume - after_volume, 3
+                ),
+                "hardware_sweeps": removed_by_hardware,
+            }
         reference = duplicate_object(
             feature,
             f"gate9_v7__{owner}_rear_structure_reference",
@@ -665,7 +820,6 @@ def add_structural_attachments(
             * (
                 plate_thickness
                 + pad_depth
-                + float(values["nyloc_envelope_thickness_mm"])
                 + 2.0
             ),
             float(values["m5_clearance_diameter_mm"]),
@@ -675,23 +829,63 @@ def add_structural_attachments(
             owner, bore, "DIFFERENCE", solver="MANIFOLD"
         )
         require_single_manifold(owner, f"{spec['key']} M5 bore")
+        captive_depth = float(values["captive_nyloc_pocket_depth_mm"])
+        pocket_entry = plane_point(
+            center,
+            normal,
+            across,
+            vertical,
+            local_x,
+            local_v,
+            pad_inner_t
+            - float(values["captive_nyloc_pocket_entry_overlap_mm"]),
+        )
+        pocket_end = plane_point(
+            center,
+            normal,
+            across,
+            vertical,
+            local_x,
+            local_v,
+            pad_inner_t + captive_depth,
+        )
+        captive_pocket = gate5.cylinder(
+            f"gate9_v7__m5_captive_nyloc_pocket_{spec['key'].replace(',', '_')}",
+            pocket_entry,
+            pocket_end,
+            float(
+                values["captive_nyloc_pocket_across_corners_mm"]
+            ),
+            materials["cutter"],
+            vertices=6,
+        )
+        gate5.apply_boolean(
+            owner,
+            captive_pocket,
+            "DIFFERENCE",
+            solver="MANIFOLD",
+        )
+        require_single_manifold(
+            owner, f"{spec['key']} captive M5 nyloc pocket"
+        )
 
         head_stack = (
             float(values["bolt_head_envelope_thickness_mm"])
             + float(values["washer_thickness_mm"])
         )
-        nut_stack = (
-            float(values["nyloc_envelope_thickness_mm"])
-            + float(values["washer_thickness_mm"])
-        )
-        pad_inner_t = outer_face_t - pad_depth
+        nut_stack = float(values["captive_nyloc_thickness_mm"])
         hardware[spec["key"]] = {
             "bolt_body": radial_reference(
                 f"gate9_v7__m5_bolt_{spec['key'].replace(',', '_')}",
-                hole_center - normal * (pad_depth / 2.0),
+                hole_center
+                + normal
+                * (
+                    plate_thickness / 2.0
+                    - float(values["bolt_thread_length_mm"]) / 2.0
+                ),
                 normal,
                 float(values["m5_clearance_diameter_mm"]) - 0.3,
-                plate_thickness + pad_depth + nut_stack + 2.0,
+                float(values["bolt_thread_length_mm"]),
                 materials["hardware"],
             ),
             "head_washer": radial_reference(
@@ -703,7 +897,7 @@ def add_structural_attachments(
                 head_stack,
                 materials["hardware"],
             ),
-            "nut_washer": radial_reference(
+            "captive_nut": gate5.cylinder(
                 f"gate9_v7__m5_nut_{spec['key'].replace(',', '_')}",
                 plane_point(
                     center,
@@ -712,12 +906,20 @@ def add_structural_attachments(
                     vertical,
                     local_x,
                     local_v,
-                    pad_inner_t - nut_stack / 2.0,
+                    pad_inner_t,
                 ),
-                normal,
-                float(values["nyloc_envelope_diameter_mm"]),
-                nut_stack,
+                plane_point(
+                    center,
+                    normal,
+                    across,
+                    vertical,
+                    local_x,
+                    local_v,
+                    pad_inner_t + nut_stack,
+                ),
+                float(values["nyloc_envelope_across_corners_mm"]),
                 materials["hardware"],
+                vertices=6,
             ),
             "rear_tool": radial_reference(
                 f"gate9_v7__m5_rear_tool_{spec['key'].replace(',', '_')}",
@@ -733,8 +935,8 @@ def add_structural_attachments(
                 float(values["tool_approach_length_mm"]),
                 materials["tool"],
             ),
-            "nut_tool": radial_reference(
-                f"gate9_v7__m5_nut_tool_{spec['key'].replace(',', '_')}",
+            "captive_nut_install_tool": radial_reference(
+                f"gate9_v7__m5_captive_nut_install_tool_{spec['key'].replace(',', '_')}",
                 plane_point(
                     center,
                     normal,
@@ -743,7 +945,6 @@ def add_structural_attachments(
                     local_x,
                     local_v,
                     pad_inner_t
-                    - nut_stack
                     - float(values["tool_approach_length_mm"]) / 2.0,
                 ),
                 normal,
@@ -771,6 +972,7 @@ def add_structural_attachments(
         {
             "bosses": boss_records,
             "roots": root_records,
+            "crossbolt_service_tunnels": service_tunnel_records,
             "pre_union_shell_overlap_pairs": pre_union_overlap,
             "opposing_boss_collisions": pair_records,
         },
@@ -879,6 +1081,42 @@ def cut_serviceable_socket_and_add_cap(
     cap = joined_feature(
         f"gate9_v7__{side}_socket_cap",
         [tongue, cover],
+    )
+
+    receiver_clearance = float(
+        socket_values["cap_receiver_clearance_mm"]
+    )
+    receiver_inner = tongue_inner - receiver_clearance
+    receiver_outer = (
+        outer_width / 2.0
+        + cover_thickness
+        + receiver_clearance
+    )
+    receiver_relief = gate5.box(
+        f"gate9_v7__{side}_socket_cap_receiver_relief",
+        socket_center
+        + across
+        * outer_sign
+        * ((receiver_inner + receiver_outer) / 2.0),
+        (across, outward, axis),
+        (
+            receiver_outer - receiver_inner,
+            outer_width + 2.0 * receiver_clearance,
+            depth - end_clearance + 2.0 * receiver_clearance,
+        ),
+        materials["cutter"],
+    )
+    receiver_relief_to_original = comparison.collision_record(
+        receiver_relief, original_shell
+    )
+    gate5.apply_boolean(
+        shell,
+        receiver_relief,
+        "DIFFERENCE",
+        solver="MANIFOLD",
+    )
+    require_single_manifold(
+        shell, f"{side} cap receiver clearance relief"
     )
 
     bolt_center = open_center + axis * float(
@@ -1032,6 +1270,10 @@ def cut_serviceable_socket_and_add_cap(
         ],
         "wall_cutter_intersects_original_shell_skin": (
             cutter_to_original["intersects"]
+        ),
+        "receiver_clearance_mm": receiver_clearance,
+        "receiver_relief_intersects_original_shell_skin": (
+            receiver_relief_to_original["intersects"]
         ),
         "insert_pockets": insert_pocket_records,
     }
@@ -1271,6 +1513,7 @@ def main() -> None:
     structure_report, structure_references, m5_hardware = (
         add_structural_attachments(
             printed_parts,
+            metal_objects,
             interface,
             config,
             materials,
@@ -1331,27 +1574,39 @@ def main() -> None:
         if name != "metal_v05__backplate"
     }
     for key, hardware in m5_hardware.items():
+        other_printed = {
+            name: obj
+            for name, obj in printed_parts.items()
+            if name != structure_report["bosses"][key]["owner"]
+        }
         m5_clearance_report[key] = {
+            "bolt_body_to_nonplate_metal": collision_summary(
+                hardware["bolt_body"], metal_without_plate
+            ),
+            "bolt_body_to_other_printed_parts": collision_summary(
+                hardware["bolt_body"], other_printed
+            ),
             "head_and_washer_to_nonplate_metal": collision_summary(
                 hardware["head_washer"], metal_without_plate
             ),
-            "nut_and_washer_to_all_metal": collision_summary(
-                hardware["nut_washer"], metal_objects
+            "captive_nut_to_all_metal": collision_summary(
+                hardware["captive_nut"], metal_objects
+            ),
+            "captive_nut_to_other_printed_parts": collision_summary(
+                hardware["captive_nut"], other_printed
             ),
             "rear_tool_to_nonplate_metal": collision_summary(
                 hardware["rear_tool"], metal_without_plate
             ),
-            "nut_tool_to_all_metal": collision_summary(
-                hardware["nut_tool"], metal_objects
+            "premetal_nut_install_tool_to_other_printed_parts": (
+                collision_summary(
+                    hardware["captive_nut_install_tool"],
+                    other_printed,
+                )
             ),
-            "tool_to_other_printed_parts": collision_summary(
-                hardware["nut_tool"],
-                {
-                    name: obj
-                    for name, obj in printed_parts.items()
-                    if name
-                    != structure_report["bosses"][key]["owner"]
-                },
+            "assembly_sequence": (
+                "press captive nyloc before M2 insertion; insert complete "
+                "preassembled M2 module; install rear M5 bolt and washer"
             ),
         }
     stage("six M5 hardware/tool clearance audits complete", started_at)
@@ -1396,10 +1651,25 @@ def main() -> None:
             "pre_union_shell_overlap_pairs"
         ].values()
     )
+    expected_root_overlap = float(
+        config["rear_structure"]["root_overlap_into_shell_mm"]
+    )
+    expected_cavity_reach = (
+        float(config["rear_structure"]["root_penetration_mm"])
+        - expected_root_overlap
+    )
     root_pass = all(
         value["root_face_area_mm2"]
         >= float(config["validation"]["minimum_root_area_mm2"])
-        and value["maximum_cavity_plane_protrusion_mm"] <= 1e-4
+        and abs(
+            value["shell_overlap_depth_mm"] - expected_root_overlap
+        )
+        <= 1e-4
+        and abs(
+            value["cavity_reach_from_shell_skin_mm"]
+            - expected_cavity_reach
+        )
+        <= 1e-4
         for value in structure_report["roots"].values()
     )
     pad_bearing_pass = all(
@@ -1410,6 +1680,9 @@ def main() -> None:
             ]
         )
         and value["tool_envelope_edge_mm"] >= 0.0
+        and value["captive_nut_pocket_min_wall_mm"] >= 2.0
+        and value["captive_nut_flat_clearance_each_side_mm"] >= 0.09
+        and value["solid_pad_depth_beyond_nut_pocket_mm"] >= 6.0
         for value in structure_report["bosses"].values()
     )
     opposing_clear = all(
@@ -1422,14 +1695,21 @@ def main() -> None:
         all(
             value[name]["clear"]
             for name in (
+                "bolt_body_to_nonplate_metal",
+                "bolt_body_to_other_printed_parts",
                 "head_and_washer_to_nonplate_metal",
-                "nut_and_washer_to_all_metal",
+                "captive_nut_to_all_metal",
+                "captive_nut_to_other_printed_parts",
                 "rear_tool_to_nonplate_metal",
-                "nut_tool_to_all_metal",
-                "tool_to_other_printed_parts",
+                "premetal_nut_install_tool_to_other_printed_parts",
             )
         )
         for value in m5_clearance_report.values()
+    )
+    service_tunnels_preserve_v6_shell = all(
+        not sweep["intersects_preexisting_v6_shell"]
+        for side in structure_report["crossbolt_service_tunnels"].values()
+        for sweep in side["hardware_sweeps"].values()
     )
     seated_metal_clear = all(
         value["clear"] for value in seated_metal_collisions.values()
@@ -1441,6 +1721,9 @@ def main() -> None:
     )
     socket_skin_preserved = all(
         not report["wall_cutter_intersects_original_shell_skin"]
+        and not report[
+            "receiver_relief_intersects_original_shell_skin"
+        ]
         and all(
             not pocket["pocket_intersects_original_shell_skin"]
             for pocket in report["insert_pockets"]
@@ -1474,7 +1757,7 @@ def main() -> None:
         "all_six_pad_bosses_meet_washer_bearing_and_contain_14mm_tool": (
             pad_bearing_pass
         ),
-        "all_four_structural_roots_are_broad_and_cavity_recessed": (
+        "all_four_structural_roots_are_broad_with_controlled_shell_overlap": (
             root_pass
         ),
         "all_four_rear_structures_true_overlap_their_owner_shells": (
@@ -1483,8 +1766,11 @@ def main() -> None:
         "opposing_left_right_pad_bosses_are_disjoint": (
             opposing_clear
         ),
-        "all_six_m5_hardware_and_tool_envelopes_clear": (
+        "all_six_m5_fastened_envelopes_and_staged_tools_clear": (
             m5_access_clear
+        ),
+        "crossbolt_service_tunnels_preserve_preexisting_v6_shell": (
+            service_tunnels_preserve_v6_shell
         ),
         "seated_complete_m2_metal_clears_fixed_printed_shells": (
             seated_metal_clear
@@ -1507,6 +1793,10 @@ def main() -> None:
     validation["digital_v7_m2_rear_interface_candidate_pass"] = all(
         validation.values()
     )
+
+    for obj in (*printed_parts.values(), *caps.values()):
+        obj.hide_viewport = False
+        obj.hide_render = False
 
     shells_dir = output_dir / "shells"
     for name, obj in printed_parts.items():

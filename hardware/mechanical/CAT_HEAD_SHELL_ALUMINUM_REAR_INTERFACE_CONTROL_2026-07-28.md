@@ -1,7 +1,9 @@
 # Cat Head Shell / Aluminum Rear Interface Control
 
 **Date:** 2026-07-28
-**Status:** V0.5-M2 coordinated bottom-center interface generated and accepted for continued shell integration; full V7 shell, receipt, coupon, fabrication, ASA-print, and riding release gates remain held
+**Status:** V0.5-M2 rear-interface digital correction passed; receipt, coupon,
+complete-head correction, fabrication, final ASA-print, and riding release
+gates remain held
 **Integration authority:** User
 
 ## 1. Purpose
@@ -165,6 +167,28 @@ The V0.5 aluminum generator passes every check. Recorded margins are 7.0819 mm h
 
 The full V7 shell candidate is not released. Its coordinated rerun still finds non-bottom blockers: middle-M5 nut-tool interference with lower crossbolts, preassembled lower-crossbolt sweep into the upper shells, socket-cap overlap with the receiver shells, and a root-recess validator sign/definition defect. These are recorded in `hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-v7-v05-coordinated-interface-validation.json`.
 
+### 5B. V0.5 shell-consumer correction
+
+The Gate 9 V7 shell consumer has now closed all four non-bottom failures from
+the historical coordinated rerun without changing aluminum-owned CAD or any
+locked V0.5 datum. The correction uses pre-installed shell-side captive M5
+nylocs, exact 31 mm lower-crossbolt service tunnels cut only through new
+internal truss material, 0.3 mm-relieved removable socket-cap receivers, and a
+root validator that separately measures controlled shell overlap and cavity
+reach.
+
+All 15 rear-interface geometry checks pass. The complete M2 module clears 14
+sampled socket-withdrawal positions and four rear-clearance positions, and
+insertion is the exact reverse. All eight modified printed parts also have real
+Prusa MK4 Generic ASA support/brim slices with at least 10 mm XY margin; the
+minimum is 11.935 mm on `left_lower_face`.
+
+This is a digital rear-interface pass, not a complete-head or fabrication
+release. Physical angle/rail receipt, a rear-interface coupon, the remaining
+F-07 through F-29 shell/insert/eye/panel work, lamp and steering clearance, and
+physical safety validation remain held. The authoritative closure record is
+`hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-v7-v05-shell-correction-validation.json`.
+
 ## 6. Rear cassette proposal C-001
 
 **Status:** Proposed for coordinated evaluation; not accepted and not modeled.
@@ -237,6 +261,7 @@ No rear-interface metal or replacement structural shell is released until:
 | C-009 | 2026-07-29 | Adopt the V0.4-M1 six-plus-six plate pattern and CNC-shoe handoff. | Superseded by C-010 before metal fabrication | Shell and aluminum |
 | C-010 | 2026-07-29 | Use the ordered Randall 38.1 x 38.1 x 3.175 mm 6063-T6 angle for hand-fabricated M2 lower connectors; retain the six-plus-six plate centers, frozen axes/targets/sockets, add compound-cut 152.476123 mm rails, solid plugs, taper pads, outer cheeks, and matched M5 x 40 crossbolts. | M2 digital preflight passed; angle ordered but not received; no plate ordered or cut; coupon and shell A-39 pending | Aluminum, then shell integration |
 | C-011 | 2026-07-29 | Move only the bottom shell M5 pair from X `+/-10` to X `+/-7.4` at V `-30` and use `14 x 36 x 12 mm` bottom ASA pads. | Accepted and generated as V0.5-M2; aluminum PASS; bottom pads PASS; full V7 shell candidate held on non-bottom issues; no fabrication or ASA-print release | Shared |
+| C-012 | 2026-07-29 | Resolve the four non-bottom V7 shell-consumer failures with pre-installed captive M5 nylocs, service tunnels through only new truss material, relieved removable socket-cap receivers, and corrected root-overlap semantics. | Digital rear-interface PASS; real Prusa ASA feasibility PASS; physical coupon, complete-head correction, fabrication, and final ASA release held | Printed shell consuming locked V0.5 |
 
 ## 10. Next synchronization action
 
@@ -244,7 +269,12 @@ No backplate is ordered or cut. The rectangular 19 x 19 x 2 mm rail stock is
 purchased. The Randall 6063-T6 equal angle is ordered but not received; its
 actual section remains a receipt gate.
 
-The shell workstream now consumes the V0.5-M2 shared JSON, tracked metal summary, checkpoint, BLEND, and complete angle, cheek, spacer, plug, rail, and hardware envelope. Its next action is to resolve the recorded middle-M5 tool, preassembled-crossbolt service, socket-cap receiver, and root-validator issues without moving any V0.5 plate center or any preserved rail/socket datum, then rerun A-39. The final ASA shell print remains prohibited until that full validation passes.
+The shell workstream now has a digital PASS for the V0.5-M2 rear interface and
+its complete modeled A-39 insertion, seated, fastened, tool, and removal phases.
+Its next action is to preserve that locked interface while correcting the
+remaining complete-head physical-fit findings, then validate an
+angle/rail/rear-interface coupon with the received hardware. The final ASA head
+print remains prohibited until those broader gates pass.
 
 When the angle arrives, the aluminum workstream records the received dimensions
 before cutting even a coupon. Final plate or bracket cutting remains held until

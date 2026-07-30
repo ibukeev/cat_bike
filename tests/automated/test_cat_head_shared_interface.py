@@ -296,6 +296,46 @@ class CatHeadSharedInterfaceTest(unittest.TestCase):
             ]
         )
 
+    def test_gate9_v7_rear_interface_corrections_pass_but_head_stays_held(
+        self,
+    ) -> None:
+        path = (
+            REPO_ROOT
+            / "hardware/mechanical/fabrication/3d-print/"
+            "cat-head-full-size-v1/review/"
+            "gate9-v7-v05-shell-correction-validation.json"
+        )
+        review = json.loads(path.read_text(encoding="utf-8"))
+        self.assertTrue(review["status"].startswith("PASS - V0.5-M2"))
+        self.assertTrue(all(review["geometry_validation"].values()))
+        self.assertTrue(
+            review["a39_digital_phase_validation"][
+                "complete_m2_removal_clear_with_socket_caps_removed"
+            ]
+        )
+        self.assertFalse(
+            review["a39_digital_phase_validation"][
+                "physical_hardware_validation_complete"
+            ]
+        )
+        middle = review["resolved_v7_blockers"]["middle_m5_service"]
+        self.assertEqual(middle["printed_pocket_across_flats_mm"], 8.2)
+        self.assertEqual(middle["flat_clearance_each_side_mm"], 0.1)
+        self.assertGreaterEqual(middle["minimum_pocket_wall_mm"], 2.0)
+        slicer = review["prusa_mk4_generic_asa_validation"]
+        self.assertTrue(slicer["all_parts_pass_xy_margin_and_z_height"])
+        self.assertGreaterEqual(
+            slicer["observed_minimum_xy_margin_mm"],
+            slicer["required_minimum_xy_margin_mm"],
+        )
+        self.assertTrue(
+            review[
+                "rear_interface_digital_corrections_authorized_for_continued_integration"
+            ]
+        )
+        self.assertFalse(review["metal_fabrication_authorized"])
+        self.assertFalse(review["final_asa_print_authorized"])
+
     def test_v04_final_metal_summary_passes_with_recorded_bezel_handoff(self) -> None:
         path = (
             REPO_ROOT
