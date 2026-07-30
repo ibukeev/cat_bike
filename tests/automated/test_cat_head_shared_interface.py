@@ -47,6 +47,11 @@ METAL_V04_PREFLIGHT = load_module(
     REPO_ROOT
     / "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v04_interface.py",
 )
+METAL_V05_PREFLIGHT = load_module(
+    "prepare_frame_fixed_mount_v05_interface",
+    REPO_ROOT
+    / "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v05_interface.py",
+)
 
 
 class CatHeadSharedInterfaceTest(unittest.TestCase):
@@ -174,6 +179,122 @@ class CatHeadSharedInterfaceTest(unittest.TestCase):
         )
         self.assertTrue(all(metal_report["checks"].values()))
         self.assertTrue(metal_report["ready_for_geometry_generation"])
+
+    def test_v05_changes_only_the_coordinated_bottom_shell_centers(self) -> None:
+        v04_path = INTERFACE_DIR / "cat-head-shell-aluminum-interface-v04.json"
+        v05_path = INTERFACE_DIR / "cat-head-shell-aluminum-interface-v05.json"
+        v04 = json.loads(v04_path.read_text(encoding="utf-8"))
+        v05 = json.loads(v05_path.read_text(encoding="utf-8"))
+        report = validate_interface(v05)
+        self.assertTrue(report["status"].startswith("PASS"))
+        self.assertEqual(v05["interface_revision"], "CAT-HEAD-SHELL-ALUMINUM-V0.5")
+        old_centers = v04["aluminum_backplate"][
+            "shell_attachment_hole_pattern"
+        ]["local_x_v_centers_mm"]
+        new_centers = v05["aluminum_backplate"][
+            "shell_attachment_hole_pattern"
+        ]["local_x_v_centers_mm"]
+        self.assertEqual(new_centers[:4], old_centers[:4])
+        self.assertEqual(old_centers[4:], [[-10.0, -30.0], [10.0, -30.0]])
+        self.assertEqual(new_centers[4:], [[-7.4, -30.0], [7.4, -30.0]])
+        for key in (
+            "material",
+            "thickness_mm",
+            "outer_top_width_mm",
+            "outer_bottom_width_mm",
+            "height_mm",
+            "adapter_hole_pattern",
+            "rail_shoe_hole_pattern",
+        ):
+            self.assertEqual(
+                v05["aluminum_backplate"][key],
+                v04["aluminum_backplate"][key],
+            )
+        self.assertEqual(v05["rail_system"], v04["rail_system"])
+        self.assertFalse(v05["coordination_record"]["fabrication_authorized"])
+        _, metal_report = METAL_V05_PREFLIGHT.load_resolved_config()
+        self.assertTrue(all(metal_report["checks"].values()))
+        self.assertEqual(
+            metal_report["interface_revision"],
+            "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+        )
+
+    def test_v05_final_metal_summary_records_coordinated_clearances(self) -> None:
+        path = (
+            REPO_ROOT
+            / "hardware/mechanical/fabrication/metal/"
+            "cat-head-frame-fixed-mount-v0/review/"
+            "frame-fixed-mount-v05-final-summary.json"
+        )
+        summary = json.loads(path.read_text(encoding="utf-8"))
+        self.assertTrue(summary["status"].startswith("PASS"))
+        self.assertTrue(all(summary["checks"].values()))
+        derived = summary["derived"]
+        self.assertEqual(
+            derived["coordinated_bottom_shell_centers_mm"],
+            [[-7.4, -30.0], [7.4, -30.0]],
+        )
+        self.assertAlmostEqual(
+            derived["minimum_bottom_shell_washer_edge_margin_mm"], 4.8319
+        )
+        self.assertAlmostEqual(
+            derived["minimum_bottom_shell_tool_edge_margin_mm"], 2.8319
+        )
+        self.assertAlmostEqual(
+            derived["opposing_bottom_shell_tool_gap_mm"], 0.8
+        )
+        self.assertAlmostEqual(
+            derived["minimum_bottom_tool_to_adapter_hole_clearance_mm"],
+            7.3963,
+        )
+
+    def test_gate9_v7_consumes_v05_and_keeps_full_release_held(self) -> None:
+        config_path = (
+            REPO_ROOT
+            / "hardware/mechanical/fabrication/3d-print/"
+            "cat-head-full-size-v1/config/"
+            "gate9-m2-rear-interface-candidate-v7.json"
+        )
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            config["required_interface_revision"],
+            "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+        )
+        structure = config["rear_structure"]
+        self.assertEqual(
+            (
+                structure["bottom_pad_width_mm"],
+                structure["bottom_pad_height_mm"],
+                structure["pad_depth_mm"],
+            ),
+            (14.0, 36.0, 12.0),
+        )
+        self.assertEqual(structure["lower_truss_source_x_abs_mm"], 7.4)
+        self.assertEqual(
+            structure["owner_by_local_x_v"]["-7.4,-30"],
+            "left_lower_face",
+        )
+        review_path = (
+            REPO_ROOT
+            / "hardware/mechanical/fabrication/3d-print/"
+            "cat-head-full-size-v1/review/"
+            "gate9-v7-v05-coordinated-interface-validation.json"
+        )
+        review = json.loads(review_path.read_text(encoding="utf-8"))
+        self.assertTrue(review["status"].startswith("PASS - V0.5"))
+        self.assertFalse(review["fabrication_authorized"])
+        self.assertFalse(review["final_asa_print_authorized"])
+        self.assertTrue(
+            review["bottom_pad_shell_validation"]["washer_and_tool_check"]
+        )
+        self.assertTrue(
+            review["bottom_pad_shell_validation"]["seated_complete_m2_clear"]
+        )
+        self.assertFalse(
+            review["full_v7_validation"][
+                "digital_v7_m2_rear_interface_candidate_pass"
+            ]
+        )
 
     def test_v04_final_metal_summary_passes_with_recorded_bezel_handoff(self) -> None:
         path = (

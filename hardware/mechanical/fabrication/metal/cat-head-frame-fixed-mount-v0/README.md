@@ -1,13 +1,14 @@
-# Cat head frame-fixed aluminum mount V0.4
+# Cat head frame-fixed aluminum mount V0.5
 
-Status: **V0.4-M2 ordered-angle aluminum handoff generated; not released for metal fabrication or riding**.
+Status: **V0.5-M2 coordinated bottom-center aluminum handoff generated; not released for metal fabrication, final ASA printing, or riding**.
 
-## Current V0.4-M2 handoff
+## Current V0.5-M2 handoff
 
-The accepted V0.4 rail axes, X `+/-40` lower targets, socket roll, 21 mm
+V0.5 retains the accepted rail axes, X `+/-40` lower targets, socket roll, 21 mm
 straight socket opening, 1 mm lead-in, 30 mm insertion depth, M4 upper
-retention, plate outline, and six-plus-six M5 plate-hole centers are unchanged.
-V0.4-M2 supersedes the CNC-only M1 lower shoes with parts that can be hand-cut
+retention, plate outline, adapter holes, and six angle-base M5 centers. Only
+the two bottom shell M5 centers move from X `+/-10` to X `+/-7.4` at V `-30`;
+the top and middle shell centers remain unchanged. V0.5-M2 retains the hand-fabricated architecture that superseded the CNC-only M1 shoes, using parts that can be hand-cut
 from the user's ordered Randall Manufacturing 6063-T6 equal angle:
 
 - Ordered stock is nominally `38.1 x 38.1 x 3.175 mm`, 914.4 mm long. It is
@@ -33,22 +34,21 @@ from the user's ordered Randall Manufacturing 6063-T6 equal angle:
   rail crossbolt axis.
 - There is no backplate rail cutout or exterior shell pass-through. Service is
   through the open rear aperture.
+- The shell consumer uses `14 x 36 x 12 mm` bottom ASA pads. Metal margins are
+  7.0819 mm hole-to-edge, 4.8319 mm washer-to-edge, 2.8319 mm tool-to-edge,
+  0.8 mm opposing-tool gap, and 7.3963 mm tool-to-adapter-hole clearance.
 
-All digital M2 geometry, compound-cut, hole-ligament, sequential tool-access,
-stock, socket, and current V6.1 collision-matrix checks pass. The current V6.1
-shell has no recorded intersection with the nine checked M2 metal parts, but
-any shell/rear-cassette revision must consume this exact envelope and rerun
-A-39. This is not permission to cut the plate or final brackets.
+All V0.5 metal geometry, compound-cut, plate-edge, hole-ligament, sequential tool-access, stock, socket, and current V6.1 collision-matrix checks pass. The coordinated bottom pads pass, but the full V7 shell candidate remains held on the tracked non-bottom tool/service/cap/validator issues. This is not permission to cut the plate or final brackets.
 
 Current sources and tracked summary:
 
-- `config/frame-fixed-mount-v04-final.json`
-- `source/generate_frame_fixed_mount_v04.py`
-- `review/frame-fixed-mount-v04-final-summary.json`
-- `hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v04.json`
-- `V04_M2_ORDERED_ANGLE_CHECKPOINT_2026-07-29.md`
+- `config/frame-fixed-mount-v05-final.json`
+- `source/generate_frame_fixed_mount_v05.py`
+- `review/frame-fixed-mount-v05-final-summary.json`
+- `hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json`
+- `V05_M2_COORDINATED_BOTTOM_M5_CHECKPOINT_2026-07-29.md`
 
-Generated review outputs live under `output/v04-m2-angle-stock/` and include
+Generated review outputs live under `output/v05-m2-coordinated-centers/` and include
 the backplate DXF/SVG, rail cut/drill drawing, four-face compound wrap
 template, angle/cheek plan, BLEND, five renders, and validation JSON. They are
 reproducible local review artifacts and remain ignored by Git.
@@ -56,10 +56,10 @@ reproducible local review artifacts and remain ignored by Git.
 Run from the repository root:
 
 ```bash
-python3 hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v04_interface.py
+python3 hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/prepare_frame_fixed_mount_v05_interface.py
 
 blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-socket-portals-candidate-v6/gate9-socket-portals-candidate-v6.blend \
-  --python hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/generate_frame_fixed_mount_v04.py
+  --python hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/source/generate_frame_fixed_mount_v05.py
 
 python3 -m unittest \
   tests.automated.test_cat_head_shared_interface \
@@ -69,7 +69,7 @@ python3 -m unittest \
 ## V0.2 architecture history
 
 
-The remainder of this document preserves the V0.2 concept history. Statements that its lower shoes, rail lengths, or backplate holes are deferred are superseded by the V0.4-M2 handoff above; the physical fabrication and riding gates are not superseded.
+The remainder of this document preserves the V0.2 concept history. Statements that its lower shoes, rail lengths, or backplate holes are deferred are superseded by the V0.5-M2 handoff above; the physical fabrication and riding gates are not superseded.
 
 This is the no-weld connector between the four RadRunner 2 head-tube bosses
 and the 330 mm Gate8 cat head. The head stays fixed to the bicycle frame while

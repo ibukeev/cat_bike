@@ -5,6 +5,17 @@
 This is a resumable shell-workstream checkpoint, not a production-print or
 metal-fabrication release.
 
+### V0.5 post-coordination result
+
+The aluminum workstream accepted the proposed bottom pair and issued
+`CAT-HEAD-SHELL-ALUMINUM-V0.5` / `V0.5-M2`. The V7 config and generator now
+consume X `+/-7.4`, V `-30` with `14 x 36 x 12 mm` bottom pads. Aluminum and
+bottom-pad checks pass, but the full V7 candidate remains held on the four
+non-bottom issues recorded in
+`review/gate9-v7-v05-coordinated-interface-validation.json`. No fabrication or
+final ASA print is authorized. The proposal discussion below is retained as
+history and evidence for the accepted delta.
+
 The shell workstream consumed the complete read-only
 `CAT-HEAD-SHELL-ALUMINUM-V0.4-M2` review assembly. No aluminum-owned CAD and no
 shared-interface file was changed.
@@ -157,19 +168,14 @@ blender --background \
   --config hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-m2-rear-interface-candidate-v7.json
 ```
 
-The generator exits nonzero while the shared bottom centers remain unresolved.
+The generator currently exits nonzero because the full V7 shell candidate remains held on middle-M5 tool access, preassembled lower-crossbolt service sweep, cap-to-receiver overlap, and the root-recess validator definition. The V0.5 bottom centers themselves pass.
 
-## Required next coordination step
+## Required next shell step
 
-The aluminum workstream must review the proposed X `+/-7.4`, V `-30` bottom
-centers and rerun its own plate-edge, adapter-hole, angle-base, fastener,
+The aluminum workstream accepted X `+/-7.4`, V `-30` and reran plate-edge, adapter-hole, angle-base, fastener,
 washer, nut, tool-access, insertion, seated, fastened, and removal checks.
 
-If accepted, both workstreams must issue one new shared-interface revision.
-Only after that revision exists should the shell generator consume the new
-centers, add the final captive/locking-hardware detail, rerun complete A-39,
-perform the Prusa MK4 ASA slicing/bed-margin audit, and produce final physical
-review STLs.
+The V0.5 shared revision now exists and the shell generator consumes its centers. The next shell pass must resolve the four recorded non-bottom blockers without changing V0.5 centers or preserved rail/socket datums, rerun complete A-39, and only then perform the Prusa MK4 ASA slicing/bed-margin audit and produce final physical-review STLs.
 
 ## Next physical-review steps after digital release
 

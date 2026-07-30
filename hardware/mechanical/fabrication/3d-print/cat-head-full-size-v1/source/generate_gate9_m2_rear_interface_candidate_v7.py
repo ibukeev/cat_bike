@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Gate 9 V7 shell integration for the aluminum V0.4-M2 handoff."""
+"""Generate Gate 9 V7 shell integration for the aluminum V0.5-M2 handoff."""
 
 from __future__ import annotations
 
@@ -274,7 +274,7 @@ def append_m2_objects(
         data_to.objects = [
             name
             for name in data_from.objects
-            if name.startswith("metal_v04__")
+            if name.startswith("metal_v05__")
         ]
     objects = {}
     for obj in data_to.objects:
@@ -283,7 +283,7 @@ def append_m2_objects(
         if obj.name not in bpy.context.scene.collection.objects:
             bpy.context.collection.objects.link(obj)
         objects[obj.name] = obj
-    if "metal_v04__backplate" not in objects:
+    if "metal_v05__backplate" not in objects:
         raise ValueError("M2 review blend did not provide the backplate")
     return objects
 
@@ -335,7 +335,7 @@ def attachment_specs(
     ]["local_x_v_centers_mm"]
     specs = []
     for local_x, local_v in centers:
-        key = f"{int(local_x)},{int(local_v)}"
+        key = f"{float(local_x):g},{float(local_v):g}"
         specs.append(
             {
                 "key": key,
@@ -389,9 +389,28 @@ def add_structural_attachments(
     for spec in specs:
         local_x = spec["local_x_mm"]
         local_v = spec["local_v_mm"]
-        if abs(local_v) == 30.0:
-            width = float(values["top_and_bottom_pad_width_mm"])
-            height = float(values["top_and_bottom_pad_height_mm"])
+        if local_v == 30.0:
+            width = float(values["top_pad_width_mm"])
+            height = float(values["top_pad_height_mm"])
+            geometry = "rectangular_pad"
+            boss = gate5.box(
+                f"gate9_v7__m5_boss_{spec['key'].replace(',', '_')}",
+                plane_point(
+                    center,
+                    normal,
+                    across,
+                    vertical,
+                    local_x,
+                    local_v,
+                    pad_center_t,
+                ),
+                (across, vertical, normal),
+                (width, height, pad_depth),
+                materials["structure"],
+            )
+        elif local_v == -30.0:
+            width = float(values["bottom_pad_width_mm"])
+            height = float(values["bottom_pad_height_mm"])
             geometry = "rectangular_pad"
             boss = gate5.box(
                 f"gate9_v7__m5_boss_{spec['key'].replace(',', '_')}",
@@ -436,7 +455,12 @@ def add_structural_attachments(
             **spec,
             "geometry": geometry,
             "dimensions_mm": [width, height, pad_depth],
-            "bearing_edge_from_14mm_tool_envelope_mm": round(
+            "washer_bearing_edge_mm": round(
+                min(width, height) / 2.0
+                - float(values["washer_outer_diameter_mm"]) / 2.0,
+                3,
+            ),
+            "tool_envelope_edge_mm": round(
                 min(width, height) / 2.0
                 - float(values["tool_approach_diameter_mm"]) / 2.0,
                 3,
@@ -733,7 +757,7 @@ def add_structural_attachments(
     for left_key, right_key in (
         ("-10,30", "10,30"),
         ("-20,0", "20,0"),
-        ("-10,-30", "10,-30"),
+        ("-7.4,-30", "7.4,-30"),
     ):
         left = boss_objects[left_key]
         right = boss_objects[right_key]
@@ -1289,7 +1313,7 @@ def main() -> None:
         side: {
             "rail": comparison.collision_record(
                 caps[side],
-                metal_objects[f"metal_v04__rail_{side}"],
+                metal_objects[f"metal_v05__rail_{side}"],
             ),
             "shell": comparison.collision_record(
                 caps[side],
@@ -1304,7 +1328,7 @@ def main() -> None:
     metal_without_plate = {
         name: obj
         for name, obj in metal_objects.items()
-        if name != "metal_v04__backplate"
+        if name != "metal_v05__backplate"
     }
     for key, hardware in m5_hardware.items():
         m5_clearance_report[key] = {
@@ -1379,12 +1403,13 @@ def main() -> None:
         for value in structure_report["roots"].values()
     )
     pad_bearing_pass = all(
-        value["bearing_edge_from_14mm_tool_envelope_mm"]
+        value["washer_bearing_edge_mm"]
         >= float(
             config["validation"][
                 "minimum_shell_attachment_pad_bearing_edge_mm"
             ]
         )
+        and value["tool_envelope_edge_mm"] >= 0.0
         for value in structure_report["bosses"].values()
     )
     opposing_clear = all(
@@ -1435,15 +1460,18 @@ def main() -> None:
         == config["required_metal_handoff_revision"]
         and metal_summary["checks"]["accepted_axes_unchanged"]
         and metal_summary["checks"]["accepted_lower_targets_unchanged"]
+        and metal_summary["checks"][
+            "only_bottom_shell_centers_use_coordinated_v05_positions"
+        ]
         and metal_summary["checks"]["locked_socket_opening_remains_21_mm"]
     )
 
     validation = {
-        "shared_v04_m2_interface_contract_passes": (
+        "shared_v05_m2_interface_contract_passes": (
             interface_report["status"].startswith("PASS")
             and locked_datums_pass
         ),
-        "all_six_pad_bosses_meet_14mm_tool_bearing_edge": (
+        "all_six_pad_bosses_meet_washer_bearing_and_contain_14mm_tool": (
             pad_bearing_pass
         ),
         "all_four_structural_roots_are_broad_and_cavity_recessed": (

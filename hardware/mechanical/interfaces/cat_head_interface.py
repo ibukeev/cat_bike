@@ -15,6 +15,7 @@ DEFAULT_FILENAME = "cat-head-shell-aluminum-interface-v03.json"
 SUPPORTED_REVISIONS = {
     "CAT-HEAD-SHELL-ALUMINUM-V0.3",
     "CAT-HEAD-SHELL-ALUMINUM-V0.4",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5",
 }
 
 
