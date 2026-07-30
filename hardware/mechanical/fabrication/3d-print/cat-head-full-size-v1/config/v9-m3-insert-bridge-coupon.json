@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "compact physical calibration coupon for the V9 M3 heat-set insert pads and removable bridge ends; coupon results select the final pilot diameter",
+  "source_v9_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-body-seam-retention-candidate-v9.json",
+  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/v9-m3-insert-bridge-coupon",
+  "review_summary_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/v9-m3-insert-bridge-coupon-summary.json",
+  "coupon": {
+    "material": "ASA",
+    "base_length_mm": 58.0,
+    "base_width_mm": 20.0,
+    "base_thickness_mm": 1.8,
+    "boss_centers_x_mm": [-18.0, 0.0, 18.0],
+    "boss_center_y_mm": 7.0,
+    "boss_diameter_mm": 12.0,
+    "boss_total_depth_mm": 12.0,
+    "boss_base_overlap_mm": 1.3,
+    "pilot_diameters_left_to_right_mm": [4.0, 4.1, 4.2],
+    "pilot_depth_mm": 5.8,
+    "nominal_insert_outer_diameter_mm": 4.6,
+    "nominal_insert_length_mm": 5.7,
+    "bridge_center_y_mm": -11.0,
+    "bridge_hole_spacing_mm": 18.0,
+    "bridge_end_diameter_mm": 8.0,
+    "bridge_spine_width_mm": 6.5,
+    "bridge_thickness_mm": 3.5,
+    "bridge_clearance_diameter_mm": 3.6,
+    "m3_socket_cap_screw_length_mm": 8.0,
+    "minimum_boss_sidewall_mm": 3.8,
+    "minimum_bridge_bearing_width_mm": 2.0,
+    "minimum_root_volume_mm3": 40.0
+  },
+  "physical_test": [
+    "Print the base and bridge flat in the actual black ASA with the final nozzle, sheet, layer height, perimeters, and temperatures.",
+    "The three boss pilots are left-to-right 4.0, 4.1, and 4.2 mm. Mark the underside before removing the coupon from the plate.",
+    "Heat-set the actual nominal 4.6 x 5.7 mm M3 insert into each pilot until flush; reject any station that splits, bulges badly, spins, or cannot seat straight.",
+    "Move the bridge between the left/center and center/right boss pairs. Confirm two M3 x 8 socket-cap screws start freely, clamp the bridge without bottoming, tolerate removal/reinstallation, and do not pull the inserts out.",
+    "Select the smallest pilot that seats reliably without cracking or severe bulging. Record the winner in the checkpoint and regenerate V9 before any production shell print if it is not 4.1 mm."
+  ]
+}
