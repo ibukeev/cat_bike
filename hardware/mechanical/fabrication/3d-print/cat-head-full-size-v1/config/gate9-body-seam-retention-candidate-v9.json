@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "status": "digital V9 removable body-seam retention candidate; heat-set coupon, physical shell fit, and remaining production systems are still required before final ASA release",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "required_metal_handoff_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "source_v8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-body-seam-clearance-candidate-v8/gate9-body-seam-clearance-candidate-v8.blend",
+  "source_v8_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-body-seam-clearance-v8-summary.json",
+  "source_gate8_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate8-full-size-structural-iteration.json",
+  "mirror_cap_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/mirror-facet-cap-prototypes.json",
+  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-body-seam-retention-candidate-v9",
+  "review_summary_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-body-seam-retention-v9-summary.json",
+  "source_objects": {
+    "left_upper_head": "gate9_v8__left_upper_head",
+    "right_upper_head": "gate9_v8__right_upper_head",
+    "left_lower_face": "gate9_v8__left_lower_face",
+    "right_lower_face": "gate9_v8__right_lower_face",
+    "rear_bezel": "gate9_v8__rear_bezel",
+    "bottom_keel": "gate9_v8__bottom_keel",
+    "left_socket_cap": "gate9_v8__left_socket_cap",
+    "right_socket_cap": "gate9_v8__right_socket_cap"
+  },
+  "retention_system": {
+    "architecture": "seat all four body shells first, then install five separate arched dogbone bridge plates from the open interior; no integrated feature crosses a seam during shell assembly",
+    "selected_source_modules": [
+      "left_lower_face__left_upper_head_02",
+      "left_lower_face__right_lower_face_05",
+      "left_upper_head__right_upper_head_02",
+      "left_upper_head__right_upper_head_03",
+      "right_lower_face__right_upper_head_02"
+    ],
+    "selected_module_count": 5,
+    "m3_screws_per_bridge": 2,
+    "m3_screw_total": 10,
+    "m3_heat_set_insert_total": 10,
+    "m3_socket_cap_screw_length_mm": 8.0,
+    "heat_set_insert_nominal_outer_diameter_mm": 4.6,
+    "heat_set_insert_nominal_length_mm": 5.7,
+    "insert_pilot_diameter_mm": 4.1,
+    "insert_pilot_depth_mm": 5.8,
+    "bridge_clearance_diameter_mm": 3.6,
+    "pad_seam_setback_mm": 4.0,
+    "pad_diameter_mm": 12.0,
+    "pad_depth_mm": 12.0,
+    "pad_shell_overlap_mm": 1.3,
+    "minimum_analytic_pad_exterior_recess_mm": 0.5,
+    "minimum_root_intersection_mm3": 20.0,
+    "bridge_contact_face_clearance_mm": 0.25,
+    "bridge_end_diameter_mm": 8.0,
+    "bridge_end_thickness_mm": 3.5,
+    "bridge_spine_diameter_mm": 6.5,
+    "bridge_spine_inward_arch_mm": 1.5,
+    "bridge_spine_end_overlap_mm": 2.0,
+    "minimum_insert_bearing_support_ratio": 0.95,
+    "minimum_bridge_bearing_support_ratio": 0.95,
+    "tool_envelope_diameter_mm": 8.0,
+    "tool_envelope_length_mm": 55.0,
+    "local_bridge_clearance_mm": 0.35,
+    "maximum_allowed_pre_relief_bridge_overlap_mm3": 12.0,
+    "local_relief_allowlist": {
+      "body_seam_bridge__left_lower_face__right_lower_face_05": [
+        "left_lower_face",
+        "right_lower_face"
+      ]
+    }
+  },
+  "assembly_paths": {
+    "same_side_lower_from_upper_offsets_mm": [0.0, 2.5, 5.0, 10.0, 20.0, 40.0, 80.0],
+    "right_module_from_left_module_offsets_mm": [0.0, 2.5, 5.0, 10.0, 20.0, 40.0, 80.0],
+    "bridge_inward_approach_offsets_mm": [0.0, 2.5, 5.0, 10.0, 20.0, 40.0],
+    "rear_bezel_outward_offsets_mm": [0.0, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 20.0, 40.0, 80.0],
+    "bottom_keel_downward_offsets_mm": [0.0, 2.5, 5.0, 10.0, 20.0, 40.0, 80.0]
+  },
+  "validation": {
+    "zero_volume_tolerance_mm3": 0.001,
+    "maximum_relief_detached_sliver_volume_mm3": 5.0,
+    "required_component_count": 1,
+    "required_boundary_edges": 0,
+    "required_nonmanifold_edges": 0,
+    "mirror_landing_triangle_overlap_pairs": 0,
+    "minimum_print_xy_margin_mm": 10.0
+  },
+  "acceptance_holds": [
+    "V9 preserves the complete accepted V8 exterior, complementary seam clearances, rear-bezel service path, bottom-keel partition, V0.5-M2 rear interface, rail axes, socket datums, M4 retention, and selected wrapped-panel landing polygons.",
+    "No integrated retention feature may cross a body seam. The four body shells must seat through the complete V8 assembly paths before any removable bridge is installed.",
+    "Every bridge uses one broad 12 mm cylindrical insert pad on each shell, one M3 heat-set insert per pad, and one M3 x 8 socket-cap screw per bridge end.",
+    "The 4.1 mm pilot is a controlled starting dimension for a nominal 4.6 x 5.7 mm insert. A printed ASA insert coupon and the actual purchased insert must pass before final body-shell printing.",
+    "Only the allowlisted lower-center bridge may trigger localized internal clearance relief, and its pre-relief overlap must remain at or below 12 mm3 per affected shell.",
+    "Every bridge, driver envelope, body shell, rear bezel, bottom keel, socket cap, and complete M2 aluminum envelope must be collision checked in seated and service states.",
+    "All five bridges are separate printable service parts and every production STL must contain exactly one closed manifold component.",
+    "A support/brim-inclusive Prusa MK4 Generic ASA slice with at least 10 mm XY margin is required for all thirteen V9 printed parts.",
+    "V9 resolves only final body-shell seam retention. Physical shell fit, ears, eyes, glow modules, lamp and steering portals, and final integrated ASA authorization remain separate blockers."
+  ]
+}
