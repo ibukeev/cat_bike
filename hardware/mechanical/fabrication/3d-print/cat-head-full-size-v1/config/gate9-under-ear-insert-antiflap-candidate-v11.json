@@ -1,0 +1,170 @@
+{
+  "schema_version": 11,
+  "status": "digital V11 under-ear insert and spatially separated anti-flap candidate",
+  "source_v10_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-ear-primary-interface-candidate-v10/gate9-ear-primary-interface-v10.blend",
+  "source_v10_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-ear-primary-interface-v10-summary.json",
+  "source_gate7_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate7-glow-panel-inserts.json",
+  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-under-ear-insert-antiflap-candidate-v11",
+  "review_summary_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-under-ear-insert-antiflap-v11-summary.json",
+  "insert": {
+    "material": "1.5 mm frosted or milky translucent PETG",
+    "visible_thickness_mm": 1.5,
+    "deep_body_perimeter_clearance_mm": 0.8,
+    "deep_body_surface_setback_mm": 0.6,
+    "visible_cap_perimeter_clearance_mm": 0.15,
+    "visible_cap_surface_setback_mm": 0.15,
+    "visible_cap_thickness_mm": 0.5,
+    "final_shell_local_relief_clearance_mm": 0.6,
+    "maximum_relief_passes_per_owner": 3,
+    "zero_volume_tolerance_mm3": 0.001,
+    "maximum_detached_cleanup_mm3": 2.0
+  },
+  "body_retention": {
+    "architecture": "two short spatially separated M2.5 tab pairs with insert-side captive nyloc pockets; first shell hole round and second slotted; fasteners retain an already seated insert",
+    "station_edges": {
+      "left": [
+        [
+          49,
+          58
+        ],
+        [
+          48,
+          49
+        ]
+      ],
+      "right": [
+        [
+          25,
+          61
+        ],
+        [
+          24,
+          25
+        ]
+      ]
+    },
+    "station_fractions": [
+      0.05,
+      0.5
+    ],
+    "fastener_nominal": "M2.5",
+    "fastener_count_per_insert": 2,
+    "round_clearance_diameter_mm": 2.8,
+    "slot_width_mm": 2.8,
+    "slot_overall_length_mm": 4.0,
+    "m2_5_socket_cap_screw_length_mm": 10.0,
+    "washer_outer_diameter_mm": 5.0,
+    "washer_thickness_mm": 0.5,
+    "m2_5_nyloc_across_flats_mm": 5.0,
+    "m2_5_nyloc_height_mm": 3.8,
+    "tab_length_mm": 14.0,
+    "tab_depth_mm": 8.0,
+    "tab_thickness_mm": 5.0,
+    "tab_face_clearance_mm": 0.6,
+    "insert_root_pad_length_mm": 20.0,
+    "insert_root_pad_inward_depth_mm": 4.0,
+    "insert_root_pad_radial_width_mm": 8.0,
+    "insert_root_pad_inward_center_mm": 3.0,
+    "insert_root_pad_outward_radial_center_mm": -1.0,
+    "minimum_insert_root_intersection_mm3": 10.0,
+    "minimum_shell_root_intersection_mm3": 20.0,
+    "slot_root_pad_extra_length_mm": 18.0
+  },
+  "anti_flap": {
+    "architecture": "one outer M2.5 locator through a reinforced hidden insert-border lug with a captive nyloc pocket and a short broadly rooted ear tab; no primary ear load assigned",
+    "station_edge": {
+      "left": [
+        41,
+        47
+      ],
+      "right": [
+        14,
+        23
+      ]
+    },
+    "station_fraction": 0.95,
+    "minimum_center_distance_from_primary_m3_mm": 60.0,
+    "fastener_nominal": "M2.5",
+    "fastener_count_per_ear": 1,
+    "clearance_diameter_mm": 2.8,
+    "m2_5_socket_cap_screw_length_mm": 14.0,
+    "washer_outer_diameter_mm": 5.0,
+    "washer_thickness_mm": 0.5,
+    "m2_5_nyloc_across_flats_mm": 5.0,
+    "m2_5_nyloc_height_mm": 3.8,
+    "lug_length_mm": 14.0,
+    "lug_depth_mm": 7.0,
+    "lug_thickness_mm": 6.0,
+    "lug_face_clearance_mm": 0.6,
+    "insert_root_pad_length_mm": 20.0,
+    "insert_root_pad_inward_depth_mm": 4.0,
+    "insert_root_pad_radial_width_mm": 8.0,
+    "insert_root_pad_inward_center_mm": 3.0,
+    "insert_root_pad_outward_radial_center_mm": -1.0,
+    "minimum_insert_root_intersection_mm3": 10.0,
+    "minimum_ear_root_intersection_mm3": 20.0,
+    "primary_load_path": false
+  },
+  "tools": {
+    "driver_envelope_diameter_mm": 7.0,
+    "nut_tool_envelope_diameter_mm": 8.0,
+    "tool_envelope_length_mm": 35.0,
+    "tool_start_clearance_mm": 0.3,
+    "socket_cap_head_diameter_mm": 4.5,
+    "socket_cap_head_height_mm": 2.5,
+    "captive_nut_pocket_clearance_mm": 0.25
+  },
+  "assembly_paths": {
+    "insert_inward_removal_offsets_mm": [
+      0.0,
+      2.5,
+      5.0,
+      10.0,
+      20.0,
+      40.0,
+      80.0
+    ],
+    "ear_outward_removal_offsets_mm": [
+      0.0,
+      2.5,
+      5.0,
+      10.0,
+      20.0,
+      40.0,
+      80.0
+    ],
+    "insert_outward_removal_direction_left_head": [
+      -1.0,
+      0.5,
+      1.5
+    ],
+    "insert_lead_in_sweep_offsets_mm": [
+      2.5,
+      5.0
+    ],
+    "insert_lead_in_sweep_clearance_mm": 0.25
+  },
+  "validation": {
+    "required_component_count": 1,
+    "required_boundary_edges": 0,
+    "required_nonmanifold_edges": 0,
+    "minimum_print_xy_margin_mm": 10.0,
+    "maximum_mirror_fastener_center_error_mm": 0.05,
+    "maximum_hidden_ear_root_extension_mm": 6.0
+  },
+  "acceptance_holds": [
+    "Each under-ear insert must seat by hand against the final V10 shell and ear geometry with explicit relief at both upper corners and the lower center; force fitting is forbidden.",
+    "The deep body uses 0.8 mm perimeter clearance while only the shallow non-structural visible cap uses the tighter 0.15 mm visual seam.",
+    "Two short, spatially separated M2.5 body retainers use one round hole and one tolerance slot and retain an already seated insert without becoming alignment cams.",
+    "One additional outer M2.5 anti-flap locator is at least 60 mm from the primary M3 centers and joins a reinforced hidden insert-border lug to a short broadly rooted ear tab.",
+    "The illuminated 1.5 mm diffuser skin is not the anti-flap structural load path; every lug is rooted through a local hidden reinforcement pad.",
+    "All insert, ear, fastener, washer, nut, driver, and nut-tool envelopes must pass the documented service order and clear the complete V0.5-M2 aluminum envelope.",
+    "Final ASA/PETG fabrication remains held until complete geometry, topology, assembly-path, real Prusa slicing, and physical hand-fit/anti-flap checks pass."
+  ],
+  "final_clearance": {
+    "constructed_part_clearance_mm": 0.5,
+    "hardware_pocket_clearance_mm": 0.4,
+    "zero_volume_tolerance_mm3": 0.001,
+    "maximum_detached_cleanup_mm3": 150.0
+  }
+}
