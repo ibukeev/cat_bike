@@ -1,0 +1,64 @@
+{
+  "schema_version": 10,
+  "status": "digital V10 complementary primary ear interface candidate; outer anti-flap tie remains coupled to the under-ear insert redesign",
+  "source_v9_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-body-seam-retention-candidate-v9/gate9-body-seam-retention-candidate-v9.blend",
+  "source_v9_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-body-seam-retention-v9-summary.json",
+  "source_gate8_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate8-full-size-structural-iteration.json",
+  "source_ear_stls": {
+    "left_ear": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/shells/left_ear.stl",
+    "right_ear": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/shells/right_ear.stl"
+  },
+  "source_head_objects": {
+    "left_upper_head": "gate9_v9__left_upper_head",
+    "right_upper_head": "gate9_v9__right_upper_head"
+  },
+  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-ear-primary-interface-candidate-v10",
+  "review_summary_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-ear-primary-interface-v10-summary.json",
+  "primary_interface": {
+    "architecture": "encapsulate the legacy four-bore shallow ear saddle inside one larger solid, deeply recessed matching flange pair per ear; fill the two middle legacy bores and recut only two paths, with the first station round and the second a short tolerance slot",
+    "fastener_nominal": "M3",
+    "fastener_count_per_ear": 2,
+    "round_clearance_diameter_mm": 3.4,
+    "slot_width_mm": 3.4,
+    "slot_overall_length_mm": 5.0,
+    "m3_socket_cap_screw_length_mm": 20.0,
+    "washer_outer_diameter_mm": 7.0,
+    "washer_thickness_mm": 0.5,
+    "m3_nyloc_across_flats_mm": 5.5,
+    "m3_nyloc_height_mm": 4.0,
+    "flange_face_clearance_mm": 0.5,
+    "flange_tab_thickness_mm": 5.0,
+    "flange_tab_depth_mm": 12.0,
+    "flange_shell_overlap_mm": 2.6,
+    "minimum_tab_exterior_recess_mm": 5.0,
+    "root_web_length_mm": 8.0,
+    "root_web_thickness_mm": 4.5,
+    "root_web_end_margin_mm": 0.75,
+    "root_web_boolean_overlap_mm": 2.0,
+    "minimum_root_intersection_mm3": 35.0,
+    "complementary_relief_clearance_mm": 0.50,
+    "driver_envelope_diameter_mm": 9.0,
+    "nut_tool_envelope_diameter_mm": 10.0,
+    "tool_envelope_length_mm": 45.0,
+    "tool_start_clearance_mm": 0.3
+  },
+  "assembly_paths": {
+    "ear_outward_removal_offsets_mm": [0.0, 2.5, 5.0, 10.0, 20.0, 40.0, 80.0]
+  },
+  "validation": {
+    "zero_volume_tolerance_mm3": 0.001,
+    "required_component_count": 1,
+    "required_boundary_edges": 0,
+    "required_nonmanifold_edges": 0,
+    "minimum_print_xy_margin_mm": 10.0
+  },
+  "acceptance_holds": [
+    "The legacy four-hole saddle is fully encapsulated as an internal core: its two middle bores are filled, no alignment pins remain, and each left and right ear exposes exactly two accessible M3 paths.",
+    "The lower/first station is a 3.4 mm round clearance and the upper/second station is a nominal 3.4 x 5.0 mm capsule slot through both mating flanges.",
+    "Both mating flanges are broad, closed-manifold, deeply recessed, and continuously rooted into their owning shell. No connector may project onto the exterior mirror-panel landing.",
+    "M3 x 20 socket-cap screws, 7 mm washers, M3 nyloc nuts, driver envelopes, and nut-tool envelopes must have direct modeled paths.",
+    "Both ears must seat and remove along the modeled outward path without collision with the final V9 body, bridge, bezel, keel, socket-cap, or complete V0.5-M2 aluminum envelope.",
+    "The primary interface must be mirrored and support/brim-inclusive Prusa MK4 Generic ASA slicing must pass for both updated upper shells and both ears.",
+    "F-13/F-14 and A-11 remain open until the under-ear translucent insert is redesigned with its separate reinforced M2.5 outer anti-flap tie. The primary M3 interface must not pretend to close that finding."
+  ]
+}

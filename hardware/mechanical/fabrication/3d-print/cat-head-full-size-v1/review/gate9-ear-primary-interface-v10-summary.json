@@ -1,0 +1,2387 @@
+{
+  "gate": "Gate 9 V10 complementary primary ear interfaces",
+  "status": "digital V10 complementary primary ear interface candidate; outer anti-flap tie remains coupled to the under-ear insert redesign",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "metal_handoff_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2",
+  "source_v9_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-body-seam-retention-candidate-v9/gate9-body-seam-retention-candidate-v9.blend",
+  "output_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-ear-primary-interface-candidate-v10/gate9-ear-primary-interface-v10.blend",
+  "architecture": "encapsulate the legacy four-bore shallow ear saddle inside one larger solid, deeply recessed matching flange pair per ear; fill the two middle legacy bores and recut only two paths, with the first station round and the second a short tolerance slot",
+  "hardware": {
+    "fastener_nominal": "M3",
+    "fastener_count_per_ear": 2,
+    "round_clearance_diameter_mm": 3.4,
+    "slot_width_mm": 3.4,
+    "slot_overall_length_mm": 5.0,
+    "m3_socket_cap_screw_length_mm": 20.0,
+    "washer_outer_diameter_mm": 7.0,
+    "washer_thickness_mm": 0.5,
+    "m3_nyloc_across_flats_mm": 5.5,
+    "m3_nyloc_height_mm": 4.0
+  },
+  "dimensions": {
+    "flange_face_clearance_mm": 0.5,
+    "flange_tab_thickness_mm": 5.0,
+    "flange_tab_depth_mm": 12.0,
+    "flange_shell_overlap_mm": 2.6,
+    "minimum_tab_exterior_recess_mm": 5.0,
+    "root_web_length_mm": 8.0,
+    "root_web_thickness_mm": 4.5,
+    "root_web_end_margin_mm": 0.75,
+    "root_web_boolean_overlap_mm": 2.0,
+    "complementary_relief_clearance_mm": 0.5,
+    "driver_envelope_diameter_mm": 9.0,
+    "nut_tool_envelope_diameter_mm": 10.0,
+    "tool_envelope_length_mm": 45.0
+  },
+  "side_interfaces": {
+    "left": {
+      "legacy": {
+        "name": "gate9_v10__legacy_left_ear_interface",
+        "sections": [
+          "left_ear",
+          "left_upper_head"
+        ],
+        "owner": "left_upper_head",
+        "receiver": "left_ear",
+        "source_faces": [
+          "TRI044",
+          "MANQ002-B"
+        ],
+        "module_length_mm": 23.973,
+        "flange_tab_depth_mm": 8.0,
+        "flange_tab_thickness_mm": 3.8,
+        "flange_face_clearance_mm": 0.35,
+        "internal_m3_screws": 4,
+        "captive_square_nuts": 0,
+        "loose_m3_nyloc_nuts": 4,
+        "alignment_dowels": 0,
+        "exterior_fastener_holes": 0,
+        "minimum_exterior_skin_mm": 1.8,
+        "minimum_tab_exterior_recess_mm": 8.019,
+        "minimum_root_web_exterior_recess_mm": 0.369,
+        "flange_root_web_count_per_tab": 2,
+        "flange_root_web_length_mm": 2.0,
+        "flange_root_web_thickness_mm": 1.2,
+        "flange_root_is_continuous_solid_base": true,
+        "fastener_axis": [
+          0.9405,
+          -0.1414,
+          -0.3091
+        ],
+        "fastener_axis_uses_shared_interior_bisector": true,
+        "tabs_are_matching_plain_rectangles": true,
+        "owner_tab_retained_volume_ratio": 1.0311,
+        "receiver_tab_retained_volume_ratio": 1.0311,
+        "integrated_flange_tabs_valid": true,
+        "internal_tool_access_required": true
+      },
+      "candidate": {
+        "name": "gate9_v10__primary_left_ear_interface",
+        "sections": [
+          "left_ear",
+          "left_upper_head"
+        ],
+        "owner": "left_upper_head",
+        "receiver": "left_ear",
+        "source_faces": [
+          "TRI044",
+          "MANQ002-B"
+        ],
+        "module_length_mm": 23.973,
+        "flange_tab_depth_mm": 12.0,
+        "flange_tab_thickness_mm": 5.0,
+        "flange_face_clearance_mm": 0.5,
+        "internal_m3_screws": 2,
+        "captive_square_nuts": 0,
+        "loose_m3_nyloc_nuts": 2,
+        "alignment_dowels": 0,
+        "exterior_fastener_holes": 0,
+        "minimum_exterior_skin_mm": 1.8,
+        "minimum_tab_exterior_recess_mm": 5.019,
+        "minimum_root_web_exterior_recess_mm": 0.369,
+        "flange_root_web_count_per_tab": 2,
+        "flange_root_web_length_mm": 8.0,
+        "flange_root_web_thickness_mm": 4.5,
+        "flange_root_is_continuous_solid_base": true,
+        "fastener_axis": [
+          0.9405,
+          -0.1414,
+          -0.3091
+        ],
+        "fastener_axis_uses_shared_interior_bisector": true,
+        "tabs_are_matching_plain_rectangles": true,
+        "owner_tab_retained_volume_ratio": 0.96,
+        "receiver_tab_retained_volume_ratio": 0.96,
+        "integrated_flange_tabs_valid": true,
+        "internal_tool_access_required": true,
+        "left_upper_head_root_intersection_mm3": 494.991,
+        "left_upper_head_attachment_bridge_lengths_mm": [],
+        "left_ear_root_intersection_mm3": 1418.019,
+        "left_ear_attachment_bridge_lengths_mm": []
+      },
+      "module_length_mm": 23.973,
+      "required_inward_shift_mm": 7.839,
+      "outward_removal_direction_head": [
+        -0.940461,
+        0.141411,
+        0.30909
+      ],
+      "screws": [
+        {
+          "station": "round",
+          "center_head_mm": [
+            -64.2955,
+            154.4913,
+            239.526
+          ],
+          "axis_head": [
+            0.940461,
+            -0.141411,
+            -0.30909
+          ],
+          "nominal_opening_mm": [
+            3.4
+          ]
+        },
+        {
+          "station": "slot",
+          "center_head_mm": [
+            -61.1414,
+            166.9442,
+            243.4255
+          ],
+          "axis_head": [
+            0.940461,
+            -0.141411,
+            -0.30909
+          ],
+          "nominal_opening_mm": [
+            3.4,
+            5.0
+          ]
+        }
+      ]
+    },
+    "right": {
+      "legacy": {
+        "name": "gate9_v10__legacy_right_ear_interface",
+        "sections": [
+          "right_ear",
+          "right_upper_head"
+        ],
+        "owner": "right_upper_head",
+        "receiver": "right_ear",
+        "source_faces": [
+          "TRI011",
+          "MANQ003-B"
+        ],
+        "module_length_mm": 23.973,
+        "flange_tab_depth_mm": 8.0,
+        "flange_tab_thickness_mm": 3.8,
+        "flange_face_clearance_mm": 0.35,
+        "internal_m3_screws": 4,
+        "captive_square_nuts": 0,
+        "loose_m3_nyloc_nuts": 4,
+        "alignment_dowels": 0,
+        "exterior_fastener_holes": 0,
+        "minimum_exterior_skin_mm": 1.8,
+        "minimum_tab_exterior_recess_mm": 8.019,
+        "minimum_root_web_exterior_recess_mm": 0.369,
+        "flange_root_web_count_per_tab": 2,
+        "flange_root_web_length_mm": 2.0,
+        "flange_root_web_thickness_mm": 1.2,
+        "flange_root_is_continuous_solid_base": true,
+        "fastener_axis": [
+          -0.9405,
+          -0.1415,
+          -0.3088
+        ],
+        "fastener_axis_uses_shared_interior_bisector": true,
+        "tabs_are_matching_plain_rectangles": true,
+        "owner_tab_retained_volume_ratio": 0.8926,
+        "receiver_tab_retained_volume_ratio": 0.8926,
+        "integrated_flange_tabs_valid": true,
+        "internal_tool_access_required": true
+      },
+      "candidate": {
+        "name": "gate9_v10__primary_right_ear_interface",
+        "sections": [
+          "right_ear",
+          "right_upper_head"
+        ],
+        "owner": "right_upper_head",
+        "receiver": "right_ear",
+        "source_faces": [
+          "TRI011",
+          "MANQ003-B"
+        ],
+        "module_length_mm": 23.973,
+        "flange_tab_depth_mm": 12.0,
+        "flange_tab_thickness_mm": 5.0,
+        "flange_face_clearance_mm": 0.5,
+        "internal_m3_screws": 2,
+        "captive_square_nuts": 0,
+        "loose_m3_nyloc_nuts": 2,
+        "alignment_dowels": 0,
+        "exterior_fastener_holes": 0,
+        "minimum_exterior_skin_mm": 1.8,
+        "minimum_tab_exterior_recess_mm": 5.019,
+        "minimum_root_web_exterior_recess_mm": 0.369,
+        "flange_root_web_count_per_tab": 2,
+        "flange_root_web_length_mm": 8.0,
+        "flange_root_web_thickness_mm": 4.5,
+        "flange_root_is_continuous_solid_base": true,
+        "fastener_axis": [
+          -0.9405,
+          -0.1415,
+          -0.3088
+        ],
+        "fastener_axis_uses_shared_interior_bisector": true,
+        "tabs_are_matching_plain_rectangles": true,
+        "owner_tab_retained_volume_ratio": 0.96,
+        "receiver_tab_retained_volume_ratio": 0.96,
+        "integrated_flange_tabs_valid": true,
+        "internal_tool_access_required": true,
+        "right_upper_head_root_intersection_mm3": 502.325,
+        "right_upper_head_attachment_bridge_lengths_mm": [],
+        "right_ear_root_intersection_mm3": 1372.436,
+        "right_ear_attachment_bridge_lengths_mm": []
+      },
+      "module_length_mm": 23.973,
+      "required_inward_shift_mm": 7.841,
+      "outward_removal_direction_head": [
+        0.940528,
+        0.141506,
+        0.30884
+      ],
+      "screws": [
+        {
+          "station": "round",
+          "center_head_mm": [
+            64.292,
+            154.4914,
+            239.5228
+          ],
+          "axis_head": [
+            -0.940528,
+            -0.141506,
+            -0.30884
+          ],
+          "nominal_opening_mm": [
+            3.4
+          ]
+        },
+        {
+          "station": "slot",
+          "center_head_mm": [
+            61.138,
+            166.9443,
+            243.4223
+          ],
+          "axis_head": [
+            -0.940528,
+            -0.141506,
+            -0.30884
+          ],
+          "nominal_opening_mm": [
+            3.4,
+            5.0
+          ]
+        }
+      ]
+    }
+  },
+  "legacy_saddle_disposition": [
+    {
+      "side": "left",
+      "section": "left_upper_head",
+      "legacy_fastener_count": 4,
+      "disposition": "encapsulated by the larger solid V10 saddle; the two middle legacy bores are filled and the two outer stations are recut as round plus slot",
+      "topology_before": {
+        "components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "vertices": 13703,
+        "faces": 13064,
+        "volume_mm3": 113754.428
+      }
+    },
+    {
+      "side": "left",
+      "section": "left_ear",
+      "legacy_fastener_count": 4,
+      "disposition": "encapsulated by the larger solid V10 saddle; the two middle legacy bores are filled and the two outer stations are recut as round plus slot",
+      "topology_before": {
+        "components": 2,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "vertices": 245,
+        "faces": 490,
+        "volume_mm3": 18587.992
+      }
+    },
+    {
+      "side": "right",
+      "section": "right_upper_head",
+      "legacy_fastener_count": 4,
+      "disposition": "encapsulated by the larger solid V10 saddle; the two middle legacy bores are filled and the two outer stations are recut as round plus slot",
+      "topology_before": {
+        "components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "vertices": 13717,
+        "faces": 13060,
+        "volume_mm3": 116930.926
+      }
+    },
+    {
+      "side": "right",
+      "section": "right_ear",
+      "legacy_fastener_count": 4,
+      "disposition": "encapsulated by the larger solid V10 saddle; the two middle legacy bores are filled and the two outer stations are recut as round plus slot",
+      "topology_before": {
+        "components": 2,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "vertices": 177,
+        "faces": 362,
+        "volume_mm3": 18381.645
+      }
+    }
+  ],
+  "localized_complementary_relief": [
+    {
+      "side": "left",
+      "clearance_mm": 0.5,
+      "source_head_cutter_volume_mm3": 115349.197,
+      "removed_ear_volume_mm3": 224.463,
+      "detached_component_cleanup": {
+        "component_count_before_cleanup": 6,
+        "removed_component_count": 5,
+        "kept_component_volume_mm3": 19039.22,
+        "removed_component_volume_mm3": 0.094
+      },
+      "residual_component_cleanup": [
+        {
+          "operation": "left_ear_residual_1",
+          "owner": "gate9_v10__left_upper_head",
+          "relieved_part": "gate9_v10__left_ear",
+          "clearance_mm": 0.1,
+          "overlap_before_mm3": 0.0412,
+          "cutters": [
+            {
+              "component_index": 0,
+              "source_overlap_volume_mm3": 0.006839,
+              "bounds": {
+                "minimum_head_mm": [
+                  -59.0157,
+                  168.4325,
+                  250.1772
+                ],
+                "maximum_head_mm": [
+                  -58.5034,
+                  169.8676,
+                  250.7915
+                ]
+              },
+              "mirror_landing_triangle_overlap_pairs": {}
+            },
+            {
+              "component_index": 1,
+              "source_overlap_volume_mm3": 0.026448,
+              "bounds": {
+                "minimum_head_mm": [
+                  -63.2595,
+                  145.7665,
+                  248.4824
+                ],
+                "maximum_head_mm": [
+                  -62.5926,
+                  147.7106,
+                  250.1483
+                ]
+              },
+              "mirror_landing_triangle_overlap_pairs": {}
+            },
+            {
+              "component_index": 2,
+              "source_overlap_volume_mm3": 0.007913,
+              "bounds": {
+                "minimum_head_mm": [
+                  -62.923,
+                  143.7,
+                  250.4507
+                ],
+                "maximum_head_mm": [
+                  -62.1828,
+                  144.9171,
+                  251.2363
+                ]
+              },
+              "mirror_landing_triangle_overlap_pairs": {}
+            }
+          ],
+          "cutter_count": 3,
+          "cleanup": {
+            "component_count_before_cleanup": 1,
+            "removed_component_count": 0,
+            "kept_component_volume_mm3": 19032.546,
+            "removed_component_volume_mm3": 0.0
+          },
+          "overlap_after_mm3": 0.003897,
+          "topology_after": {
+            "components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "vertices": 1056,
+            "faces": 706,
+            "volume_mm3": 19037.663
+          }
+        },
+        {
+          "operation": "left_ear_residual_2",
+          "owner": "gate9_v10__left_upper_head",
+          "relieved_part": "gate9_v10__left_ear",
+          "clearance_mm": 0.1,
+          "overlap_before_mm3": 0.003897,
+          "cutters": [
+            {
+              "component_index": 0,
+              "source_overlap_volume_mm3": 0.003897,
+              "bounds": {
+                "minimum_head_mm": [
+                  -59.5342,
+                  162.1671,
+                  256.4185
+                ],
+                "maximum_head_mm": [
+                  -59.0901,
+                  162.9,
+                  256.8748
+                ]
+              },
+              "mirror_landing_triangle_overlap_pairs": {}
+            }
+          ],
+          "cutter_count": 1,
+          "cleanup": {
+            "component_count_before_cleanup": 1,
+            "removed_component_count": 0,
+            "kept_component_volume_mm3": 19037.818,
+            "removed_component_volume_mm3": 0.0
+          },
+          "overlap_after_mm3": 0.0,
+          "topology_after": {
+            "components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "vertices": 1090,
+            "faces": 734,
+            "volume_mm3": 19037.644
+          }
+        }
+      ],
+      "minimum_analytic_joint_clearance_mm": 0.5,
+      "topology_after": {
+        "components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "vertices": 1090,
+        "faces": 734,
+        "volume_mm3": 19037.644
+      }
+    },
+    {
+      "side": "right",
+      "clearance_mm": 0.5,
+      "source_head_cutter_volume_mm3": 118523.06,
+      "removed_ear_volume_mm3": 194.733,
+      "detached_component_cleanup": {
+        "component_count_before_cleanup": 5,
+        "removed_component_count": 4,
+        "kept_component_volume_mm3": 18894.017,
+        "removed_component_volume_mm3": 0.145
+      },
+      "residual_component_cleanup": [
+        {
+          "operation": "right_ear_residual_1",
+          "owner": "gate9_v10__right_upper_head",
+          "relieved_part": "gate9_v10__right_ear",
+          "clearance_mm": 0.1,
+          "overlap_before_mm3": 0.051632,
+          "cutters": [
+            {
+              "component_index": 0,
+              "source_overlap_volume_mm3": 0.017287,
+              "bounds": {
+                "minimum_head_mm": [
+                  58.5013,
+                  168.2468,
+                  250.1431
+                ],
+                "maximum_head_mm": [
+                  59.1296,
+                  169.9192,
+                  250.8138
+                ]
+              },
+              "mirror_landing_triangle_overlap_pairs": {}
+            },
+            {
+              "component_index": 1,
+              "source_overlap_volume_mm3": 0.007777,
+              "bounds": {
+                "minimum_head_mm": [
+                  62.1861,
+                  143.704,
+                  250.4506
+                ],
+                "maximum_head_mm": [
+                  62.923,
+                  144.9171,
+                  251.2348
+                ]
+              },
+              "mirror_landing_triangle_overlap_pairs": {}
+            },
+            {
+              "component_index": 2,
+              "source_overlap_volume_mm3": 0.026569,
+              "bounds": {
+                "minimum_head_mm": [
+                  62.592,
+                  145.7667,
+                  248.4804
+                ],
+                "maximum_head_mm": [
+                  63.2595,
+                  147.7125,
+                  250.1481
+                ]
+              },
+              "mirror_landing_triangle_overlap_pairs": {}
+            }
+          ],
+          "cutter_count": 3,
+          "cleanup": {
+            "component_count_before_cleanup": 2,
+            "removed_component_count": 1,
+            "kept_component_volume_mm3": 18900.956,
+            "removed_component_volume_mm3": 0.027
+          },
+          "overlap_after_mm3": 0.0,
+          "topology_after": {
+            "components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "vertices": 971,
+            "faces": 586,
+            "volume_mm3": 18904.795
+          }
+        }
+      ],
+      "minimum_analytic_joint_clearance_mm": 0.5,
+      "topology_after": {
+        "components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "vertices": 971,
+        "faces": 586,
+        "volume_mm3": 18904.795
+      }
+    }
+  ],
+  "topology": {
+    "left_upper_head": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "vertices": 13729,
+      "faces": 12975,
+      "volume_mm3": 115349.197
+    },
+    "right_upper_head": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "vertices": 13742,
+      "faces": 12971,
+      "volume_mm3": 118523.06
+    },
+    "left_ear": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "vertices": 1090,
+      "faces": 734,
+      "volume_mm3": 19037.644
+    },
+    "right_ear": {
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "vertices": 971,
+      "faces": 586,
+      "volume_mm3": 18904.795
+    }
+  },
+  "seated_ear_head_positive_overlap_mm3": {
+    "left": 0.0,
+    "right": 0.0
+  },
+  "ear_outward_assembly_paths": {
+    "left_ear": {
+      "outward_direction_head": [
+        -0.940461,
+        0.141411,
+        0.30909
+      ],
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "collisions": {
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 2.5,
+          "collisions": {
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 5.0,
+          "collisions": {
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 10.0,
+          "collisions": {
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 20.0,
+          "collisions": {
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 40.0,
+          "collisions": {
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 80.0,
+          "collisions": {
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        }
+      ],
+      "all_samples_clear": true
+    },
+    "right_ear": {
+      "outward_direction_head": [
+        0.940528,
+        0.141506,
+        0.30884
+      ],
+      "samples": [
+        {
+          "offset_mm": 0.0,
+          "collisions": {
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 2.5,
+          "collisions": {
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 5.0,
+          "collisions": {
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 10.0,
+          "collisions": {
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 20.0,
+          "collisions": {
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 40.0,
+          "collisions": {
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        },
+        {
+          "offset_mm": 80.0,
+          "collisions": {
+            "left_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_lower_face": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "rear_bezel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "bottom_keel": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_socket_cap": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__left_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_lower_face__right_lower_face_05": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__left_upper_head__right_upper_head_03": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "body_seam_bridge__right_lower_face__right_upper_head_02": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "right_upper_head": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            },
+            "left_ear": {
+              "positive_overlap_volume_mm3": 0.0,
+              "clear": true
+            }
+          },
+          "clear": true
+        }
+      ],
+      "all_samples_clear": true
+    }
+  },
+  "tool_to_non_owned_printed_part_collisions": {
+    "gate9_v10__left_round_driver_tool": {
+      "right_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__left_round_nut_tool": {
+      "left_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__left_slot_driver_tool": {
+      "right_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__left_slot_nut_tool": {
+      "left_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__right_round_driver_tool": {
+      "left_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__right_round_nut_tool": {
+      "left_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__right_slot_driver_tool": {
+      "left_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__right_slot_nut_tool": {
+      "left_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    }
+  },
+  "hardware_to_non_owned_printed_part_collisions": {
+    "gate9_v10__left_round_m3_screw": {
+      "right_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__left_slot_m3_screw": {
+      "right_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__right_round_m3_screw": {
+      "left_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    },
+    "gate9_v10__right_slot_m3_screw": {
+      "left_upper_head": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_lower_face": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "rear_bezel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "bottom_keel": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "right_socket_cap": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__left_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_lower_face__right_lower_face_05": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__left_upper_head__right_upper_head_03": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "body_seam_bridge__right_lower_face__right_upper_head_02": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      },
+      "left_ear": {
+        "positive_overlap_volume_mm3": 0.0,
+        "clear": true
+      }
+    }
+  },
+  "updated_parts_to_m2_metal_collisions": {
+    "left_upper_head": {
+      "clear": true,
+      "collisions": {}
+    },
+    "right_upper_head": {
+      "clear": true,
+      "collisions": {}
+    },
+    "left_ear": {
+      "clear": true,
+      "collisions": {}
+    },
+    "right_ear": {
+      "clear": true,
+      "collisions": {}
+    }
+  },
+  "tool_to_m2_metal_collisions": {
+    "gate9_v10__left_round_driver_tool": {
+      "clear": true,
+      "collisions": {}
+    },
+    "gate9_v10__left_round_nut_tool": {
+      "clear": true,
+      "collisions": {}
+    },
+    "gate9_v10__left_slot_driver_tool": {
+      "clear": true,
+      "collisions": {}
+    },
+    "gate9_v10__left_slot_nut_tool": {
+      "clear": true,
+      "collisions": {}
+    },
+    "gate9_v10__right_round_driver_tool": {
+      "clear": true,
+      "collisions": {}
+    },
+    "gate9_v10__right_round_nut_tool": {
+      "clear": true,
+      "collisions": {}
+    },
+    "gate9_v10__right_slot_driver_tool": {
+      "clear": true,
+      "collisions": {}
+    },
+    "gate9_v10__right_slot_nut_tool": {
+      "clear": true,
+      "collisions": {}
+    }
+  },
+  "exterior_preservation": {
+    "left_upper_head": {
+      "bounds_inside_source_extents": true,
+      "source_volume_mm3": 113754.428,
+      "candidate_volume_mm3": 115349.197
+    },
+    "right_upper_head": {
+      "bounds_inside_source_extents": true,
+      "source_volume_mm3": 116930.926,
+      "candidate_volume_mm3": 118523.06
+    },
+    "left_ear": {
+      "bounds_inside_source_extents": true,
+      "source_volume_mm3": 18587.992,
+      "candidate_volume_mm3": 19037.644
+    },
+    "right_ear": {
+      "bounds_inside_source_extents": true,
+      "source_volume_mm3": 18381.645,
+      "candidate_volume_mm3": 18904.795
+    }
+  },
+  "mirror_fastener_center_max_error_mm": 0.0035,
+  "digital_validation": {
+    "exactly_two_m3_stations_per_ear": true,
+    "every_ear_has_one_round_and_one_tolerance_slot": true,
+    "legacy_four_bore_saddles_are_encapsulated_and_recut": true,
+    "all_primary_flange_roots_exceed_minimum_volume": true,
+    "localized_complementary_relief_is_internal_and_manifold": true,
+    "all_four_updated_parts_are_single_closed_manifolds": true,
+    "seated_ear_head_pairs_have_zero_positive_overlap": true,
+    "both_ears_have_clear_outward_removal_paths": true,
+    "all_driver_and_nut_tool_envelopes_are_clear": true,
+    "all_m3_hardware_envelopes_clear_non_owned_parts": true,
+    "updated_ear_parts_and_tools_clear_complete_m2_metal": true,
+    "exterior_bounds_are_preserved": true,
+    "left_and_right_fastener_centers_are_mirrored": true,
+    "digital_v10_primary_ear_interface_candidate_pass": true,
+    "all_four_v10_ear_interface_parts_have_margin_passing_slice": true,
+    "minimum_post_brim_xy_margin_is_at_least_10mm": true,
+    "digital_v10_primary_ear_geometry_and_slice_candidate_pass": true
+  },
+  "prusa_mk4_generic_asa_validation": {
+    "report": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-ear-primary-interface-candidate-v10/slicer-review/gate9-v10-primary-ear-slices.json",
+    "all_parts_pass_xy_margin_and_z_height": true,
+    "required_minimum_xy_margin_mm": 10.0,
+    "observed_minimum_xy_margin_mm": 28.484,
+    "exact_four_part_set": {
+      "available": true,
+      "part_count": 4,
+      "summation_method": "exact sum of independently orientation-searched and real-sliced left/right V10 upper shells and left/right V10 ears",
+      "estimated_filament_g": 340.09,
+      "estimated_support_filament_g": 140.561,
+      "estimated_support_volume_cm3": 131.369,
+      "estimated_print_time_seconds": 125857,
+      "all_parts_pass_margin": true,
+      "minimum_xy_margin_mm": 28.484
+    },
+    "selected_parts": {
+      "left_upper_head": {
+        "rotation_xyz_degrees": [
+          95.0,
+          23.0,
+          6.0
+        ],
+        "minimum_xy_margin_mm": 29.657,
+        "filament_g": 136.24,
+        "support_filament_g": 56.787,
+        "support_volume_cm3": 53.073,
+        "estimated_print_time_seconds": 51004
+      },
+      "right_upper_head": {
+        "rotation_xyz_degrees": [
+          75.0,
+          160.0,
+          9.0
+        ],
+        "minimum_xy_margin_mm": 28.484,
+        "filament_g": 153.89,
+        "support_filament_g": 72.453,
+        "support_volume_cm3": 67.717,
+        "estimated_print_time_seconds": 55505
+      },
+      "left_ear": {
+        "rotation_xyz_degrees": [
+          17.0,
+          80.0,
+          51.0
+        ],
+        "minimum_xy_margin_mm": 55.492,
+        "filament_g": 21.28,
+        "support_filament_g": 2.401,
+        "support_volume_cm3": 2.243,
+        "estimated_print_time_seconds": 8602
+      },
+      "right_ear": {
+        "rotation_xyz_degrees": [
+          17.0,
+          100.0,
+          51.0
+        ],
+        "minimum_xy_margin_mm": 57.26,
+        "filament_g": 28.68,
+        "support_filament_g": 8.92,
+        "support_volume_cm3": 8.336,
+        "estimated_print_time_seconds": 10746
+      }
+    }
+  },
+  "resolved_physical_findings": [
+    "F-12 primary under-ear flange access and structural weakness",
+    "F-22 pin-against-pin ear interface",
+    "A-18 primary ear flange access and broad-root requirement",
+    "A-27 complementary two-path round-and-slot ear interface"
+  ],
+  "remaining_ear_blockers": [
+    "F-13/F-14 and A-11: redesign the under-ear translucent insert and add the spatially separated reinforced M2.5 outer anti-flap tie.",
+    "A-12: validate the complete physical install/removal sequence with the under-ear insert and anti-flap tie present.",
+    "Print a local round/slot ASA interface coupon before committing the full ears if the actual M3 hardware stack differs from the documented M3 x 20, washers, and nyloc nuts."
+  ],
+  "acceptance_holds": [
+    "The legacy four-hole saddle is fully encapsulated as an internal core: its two middle bores are filled, no alignment pins remain, and each left and right ear exposes exactly two accessible M3 paths.",
+    "The lower/first station is a 3.4 mm round clearance and the upper/second station is a nominal 3.4 x 5.0 mm capsule slot through both mating flanges.",
+    "Both mating flanges are broad, closed-manifold, deeply recessed, and continuously rooted into their owning shell. No connector may project onto the exterior mirror-panel landing.",
+    "M3 x 20 socket-cap screws, 7 mm washers, M3 nyloc nuts, driver envelopes, and nut-tool envelopes must have direct modeled paths.",
+    "Both ears must seat and remove along the modeled outward path without collision with the final V9 body, bridge, bezel, keel, socket-cap, or complete V0.5-M2 aluminum envelope.",
+    "The primary interface must be mirrored and support/brim-inclusive Prusa MK4 Generic ASA slicing must pass for both updated upper shells and both ears.",
+    "F-13/F-14 and A-11 remain open until the under-ear translucent insert is redesigned with its separate reinforced M2.5 outer anti-flap tie. The primary M3 interface must not pretend to close that finding."
+  ]
+}
