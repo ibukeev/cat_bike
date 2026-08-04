@@ -1,0 +1,145 @@
+{
+  "status": "PASS - V0.5-M2 REAR INTERFACE DIGITAL CORRECTIONS CLOSED; COMPLETE HEAD RELEASE HELD",
+  "date": "2026-07-29",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "metal_handoff_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2",
+  "source_aluminum_commit": "871f6be685ce78e06d6463d8465a7749917098d0",
+  "scope": "Gate 9 V7 printed rear structure, six shell attachment pads, rigid M2 service path, removable socket caps, topology, and support/brim-inclusive Prusa MK4 Generic ASA feasibility",
+  "locked_interface_confirmation": {
+    "bottom_shell_m5_centers_local_x_v_mm": [[-7.4, -30.0], [7.4, -30.0]],
+    "all_other_plate_holes_unchanged": true,
+    "rail_targets_x_plus_minus_40_unchanged": true,
+    "rail_axes_unchanged": true,
+    "socket_opening_21_mm_unchanged": true,
+    "socket_depth_30_mm_unchanged": true,
+    "m4_retention_stations_unchanged": true,
+    "compound_rail_datums_unchanged": true,
+    "aluminum_owned_cad_or_interface_files_modified": false
+  },
+  "resolved_v7_blockers": {
+    "root_validator_definition": {
+      "status": "PASS",
+      "definition": "root span is measured as controlled shell overlap plus cavity reach from the owner-shell skin",
+      "root_total_span_mm": 8.0,
+      "target_shell_overlap_mm": 1.0,
+      "measured_shell_overlap_range_mm": [1.00001, 1.00003],
+      "cavity_reach_mm": 7.0,
+      "root_face_area_each_mm2": 720.0,
+      "minimum_required_root_face_area_mm2": 600.0
+    },
+    "middle_m5_service": {
+      "status": "PASS",
+      "assembly_sequence": [
+        "Press the shell-side M5 nyloc into its captive pocket before the complete M2 module enters.",
+        "Insert the complete preassembled M2 aluminum module.",
+        "Install the rear-loaded M5x20 bolt and 10 mm outside-diameter washer."
+      ],
+      "nyloc_actual_across_flats_mm": 8.0,
+      "nyloc_actual_across_corners_mm": 9.24,
+      "printed_pocket_across_flats_mm": 8.2,
+      "printed_pocket_across_corners_mm": 9.47,
+      "printed_pocket_depth_mm": 5.5,
+      "flat_clearance_each_side_mm": 0.1,
+      "minimum_pocket_wall_mm": 2.265,
+      "solid_pad_depth_beyond_pocket_mm": 6.5,
+      "all_six_fastened_hardware_and_staged_tool_envelopes_clear": true
+    },
+    "preassembled_crossbolt_service_sweep": {
+      "status": "PASS",
+      "sampled_socket_offsets_mm": [0.0, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 22.5, 25.0, 27.5, 30.0, 31.0],
+      "sampled_rear_offsets_after_socket_release_mm": [10.0, 25.0, 50.0, 80.0],
+      "sample_count": 18,
+      "all_samples_clear": true,
+      "radial_and_axial_tunnel_clearance_mm": 0.6,
+      "left_new_structure_removed_mm3": 401.791,
+      "right_new_structure_removed_mm3": 401.929,
+      "preexisting_v6_shell_material_removed": false,
+      "insertion_is_exact_reverse_of_validated_removal": true
+    },
+    "socket_cap_receiver": {
+      "status": "PASS",
+      "receiver_clearance_mm": 0.3,
+      "minimum_cap_to_shell_gap_mm": 0.3,
+      "minimum_cap_to_rail_gap_mm": 1.0,
+      "original_shell_skin_touched": false,
+      "all_eight_m3_tool_approaches_clear": true,
+      "left_and_right_caps_each_one_closed_manifold_component": true
+    }
+  },
+  "geometry_validation": {
+    "shared_v05_m2_interface_contract_passes": true,
+    "all_six_pad_bosses_meet_washer_bearing_and_contain_14mm_tool": true,
+    "all_four_structural_roots_are_broad_with_controlled_shell_overlap": true,
+    "all_four_rear_structures_true_overlap_their_owner_shells": true,
+    "opposing_left_right_pad_bosses_are_disjoint": true,
+    "all_six_m5_fastened_envelopes_and_staged_tools_clear": true,
+    "crossbolt_service_tunnels_preserve_preexisting_v6_shell": true,
+    "seated_complete_m2_metal_clears_fixed_printed_shells": true,
+    "blind_socket_rigid_pair_is_correctly_rejected": true,
+    "cap_off_complete_m2_removal_and_reverse_insertion_path_clear": true,
+    "cap_on_rails_and_upper_shells_clear": true,
+    "socket_wall_and_insert_cuts_preserve_original_shell_skin": true,
+    "all_cap_m3_tool_approaches_clear": true,
+    "all_six_shells_and_two_caps_one_closed_manifold_component": true,
+    "digital_v7_m2_rear_interface_candidate_pass": true
+  },
+  "a39_digital_phase_validation": {
+    "complete_m2_inserted_clear": true,
+    "complete_m2_seated_clear": true,
+    "all_six_m5_fastened_states_clear": true,
+    "all_required_tool_approaches_clear_in_their_documented_stage": true,
+    "complete_m2_removal_clear_with_socket_caps_removed": true,
+    "socket_caps_clear_when_installed": true,
+    "physical_hardware_validation_complete": false
+  },
+  "rigid_socket_architecture_result": {
+    "blind_socket_lateral_drift_over_30_mm": 2.7882,
+    "available_blind_socket_lateral_clearance_mm": 1.0,
+    "common_motion_limit_mm": 10.7596,
+    "rigid_blind_pair_accepted": false,
+    "removable_outer_cap_architecture_required": true
+  },
+  "prusa_mk4_generic_asa_validation": {
+    "status": "PASS - ALL EIGHT MODIFIED PARTS HAVE REAL SUPPORT/BRIM-INCLUSIVE SLICES",
+    "required_minimum_xy_margin_mm": 10.0,
+    "observed_minimum_xy_margin_mm": 11.935,
+    "all_parts_pass_xy_margin_and_z_height": true,
+    "total_filament_g": 714.76,
+    "total_support_filament_g": 293.975,
+    "total_support_volume_cm3": 274.745,
+    "total_estimated_print_time_seconds": 252124,
+    "parts": {
+      "left_upper_head": {"rotation_xyz_degrees": [95.0, 23.0, 6.0], "minimum_xy_margin_mm": 29.674, "filament_g": 130.38, "support_filament_g": 54.706},
+      "right_upper_head": {"rotation_xyz_degrees": [76.0, 160.0, 9.0], "minimum_xy_margin_mm": 28.806, "filament_g": 145.08, "support_filament_g": 66.068},
+      "left_lower_face": {"rotation_xyz_degrees": [111.0, 30.5, 30.5], "minimum_xy_margin_mm": 11.935, "filament_g": 155.62, "support_filament_g": 89.357},
+      "right_lower_face": {"rotation_xyz_degrees": [29.0, 150.0, 84.0], "minimum_xy_margin_mm": 14.813, "filament_g": 110.06, "support_filament_g": 45.506},
+      "rear_bezel": {"rotation_xyz_degrees": [63.0, 122.0, 82.0], "minimum_xy_margin_mm": 15.09, "filament_g": 128.29, "support_filament_g": 31.377},
+      "bottom_keel": {"rotation_xyz_degrees": [49.0, 0.0, 35.0], "minimum_xy_margin_mm": 46.45, "filament_g": 36.64, "support_filament_g": 6.587},
+      "left_socket_outer_cap": {"rotation_xyz_degrees": [108.0, 175.0, 49.0], "minimum_xy_margin_mm": 89.011, "filament_g": 4.36, "support_filament_g": 0.182},
+      "right_socket_outer_cap": {"rotation_xyz_degrees": [108.0, 5.0, 120.0], "minimum_xy_margin_mm": 90.435, "filament_g": 4.33, "support_filament_g": 0.192}
+    }
+  },
+  "production_stl_sha256": {
+    "bottom_keel.stl": "bbdc04cfde5b719d73752d069cfc379824409a8e1f243aa9c8d2595a4b50ebe9",
+    "left_lower_face.stl": "478fa414ca6fd0deec3f79c329736885292ad90eb98c1e403a0ab1539876a272",
+    "left_upper_head.stl": "d92e40110cfe4b012b7d46c8f4c3675f19a19e0d7769aec25429d37a7c5dcada",
+    "rear_bezel.stl": "dc2caa26c9c5d9a0c133d22b869475d0dd28a2f0b4a64a42415000663cb13935",
+    "right_lower_face.stl": "e54bf130f3f907439c99e154d55ae1539b0ed9197e8115283f2418609ed56d87",
+    "right_upper_head.stl": "c7ecce887633eabd0124f1043ce9dc17033904fcd3d6b9af157375429fec8b6d",
+    "left_socket_outer_cap.stl": "6815ef61692c9572faf3117f70a0e1f708da377d6d7e206ee9a5d47fb4e5f2e6",
+    "right_socket_outer_cap.stl": "015e25bc705e0cf9b7337b74fe5e8745100ccc23bd2b05247221c8868bc31e77"
+  },
+  "remaining_complete_head_release_holds": [
+    "Physical rear-interface and received-angle coupon validation remains required.",
+    "Actual rail and ordered angle receipt dimensions remain required before metal cutting.",
+    "Lamp, steering, cable, and beam clearance remain unvalidated.",
+    "Ear, under-ear insert, eye, central glow panel, front nose-side glow panel, and side glow-panel corrections remain open under F-07 through F-24 and A-07 through A-32.",
+    "Complete shell exterior, connected topology, seam closure, and mirror-panel landing validation remain open under A-33 through A-36.",
+    "Full physical shell fit, retention, tether, proof-load, vibration, and progressive ride validation remain required."
+  ],
+  "rear_interface_digital_corrections_authorized_for_continued_integration": true,
+  "physical_coupon_authorized_for_fabrication": false,
+  "metal_fabrication_authorized": false,
+  "complete_head_fabrication_authorized": false,
+  "final_asa_print_authorized": false
+}

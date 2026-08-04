@@ -1,0 +1,135 @@
+{
+  "status": "PASS - V0.5 SHARED CENTER REVISION ACCEPTED; FULL V7 SHELL CANDIDATE HELD",
+  "date": "2026-07-29",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "metal_handoff_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2",
+  "source_shell_coordination_commit": "0077da2330c0eeae403ab8698c6c1db58bd1b22f",
+  "accepted_change": {
+    "old_bottom_shell_centers_mm": [
+      [
+        -10.0,
+        -30.0
+      ],
+      [
+        10.0,
+        -30.0
+      ]
+    ],
+    "new_bottom_shell_centers_mm": [
+      [
+        -7.4,
+        -30.0
+      ],
+      [
+        7.4,
+        -30.0
+      ]
+    ],
+    "bottom_asa_pad_mm": {
+      "width": 14.0,
+      "height": 36.0,
+      "depth": 12.0,
+      "washer_outer_diameter": 10.0,
+      "washer_bearing_edge_each_side": 2.0,
+      "tool_approach_diameter": 14.0
+    },
+    "all_other_six_hole_centers_and_metal_rail_datums_unchanged": true
+  },
+  "aluminum_validation": {
+    "status": "PASS - V0.5-M2 ORDERED-ANGLE ALUMINUM HANDOFF GENERATED",
+    "checks": {
+      "interface_revision_is_v05": true,
+      "locked_socket_opening_remains_21_mm": true,
+      "accepted_axes_unchanged": true,
+      "accepted_lower_targets_unchanged": true,
+      "only_bottom_shell_centers_use_coordinated_v05_positions": true,
+      "bottom_shell_washers_clear_backplate_edge": true,
+      "bottom_shell_tools_clear_backplate_edge": true,
+      "opposing_bottom_shell_tools_clear_each_other": true,
+      "bottom_shell_tools_clear_adapter_holes": true,
+      "rail_centerline_length_derivation_matches": true,
+      "compound_edge_lengths_match": true,
+      "upper_m4_station_derivation_matches": true,
+      "rail_stock_covers_two_rough_cuts": true,
+      "ordered_angle_stock_covers_four_segments": true,
+      "ordered_angle_dimensions_are_modeled": true,
+      "adapter_holes_meet_edge_ligament": true,
+      "shell_holes_meet_edge_ligament": true,
+      "angle_base_holes_meet_backplate_edge_ligament": true,
+      "all_cut_holes_meet_pair_ligament": true,
+      "sequential_tool_envelopes_clear_installed_neighbor_hardware": true,
+      "angle_base_holes_meet_part_ligament": true,
+      "plug_cross_holes_meet_end_ligament": true,
+      "connector_uses_fitted_solid_anti_crush_plug": true,
+      "no_backplate_or_shell_rail_pass_through": true,
+      "ordered_angle_connector_envelope_generated": true,
+      "compound_bearing_rail_and_plug_generated": true,
+      "plate_local_vertical_matches_shared_interface": true,
+      "current_v61_collision_matrix_recorded_for_shell_reintegration": true
+    },
+    "coordinated_clearances_mm": {
+      "hole_edge": 7.0819,
+      "washer_edge": 4.8319,
+      "tool_edge": 2.8319,
+      "opposing_tool_gap": 0.8,
+      "tool_to_adapter_hole": 7.3963
+    }
+  },
+  "bottom_pad_shell_validation": {
+    "dimensions_by_center": {
+      "-7.4,-30": [
+        14.0,
+        36.0,
+        12.0
+      ],
+      "7.4,-30": [
+        14.0,
+        36.0,
+        12.0
+      ]
+    },
+    "washer_and_tool_check": true,
+    "opposing_bosses_disjoint": true,
+    "seated_complete_m2_clear": true,
+    "proposal_pad_specific_sampled_motion_checks": {
+      "complete_seated_m2_metal_clear_for_both_proposed_pads": true,
+      "complete_m2_samples_clear_for_both_proposed_pads": true,
+      "sampled_common_withdrawal_offsets_mm": [
+        0.0,
+        5.0,
+        10.0,
+        20.0,
+        31.0
+      ],
+      "accepted_axes_unchanged": true,
+      "accepted_lower_targets_x_plus_minus_40_unchanged": true,
+      "socket_opening_21mm_unchanged": true,
+      "upper_m4_retention_unchanged": true
+    }
+  },
+  "full_v7_validation": {
+    "shared_v05_m2_interface_contract_passes": true,
+    "all_six_pad_bosses_meet_washer_bearing_and_contain_14mm_tool": true,
+    "all_four_structural_roots_are_broad_and_cavity_recessed": false,
+    "all_four_rear_structures_true_overlap_their_owner_shells": true,
+    "opposing_left_right_pad_bosses_are_disjoint": true,
+    "all_six_m5_hardware_and_tool_envelopes_clear": false,
+    "seated_complete_m2_metal_clears_fixed_printed_shells": true,
+    "blind_socket_rigid_pair_is_correctly_rejected": true,
+    "cap_off_complete_m2_removal_and_reverse_insertion_path_clear": false,
+    "cap_on_rails_and_upper_shells_clear": false,
+    "socket_wall_and_insert_cuts_preserve_original_shell_skin": true,
+    "all_cap_m3_tool_approaches_clear": true,
+    "all_six_shells_and_two_caps_one_closed_manifold_component": true,
+    "digital_v7_m2_rear_interface_candidate_pass": false
+  },
+  "full_v7_blockers": [
+    "root-recess check uses maximum signed cavity distance and reports 7 mm for the intended 8 mm root with 1 mm shell overlap; validator definition/sign requires shell-owner review",
+    "middle shell M5 nut-tool envelopes at X +/-20, V 0 intersect the preassembled inner lower crossbolt and head envelopes",
+    "preassembled lower crossbolts intersect the upper shells during sampled common withdrawal at 5, 10, 20, and 31 mm",
+    "both socket caps overlap their receiving upper shells in the cap-on collision audit"
+  ],
+  "scope_conclusion": "The two-hole V0.5 shared-interface change is accepted and generated. The bottom pads are not the source of the remaining full-V7 failures.",
+  "fabrication_authorized": false,
+  "final_asa_print_authorized": false
+}
