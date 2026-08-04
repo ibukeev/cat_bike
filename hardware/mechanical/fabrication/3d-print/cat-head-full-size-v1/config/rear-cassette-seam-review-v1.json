@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "visual seam review only; no STL, G-code, print, aluminum cut, or drilling release",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate2_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate2-section-layout.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "head_height_mm": 330.0,
+  "rear_cassette_cut": {
+    "rear_plane_threshold_mm": -70.0,
+    "selection_rule": "Assign complete source facets owned by the four body shells when their centroid signed distance from the shared rear plane is at least the threshold.",
+    "preserve_full_size_exterior": true,
+    "preserve_existing_facet_boundaries": true,
+    "replace_part_in_candidate_view": "rear_base"
+  },
+  "review_display": {
+    "overlay_offset_mm": 0.45,
+    "overlay_color": "#F28C28",
+    "seam_color": "#FFF04A",
+    "seam_radius_mm": 1.2,
+    "render_resolution_px": 1000
+  },
+  "review_holds": [
+    "The orange surface and yellow seam are review overlays, not production geometry.",
+    "The exact unshifted selected surface remains hidden in the Blender scene for dimensional inspection.",
+    "No connector, reinforcement, socket, ear, insert, eye, rail, backplate, or hardware geometry is changed.",
+    "No STL or G-code is exported.",
+    "The seam must receive explicit user visual approval before production shell repartitioning begins."
+  ]
+}
