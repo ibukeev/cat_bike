@@ -1,9 +1,8 @@
 # Cat Head Shell / Aluminum Rear Interface Control
 
 **Date:** 2026-07-28
-**Status:** V0.5-M2 rear-interface digital correction passed; receipt, coupon,
-complete-head correction, fabrication, final ASA-print, and riding release
-gates remain held
+**Status:** Active cross-session coordination hold; no shared-interface CAD
+regeneration or metal cutting release
 **Integration authority:** User
 
 ## 1. Purpose
@@ -14,10 +13,11 @@ workstreams. It does not replace either workstream checkpoint:
 
 - Shell defects and required validation:
   `hardware/mechanical/CAT_HEAD_MOUNT_AND_SHELL_PHYSICAL_FIT_REVIEW_2026-07-28.md`
-- Aluminum V0.5-M2 coordinated interface state:
-  `hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/V05_M2_COORDINATED_BOTTOM_M5_CHECKPOINT_2026-07-29.md`
+- Aluminum V0.2 design state:
+  `hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/V0_RESUME_CHECKPOINT.md`
 
-The aluminum V0.5-M2 files are the tracked handoff authority. V0.4-M2 remains immutable history. The shell session must consume but not edit the aluminum-owned config, generator, summary, or checkpoint. The aluminum session must not edit Gate 3,
+The current aluminum directory is an untracked active work product. The shell
+session must not edit its files. The aluminum session must not edit Gate 3,
 Gate 5, or Gate 8 shell sources while their existing partial state is under
 review.
 
@@ -36,14 +36,14 @@ reference while the physical-feedback pass remains open.
 | Area | Primary workstream | Coordination requirement |
 |---|---|---|
 | Bike boss plate, side webs, compact adapter, metal tether | Aluminum mount | May not move the head rear plane without shared approval. |
-| Aluminum head backplate and lower angle connectors | Aluminum mount | M2 owns the retained plate centers, angle bases, uprights, cheeks, plugs, taper pads, compound rail cuts, and lower M5 stack; the shell must consume their exact envelope. |
+| Aluminum head backplate and lower rail shoes | Aluminum mount | Backplate perimeter, rail-shoe, pass-through, and service details are shared and remain open. |
 | Exterior head shape, shell partitioning, reinforcement, mirror-panel seats | Printed shell | Must preserve the coordinated rear plane and rail system unless a shared change is approved. |
 | Upper/front printed rail sockets and M4 retention paths | Shared | Must be generated from the same rail-axis and socket-roll revision as the aluminum backplate and rails. |
 | Rear ASA frame, rear shell facets, removable rear cassette | Printed shell | Proposed architecture only; attachment and load transfer are shared. |
 | Backplate perimeter fasteners, rail pass-throughs, wiring, drainage, tool access | Shared | Neither session may finalize independently. |
 | Final assembly and service sequence | Shared | Must be validated with complete shell, aluminum, rail, fastener, and tool envelopes. |
 
-## 4. Retained shared geometry baseline
+## 4. Provisional shared baseline
 
 The following values are the current V0.2 coordination baseline. They are
 frozen against unilateral changes but remain review-only and are not released
@@ -102,92 +102,25 @@ movement is still needed after full collision review, optimize rail X/V
 position, adapter holes, backplate outline, lower-shoe envelope, and upper
 socket axes as one shared interface change.
 
-## 5. V0.4-M2 historical baseline and open shared interfaces
+## 5. Explicitly open shared interfaces
 
-The V0.4-M2 baseline below remains immutable history. Its bottom shell M5 pair is superseded by the coordinated V0.5 delta in Section 5A; do not fabricate from V0.4.
+The following items are not defined and must remain open in both sessions:
 
+1. aluminum-backplate perimeter hole count, positions, and edge distances;
+2. lower rail-shoe geometry, solid plugs, anti-crush load path, and fasteners;
+3. rail pass-through geometry through the printed rear structure;
+4. rear ASA structure to aluminum-backplate attachment;
+5. rear cassette seam location, overlap, alignment, sealing, and removal path;
+6. cassette fastener, washer, nut, hand, and tool envelopes;
+7. drainage and wiring routes through the rear assembly;
+8. separation of structural load paths from cosmetic rear shell facets;
+9. complete installation and removal sequence;
+10. actual headlight housing, beam, steering, and cable clearance; and
+11. physical fit, drilling, and retention of the actual 19.05 mm rails in the
+    revised upper/front printed sockets.
 
-The user ordered Randall Manufacturing `1.5 x 1.5 x 0.125 inch` 6063-T6
-equal angle and authorized the aluminum workstream to incorporate it without
-changing the accepted rail axes, X `+/-40` targets, 21 mm sockets, backplate
-outline, adapter holes, or six-plus-six M5 plate-hole centers. The M2 authority
-is `hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v04.json`
-and the M2 checkpoint dated 2026-07-29. No plate is ordered or cut. The angle
-is ordered but not yet received or measured.
-
-Historical V0.4 details, superseded only where Section 5A says so and never released for fabrication:
-
-1. six backplate-to-shell M5 centers: local X/V `(-10,30)`, `(10,30)`,
-   `(-20,0)`, `(20,0)`, `(-10,-30)`, and `(10,-30)` mm;
-2. six angle-base M5 centers, three per side, using right centers `(36,-30)`,
-   `(47.4,-30)`, `(38,-9)` mm and mirrored left X;
-3. one 45 mm primary angle per rail with full 38.1 mm upright and 29 mm
-   trimmed base, plus one `45 x 25 x 3.175 mm` outer cheek per rail;
-4. a matched 14.7 mm nominal solid plug, two hand-fit aluminum taper pads, and
-   two M5 x 40 lower crossbolts per rail at 14 and 29 mm from the compound
-   bearing centerline;
-5. rail centerline length `152.476123 +/-0.25 mm`, 160 mm rough cuts,
-   compound edge range `147.0677..157.8845 mm`, and upper M4 station
-   133.776123 mm from the lower bearing datum; and
-6. no backplate rail cutout and no external shell pass-through; service remains
-   through the open rear aperture.
-
-The M1 monolithic CNC shoes and 149.672 mm square-ended rails are superseded.
-The generator plate-local V basis was also corrected to match the shared
-interface; the earlier reversed M1 visualization must not be used for shell
-integration.
-
-Still open and held:
-
-1. receipt inspection of the ordered angle's leg widths, thickness, inside
-   radius, straightness, and alloy/temper marking;
-2. actual rail inside dimensions/corner radii and fitted-plug machining;
-3. one physical rear-interface/angle coupon proving flush countersinks,
-   compound bearing contact, taper pads, M5 access, clamp behavior, and repeatable
-   assembly;
-4. shell/rear-cassette and six ASA pad integration around the exact M2 metal
-   and tool envelope, followed by complete A-39 validation;
-5. rear cassette seam, overlap, sealing, removal, wiring, and drainage;
-6. actual headlight housing, beam, steering, and cable clearance; and
-7. tether, proof-load, vibration, and progressive ride validation.
-
-The regenerated M2 collision matrix records no intersection between the nine
-checked metal parts and the current V6.1 fixed shells, bezel, or bottom keel.
-This is a useful baseline, not a shell release: any new shell revision must
-preserve or improve that clearance and rerun the complete assembly/service
-matrix.
-
-### 5A. V0.5 coordinated bottom-center delta
-
-Shell coordination commit `0077da2330c0eeae403ab8698c6c1db58bd1b22f` proved that the V0.4 bottom shell M5 centers at X `+/-10`, V `-30` cannot carry a safe printed boss through the required preassembled-M2 motion: the largest clear circular boss was 11 mm, leaving only 0.5 mm outside the 10 mm washer. No plate had been ordered or cut, so the shared change was accepted.
-
-V0.5 changes only the bottom pair to X `+/-7.4`, V `-30` and specifies `14 x 36 x 12 mm` bottom ASA pads. The top and middle shell centers, all six angle-base holes, plate outline, adapter holes, rail axes, X `+/-40` targets, 21 mm sockets, M4 retention, rail lengths, and compound datums are unchanged. The authoritative shared file is `hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json`.
-
-The V0.5 aluminum generator passes every check. Recorded margins are 7.0819 mm hole-to-plate edge, 4.8319 mm washer-to-edge, 2.8319 mm 14 mm tool-to-edge, 0.8 mm between opposing 14 mm tools, and 7.3963 mm from a bottom tool envelope to the nearest adapter-hole edge. The coordinated bottom pads also pass washer bearing, tool containment, opposing-pad, seated-metal, and pad-specific sampled-motion checks.
-
-The full V7 shell candidate is not released. Its coordinated rerun still finds non-bottom blockers: middle-M5 nut-tool interference with lower crossbolts, preassembled lower-crossbolt sweep into the upper shells, socket-cap overlap with the receiver shells, and a root-recess validator sign/definition defect. These are recorded in `hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-v7-v05-coordinated-interface-validation.json`.
-
-### 5B. V0.5 shell-consumer correction
-
-The Gate 9 V7 shell consumer has now closed all four non-bottom failures from
-the historical coordinated rerun without changing aluminum-owned CAD or any
-locked V0.5 datum. The correction uses pre-installed shell-side captive M5
-nylocs, exact 31 mm lower-crossbolt service tunnels cut only through new
-internal truss material, 0.3 mm-relieved removable socket-cap receivers, and a
-root validator that separately measures controlled shell overlap and cavity
-reach.
-
-All 15 rear-interface geometry checks pass. The complete M2 module clears 14
-sampled socket-withdrawal positions and four rear-clearance positions, and
-insertion is the exact reverse. All eight modified printed parts also have real
-Prusa MK4 Generic ASA support/brim slices with at least 10 mm XY margin; the
-minimum is 11.935 mm on `left_lower_face`.
-
-This is a digital rear-interface pass, not a complete-head or fabrication
-release. Physical angle/rail receipt, a rear-interface coupon, the remaining
-F-07 through F-29 shell/insert/eye/panel work, lamp and steering clearance, and
-physical safety validation remain held. The authoritative closure record is
-`hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/review/gate9-v7-v05-shell-correction-validation.json`.
+Existing review-only DXF, SVG, STL, BLEND, GLB, and validation outputs do not
+close these items.
 
 ## 6. Rear cassette proposal C-001
 
@@ -239,8 +172,8 @@ No rear-interface metal or replacement structural shell is released until:
    seated, fastened, and removal states;
 4. the rear cassette or retained partition passes the complete build-plate test
    in A-37;
-5. all backplate, angle-connector, cassette, washer, nut, and tool envelopes are validated;
-6. a physical rear-interface and angle-connector coupon passes;
+5. all backplate, shoe, cassette, washer, nut, and tool envelopes are validated;
+6. a physical rear-interface and rail-shoe coupon passes;
 7. actual headlight and steering clearance is validated;
 8. an independent metal safety tether is specified; and
 9. the stationary proof-load, vibration, and progressive ride-test plan is
@@ -257,26 +190,21 @@ No rear-interface metal or replacement structural shell is released until:
 | C-004 | 2026-07-28 | Rebuild the upper/front printed sockets to the coordinated V0.2 compound rail axes and socket roll; do not reuse pre-correction upper-shell G-code. | Required shared correction; regeneration held until feedback closes | Shell and aluminum |
 | C-006 | 2026-07-28 | Retain the overall V0.2 aluminum architecture and redesign the conflicting printed ASA rear base/shell around its complete envelope. | Concept accepted by user; interface details and fabrication remain open | Shell and aluminum |
 | C-007 | 2026-07-28 | Keep lower rail targets at X `±40` for the first ASA rear redesign; evaluate inward movement only if the complete collision review still requires it, including adapter-hole, backplate-edge, shoe/tool, upper-socket, and shell impacts. | Accepted baseline; conditional study deferred | Shell and aluminum |
-| C-008 | 2026-07-29 | Authorize the aluminum workstream to finalize lower shoes, anti-crush paths, rail cut/drill stations, and backplate perimeter/shoe holes from V0.4 without changing the 21 mm socket geometry. | Authorized and completed as V0.4-M1 | Aluminum, then shell integration |
-| C-009 | 2026-07-29 | Adopt the V0.4-M1 six-plus-six plate pattern and CNC-shoe handoff. | Superseded by C-010 before metal fabrication | Shell and aluminum |
-| C-010 | 2026-07-29 | Use the ordered Randall 38.1 x 38.1 x 3.175 mm 6063-T6 angle for hand-fabricated M2 lower connectors; retain the six-plus-six plate centers, frozen axes/targets/sockets, add compound-cut 152.476123 mm rails, solid plugs, taper pads, outer cheeks, and matched M5 x 40 crossbolts. | M2 digital preflight passed; angle ordered but not received; no plate ordered or cut; coupon and shell A-39 pending | Aluminum, then shell integration |
-| C-011 | 2026-07-29 | Move only the bottom shell M5 pair from X `+/-10` to X `+/-7.4` at V `-30` and use `14 x 36 x 12 mm` bottom ASA pads. | Accepted and generated as V0.5-M2; aluminum PASS; bottom pads PASS; full V7 shell candidate held on non-bottom issues; no fabrication or ASA-print release | Shared |
-| C-012 | 2026-07-29 | Resolve the four non-bottom V7 shell-consumer failures with pre-installed captive M5 nylocs, service tunnels through only new truss material, relieved removable socket-cap receivers, and corrected root-overlap semantics. | Digital rear-interface PASS; real Prusa ASA feasibility PASS; physical coupon, complete-head correction, fabrication, and final ASA release held | Printed shell consuming locked V0.5 |
 
 ## 10. Next synchronization action
 
-No backplate is ordered or cut. The rectangular 19 x 19 x 2 mm rail stock is
-purchased. The Randall 6063-T6 equal angle is ordered but not received; its
-actual section remains a receipt gate.
+The aluminum session is currently model-review only; no physical backplate is
+ordered or cut. It must continue to report any transition to quoted, ordered,
+cut, bent, drilled, or received before that transition occurs. In particular,
+the 3 mm head backplate, its trapezoid perimeter, the four adapter holes, and
+the rear-plane pose remain review geometry. The shell session must compare its
+rear partition against that exact baseline before proposing any change to it.
 
-The shell workstream now has a digital PASS for the V0.5-M2 rear interface and
-its complete modeled A-39 insertion, seated, fastened, tool, and removal phases.
-Its next action is to preserve that locked interface while correcting the
-remaining complete-head physical-fit findings, then validate an
-angle/rail/rear-interface coupon with the received hardware. The final ASA head
-print remains prohibited until those broader gates pass.
+Purchased-stock record: the user confirmed that only rectangular aluminum rail
+stock has been purchased. Its actual outside dimensions, wall thickness,
+alloy/temper if known, and available length remain to be physically verified.
+No plate or plate hole pattern is physically committed.
 
-When the angle arrives, the aluminum workstream records the received dimensions
-before cutting even a coupon. Final plate or bracket cutting remains held until
-the receipt inspection, shell integration review, and physical angle-interface
-coupon plan are accepted.
+Once both states are recorded, the user can either freeze the current V0.2
+interface for the rear-cassette study or authorize a coordinated interface
+revision.
