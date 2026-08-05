@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build a review-only Gate 8 rear-cassette seam overlay.
+"""Build a lower-face-only Gate 8 rear-cassette ownership review.
 
 This script opens the unchanged Gate 8 review blend, removes review-only
-reference objects, hides the old rear_base in the candidate view, and adds only
-an orange rear-cassette ownership overlay plus a yellow proposed seam. It does
+reference objects, keeps both upper-head pieces unchanged, and shows only rear
+facets from the lower faces plus an unchanged orange copy of rear_base. It does
 not alter any Gate 8 production mesh and exports no STL or G-code.
 """
 
@@ -31,11 +31,9 @@ import generate_gate2_section_layout as gate2  # noqa: E402
 
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
-DEFAULT_CONFIG = PACKAGE_ROOT / "config/rear-cassette-seam-review-v1.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/rear-cassette-seam-review-v1"
-BODY_SECTIONS = {
-    "right_upper_head",
-    "left_upper_head",
+DEFAULT_CONFIG = PACKAGE_ROOT / "config/rear-cassette-seam-review-v2.json"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/rear-cassette-seam-review-v2"
+ALLOWED_CASSETTE_SOURCE_SECTIONS = {
     "right_lower_face",
     "left_lower_face",
 }
@@ -139,6 +137,32 @@ def clean_gate8_scene() -> tuple[list[str], dict[str, tuple[int, int]]]:
     return sorted(removed), mesh_stats
 
 
+def create_rear_base_overlay(
+    material: bpy.types.Material,
+    collection: bpy.types.Collection,
+) -> bpy.types.Object:
+    source = bpy.data.objects["rear_base"]
+    overlay = source.copy()
+    overlay.data = source.data.copy()
+    overlay.name = "REVIEW_ONLY__existing_rear_base_cassette_overlay"
+    overlay.data.name = f"{overlay.name}_mesh"
+    overlay.hide_viewport = False
+    overlay.hide_render = False
+    collection.objects.link(overlay)
+    overlay.data.materials.clear()
+    overlay.data.materials.append(material)
+    if "geometry_role" in overlay:
+        del overlay["geometry_role"]
+    if "candidate_view_status" in overlay:
+        del overlay["candidate_view_status"]
+    overlay["review_only"] = True
+    overlay["not_printable"] = True
+    overlay["meaning"] = (
+        "unchanged Gate 8 rear_base included in proposed cassette ownership"
+    )
+    return overlay
+
+
 def source_selection(
     config: dict[str, Any],
     interface: dict[str, Any],
@@ -183,9 +207,16 @@ def source_selection(
     threshold = float(
         config["rear_cassette_cut"]["rear_plane_threshold_mm"]
     )
+    source_sections = set(
+        config["rear_cassette_cut"]["source_sections"]
+    )
+    if source_sections != ALLOWED_CASSETTE_SOURCE_SECTIONS:
+        raise ValueError(
+            "V2 permits cassette facet ownership only from both lower-face sections"
+        )
     selected: set[int] = set()
     for index, (face, assignment) in enumerate(zip(model.faces, assignments)):
-        if assignment not in BODY_SECTIONS:
+        if assignment not in source_sections:
             continue
         centroid = sum(
             (Vector(points[vertex]) for vertex in face.indices),
@@ -208,7 +239,7 @@ def source_selection(
     for edge, adjacent in edge_faces.items():
         has_selected = any(index in selected for index in adjacent)
         has_retained_body = any(
-            index not in selected and assignments[index] in BODY_SECTIONS
+            index not in selected and assignments[index] in source_sections
             for index in adjacent
         )
         if has_selected and has_retained_body:
@@ -319,7 +350,7 @@ def configure_review_scene(
     resolution_px: int,
 ) -> tuple[bpy.types.Object, list[bpy.types.Object]]:
     scene = bpy.context.scene
-    scene.name = "Rear_Cassette_Seam_Review_V1"
+    scene.name = "Rear_Cassette_Seam_Review_V2"
     scene.render.engine = "BLENDER_WORKBENCH"
     shading = scene.display.shading
     shading.light = "STUDIO"
@@ -384,6 +415,41 @@ def render_views(camera: bpy.types.Object, output_dir: Path) -> list[str]:
         paths.append(str(path.relative_to(REPO_ROOT)))
     camera.location = Vector((0.0, 650.0, 280.0))
     point_at(camera, target)
+    return paths
+
+
+def render_isolated_views(
+    camera: bpy.types.Object,
+    output_dir: Path,
+    cassette_review_objects: list[bpy.types.Object],
+) -> list[str]:
+    scene = bpy.context.scene
+    saved_visibility = {
+        name: bpy.data.objects[name].hide_render
+        for name in PRODUCTION_PARTS
+    }
+    for name in PRODUCTION_PARTS:
+        bpy.data.objects[name].hide_render = True
+    for obj in cassette_review_objects:
+        obj.hide_render = False
+
+    target = Vector((0.0, 245.0, 145.0))
+    views = (
+        ("isolated-rear", Vector((0.0, 650.0, 260.0))),
+        ("isolated-rear-left", Vector((-430.0, 560.0, 300.0))),
+        ("isolated-rear-right", Vector((430.0, 560.0, 300.0))),
+    )
+    paths: list[str] = []
+    for label, location in views:
+        camera.location = location
+        point_at(camera, target)
+        path = output_dir / "renders" / f"rear-cassette-seam-{label}.png"
+        scene.render.filepath = str(path)
+        bpy.ops.render.render(write_still=True)
+        paths.append(str(path.relative_to(REPO_ROOT)))
+
+    for name, hidden in saved_visibility.items():
+        bpy.data.objects[name].hide_render = hidden
     return paths
 
 
@@ -468,12 +534,20 @@ def main() -> None:
         seam_material,
         review_collection,
     )
+    rear_base_overlay = create_rear_base_overlay(
+        overlay_material, review_collection
+    )
 
     camera, _lights = configure_review_scene(
         output_dir,
         int(config["review_display"]["render_resolution_px"]),
     )
     render_paths = render_views(camera, output_dir)
+    render_paths.extend(
+        render_isolated_views(
+            camera, output_dir, [overlay, seam, rear_base_overlay]
+        )
+    )
 
     scene = bpy.context.scene
     scene["review_status"] = config["status"]
@@ -482,20 +556,23 @@ def main() -> None:
         config["rear_cassette_cut"]["rear_plane_threshold_mm"]
     )
     scene["instructions"] = (
-        "Orange is proposed cassette ownership; yellow is proposed seam; "
-        "rear_base is hidden only for the candidate view."
+        "Orange is proposed cassette ownership from lower-face facets plus "
+        "the existing rear_base; yellow is the lower-face cut seam; "
+        "both upper-head pieces remain unchanged."
     )
 
-    blend_path = output_dir / "rear-cassette-seam-review-v1.blend"
+    blend_path = output_dir / "rear-cassette-seam-review-v2.blend"
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
 
     bpy.ops.object.select_all(action="DESELECT")
-    export_names = (PRODUCTION_PARTS - {"rear_base"}) | {overlay.name, seam.name}
+    export_names = (PRODUCTION_PARTS - {"rear_base"}) | {
+        overlay.name, seam.name, rear_base_overlay.name
+    }
     for name in export_names:
         obj = bpy.data.objects.get(name)
         if obj is not None:
             obj.select_set(True)
-    glb_path = output_dir / "rear-cassette-seam-review-v1.glb"
+    glb_path = output_dir / "rear-cassette-seam-review-v2.glb"
     bpy.ops.export_scene.gltf(
         filepath=str(glb_path),
         export_format="GLB",
@@ -513,9 +590,10 @@ def main() -> None:
             for index in selected
         }
     )
+    selected_sections = sorted({assignments[index] for index in selected})
     exact_bounds = gate1.bounds(list(exact_points.values()))
     report = {
-        "schema_version": 1,
+        "schema_version": 2,
         "status": config["status"],
         "source_gate8_blend": str(source_blend.relative_to(REPO_ROOT)),
         "source_gate8_blend_sha256": sha256(source_blend),
@@ -528,6 +606,20 @@ def main() -> None:
         "rear_plane_threshold_mm": float(
             config["rear_cassette_cut"]["rear_plane_threshold_mm"]
         ),
+        "configured_cassette_source_sections": sorted(
+            config["rear_cassette_cut"]["source_sections"]
+        ),
+        "actual_selected_source_sections": selected_sections,
+        "upper_head_facet_ownership_unchanged": not any(
+            section in {"left_upper_head", "right_upper_head"}
+            for section in selected_sections
+        ),
+        "existing_rear_base_included_in_cassette_ownership": True,
+        "ownership_group_is_single_connected_body": False,
+        "connection_status": (
+            "rear_base and selected lower-face surfaces remain separate review "
+            "objects; connection and aluminum reconciliation are deferred"
+        ),
         "selected_source_face_count": len(selected),
         "selected_source_panel_ids": selected_panels,
         "proposed_seam_edge_count": len(seam_edges),
@@ -537,9 +629,14 @@ def main() -> None:
         "production_parts_present": sorted(PRODUCTION_PARTS),
         "production_mesh_stats_unchanged": mesh_stats_before == mesh_stats_after,
         "production_geometry_modified": False,
-        "rear_base_candidate_view": "present but hidden",
+        "rear_base_candidate_view": (
+            "original present but hidden; unchanged orange duplicate included "
+            "in cassette ownership review"
+        ),
         "removed_gate8_review_references": removed_references,
-        "review_objects": [exact_surface.name, overlay.name, seam.name],
+        "review_objects": [
+            exact_surface.name, overlay.name, seam.name, rear_base_overlay.name
+        ],
         "no_stl_or_gcode_exported": True,
         "generated_files": {
             "blend": str(blend_path.relative_to(REPO_ROOT)),
@@ -548,7 +645,7 @@ def main() -> None:
         },
         "review_holds": config["review_holds"],
     }
-    report_path = output_dir / "rear-cassette-seam-review-v1-validation.json"
+    report_path = output_dir / "rear-cassette-seam-review-v2-validation.json"
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(
         {

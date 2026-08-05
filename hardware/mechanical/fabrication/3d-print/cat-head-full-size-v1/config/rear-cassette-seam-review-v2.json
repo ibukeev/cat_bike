@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "status": "visual seam review only; lower-face facets plus rear_base ownership; no STL, G-code, print, aluminum cut, or drilling release",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate2_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate2-section-layout.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "head_height_mm": 330.0,
+  "rear_cassette_cut": {
+    "source_sections": [
+      "left_lower_face",
+      "right_lower_face"
+    ],
+    "rear_plane_threshold_mm": -70.0,
+    "selection_rule": "Assign complete existing source facets owned by the two lower-face shells when their centroid signed distance from the shared rear plane is at least the threshold.",
+    "include_existing_rear_base_in_cassette": true,
+    "preserve_upper_heads_unchanged": true,
+    "preserve_ears_unchanged": true,
+    "preserve_full_size_exterior": true,
+    "preserve_existing_facet_boundaries": true
+  },
+  "aluminum_reconciliation": {
+    "status": "explicitly deferred until cassette ownership seam is visually approved",
+    "preserve_active_metal_workstream": true,
+    "future_requirement": "Update the rear cassette and rear_base-derived structure around the complete V0.5 aluminum backplate, rails, shoes, hardware, tool, wiring, insertion, and removal envelopes without moving metal datums independently."
+  },
+  "review_display": {
+    "overlay_offset_mm": 0.45,
+    "overlay_color": "#F28C28",
+    "seam_color": "#FFF04A",
+    "seam_radius_mm": 1.2,
+    "render_resolution_px": 1000
+  },
+  "review_holds": [
+    "The orange lower-face surface, orange rear_base copy, and yellow seam are review overlays, not production geometry.",
+    "The exact unshifted selected lower-face surface remains hidden in the Blender scene for dimensional inspection.",
+    "No upper-head, ear, connector, reinforcement, socket, insert, eye, rail, backplate, hardware, seal, drain, or wiring geometry is changed.",
+    "The existing rear_base is included unchanged for ownership review only and is not yet reconciled with aluminum.",
+    "No STL or G-code is exported.",
+    "The lower-face ownership seam must receive explicit user visual approval before production shell repartitioning or aluminum reconciliation begins."
+  ]
+}
