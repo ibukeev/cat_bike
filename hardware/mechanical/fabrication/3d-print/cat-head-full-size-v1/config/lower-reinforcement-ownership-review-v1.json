@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "visual ownership review only; inventory unchanged Gate 8 lower-head reinforcement against the approved V5 exterior repartition; no cutting, redesign, STL, G-code, print, or aluminum release",
+  "source_v5_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/rear-cassette-lossless-repartition-review-v5/rear-cassette-lossless-repartition-review-v5.blend",
+  "source_v5_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/rear-cassette-lossless-repartition-review-v5.json",
+  "source_gate8_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate8-full-size-structural-iteration.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "target_sections": [
+    "left_lower_face",
+    "right_lower_face"
+  ],
+  "reinforcement_materials": [
+    "Gate5_internal_flange_tabs",
+    "Gate5_internal_panel_ribs",
+    "Gate6_eye_head_mount_flange",
+    "Gate8_continuous_inter_shell_edge_rails"
+  ],
+  "ownership_contact": {
+    "maximum_surface_distance_mm": 2.25,
+    "retained_cassette_tie_tolerance_mm": 0.25,
+    "rule": "Classify each whole connected reinforcement component from its actual contact vertices against the approved retained and cassette source facets. Contacts only retained => retained; only cassette => cassette; both => crosses seam; neither => unclassified. Never split a component in this review."
+  },
+  "standalone_component_minimum_reinforcement_area_fraction": 0.5,
+  "review_display": {
+    "retained_reinforcement_color": "#27C2E8",
+    "cassette_reinforcement_color": "#F28C28",
+    "crossing_reinforcement_color": "#FF304F",
+    "unclassified_reinforcement_color": "#D34CFF",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "This review duplicates existing Gate 8 reinforcement components for visibility and classification; it does not edit the source lower-face meshes.",
+    "Every reinforcement component remains whole. A component touching both approved ownership regions is red and requires a later explicit redesign.",
+    "Components with less than 50 percent reinforcement-tagged surface area are preserved in the separate INTEGRATED_SHELL_PLUS_REINFORCEMENT collection and hidden by default because they include substantial shell geometry.",
+    "Magenta means the component has no verified exterior contact under the configured geometric rule; it is not silently assigned.",
+    "The approved V5 exterior seam and all exterior source facets remain unchanged.",
+    "Upper head, ears, eyes, connectors, glow inserts, rear_base, and aluminum geometry remain unchanged.",
+    "No reinforcement is added, cut, shortened, deleted, unioned, or transferred in this review.",
+    "No STL or G-code is exported, and nothing is released for printing or aluminum fabrication."
+  ]
+}
