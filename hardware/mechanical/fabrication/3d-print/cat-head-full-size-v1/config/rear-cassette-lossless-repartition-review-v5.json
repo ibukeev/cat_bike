@@ -1,0 +1,56 @@
+{
+  "schema_version": 5,
+  "status": "visual review only; lossless lower-face exterior repartition with accepted Gate 8 opaque muzzle panels restored into retained lower shells and enlarged rear-cassette ownership; no STL, G-code, print, reinforcement redesign, or aluminum release",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate8_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate8-full-size-structural-iteration.json",
+  "source_gate2_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate2-section-layout.json",
+  "source_gate3_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate3-structural-shells.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "head_height_mm": 330.0,
+  "repartition": {
+    "source_sections": [
+      "left_lower_face",
+      "right_lower_face"
+    ],
+    "rear_plane_threshold_mm": -70.0,
+    "selection_rule": "Move exactly the ten V2-approved complete lower-face source facets to rear-cassette ownership; retain every other source facet and both Gate 3 lower closure faces with the lower shells.",
+    "shell_wall_thickness_mm": 1.8,
+    "solidify_offset": -1.0,
+    "use_even_offset": false,
+    "preserve_upper_heads_unchanged": true,
+    "preserve_ears_unchanged": true,
+    "preserve_rear_base_unchanged": true,
+    "preserve_active_aluminum_workstream": true,
+    "require_zero_deleted_source_facets": true,
+    "require_zero_duplicated_source_facets": true
+  },
+  "restored_gate8_lower_opaque_panels": {
+    "right_lower_face": [
+      "QUAD001",
+      "TRI003"
+    ],
+    "left_lower_face": [
+      "QUAD022",
+      "TRI042"
+    ]
+  },
+  "review_display": {
+    "left_retained_color": "#54A8D8",
+    "right_retained_color": "#5FC3A5",
+    "cassette_color": "#F28C28",
+    "seam_color": "#FFF04A",
+    "seam_radius_mm": 1.0,
+    "render_resolution_px": 1000
+  },
+  "review_holds": [
+    "This review changes exterior facet ownership only; it does not subtract geometry from the assembled head.",
+    "The retained lower shells and moved cassette shells are regenerated from complementary source-facet sets, so their assembled exterior is exactly the original exterior.",
+    "The accepted Gate 8 opaque muzzle panels QUAD001/TRI003 and QUAD022/TRI042 remain owned by the right and left retained lower shells respectively.",
+    "The unchanged Gate 8 lower-face objects, including all internal reinforcement, remain hidden in the Blender file as source reference and are not modified.",
+    "Reinforcement ownership is intentionally not guessed in V5; it will be assigned whole-component-by-whole-component after this exterior repartition is approved.",
+    "The moved rear shells and unchanged rear_base are an ownership group, not yet one connected cassette body.",
+    "No upper-head, ear, eye, connector, reinforcement, socket, insert, rail, backplate, hardware, seal, drain, or wiring geometry is changed.",
+    "No STL or G-code is exported, and nothing in V5 is released for printing or aluminum fabrication."
+  ]
+}
