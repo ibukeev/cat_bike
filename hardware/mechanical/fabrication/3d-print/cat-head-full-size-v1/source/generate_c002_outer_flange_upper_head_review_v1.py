@@ -546,7 +546,13 @@ def main() -> None:
         bpy.data.objects[name]
         for name in source_visible_names
         if name in bpy.data.objects and name not in rejected_names
-    } | set(candidate_objects)
+    } | closeup_visible
+    required_eye_buckets = {
+        require_object(config["sides"]["left"]["eye_bucket"]),
+        require_object(config["sides"]["right"]["eye_bucket"]),
+    }
+    if not required_eye_buckets.issubset(whole_head_visible):
+        raise ValueError("Saved whole-head view must include both eye buckets")
     for obj in bpy.data.objects:
         if obj.type not in {"CAMERA", "LIGHT"}:
             obj.hide_viewport = obj not in closeup_visible
@@ -661,6 +667,7 @@ def main() -> None:
     scene["source_mesh_geometry_unchanged"] = True
     scene["production_shell_boolean_performed"] = False
     blend_path = output_dir / "c002-outer-flange-upper-head-review-v1.blend"
+    scene["saved_whole_head_view_includes_both_eye_buckets"] = True
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
 
     report = {
@@ -672,6 +679,7 @@ def main() -> None:
         "inherited_gate6_hole_center_mirror_delta_mm": round(mirrored_hole_error, 6),
         "exact_source_side_hole_positions_preserved": True,
         "rejected_c002_objects_removed": sorted(rejected_names),
+        "saved_whole_head_view_includes_both_eye_buckets": True,
         "unrelated_c010_c012_used_as_mount_anchors": False,
         "replacement_mount_geometry_count": len(candidate_objects),
         "all_candidates_closed_and_manifold": all(

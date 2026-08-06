@@ -56,6 +56,7 @@ print release has been made.
 - All 141 unrelated source mesh fingerprints remain unchanged.
 - C010/C012 are context only and are not used as mount anchors.
 - Shared aluminum interface remains `CAT-HEAD-SHELL-ALUMINUM-V0.5`.
+- Saved whole-head viewport and renders explicitly include both eye buckets.
 - C006 and all aluminum plate/rail geometry remain unchanged.
 - No production-shell Boolean, STL, or G-code was generated.
 
