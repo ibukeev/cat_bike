@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "status": "isolated ear-root restored-coverage candidate for visual review; exact Gate 8 ear and upper-head meshes retained; two complete replacement glow inserts generated with mirrored localized saddle relief; no STL, G-code, print release, eye change, rear-cassette change, C006 change, or aluminum change",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate6_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/_stage6-eyes/gate6-eye-modules-review.blend",
+  "stage5_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/_stage5-structural/gate5-validation-report.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "sides": {
+    "left": {
+      "ear": "left_ear",
+      "upper_head": "left_upper_head",
+      "rejected_insert": "glow_insert_left_ear_root_cluster",
+      "candidate_group": "left_ear_root_cluster",
+      "candidate_name": "EAR2_CANDIDATE__left_ear_root_insert",
+      "joint_pair": "left_ear__left_upper_head"
+    },
+    "right": {
+      "ear": "right_ear",
+      "upper_head": "right_upper_head",
+      "rejected_insert": "glow_insert_right_ear_root_cluster",
+      "candidate_group": "right_ear_root_cluster",
+      "candidate_name": "EAR2_CANDIDATE__right_ear_root_insert",
+      "joint_pair": "right_ear__right_upper_head"
+    }
+  },
+  "rejected_gate8_relief": {
+    "connector_clearance_mm": 1.2,
+    "connector_corner_relief_depth_mm": 38.0,
+    "connector_side_tip_setback_mm": 18.0
+  },
+  "candidate_relief": {
+    "connector_clearance_mm": 1.2,
+    "connector_corner_relief_depth_mm": 13.0,
+    "connector_side_tip_setback_mm": 9.0,
+    "selection_reason": "Smallest coarse/fine sweep candidate with useful tolerance margin on both mirrored saddles; 12/10 mm passed by only 0.013 mm and was rejected as too fragile."
+  },
+  "display": {
+    "ear_color": "#45D7C7",
+    "upper_head_color": "#707983",
+    "candidate_insert_color": "#F4C542",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "Review only the yellow replacement insert coverage beneath both cyan ears and around the unchanged internal four-M3 saddles.",
+    "The exact Gate 8 left/right ears and upper-head owners are geometry-fingerprint protected and remain unchanged.",
+    "Each replacement insert keeps the existing hidden hook and M2.5 retainer interface while reducing the rejected Gate 8 relief from 38/18 mm to 13/9 mm.",
+    "The small coplanar QUAD source triangle remains omitted because it is mathematically contained inside the retained larger triangle; adding it would create overlapping non-manifold surface geometry and would not restore coverage.",
+    "No round sticks, alignment dowels, exterior blocks, or exterior ear fastener holes are introduced.",
+    "Accepted eye mounts, lower-face/rear-cassette ownership, requested reinforcement direction, C006, and aluminum V0.5 remain out of scope and unchanged.",
+    "No STL, G-code, fabrication output, or print release is produced from this review candidate."
+  ]
+}

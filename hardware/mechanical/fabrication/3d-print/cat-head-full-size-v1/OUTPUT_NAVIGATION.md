@@ -6,9 +6,9 @@ current review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/ear-root-interface-constraints-review-v1.blend`
+  `output/00-current-review/ear-root-restored-coverage-review-v2.blend`
 - Current validation:
-  `output/00-current-review/ear-root-interface-constraints-review-v1-validation.json`
+  `output/00-current-review/ear-root-restored-coverage-review-v2-validation.json`
 - Current renders: `output/00-current-review/renders/`
 
 ## Folder map
@@ -46,10 +46,12 @@ baseline: four broad-base flange candidates per side, covering outer head,
 outer eye, lower head, and lower eye. It remains unintegrated review geometry,
 not a print release.
 
-The current ear-root constraints review changes no geometry. It isolates the
-real four-M3 ear saddles and the rejected large-relief translucent inserts,
-while proving the round stick-like objects from earlier bad whole-head reviews
-are not production geometry.
+The current ear-root V2 candidate keeps the exact Gate 8 ears, upper heads, and
+integrated four-M3 saddles unchanged. It replaces only the two review insert
+meshes, reducing the rejected `38/18 mm` saddle relief to a mirrored
+`13/9 mm` localized notch. Both candidates are single connected manifold
+meshes and clear their saddle by at least `1.5238 mm` against a required
+`1.2 mm`. This is a visual-review candidate, not a print release.
 
 C006 and all aluminum plate/rail geometry remain deferred and unchanged.
 

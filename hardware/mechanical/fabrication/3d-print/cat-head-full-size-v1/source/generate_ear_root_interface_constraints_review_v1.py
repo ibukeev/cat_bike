@@ -25,7 +25,10 @@ import generate_rear_cassette_lossless_repartition_review_v5 as v5  # noqa: E402
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
 DEFAULT_CONFIG = PACKAGE_ROOT / "config/ear-root-interface-constraints-review-v1.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/00-current-review"
+DEFAULT_OUTPUT = (
+    PACKAGE_ROOT
+    / "output/60-ear-root-reviews/ear-root-interface-constraints-review-v1"
+)
 
 
 def parse_args() -> argparse.Namespace:
