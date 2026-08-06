@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "status": "fit-only ear-root iteration for F-07/F-08/F-09; preserve accepted V2 visible saddle notch and exact Gate 8 shell geometry; remove obsolete hidden capture pads from the candidate so seated shell clearance and the rotate-then-slide insertion path can be validated before F-10/F-11/F-12 retention redesign; no STL, G-code, print release, eye change, rear-cassette change, C006 change, or aluminum change",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate6_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/_stage6-eyes/gate6-eye-modules-review.blend",
+  "stage5_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/_stage5-structural/gate5-validation-report.json",
+  "physical_fit_feedback": "hardware/mechanical/CAT_HEAD_MOUNT_AND_SHELL_PHYSICAL_FIT_REVIEW_2026-07-28.md",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "sides": {
+    "left": {
+      "ear": "left_ear",
+      "upper_head": "left_upper_head",
+      "candidate_group": "left_ear_root_cluster",
+      "candidate_name": "EAR3_FIT_BODY_ONLY__left_ear_root_insert",
+      "joint_pair": "left_ear__left_upper_head"
+    },
+    "right": {
+      "ear": "right_ear",
+      "upper_head": "right_upper_head",
+      "candidate_group": "right_ear_root_cluster",
+      "candidate_name": "EAR3_FIT_BODY_ONLY__right_ear_root_insert",
+      "joint_pair": "right_ear__right_upper_head"
+    }
+  },
+  "accepted_v2_relief": {
+    "connector_clearance_mm": 1.2,
+    "connector_corner_relief_depth_mm": 13.0,
+    "connector_side_tip_setback_mm": 9.0
+  },
+  "fit_clearance": {
+    "previous_deep_body_perimeter_clearance_mm": 0.35,
+    "candidate_deep_body_perimeter_clearance_mm": 2.5,
+    "previous_visible_cap_perimeter_clearance_mm": 0.05,
+    "candidate_visible_cap_perimeter_clearance_mm": 1.0,
+    "exact_ear_local_clearance_mm": 0.4,
+    "deep_body_path_margin_mm": 0.4,
+    "legacy_hidden_capture_pads_included": false,
+    "legacy_m2_5_retainer_included": false,
+    "retention_redesign_deferred_feedback_ids": ["F-10", "F-11", "F-12"]
+  },
+  "insertion_path": {
+    "assembly_state": "ear removed; all seven exact structural shell sections otherwise assembled",
+    "motion": "reverse removal path: rotate the free edge 25 degrees inward about the former hook-edge tangent, then translate 30 mm inward; insertion is the exact reverse",
+    "rotation_degrees": 25.0,
+    "translation_mm": 30.0,
+    "rotation_sample_count_including_seated": 21,
+    "translation_sample_count_excluding_rotated_start": 20,
+    "total_sample_count": 41
+  },
+  "display": {
+    "ear_color": "#45D7C7",
+    "upper_head_color": "#707983",
+    "candidate_insert_color": "#F4C542",
+    "rotated_path_color": "#4AA8FF",
+    "translated_path_color": "#53D769",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "This V3 review addresses only physical-fit feedback F-07, F-08, and F-09: both upper corners, the lower-center region, and global snugness/insertion.",
+    "The accepted V2 13/9 mm saddle-notch boundary remains unchanged before the localized exact-ear clearance cut.",
+    "The old hidden overlap/capture pads and M2.5 retainer are intentionally absent because the audit proved they are the dominant inherited upper-head obstruction; this fit body is not retained and cannot be printed as a finished part.",
+    "Retention, seated datums, flange strength, hardware/tool access, and clamp behavior remain explicitly deferred to F-10/F-11/F-12 after the fit envelope is approved.",
+    "The ear is removed during the rotate-then-slide path and is checked separately in the final seated position, matching the documented service order that the insert stays with the upper-head shell.",
+    "Accepted eye mounts, lower-face/rear-cassette ownership, requested reinforcement direction, C006, and aluminum V0.5 remain unchanged.",
+    "No STL, G-code, slicer project, fabrication output, or print release is produced."
+  ]
+}

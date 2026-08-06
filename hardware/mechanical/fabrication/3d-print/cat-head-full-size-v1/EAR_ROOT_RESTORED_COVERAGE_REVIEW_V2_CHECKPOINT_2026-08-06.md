@@ -2,20 +2,21 @@
 
 ## Status
 
-This is the single current ear-root review awaiting visual approval. It changes
-only the two review glow-insert meshes. The exact Gate 8 ear and upper-head
-meshes, their integrated four-M3 saddles, the accepted eye V3 layout,
-lower-face/rear-cassette ownership, reinforcement direction, C006, and aluminum
-V0.5 remain unchanged.
+The user accepted this restored-coverage layout on 2026-08-06. It is now the
+archived V2 coverage baseline and is superseded as the active review by the V3
+insertion-fit iteration. V2 changes only the two review glow-insert meshes. The
+exact Gate 8 ear and upper-head meshes, their integrated four-M3 saddles, the
+accepted eye V3 layout, lower-face/rear-cassette ownership, reinforcement
+direction, C006, and aluminum V0.5 remain unchanged.
 
 This is not a print release. No STL, G-code, slicer project, or ASA fabrication
 output was generated.
 
 ## Open this file
 
-- Blender: `output/00-current-review/ear-root-restored-coverage-review-v2.blend`
-- Validation: `output/00-current-review/ear-root-restored-coverage-review-v2-validation.json`
-- Renders: `output/00-current-review/renders/`
+- Blender: `output/60-ear-root-reviews/ear-root-restored-coverage-review-v2/ear-root-restored-coverage-review-v2.blend`
+- Validation: `output/60-ear-root-reviews/ear-root-restored-coverage-review-v2/ear-root-restored-coverage-review-v2-validation.json`
+- Renders: `output/60-ear-root-reviews/ear-root-restored-coverage-review-v2/renders/`
 
 The completed constraints-only baseline is archived at
 `output/60-ear-root-reviews/ear-root-interface-constraints-review-v1/`.
@@ -103,16 +104,16 @@ the fastest static views for checking the restored panel area.
 ## Exact regeneration command
 
 ```bash
-blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_ear_root_restored_coverage_review_v2.py
+blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_ear_root_restored_coverage_review_v2.py -- --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-restored-coverage-review-v2
 ```
 
-## Next physical-review step
+## Completed handoff
 
-User reviews only the restored yellow coverage and localized saddle notch in
-the V2 Blender file. If accepted, the next engineering step is to integrate the
-two candidate inserts into the full source-of-truth assembly, rerun full-head
-collision/interface validation, and only then decide whether any ear-root test
-print is warranted.
+The user accepted the restored yellow coverage and localized saddle notch.
+The later fit audit found that the inherited deep body and hidden capture pads
+still reproduced physical feedback F-07/F-08/F-09, so V3 now isolates the
+clearance and insertion envelope before retention is redesigned. V2 remains a
+visual-coverage reference only and must not be printed.
 
 ## Preserved workstreams
 

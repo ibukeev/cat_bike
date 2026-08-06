@@ -6,9 +6,9 @@ current review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/ear-root-restored-coverage-review-v2.blend`
+  `output/00-current-review/ear-root-insertion-fit-review-v3.blend`
 - Current validation:
-  `output/00-current-review/ear-root-restored-coverage-review-v2-validation.json`
+  `output/00-current-review/ear-root-insertion-fit-review-v3-validation.json`
 - Current renders: `output/00-current-review/renders/`
 
 ## Folder map
@@ -46,12 +46,17 @@ baseline: four broad-base flange candidates per side, covering outer head,
 outer eye, lower head, and lower eye. It remains unintegrated review geometry,
 not a print release.
 
-The current ear-root V2 candidate keeps the exact Gate 8 ears, upper heads, and
-integrated four-M3 saddles unchanged. It replaces only the two review insert
-meshes, reducing the rejected `38/18 mm` saddle relief to a mirrored
-`13/9 mm` localized notch. Both candidates are single connected manifold
-meshes and clear their saddle by at least `1.5238 mm` against a required
-`1.2 mm`. This is a visual-review candidate, not a print release.
+The accepted ear-root V2 coverage baseline is archived under
+`output/60-ear-root-reviews/ear-root-restored-coverage-review-v2/`.
+
+The current ear-root V3 review addresses physical feedback F-07/F-08/F-09.
+It preserves the accepted `13/9 mm` saddle relief, uses `2.5 mm` deep-body and
+`1.0 mm` shallow-cap perimeter clearances, and adds `0.4 mm` local exact-ear
+clearance. Both bodies are connected manifold mirrors with zero seated
+intersections. Their 41-sample rotate-then-slide paths are clear, including a
+`0.4 mm` expanded hidden-body margin. Old capture pads and the M2.5 retainer
+are absent; retention/datums remain the next F-10/F-11/F-12 iteration. V3 is
+not a finished part or print release.
 
 C006 and all aluminum plate/rail geometry remain deferred and unchanged.
 
