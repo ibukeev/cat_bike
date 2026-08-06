@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "visual review only; add one mirrored reinforcement rail pair along the longest approved V5 horizontal MANQ007 cassette boundary while excluding rejected C006 seam rails and C002 eye mounts; no other reinforcement, connector, eye-mount, exterior, aluminum, STL, G-code, or print change",
+  "source_reinforcement_review_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1.blend",
+  "source_reinforcement_review_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/lower-reinforcement-ownership-review-v1.json",
+  "source_v5_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/rear-cassette-lossless-repartition-review-v5.json",
+  "source_gate8_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate8-full-size-structural-iteration.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "target_boundary": {
+    "left_lower_face": {
+      "panel_id": "MANQ007_LEFT",
+      "expected_endpoints_mm": [[-88.946, 188.339, 47.873], [0.0, 188.339, 47.873]]
+    },
+    "right_lower_face": {
+      "panel_id": "MANQ007_RIGHT",
+      "expected_endpoints_mm": [[88.946, 188.339, 47.873], [0.0, 188.339, 47.873]]
+    },
+    "expected_edge_length_mm": 88.946,
+    "endpoint_tolerance_mm": 0.01,
+    "horizontal_axis_tolerance_mm": 0.01,
+    "selection_rule": "Select the unique cassette-owned MANQ007 boundary edge longer than 80 mm with constant Y and Z. This is an exposed horizontal cassette boundary, not the 73.848 mm retained/cassette diagonal cut."
+  },
+  "proposed_rail": {
+    "source_dimension_basis": "Gate 8 continuous inter-shell edge rail convention",
+    "foot_width_mm": 6.0,
+    "inward_depth_mm": 7.0,
+    "seam_inset_mm": 0.8,
+    "shell_overlap_mm": 0.8,
+    "end_setback_mm": 2.5,
+    "shell_wall_thickness_mm": 1.8,
+    "fastener_holes": 0,
+    "connector_geometry": "deferred; this pass establishes only the missing mirrored structural rail path"
+  },
+  "excluded_source_objects": [
+    "R1_RET__L__C006__seam_rail",
+    "R1_RET__R__C006__seam_rail",
+    "R1_UNCL__L__C002__eye_mount",
+    "R1_UNCL__R__C002__eye_mount"
+  ],
+  "review_display": {
+    "proposed_rail_color": "#39FF88",
+    "unchanged_reinforcement_color": "#526273",
+    "boundary_color": "#FFE34D",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "Only the mirrored MANQ007 horizontal rail pair is new in this review.",
+    "The approved V5 retained/cassette exterior facet ownership and 73.848 mm diagonal ownership cut remain unchanged.",
+    "The old C006 seam rails and both C002 eye-mount pieces are rejected and hidden; their geometry is not reused in the proposed rails.",
+    "C002 eye-mount redesign is a later separate feedback item.",
+    "The missing C036-C038, C026-C039, C036-C003, and C056 mirror ties are not added in this pass.",
+    "No connector fasteners, holes, bosses, flanges, tabs, sockets, aluminum geometry, or production unions are added.",
+    "No STL or G-code is exported, and nothing is released for printing or aluminum fabrication."
+  ]
+}
