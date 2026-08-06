@@ -88,7 +88,7 @@ Run:
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate6_eye_modules.py
 ~~~
 
-Review `output/gate6-eye-modules/gate6-eye-modules-review.blend` first.
+Review `output/10-design-gates/gate6-eye-modules/gate6-eye-modules-review.blend` first.
 
 - `eyes/` contains the six full-size bucket, diffuser, and rear-cap STLs.
 - `shells/` contains the complete seven-shell Gate 6 set with eye-mount tabs.

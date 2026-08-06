@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "visual review only; add one mirrored reinforcement rail pair along the longest approved V5 horizontal MANQ007 cassette boundary while excluding rejected C006 seam rails and C002 eye mounts; no other reinforcement, connector, eye-mount, exterior, aluminum, STL, G-code, or print change",
-  "source_reinforcement_review_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1.blend",
+  "source_reinforcement_review_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1.blend",
   "source_reinforcement_review_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/lower-reinforcement-ownership-review-v1.json",
   "source_v5_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/rear-cassette-lossless-repartition-review-v5.json",
   "source_gate8_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate8-full-size-structural-iteration.json",

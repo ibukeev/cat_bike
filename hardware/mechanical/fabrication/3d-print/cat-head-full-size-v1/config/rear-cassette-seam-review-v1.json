@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "visual seam review only; no STL, G-code, print, aluminum cut, or drilling release",
-  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
   "source_gate2_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate2-section-layout.json",
   "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
   "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",

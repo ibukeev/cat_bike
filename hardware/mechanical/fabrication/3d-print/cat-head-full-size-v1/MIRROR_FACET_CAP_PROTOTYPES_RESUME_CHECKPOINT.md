@@ -6,14 +6,14 @@ Updated: 2026-07-27
 
 Generate and review:
 
-- `output/mirror-facet-cap-prototypes/mirror-facet-cap-test-plate-0p6mm.stl`
-- `output/mirror-facet-cap-prototypes/mirror-facet-cap-test-plate-0p8mm.stl`
-- `output/mirror-facet-cap-prototypes/mirror-facet-cap-left-starter-plate-0p8mm.stl`
-- `output/mirror-facet-cap-prototypes/mirror-facet-cap-starter-plate-0p8mm.stl`
+- `output/40-prototypes/mirror-facet-cap-prototypes/mirror-facet-cap-test-plate-0p6mm.stl`
+- `output/40-prototypes/mirror-facet-cap-prototypes/mirror-facet-cap-test-plate-0p8mm.stl`
+- `output/40-prototypes/mirror-facet-cap-prototypes/mirror-facet-cap-left-starter-plate-0p8mm.stl`
+- `output/40-prototypes/mirror-facet-cap-prototypes/mirror-facet-cap-starter-plate-0p8mm.stl`
   — compatibility alias containing the same corrected left-side geometry
-- `output/mirror-facet-cap-prototypes/mirror-facet-cap-test-plate-1to1.svg`
-- `output/mirror-facet-cap-prototypes/prototype-parts.csv`
-- `output/mirror-facet-cap-prototypes/validation-report.json`
+- `output/40-prototypes/mirror-facet-cap-prototypes/mirror-facet-cap-test-plate-1to1.svg`
+- `output/40-prototypes/mirror-facet-cap-prototypes/prototype-parts.csv`
+- `output/40-prototypes/mirror-facet-cap-prototypes/validation-report.json`
 
 Source of truth:
 

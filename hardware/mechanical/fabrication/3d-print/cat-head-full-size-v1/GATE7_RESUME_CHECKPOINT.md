@@ -8,17 +8,17 @@ production printing.
 
 ## Current review files
 
-- `output/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend` -
+- `output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend` -
   primary visual and internal-mount review.
-- `output/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.stl` -
+- `output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.stl` -
   combined geometry review, not an individual print part.
-- `output/gate7-glow-panel-inserts/gate7-glow-panel-validation.json` -
+- `output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-validation.json` -
   generated validation record.
-- `output/gate7-glow-panel-inserts/glow-inserts/` - seven full-size translucent
+- `output/10-design-gates/gate7-glow-panel-inserts/glow-inserts/` - seven full-size translucent
   insert STLs.
-- `output/gate7-glow-panel-inserts/shells/` - complete seven-shell Gate 7 set
+- `output/10-design-gates/gate7-glow-panel-inserts/shells/` - complete seven-shell Gate 7 set
   with integrated hooks and matching tabs.
-- `output/gate7-glow-panel-inserts/small-model-100mm/` - visual-scale inserts.
+- `output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/` - visual-scale inserts.
 
 Regenerate with:
 

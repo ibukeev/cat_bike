@@ -9,9 +9,9 @@ mount, connector, exterior facet, or aluminum geometry is changed.
 
 ## Primary review files
 
-- Blender: `output/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1.blend`
-- Validation: `output/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1-validation.json`
-- Renders: `output/horizontal-seam-interface-review-v1/renders/`
+- Blender: `output/30-reinforcement-baselines/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1.blend`
+- Validation: `output/30-reinforcement-baselines/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1-validation.json`
+- Renders: `output/30-reinforcement-baselines/horizontal-seam-interface-review-v1/renders/`
 
 ## Blender review structure
 
@@ -106,7 +106,7 @@ None of these are silently included in V1.
 From repository root:
 
 ```bash
-blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_horizontal_seam_interface_review_v1.py
+blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_horizontal_seam_interface_review_v1.py
 ```
 
 ## Next physical review

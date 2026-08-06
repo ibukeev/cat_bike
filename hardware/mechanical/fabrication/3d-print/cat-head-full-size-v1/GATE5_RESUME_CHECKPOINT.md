@@ -7,11 +7,11 @@ review candidate, not yet cleared for production printing.
 
 ## Current review files
 
-- `output/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.blend` —
+- `output/10-design-gates/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.blend` —
   primary visual review file.
-- `output/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.stl` —
+- `output/10-design-gates/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.stl` —
   combined geometry review; print the seven files in `shells/`, not this file.
-- `output/gate5-ribs-and-joints/gate5-validation-report.json` — final
+- `output/10-design-gates/gate5-ribs-and-joints/gate5-validation-report.json` — final
   generated-check record.
 
 Regenerate all Gate 5 outputs with:

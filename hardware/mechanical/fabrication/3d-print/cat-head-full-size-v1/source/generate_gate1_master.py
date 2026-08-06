@@ -42,7 +42,7 @@ SOURCE_EYE_OBJ = (
     / "panel-candidates/eye-insert-panels.obj"
 )
 DEFAULT_CONFIG = PACKAGE_ROOT / "config/gate1-panel-roles.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/gate1-review"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/10-design-gates/gate1-review"
 
 ROLE_COLORS = {
     "integrated_opaque": "#4d3324",

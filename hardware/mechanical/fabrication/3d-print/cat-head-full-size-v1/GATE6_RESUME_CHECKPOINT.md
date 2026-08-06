@@ -8,15 +8,15 @@ cleared for production printing.
 
 ## Current review files
 
-- `output/gate6-eye-modules/gate6-eye-modules-review.blend` - primary review.
-- `output/gate6-eye-modules/gate6-eye-modules-review.stl` - combined geometry
+- `output/10-design-gates/gate6-eye-modules/gate6-eye-modules-review.blend` - primary review.
+- `output/10-design-gates/gate6-eye-modules/gate6-eye-modules-review.stl` - combined geometry
   review; do not use it as an individual print part.
-- `output/gate6-eye-modules/gate6-eye-module-validation.json` - generated
+- `output/10-design-gates/gate6-eye-modules/gate6-eye-module-validation.json` - generated
   validation record.
-- `output/gate6-eye-modules/eyes/` - six full-size eye parts.
-- `output/gate6-eye-modules/shells/` - complete seven-shell set containing the
+- `output/10-design-gates/gate6-eye-modules/eyes/` - six full-size eye parts.
+- `output/10-design-gates/gate6-eye-modules/shells/` - complete seven-shell set containing the
   matching paired eye-mount tabs in both lower-face shells.
-- `output/gate6-eye-modules/small-model-100mm/` - scaled visual eye parts and
+- `output/10-design-gates/gate6-eye-modules/small-model-100mm/` - scaled visual eye parts and
   combined per-eye assembly STLs.
 
 Regenerate with:

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "visual ownership review only; inventory unchanged Gate 8 lower-head reinforcement against the approved V5 exterior repartition; no cutting, redesign, STL, G-code, print, or aluminum release",
-  "source_v5_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/rear-cassette-lossless-repartition-review-v5/rear-cassette-lossless-repartition-review-v5.blend",
+  "source_v5_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5.blend",
   "source_v5_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/rear-cassette-lossless-repartition-review-v5.json",
   "source_gate8_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate8-full-size-structural-iteration.json",
   "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",

@@ -24,9 +24,9 @@ import generate_gate2_section_layout as gate2  # noqa: E402
 PACKAGE_ROOT = SCRIPT_DIR.parent
 GATE2_CONFIG = PACKAGE_ROOT / "config/gate2-section-layout.json"
 GATE3_CONFIG = PACKAGE_ROOT / "config/gate3-structural-shells.json"
-GATE3_BLEND = PACKAGE_ROOT / "output/gate3-structural-shells/gate3-structural-shells.blend"
+GATE3_BLEND = PACKAGE_ROOT / "output/10-design-gates/gate3-structural-shells/gate3-structural-shells.blend"
 CONFIG_PATH = PACKAGE_ROOT / "config/gate5-ribs-and-joints.json"
-OUTPUT_DIR = PACKAGE_ROOT / "output/gate5-ribs-and-joints"
+OUTPUT_DIR = PACKAGE_ROOT / "output/10-design-gates/gate5-ribs-and-joints"
 
 
 def transformed_source() -> tuple[gate1.ObjModel, list[str], float, gate1.Point]:

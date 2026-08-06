@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "visual review only; add all four user-requested reinforcement corrections after horizontal seam approval: two exact mirrored tie pairs, one independently surface-fitted right long tie, and one exact right mirror of L C056; no eye-mount redesign, C006 connector, exterior, aluminum, STL, G-code, or print change",
-  "source_horizontal_review_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1.blend",
+  "source_horizontal_review_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1.blend",
   "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
   "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
   "mirror_plane": "head X = 0",

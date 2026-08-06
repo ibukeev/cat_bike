@@ -22,9 +22,9 @@ import generate_gate2_section_layout as gate2  # noqa: E402
 
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
-GATE3_BLEND = PACKAGE_ROOT / "output/gate3-structural-shells/gate3-structural-shells.blend"
+GATE3_BLEND = PACKAGE_ROOT / "output/10-design-gates/gate3-structural-shells/gate3-structural-shells.blend"
 CONFIG_PATH = PACKAGE_ROOT / "config/gate4-assembly-review.json"
-OUTPUT_DIR = PACKAGE_ROOT / "output/gate4-assembly-review"
+OUTPUT_DIR = PACKAGE_ROOT / "output/10-design-gates/gate4-assembly-review"
 
 
 def material(name: str, color: tuple[float, float, float, float], metallic: float = 0.0) -> bpy.types.Material:

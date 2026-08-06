@@ -115,7 +115,7 @@ Run:
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate7_glow_panel_inserts.py
 ~~~
 
-Review `output/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend`
+Review `output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend`
 first.
 
 - `glow-inserts/` contains the seven full-size translucent insert STLs.

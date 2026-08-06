@@ -7,11 +7,16 @@ corrections as seven review objects: six tie rails and one missing right-side
 C056 rib. No source shell, upper-head piece, approved horizontal rail,
 aluminum part, eye mount, connector, STL, G-code, or print release is changed.
 
+User review on 2026-08-05 described the result as “much better” and authorized
+moving to the next task bucket. Preserve this reinforcement direction as the
+current accepted review baseline. This is not print or aluminum-fabrication
+authorization.
+
 ## Primary review files
 
-- Blender: `output/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend`
-- Validation: `output/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1-validation.json`
-- Renders: `output/requested-reinforcement-additions-review-v1/renders/`
+- Blender: `output/00-current-review/requested-reinforcement-additions-review-v1.blend`
+- Validation: `output/00-current-review/requested-reinforcement-additions-review-v1-validation.json`
+- Renders: `output/00-current-review/renders/`
 
 ## Blender review structure
 
@@ -99,7 +104,7 @@ overlaps both endpoints and is `3.559 mm` longer than the left tie.
 From repository root:
 
 ```bash
-blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_requested_reinforcement_additions_review_v1.py
+blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_requested_reinforcement_additions_review_v1.py
 ```
 
 ## Next physical review

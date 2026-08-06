@@ -32,9 +32,9 @@ GATE2_CONFIG = PACKAGE_ROOT / "config/gate2-section-layout.json"
 CONFIG_PATH = PACKAGE_ROOT / "config/gate7-glow-panel-inserts.json"
 GATE6_BLEND = (
     PACKAGE_ROOT
-    / "output/gate6-eye-modules/gate6-eye-modules-review.blend"
+    / "output/10-design-gates/gate6-eye-modules/gate6-eye-modules-review.blend"
 )
-OUTPUT_DIR = PACKAGE_ROOT / "output/gate7-glow-panel-inserts"
+OUTPUT_DIR = PACKAGE_ROOT / "output/10-design-gates/gate7-glow-panel-inserts"
 INSERT_OUTPUT_DIR = OUTPUT_DIR / "glow-inserts"
 SHELL_OUTPUT_DIR = OUTPUT_DIR / "shells"
 SMALL_OUTPUT_DIR = OUTPUT_DIR / "small-model-100mm"

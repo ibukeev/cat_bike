@@ -32,7 +32,7 @@ import generate_gate2_section_layout as gate2  # noqa: E402
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
 DEFAULT_CONFIG = PACKAGE_ROOT / "config/rear-cassette-seam-review-v2.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/rear-cassette-seam-review-v2"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/20-rear-cassette/history/rear-cassette-seam-review-v2"
 ALLOWED_CASSETTE_SOURCE_SECTIONS = {
     "right_lower_face",
     "left_lower_face",

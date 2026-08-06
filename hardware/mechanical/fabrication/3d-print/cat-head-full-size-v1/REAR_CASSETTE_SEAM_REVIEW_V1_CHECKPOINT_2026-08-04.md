@@ -12,19 +12,19 @@ aluminum cutting, hole placement, or drilling.
 
 Open the orbitable review model:
 
-`output/rear-cassette-seam-review-v1/rear-cassette-seam-review-v1.blend`
+`output/20-rear-cassette/history/rear-cassette-seam-review-v1/rear-cassette-seam-review-v1.blend`
 
 Additional local generated review artifacts:
 
-- `output/rear-cassette-seam-review-v1/rear-cassette-seam-review-v1.glb`
-- `output/rear-cassette-seam-review-v1/rear-cassette-seam-review-v1-validation.json`
-- `output/rear-cassette-seam-review-v1/renders/`
+- `output/20-rear-cassette/history/rear-cassette-seam-review-v1/rear-cassette-seam-review-v1.glb`
+- `output/20-rear-cassette/history/rear-cassette-seam-review-v1/rear-cassette-seam-review-v1-validation.json`
+- `output/20-rear-cassette/history/rear-cassette-seam-review-v1/renders/`
 
 Tracked inputs:
 
 - `config/rear-cassette-seam-review-v1.json`
 - `source/generate_rear_cassette_seam_review_v1.py`
-- `output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`
+- `output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`
 - `hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json`
 
 ## Accepted scope and dimensions
@@ -86,11 +86,11 @@ From the repository root:
 
 ```bash
 blender --background \
-  hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend \
+  hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend \
   --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_rear_cassette_seam_review_v1.py \
   -- \
   --config hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/rear-cassette-seam-review-v1.json \
-  --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/rear-cassette-seam-review-v1
+  --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/history/rear-cassette-seam-review-v1
 ```
 
 ## Next review step

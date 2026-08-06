@@ -9,10 +9,10 @@ deleted, duplicated, or newly invented, and no reinforcement is changed.
 
 ## Primary review files
 
-- Blender: `output/rear-cassette-lossless-repartition-review-v5/rear-cassette-lossless-repartition-review-v5.blend`
-- Portable GLB: `output/rear-cassette-lossless-repartition-review-v5/rear-cassette-lossless-repartition-review-v5.glb`
-- Validation: `output/rear-cassette-lossless-repartition-review-v5/rear-cassette-lossless-repartition-review-v5-validation.json`
-- Renders: `output/rear-cassette-lossless-repartition-review-v5/renders/`
+- Blender: `output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5.blend`
+- Portable GLB: `output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5.glb`
+- Validation: `output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5-validation.json`
+- Renders: `output/20-rear-cassette/current-baseline-v5/renders/`
 
 ## Blender review structure
 
@@ -91,7 +91,7 @@ chopped, floated, or silently deleted.
 From repository root:
 
 ```bash
-blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_rear_cassette_lossless_repartition_review_v5.py
+blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_rear_cassette_lossless_repartition_review_v5.py
 ```
 
 ## Next physical review

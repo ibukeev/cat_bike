@@ -34,7 +34,7 @@ python3 hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/ge
 
 Tracked settings are in
 `config/mirror-facet-cap-prototypes.json`. Generated assets are written under
-`output/mirror-facet-cap-prototypes/`:
+`output/40-prototypes/mirror-facet-cap-prototypes/`:
 
 - `mirror-facet-cap-left-starter-plate-0p8mm.stl`
 - `mirror-facet-cap-starter-plate-0p8mm.stl` — compatibility alias for the

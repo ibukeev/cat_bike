@@ -7,7 +7,7 @@
   "source_v6_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate9-socket-portals-candidate-v6.json",
   "source_m2_review_blend": "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/output/v05-m2-coordinated-centers/review-model/frame-fixed-mount-v05-m2-angle-stock-review.blend",
   "source_m2_summary": "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/review/frame-fixed-mount-v05-final-summary.json",
-  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-m2-rear-interface-candidate-v7",
+  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate9-m2-rear-interface-candidate-v7",
   "rear_structure": {
     "construction": "six shell-integrated rear-normal M5 pad bosses on four complementary non-overlapping trusses; no pad is owned by the removable bezel or bottom keel",
     "pad_depth_mm": 12.0,

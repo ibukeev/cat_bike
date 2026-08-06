@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "status": "visual review only; lossless lower-face exterior repartition with accepted Gate 8 opaque muzzle panels restored into retained lower shells and enlarged rear-cassette ownership; no STL, G-code, print, reinforcement redesign, or aluminum release",
-  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
   "source_gate8_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate8-full-size-structural-iteration.json",
   "source_gate2_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate2-section-layout.json",
   "source_gate3_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate3-structural-shells.json",

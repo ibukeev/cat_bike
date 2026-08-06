@@ -35,7 +35,7 @@ Point = tuple[float, float, float]
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = PACKAGE_ROOT.parents[4]
 DEFAULT_CONFIG = PACKAGE_ROOT / "config/gate2-section-layout.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/gate2-section-layout"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/10-design-gates/gate2-section-layout"
 
 SECTION_ORDER = (
     "right_upper_head",

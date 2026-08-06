@@ -10,12 +10,12 @@ one of the Gate 5-7 source dependencies or structural settings changed.
 
 Open:
 
-`output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`
+`output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`
 
 Read:
 
 - `GATE8_FULL_SIZE_STRUCTURAL_ITERATION.md`
-- `output/gate8-full-size-structural-iteration/gate8-full-size-structural-validation.json`
+- `output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-validation.json`
 - `config/gate8-full-size-structural-iteration.json`
 
 The generator reuses the staged Gate 7 scene only when it is newer than the

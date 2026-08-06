@@ -43,7 +43,7 @@ python3 hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/ge
 ~~~
 
 The tracked layout is `config/gate2-section-layout.json`. Generated review
-assets are written under `output/gate2-section-layout/`:
+assets are written under `output/10-design-gates/gate2-section-layout/`:
 
 - `gate2-section-review.svg` — section ownership in four views;
 - `gate2-section-layout.obj` and `.mtl` — colored face-level topology;
@@ -67,7 +67,7 @@ blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-
 ~~~
 
 Tracked parameters are in `config/gate3-structural-shells.json`. Generated
-assets under `output/gate3-structural-shells/` include:
+assets under `output/10-design-gates/gate3-structural-shells/` include:
 
 - seven closed-manifold STL shell baselines;
 - `gate3-structural-shells.blend` and `.glb` assembled models;
@@ -93,7 +93,7 @@ review is superseded for fabrication by the compact Gate 5 rear frame:
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate4_assembly_review.py
 ~~~
 
-Review `output/gate4-assembly-review/gate4-complete-review-assembly.stl` in the
+Review `output/10-design-gates/gate4-assembly-review/gate4-complete-review-assembly.stl` in the
 slicer rather than judging an isolated structural section. The combined STL is
 review-only; individual temporary panel STLs are also exported for inspection.
 
@@ -109,7 +109,7 @@ The tracked candidate role selection is
 [`config/gate1-panel-roles.json`](config/gate1-panel-roles.json). Adjust that
 file, not generated output, when reviewing alternate lighting compositions.
 
-The command writes these ignored review assets under `output/gate1-review/`:
+The command writes these ignored review assets under `output/10-design-gates/gate1-review/`:
 
 - `gate1-master-330mm.obj` — exterior-only, uniformly scaled master.
 - `gate1-role-review.obj` and `.mtl` — master with opaque, purple glow, and
@@ -155,7 +155,7 @@ blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-
 
 Tracked dimensions and clearances are in
 config/gate5-ribs-and-joints.json. Generated review assets are under
-output/gate5-ribs-and-joints/:
+output/10-design-gates/gate5-ribs-and-joints/:
 
 - shells/ — seven flange-tab structural shell STLs;
 - joiners/ — intentionally empty compatibility directory; do not print parts
@@ -199,7 +199,7 @@ outer-side and lower eye edges, retain each module without exterior holes:
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate6_eye_modules.py
 ~~~
 
-Review `output/gate6-eye-modules/gate6-eye-modules-review.blend`. Print the
+Review `output/10-design-gates/gate6-eye-modules/gate6-eye-modules-review.blend`. Print the
 eye parts from `eyes/` and use the revised seven-shell set from `shells/`,
 because both lower-face shells now contain matching paired eye-mount tabs. The
 `small-model-100mm/` exports are visual-fit parts only; use a full-size eye to
@@ -218,7 +218,7 @@ twelve-facet center insert uses two hooks and two retainers:
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_gate7_glow_panel_inserts.py
 ~~~
 
-Review `output/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend`.
+Review `output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend`.
 Print translucent parts from `glow-inserts/` and use the revised structural
 parts from `shells/`. See [GATE7_GLOW_PANEL_INSERTS.md](GATE7_GLOW_PANEL_INSERTS.md)
 and [GATE7_RESUME_CHECKPOINT.md](GATE7_RESUME_CHECKPOINT.md).
@@ -230,7 +230,7 @@ blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/render_gate8_review.py
 ~~~
 
-Review `output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`.
+Review `output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`.
 Print only the individual files in its part subdirectories. Start with the
 one-piece integrated socket file in `test-coupons/`; `portal-clamps/` is empty
 because both sockets are included in the upper-head STLs. Gate 8 also
@@ -252,7 +252,7 @@ python3 hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/ge
 Start with `mirror-facet-cap-left-starter-plate-0p8mm.stl`, a three-part
 black-PETG trial derived from the actual left muzzle, forehead, and ear facets
 for the currently printed left shell. Review the two complete thickness plates
-and 1:1 SVG under `output/mirror-facet-cap-prototypes/`. A textured starter
+and 1:1 SVG under `output/40-prototypes/mirror-facet-cap-prototypes/`. A textured starter
 print is valid for handling and bonding tests; repeat the chosen cap on a
 protected smooth sheet before final optical approval. Apply adhesive mirror
 film while each cap is fully supported on a flat table. See

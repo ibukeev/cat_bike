@@ -34,7 +34,7 @@ import generate_rear_cassette_seam_review_v2 as seam_v2  # noqa: E402
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
 DEFAULT_CONFIG = PACKAGE_ROOT / "config/lower-reinforcement-ownership-review-v1.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/lower-reinforcement-ownership-review-v1"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/30-reinforcement-baselines/lower-reinforcement-ownership-review-v1"
 CLASSIFICATIONS = ("retained", "cassette", "crossing", "unclassified")
 
 

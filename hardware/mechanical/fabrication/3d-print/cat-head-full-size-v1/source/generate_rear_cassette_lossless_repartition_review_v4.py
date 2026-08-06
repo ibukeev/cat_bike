@@ -38,7 +38,7 @@ DEFAULT_CONFIG = (
     PACKAGE_ROOT / "config/rear-cassette-lossless-repartition-review-v4.json"
 )
 DEFAULT_OUTPUT = (
-    PACKAGE_ROOT / "output/rear-cassette-lossless-repartition-review-v4"
+    PACKAGE_ROOT / "output/20-rear-cassette/history/rear-cassette-lossless-repartition-review-v4"
 )
 LOWER_SECTIONS = ("left_lower_face", "right_lower_face")
 PRODUCTION_PARTS = seam_v2.PRODUCTION_PARTS

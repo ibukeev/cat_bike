@@ -9,7 +9,7 @@ from mathutils import Vector
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PACKAGE_ROOT = SCRIPT_DIR.parent
-OUTPUT_DIR = PACKAGE_ROOT / "output/gate8-full-size-structural-iteration"
+OUTPUT_DIR = PACKAGE_ROOT / "output/10-design-gates/gate8-full-size-structural-iteration"
 BLEND_PATH = OUTPUT_DIR / "gate8-full-size-structural-review.blend"
 RENDER_DIR = OUTPUT_DIR / "review-renders"
 

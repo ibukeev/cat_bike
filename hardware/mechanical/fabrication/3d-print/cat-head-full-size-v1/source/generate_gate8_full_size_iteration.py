@@ -32,7 +32,7 @@ import generate_gate7_glow_panel_inserts as gate7  # noqa: E402
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
 CONFIG_PATH = PACKAGE_ROOT / "config/gate8-full-size-structural-iteration.json"
-OUTPUT_DIR = PACKAGE_ROOT / "output/gate8-full-size-structural-iteration"
+OUTPUT_DIR = PACKAGE_ROOT / "output/10-design-gates/gate8-full-size-structural-iteration"
 STAGE5_DIR = OUTPUT_DIR / "_stage5-structural"
 STAGE6_DIR = OUTPUT_DIR / "_stage6-eyes"
 STAGE7_DIR = OUTPUT_DIR / "_stage7-glow"

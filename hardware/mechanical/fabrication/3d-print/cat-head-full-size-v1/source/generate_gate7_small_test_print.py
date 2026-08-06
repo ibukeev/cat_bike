@@ -24,13 +24,13 @@ PACKAGE_ROOT = SCRIPT_DIR.parent
 GATE7_CONFIG = PACKAGE_ROOT / "config/gate7-glow-panel-inserts.json"
 GATE7_BLEND = (
     PACKAGE_ROOT
-    / "output/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend"
+    / "output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend"
 )
 GATE6_VALIDATION = (
     PACKAGE_ROOT
-    / "output/gate6-eye-modules/gate6-eye-module-validation.json"
+    / "output/10-design-gates/gate6-eye-modules/gate6-eye-module-validation.json"
 )
-OUTPUT_DIR = PACKAGE_ROOT / "output/gate7-small-test-print-100mm"
+OUTPUT_DIR = PACKAGE_ROOT / "output/10-design-gates/gate7-small-test-print-100mm"
 SHELL_DIR = OUTPUT_DIR / "shells"
 INSERT_DIR = OUTPUT_DIR / "glow-inserts"
 EYE_DIR = OUTPUT_DIR / "eye-modules"

@@ -8,10 +8,10 @@ deleted, and no internal reinforcement is cut or reassigned.
 
 ## Primary review files
 
-- Blender: `output/rear-cassette-lossless-repartition-review-v4/rear-cassette-lossless-repartition-review-v4.blend`
-- Portable GLB: `output/rear-cassette-lossless-repartition-review-v4/rear-cassette-lossless-repartition-review-v4.glb`
-- Validation: `output/rear-cassette-lossless-repartition-review-v4/rear-cassette-lossless-repartition-review-v4-validation.json`
-- Renders: `output/rear-cassette-lossless-repartition-review-v4/renders/`
+- Blender: `output/20-rear-cassette/history/rear-cassette-lossless-repartition-review-v4/rear-cassette-lossless-repartition-review-v4.blend`
+- Portable GLB: `output/20-rear-cassette/history/rear-cassette-lossless-repartition-review-v4/rear-cassette-lossless-repartition-review-v4.glb`
+- Validation: `output/20-rear-cassette/history/rear-cassette-lossless-repartition-review-v4/rear-cassette-lossless-repartition-review-v4-validation.json`
+- Renders: `output/20-rear-cassette/history/rear-cassette-lossless-repartition-review-v4/renders/`
 
 ## Blender review structure
 
@@ -75,7 +75,7 @@ may be chopped, floated, or silently deleted.
 From repository root:
 
 ```bash
-blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_rear_cassette_lossless_repartition_review_v4.py
+blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_rear_cassette_lossless_repartition_review_v4.py
 ```
 
 ## Next physical review

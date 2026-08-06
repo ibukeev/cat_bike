@@ -38,7 +38,7 @@ PACKAGE_ROOT = SCRIPT_DIR.parent
 DEFAULT_CONFIG = PACKAGE_ROOT / "config/mirror-facet-cap-prototypes.json"
 GATE1_CONFIG = PACKAGE_ROOT / "config/gate1-panel-roles.json"
 GATE8_CONFIG = PACKAGE_ROOT / "config/gate8-full-size-structural-iteration.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/mirror-facet-cap-prototypes"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/40-prototypes/mirror-facet-cap-prototypes"
 
 
 @dataclass(frozen=True)

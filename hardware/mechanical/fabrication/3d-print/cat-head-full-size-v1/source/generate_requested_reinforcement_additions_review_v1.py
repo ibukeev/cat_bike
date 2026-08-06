@@ -34,7 +34,7 @@ DEFAULT_CONFIG = (
     PACKAGE_ROOT / "config/requested-reinforcement-additions-review-v1.json"
 )
 DEFAULT_OUTPUT = (
-    PACKAGE_ROOT / "output/requested-reinforcement-additions-review-v1"
+    PACKAGE_ROOT / "output/00-current-review"
 )
 
 

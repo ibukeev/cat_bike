@@ -26,7 +26,7 @@ PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
 GATE2_CONFIG = PACKAGE_ROOT / "config/gate2-section-layout.json"
 GATE3_CONFIG = PACKAGE_ROOT / "config/gate3-structural-shells.json"
-OUTPUT_DIR = PACKAGE_ROOT / "output/gate3-structural-shells"
+OUTPUT_DIR = PACKAGE_ROOT / "output/10-design-gates/gate3-structural-shells"
 
 
 def clean_scene() -> None:

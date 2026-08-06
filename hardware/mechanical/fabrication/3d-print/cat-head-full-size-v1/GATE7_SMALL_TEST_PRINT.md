@@ -10,7 +10,7 @@ blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-
 ~~~
 
 Review
-`output/gate7-small-test-print-100mm/cat_head_100mm_test_print_review.blend`
+`output/10-design-gates/gate7-small-test-print-100mm/cat_head_100mm_test_print_review.blend`
 before slicing. Print the individual files in `shells/`, `glow-inserts/`, and
 `eye-modules/`. The combined `cat_head_100mm_visual_assembly.stl` is a visual
 reference, not the recommended multi-part print file.

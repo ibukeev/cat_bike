@@ -12,7 +12,7 @@ The approved fabrication-role baseline is:
 - no illuminated ear panels;
 - rear-service plane retained as a planning reference only.
 
-The annotated review source is `output/gate1-review/gate1-review (Copy).svg`.
+The annotated review source is `output/10-design-gates/gate1-review/gate1-review (Copy).svg`.
 The tracked role source of truth is `config/gate1-panel-roles.json`.
 
 Post-review correction: `QUAD031` mirrors `QUAD017`, and `QUAD021` mirrors

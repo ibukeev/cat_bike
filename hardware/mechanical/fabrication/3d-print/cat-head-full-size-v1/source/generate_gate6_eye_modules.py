@@ -32,9 +32,9 @@ GATE1_CONFIG = PACKAGE_ROOT / "config/gate1-panel-roles.json"
 GATE4_CONFIG = PACKAGE_ROOT / "config/gate4-assembly-review.json"
 GATE5_BLEND = (
     PACKAGE_ROOT
-    / "output/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.blend"
+    / "output/10-design-gates/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.blend"
 )
-OUTPUT_DIR = PACKAGE_ROOT / "output/gate6-eye-modules"
+OUTPUT_DIR = PACKAGE_ROOT / "output/10-design-gates/gate6-eye-modules"
 EYE_OUTPUT_DIR = OUTPUT_DIR / "eyes"
 SHELL_OUTPUT_DIR = OUTPUT_DIR / "shells"
 SMALL_OUTPUT_DIR = OUTPUT_DIR / "small-model-100mm"

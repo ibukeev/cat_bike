@@ -9,9 +9,9 @@ reinforcement and does not change the approved exterior seam.
 
 ## Primary review files
 
-- Blender: `output/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1.blend`
-- Validation: `output/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1-validation.json`
-- Renders: `output/lower-reinforcement-ownership-review-v1/renders/`
+- Blender: `output/30-reinforcement-baselines/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1.blend`
+- Validation: `output/30-reinforcement-baselines/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1-validation.json`
+- Renders: `output/30-reinforcement-baselines/lower-reinforcement-ownership-review-v1/renders/`
 
 ## Blender review structure
 
@@ -102,7 +102,7 @@ redesign item, not a standalone reinforcement assignment.
 From repository root:
 
 ```bash
-blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/rear-cassette-lossless-repartition-review-v5/rear-cassette-lossless-repartition-review-v5.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_lower_reinforcement_ownership_review_v1.py
+blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_lower_reinforcement_ownership_review_v1.py
 ```
 
 ## Next physical review

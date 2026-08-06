@@ -22,13 +22,13 @@ slicing, printing, aluminum cutting, hole placement, or drilling.
 
 Open:
 
-`output/rear-cassette-seam-review-v2/rear-cassette-seam-review-v2.blend`
+`output/20-rear-cassette/history/rear-cassette-seam-review-v2/rear-cassette-seam-review-v2.blend`
 
 Additional local generated review artifacts:
 
-- `output/rear-cassette-seam-review-v2/rear-cassette-seam-review-v2.glb`
-- `output/rear-cassette-seam-review-v2/rear-cassette-seam-review-v2-validation.json`
-- `output/rear-cassette-seam-review-v2/renders/`
+- `output/20-rear-cassette/history/rear-cassette-seam-review-v2/rear-cassette-seam-review-v2.glb`
+- `output/20-rear-cassette/history/rear-cassette-seam-review-v2/rear-cassette-seam-review-v2-validation.json`
+- `output/20-rear-cassette/history/rear-cassette-seam-review-v2/renders/`
 
 Tracked inputs:
 
@@ -107,11 +107,11 @@ From the repository root:
 
 ```bash
 blender --background \
-  hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend \
+  hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend \
   --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_rear_cassette_seam_review_v2.py \
   -- \
   --config hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/rear-cassette-seam-review-v2.json \
-  --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/rear-cassette-seam-review-v2
+  --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/history/rear-cassette-seam-review-v2
 ```
 
 ## Next review step

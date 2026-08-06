@@ -7,7 +7,7 @@
     "path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v03.json",
     "required_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.3"
   },
-  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/gate9-coordinated-asa-candidate-v1",
+  "output_namespace": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate9-coordinated-asa-candidate-v1",
   "generation_enabled": false,
   "generation_holds": [
     "rear cassette versus retained partition versus scaling comparison not selected",

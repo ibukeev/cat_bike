@@ -106,9 +106,9 @@ tool access.
 
 Primary review:
 
-- `output/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`
-- `output/gate8-full-size-structural-iteration/review-renders/`
-- `output/gate8-full-size-structural-iteration/gate8-full-size-structural-validation.json`
+- `output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend`
+- `output/10-design-gates/gate8-full-size-structural-iteration/review-renders/`
+- `output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-validation.json`
 
 Print individual parts from:
 
