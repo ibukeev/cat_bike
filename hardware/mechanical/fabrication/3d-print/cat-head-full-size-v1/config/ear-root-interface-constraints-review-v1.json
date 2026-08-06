@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "read-only ear-root constraints review; isolate the exact unchanged Gate 8 ear shells, upper-head owners, four-M3 saddle interfaces, and ear-root glow inserts; identify rejected large insert relief and non-production stick/reference geometry before redesign; no mesh edits, STL, G-code, print release, eye change, rear-cassette change, C006 change, or aluminum change",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "gate8_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-validation.json",
+  "stage5_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/_stage5-structural/gate5-validation-report.json",
+  "gate7_insert_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate7-glow-panel-inserts.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "sides": {
+    "left": {
+      "ear": "left_ear",
+      "upper_head": "left_upper_head",
+      "insert": "glow_insert_left_ear_root_cluster",
+      "joint_pair": "left_ear__left_upper_head"
+    },
+    "right": {
+      "ear": "right_ear",
+      "upper_head": "right_upper_head",
+      "insert": "glow_insert_right_ear_root_cluster",
+      "joint_pair": "right_ear__right_upper_head"
+    }
+  },
+  "gate8_effective_insert_relief": {
+    "connector_clearance_mm": 1.2,
+    "connector_corner_relief_depth_mm": 38.0,
+    "connector_side_tip_setback_mm": 18.0
+  },
+  "artifact_name_tokens": ["bolt", "dowel", "alignment", "rod", "stick"],
+  "display": {
+    "ear_color": "#43D5C5",
+    "upper_head_color": "#7B8794",
+    "insert_color": "#D56BFF",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "This review changes no mesh geometry; it isolates the exact Gate 8 ear-root baseline inherited unchanged by later work.",
+    "The real structural connection is one integrated four-M3 saddle per side with zero alignment dowels and zero exterior fastener holes.",
+    "Round stick-like objects shown in rejected whole-head reviews are not production ear geometry and must not be reintroduced.",
+    "The current Gate 8 ear-root inserts use aggressive effective relief: 1.2 mm clearance, 38 mm corner depth, and 18 mm side-tip setback.",
+    "The next candidate must restore complete translucent coverage beneath each ear while preserving independent ear removal and internal M3 access.",
+    "Do not alter accepted eye mounts, lower-face/rear-cassette ownership, C006, or aluminum V0.5 in the ear-root bucket.",
+    "No STL, G-code, fabrication output, or print release is produced."
+  ]
+}

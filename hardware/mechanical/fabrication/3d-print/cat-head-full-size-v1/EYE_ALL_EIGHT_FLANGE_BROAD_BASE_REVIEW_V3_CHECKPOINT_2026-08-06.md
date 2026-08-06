@@ -2,18 +2,20 @@
 
 ## Status
 
-This is the current visual and structural-layout review. V2's narrow end-root
-concept was rejected. V3 preserves the Gate 6 flange positions and M2.5
-interfaces while adding a broad continuous owner-side base to all eight
-physical flanges: four on the left and four on the right.
+Accepted by the user as the eye-mount structural-layout baseline on
+2026-08-06. V3 preserves the Gate 6 flange positions and M2.5 interfaces while
+adding a broad continuous owner-side base to all eight physical flanges: four
+on the left and four on the right.
 
-This is not a production Boolean, vibration certification, or print release.
+The accepted layout is archived for later production integration. Acceptance
+does not authorize a production Boolean, vibration certification, or print
+release.
 
 ## Primary review files
 
-- Blender: `output/00-current-review/eye-all-eight-flange-broad-base-review-v3.blend`
-- Validation: `output/00-current-review/eye-all-eight-flange-broad-base-review-v3-validation.json`
-- Renders: `output/00-current-review/renders/`
+- Blender: `output/50-eye-mount-reviews/eye-all-eight-flange-broad-base-review-v3/eye-all-eight-flange-broad-base-review-v3.blend`
+- Validation: `output/50-eye-mount-reviews/eye-all-eight-flange-broad-base-review-v3/eye-all-eight-flange-broad-base-review-v3-validation.json`
+- Renders: `output/50-eye-mount-reviews/eye-all-eight-flange-broad-base-review-v3/renders/`
 
 ## Review colors and collections
 
@@ -96,19 +98,11 @@ These dimensions are review parameters, not fabrication approval.
 blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_eye_all_eight_flange_broad_base_review_v3.py
 ```
 
-## Next physical review
+## Accepted handoff
 
-1. Open the current V3 Blender file in its saved whole-head view.
-2. Isolate `E4_PROPOSED_HEAD_FLANGES_PURPLE` and
-   `E4_PROPOSED_EYE_FLANGES_ORANGE`.
-3. On each side, count four candidates: outer head, outer eye, lower head,
-   and lower eye.
-4. Inspect each purple/orange pair and confirm the `0.3 mm` mating gap and
-   coaxial M2.5 holes remain visible.
-5. Inspect behind every flange: the base must be a broad continuous flare into
-   the gray shell or blue bucket, not a narrow stick or end root.
-6. Check the whole-head exterior views for visible protrusions.
-7. Approve or reject V3 before any production-shell or bucket integration.
+Preserve this V3 layout unchanged while the ear-root task bucket proceeds.
+Before later production integration, define print orientation and physical
+load/vibration coupons for the complete reinforced flange pairs.
 
 ## Metal workstream preservation
 

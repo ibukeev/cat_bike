@@ -6,9 +6,9 @@ current review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/eye-all-eight-flange-broad-base-review-v3.blend`
+  `output/00-current-review/ear-root-interface-constraints-review-v1.blend`
 - Current validation:
-  `output/00-current-review/eye-all-eight-flange-broad-base-review-v3-validation.json`
+  `output/00-current-review/ear-root-interface-constraints-review-v1-validation.json`
 - Current renders: `output/00-current-review/renders/`
 
 ## Folder map
@@ -25,8 +25,10 @@ current review is always easy to find.
   their historical ownership/interface reviews.
 - `output/40-prototypes/`: independent fabrication experiments, currently the
   mirror-facet cap prototypes.
-- `output/50-eye-mount-reviews/`: completed or superseded C002 eye-mount
+- `output/50-eye-mount-reviews/`: completed, accepted, or superseded eye-mount
   constraint/design reviews retained for traceability.
+- `output/60-ear-root-reviews/`: isolated ear-root constraints and redesign
+  reviews retained independently from eye and aluminum work.
 
 ## Current decision state
 
@@ -39,14 +41,15 @@ because its narrow end roots reinforced only the two outer head-side flanges;
 it did not add owner-side mass to the matching eye-bucket flanges or either
 lower flange pair.
 
-The current V3 review preserves the Gate 6 positions and M2.5 interfaces while
-showing four broad-base flange candidates per side: outer head, outer eye,
-lower head, and lower eye. Every flange receives a continuous flared owner-side
-base rather than narrow end roots.
+V3 was accepted by the user on 2026-08-06 as the eye-mount structural-layout
+baseline: four broad-base flange candidates per side, covering outer head,
+outer eye, lower head, and lower eye. It remains unintegrated review geometry,
+not a print release.
 
-V3 is review geometry only. It has not been Boolean-unioned into the production
-shells or eye buckets, physically vibration-tested, exported to STL, or
-released for printing.
+The current ear-root constraints review changes no geometry. It isolates the
+real four-M3 ear saddles and the rejected large-relief translucent inserts,
+while proving the round stick-like objects from earlier bad whole-head reviews
+are not production geometry.
 
 C006 and all aluminum plate/rail geometry remain deferred and unchanged.
 
