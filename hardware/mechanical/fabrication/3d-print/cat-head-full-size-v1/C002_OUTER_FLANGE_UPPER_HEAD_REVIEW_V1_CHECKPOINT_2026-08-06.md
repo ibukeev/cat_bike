@@ -2,17 +2,17 @@
 
 ## Status
 
-This is a visual-review candidate only. It removes the two rejected long
-`R1_UNCL__*__C002__eye_mount` objects, reconstructs each outer flange from
-the exact Gate 6 interface, and adds a compact hidden root that overlaps the
-matching upper-head shell. No production upper-head Boolean, STL, G-code, or
-print release has been made.
+The connector placements in this review were accepted by the user on
+2026-08-06. The single-root support was not accepted for fabrication because
+its vibration durability was uncertain; it is structurally superseded by the
+dual-root V2 review. This V1 is retained as the accepted-placement baseline.
+No production upper-head Boolean, STL, G-code, or print release was made.
 
 ## Primary review files
 
-- Blender: `output/00-current-review/c002-outer-flange-upper-head-review-v1.blend`
-- Validation: `output/00-current-review/c002-outer-flange-upper-head-review-v1-validation.json`
-- Renders: `output/00-current-review/renders/`
+- Blender: `output/50-eye-mount-reviews/c002-outer-flange-upper-head-review-v1/c002-outer-flange-upper-head-review-v1.blend`
+- Validation: `output/50-eye-mount-reviews/c002-outer-flange-upper-head-review-v1/c002-outer-flange-upper-head-review-v1-validation.json`
+- Renders: `output/50-eye-mount-reviews/c002-outer-flange-upper-head-review-v1/renders/`
 
 ## Review colors and collections
 
@@ -49,8 +49,8 @@ print release has been made.
 
 - Both rejected C002 objects are absent from the review.
 - Exactly two closed, manifold replacement candidates are present.
-- Both roots overlap their reconstructed flange and matching upper-head shell.
-- Both roots clear their eye buckets by at least `0.8 mm`.
+- Each connector's single root overlaps its reconstructed flange and matching upper-head shell.
+- Each single root clears its eye bucket by at least `0.8 mm`.
 - Both complete candidates preserve the configured `0.3 mm` bucket gap.
 - Both candidates overlap the old flange locations.
 - All 141 unrelated source mesh fingerprints remain unchanged.
@@ -77,17 +77,11 @@ print release has been made.
 blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_c002_outer_flange_upper_head_review_v1.py
 ```
 
-## Next physical review
+## Superseding review
 
-1. Open the current Blender file; it opens in the whole-head three-quarter
-   camera view.
-2. Inspect the purple outer flange on both sides in the full-head context.
-3. Use the two `root-detail` renders or isolate the purple and gray
-   collections to confirm the small tapered root enters the upper-head shell.
-4. Confirm the blue eye buckets and green lower C004 mounts are unchanged.
-5. Check both exterior views for any visible protrusion or unwanted silhouette
-   change.
-6. Approve or reject this review before any production-shell integration.
+Connector placement is accepted. Do not fabricate the single-root V1. Review
+the current dual-root V2 for vibration-load distribution while preserving the
+accepted connector locations and interfaces.
 
 ## Metal workstream preservation
 

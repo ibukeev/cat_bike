@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Generate a review-only upper-head root for each outer eye flange.
+"""Generate a review-only dual-root upper-head mount for each outer eye flange.
 
-Each candidate preserves the exact Gate 6 flange mating position and M2.5
-hole, removes the old long C002 bridge, and adds one compact tapered root into
-the matching upper-head shell. Production shell meshes remain unchanged.
+Each candidate preserves the exact accepted Gate 6 flange mating position and
+M2.5 hole while using two compact tapered roots, one at each end of the flange,
+to distribute vibration loads into the matching upper-head shell. Production
+shell meshes remain unchanged.
 """
 
 from __future__ import annotations
@@ -30,8 +31,8 @@ import generate_rear_cassette_lossless_repartition_review_v5 as v5  # noqa: E402
 
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
-DEFAULT_CONFIG = PACKAGE_ROOT / "config/c002-outer-flange-upper-head-review-v1.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/50-eye-mount-reviews/c002-outer-flange-upper-head-review-v1"
+DEFAULT_CONFIG = PACKAGE_ROOT / "config/c002-outer-flange-dual-root-upper-head-review-v2.json"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/00-current-review"
 
 
 def parse_args() -> argparse.Namespace:
@@ -240,66 +241,76 @@ def create_candidate(
             f"flange, above the {maximum_shell_gap:.4f} mm compact-root limit"
         )
 
-    flange_length = float(frame["dimensions"][0])
-    end_centers = (
-        frame["center"] + frame["tangent"] * flange_length / 2.0,
-        frame["center"] - frame["tangent"] * flange_length / 2.0,
-    )
-    shell_bvh = world_bvh(owner_shell)
-
-    def end_gap(point: Vector) -> float:
-        nearest = shell_bvh.find_nearest(point)
-        return float(nearest[3]) if nearest is not None else float("inf")
-
-    flange_end = min(end_centers, key=end_gap)
-    root_direction = (flange_end - frame["center"]).normalized()
     root_length = float(values["centerline_length_mm"])
     flange_overlap = float(values["flange_overlap_mm"])
     if flange_overlap <= 0.0 or flange_overlap >= root_length:
         raise ValueError("Root overlap must be positive and shorter than the root")
-
     shell_end_thickness = float(values["shell_end_thickness_mm"])
     if shell_end_thickness > float(frame["dimensions"][2]):
-        raise ValueError("Root must stay inside the preserved flange thickness")
+        raise ValueError("Roots must stay inside the preserved flange thickness")
+
     radial_shift = -frame["radial"] * (
         (float(frame["dimensions"][2]) - shell_end_thickness) / 2.0
     )
-    root_start = flange_end - root_direction * flange_overlap + radial_shift
-    root_end = (
-        flange_end
-        + root_direction * (root_length - flange_overlap)
-        + radial_shift
-    )
-    root = tapered_prism(
-        f"{names['proposed_object']}__hidden_root_tool",
-        root_start,
-        root_end,
-        frame["inward"],
-        frame["radial"],
-        float(values["flange_end_depth_mm"]),
-        float(values["shell_end_depth_mm"]),
-        float(values["flange_end_thickness_mm"]),
-        shell_end_thickness,
-        material,
-    )
-    root_flange_overlap = surfaces_overlap(root, candidate)
-    root_shell_overlap = surfaces_overlap(root, owner_shell)
-    root_bucket_overlap = surfaces_overlap(root, bucket)
-    root_bucket_gap = surface_distance(root, bucket)
-    if not root_flange_overlap or not root_shell_overlap:
-        raise ValueError(
-            f"{side} hidden root does not overlap both the preserved flange "
-            "and its upper-head owner shell"
+    flange_length = float(frame["dimensions"][0])
+    root_records = []
+    for root_index, direction_sign in enumerate((-1.0, 1.0), start=1):
+        root_direction = frame["tangent"] * direction_sign
+        flange_end = (
+            frame["center"] + root_direction * flange_length / 2.0
         )
-    if root_bucket_overlap or root_bucket_gap < float(
-        values["minimum_root_to_bucket_clearance_mm"]
-    ):
-        raise ValueError(
-            f"{side} hidden root violates eye-bucket clearance: "
-            f"overlap={root_bucket_overlap}, gap={root_bucket_gap:.4f} mm"
+        root_start = (
+            flange_end - root_direction * flange_overlap + radial_shift
         )
+        root_end = (
+            flange_end
+            + root_direction * (root_length - flange_overlap)
+            + radial_shift
+        )
+        root = tapered_prism(
+            f"{names['proposed_object']}__hidden_root_{root_index}_tool",
+            root_start,
+            root_end,
+            frame["inward"],
+            frame["radial"],
+            float(values["flange_end_depth_mm"]),
+            float(values["shell_end_depth_mm"]),
+            float(values["flange_end_thickness_mm"]),
+            shell_end_thickness,
+            material,
+        )
+        root_flange_overlap = surfaces_overlap(root, candidate)
+        root_shell_overlap = surfaces_overlap(root, owner_shell)
+        root_bucket_overlap = surfaces_overlap(root, bucket)
+        root_bucket_gap = surface_distance(root, bucket)
+        if not root_flange_overlap or not root_shell_overlap:
+            raise ValueError(
+                f"{side} hidden root {root_index} does not overlap both the "
+                "preserved flange and its upper-head owner shell"
+            )
+        if root_bucket_overlap or root_bucket_gap < float(
+            values["minimum_root_to_bucket_clearance_mm"]
+        ):
+            raise ValueError(
+                f"{side} hidden root {root_index} violates eye-bucket clearance: "
+                f"overlap={root_bucket_overlap}, gap={root_bucket_gap:.4f} mm"
+            )
+        root_records.append(
+            {
+                "root_index": root_index,
+                "flange_end_center_mm": [
+                    round(value, 4) for value in flange_end
+                ],
+                "root_axis": [
+                    round(value, 5) for value in root_direction
+                ],
+                "root_overlaps_flange": root_flange_overlap,
+                "root_overlaps_owner_shell": root_shell_overlap,
+                "root_to_bucket_gap_before_union_mm": round(root_bucket_gap, 4),
+            }
+        )
+        gate5.apply_boolean(candidate, root, "UNION", solver="EXACT")
 
-    gate5.apply_boolean(candidate, root, "UNION", solver="EXACT")
     gate6.cut_axis_hole(
         candidate,
         f"{names['proposed_object']}__m2_5_clearance",
@@ -314,6 +325,7 @@ def create_candidate(
     candidate["replaces_rejected_object"] = old_mount.name
     candidate["owner_shell"] = owner_shell.name
     candidate["preserves_gate6_outer_flange"] = True
+    candidate["root_count"] = len(root_records)
     candidate["root_centerline_length_mm"] = root_length
 
     boundary, nonmanifold = gate5.topology_counts(candidate)
@@ -334,6 +346,8 @@ def create_candidate(
         )
     if not old_overlap:
         raise ValueError(f"{side} proposed flange does not preserve the old mating location")
+    if len(root_records) != int(config["root_count_per_connector"]):
+        raise ValueError(f"{side} candidate does not have two validated roots")
 
     return candidate, {
         "side": side,
@@ -350,23 +364,26 @@ def create_candidate(
         "flange_dimensions_mm": list(frame["dimensions"]),
         "front_recess_mm": frame["front_recess"],
         "bucket_face_gap_from_gate6_mm": frame["bucket_face_gap"],
-        "flange_to_owner_shell_gap_before_root_mm": round(shell_gap, 4),
+        "flange_to_owner_shell_gap_before_roots_mm": round(shell_gap, 4),
+        "root_count": len(root_records),
         "root_centerline_length_mm": root_length,
         "root_extension_beyond_flange_mm": round(root_length - flange_overlap, 4),
         "root_flange_end_depth_mm": float(values["flange_end_depth_mm"]),
         "root_shell_end_depth_mm": float(values["shell_end_depth_mm"]),
         "root_flange_end_thickness_mm": float(values["flange_end_thickness_mm"]),
         "root_shell_end_thickness_mm": shell_end_thickness,
-        "root_axis": [round(value, 5) for value in root_direction],
-        "root_overlaps_flange": root_flange_overlap,
-        "root_overlaps_owner_shell": root_shell_overlap,
-        "root_to_bucket_gap_before_union_mm": round(root_bucket_gap, 4),
+        "root_records": root_records,
+        "minimum_root_to_bucket_gap_before_union_mm": min(
+            record["root_to_bucket_gap_before_union_mm"]
+            for record in root_records
+        ),
         "candidate_to_bucket_gap_mm": round(bucket_gap, 4),
         "candidate_overlaps_owner_shell": shell_overlap,
         "candidate_overlaps_old_flange_location": old_overlap,
         "boundary_edges": boundary,
         "nonmanifold_edges": nonmanifold,
         "candidate_dimensions_mm": [round(value, 4) for value in candidate.dimensions],
+        "candidate_volume_mm3": round(gate5.mesh_volume(candidate), 4),
     }
 
 def point_at(camera: bpy.types.Object, target: Vector) -> None:
@@ -375,7 +392,7 @@ def point_at(camera: bpy.types.Object, target: Vector) -> None:
 
 def configure_scene(output_dir: Path, resolution_px: int) -> bpy.types.Object:
     scene = bpy.context.scene
-    scene.name = "C002_Outer_Flange_Upper_Head_Review_V1"
+    scene.name = "C002_Outer_Flange_Dual_Root_Upper_Head_Review_V2"
     scene.render.engine = "BLENDER_WORKBENCH"
     shading = scene.display.shading
     shading.light = "STUDIO"
@@ -389,8 +406,8 @@ def configure_scene(output_dir: Path, resolution_px: int) -> bpy.types.Object:
     scene.render.resolution_y = resolution_px
     scene.render.resolution_percentage = 100
     scene.render.image_settings.file_format = "PNG"
-    camera_data = bpy.data.cameras.new("E2_REVIEW_ONLY__Camera")
-    camera = bpy.data.objects.new("E2_REVIEW_ONLY__Camera", camera_data)
+    camera_data = bpy.data.cameras.new("E3_REVIEW_ONLY__Camera")
+    camera = bpy.data.objects.new("E3_REVIEW_ONLY__Camera", camera_data)
     scene.collection.objects.link(camera)
     scene.camera = camera
     camera.data.lens = 58.0
@@ -419,7 +436,7 @@ def render_view(
             obj.hide_render = obj not in visible
     camera.location = location
     point_at(camera, target)
-    path = output_dir / "renders" / f"outer-flange-upper-head-{name}.png"
+    path = output_dir / "renders" / f"outer-flange-dual-root-upper-head-{name}.png"
     bpy.context.scene.render.filepath = str(path)
     bpy.ops.render.render(write_still=True)
     return str(path.relative_to(REPO_ROOT))
@@ -456,11 +473,11 @@ def main() -> None:
     original_mesh_count = sum(obj.type == "MESH" for obj in bpy.data.objects)
 
     collection_names = (
-        "E2_PROPOSED_OUTER_FLANGES_PURPLE",
-        "E2_PRESERVED_EYE_BUCKETS_BLUE",
-        "E2_PRESERVED_LOWER_C004_GREEN",
-        "E2_OWNER_UPPER_HEAD_SHELLS_GRAY",
-        "E2_NEARBY_REINFORCEMENT_CONTEXT",
+        "E3_PROPOSED_OUTER_FLANGES_PURPLE",
+        "E3_PRESERVED_EYE_BUCKETS_BLUE",
+        "E3_PRESERVED_LOWER_C004_GREEN",
+        "E3_OWNER_UPPER_HEAD_SHELLS_GRAY",
+        "E3_NEARBY_REINFORCEMENT_CONTEXT",
     )
     collections = {}
     for name in collection_names:
@@ -469,7 +486,7 @@ def main() -> None:
         collections[name] = collection
 
     material = gate5.material(
-        "E2__Proposed_Outer_Flange_Upper_Head_Root_Purple",
+        "E3__Proposed_Outer_Flange_Upper_Head_Root_Purple",
         hex_color(config["display"]["proposed_mount_color"]),
     )
     geometry_by_side = {value["side"]: value for value in gate6.eye_geometry()}
@@ -484,7 +501,7 @@ def main() -> None:
             geometry_by_side[side],
             names,
             config,
-            collections["E2_PROPOSED_OUTER_FLANGES_PURPLE"],
+            collections["E3_PROPOSED_OUTER_FLANGES_PURPLE"],
             material,
         )
         bucket = require_object(names["eye_bucket"])
@@ -501,9 +518,9 @@ def main() -> None:
         candidate.show_in_front = True
         bucket.show_in_front = True
         lower_mount.show_in_front = True
-        link_reference(bucket, collections["E2_PRESERVED_EYE_BUCKETS_BLUE"])
-        link_reference(lower_mount, collections["E2_PRESERVED_LOWER_C004_GREEN"])
-        link_reference(owner_shell, collections["E2_OWNER_UPPER_HEAD_SHELLS_GRAY"])
+        link_reference(bucket, collections["E3_PRESERVED_EYE_BUCKETS_BLUE"])
+        link_reference(lower_mount, collections["E3_PRESERVED_LOWER_C004_GREEN"])
+        link_reference(owner_shell, collections["E3_OWNER_UPPER_HEAD_SHELLS_GRAY"])
         side_code = "L" if side == "left" else "R"
         nearby = []
         for obj in bpy.data.objects:
@@ -514,7 +531,7 @@ def main() -> None:
                 and surface_distance(candidate, obj) <= 35.0
             ):
                 obj.color = hex_color(config["display"]["nearby_reinforcement_color"])
-                link_reference(obj, collections["E2_NEARBY_REINFORCEMENT_CONTEXT"])
+                link_reference(obj, collections["E3_NEARBY_REINFORCEMENT_CONTEXT"])
                 nearby.append(obj)
         record["nearby_retained_reinforcement"] = [obj.name for obj in nearby]
         side_records.append(record)
@@ -663,10 +680,11 @@ def main() -> None:
     scene["review_status"] = config["status"]
     scene["rejected_c002_objects_removed"] = True
     scene["replacement_mount_geometry_count"] = 2
+    scene["root_count_per_connector"] = 2
     scene["candidate_owner_shells"] = "left_upper_head,right_upper_head"
     scene["source_mesh_geometry_unchanged"] = True
     scene["production_shell_boolean_performed"] = False
-    blend_path = output_dir / "c002-outer-flange-upper-head-review-v1.blend"
+    blend_path = output_dir / "c002-outer-flange-dual-root-upper-head-review-v2.blend"
     scene["saved_whole_head_view_includes_both_eye_buckets"] = True
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
 
@@ -682,6 +700,11 @@ def main() -> None:
         "saved_whole_head_view_includes_both_eye_buckets": True,
         "unrelated_c010_c012_used_as_mount_anchors": False,
         "replacement_mount_geometry_count": len(candidate_objects),
+        "root_count_per_connector": int(config["root_count_per_connector"]),
+        "all_candidates_have_two_roots": all(
+            record["root_count"] == int(config["root_count_per_connector"])
+            for record in side_records
+        ),
         "all_candidates_closed_and_manifold": all(
             gate5.topology_counts(obj) == (0, 0) for obj in candidate_objects
         ),
@@ -694,9 +717,10 @@ def main() -> None:
             for record in side_records
         ),
         "all_hidden_roots_clear_eye_buckets": all(
-            record["root_to_bucket_gap_before_union_mm"]
+            root["root_to_bucket_gap_before_union_mm"]
             >= float(config["root"]["minimum_root_to_bucket_clearance_mm"])
             for record in side_records
+            for root in record["root_records"]
         ),
         "preserved_source_mesh_count": len(protected_before),
         "preserved_source_mesh_geometry_unchanged": protected_before == protected_after,
@@ -709,7 +733,7 @@ def main() -> None:
         "review_holds": config["review_holds"],
     }
     report_path = (
-        output_dir / "c002-outer-flange-upper-head-review-v1-validation.json"
+        output_dir / "c002-outer-flange-dual-root-upper-head-review-v2-validation.json"
     )
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))
