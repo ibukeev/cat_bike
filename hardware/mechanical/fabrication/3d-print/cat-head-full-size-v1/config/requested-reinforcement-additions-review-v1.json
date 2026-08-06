@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "visual review only; add all four user-requested reinforcement corrections after horizontal seam approval: two exact mirrored tie pairs, one independently surface-fitted right long tie, and one exact right mirror of L C056; no eye-mount redesign, C006 connector, exterior, aluminum, STL, G-code, or print change",
+  "source_horizontal_review_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/horizontal-seam-interface-review-v1/horizontal-seam-interface-review-v1.blend",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "mirror_plane": "head X = 0",
+  "tie_rail": {
+    "source_dimension_basis": "Gate 8 internal panel ribs: 4 mm foot width, 5 mm rib height, 5 mm junction overlap",
+    "cross_section_mm": [4.0, 5.0],
+    "endpoint_overlap_mm": 5.0,
+    "attachment_rule": "Use the closest verified mesh-surface points on each named left-side component and extend 5 mm into both components. Use exact X mirrors for C036_C038 and C036_C003. Because no mirrored L C039 target exists, fit the right C026_C039 tie independently between R C015 and the new right C056 mirror so both ends physically overlap."
+  },
+  "requested_ties": [
+    {
+      "id": "C036_C038",
+      "left_objects": ["R1_RET__L__C036__rib", "R1_RET__L__C038__rib"],
+      "right_attachment_objects": ["R1_RET__R__C039__rib", "R1_RET__R__C038__rib"],
+      "right_fit_policy": "exact_x_mirror"
+    },
+    {
+      "id": "C026_C039",
+      "left_objects": ["R1_CROSS__L__C026__rib", "R1_RET__L__C039__rib"],
+      "right_attachment_objects": ["R1_CROSS__R__C015__rib", "A1_PROPOSED__right_mirror_of_L_C056__rib"],
+      "right_fit_policy": "independent_closest_surface",
+      "right_fit_reason": "There is no right-side counterpart to L C039. An exact X mirror misses the new right C056 mirror by 0.685 mm, so the right tie is fitted to the actual named surfaces."
+    },
+    {
+      "id": "C036_C003",
+      "left_objects": ["R1_RET__L__C036__rib", "R1_RET__L__C003__rib"],
+      "right_attachment_objects": ["R1_RET__R__C039__rib", "R1_RET__R__C005__rib"],
+      "right_fit_policy": "exact_x_mirror"
+    }
+  ],
+  "requested_mirror": {
+    "source_object": "R1_RET__L__C056__rib",
+    "output_object": "A1_PROPOSED__right_mirror_of_L_C056__rib"
+  },
+  "approved_horizontal_rail_objects": [
+    "H1_PROPOSED__left_lower_face__MANQ007_horizontal_boundary_rail",
+    "H1_PROPOSED__right_lower_face__MANQ007_horizontal_boundary_rail"
+  ],
+  "rejected_source_objects": [
+    "R1_RET__L__C006__seam_rail",
+    "R1_RET__R__C006__seam_rail",
+    "R1_UNCL__L__C002__eye_mount",
+    "R1_UNCL__R__C002__eye_mount"
+  ],
+  "review_display": {
+    "new_tie_color": "#29D9FF",
+    "new_mirror_color": "#D56BFF",
+    "approved_horizontal_rail_color": "#39FF88",
+    "unchanged_reinforcement_color": "#526273",
+    "boundary_color": "#FFE34D",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "Exactly six tie rails and one mirrored C056 rib are new in this review.",
+    "The long right C026_C039 tie is intentionally surface-fitted rather than an exact mirror; this prevents the measured 0.685 mm floating gap caused by the absent right-side C039 counterpart.",
+    "The previously approved H1 MANQ007 horizontal rail pair remains unchanged and green.",
+    "Rejected C006 rails and C002 eye mounts remain hidden and are not reused.",
+    "The C002 eye-mount redesign and the connector interface replacing C006 remain separate later feedback items.",
+    "Tie rails are review-only closed solids and are not Boolean-unioned into any production shell or source reinforcement component.",
+    "No existing reinforcement, exterior, V5 boundary, aluminum interface, connector, eye, ear, or upper-head geometry is modified.",
+    "No STL or G-code is exported, and nothing is released for printing or aluminum fabrication."
+  ]
+}
