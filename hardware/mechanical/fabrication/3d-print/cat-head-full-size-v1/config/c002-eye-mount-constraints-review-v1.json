@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "visual constraints review only; preserve the Gate 6 eye buckets and retained lower C004 mounts, expose the rejected outer C002 mounts, and identify accepted internal seam-rail attachment targets; no replacement mount geometry, shell edit, aluminum edit, STL, G-code, or print release",
+  "status": "visual constraints review only; preserve the Gate 6 eye buckets and retained lower C004 mounts, remove rejected outer C002 mounts from the current review, and visibly highlight accepted internal seam-rail attachment targets; no replacement mount geometry, shell edit, aluminum edit, STL, G-code, or print release",
   "source_reinforcement_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
   "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
   "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
@@ -21,7 +21,6 @@
     }
   },
   "display": {
-    "rejected_mount_color": "#FF3A2F",
     "eye_bucket_color": "#39A7FF",
     "preserved_lower_mount_color": "#39FF88",
     "candidate_anchor_color": "#FFD43B",
@@ -31,8 +30,8 @@
   },
   "review_holds": [
     "The existing Gate 6 eye bucket and retained lower C004 mount are preserved assumptions for this bucket.",
-    "Both long outer C002 head mounts remain rejected and are shown red only for diagnosis.",
-    "The accepted outer seam rails C012 left and C010 right are shown yellow as measured attachment targets, not as an approved bracket design.",
+    "Both long outer C002 head mounts are measured from the source baseline and then removed completely from the current review blend.",
+    "The accepted outer seam rails C012 left and C010 right are forced yellow in both renders and the saved Blender viewport; they are measured attachment targets, not an approved bracket design.",
     "No replacement eye-mount solid is created in this review.",
     "The C006 connector and all aluminum plate/rail geometry remain deferred and unchanged.",
     "No STL or G-code is exported, and nothing is released for printing."

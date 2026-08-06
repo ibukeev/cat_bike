@@ -3,9 +3,10 @@
 ## Status
 
 This is the first review in the C002 eye-mount redesign bucket. It creates no
-replacement mount. It isolates the preserved eye system, the rejected outer
-C002 pieces, and the nearest accepted reinforcement anchors so the interface
-can be approved before any bracket shape is invented.
+replacement mount. The rejected outer C002 pieces are measured from the source
+baseline and removed completely from the current review. The review isolates
+the preserved eye system and nearest accepted reinforcement anchors so the
+interface can be approved before any bracket shape is invented.
 
 ## Primary review files
 
@@ -15,7 +16,6 @@ can be approved before any bracket shape is invented.
 
 ## Review colors
 
-- Red: rejected outer C002 mount; diagnostic reference only.
 - Blue: preserved Gate 6 eye bucket.
 - Green: preserved lower C004 eye mount.
 - Yellow: accepted outer seam rail identified as the possible new anchor.
@@ -27,6 +27,9 @@ can be approved before any bracket shape is invented.
 - Preserve the existing Gate 6 eye bucket/lightbox.
 - Preserve the retained lower C004 mount.
 - Replace only the outer C002 mounting function.
+- The current review blend contains no `R1_UNCL__L__C002__eye_mount` or
+  `R1_UNCL__R__C002__eye_mount` object; those remain only in the preserved
+  source baseline for traceability.
 - Keep all replacement geometry internal and invisible from the exterior.
 - Preserve the accepted reinforcement review and aluminum interface V0.5.
 
@@ -55,10 +58,13 @@ can be approved before any bracket shape is invented.
 ## Validation performed
 
 - Source accepted reinforcement blend opens from its workstream baseline.
-- No mesh object was added or removed.
-- Every pre-existing mesh fingerprint is unchanged.
-- Both C002 pieces, eye buckets, lower C004 mounts, seam-rail anchors, retained
+- Exactly the two rejected C002 mesh objects are removed from the current
+  review; no replacement mesh is added.
+- Every other pre-existing mesh fingerprint is unchanged.
+- Both eye buckets, lower C004 mounts, yellow seam-rail anchors, retained
   shells, and nearby reinforcement are present in the isolated review.
+- The saved Blender viewport is forced to solid/object-color camera view so
+  C012/C010 appear yellow when the file opens, not only in renders.
 - Seven close-up context and isolated renders are generated.
 - Shared interface revision remains `CAT-HEAD-SHELL-ALUMINUM-V0.5`.
 - No STL or G-code is generated.
@@ -71,10 +77,11 @@ blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size
 
 ## Next physical review
 
-1. Open the current Blender file in its saved interior view.
+1. Open the current Blender file in its saved left-interior close-up; the yellow
+   C012 anchor should be immediately visible.
 2. Confirm the blue eye buckets and green lower C004 mounts should remain.
-3. Confirm the red C002 pieces should be removed completely.
-4. Confirm the yellow C012/C010 seam rails are acceptable internal anchors for
+3. Confirm no C002 object exists in the current review.
+4. Confirm the yellow C012/C010 seam rails are visible and acceptable internal anchors for
    a low-profile replacement outer mount.
 5. Only after those four points are approved, generate one mirrored bracket
    concept for visual review.

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Generate an isolated constraints review for the rejected outer C002 mounts.
 
-This generator creates no replacement mount mesh. It exposes the rejected C002
-pieces, preserved eye buckets and lower C004 mounts, and the nearest accepted
-outer seam rails so the mounting concept can be reviewed before geometry work.
+This generator creates no replacement mount mesh. It measures the rejected
+C002 pieces from the accepted source, removes them from the current review, and
+shows the preserved eye buckets, lower C004 mounts, and nearest accepted outer
+seam rails before any replacement geometry work.
 """
 
 from __future__ import annotations
@@ -121,6 +122,14 @@ def configure_scene(output_dir: Path, resolution_px: int) -> bpy.types.Object:
     scene.collection.objects.link(camera)
     scene.camera = camera
     camera.data.lens = 58.0
+    for screen in bpy.data.screens:
+        for area in screen.areas:
+            if area.type != "VIEW_3D":
+                continue
+            space = area.spaces.active
+            space.shading.type = "SOLID"
+            space.shading.color_type = "OBJECT"
+            space.region_3d.view_perspective = "CAMERA"
     (output_dir / "renders").mkdir(parents=True, exist_ok=True)
     return camera
 
@@ -157,16 +166,18 @@ def main() -> None:
         raise ValueError("Shared shell/aluminum interface revision changed")
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    rejected_names = {
+        values["rejected_outer_mount"] for values in config["sides"].values()
+    }
     protected_before = {
         obj.name: v5.mesh_fingerprint(obj)
         for obj in bpy.data.objects
-        if obj.type == "MESH"
+        if obj.type == "MESH" and obj.name not in rejected_names
     }
-    original_mesh_count = len(protected_before)
+    original_mesh_count = sum(obj.type == "MESH" for obj in bpy.data.objects)
 
     collections = {}
     for name in (
-        "E1_REJECTED_C002_RED",
         "E1_PRESERVED_EYE_BUCKETS_BLUE",
         "E1_PRESERVED_LOWER_C004_GREEN",
         "E1_CANDIDATE_OUTER_ANCHORS_YELLOW",
@@ -180,7 +191,7 @@ def main() -> None:
     display = config["display"]
     side_records: dict[str, Any] = {}
     side_visible: dict[str, set[bpy.types.Object]] = {}
-    key_objects: set[bpy.types.Object] = set()
+    rejected_objects: list[bpy.types.Object] = []
 
     for side, names in config["sides"].items():
         rejected = require_object(names["rejected_outer_mount"])
@@ -189,19 +200,18 @@ def main() -> None:
         anchor = require_object(names["outer_anchor"])
         shell = require_object(names["retained_shell"])
 
-        rejected.color = hex_color(display["rejected_mount_color"])
         bucket.color = hex_color(display["eye_bucket_color"])
         lower_mount.color = hex_color(display["preserved_lower_mount_color"])
         anchor.color = hex_color(display["candidate_anchor_color"])
         shell.color = hex_color(display["shell_wire_color"])
-        for obj in (rejected, bucket, lower_mount, anchor):
+        for obj in (bucket, lower_mount, anchor):
             obj.show_in_front = True
             obj.hide_viewport = False
+            obj.hide_set(False)
         shell.display_type = "WIRE"
         shell.show_in_front = False
         shell.hide_viewport = False
 
-        link_reference(rejected, collections["E1_REJECTED_C002_RED"])
         link_reference(bucket, collections["E1_PRESERVED_EYE_BUCKETS_BLUE"])
         link_reference(lower_mount, collections["E1_PRESERVED_LOWER_C004_GREEN"])
         link_reference(anchor, collections["E1_CANDIDATE_OUTER_ANCHORS_YELLOW"])
@@ -236,11 +246,18 @@ def main() -> None:
             "rejected_overlaps_anchor": surfaces_overlap(rejected, anchor),
             "retained_shell": shell.name,
             "rejected_to_retained_shell_gap_mm": round(surface_distance(rejected, shell), 4),
+            "rejected_removed_from_current_review": True,
             "nearby_retained_reinforcement": [obj.name for obj in nearby],
         }
-        essentials = {rejected, bucket, lower_mount, anchor, shell}
+        essentials = {bucket, lower_mount, anchor, shell}
         side_visible[side] = essentials | set(nearby)
-        key_objects |= essentials
+        rejected_objects.append(rejected)
+
+    for rejected in rejected_objects:
+        mesh = rejected.data
+        bpy.data.objects.remove(rejected, do_unlink=True)
+        if mesh.users == 0:
+            bpy.data.meshes.remove(mesh)
 
     default_visible = side_visible["left"] | side_visible["right"]
     for obj in bpy.data.objects:
@@ -255,8 +272,8 @@ def main() -> None:
     renders.append(render_view(camera, output_dir, "right-interior", Vector((285.0, 315.0, 205.0)), Vector((86.0, 77.0, 140.0)), side_visible["right"]))
     renders.append(render_view(camera, output_dir, "left-exterior", Vector((-260.0, -250.0, 190.0)), Vector((-86.0, 77.0, 140.0)), side_visible["left"]))
     renders.append(render_view(camera, output_dir, "right-exterior", Vector((260.0, -250.0, 190.0)), Vector((86.0, 77.0, 140.0)), side_visible["right"]))
-    isolated_left = {require_object(config["sides"]["left"][key]) for key in ("rejected_outer_mount", "preserved_lower_mount", "eye_bucket", "outer_anchor")}
-    isolated_right = {require_object(config["sides"]["right"][key]) for key in ("rejected_outer_mount", "preserved_lower_mount", "eye_bucket", "outer_anchor")}
+    isolated_left = {require_object(config["sides"]["left"][key]) for key in ("preserved_lower_mount", "eye_bucket", "outer_anchor")}
+    isolated_right = {require_object(config["sides"]["right"][key]) for key in ("preserved_lower_mount", "eye_bucket", "outer_anchor")}
     renders.append(render_view(camera, output_dir, "left-isolated", Vector((-270.0, 300.0, 195.0)), Vector((-86.0, 77.0, 140.0)), isolated_left))
     renders.append(render_view(camera, output_dir, "right-isolated", Vector((270.0, 300.0, 195.0)), Vector((86.0, 77.0, 140.0)), isolated_right))
 
@@ -264,8 +281,8 @@ def main() -> None:
         if obj.type not in {"CAMERA", "LIGHT"}:
             obj.hide_viewport = obj not in default_visible
             obj.hide_render = obj not in default_visible
-    camera.location = Vector((0.0, 390.0, 205.0))
-    point_at(camera, Vector((0.0, 77.0, 140.0)))
+    camera.location = Vector((-285.0, 315.0, 205.0))
+    point_at(camera, Vector((-86.0, 77.0, 140.0)))
 
     protected_after = {
         name: v5.mesh_fingerprint(bpy.data.objects[name])
@@ -274,12 +291,13 @@ def main() -> None:
     if protected_before != protected_after:
         raise ValueError("A pre-existing source/review mesh changed")
     final_mesh_count = sum(obj.type == "MESH" for obj in bpy.data.objects)
-    if final_mesh_count != original_mesh_count:
-        raise ValueError("This constraints review must not create mesh geometry")
+    if final_mesh_count != original_mesh_count - len(rejected_names):
+        raise ValueError("Current review must remove exactly the two rejected C002 meshes")
 
     scene = bpy.context.scene
     scene["review_status"] = config["status"]
     scene["replacement_mount_geometry_created"] = False
+    scene["rejected_c002_objects_removed"] = True
     scene["source_mesh_geometry_unchanged"] = True
     blend_path = output_dir / "c002-eye-mount-constraints-review-v1.blend"
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
@@ -292,6 +310,8 @@ def main() -> None:
         "side_records": side_records,
         "replacement_mount_geometry_created": False,
         "source_mesh_count": original_mesh_count,
+        "current_review_mesh_count": final_mesh_count,
+        "rejected_c002_objects_removed_from_current_review": sorted(rejected_names),
         "source_mesh_geometry_unchanged": protected_before == protected_after,
         "preserved_assumptions": [
             "Existing Gate 6 eye buckets",
