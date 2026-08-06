@@ -1,43 +1,46 @@
 # Cat Head Output Navigation
 
-The generated `output/` directory is organized by workstream so the current
-review is always easy to find.
+The generated `output/` directory is organized by workstream so the single
+current review is always easy to find.
 
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/c002-eye-mount-constraints-review-v1.blend`
+  `output/00-current-review/c002-outer-flange-upper-head-review-v1.blend`
 - Current validation:
-  `output/00-current-review/c002-eye-mount-constraints-review-v1-validation.json`
-- Current renders: `output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/renders/`
+  `output/00-current-review/c002-outer-flange-upper-head-review-v1-validation.json`
+- Current renders: `output/00-current-review/renders/`
 
 ## Folder map
 
-- `output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/`: the single review currently awaiting or most
-  recently receiving user review. Review files are placed directly here.
+- `output/00-current-review/`: the single review currently awaiting user
+  approval. Review files are placed directly here.
 - `output/10-design-gates/`: Gate 1 through Gate 8 historical design outputs,
   test prints, shells, eye modules, and glow-panel work.
 - `output/20-rear-cassette/current-baseline-v5/`: accepted lossless rear-cassette
   repartition used by later reinforcement work.
 - `output/20-rear-cassette/history/`: rejected or superseded rear-cassette seam,
   cut, and repartition iterations.
-- `output/30-reinforcement-baselines/`: the lower-reinforcement ownership and
-  approved horizontal-seam review files plus the accepted reinforcement
-  additions used to generate the current C002 constraints review.
+- `output/30-reinforcement-baselines/`: accepted reinforcement baselines and
+  their historical ownership/interface reviews.
 - `output/40-prototypes/`: independent fabrication experiments, currently the
   mirror-facet cap prototypes.
+- `output/50-eye-mount-reviews/`: completed or superseded C002 eye-mount
+  constraint/design reviews retained for traceability.
 
 ## Current decision state
 
 The requested reinforcement additions were reviewed as “much better” on
-2026-08-05, and work may move to the next task bucket. This is acceptance of
-the reinforcement direction only; it is not authorization to print or to
-modify aluminum.
+2026-08-05. That acceptance applies only to the reinforcement direction; it is
+not authorization to print or modify aluminum.
 
-The current task bucket is the rejected C002 eye-mount redesign. The first
-review isolates constraints only and creates no replacement mount. The C006
-replacement connector remains deferred until it can be coordinated with the
-aluminum plate/rail workstream.
+The current C002 review replaces each rejected floating outer mount with the
+exact Gate 6 flange and M2.5 interface plus a compact tapered root that overlaps
+the matching upper-head shell. This is visual-review geometry only. It has not
+been Boolean-unioned into the production upper-head pieces, exported to STL, or
+released for printing.
+
+C006 and all aluminum plate/rail geometry remain deferred and unchanged.
 
 ## Organization rule
 

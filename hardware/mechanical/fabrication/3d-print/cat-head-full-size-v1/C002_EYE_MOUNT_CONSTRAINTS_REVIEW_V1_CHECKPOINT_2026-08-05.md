@@ -2,17 +2,18 @@
 
 ## Status
 
-This is the first review in the C002 eye-mount redesign bucket. It creates no
-replacement mount. The rejected outer C002 pieces are measured from the source
+This completed constraints-only review is archived under the eye-mount
+workstream. It creates no replacement mount. The rejected outer C002 pieces are
+measured from the source
 baseline and removed completely from the current review. The review isolates
 the preserved eye system and nearest accepted reinforcement anchors so the
 interface can be approved before any bracket shape is invented.
 
 ## Primary review files
 
-- Blender: `output/00-current-review/c002-eye-mount-constraints-review-v1.blend`
-- Validation: `output/00-current-review/c002-eye-mount-constraints-review-v1-validation.json`
-- Renders: `output/00-current-review/renders/`
+- Blender: `output/50-eye-mount-reviews/c002-eye-mount-constraints-review-v1/c002-eye-mount-constraints-review-v1.blend`
+- Validation: `output/50-eye-mount-reviews/c002-eye-mount-constraints-review-v1/c002-eye-mount-constraints-review-v1-validation.json`
+- Renders: `output/50-eye-mount-reviews/c002-eye-mount-constraints-review-v1/renders/`
 
 ## Review colors
 

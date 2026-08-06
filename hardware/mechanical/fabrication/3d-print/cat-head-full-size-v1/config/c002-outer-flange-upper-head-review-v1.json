@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "visual review only; replace each rejected floating outer C002 head flange with the same Gate 6 mating position and M2.5 hole plus a compact hidden root into the matching upper-head shell; preserve eye buckets, lower C004 mounts, accepted reinforcement, C006 hold, aluminum V0.5, and all exterior geometry; no STL, G-code, or print release",
+  "source_reinforcement_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
+  "gate6_eye_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate6-eye-modules.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "sides": {
+    "left": {
+      "rejected_outer_mount": "R1_UNCL__L__C002__eye_mount",
+      "preserved_lower_mount": "R1_RET__L__C004__eye_mount",
+      "eye_bucket": "left_eye_bucket",
+      "owner_shell": "left_upper_head",
+      "proposed_object": "E2_PROPOSED__L__outer_eye_mount_flange_upper_head_root"
+    },
+    "right": {
+      "rejected_outer_mount": "R1_UNCL__R__C002__eye_mount",
+      "preserved_lower_mount": "R1_RET__R__C004__eye_mount",
+      "eye_bucket": "right_eye_bucket",
+      "owner_shell": "right_upper_head",
+      "proposed_object": "E2_PROPOSED__R__outer_eye_mount_flange_upper_head_root"
+    }
+  },
+  "root": {
+    "centerline_length_mm": 3.0,
+    "flange_overlap_mm": 0.8,
+    "flange_end_depth_mm": 3.0,
+    "shell_end_depth_mm": 4.0,
+    "flange_end_thickness_mm": 1.6,
+    "shell_end_thickness_mm": 2.0,
+    "maximum_flange_to_owner_shell_gap_mm": 0.35,
+    "minimum_root_to_bucket_clearance_mm": 0.8,
+    "minimum_candidate_to_bucket_clearance_mm": 0.25
+  },
+  "display": {
+    "proposed_mount_color": "#D56BFF",
+    "eye_bucket_color": "#39A7FF",
+    "preserved_lower_mount_color": "#39FF88",
+    "nearby_reinforcement_color": "#526273",
+    "shell_wire_color": "#7B8794",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "The original outer flange mating location, M2.5 hole center, hole axis, 12 x 8 x 2.4 mm flange envelope, 0.6 mm front recess, and 0.3 mm bucket-side face gap are preserved from Gate 6.",
+    "Only the old long shell bridge is replaced; the new support is a 3.0 mm tapered hidden root fitted independently to each matching upper-head shell.",
+    "The rejected C002 objects and unrelated C010/C012 seam rails are absent from the visible candidate.",
+    "Existing eye buckets and connected lower C004 mounts remain unchanged.",
+    "The proposed mount overlaps the upper-head owner shell for review but is not Boolean-unioned into a production shell.",
+    "C006 and all aluminum plate/rail geometry remain deferred and unchanged.",
+    "No STL or G-code is exported, and nothing is released for printing."
+  ]
+}
