@@ -6,14 +6,14 @@ review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/requested-reinforcement-additions-review-v1.blend`
+  `output/00-current-review/c002-eye-mount-constraints-review-v1.blend`
 - Current validation:
-  `output/00-current-review/requested-reinforcement-additions-review-v1-validation.json`
-- Current renders: `output/00-current-review/renders/`
+  `output/00-current-review/c002-eye-mount-constraints-review-v1-validation.json`
+- Current renders: `output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/renders/`
 
 ## Folder map
 
-- `output/00-current-review/`: the single review currently awaiting or most
+- `output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/`: the single review currently awaiting or most
   recently receiving user review. Review files are placed directly here.
 - `output/10-design-gates/`: Gate 1 through Gate 8 historical design outputs,
   test prints, shells, eye modules, and glow-panel work.
@@ -22,7 +22,8 @@ review is always easy to find.
 - `output/20-rear-cassette/history/`: rejected or superseded rear-cassette seam,
   cut, and repartition iterations.
 - `output/30-reinforcement-baselines/`: the lower-reinforcement ownership and
-  approved horizontal-seam review files used to generate the current review.
+  approved horizontal-seam review files plus the accepted reinforcement
+  additions used to generate the current C002 constraints review.
 - `output/40-prototypes/`: independent fabrication experiments, currently the
   mirror-facet cap prototypes.
 
@@ -33,9 +34,10 @@ The requested reinforcement additions were reviewed as “much better” on
 the reinforcement direction only; it is not authorization to print or to
 modify aluminum.
 
-The next independent task bucket is the rejected C002 eye-mount redesign. The
-C006 replacement connector remains deferred until it can be coordinated with
-the aluminum plate/rail workstream.
+The current task bucket is the rejected C002 eye-mount redesign. The first
+review isolates constraints only and creates no replacement mount. The C006
+replacement connector remains deferred until it can be coordinated with the
+aluminum plate/rail workstream.
 
 ## Organization rule
 

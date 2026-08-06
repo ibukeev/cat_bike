@@ -14,9 +14,9 @@ authorization.
 
 ## Primary review files
 
-- Blender: `output/00-current-review/requested-reinforcement-additions-review-v1.blend`
-- Validation: `output/00-current-review/requested-reinforcement-additions-review-v1-validation.json`
-- Renders: `output/00-current-review/renders/`
+- Blender: `output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend`
+- Validation: `output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1-validation.json`
+- Renders: `output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/renders/`
 
 ## Blender review structure
 
