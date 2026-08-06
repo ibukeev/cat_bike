@@ -2,16 +2,17 @@
 
 ## Status
 
-This is the current structural-layout review. It preserves both outer connector
-positions accepted in V1 and adds two compact tapered roots per connector, one
-at each end of the 12 mm flange, to distribute loads and resist twisting. CAD
-validation passes, but this is not a vibration certification or print release.
+Rejected by the user on 2026-08-06. V2 reinforced only the two outer head-side
+flanges with narrow end roots. It did not reinforce the matching eye-bucket
+flanges or the lower head/eye flange pair on either side, so it did not address
+the complete eight-flange load path. Preserve it only as rejected history; it
+is not approved for fabrication.
 
 ## Primary review files
 
-- Blender: `output/00-current-review/c002-outer-flange-dual-root-upper-head-review-v2.blend`
-- Validation: `output/00-current-review/c002-outer-flange-dual-root-upper-head-review-v2-validation.json`
-- Renders: `output/00-current-review/renders/`
+- Blender: `output/50-eye-mount-reviews/c002-outer-flange-dual-root-upper-head-review-v2/c002-outer-flange-dual-root-upper-head-review-v2.blend`
+- Validation: `output/50-eye-mount-reviews/c002-outer-flange-dual-root-upper-head-review-v2/c002-outer-flange-dual-root-upper-head-review-v2-validation.json`
+- Renders: `output/50-eye-mount-reviews/c002-outer-flange-dual-root-upper-head-review-v2/renders/`
 
 ## Review colors and collections
 
@@ -69,18 +70,12 @@ validation passes, but this is not a vibration certification or print release.
 blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_c002_outer_flange_dual_root_upper_head_review_v2.py
 ```
 
-## Next physical review
+## Superseding review
 
-1. Open the current V2 Blender file in its saved whole-head view.
-2. Confirm both purple connector bodies remain in the accepted V1 positions.
-3. Open or isolate the left and right root-detail views.
-4. Confirm each purple connector visibly has one root at each end.
-5. Confirm all four roots enter the gray upper-head shells without touching the
-   blue eye buckets.
-6. Check both exterior views for unwanted silhouette changes.
-7. Approve or reject V2 before production-shell integration.
-8. After production integration, define print orientation and a physical
-   vibration/load test before any bike use.
+Do not fabricate V2. Review V3, which covers all eight physical flanges:
+outer head, outer eye, lower head, and lower eye on both left and right sides.
+V3 uses a broad continuous owner-side base at every flange junction while
+preserving the accepted locations, holes, and mating gaps.
 
 ## Metal workstream preservation
 

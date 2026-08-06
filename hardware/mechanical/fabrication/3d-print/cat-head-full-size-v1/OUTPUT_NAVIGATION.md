@@ -6,9 +6,9 @@ current review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/c002-outer-flange-dual-root-upper-head-review-v2.blend`
+  `output/00-current-review/eye-all-eight-flange-broad-base-review-v3.blend`
 - Current validation:
-  `output/00-current-review/c002-outer-flange-dual-root-upper-head-review-v2-validation.json`
+  `output/00-current-review/eye-all-eight-flange-broad-base-review-v3-validation.json`
 - Current renders: `output/00-current-review/renders/`
 
 ## Folder map
@@ -34,15 +34,19 @@ The requested reinforcement additions were reviewed as “much better” on
 2026-08-05. That acceptance applies only to the reinforcement direction; it is
 not authorization to print or modify aluminum.
 
-The V1 connector positions were accepted on 2026-08-06, then its single-root
-support was superseded because it did not provide enough confidence for bike
-vibration. The current V2 review preserves both accepted connector positions
-and adds two compact tapered roots per connector, one at each end of the 12 mm
-flange, to distribute load and resist twisting.
+The V1 outer connector positions were accepted on 2026-08-06. V2 was rejected
+because its narrow end roots reinforced only the two outer head-side flanges;
+it did not add owner-side mass to the matching eye-bucket flanges or either
+lower flange pair.
 
-V2 is structural-layout review geometry only. It has not been Boolean-unioned
-into the production upper-head pieces, physically vibration-tested, exported
-to STL, or released for printing.
+The current V3 review preserves the Gate 6 positions and M2.5 interfaces while
+showing four broad-base flange candidates per side: outer head, outer eye,
+lower head, and lower eye. Every flange receives a continuous flared owner-side
+base rather than narrow end roots.
+
+V3 is review geometry only. It has not been Boolean-unioned into the production
+shells or eye buckets, physically vibration-tested, exported to STL, or
+released for printing.
 
 C006 and all aluminum plate/rail geometry remain deferred and unchanged.
 

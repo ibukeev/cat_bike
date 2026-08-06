@@ -1,0 +1,49 @@
+{
+  "schema_version": 3,
+  "status": "visual and structural-layout review only; V2 dual end roots rejected; preserve all eight Gate 6 flange positions, M2.5 interfaces, and 0.3 mm mating gaps while adding a broad continuous owner-side base to the outer and lower head flanges and matching eye-bucket flanges on both sides; no production Boolean, STL, G-code, vibration certification, or print release",
+  "source_reinforcement_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
+  "gate6_eye_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate6-eye-modules.json",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "sides": {
+    "left": {
+      "eye_bucket": "left_eye_bucket",
+      "outer_head_owner": "left_upper_head",
+      "lower_head_owner": "left_lower_face",
+      "outer_head_source_reference": "R1_UNCL__L__C002__eye_mount",
+      "lower_head_source_reference": "R1_RET__L__C004__eye_mount"
+    },
+    "right": {
+      "eye_bucket": "right_eye_bucket",
+      "outer_head_owner": "right_upper_head",
+      "lower_head_owner": "right_lower_face",
+      "outer_head_source_reference": "R1_UNCL__R__C002__eye_mount",
+      "lower_head_source_reference": "R1_RET__R__C004__eye_mount"
+    }
+  },
+  "broad_base": {
+    "flange_overlap_mm": 0.8,
+    "total_backing_depth_mm": 4.0,
+    "flange_end_length_mm": 12.0,
+    "owner_end_length_mm": 16.0,
+    "flange_end_depth_mm": 8.0,
+    "owner_end_depth_mm": 12.0,
+    "minimum_mating_gap_mm": 0.25
+  },
+  "display": {
+    "head_candidate_color": "#D56BFF",
+    "eye_candidate_color": "#FF9F35",
+    "eye_bucket_color": "#39A7FF",
+    "owner_shell_color": "#7B8794",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "Exactly four flange candidates are shown per side: outer head, outer eye, lower head, and lower eye; eight total.",
+    "All Gate 6 flange centers, axes, 12 x 8 x 2.4 mm mating tabs, M2.5 hole centers, 0.6 mm front recesses, and 0.3 mm mating gaps remain unchanged.",
+    "Every flange receives one broad continuous owner-side base, not narrow end roots.",
+    "The bases extend only away from the mating gap and overlap their head shell or eye bucket owner.",
+    "The original C002 and C004 source mount objects are hidden reference geometry and are not reused as candidates.",
+    "Eye buckets, upper/lower shells, accepted reinforcement, C006 hold, and aluminum V0.5 remain unchanged.",
+    "No production-shell or eye-bucket Boolean, STL, G-code, vibration certification, or print release is produced."
+  ]
+}

@@ -32,7 +32,7 @@ import generate_rear_cassette_lossless_repartition_review_v5 as v5  # noqa: E402
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
 DEFAULT_CONFIG = PACKAGE_ROOT / "config/c002-outer-flange-dual-root-upper-head-review-v2.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/00-current-review"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/50-eye-mount-reviews/c002-outer-flange-dual-root-upper-head-review-v2"
 
 
 def parse_args() -> argparse.Namespace:
