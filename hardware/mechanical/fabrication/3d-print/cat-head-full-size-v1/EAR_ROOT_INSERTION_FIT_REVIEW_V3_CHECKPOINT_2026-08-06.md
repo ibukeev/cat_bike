@@ -2,9 +2,16 @@
 
 ## Status
 
-This is the single current ear-root review. It addresses only physical-fit
-feedback F-07, F-08, and F-09: both upper-corner collisions, the lower-center
-collision/insertion failure, and excessive deep-body snugness.
+The user visually accepted the yellow seated fit-body geometry on 2026-08-06.
+This remains the single current ear-root review until the retention iteration
+starts. It addresses only physical-fit feedback F-07, F-08, and F-09: both
+upper-corner collisions, the lower-center collision/insertion failure, and
+excessive deep-body snugness.
+
+The cyan/blue-looking geometry visible in the default view is the unchanged
+exact ear, not a new connector. The blue rotated and green translated bodies
+are motion ghosts hidden by default. The green ghost was not separately
+reviewed visually; its clearance is covered by the digital path validation.
 
 V3 is a fit-envelope review, not a finished or printable insert. Retention,
 seated datums, flange strength, and tool access remain deferred to
@@ -100,11 +107,11 @@ blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-
 
 ## Next physical-review step
 
-The user reviews only the yellow seated coverage and the blue/green insertion
-sequence. If accepted, the next logical iteration is F-10/F-11/F-12: define
-seated datums and two or three short accessible retention points without
-reintroducing the removed interference. Only after that integrated geometry
-passes the same full-shell/path checks should a small fit coupon be prepared.
+The yellow seated fit envelope is visually accepted. On the user's next
+explicit `go`, the logical iteration is F-10/F-11/F-12: define seated datums and
+two or three short accessible retention points without reintroducing the
+removed interference. Only after that integrated geometry passes the same
+full-shell/path checks should a small fit coupon be prepared.
 
 ## Preserved workstreams
 

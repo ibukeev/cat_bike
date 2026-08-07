@@ -56,7 +56,8 @@ clearance. Both bodies are connected manifold mirrors with zero seated
 intersections. Their 41-sample rotate-then-slide paths are clear, including a
 `0.4 mm` expanded hidden-body margin. Old capture pads and the M2.5 retainer
 are absent; retention/datums remain the next F-10/F-11/F-12 iteration. V3 is
-not a finished part or print release.
+not a finished part or print release. The user visually accepted the yellow
+seated fit-body geometry on 2026-08-06.
 
 C006 and all aluminum plate/rail geometry remain deferred and unchanged.
 
