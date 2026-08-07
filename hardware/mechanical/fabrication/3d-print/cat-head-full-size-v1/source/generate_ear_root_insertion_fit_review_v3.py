@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 import copy
 import json
-import math
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -14,6 +13,7 @@ from typing import Any
 
 import bpy
 from mathutils import Matrix, Vector
+from mathutils.bvhtree import BVHTree
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -32,7 +32,7 @@ import generate_rear_cassette_lossless_repartition_review_v5 as rear_v5  # noqa:
 PACKAGE_ROOT = SCRIPT_DIR.parent
 REPO_ROOT = PACKAGE_ROOT.parents[4]
 DEFAULT_CONFIG = PACKAGE_ROOT / "config/ear-root-insertion-fit-review-v3.json"
-DEFAULT_OUTPUT = PACKAGE_ROOT / "output/00-current-review"
+DEFAULT_OUTPUT = PACKAGE_ROOT / "output/60-ear-root-reviews/ear-root-insertion-fit-review-v3"
 
 
 def parse_args() -> argparse.Namespace:
@@ -346,6 +346,22 @@ def mirror_payload(payload: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def world_triangle_intersection_count(
+    first: bpy.types.Object, second: bpy.types.Object
+) -> int:
+    """Count intersections in world space, including object motion."""
+    bpy.context.view_layer.update()
+    def tree(obj: bpy.types.Object) -> BVHTree:
+        obj.data.calc_loop_triangles()
+        return BVHTree.FromPolygons(
+            [obj.matrix_world @ vertex.co for vertex in obj.data.vertices],
+            [tuple(triangle.vertices) for triangle in obj.data.loop_triangles],
+            all_triangles=True,
+        )
+
+    return len(tree(first).overlap(tree(second)))
+
+
 def collision_hits(
     obj: bpy.types.Object, targets: list[bpy.types.Object]
 ) -> dict[str, int]:
@@ -353,7 +369,7 @@ def collision_hits(
     for target in targets:
         if not gate8.bounding_boxes_overlap(obj, target):
             continue
-        count = gate8.triangle_intersection_count(obj, target)
+        count = world_triangle_intersection_count(obj, target)
         if count:
             hits[target.name] = count
     return hits
@@ -362,59 +378,38 @@ def collision_hits(
 def path_samples(
     frame: dict[str, Any], values: dict[str, Any]
 ) -> list[dict[str, Any]]:
-    pivot = Vector(frame["pivot"]["midpoint"])
-    axis = Vector(frame["pivot"]["tangent"]).normalized()
-    inward = Vector(frame["pivot"]["inward"]).normalized()
-    free_point = Vector(frame["free_edge"]["midpoint"])
-    angle = math.radians(float(values["rotation_degrees"]))
-
-    def free_edge_inward_motion(sign: float) -> float:
-        rotation = Matrix.Rotation(sign * angle, 4, axis)
-        moved = pivot + rotation @ (free_point - pivot)
-        return (moved - free_point).dot(inward)
-
-    sign = max((-1.0, 1.0), key=free_edge_inward_motion)
-    if free_edge_inward_motion(sign) <= 0.0:
-        raise ValueError("Path rotation does not move the free edge inward")
-    rotation_count = int(values["rotation_sample_count_including_seated"])
-    translation_count = int(
-        values["translation_sample_count_excluding_rotated_start"]
-    )
-    samples = []
-    for index in range(rotation_count):
-        fraction = index / (rotation_count - 1)
-        signed_angle = sign * angle * fraction
-        matrix = (
-            Matrix.Translation(pivot)
-            @ Matrix.Rotation(signed_angle, 4, axis)
-            @ Matrix.Translation(-pivot)
+    if values.get("motion_mode") == "mirrored_world_outward_up":
+        right_direction = Vector(values["right_direction"])
+        side_sign = (
+            1.0 if Vector(frame["pivot"]["midpoint"]).x > 0.0 else -1.0
         )
-        samples.append(
+        direction = Vector(
+            (
+                abs(right_direction.x) * side_sign,
+                right_direction.y,
+                right_direction.z,
+            )
+        ).normalized()
+        sample_count = int(values["total_sample_count"])
+        total_translation = float(values["translation_mm"])
+        return [
             {
-                "phase": "rotate",
+                "phase": "translate_outward_up",
                 "step": index,
-                "rotation_degrees": round(math.degrees(signed_angle), 4),
-                "translation_mm": 0.0,
-                "matrix": matrix,
+                "rotation_degrees": 0.0,
+                "translation_mm": round(
+                    total_translation * index / (sample_count - 1), 4
+                ),
+                "matrix": Matrix.Translation(
+                    direction
+                    * total_translation
+                    * index
+                    / (sample_count - 1)
+                ),
             }
-        )
-    final_rotation = samples[-1]["matrix"]
-    total_translation = float(values["translation_mm"])
-    for index in range(1, translation_count + 1):
-        distance = total_translation * index / translation_count
-        samples.append(
-            {
-                "phase": "translate",
-                "step": index,
-                "rotation_degrees": round(math.degrees(sign * angle), 4),
-                "translation_mm": round(distance, 4),
-                "matrix": Matrix.Translation(inward * distance)
-                @ final_rotation,
-            }
-        )
-    if len(samples) != int(values["total_sample_count"]):
-        raise ValueError("Insertion-path sample count changed")
-    return samples
+            for index in range(sample_count)
+        ]
+    raise ValueError("Only the verified mirrored outward/upward path is supported")
 
 
 def validate_path(
@@ -459,9 +454,7 @@ def validate_path(
             f"{side} insertion path is not clear: "
             f"actual={actual_conflicts}, margin={margin_conflicts}"
         )
-    keyframes = [samples[0], samples[int(
-        config["insertion_path"]["rotation_sample_count_including_seated"]
-    ) - 1], samples[-1]]
+    keyframes = [samples[0], samples[len(samples) // 2], samples[-1]]
     return (
         {
             "side": side,
@@ -693,13 +686,13 @@ def main() -> None:
     all_visible: set[bpy.types.Object] = set()
     side_visible: dict[str, set[bpy.types.Object]] = {}
     ghosts: dict[str, dict[str, bpy.types.Object]] = {}
-    rotated_material = gate5.material(
-        "EAR3_PATH__rotated_blue",
-        c002_v2.hex_color(display["rotated_path_color"]),
+    mid_path_material = gate5.material(
+        "EAR3_PATH__outward_up_30mm_blue",
+        c002_v2.hex_color(display["mid_path_color"]),
     )
-    translated_material = gate5.material(
-        "EAR3_PATH__translated_green",
-        c002_v2.hex_color(display["translated_path_color"]),
+    final_path_material = gate5.material(
+        "EAR3_PATH__outward_up_60mm_green",
+        c002_v2.hex_color(display["final_path_color"]),
     )
     for side, names in config["sides"].items():
         ear = c002_v2.require_object(names["ear"])
@@ -727,23 +720,20 @@ def main() -> None:
         side_visible[side] = visible
         all_visible |= visible
         samples = path_samples_by_side[side]
-        rotation_index = int(
-            config["insertion_path"]
-            ["rotation_sample_count_including_seated"]
-        ) - 1
+        midpoint_index = len(samples) // 2
         ghosts[side] = {
-            "rotated": make_ghost(
+            "mid_path": make_ghost(
                 candidate,
-                f"EAR3_PATH_GHOST__{side}__rotated_25deg",
-                samples[rotation_index]["matrix"],
-                rotated_material,
+                f"EAR3_PATH_GHOST__{side}__outward_up_30mm",
+                samples[midpoint_index]["matrix"],
+                mid_path_material,
                 collections["EAR3_PATH_GHOSTS__HIDDEN_BY_DEFAULT"],
             ),
-            "translated": make_ghost(
+            "final_path": make_ghost(
                 candidate,
-                f"EAR3_PATH_GHOST__{side}__translated_30mm",
+                f"EAR3_PATH_GHOST__{side}__outward_up_60mm",
                 samples[-1]["matrix"],
-                translated_material,
+                final_path_material,
                 collections["EAR3_PATH_GHOSTS__HIDDEN_BY_DEFAULT"],
             ),
         }
@@ -828,18 +818,18 @@ def main() -> None:
                 render_view(
                     camera,
                     output_dir,
-                    f"{side}-path-02-rotated-25deg",
+                    f"{side}-path-02-outward-up-30mm",
                     location,
                     target,
-                    {upper, ghosts[side]["rotated"]},
+                    {upper, ghosts[side]["mid_path"]},
                 ),
                 render_view(
                     camera,
                     output_dir,
-                    f"{side}-path-03-translated-30mm",
+                    f"{side}-path-03-outward-up-60mm",
                     location,
                     target,
-                    {upper, ghosts[side]["translated"]},
+                    {upper, ghosts[side]["final_path"]},
                 ),
             ]
         )

@@ -6,9 +6,9 @@ current review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/ear-root-insertion-fit-review-v3.blend`
+  `output/00-current-review/ear-root-removable-clamp-review-v4.blend`
 - Current validation:
-  `output/00-current-review/ear-root-insertion-fit-review-v3-validation.json`
+  `output/00-current-review/ear-root-removable-clamp-review-v4-validation.json`
 - Current renders: `output/00-current-review/renders/`
 
 ## Folder map
@@ -49,15 +49,26 @@ not a print release.
 The accepted ear-root V2 coverage baseline is archived under
 `output/60-ear-root-reviews/ear-root-restored-coverage-review-v2/`.
 
-The current ear-root V3 review addresses physical feedback F-07/F-08/F-09.
-It preserves the accepted `13/9 mm` saddle relief, uses `2.5 mm` deep-body and
-`1.0 mm` shallow-cap perimeter clearances, and adds `0.4 mm` local exact-ear
-clearance. Both bodies are connected manifold mirrors with zero seated
-intersections. Their 41-sample rotate-then-slide paths are clear, including a
-`0.4 mm` expanded hidden-body margin. Old capture pads and the M2.5 retainer
-are absent; retention/datums remain the next F-10/F-11/F-12 iteration. V3 is
-not a finished part or print release. The user visually accepted the yellow
-seated fit-body geometry on 2026-08-06.
+The accepted ear-root V3 fit envelope is archived under
+`output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/`. It preserves
+the accepted `13/9 mm` saddle relief, `2.5/1.0 mm` body/cap clearances, and
+`0.4 mm` exact-ear clearance. Its corrected 41-sample, 60 mm outward/upward
+service path is clear in world space with a `0.4 mm` deep-body margin. The
+earlier transform-local rotate/slide proof is retained separately under
+`ear-root-insertion-fit-review-v3-rejected-local-bvh-path/` and is rejected.
+
+The current V4 review addresses F-10/F-11/F-12 without changing the accepted
+yellow V3 bodies or exact Gate 8 source shells. Each side has three separated
+interior joints: orange moving flange, green fixed owner-shell anchor, blue
+removable two-plane clamp, and brass M3 heat-set hardware. The blue clamps and
+screws are removed before the verified service motion. Both 41-sample paths,
+the `0.4 mm` orange-flange margins, tool/finger corridors, seated shell
+clearance, and exact-source fingerprint checks pass. Exterior renders show no
+green or blue retention blocks. The green anchors are individually manifold
+and broadly rooted, but both cavity-bearing and solid-first source-shell union
+trials damaged right-shell topology. V4 therefore remains a concept review,
+not a print release; coupons and a topology-safe shell-integration pass remain
+required.
 
 C006 and all aluminum plate/rail geometry remain deferred and unchanged.
 
