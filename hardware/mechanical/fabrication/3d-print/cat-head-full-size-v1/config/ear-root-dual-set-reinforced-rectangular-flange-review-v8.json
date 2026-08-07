@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "status": "two connector sets per left/right translucent ear piece; wider/thicker internal rectangular flanges with measured owner overlap; placement and root-strength review only; no holes, hardware, STL, G-code, or print release",
+  "v3_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/ear-root-insertion-fit-review-v3.json",
+  "physical_fit_feedback": "hardware/mechanical/CAT_HEAD_MOUNT_AND_SHELL_PHYSICAL_FIT_REVIEW_2026-07-28.md",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "locations": [
+    {
+      "id": "A",
+      "right_boundary_edge_index": 0,
+      "left_boundary_edge_index": 1,
+      "fraction_from_first_vertex": 0.45,
+      "role": "first separated connector set on primary internal seam"
+    },
+    {
+      "id": "B",
+      "right_boundary_edge_index": 0,
+      "left_boundary_edge_index": 1,
+      "fraction_from_first_vertex": 0.8,
+      "role": "second separated connector set on primary internal seam"
+    }
+  ],
+  "placement_pair": {
+    "pattern": "two equal parallel rectangular tabs per connector set, entirely internal",
+    "tab_length_mm": 22.0,
+    "tab_interior_depth_mm": 12.0,
+    "tab_thickness_mm": 4.0,
+    "mating_gap_mm": 0.3,
+    "minimum_owner_overlap_volume_mm3": 80.0,
+    "minimum_same_side_location_separation_mm": 30.0,
+    "moving_flange_path_margin_mm": 0.4,
+    "shared_tab_interior_offset_mm": 1.0,
+    "moving_tab_interior_relief_mm": 0.5
+  },
+  "display": {
+    "ear_color": "#45D7C7",
+    "upper_head_color": "#707983",
+    "lower_rear_context_color": "#46515C",
+    "accepted_fit_body_color": "#F4C542",
+    "insert_flange_color": "#FF8C32",
+    "head_flange_color": "#50C878",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "V8 must contain exactly two connector sets on each translucent ear piece: four sets and eight rectangular tabs total.",
+    "Every tab is a plain 22 x 12 x 4 mm rectangle with a 0.3 mm mating gap. The shared tabs begin 1 mm inside the seam plane and moving orange tabs receive a further 0.5 mm interior relief. No wedge, trapezoid, broad base, bridge, clamp, boss, or loose connector is allowed.",
+    "Every owner-root Boolean overlap volume must be at least 80 mm3; surface-only or narrow line contact fails generation.",
+    "All proposed geometry must remain inside the original exterior occupancy mask from front, left, right, and top.",
+    "V8 contains no screw hole, screw, washer, nut, insert, or access-envelope geometry.",
+    "Accepted V3 fit geometry, exact ears, source upper heads, eyes, lower-face/rear-cassette ownership, reinforcement direction, C006, and aluminum V0.5 remain unchanged.",
+    "No STL, G-code, slicer project, fabrication output, or print release is produced."
+  ]
+}

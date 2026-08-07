@@ -6,17 +6,18 @@ current review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/ear-root-internal-rectangular-flange-placement-review-v7.blend`
+  `output/00-current-review/ear-root-dual-set-reinforced-rectangular-flange-review-v8.blend`
 - Current validation:
-  `output/00-current-review/ear-root-internal-rectangular-flange-placement-review-v7-validation.json`
+  `output/00-current-review/ear-root-dual-set-reinforced-rectangular-flange-review-v8-validation.json`
 - Full-head context:
-  `output/00-current-review/renders/ear-root-internal-rectangular-placement-full-head-context.png`
-- Two-tab isolated view:
-  `output/00-current-review/renders/ear-root-internal-rectangular-placement-right-pair-isolated.png`
-- Owner-root cutaways:
-  `output/00-current-review/renders/ear-root-internal-rectangular-placement-right-orange-owner-root.png`
-  and
-  `output/00-current-review/renders/ear-root-internal-rectangular-placement-right-green-owner-root.png`
+  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-full-head-context.png`
+- Right translucent piece with both orange roots:
+  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-right-translucent-piece-two-orange-roots.png`
+- Right-side two-set isolated view:
+  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-right-two-connector-sets-isolated.png`
+- Left equivalents use the same names with `left` in place of `right`.
+- Per-owner cutaways are named
+  `ear-root-dual-set-reinforced-rectangular-{left,right}-{a,b}-{orange,green}-owner-root.png`.
 
 ## Folder map
 
@@ -30,10 +31,9 @@ current review is always easy to find.
   cut, and repartition iterations.
 - `output/30-reinforcement-baselines/`: accepted reinforcement baselines and
   their historical ownership/interface reviews.
-- `output/40-prototypes/`: independent fabrication experiments, currently the
-  mirror-facet cap prototypes.
+- `output/40-prototypes/`: independent fabrication experiments.
 - `output/50-eye-mount-reviews/`: completed, accepted, or superseded eye-mount
-  constraint/design reviews retained for traceability.
+  reviews retained for traceability.
 - `output/60-ear-root-reviews/`: isolated ear-root constraints and redesign
   reviews retained independently from eye and aluminum work.
 
@@ -48,34 +48,34 @@ broad-base flange candidates per side, covering outer head, outer eye, lower
 head, and lower eye. It remains unintegrated review geometry, not a print
 release.
 
-The accepted ear-root V2 coverage baseline is archived under
-`output/60-ear-root-reviews/ear-root-restored-coverage-review-v2/`.
+The accepted ear-root V2 coverage and V3 fit envelope remain archived under
+`output/60-ear-root-reviews/`. V3 preserves the accepted `13/9 mm` saddle
+relief, `2.5/1.0 mm` body/cap clearances, and `0.4 mm` exact-ear clearance.
 
-The accepted ear-root V3 fit envelope is archived under
-`output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/`. It preserves
-the accepted `13/9 mm` saddle relief, `2.5/1.0 mm` body/cap clearances, and
-`0.4 mm` exact-ear clearance. Its corrected 41-sample, 60 mm outward/upward
-service path is clear in world space with a `0.4 mm` deep-body margin.
-
-V4 and V5 remain rejected. V6 is also rejected: its broad/tapered bases were
-placed on the wrong exterior-normal interpretation, the orange geometry visibly
-protruded outside the head, and the green owner relationship was obscured. V6
-is preserved intact at
+V4, V5, and V6 remain rejected. V6 is preserved at
 `output/60-ear-root-reviews/ear-root-standard-paired-flange-review-v6-rejected-exterior-protrusion/`.
 
-The current V7 review contains exactly one right-side location with two plain,
-parallel, equal rectangular tabs. Each is `16 × 10 × 3.2 mm`, the mating gap is
-`0.3 mm`, and the first `1.0 mm` is embedded in its owner as a compact
-rectangular root. It contains no separate base, wedge, trapezoid, bridge, clamp,
-hole, fastener, or access envelope. The cutaway proof collection is review-only,
-hidden by default, and does not alter connector geometry.
+V7 established the accepted conceptual direction of two plain internal
+rectangular tabs, but was incomplete: it contained only one connector set total
+and its roots were too small. It is archived at
+`output/60-ear-root-reviews/ear-root-internal-rectangular-flange-placement-review-v7-concept-approved-needs-more-sets-and-stronger-roots/`.
 
-Front, right, and top exterior baseline/candidate renders are pixel-identical:
-zero changed channels and zero maximum channel delta. The actual 41-sample
-motion has no collision, but the conservative `0.4 mm` expanded flange envelope
-touches `right_upper_head` at the seated sample. V7 therefore remains a
-placement-only visual review. Do not mirror, replicate, add hardware, integrate
-with source shells, export for fabrication, or print it yet.
+The current V8 review contains two connector sets on each translucent ear piece:
+four connector sets and eight tabs total. Every tab is a plain
+`22 × 12 × 4 mm` rectangle with a `0.3 mm` gap. The two locations on each piece
+are `34.9211 mm` apart. No separate base, wedge, trapezoid, bridge, clamp, hole,
+fastener, or access envelope exists.
+
+Every actual left/right owner root is proven by a direct Boolean cutaway. The
+minimum overlap volume is `80.1946 mm³`; the green roots are approximately
+`105–107 mm³`. Both moving translucent-piece/two-tab composites are manifold.
+Actual seated geometry and both 41-sample motion paths are clear. The
+conservative `0.4 mm` expanded moving-tab envelopes touch the upper heads only
+at the seated sample, so tolerance clearance remains a review hold.
+
+Flat single-color exterior occupancy masks are pixel-identical from front,
+left, right, and top. Exact Gate 8 meshes and the accepted V3 fit bodies remain
+unchanged.
 
 C006 and all aluminum plate/rail geometry remain deferred, preserved, and tied
 to `CAT-HEAD-SHELL-ALUMINUM-V0.5`.
