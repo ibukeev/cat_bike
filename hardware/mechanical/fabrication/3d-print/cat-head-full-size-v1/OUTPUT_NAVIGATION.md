@@ -6,9 +6,9 @@ current review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/ear-root-removable-clamp-review-v4.blend`
+  `output/00-current-review/ear-root-direct-flange-review-v5.blend`
 - Current validation:
-  `output/00-current-review/ear-root-removable-clamp-review-v4-validation.json`
+  `output/00-current-review/ear-root-direct-flange-review-v5-validation.json`
 - Current renders: `output/00-current-review/renders/`
 
 ## Folder map
@@ -57,18 +57,20 @@ service path is clear in world space with a `0.4 mm` deep-body margin. The
 earlier transform-local rotate/slide proof is retained separately under
 `ear-root-insertion-fit-review-v3-rejected-local-bvh-path/` and is rejected.
 
-The current V4 review addresses F-10/F-11/F-12 without changing the accepted
-yellow V3 bodies or exact Gate 8 source shells. Each side has three separated
-interior joints: orange moving flange, green fixed owner-shell anchor, blue
-removable two-plane clamp, and brass M3 heat-set hardware. The blue clamps and
-screws are removed before the verified service motion. Both 41-sample paths,
-the `0.4 mm` orange-flange margins, tool/finger corridors, seated shell
-clearance, and exact-source fingerprint checks pass. Exterior renders show no
-green or blue retention blocks. The green anchors are individually manifold
-and broadly rooted, but both cavity-bearing and solid-first source-shell union
-trials damaged right-shell topology. V4 therefore remains a concept review,
-not a print release; coupons and a topology-safe shell-integration pass remain
-required.
+The current V5 review addresses F-10/F-11/F-12 without changing the accepted
+yellow V3 bodies or exact Gate 8 source shells. Each side has three permanent
+orange insert-owned flanges, three matching green owner-shell bosses, and three
+direct M3 screw/washer sets. There are no blue clamps or loose connector
+pieces. Each orange flange is manifold, has a standard 3.4 mm clearance hole,
+and has 120 mm² nominal bearing on its green boss. Body/flange manifold checks,
+tool/finger corridors, exact-source fingerprints, and the unchanged V3 deep
+body path pass. The permanent orange tabs do not pass through the old fully
+assembled 60 mm service path, so later insert service requires upper-head shell
+release; this is the explicit simplicity/serviceability tradeoff. Green-boss
+source-shell integration and heat-set/oversized-hole coupons remain unresolved.
+V5 is therefore a visual concept review, not a print release. Rejected V4 is
+preserved at
+`output/60-ear-root-reviews/ear-root-removable-clamp-review-v4/`.
 
 C006 and all aluminum plate/rail geometry remain deferred and unchanged.
 

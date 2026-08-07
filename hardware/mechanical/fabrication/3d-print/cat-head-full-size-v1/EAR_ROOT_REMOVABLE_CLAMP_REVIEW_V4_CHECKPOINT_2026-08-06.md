@@ -2,20 +2,19 @@
 
 ## Status
 
-V4 is the single current cat-head review. It addresses only physical-fit
-feedback F-10/F-11/F-12: retain the already accepted under-ear fit body,
-provide repeatable seating, and make retention strong and serviceable without
-reintroducing the previous interference.
-
-The accepted yellow V3 fit bodies and exact Gate 8 ears/upper-head shells are
-unchanged. F-13/F-14 outer-ear anti-flap work remains a later independent
-bucket. No STL, G-code, slicer project, ASA output, or print release exists.
+V4 is rejected and superseded by the simpler V5 direct-flange review. Its blue
+loose-clamp architecture added assembly complexity the user did not want. V4
+is preserved only for traceability and must not be treated as current or print
+released. The accepted yellow V3 fit bodies and exact Gate 8 ears/upper-head
+shells were unchanged. F-13/F-14 outer-ear anti-flap work remains a later
+independent bucket. No STL, G-code, slicer project, ASA output, or print release
+exists.
 
 ## Open this file
 
-- Blender: `output/00-current-review/ear-root-removable-clamp-review-v4.blend`
-- Validation: `output/00-current-review/ear-root-removable-clamp-review-v4-validation.json`
-- Renders: `output/00-current-review/renders/`
+- Blender: `output/60-ear-root-reviews/ear-root-removable-clamp-review-v4/ear-root-removable-clamp-review-v4.blend`
+- Validation: `output/60-ear-root-reviews/ear-root-removable-clamp-review-v4/ear-root-removable-clamp-review-v4-validation.json`
+- Renders: `output/60-ear-root-reviews/ear-root-removable-clamp-review-v4/renders/`
 - Accepted V3 fit baseline:
   `output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/`
 - Rejected old transform-local path proof:
@@ -122,17 +121,14 @@ access on the printed assembly.
 ## Exact regeneration command
 
 ```bash
-blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_ear_root_removable_clamp_review_v4.py
+blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_ear_root_removable_clamp_review_v4.py -- --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-removable-clamp-review-v4
 ```
 
 ## Next physical-review step
 
-First review the isolated joints and clean exterior in V4. If accepted, prepare
-small ASA coupons for insert fit, heat-set pull-out, clamp-pad compression, and
-real tool/finger access. After those coupons pass, make and validate a separate
-topology-safe anchor integration into the upper-head source. Only then can the
-upper-head pieces become printable. F-13/F-14 outer-ear anti-flap work remains
-the next independent design bucket.
+Do not continue V4. Review the V5 direct-flange file in `00-current-review`.
+Keep this checkpoint and archive only as evidence of the rejected removable
+clamp branch.
 
 ## Preserved workstreams
 
