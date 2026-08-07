@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "single-location right-side internal flange placement review for F-10/F-11/F-12; reject V6 exterior-normal placement; use two plain parallel rectangular tabs extending into the head interior from adjacent owner faces; no holes, hardware, replication, source-shell integration, STL, G-code, or print release",
+  "v3_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/ear-root-insertion-fit-review-v3.json",
+  "physical_fit_feedback": "hardware/mechanical/CAT_HEAD_MOUNT_AND_SHELL_PHYSICAL_FIT_REVIEW_2026-07-28.md",
+  "shared_interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "required_interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "prototype": {
+    "side": "right",
+    "id": "A",
+    "right_boundary_edge_index": 0,
+    "fraction_from_first_vertex": 0.5,
+    "role": "single primary lower/front internal placement prototype"
+  },
+  "placement_pair": {
+    "pattern": "two parallel rectangular tabs on the interior side of adjacent owners",
+    "tab_length_mm": 16.0,
+    "tab_interior_depth_mm": 10.0,
+    "tab_thickness_mm": 3.2,
+    "mating_gap_mm": 0.3,
+    "owner_root_inset_mm": 1.0,
+    "moving_flange_path_margin_mm": 0.4
+  },
+  "display": {
+    "ear_color": "#45D7C7",
+    "upper_head_color": "#707983",
+    "lower_rear_context_color": "#46515C",
+    "accepted_fit_body_color": "#F4C542",
+    "insert_flange_color": "#FF8C32",
+    "head_flange_color": "#50C878",
+    "render_resolution_px": 1100
+  },
+  "review_holds": [
+    "V7 contains exactly one right-side placement prototype at location A. Do not mirror or replicate it.",
+    "Orange and green must be two plain parallel rectangular tabs with the same dimensions and a 0.3 mm gap. Their first section begins 1.0 mm behind the exterior surface and serves as the rectangular owner root; no separate wedge, trapezoid, broad base, bridge, clamp, boss, or loose connector is allowed.",
+    "Both tabs must extend from the owner surface into the head interior. No proposed connector geometry may appear in the exterior silhouette comparison.",
+    "V7 is placement-only. It contains no screw hole, screw, washer, nut, insert, or access-envelope geometry.",
+    "Accepted V3 fit geometry, exact ears, source upper heads, eyes, lower-face/rear-cassette ownership, reinforcement direction, C006, and aluminum V0.5 remain unchanged.",
+    "No STL, G-code, slicer project, fabrication output, or print release is produced."
+  ]
+}
