@@ -80,20 +80,22 @@ access on the printed assembly.
 - Green: proposed fixed upper-head anchors.
 - Blue: removable wedge clamps; remove before insert motion.
 - Brass/gold: proposed M3 hardware.
-- Yellow: accepted V3 bodies, hidden in the default isolated retention view.
-- Gray and cyan: exact upper heads and ears, hidden in the default isolated
-  retention view.
+- Yellow: accepted V3 bodies, visible in the default contextual view.
+- Gray and cyan: exact upper heads and ears, visible as wireframe context.
+- Muted charcoal: exact lower faces and rear base, visible as wireframe context
+  so the retention joints have an overall-head reference.
 - White: tool/finger envelopes, hidden by default.
 
 ## Visual review steps
 
-1. Open the V4 Blender file. The default view isolates all six retention joints
-   so the colored parts cannot hide behind the shells.
-2. Inspect each side's three orange–blue–green joints. Confirm the blue wedge
+1. Open the V4 Blender file. The default view shows the complete structural-head
+   shell as wireframe context around both yellow inserts and all six joints.
+2. Confirm each green anchor sits on a gray upper-head facet and each orange
+   flange is attached to a yellow insert; nothing should appear unsupported.
+3. Inspect each side's three orange–blue–green joints. Confirm the blue wedge
    bears on both pads and is not an exterior horn, stick, or block.
-3. Toggle `EAR4_ACCEPTED_V3_BODIES_YELLOW__UNCHANGED` for insert context.
-4. Toggle `EAR4_EXACT_UPPER_HEADS_GRAY__UNCHANGED` and
-   `EAR4_EXACT_EARS_CYAN__UNCHANGED` only when checking placement in the head.
+4. Review `both-head-context` for the full silhouette and `both-ear-root-context`
+   for closer placement. Use `both-retention-isolated` when context is distracting.
 5. Review the left/right `retention-isolated`, `insertion-ready`,
    `tool-access-isolated`, and `exterior-clean` renders.
 6. In both exterior-clean renders, confirm no green or blue retention geometry

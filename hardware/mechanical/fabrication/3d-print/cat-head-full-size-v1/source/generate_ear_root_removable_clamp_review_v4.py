@@ -1105,6 +1105,7 @@ def main() -> None:
         "EAR4_ACCEPTED_V3_BODIES_YELLOW__UNCHANGED",
         "EAR4_INSERT_FLANGES_ORANGE__PROPOSED",
         "EAR4_FIXED_SHELL_ANCHORS_GREEN__PROPOSED_NOT_INTEGRATED",
+        "EAR4_EXACT_LOWER_AND_REAR_SHELLS_MUTED__UNCHANGED",
         "EAR4_REMOVABLE_CLAMPS_BLUE__REMOVE_BEFORE_INSERT_MOTION",
         "EAR4_M3_HARDWARE_BRASS__PROPOSED",
         "EAR4_ACCESS_ENVELOPES_WHITE__HIDDEN_BY_DEFAULT",
@@ -1208,6 +1209,24 @@ def main() -> None:
             *fixed_by_side[side],
         }
 
+    context_shells = set(structural_targets)
+    for name in ("right_lower_face", "left_lower_face", "rear_base"):
+        obj = c002_v2.require_object(name)
+        obj.color = c002_v2.hex_color(
+            display["lower_rear_context_color"]
+        )
+        obj.show_wire = True
+        obj.hide_viewport = False
+        obj.hide_render = False
+        obj.hide_set(False)
+        link_reference(
+            obj,
+            collections[
+                "EAR4_EXACT_LOWER_AND_REAR_SHELLS_MUTED__UNCHANGED"
+            ],
+        )
+        all_visible.add(obj)
+
     for composite in composites.values():
         bpy.data.objects.remove(composite, do_unlink=True)
     for deep in deep_bodies.values():
@@ -1223,21 +1242,46 @@ def main() -> None:
         obj.hide_render = True
         obj.hide_set(True)
 
-    default_visible = set().union(*interior_review_visible.values())
+    isolated_visible = set().union(*interior_review_visible.values())
+    default_visible = set(all_visible)
 
     camera = configure_scene(
         output_dir, int(display["render_resolution_px"])
     )
+    context_shell_colors = {obj: tuple(obj.color) for obj in context_shells}
+    for obj in context_shells:
+        obj.color = (*obj.color[:3], 0.12)
+        obj.display_type = "WIRE"
     renders = [
+        render_view(
+            camera,
+            output_dir,
+            "both-head-context",
+            Vector((0.0, 520.0, 240.0)),
+            Vector((0.0, 150.0, 170.0)),
+            default_visible,
+        ),
+        render_view(
+            camera,
+            output_dir,
+            "both-ear-root-context",
+            Vector((0.0, 440.0, 270.0)),
+            Vector((0.0, 175.0, 220.0)),
+            default_visible,
+        ),
         render_view(
             camera,
             output_dir,
             "both-retention-isolated",
             Vector((0.0, 430.0, 270.0)),
             Vector((0.0, 166.0, 222.0)),
-            default_visible,
-        )
+            isolated_visible,
+        ),
     ]
+    for obj in context_shells:
+        obj.color = context_shell_colors[obj]
+        obj.display_type = "SOLID"
+
     for side, sign in (("left", -1.0), ("right", 1.0)):
         target = Vector((sign * 92.0, 168.0, 220.0))
         review_direction = Vector((sign, 1.0, 0.25)).normalized()
@@ -1279,13 +1323,15 @@ def main() -> None:
             ]
         )
 
+    for obj in context_shells:
+        obj.display_type = "WIRE"
     for obj in bpy.data.objects:
         if obj.type not in {"CAMERA", "LIGHT"}:
             obj.hide_viewport = obj not in default_visible
             obj.hide_render = obj not in default_visible
             obj.hide_set(obj not in default_visible)
-    camera.location = Vector((0.0, 430.0, 270.0))
-    point_at(camera, Vector((0.0, 166.0, 222.0)))
+    camera.location = Vector((0.0, 520.0, 240.0))
+    point_at(camera, Vector((0.0, 150.0, 170.0)))
 
     protected_after = {
         name: rear_v5.mesh_fingerprint(bpy.data.objects[name])
@@ -1294,6 +1340,7 @@ def main() -> None:
     if protected_before != protected_after:
         raise ValueError("V4 review changed exact Gate 8 source geometry")
     scene = bpy.context.scene
+    scene["default_review_view"] = "full_structural_head_context_wireframe"
     scene["review_status"] = config["status"]
     scene["feedback_ids"] = "F-10,F-11,F-12"
     scene["retention_points_per_side"] = int(

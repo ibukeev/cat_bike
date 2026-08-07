@@ -77,6 +77,7 @@
   "display": {
     "ear_color": "#45D7C7",
     "upper_head_color": "#707983",
+    "lower_rear_context_color": "#46515C",
     "accepted_fit_body_color": "#F4C542",
     "insert_flange_color": "#FF8C32",
     "fixed_shell_anchor_color": "#50C878",
