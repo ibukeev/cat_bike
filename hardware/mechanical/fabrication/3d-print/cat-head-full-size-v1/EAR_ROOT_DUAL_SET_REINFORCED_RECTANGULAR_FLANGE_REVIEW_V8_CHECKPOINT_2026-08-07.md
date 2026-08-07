@@ -2,32 +2,31 @@
 
 ## Status
 
-V8 is the current placement and root-strength review for F-10/F-11/F-12. It
-contains exactly two connector sets on each translucent ear piece: four sets
-and eight plain rectangular tabs total.
+**Concept accepted, then superseded by V9 on 2026-08-07.** V8 established two
+reinforced connector sets on each translucent ear piece: four sets and eight
+plain rectangular tabs total. The user accepted the concept and requested the
+pairs be spread farther and receive screw holes.
 
-This is not print released. Do not add holes or hardware, integrate green tabs
-into source shells, export STL/G-code, or start ASA parts until the user accepts
-the full left/right layout and the conservative-clearance hold is resolved or
-explicitly accepted.
+V8 remains archived and is not print released. V9 carries the accepted geometry
+forward with maximum-tested safe spacing and aligned M3 through-hole paths.
 
-## Current review files
+## Archived review files
 
 - Blender:
-  `output/00-current-review/ear-root-dual-set-reinforced-rectangular-flange-review-v8.blend`
+  `output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes/ear-root-dual-set-reinforced-rectangular-flange-review-v8.blend`
 - Validation:
-  `output/00-current-review/ear-root-dual-set-reinforced-rectangular-flange-review-v8-validation.json`
+  `output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes/ear-root-dual-set-reinforced-rectangular-flange-review-v8-validation.json`
 - Full head:
-  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-full-head-context.png`
+  `output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes/renders/ear-root-dual-set-reinforced-rectangular-full-head-context.png`
 - Right translucent piece with both moving roots:
-  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-right-translucent-piece-two-orange-roots.png`
+  `output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes/renders/ear-root-dual-set-reinforced-rectangular-right-translucent-piece-two-orange-roots.png`
 - Right isolated sets:
-  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-right-two-connector-sets-isolated.png`
+  `output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes/renders/ear-root-dual-set-reinforced-rectangular-right-two-connector-sets-isolated.png`
 - Left equivalents replace `right` with `left`.
 - Eight owner-root cutaways:
-  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-{left,right}-{a,b}-{orange,green}-owner-root.png`
+  `output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes/renders/ear-root-dual-set-reinforced-rectangular-{left,right}-{a,b}-{orange,green}-owner-root.png`
 - Exterior occupancy masks:
-  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-exterior-{front,left,right,top}-{baseline,candidate}.png`
+  `output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes/renders/ear-root-dual-set-reinforced-rectangular-exterior-{front,left,right,top}-{baseline,candidate}.png`
 
 Useful Blender collections:
 
@@ -55,7 +54,7 @@ parts.
 - Required aluminum interface remains `CAT-HEAD-SHELL-ALUMINUM-V0.5`.
 
 ```bash
-blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_ear_root_dual_set_reinforced_rectangular_flange_review_v8.py -- --config hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/ear-root-dual-set-reinforced-rectangular-flange-review-v8.json --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review
+blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_ear_root_dual_set_reinforced_rectangular_flange_review_v8.py -- --config hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/ear-root-dual-set-reinforced-rectangular-flange-review-v8.json --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes
 ```
 
 ## Decisions and dimensions

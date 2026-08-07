@@ -6,18 +6,20 @@ current review is always easy to find.
 ## Open this first
 
 - Current Blender review:
-  `output/00-current-review/ear-root-dual-set-reinforced-rectangular-flange-review-v8.blend`
+  `output/00-current-review/ear-root-wide-spaced-m3-through-bolt-review-v9.blend`
 - Current validation:
-  `output/00-current-review/ear-root-dual-set-reinforced-rectangular-flange-review-v8-validation.json`
+  `output/00-current-review/ear-root-wide-spaced-m3-through-bolt-review-v9-validation.json`
 - Full-head context:
-  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-full-head-context.png`
+  `output/00-current-review/renders/ear-root-wide-spaced-m3-through-bolt-full-head-context.png`
 - Right translucent piece with both orange roots:
-  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-right-translucent-piece-two-orange-roots.png`
+  `output/00-current-review/renders/ear-root-wide-spaced-m3-through-bolt-right-translucent-piece-two-orange-roots.png`
 - Right-side two-set isolated view:
-  `output/00-current-review/renders/ear-root-dual-set-reinforced-rectangular-right-two-connector-sets-isolated.png`
+  `output/00-current-review/renders/ear-root-wide-spaced-m3-through-bolt-right-two-connector-sets-isolated.png`
 - Left equivalents use the same names with `left` in place of `right`.
+- M3 bore close-ups are named
+  `ear-root-wide-spaced-m3-through-bolt-{left,right}-{a,b}-m3-hole-alignment.png`.
 - Per-owner cutaways are named
-  `ear-root-dual-set-reinforced-rectangular-{left,right}-{a,b}-{orange,green}-owner-root.png`.
+  `ear-root-wide-spaced-m3-through-bolt-{left,right}-{a,b}-{orange,green}-owner-root.png`.
 
 ## Folder map
 
@@ -60,18 +62,29 @@ rectangular tabs, but was incomplete: it contained only one connector set total
 and its roots were too small. It is archived at
 `output/60-ear-root-reviews/ear-root-internal-rectangular-flange-placement-review-v7-concept-approved-needs-more-sets-and-stronger-roots/`.
 
-The current V8 review contains two connector sets on each translucent ear piece:
-four connector sets and eight tabs total. Every tab is a plain
-`22 × 12 × 4 mm` rectangle with a `0.3 mm` gap. The two locations on each piece
-are `34.9211 mm` apart. No separate base, wedge, trapezoid, bridge, clamp, hole,
-fastener, or access envelope exists.
+V8's two-set concept was accepted and is archived under
+`output/60-ear-root-reviews/ear-root-dual-set-reinforced-rectangular-flange-review-v8-concept-accepted-spacing-superseded-before-holes/`.
+
+The current V9 review contains two connector sets on each translucent ear
+piece: four connector sets and eight tabs total. Every tab remains a plain
+`22 × 12 × 4 mm` rectangle with a `0.3 mm` gap. The maximum tested collision-free
+locations on the proven seam are `36.9166 mm` apart, versus `34.9211 mm` in V8.
+Attempts to spread farther or use the second seam intersected the upper head
+and were rejected.
+
+Every orange/green pair now has one common `3.4 mm` M3 clearance axis: four
+fastener paths and eight drilled tab holes total. A `3.2 mm` gauge clears all
+four paths, and minimum modeled bore-to-edge material is `4.05 mm`. Intended
+hardware is four internal M3 × 16 through-bolts, two 7 mm OD washers per bolt,
+and one M3 nyloc per bolt. Hardware is specified but not modeled.
 
 Every actual left/right owner root is proven by a direct Boolean cutaway. The
-minimum overlap volume is `80.1946 mm³`; the green roots are approximately
+minimum overlap volume is `80.1945 mm³`; the green roots are approximately
 `105–107 mm³`. Both moving translucent-piece/two-tab composites are manifold.
 Actual seated geometry and both 41-sample motion paths are clear. The
-conservative `0.4 mm` expanded moving-tab envelopes touch the upper heads only
-at the seated sample, so tolerance clearance remains a review hold.
+conservative `0.4 mm` expanded moving-tab envelopes touch the upper heads and
+their intentionally mated green tabs at the seated sample, so tolerance and
+physical tool access remain review holds.
 
 Flat single-color exterior occupancy masks are pixel-identical from front,
 left, right, and top. Exact Gate 8 meshes and the accepted V3 fit bodies remain
