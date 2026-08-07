@@ -1,21 +1,27 @@
-# Ear-root direct-flange review V5 checkpoint — 2026-08-06
+# Ear-root direct-flange review V5 checkpoint — 2026-08-06 — REJECTED
 
 ## Status
 
-V5 is the current visual-review iteration for F-10/F-11/F-12. It replaces the rejected V4 loose-clamp concept with six conventional permanent flanges and direct screws:
+V5 is rejected and archived. It removed the loose V4 clamps, but its orange
+members still used nonparallel owner/flange frames joined by compound bridge
+geometry. That did not match the already accepted simple eye-mount flange
+construction and made the real assembly difficult to understand.
+
+The archived V5 contained:
 
 - three orange insert-owned flanges per side;
 - one M3 button-head screw and 7 mm washer per flange;
 - each screw passes through a 3.4 mm orange clearance hole into a green shell-owned boss with an M3 heat-set insert;
 - no blue clamps and no loose connector pieces.
 
-This is **not print released**. Do not start the ASA ear-root parts from this review.
+Do not continue, mirror, integrate, export, or print V5. V6 supersedes it with
+one right-side standard paired-flange prototype for review.
 
 ## Current review files
 
-- Blender review: `output/00-current-review/ear-root-direct-flange-review-v5.blend`
-- Validation: `output/00-current-review/ear-root-direct-flange-review-v5-validation.json`
-- Review renders: `output/00-current-review/renders/ear-root-direct-flange-*.png`
+- Blender review: `output/60-ear-root-reviews/ear-root-direct-flange-review-v5-rejected-complex-bridge/ear-root-direct-flange-review-v5.blend`
+- Validation: `output/60-ear-root-reviews/ear-root-direct-flange-review-v5-rejected-complex-bridge/ear-root-direct-flange-review-v5-validation.json`
+- Review renders: `output/60-ear-root-reviews/ear-root-direct-flange-review-v5-rejected-complex-bridge/renders/ear-root-direct-flange-*.png`
 - Rejected V4 archive: `output/60-ear-root-reviews/ear-root-removable-clamp-review-v4/`
 
 The Blender file opens in full structural-head context. For connector inspection, use:
@@ -38,9 +44,10 @@ Exact regeneration command from repository root:
 
 ```bash
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_ear_root_direct_flange_review_v5.py
+  -- --output-dir hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-direct-flange-review-v5-rejected-complex-bridge
 ```
 
-## Accepted V5 decisions and dimensions
+## Recorded V5 geometry and dimensions — rejected
 
 - Preserve the accepted V3 yellow fit body, ear clearance, 13/9 mm visible saddle relief, and the three reviewed mount locations per side.
 - Orange root: 20 mm tangent length, radial range 1.5–12 mm, 4.0 mm thick.
@@ -79,11 +86,8 @@ The permanent orange flanges themselves do **not** pass through the old fully as
 
 This V5 iteration does not alter the accepted eye mounts, lower-face/rear-cassette ownership, reinforcement direction, C006 interface, exact ears, exact upper-head source geometry, or aluminum plate/rail V0.5 workstream.
 
-## Next physical/visual review
+## Superseded next step
 
-1. Open the V5 Blender file and orbit the full head before isolating parts.
-2. Confirm all three orange flange locations on each side are acceptable and visually internal.
-3. Confirm every orange flange bears on exactly one green boss and has one direct M3 screw/washer.
-4. Confirm there are no blue or loose connector objects.
-5. Decide whether requiring upper-head release for insert service is acceptable.
-6. If accepted, the next CAD step is integrating the green bosses into copies of the upper-head shells and validating heat-set/oversized-hole coupons before any ASA print release.
+Do not review V5 for approval. Review the single right-side V6 prototype first.
+Only after that interface is accepted may it be replicated to the other five
+ear-root locations.
