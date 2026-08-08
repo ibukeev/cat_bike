@@ -381,6 +381,7 @@ def main() -> None:
         "review_notes": CONFIG.get("review_notes", []),
     }
     (OUTPUT_PATH / "gate3-shell-validation.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    topology_policy.require_all_acceptance("Gate 3", report["acceptance"])
     print(json.dumps(report, indent=2))
     print(f"Wrote {OUTPUT_PATH.relative_to(REPO_ROOT)}")
 

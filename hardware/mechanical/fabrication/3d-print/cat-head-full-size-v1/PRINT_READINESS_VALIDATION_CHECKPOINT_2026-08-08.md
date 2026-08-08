@@ -29,9 +29,11 @@ reserve per side before brim and support generation.
 
 ## Validation performed and results
 
-- Focused policy tests: `7/7 PASS`.
+- Focused policy tests: `9/9 PASS`.
 - Full automated suite: `22/23 PASS`; the sole failure is the pre-existing,
   unrelated lighting-map test because `glow_pairs` is absent from the current
+- Gate 3 and Gate 5 were explicitly audited and now raise a nonzero validation
+  error after writing their report when any acceptance item is false.
   Gate 1 panel-role data.
 - Python syntax compilation for policy and Gate 3–8 generators: `PASS`.
 - Git whitespace/error check: `PASS`.

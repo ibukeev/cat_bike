@@ -2536,6 +2536,7 @@ def main() -> None:
     (OUTPUT_DIR / "gate5-validation-report.json").write_text(
         json.dumps(report, indent=2) + chr(10), encoding="utf-8"
     )
+    topology_policy.require_all_acceptance("Gate 5", report["acceptance"])
     print(json.dumps(report, indent=2))
 
 

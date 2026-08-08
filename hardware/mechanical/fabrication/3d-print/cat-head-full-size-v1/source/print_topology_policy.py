@@ -48,3 +48,14 @@ def has_minimum_xy_boundary_clearance(
         and len(envelope) == 3
         and all(envelope[index] - dimensions[index] >= required_total_margin for index in (0, 1))
     )
+
+
+def require_all_acceptance(
+    stage: str,
+    acceptance: Mapping[str, bool],
+) -> None:
+    """Raise with every failed gate so generation exits nonzero."""
+
+    failed = [name for name, passed in acceptance.items() if not passed]
+    if failed:
+        raise ValueError(f"{stage} validation failed: {failed}")

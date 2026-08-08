@@ -89,6 +89,21 @@ class PrintTopologyPolicyTest(unittest.TestCase):
             )
         )
 
+    def test_require_all_acceptance_returns_on_pass(self):
+        self.assertIsNone(
+            POLICY.require_all_acceptance("Gate test", {"topology": True})
+        )
+
+    def test_require_all_acceptance_raises_with_every_failure(self):
+        with self.assertRaisesRegex(
+            ValueError,
+            r"Gate test validation failed: \['topology', 'margin'\]",
+        ):
+            POLICY.require_all_acceptance(
+                "Gate test",
+                {"topology": False, "other": True, "margin": False},
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
