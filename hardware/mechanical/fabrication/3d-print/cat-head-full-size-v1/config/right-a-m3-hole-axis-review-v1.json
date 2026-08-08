@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "review_id": "right-a-m3-hole-axis-review-v1",
+  "status": "user_approved_shape_and_axis_tool_access_hold_not_integrated_not_print_ready",
+  "units": "mm",
+  "scope": "right A flange pair only",
+  "approved_inputs": {
+    "anchor": "REVIEW_ONLY__ANCHOR_CANDIDATE_A__FRONT",
+    "panel_tab": "PROPOSED__RIGHT_A__PANEL_TAB__LOCAL_RELIEF_1P9_SWEEP_V3",
+    "head_tab": "PROPOSED__RIGHT_A__HEAD_TAB__V2_26MM_SHAPE_ONLY",
+    "panel_tab_shape_approved_by_user": true,
+    "drilled_pair_approved_by_user": true
+  },
+  "axis": {
+    "center_head_mm": [104.4048820139, 120.3391366839, 178.2794638319],
+    "approved_across_axis": [-0.45026046, 0.01124268, 0.89282644],
+    "interior_shift_from_original_mm": 0.12,
+    "tangent_shift_from_interior_candidate_mm": -4.5,
+    "approved_tangent_axis": [0.27045545, 0.95466518, 0.12437177],
+    "diameter_mm": 3.4
+  },
+  "hardware_review": {
+    "fastener": "M3 x 16 through-bolt",
+    "panel_side": "7 mm OD washer plus low-profile 5.7 mm OD socket head",
+    "head_side": "7 mm OD washer plus M3 nyloc",
+    "panel_low_profile_head_clearance_mm": 0.9931,
+    "head_nyloc_clearance_mm": 0.5137,
+    "straight_10mm_diameter_tool_path": "FAIL on both sides throughout -4.5 to -7.5 mm sweep",
+    "tool_access_release_status": "HOLD pending ball-end hex key and thin open-ended wrench review or hardware-contract change"
+  },
+  "validation": {
+    "panel_tab_closed_valid_solid": true,
+    "head_tab_closed_valid_solid": true,
+    "panel_tab_no_self_intersection": true,
+    "head_tab_no_self_intersection": true,
+    "mating_gap_mm": 0.3,
+    "panel_root_overlap_mm3": 81.46,
+    "head_root_overlap_mm3": 164.57,
+    "minimum_root_overlap_required_mm3": 80.0,
+    "edge_envelope_radius_mm": 5.2,
+    "panel_edge_envelope_contained": true,
+    "head_edge_envelope_contained": true
+  },
+  "proposal_objects": [
+    "PROPOSED__RIGHT_A__PANEL_TAB__M3_BORE_MINUS_4P5_V2",
+    "PROPOSED__RIGHT_A__HEAD_TAB__M3_BORE_MINUS_4P5_V2"
+  ],
+  "frozen": [
+    "right B tabs",
+    "all left-side geometry",
+    "approved panel, upper-head, and ear owners",
+    "lower-face and rear-cassette ownership",
+    "reinforcement and eye workstreams",
+    "C006",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "release_holds": [
+    "right A tool access",
+    "right B clearance and hole",
+    "left mirror and bilateral validation",
+    "production integration and unions",
+    "full-head assembly motion and collision",
+    "fabrication export and slicer validation",
+    "ASA print release"
+  ]
+}

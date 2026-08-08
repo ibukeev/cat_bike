@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_B_PANEL_TAB_LOCAL_CLEARANCE_REVIEW_V1",
+  "status": "isolated right B panel-tab local-relief proposal pending user visual approval; not drilled, integrated, mirrored, or print-ready",
+  "source_review": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-m3-hole-axis-review-v1/CAT_HEAD_RIGHT_A_M3_HOLE_AXIS_REVIEW_V1.FCStd",
+    "sha256": "ea76555c39aa34429e2bbcc38bbc0b8f2d9f14a27b43899df754da2a11ab13d4",
+    "frozen_v10_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+    "aluminum_v05_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79"
+  },
+  "approved_anchor": {
+    "id": "REVIEW_ONLY__ANCHOR_CANDIDATE_B__REAR",
+    "center_mm": [91.929535, 217.525665, 201.177658],
+    "inset_from_original_boundary_extreme_mm": 35.0,
+    "unchanged_anchor_span_to_a_mm": 99.025067
+  },
+  "fixed_tab_contract": {
+    "source_panel_tab": "PROPOSED__RIGHT_B__PANEL_TAB__V2_26MM_SHAPE_ONLY",
+    "fixed_head_tab": "PROPOSED__RIGHT_B__HEAD_TAB__V2_26MM_SHAPE_ONLY",
+    "dimensions_mm": [26.0, 12.0, 4.0],
+    "mating_gap_mm": 0.3,
+    "minimum_panel_root_overlap_mm3": 80.0,
+    "minimum_actual_head_clearance_mm": 0.4
+  },
+  "local_frame": {
+    "tangent": [-0.48370078, 0.8484382, 0.21490952],
+    "interior": [-0.81416923, -0.34606928, -0.46622366],
+    "across": [-0.32118839, -0.40048546, 0.85816628]
+  },
+  "proposal": {
+    "object": "PROPOSED__RIGHT_B__PANEL_TAB__LOCAL_RELIEF_1P9_SWEEP_V1",
+    "interfering_owner_component": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3",
+    "operation": "subtract a translated copy of the actual valid C001 head component from a separate copy of the accepted B panel tab",
+    "cutter_sweep_along_across_mm": 1.9,
+    "cutter_translation_mm": [-0.610257941, -0.760922374, 1.630515932],
+    "removed_volume_mm3": 18.08,
+    "result_volume_mm3": 1229.92,
+    "result_head_clearance_mm": 0.445,
+    "result_panel_root_overlap_mm3": 94.72,
+    "result_pair_gap_mm": 0.3,
+    "result_ear_clearance_mm": 9.1285,
+    "result_nearest_approved_a_clearance_mm": 64.9019,
+    "valid_closed_solid": true,
+    "self_intersection": false
+  },
+  "rejected_trials": [
+    {
+      "object": "PROPOSED__RIGHT_B__PANEL_TAB__CLEARANCE_0P5_V1",
+      "cutter_sweep_mm": 0.5,
+      "head_clearance_mm": 0.1232,
+      "panel_root_overlap_mm3": 99.81,
+      "reason": "actual head clearance remained below the 0.4000 mm gate because the closest shell edge is oblique"
+    }
+  ],
+  "review_output": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd",
+    "sha256": "e27b49f52cf7f399bc5b3cb495e039809353abdd0724407588544cba7e0ea5cd",
+    "zip_validation": "PASS",
+    "size_bytes": 4985227,
+    "saved_default_view": "isolated B pair; relieved panel tab selected, unchanged head tab visible"
+  },
+  "frozen_workstreams": [
+    "approved right A relieved and drilled pair",
+    "approved right translucent-panel topology reference",
+    "approved right upper-head V3 topology reference",
+    "approved right-ear V1 topology reference",
+    "B anchor and B head tab",
+    "all left-side geometry",
+    "lower-face and rear-cassette ownership",
+    "reinforcement direction, eyes, and C006",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "review_holds": [
+    "User visual approval is required for the B local-relief shape.",
+    "B hole location, hardware envelopes, and tool access require a separate hole-only bucket after shape approval.",
+    "No production union, mirror, aluminum change, fabrication export, slicing, or print release is authorized."
+  ]
+}

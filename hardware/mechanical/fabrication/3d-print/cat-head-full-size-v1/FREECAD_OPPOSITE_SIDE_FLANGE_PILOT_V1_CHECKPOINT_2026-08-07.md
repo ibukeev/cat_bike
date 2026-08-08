@@ -884,3 +884,291 @@ integration. The inherited `185.0521 mm3` overlap between the two ear source
 components also remains explicit and unresolved. Left mirroring, hardware
 access, holes, aluminum changes, fabrication export, slicing, and printing
 remain held.
+
+## Right A panel-tab local clearance review V1 — awaiting user approval
+
+This bucket changes only the isolated right A panel-side tab. The approved A
+anchor, A head tab, both B tabs, valid panel, valid upper-head V3 compound,
+valid ear V1 compound, frozen V10, left side, lower/rear ownership,
+reinforcements, eyes, C006, and aluminum V0.5/M2 remain unchanged.
+
+### Numeric contract and approved datums
+
+- Approved A anchor:
+  `REVIEW_ONLY__ANCHOR_CANDIDATE_A__FRONT` at
+  `(111.893448, 122.442780, 182.029526) mm`.
+- A remains `35.0 mm` inward from its original boundary extreme; unchanged A/B
+  anchor span is `99.025067 mm`.
+- Accepted tab envelope remains `26 x 12 x 4 mm`; A head tab and its mating
+  face are fixed.
+- Required A pair gap: `0.300 mm`.
+- Required actual upper-head clearance: at least `0.400 mm`.
+- Required panel-root overlap: at least `80 mm3`.
+- Future `3.4 mm` M3 bore requires at least `3.5 mm` modeled edge material,
+  but no hole is created or approved in this shape bucket.
+- Approved local across axis:
+  `(-0.45026046, 0.01124268, 0.89282644)`.
+
+Tracked contract:
+
+- `config/right-a-panel-tab-local-clearance-review-v1.json`
+
+Current review outputs:
+
+- FreeCAD:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_A_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd`,
+  SHA-256 `da583a49deac7cf7cd322e29081ed727b922b5b1104efb9e92138c9412789236`,
+  ZIP validation PASS, size `3579369` bytes.
+- Validation:
+  `right-a-panel-tab-clearance-review-v1/freecad-validation.json`.
+- Evidence images:
+  `review/01-right-side-owner-context-isometric.png`,
+  `review/02-a-panel-tab-and-anchor-isolated.png`,
+  `review/03-a-tab-pair-close-up.png`,
+  `review/04-a-tab-pair-unobstructed-close-up.png`, and
+  `review/05-c001-interior-section-context.png`.
+
+### Rejected trials
+
+- V1 used a `0.4 mm` C001 sweep along the approved across axis. It removed the
+  original `1.3988 mm3` collision but produced only `0.0850 mm` actual head
+  clearance, so it failed the `0.400 mm` gate.
+- V2 used a `2.0 mm` sweep. It produced `0.4251 mm` head clearance and retained
+  `80.4737 mm3` root overlap, but the required future M3 edge envelope
+  intersected the relief by `0.0511 mm3`. It was rejected rather than rounding
+  away the failure.
+
+### V3 proposal and validation
+
+`PROPOSED__RIGHT_A__PANEL_TAB__LOCAL_RELIEF_1P9_SWEEP_V3` is a separate copy of
+the accepted A panel tab cut only by a copy of actual valid upper-head C001
+translated `1.9 mm` along the approved across axis, or
+`(-0.855494874, 0.021361092, 1.696370236) mm`.
+
+- Closed valid solid with no self-intersection: PASS.
+- One solid, one shell, `8` faces, `18` edges, `12` vertices: PASS.
+- Final volume `1224.13 mm3`; local material removed `23.87 mm3`.
+- Upper-head interference: none; clearance `0.4039 mm`: PASS.
+- Panel-root overlap `81.4577 mm3`: PASS.
+- A head-tab mating gap unchanged at `0.3000 mm`: PASS.
+- Ear interference: none; clearance `27.5188 mm`: PASS.
+- New A tab to B panel/head tabs: no interference; `64.9019` and
+  `65.6319 mm` clearances.
+- A head tab to panel remains `0.7071 mm`; B head tab to panel remains
+  `0.5994 mm`.
+- The unchanged B panel tab remains only `0.0647 mm` from the valid upper head;
+  it is explicitly outside this A-only bucket.
+- The V3 tab is a strict material-removal result from the prior 26 mm V2 tab,
+  so it cannot worsen that tab's envelope. However, V2 never passed a full
+  valid-owner insertion/removal motion gate. No 41-sample motion pass is
+  claimed here; full motion and access approval remain held.
+
+The existing future A M3 axis misses the `3.5 mm` edge-material gate: its
+required radius-`5.2 mm` envelope overlaps the V3 relief by `0.0327 mm3`. A
+validation-only axis candidate shifted `0.12 mm` farther along the approved
+interior direction clears the relief by `0.0085 mm`. That is feasibility
+evidence only. No hole or hardware change is included; the datum requires a
+separate user-approved hole bucket.
+
+### Exact controlled recreation
+
+No arbitrary Python, macro, or headless FreeCAD command is authorized. In a
+clean copy of the approved right-ear V1 review, use the allowlisted FreeCAD GUI
+operations to:
+
+1. insert a separate shape copy of
+   `PROPOSED__RIGHT_A__PANEL_TAB__V2_26MM_SHAPE_ONLY`;
+2. insert a separate shape copy of
+   `PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3` translated
+   `(-0.855494874, 0.021361092, 1.696370236) mm`;
+3. cut the tab copy by that translated C001 copy and name the result
+   `PROPOSED__RIGHT_A__PANEL_TAB__LOCAL_RELIEF_1P9_SWEEP_V3`; and
+4. rerun the solid, self-intersection, root, gap, head, ear, sibling-tab, and
+   future-hole-envelope checks in `freecad-validation.json`.
+
+### Next physical review
+
+Open the FreeCAD file in the current output above. Review the saved opaque
+right panel/head/ear context first. Then hide the context owners and inspect
+`PROPOSED__RIGHT_A__PANEL_TAB__LOCAL_RELIEF_1P9_SWEEP_V3` with the unchanged A
+head tab from both ends and from the interior. Approval applies only to the
+local V3 shape. The `0.12 mm` future hole-datum candidate, B-tab clearance,
+integration, mirror, aluminum, fabrication export, slicing, and printing all
+remain held.
+
+## Right A M3 hole-axis review V1 — user-approved drilled pair
+
+The user visually approved the V3 right-A panel-tab relief and later approved
+the drilled pair with “Holes are OK.” The accepted owners and tab shapes remain
+unchanged. Only proposal copies receive the common M3 bore.
+
+- Review file:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-m3-hole-axis-review-v1/CAT_HEAD_RIGHT_A_M3_HOLE_AXIS_REVIEW_V1.FCStd`
+- SHA-256:
+  `ea76555c39aa34429e2bbcc38bbc0b8f2d9f14a27b43899df754da2a11ab13d4`
+- FreeCAD ZIP validation: PASS.
+- Contract:
+  `config/right-a-m3-hole-axis-review-v1.json`.
+- Approved proposal objects:
+  `PROPOSED__RIGHT_A__PANEL_TAB__M3_BORE_MINUS_4P5_V2` and
+  `PROPOSED__RIGHT_A__HEAD_TAB__M3_BORE_MINUS_4P5_V2`.
+
+The bore center is `(104.4048820139, 120.3391366839, 178.2794638319) mm`.
+It retains the validated `0.12 mm` inward correction and moves `-4.5 mm`
+along the approved tab tangent. Both drilled tabs are closed valid solids with
+no self-intersection, retain the `0.3000 mm` mating gap, and retain owner-root
+overlaps of `81.46 mm3` and `164.57 mm3`. Both radius-`5.2 mm` edge
+envelopes are contained in the accepted tab shapes.
+
+Rejected trials are preserved as review evidence. The original shifted axis
+collided with the head-side washer. Tangent trials at `-3.0`, `-4.0`, and
+`-4.25 mm` retained measurable washer collisions. The `-4.5 mm` position is
+the first zero-collision washer position. A user-authorized `-4.5` through
+`-7.5 mm` sweep showed that no position provides a straight 10 mm-diameter,
+15 mm-long axial tool path on either side. Exact separated hardware envelopes
+at `-4.5 mm` clear: the low-profile panel-side M3 head by `0.9931 mm` and
+the head-side M3 nyloc by `0.5137 mm`.
+
+Tool access remains a release hold. Approval covers the drilled-pair placement
+and bore shape, not a ball-end hex-key or thin-open-wrench approach. Right B,
+mirror, integration, full-head validation, fabrication export, slicing, and
+ASA printing remain held.
+
+Exact recreation uses only allowlisted FreeCAD GUI operations: insert separate
+copies of the approved V3 panel tab and V2 head tab, insert two copies of the
+prior 3.4 mm bore cutter, move both cutters by
+`(-1.217049525, -4.29599331, -0.559672965) mm`, and cut only the proposal
+copies. No source owner is cut or modified.
+
+## Right B panel-tab local-clearance review V1 — pending user approval
+
+The right-B shape-only bucket preserves the approved B anchor, unchanged B
+head tab, `26 x 12 x 4 mm` tab envelope, `0.3000 mm` pair gap, approved
+right-A drilled pair, all owners, the left side, and aluminum V0.5-M2. Only a
+separate proposal copy of the B panel tab was relieved against the actual
+valid right upper-head C001 component.
+
+Current review output:
+
+- FreeCAD:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd`
+- SHA-256:
+  `e27b49f52cf7f399bc5b3cb495e039809353abdd0724407588544cba7e0ea5cd`
+- FreeCAD ZIP validation: PASS, size `4985227` bytes.
+- Contract and validation:
+  `config/right-b-panel-tab-local-clearance-review-v1.json`.
+- Preserved pre-change checkpoint:
+  `before_right_b_panel_tab_clearance_v1`.
+
+The accepted source B panel tab initially had only `0.0647 mm` clearance to
+`PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3`. A `0.5 mm`
+across-axis cutter sweep was rejected because the actual oblique-edge gap was
+only `0.1232 mm`, below the `0.4000 mm` gate. The current proposal
+`PROPOSED__RIGHT_B__PANEL_TAB__LOCAL_RELIEF_1P9_SWEEP_V1` uses a `1.9 mm`
+sweep with translation `(-0.610257941, -0.760922374, 1.630515932) mm`.
+
+Validation results:
+
+- Actual clearance to the valid upper-head compound and C001: `0.4450 mm`:
+  PASS.
+- Panel-root overlap: `94.72 mm3` versus `80.00 mm3`: PASS.
+- B pair gap: `0.3000 mm`, unchanged: PASS.
+- Ear clearance: `9.1285 mm`: PASS.
+- Clearance to the approved A panel tab: `64.9019 mm`: PASS.
+- Result volume: `1229.92 mm3`; removed volume: `18.08 mm3`.
+- One closed valid solid and no self-intersection: PASS.
+
+Exact recreation uses the official FreeCAD GUI and allowlisted operations:
+open the approved A M3 source file; insert copies of the accepted B panel tab
+and valid C001; move the C001 copy by
+`(-0.610257941, -0.760922374, 1.630515932) mm`; cut that moved copy from the
+B panel-tab copy; then rerun the clearance, root-common, solid, and
+self-intersection checks recorded above. No arbitrary macro or headless
+FreeCAD command is used.
+
+The saved default view isolates the relieved panel tab (selected) and the
+unchanged B head tab. For owner context, show
+`PROPOSED__RIGHT_TRANSLUCENT_PANEL__TRIANGULATED_V1_SOLID`,
+`PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3`, and
+`PROPOSED__RIGHT_EAR__VALIDATION_COMPOUND_V1`; hide them again for the clean
+pair close-up.
+
+Next physical review: confirm the relieved B panel tab still has an acceptable
+shape and remains correctly paired with the unchanged B head tab. After
+explicit shape approval, the next bucket is B hole placement only. No B hole,
+production union, mirror, aluminum change, fabrication export, slicing, or
+ASA print release is authorized yet.
+
+## Right A tool-access audit V1 — pending user hardware approval
+
+This independent bucket preserves the user-approved A panel-tab relief, common
+M3 hole axis, and panel tab. It audits access on the actual approved axis and
+proposes replacing only the head-side nyloc contract with a short heat-set
+insert. No owner shell, B proposal, left-side geometry, aluminum, lower/rear,
+reinforcement, eye, or C006 workstream changed.
+
+Current review output:
+
+- FreeCAD:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
+- SHA-256:
+  `31b304cc9bf7de9dba330c5b1d70f3c30d969b72c12e836b3af6a2f0bbd511a3`
+- FreeCAD ZIP validation: PASS, size `5050047` bytes.
+- Contract and validation:
+  `config/right-a-tool-access-audit-v1.json`.
+- Preserved pre-change checkpoint:
+  `before_right_a_tool_access_axis_audit_v1`.
+
+The previously saved 10 mm panel-side tool cylinder is displaced `3.0 mm`
+along negative tangent from the final approved hole axis. A rebuilt 10 mm
+straight path on the correct axis still fails, intersecting the translucent
+panel by `204.5764 mm3`. A conservative 3.4 mm-diameter straight shaft also
+fails by `5.0725 mm3`.
+
+The passing panel-side path is a 3.4 mm-diameter, 15 mm-long shaft envelope at
+`25 degrees` along the positive approved interior direction. Object
+`VALIDATION_ONLY__RIGHT_A__PANEL_BALL_HEX_25DEG_INWARD_V1` clears the
+translucent panel by `2.1211 mm`, upper head by `7.7887 mm`, ear by
+`40.2087 mm`, and approved panel tab by `1.4404 mm`. The ball tip contacts
+the low-profile screw socket intentionally. Bondhus states that its standard
+long-arm ball end operates at a 25-degree angle.
+
+A correctly centered 8 mm-diameter thin socket still intersects the upper head
+by `121.2826 mm3`, so the head-side nyloc remains impractical. The proposed
+replacement is an M3 x 3 mm short heat-set insert installed from the mating
+side before assembly, driven by an M3 x 8 low-profile socket screw and the
+existing 7 mm OD x 0.8 mm washer from the panel side.
+
+The final V3 insert cavity is `4.25 mm` diameter x `3.0 mm` deep and starts
+`0.2 mm` behind the mating face. It leaves a closed `0.8 mm` exterior wall
+and provides calculated `2.7 mm` thread engagement with M3 x 8. The complete
+radius-`5.625 mm` cavity envelope is contained, proving `3.5 mm` radial
+edge material. The cavity remains `1.3536 mm` from the valid upper head.
+
+Validation of
+`PROPOSED__RIGHT_A__HEAD_TAB__M3X3_SHORT_INSERT_RECESSED_V3`:
+
+- closed valid solid and no self-intersection: PASS;
+- head-root overlap `164.57 mm3` versus `80.00 mm3`: PASS;
+- pair gap `0.3000 mm`, unchanged: PASS;
+- result volume `1196.36 mm3`.
+
+Rejected evidence is preserved: the straight 10 mm and 3.4 mm paths, the
+25-degree negative-interior path, the 8 mm thin socket, the outer-face insert
+with only 1.9 mm M3 x 8 engagement, and the flush mating-face cavity with a
+`1.4972 mm3` geometric protrusion.
+
+Exact recreation uses only official FreeCAD GUI allowlisted operations.
+Construct the tool cylinders on the approved axis and the 25-degree interior
+direction recorded in the JSON contract. Insert a copy of the approved drilled
+head tab, subtract the V3 4.25 mm x 3 mm cavity at
+`(105.9132545549, 120.3014737059, 175.2884952579) mm`, then rerun the
+containment, owner-clearance, edge-envelope, root, pair-gap, solid, and
+self-intersection checks.
+
+Next physical review: inspect the selected angled shaft and the V3 insert head
+tab in the saved default view. If the hardware contract is accepted, print an
+ASA coupon in the final tab orientation with the same 4.25 mm x 3 mm cavity,
+install the exact M3 x 3 insert, and perform pull-out/torque testing before
+structural release. No mirror, production union, fabrication export, slicing,
+or ASA head print release is authorized yet.

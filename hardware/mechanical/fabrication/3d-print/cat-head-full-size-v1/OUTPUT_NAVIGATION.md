@@ -56,6 +56,24 @@ current review is always easy to find.
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/review/01-right-ear-context-isometric.png`
 - Right-ear isolated screenshot:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/review/02-right-ear-isolated-front.png`
+- Right A panel-tab clearance proposal — user visually approved 2026-08-08:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_A_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd`
+- Right A panel-tab validation:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-panel-tab-clearance-review-v1/freecad-validation.json`
+- Right A panel-tab visual evidence:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-panel-tab-clearance-review-v1/review/`
+- Right A M3 drilled pair — user-approved 2026-08-08; tool access held:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-m3-hole-axis-review-v1/CAT_HEAD_RIGHT_A_M3_HOLE_AXIS_REVIEW_V1.FCStd`
+- Right B panel-tab local-relief proposal — pending user visual approval:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd`
+- Right B local-relief numeric contract and validation:
+  `config/right-b-panel-tab-local-clearance-review-v1.json`
+- Right A tool-access and short-insert proposal — pending user approval:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
+- Right A tool-access numeric contract and validation:
+  `config/right-a-tool-access-audit-v1.json`
+- Current print-readiness dashboard:
+  `PRINT_READINESS_DASHBOARD_2026-08-08.md`
 - Panel topology validation:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-panel-topology-repair-v1/freecad-validation.json`
 - Clean validation-only Part re-export; not a fabrication release:
@@ -141,6 +159,17 @@ it touches the upper head at inherited source seams and clears the panel by
 `0.0761 mm`. The inherited two-component overlap remains unresolved. Mirror, integration,
 connector adjustment, holes, aluminum changes, fabrication export, slicing,
 and printing remain held.
+
+The isolated right A panel-tab V3 local-relief shape is ready for visual
+review. It preserves the approved A anchor, A head tab, `0.300 mm` pair gap,
+both B tabs, panel, upper head, ear, and all frozen workstreams. A `1.9 mm`
+C001 cutter sweep removes `23.87 mm3` only from the A panel tab, producing
+`0.4039 mm` upper-head clearance while retaining `81.4577 mm3` panel-root
+overlap. The existing future M3 datum does not retain the required edge
+material; a `0.12 mm` inward datum shift passes as feasibility evidence but is
+not part of this shape proposal. User approval, the separate hole bucket, B-tab
+clearance, integration, mirror, aluminum, fabrication, slicing, and printing
+remain held.
 
 ## Folder map
 

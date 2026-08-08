@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_A_PANEL_TAB_LOCAL_CLEARANCE_REVIEW_V1",
+  "status": "isolated right A panel-tab local-relief proposal pending user visual approval; not integrated, drilled, mirrored, or print-ready",
+  "source_review": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/CAT_HEAD_RIGHT_EAR_TOPOLOGY_REPAIR_REVIEW_V1.FCStd",
+    "sha256": "132c4906e69a356b4e834b196d001763bcd9b83ea6820f59df61968368b87d3e",
+    "frozen_v10_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+    "aluminum_v05_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79"
+  },
+  "approved_anchor": {
+    "id": "REVIEW_ONLY__ANCHOR_CANDIDATE_A__FRONT",
+    "center_mm": [111.893448, 122.44278, 182.029526],
+    "inset_from_original_boundary_extreme_mm": 35.0,
+    "unchanged_anchor_span_to_b_mm": 99.025067
+  },
+  "fixed_tab_contract": {
+    "source_panel_tab": "PROPOSED__RIGHT_A__PANEL_TAB__V2_26MM_SHAPE_ONLY",
+    "fixed_head_tab": "PROPOSED__RIGHT_A__HEAD_TAB__V2_26MM_SHAPE_ONLY",
+    "dimensions_mm": [26.0, 12.0, 4.0],
+    "mating_gap_mm": 0.3,
+    "minimum_panel_root_overlap_mm3": 80.0,
+    "minimum_actual_head_clearance_mm": 0.4,
+    "minimum_future_m3_bore_edge_material_mm": 3.5,
+    "future_m3_clearance_diameter_mm": 3.4
+  },
+  "local_frame": {
+    "tangent": [0.27045545, 0.95466518, 0.12437177],
+    "interior": [-0.85095203, 0.29746947, -0.43288863],
+    "across": [-0.45026046, 0.01124268, 0.89282644]
+  },
+  "proposal": {
+    "object": "PROPOSED__RIGHT_A__PANEL_TAB__LOCAL_RELIEF_1P9_SWEEP_V3",
+    "interfering_owner_component": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3",
+    "operation": "subtract a translated copy of the actual valid C001 head component from a separate copy of the accepted A panel tab",
+    "cutter_sweep_along_across_mm": 1.9,
+    "cutter_translation_mm": [-0.855494874, 0.021361092, 1.696370236],
+    "removed_volume_mm3": 23.87,
+    "result_volume_mm3": 1224.13,
+    "result_head_clearance_mm": 0.4039,
+    "result_panel_root_overlap_mm3": 81.4577,
+    "result_pair_gap_mm": 0.3,
+    "result_ear_clearance_mm": 27.5188
+  },
+  "rejected_trials": [
+    {
+      "object": "PROPOSED__RIGHT_A__PANEL_TAB__LOCAL_RELIEF_0P4_V1",
+      "cutter_sweep_mm": 0.4,
+      "reason": "actual head clearance was only 0.0850 mm, below the 0.4000 mm gate"
+    },
+    {
+      "object": "PROPOSED__RIGHT_A__PANEL_TAB__LOCAL_RELIEF_2P0_SWEEP_V2",
+      "cutter_sweep_mm": 2.0,
+      "head_clearance_mm": 0.4251,
+      "panel_root_overlap_mm3": 80.4737,
+      "reason": "the existing future M3 edge envelope intersected the relief by 0.0511 mm3"
+    }
+  ],
+  "future_hole_feasibility_only": {
+    "current_axis_center_mm": [105.7240457825, 124.5994336575, 178.8910834325],
+    "current_axis_edge_envelope_overlap_mm3": 0.0327,
+    "candidate_interior_shift_mm": 0.12,
+    "candidate_shift_vector_mm": [-0.1021142436, 0.0356963364, -0.0519466356],
+    "candidate_axis_center_mm": [105.6219315389, 124.6351299939, 178.8391367969],
+    "candidate_edge_envelope_clearance_mm": 0.0085,
+    "authorization": "validation datum only; no hole or hardware change is included or approved in this shape bucket"
+  },
+  "frozen_workstreams": [
+    "approved right translucent-panel topology reference",
+    "approved right upper-head V3 topology reference",
+    "approved right-ear V1 topology reference",
+    "A head tab and both B tabs",
+    "all left-side geometry",
+    "lower-face and rear-cassette ownership",
+    "reinforcement direction, eyes, and C006",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "review_holds": [
+    "User visual approval is required for the V3 local-relief shape.",
+    "The existing future A M3 axis does not retain the required 3.5 mm edge material after relief; the 0.12 mm interior datum candidate requires a separate hole-only approval bucket.",
+    "The existing B panel-side tab remains only 0.0647 mm from the valid upper head and is outside this A-only bucket.",
+    "The full 26 mm panel-and-tab insertion/removal motion path has not been revalidated against the valid owners and remains held.",
+    "No production union, hole, hardware access approval, mirror, aluminum change, fabrication export, slicing, or print release is authorized."
+  ]
+}
