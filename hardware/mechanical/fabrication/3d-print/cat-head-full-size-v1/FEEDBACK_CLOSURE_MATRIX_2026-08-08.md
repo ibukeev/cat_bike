@@ -40,7 +40,7 @@ required reserve is `20 mm` total for `10 mm` per side, before brim/support.
 | ID | Current evidence | Honest status | Next release action |
 |---|---|---|---|
 | F-01 | V0.5-M2 shared rail/socket route is frozen. | Digital direction preserved; production hold. | Rebuild final shell sockets and run full insertion. |
-| F-02 | Frozen targets/axes/roll are in the shell/aluminum interface control. | Digital interface lock; physical hold. | Print the actual 19.05 mm rail/socket coupon. |
+| F-02 | Frozen targets/axes/roll are in the shell/aluminum interface control; the only existing coupon is obsolete (`20.50 mm` fixed socket versus current `21.00 mm` serviceable socket). | Digital interface lock; physical hold. | Measure the actual rail, approve, then print a V0.5-M2 socket/cap coupon. |
 | F-03 | No measured final lamp/cable/beam/steering envelope exists. | Open. | Capture the 3D envelope and run the complete sweep. |
 | F-04 | Lossless rear-cassette V5 ownership was visually accepted. | Accepted review; production/aluminum hold. | Build one cassette around V0.5-M2 and validate insertion/removal. |
 | F-05 | M2 moved lower shell centers inward and passed digital edge/tool checks. | Digital pass; physical hold. | Verify real hardware, fingers, and tool on the coupon. |

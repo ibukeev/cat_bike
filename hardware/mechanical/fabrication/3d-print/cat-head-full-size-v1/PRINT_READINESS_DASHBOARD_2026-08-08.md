@@ -18,6 +18,7 @@ validated as a complete printable assembly.
 | Complete head | No unified production source or full-head validation | Connected-body, exterior, seam, motion, hardware, and service checks |
 | Production topology | Gate 3–8 hard-fail disconnected bodies | Current shells are 61/61/41/42 parts and eye buckets are 6/6; true owner unions required |
 | Slicer/ASA release | No production release; strict nominal 10 mm XY reserve encoded | Current lower faces fail before brim/support; documented final slice required |
+| Physical coupon | Existing Gate 8 socket coupon is one-body/manifold but obsolete | Replace its 20.50 mm fixed socket with an approved V0.5-M2 21.00 mm serviceable-socket coupon after measuring the rail |
 
 ## Shortest print-critical order
 

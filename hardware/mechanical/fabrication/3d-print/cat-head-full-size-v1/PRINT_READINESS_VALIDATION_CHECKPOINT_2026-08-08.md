@@ -13,6 +13,7 @@ reserve per side before brim and support generation.
 
 - Closure ledger: `FEEDBACK_CLOSURE_MATRIX_2026-08-08.md`
 - Dashboard: `PRINT_READINESS_DASHBOARD_2026-08-08.md`
+- Coupon audit: `PRINTABLE_COUPON_AUDIT_2026-08-08.md`
 - Shared policy: `source/print_topology_policy.py`
 - Regression: `tests/automated/test_cat_head_print_topology_policy.py`
 - Active A hardware review:
@@ -32,9 +33,9 @@ reserve per side before brim and support generation.
 - Focused policy tests: `9/9 PASS`.
 - Full automated suite: `22/23 PASS`; the sole failure is the pre-existing,
   unrelated lighting-map test because `glow_pairs` is absent from the current
+  Gate 1 panel-role data.
 - Gate 3 and Gate 5 were explicitly audited and now raise a nonzero validation
   error after writing their report when any acceptance item is false.
-  Gate 1 panel-role data.
 - Python syntax compilation for policy and Gate 3–8 generators: `PASS`.
 - Git whitespace/error check: `PASS`.
 - PrusaSlicer current-artifact audit:
@@ -45,6 +46,10 @@ reserve per side before brim and support generation.
   - right: `7.798/6.216 mm`;
   - left: `7.798/6.471 mm`;
   - required: `20 mm` on both axes — fail.
+- The sole generated portal-fit coupon is one part and manifold, but it is
+  obsolete for V0.5-M2: its cavity is `20.50 mm` and has no removable cap,
+  while the frozen current interface uses a `21.00 mm` serviceable U-cradle.
+
 
 ## Rejected or unsafe variants
 
@@ -54,6 +59,7 @@ reserve per side before brim and support generation.
 - Do not silently union review geometry without selected owners, a numeric
   contract, evidence, and approval.
 - Do not weaken the 10 mm reserve to pass legacy lower faces.
+- Do not use the old Gate 8 fixed-socket coupon to approve V0.5-M2 rail fit.
 
 ## Exact validation commands
 
@@ -71,3 +77,5 @@ prusa-slicer --info hardware/mechanical/fabrication/3d-print/cat-head-full-size-
 3. After approval, integrate only right A/B.
 4. Print small ASA fit/tool/pull-out coupons before mirroring.
 5. Review complete head and slicer previews before ASA release.
+6. Measure the actual purchased rail and approve a current V0.5-M2 socket/cap
+   coupon contract before exporting a replacement coupon STL.
