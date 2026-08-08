@@ -14,6 +14,7 @@ reserve per side before brim and support generation.
 - Closure ledger: `FEEDBACK_CLOSURE_MATRIX_2026-08-08.md`
 - Dashboard: `PRINT_READINESS_DASHBOARD_2026-08-08.md`
 - Coupon audit: `PRINTABLE_COUPON_AUDIT_2026-08-08.md`
+- Replacement coupon contract: `V05_M2_SOCKET_CAP_COUPON_CONTRACT_PROPOSAL_2026-08-08.md`
 - Shared policy: `source/print_topology_policy.py`
 - Regression: `tests/automated/test_cat_head_print_topology_policy.py`
 - Active A hardware review:

@@ -46,6 +46,10 @@ insert features. It must be one connected closed manifold body per printed
 piece and must pass a real slicer review before release.
 
 The user must approve the isolated coupon contract and evidence before STL
+
+The replacement numeric contract is staged for review in
+`V05_M2_SOCKET_CAP_COUPON_CONTRACT_PROPOSAL_2026-08-08.md`. It creates no
+geometry and does not bypass the required approval gate.
 export under the cat-head CAD change-control gate.
 
 ## Validation command
