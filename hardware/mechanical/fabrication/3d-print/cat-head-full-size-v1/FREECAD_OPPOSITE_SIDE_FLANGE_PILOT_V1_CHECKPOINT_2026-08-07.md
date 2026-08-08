@@ -783,3 +783,104 @@ owners are valid.
 The ear source remains invalid and cannot yet clear motion/interference gates.
 Left-side mirroring, integration, hardware access, holes, aluminum changes,
 fabrication export, slicing, and printing remain held.
+
+## Right-ear topology repair V1 — user-approved topology reference
+
+This isolated bucket changes only the tessellation representation of frozen
+V10 object `right_ear`. It preserves the two existing connected source
+components, every one of their `177` world-space vertex coordinates, and the
+exact source bounds. The frozen V10 blend, approved panel, approved upper-head
+V3 compound, connector tabs, eye work, lower/rear work, reinforcements, C006,
+and aluminum V0.5 were not changed.
+
+On 2026-08-08 the user visually reviewed this isolated right-ear reference and
+approved it with “LGTM.” This approval accepts only the unchanged right-ear
+topology reference and its validated non-unioned compound. It does not resolve
+the inherited two-component overlap or authorize mirroring, integration,
+connector adjustment, holes, aluminum changes, fabrication export, slicing, or
+printing.
+
+### Numeric contract
+
+- Source and proposal vertices: `177`; no vertices added or removed.
+- Existing vertex displacement and weld tolerance: exactly `0.0 mm`.
+- Source and proposal connected components: exactly `2`; no production union.
+- Deterministic triangulation: Blender `BEAUTY/BEAUTY`, `362` total triangles.
+- Bounding-box change: exactly `0.0 mm`.
+- Exact bounds: X `[55.797000885009766, 151.91549682617188]`, Y
+  `[124.44599914550781, 210.15899658203125]`, Z
+  `[187.2570037841797, 330.0]` mm.
+- Acceptance requires both component meshes and Parts plus their non-unioned
+  validation compound to be closed, valid, and self-intersection-free.
+- No automatic mesh repair, mirror, integration, connector adjustment, holes,
+  aluminum change, fabrication export, slicing, or print release.
+
+Tracked regeneration inputs:
+
+- `config/right-ear-deterministic-topology-repair-review-v1.json`
+- `source/generate_right_ear_deterministic_topology_repair_review_v1.py`
+
+Current review outputs:
+
+- FreeCAD:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/CAT_HEAD_RIGHT_EAR_TOPOLOGY_REPAIR_REVIEW_V1.FCStd`,
+  SHA-256 `132c4906e69a356b4e834b196d001763bcd9b83ea6820f59df61968368b87d3e`,
+  ZIP validation PASS, size `1600837` bytes.
+- Blender:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/CAT_HEAD_RIGHT_EAR_TOPOLOGY_REPAIR_REVIEW_V1.blend`,
+  SHA-256 `3da526146174aa537dc887098e300f2fce8922503b8973df7d97253fcb87dbb6`.
+- Blender validation:
+  `right-ear-deterministic-topology-repair-v1/validation.json`.
+- FreeCAD validation:
+  `right-ear-deterministic-topology-repair-v1/freecad-validation.json`.
+- Context evidence:
+  `right-ear-deterministic-topology-repair-v1/review/01-right-ear-context-isometric.png`,
+  SHA-256 `960ce768a21e7c31dfd17119a28e77835d4e8b583170297a6691f69e63bb6a97`.
+- Isolated evidence:
+  `right-ear-deterministic-topology-repair-v1/review/02-right-ear-isolated-front.png`,
+  SHA-256 `c82dd35a5d8fd4fa42a17f09d920f310df7ed4f84ea350eadbc7fdde7df085e5`.
+
+### Validation results
+
+- Blender gates: PASS. Source fingerprint before/after remains
+  `884fabfca43dfa27dad15304bde2b5411b77df770c241ef6017eef98fc9c0de5`;
+  all coordinates and exact bounds are unchanged.
+- C001 mesh: `169` points, `350` facets; validation PASS without auto-repair.
+  FreeCAD Part: one closed valid solid, no self-intersection, `334` faces,
+  `509` edges, `169` vertices, volume `17512.81 mm3`.
+- C002 mesh: `8` points, `12` facets; validation PASS without auto-repair.
+  FreeCAD Part: one closed valid solid, no self-intersection, `11` faces,
+  `17` edges, `8` vertices, volume `908.74 mm3`.
+- Non-unioned compound `PROPOSED__RIGHT_EAR__VALIDATION_COMPOUND_V1`:
+  closed and valid with no self-intersection; `2` solids, `2` shells, `345`
+  faces, `526` edges, `177` vertices, volume `18421.55 mm3`.
+- The two original source components overlap by `185.0521 mm3`. This inherited
+  relationship is preserved explicitly; the topology pass did not move,
+  reshape, or union them.
+- Ear to approved panel: no interference; `0.0761 mm` clearance.
+- Ear to approved upper head: no volumetric interference; exactly touching at
+  the inherited source seams.
+- Ear to the four approved A/B panel/head tabs: no interference; minimum gaps
+  are `27.4952`, `27.4965`, `9.1285`, and `13.2877 mm` respectively.
+
+Exact regeneration command:
+
+```bash
+blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_right_ear_deterministic_topology_repair_review_v1.py -- --config hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/right-ear-deterministic-topology-repair-review-v1.json
+```
+
+### Approval recorded and next controlled bucket
+
+The approved review object is
+`PROPOSED__RIGHT_EAR__VALIDATION_COMPOUND_V1`. The accepted evidence covers its
+saved right panel/head context, unchanged placement and bounds, inherited root
+seam contact, and isolated surface appearance.
+
+The next independent bucket is the isolated right-side A panel-tab adjustment:
+remove the measured `1.3988 mm3` overlap with the now-valid right upper-head
+reference while preserving the approved panel, upper-head, and ear owners.
+That change requires a new numeric contract and review evidence before any
+integration. The inherited `185.0521 mm3` overlap between the two ear source
+components also remains explicit and unresolved. Left mirroring, hardware
+access, holes, aluminum changes, fabrication export, slicing, and printing
+remain held.

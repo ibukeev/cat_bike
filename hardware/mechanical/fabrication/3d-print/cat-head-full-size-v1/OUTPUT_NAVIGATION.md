@@ -48,6 +48,14 @@ current review is always easy to find.
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-deterministic-topology-repair-v3/review/01-right-upper-head-context-isometric.png`
 - Right upper-head isolated screenshot:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-deterministic-topology-repair-v3/review/02-right-upper-head-isolated-isometric.png`
+- Current right-ear topology reference — user-approved 2026-08-08:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/CAT_HEAD_RIGHT_EAR_TOPOLOGY_REPAIR_REVIEW_V1.FCStd`
+- Right-ear topology validation:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/freecad-validation.json`
+- Right-ear context screenshot:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/review/01-right-ear-context-isometric.png`
+- Right-ear isolated screenshot:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ear-deterministic-topology-repair-v1/review/02-right-ear-isolated-front.png`
 - Panel topology validation:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-panel-topology-repair-v1/freecad-validation.json`
 - Clean validation-only Part re-export; not a fabrication release:
@@ -121,6 +129,18 @@ panel-side tab still overlaps the repaired head by `1.3988 mm3` and remains
 held for a later connector-adjustment bucket. The ear reference, full
 motion/access validation, holes, integration, mirror, and printing remain
 held.
+
+The user visually approved the isolated right-ear V1 topology reference on
+2026-08-08 with “LGTM.” It preserves all `177` source vertices at exactly `0.0 mm`
+displacement, both existing source components, and the exact source bounds.
+Both component Parts and their non-unioned compound are closed, valid, and
+pass Part-level self-intersection checks. The inherited components overlap by
+`185.0521 mm3` and remain separate by contract. The ear has no volumetric
+interference with the approved panel, upper head, or four A/B connector tabs;
+it touches the upper head at inherited source seams and clears the panel by
+`0.0761 mm`. The inherited two-component overlap remains unresolved. Mirror, integration,
+connector adjustment, holes, aluminum changes, fabrication export, slicing,
+and printing remain held.
 
 ## Folder map
 
