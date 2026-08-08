@@ -39,6 +39,9 @@ reserve per side before brim and support generation.
   error after writing their report when any acceptance item is false.
 - Python syntax compilation for policy and Gate 3–8 generators: `PASS`.
 - Git whitespace/error check: `PASS`.
+- FreeCAD integrity validation: right-A review `PASS` (`5,050,047 bytes`);
+  right-B review `PASS` (`4,985,227 bytes`). Both FCStd archives are intact
+  and reopenable.
 - PrusaSlicer current-artifact audit:
   - lower faces: `61` parts each — fail;
   - upper heads: `41` left / `42` right — fail;
