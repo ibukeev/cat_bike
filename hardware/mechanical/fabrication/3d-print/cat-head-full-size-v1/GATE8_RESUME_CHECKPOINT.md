@@ -1,5 +1,12 @@
 # Gate 8 Resume Checkpoint
 
+> **Superseded print instruction (2026-08-08):** this is a historical Gate 8
+> checkpoint, not the current print authority. Do not print its 20.50 mm
+> fixed-socket coupon or its structural STLs. V0.5-M2 requires a 21.00 mm
+> serviceable U-cradle and removable cap. See
+> `PRINTABLE_COUPON_AUDIT_2026-08-08.md` and
+> `PRINT_READINESS_DASHBOARD_2026-08-08.md`.
+
 Updated: 2026-07-28
 
 Gate 8 is the current 330 mm full-size structural review candidate. Generation

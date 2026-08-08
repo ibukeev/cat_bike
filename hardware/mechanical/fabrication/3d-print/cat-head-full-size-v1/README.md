@@ -3,6 +3,20 @@
 This package turns the shape-approved cat-head panel surface into the 330 mm
 fabrication master described in [FABRICATION_PLAN.md](FABRICATION_PLAN.md).
 
+## Current release status — 2026-08-08
+
+**HOLD: do not start the structural ASA head or use historical Gate 8 print
+recommendations.** The current shell exports are disconnected multi-part
+meshes, and the old 20.50 mm fixed-socket coupon does not represent the frozen
+V0.5-M2 21.00 mm serviceable socket/cap interface.
+
+- Start at `PRINT_READINESS_DASHBOARD_2026-08-08.md`.
+- Track feedback in `FEEDBACK_CLOSURE_MATRIX_2026-08-08.md`.
+- Read `PRINTABLE_COUPON_AUDIT_2026-08-08.md` before printing any coupon.
+- Review the proposed replacement contract in
+  `V05_M2_SOCKET_CAP_COUPON_CONTRACT_PROPOSAL_2026-08-08.md`.
+
+
 ## Current Gate
 
 Gate 1 was visually approved on 2026-07-15. It freezes:

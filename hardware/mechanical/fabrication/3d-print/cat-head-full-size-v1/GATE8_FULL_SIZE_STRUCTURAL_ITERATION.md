@@ -1,5 +1,12 @@
 # Gate 8 Full-Size Structural Iteration
 
+> **Historical geometry—do not print (2026-08-08):** the 20.50 mm fixed socket
+> and its coupon are superseded by the frozen V0.5-M2 21.00 mm serviceable
+> socket/cap interface. The production parts also fail the current one-body
+> topology gate. Use `PRINT_READINESS_DASHBOARD_2026-08-08.md` and
+> `PRINTABLE_COUPON_AUDIT_2026-08-08.md` for current release status.
+
+
 Status: generated and automatically validated. This is the first 330 mm
 full-size review candidate based on feedback from the 100 mm print. It is not
 cleared for final ASA production until the tube coupon, one structural shell,
