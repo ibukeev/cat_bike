@@ -2,31 +2,24 @@
 
 ## Status
 
-V9 is the current F-10/F-11/F-12 review. It carries forward the accepted V8
-two-set rectangular-flange concept, uses the widest tested collision-free
-same-seam combination, and adds one common M3 clearance axis to every
-orange/green pair.
+V9 is archived. Its two-set rectangular-flange and M3 through-bolt concept was
+accepted, but its same-seam placement was superseded by the user's marked
+relocation in V10. Do not use V9 as the current placement reference.
 
 This is not print released. The drilled review geometry is valid, but the green
 tabs are not yet integrated into production shell meshes and physical internal
 tool/washer/nut access has not been confirmed. Do not start ASA parts from V9.
 
-## Current review files
+## Archived review files
+
+All V9 review files are under:
+`output/60-ear-root-reviews/ear-root-wide-spaced-m3-through-bolt-review-v9-screw-hole-concept-accepted-placement-superseded-by-marked-relocation/`.
 
 - Blender:
-  `output/00-current-review/ear-root-wide-spaced-m3-through-bolt-review-v9.blend`
+  `output/60-ear-root-reviews/ear-root-wide-spaced-m3-through-bolt-review-v9-screw-hole-concept-accepted-placement-superseded-by-marked-relocation/ear-root-wide-spaced-m3-through-bolt-review-v9.blend`
 - Validation:
-  `output/00-current-review/ear-root-wide-spaced-m3-through-bolt-review-v9-validation.json`
-- Full head:
-  `output/00-current-review/renders/ear-root-wide-spaced-m3-through-bolt-full-head-context.png`
-- Right/left translucent-piece context:
-  `output/00-current-review/renders/ear-root-wide-spaced-m3-through-bolt-{right,left}-translucent-piece-two-orange-roots.png`
-- Right/left isolated sets:
-  `output/00-current-review/renders/ear-root-wide-spaced-m3-through-bolt-{right,left}-two-connector-sets-isolated.png`
-- Four bore close-ups:
-  `output/00-current-review/renders/ear-root-wide-spaced-m3-through-bolt-{right,left}-{a,b}-m3-hole-alignment.png`
-- Eight owner-root cutaways:
-  `output/00-current-review/renders/ear-root-wide-spaced-m3-through-bolt-{right,left}-{a,b}-{orange,green}-owner-root.png`
+  `output/60-ear-root-reviews/ear-root-wide-spaced-m3-through-bolt-review-v9-screw-hole-concept-accepted-placement-superseded-by-marked-relocation/ear-root-wide-spaced-m3-through-bolt-review-v9-validation.json`
+- Renders are in that directory's `renders/` subfolder.
 
 Useful Blender collections use the `EAR9_` prefix. Orange tabs belong to the
 moving translucent pieces; green tabs are proposed fixed shell geometry. The
@@ -111,12 +104,4 @@ C006, or the aluminum plate/rail `CAT-HEAD-SHELL-ALUMINUM-V0.5` workstream.
 
 ## Next physical review
 
-1. Open the V9 blend and verify the whole head is intact.
-2. Inspect both isolated-side views and confirm two ordinary flange pairs.
-3. Inspect all four M3 close-ups and confirm each hole passes through orange
-   and green on one common axis.
-4. In the full blend, check that a driver, washer, and nyloc can be reached from
-   inside at all four locations.
-5. Approve or reject the `36.9166 mm` spacing and the M3 × 16 hardware proposal.
-6. Only after approval: integrate green tabs into production shell pieces,
-   create printable unions, and run slicer/coupon checks before ASA printing.
+V9 needs no further review. Use the V10 checkpoint and current-review folder.
