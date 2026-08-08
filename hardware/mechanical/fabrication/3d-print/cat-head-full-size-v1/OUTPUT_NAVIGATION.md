@@ -25,6 +25,24 @@ current review is always easy to find.
 - Per-owner cutaways are named
   `ear-root-marked-relocation-m3-through-bolt-{left,right}-{a,b}-{orange,green}-owner-root.png`.
 
+## FreeCAD controlled-change pilot
+
+- Pilot document:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1.FCStd`
+- Reference manifest:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/reference-manifest.json`
+- Context screenshot:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/review/01-reference-context-isometric.png`
+- Selected pilot panel screenshot:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/review/02-pilot-panel-selected.png`
+- Selected receiving-owner screenshot:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/review/03-receiving-owner-selected.png`
+
+This is a reference-only right-side placement pilot. It contains exactly the
+accepted V3 right translucent body, the exact right upper-head owner, and the
+exact right ear as collision context. It contains no connector geometry and
+does not supersede or modify the frozen V10 Blender review.
+
 ## Folder map
 
 - `output/00-current-review/`: the single review currently awaiting user
@@ -42,6 +60,8 @@ current review is always easy to find.
   reviews retained for traceability.
 - `output/60-ear-root-reviews/`: isolated ear-root constraints and redesign
   reviews retained independently from eye and aluminum work.
+- `output/70-freecad-pilots/`: tightly scoped reference-only FreeCAD pilots.
+  These are not integrated CAD baselines or print releases.
 
 ## Current decision state
 

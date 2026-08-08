@@ -1,0 +1,54 @@
+[mcp_servers.freecad]
+command = "bash"
+args = ["software/tools/start_freecad_mcp_cat_head.sh"]
+cwd = "."
+env_vars = ["FREECAD_MCP_ROOT", "FREECAD_MCP_FREECAD_BIN"]
+enabled = true
+required = false
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+default_tools_approval_mode = "writes"
+enabled_tools = [
+  "check_freecad_connection",
+  "manage_connection",
+  "test_echo",
+  "mesh_operations",
+  "measurement_operations",
+  "spatial_query",
+  "view_control",
+  "geometric_verification",
+  "fixture_operations",
+  "continue_selection",
+  "sketch_operations",
+  "partdesign_operations",
+  "part_operations",
+  "assembly_operations",
+  "spreadsheet_operations",
+  "get_debug_logs",
+  "get_last_traceback",
+  "cancel_operation",
+]
+
+[mcp_servers.freecad.tools.check_freecad_connection]
+approval_mode = "approve"
+
+[mcp_servers.freecad.tools.manage_connection]
+approval_mode = "approve"
+
+[mcp_servers.freecad.tools.test_echo]
+approval_mode = "approve"
+
+[mcp_servers.freecad.tools.measurement_operations]
+approval_mode = "approve"
+
+[mcp_servers.freecad.tools.spatial_query]
+approval_mode = "approve"
+
+[mcp_servers.freecad.tools.geometric_verification]
+approval_mode = "approve"
+
+[mcp_servers.freecad.tools.get_debug_logs]
+approval_mode = "approve"
+
+[mcp_servers.freecad.tools.get_last_traceback]
+approval_mode = "approve"

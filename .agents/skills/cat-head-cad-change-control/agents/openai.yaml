@@ -1,0 +1,12 @@
+interface:
+  display_name: "Cat Head CAD Change Control"
+  short_description: "Gate structural CAD changes before geometry edits"
+  default_prompt: "Use $cat-head-cad-change-control to plan and verify this cat-head CAD change."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "freecad"
+      description: "Restricted local FreeCAD modeling, selection, measurement, and verification tools"
+      transport: "stdio"
+policy:
+  allow_implicit_invocation: true

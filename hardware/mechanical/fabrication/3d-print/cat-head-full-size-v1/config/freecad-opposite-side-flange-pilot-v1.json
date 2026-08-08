@@ -1,0 +1,30 @@
+{
+  "pilot_id": "CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1",
+  "source_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+  "source_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1",
+  "objects": [
+    {
+      "role": "pilot_panel",
+      "blender_object": "EAR10_ACCEPTED_V3_BODY__right",
+      "export_name": "REFERENCE__right_translucent_panel"
+    },
+    {
+      "role": "receiving_owner",
+      "blender_object": "right_upper_head",
+      "export_name": "REFERENCE__right_upper_head_owner"
+    },
+    {
+      "role": "collision_context",
+      "blender_object": "right_ear",
+      "export_name": "REFERENCE__right_ear_collision_context"
+    }
+  ],
+  "excluded_geometry": [
+    "all V10 proposed orange insert flanges",
+    "all V10 proposed green head flanges",
+    "left-side geometry",
+    "eyes, lower face, rear cassette, reinforcement, and aluminum"
+  ],
+  "geometry_policy": "Reference-only export. Do not join, cut, remesh, repair, decimate, mirror, or generate connector geometry."
+}
