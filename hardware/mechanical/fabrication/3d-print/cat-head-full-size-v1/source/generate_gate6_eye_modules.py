@@ -23,6 +23,7 @@ import generate_gate1_master as gate1  # noqa: E402
 import generate_gate2_section_layout as gate2  # noqa: E402
 import generate_gate4_assembly_review as gate4  # noqa: E402
 import generate_gate5_ribs_and_joints as gate5  # noqa: E402
+import print_topology_policy as topology_policy  # noqa: E402
 
 
 PACKAGE_ROOT = SCRIPT_DIR.parent
@@ -822,9 +823,15 @@ def main() -> None:
             value["boundary_edges"] == 0 and value["nonmanifold_edges"] == 0
             for value in all_part_metrics
         ),
+        "all_eye_parts_single_connected_body": topology_policy.all_single_closed_bodies(
+            all_part_metrics
+        ),
         "all_gate6_shells_closed_manifold": all(
             value["boundary_edges"] == 0 and value["nonmanifold_edges"] == 0
             for value in shell_metrics.values()
+        ),
+        "all_gate6_shells_single_connected_body": topology_policy.all_single_closed_bodies(
+            shell_metrics.values()
         ),
         "all_full_size_eye_parts_fit_printer": all(
             value["orientation_search"]["fits"] for value in all_part_metrics

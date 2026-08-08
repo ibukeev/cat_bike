@@ -20,6 +20,7 @@ if str(SCRIPT_DIR) not in sys.path:
 
 import generate_gate1_master as gate1  # noqa: E402
 import generate_gate2_section_layout as gate2  # noqa: E402
+import print_topology_policy as topology_policy  # noqa: E402
 
 
 PACKAGE_ROOT = SCRIPT_DIR.parent
@@ -366,6 +367,9 @@ def main() -> None:
         "sections": report_sections,
         "acceptance": {
             "all_sections_closed_manifold": all(value["boundary_edges"] == 0 and value["nonmanifold_edges"] == 0 for value in report_sections.values()),
+            "all_sections_single_connected_body": topology_policy.all_single_closed_bodies(
+                report_sections.values()
+            ),
             "all_sections_fit_orientation_search": all(value["orientation_search"]["fits"] for value in report_sections.values()),
             "approved_exterior_transform_unchanged": True,
             "mirrored_bottom_throat_openings_closed": all(

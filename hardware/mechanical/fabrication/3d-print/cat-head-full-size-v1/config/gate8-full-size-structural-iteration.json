@@ -2,6 +2,7 @@
   "schema_version": 2,
   "printer_envelope_mm": [240.0, 200.0, 210.0],
   "orientation_step_degrees": 15,
+  "minimum_xy_boundary_clearance_mm_per_side": 10.0,
   "shell_wall_thickness_mm": 1.8,
   "joint_system": {
     "module_max_spacing_mm": 55.0,

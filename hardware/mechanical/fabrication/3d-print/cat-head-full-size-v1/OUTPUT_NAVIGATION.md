@@ -74,6 +74,10 @@ current review is always easy to find.
   `config/right-a-tool-access-audit-v1.json`
 - Current print-readiness dashboard:
   `PRINT_READINESS_DASHBOARD_2026-08-08.md`
+- Physical-feedback closure matrix:
+  `FEEDBACK_CLOSURE_MATRIX_2026-08-08.md`
+- Strict topology/margin validation checkpoint:
+  `PRINT_READINESS_VALIDATION_CHECKPOINT_2026-08-08.md`
 - Panel topology validation:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-panel-topology-repair-v1/freecad-validation.json`
 - Clean validation-only Part re-export; not a fabrication release:

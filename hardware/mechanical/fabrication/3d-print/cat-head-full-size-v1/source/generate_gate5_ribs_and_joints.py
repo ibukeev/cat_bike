@@ -20,6 +20,7 @@ if str(SCRIPT_DIR) not in sys.path:
 
 import generate_gate1_master as gate1  # noqa: E402
 import generate_gate2_section_layout as gate2  # noqa: E402
+import print_topology_policy as topology_policy  # noqa: E402
 
 PACKAGE_ROOT = SCRIPT_DIR.parent
 GATE2_CONFIG = PACKAGE_ROOT / "config/gate2-section-layout.json"
@@ -2412,7 +2413,12 @@ def main() -> None:
                 value["boundary_edges"] == 0 and value["nonmanifold_edges"] == 0
                 for value in shell_metrics.values()
             ),
-            "one_slicer_union_stl_exported_per_shell": True,
+            "one_slicer_union_stl_exported_per_shell": topology_policy.all_single_closed_bodies(
+                shell_metrics.values()
+            ),
+            "all_shells_single_connected_body": topology_policy.all_single_closed_bodies(
+                shell_metrics.values()
+            ),
             "closed_reinforcement_bodies_retained_in_target_shells": all(
                 value["connected_components"] >= baseline_component_counts[name]
                 for name, value in shell_metrics.items()

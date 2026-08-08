@@ -27,6 +27,7 @@ import generate_gate3_structural_shells as gate3  # noqa: E402
 import generate_gate5_ribs_and_joints as gate5  # noqa: E402
 import generate_gate6_eye_modules as gate6  # noqa: E402
 import generate_gate7_glow_panel_inserts as gate7  # noqa: E402
+import print_topology_policy as topology_policy  # noqa: E402
 
 
 PACKAGE_ROOT = SCRIPT_DIR.parent
@@ -1247,6 +1248,9 @@ def export_gate8(
             value["boundary_edges"] == 0 and value["nonmanifold_edges"] == 0
             for value in shell_metrics.values()
         ),
+        "all_shells_single_connected_body": topology_policy.all_single_closed_bodies(
+            shell_metrics.values()
+        ),
         "legacy_left_upper_bridge_rebuilt_as_manifold_solid": (
             left_upper_bridge_repair is not None
             and left_upper_bridge_repair["volume_after_mm3"] > 0.0
@@ -1254,6 +1258,9 @@ def export_gate8(
         "all_glow_inserts_closed_manifold": all(
             value["boundary_edges"] == 0 and value["nonmanifold_edges"] == 0
             for value in insert_metrics.values()
+        ),
+        "all_glow_inserts_single_connected_body": topology_policy.all_single_closed_bodies(
+            insert_metrics.values()
         ),
         "all_portal_coupons_closed_manifold": all(
             value["boundary_edges"] == 0 and value["nonmanifold_edges"] == 0
@@ -1339,6 +1346,13 @@ def export_gate8(
         ),
         "all_shells_fit_printer_orientation_search": all(
             value["orientation_search"]["fits"]
+            for value in shell_metrics.values()
+        ),
+        "all_shells_reserve_nominal_10mm_xy_margin_before_brim_and_supports": all(
+            topology_policy.has_minimum_xy_boundary_clearance(
+                value["orientation_search"],
+                float(config["minimum_xy_boundary_clearance_mm_per_side"]),
+            )
             for value in shell_metrics.values()
         ),
     }
