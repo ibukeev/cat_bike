@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_UPPER_HEAD_DETERMINISTIC_TOPOLOGY_REPAIR_V3",
+  "status": "isolated right-upper-head topology repair proposal; not integrated or print-ready",
+  "source_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+  "source_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+  "source_object": "right_upper_head",
+  "component_prefix": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-deterministic-topology-repair-v3",
+  "contract": {
+    "operation": "split the 42 existing connected components, weld only coincident or sub-0.00001-mm vertex pairs, then deterministically triangulate each component",
+    "weld_tolerance_mm": 0.00001,
+    "maximum_observed_weld_pair_separation_mm": 0.000003814697265625,
+    "expected_removed_redundant_vertices": 4,
+    "maximum_retained_vertex_displacement_mm": 0.0,
+    "maximum_bounding_box_change_mm": 0.0,
+    "expected_source_connected_components": 42,
+    "required_boundary_edges_per_component": 0,
+    "required_nonmanifold_edges_per_component": 0,
+    "triangulation_quad_method": "BEAUTY",
+    "triangulation_ngon_method": "BEAUTY",
+    "production_union_authorized": false,
+    "preserve_panel_flange_ear_left_and_aluminum": true
+  }
+}

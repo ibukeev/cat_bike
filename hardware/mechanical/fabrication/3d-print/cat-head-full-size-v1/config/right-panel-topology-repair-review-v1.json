@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_PANEL_TOPOLOGY_REPAIR_V1",
+  "status": "isolated validation proposal; not integrated or print-ready",
+  "source_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+  "source_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+  "source_object": "EAR10_ACCEPTED_V3_BODY__right",
+  "proposal_object": "PROPOSED__RIGHT_TRANSLUCENT_PANEL__TRIANGULATED_V1",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-panel-topology-repair-v1",
+  "contract": {
+    "operation": "triangulate existing polygon faces only",
+    "maximum_existing_vertex_displacement_mm": 0.0,
+    "maximum_bounding_box_change_mm": 0.0,
+    "required_connected_components": 1,
+    "required_boundary_edges": 0,
+    "required_nonmanifold_edges": 0,
+    "preserve_flange_geometry": true,
+    "preserve_head_ear_left_and_aluminum": true
+  }
+}
