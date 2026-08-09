@@ -1,7 +1,12 @@
 {
   "schema_version": 1,
   "review_id": "CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1",
-  "status": "isolated hardware-contract proposal pending user approval; approved A hole axis and panel tab unchanged; not integrated, mirrored, or print-ready",
+  "status": "isolated right-A hardware contract visually approved by user on 2026-08-09; approved A hole axis and panel tab unchanged; ASA coupon, integration, mirror, and print release remain held",
+  "user_approval": {
+    "date": "2026-08-09",
+    "verbatim": "OK, LGTM - move next",
+    "scope": "M3 x 3 short heat-set insert, recessed 4.25 x 3.0 mm cavity, M3 x 8 low-profile screw and washer, and 25-degree panel-side ball-end access"
+  },
   "source_review": {
     "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-m3-hole-axis-review-v1/CAT_HEAD_RIGHT_A_M3_HOLE_AXIS_REVIEW_V1.FCStd",
     "sha256": "ea76555c39aa34429e2bbcc38bbc0b8f2d9f14a27b43899df754da2a11ab13d4",
@@ -122,8 +127,8 @@
     "lower/rear, reinforcement, eye, C006, and aluminum workstreams"
   ],
   "review_holds": [
-    "User approval is required for the heat-set insert hardware-contract change.",
     "Print and destructively test an ASA insert coupon in the final print orientation before structural release.",
+    "The approved hardware remains isolated proposal geometry until controlled right-side integration.",
     "No production union, mirror, fabrication export, slicing, or ASA head print release is authorized."
   ]
 }

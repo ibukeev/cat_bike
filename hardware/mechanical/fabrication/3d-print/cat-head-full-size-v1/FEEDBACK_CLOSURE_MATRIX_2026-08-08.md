@@ -48,9 +48,9 @@ required reserve is `20 mm` total for `10 mm` per side, before brim/support.
 | F-07 | Ear-root insertion-fit V3 includes 13 mm corner relief. | Accepted review/digital pass; physical hold. | Print the fit coupon. |
 | F-08 | V3 lower-center relief and 41-sample path per side clear digitally. | Accepted review/digital pass; physical hold. | Include the lower center in the fit/service test. |
 | F-09 | V3 has 2.5 mm deep-body and 1.0 mm cap clearance. | Accepted review/digital pass; physical hold. | Confirm real ASA tolerance by hand fit. |
-| F-10 | V10/A-B uses seated datums and separated retention points; right-B relief and selected legacy-projection removal are visually approved. | Layout accepted; right A/B hardware and production hold. | Review A hardware, drill B, then integrate right side only after approval. |
+| F-10 | V10/A-B uses seated datums and separated retention points; right-A hardware, right-B relief, and selected legacy-projection removal are visually approved. | Layout and A hardware accepted; right-B and production hold. | Drill and validate B, then integrate right side only after approval. |
 | F-11 | Two widely separated sets replace the continuous connector. | Accepted layout; production hold. | Finish right A/B; mirror only after approval. |
-| F-12 | Broad roots are accepted; right A has a short-insert proposal. | Partial digital pass; hardware/physical hold. | Approve hardware and test access/pull-out coupon. |
+| F-12 | Broad roots and the right-A short-insert/25-degree tool-access contract are visually approved. | Digital pass; physical coupon/production hold. | Print the exact-orientation ASA insert coupon and test torque/pull-out. |
 | F-13 | Widely separated A/B points target outer-root flapping. | Accepted layout; production/physical hold. | Integrate one side and perform anti-flap hand test. |
 | F-14 | Outer grounding uses the under-ear owner pair, not an exterior stick. | Accepted layout; production/physical hold. | Same one-side integration and test as F-13. |
 | F-15 | Old central back-skirt is uncorrected against final reinforcement. | Open. | Select exact collision faces for a one-panel proposal. |
@@ -86,10 +86,10 @@ required reserve is `20 mm` total for `10 mm` per side, before brim/support.
 
 ## Next controlled sequence
 
-1. Review the right-A short-insert contract; right-B relief and the selected
-   legacy-projection removal are visually approved.
-2. After approval, drill B, integrate only approved right A/B, and rerun topology, clearance,
-   access, exterior, and insertion checks.
+1. Print and destructively test the approved right-A short-insert coupon while
+   right-B hole/fastener/access work proceeds.
+2. After B approval, integrate only approved right A/B and rerun topology,
+   clearance, access, exterior, and insertion checks.
 3. Build the right eye as the next one-body proposal only after selecting its
    bezel/chamber owner faces and numeric shoulder contract.
 4. Hold central/front/side panels until exact parts and collision faces are

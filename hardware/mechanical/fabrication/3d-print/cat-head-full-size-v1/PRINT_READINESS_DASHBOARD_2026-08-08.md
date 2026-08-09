@@ -11,7 +11,7 @@ validated as a complete printable assembly.
 | Reinforcement | Requested additions accepted as much better | Union, clip to interior, and collision-test every seam |
 | Eye mounting | Four broad-root flange layout per side accepted in review | Make eye bucket one printable body and pass insertion/access |
 | Right panel, upper head, and ear topology | Right-side FreeCAD references approved | References are not production unions or shell exports |
-| Right A connector | Approved hole preserved; isolated 25 degree ball-end plus M3 x 3 short-insert proposal passes geometry gates | Needs user hardware approval, ASA insert coupon, and production integration |
+| Right A connector | Approved hole plus 25 degree ball-end and M3 x 3 short-insert hardware contract are visually approved | Needs ASA insert coupon and production integration |
 | Right B connector | Isolated 1.9 mm local-relief and selected legacy small upper-head projection removal are visually approved | Needs B hole, hardware, and access review, then controlled right-side integration |
 | Left connectors | Not mirrored from controlled right-side solution | Mirror after right A/B approval and rerun bilateral checks |
 | Rear aluminum interface | V0.5-M2 preserved and unchanged | Final ASA rear structure must consume complete metal envelopes |
@@ -22,7 +22,7 @@ validated as a complete printable assembly.
 
 ## Shortest print-critical order
 
-1. Approve the isolated right A short-insert hardware contract and validate an ASA insert coupon.
+1. Validate the approved right A short-insert hardware with an ASA coupon.
 2. Drill and validate right B; its relief and the selected legacy-projection removal are approved.
 3. Integrate only approved right-side A/B owner geometry and require one
    connected body.

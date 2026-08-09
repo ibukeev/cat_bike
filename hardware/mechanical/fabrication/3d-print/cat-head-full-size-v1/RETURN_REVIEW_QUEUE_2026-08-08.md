@@ -4,17 +4,16 @@ This is the shortest review queue after the unsupervised validation pass. It
 does not authorize integration, mirroring, fabrication export, slicing, or
 printing.
 
-## 1. Right-A short-insert hardware contract
+## 1. Right-B hole, fastener, and access contract
 
-Open:
-`output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
-
-Question to answer: accept or reject the proposed M3 x 3 short heat-set insert
-with a `4.25 mm x 3.0 mm` recessed cavity and the validated 25-degree
-panel-side ball-end access path.
+Current action: build one isolated right-B drilled-pair and hardware-access
+proposal from the approved B relief, approved selected-projection removal, and
+frozen panel/head/ear owner references. No integration or mirror is included.
 
 ## Already accepted; do not re-review
 
+- Right-A M3 x 3 short-insert hardware and 25-degree panel-side ball-end tool
+  access: visually approved 2026-08-09; ASA coupon still required.
 - Selected Face1668 legacy internal-projection removal: visually approved
   2026-08-09.
 - Right-B `1.9 mm` local-relief shape: visually approved.
@@ -39,8 +38,7 @@ panel-side ball-end access path.
 
 ## Work intentionally held
 
-- B hole/fastener/access is now ready as the next geometry bucket after the
-  right-A hardware decision.
+- B hole/fastener/access is the active isolated geometry bucket.
 - Right-side production integration depends on both review items above.
 - Left mirror depends on explicit right-side integration approval.
 - Eye, central/front/side panel, and ear slot work require exact user-selected

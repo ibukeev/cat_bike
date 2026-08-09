@@ -1131,7 +1131,7 @@ removal. The next review is the existing right-A short heat-set-insert and
 25-degree tool-access contract. No integration, mirror, aluminum edit,
 fabrication export, slicing, or ASA print release is authorized.
 
-## Right A tool-access audit V1 — pending user hardware approval
+## Right A tool-access audit V1 — user-approved hardware contract
 
 This independent bucket preserves the user-approved A panel-tab relief, common
 M3 hole axis, and panel tab. It audits access on the actual approved axis and
@@ -1198,9 +1198,14 @@ head tab, subtract the V3 4.25 mm x 3 mm cavity at
 containment, owner-clearance, edge-envelope, root, pair-gap, solid, and
 self-intersection checks.
 
-Next physical review: inspect the selected angled shaft and the V3 insert head
-tab in the saved default view. If the hardware contract is accepted, print an
-ASA coupon in the final tab orientation with the same 4.25 mm x 3 mm cavity,
-install the exact M3 x 3 insert, and perform pull-out/torque testing before
-structural release. No mirror, production union, fabrication export, slicing,
-or ASA head print release is authorized yet.
+On 2026-08-09 the user visually approved the complete isolated right-A
+hardware contract with “OK, LGTM - move next.” This covers the M3 x 3 short
+insert, recessed 4.25 mm x 3 mm cavity, M3 x 8 low-profile screw and washer,
+and the 25-degree panel-side ball-end access path. The validation-only tool
+shaft remains non-printing evidence.
+
+Next physical work: print an ASA coupon in the final tab orientation with the
+same cavity, install the exact insert, and perform pull-out/torque testing.
+The next isolated CAD bucket is right-B hole, fastener, and tool access. No
+mirror, production union, fabrication export, slicing, or ASA head print
+release is authorized yet.

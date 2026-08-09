@@ -77,7 +77,8 @@ current review is always easy to find.
   `RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1_CHECKPOINT_2026-08-08.md`
 - Legacy small-flange clean context and internal before/after evidence:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/review/`
-- Right A tool-access and short-insert proposal — pending user approval:
+- Right A tool-access and short-insert proposal — user visually approved
+  2026-08-09; ASA coupon and integration held:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
 - Right A tool-access numeric contract and validation:
   `config/right-a-tool-access-audit-v1.json`

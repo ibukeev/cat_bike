@@ -17,7 +17,7 @@ reserve per side before brim and support generation.
 - Replacement coupon contract: `V05_M2_SOCKET_CAP_COUPON_CONTRACT_PROPOSAL_2026-08-08.md`
 - Shared policy: `source/print_topology_policy.py`
 - Regression: `tests/automated/test_cat_head_print_topology_policy.py`
-- Active A hardware review:
+- User-approved A hardware review:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
 - User-approved B shape review:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd`
@@ -78,7 +78,7 @@ prusa-slicer --info hardware/mechanical/fabrication/3d-print/cat-head-full-size-
 
 ## Next physical review
 
-1. Review existing right-A short M3 insert contract.
+1. Print and destructively test the approved right-A short M3 insert coupon.
 2. Drill and validate B; its relief and the selected legacy removal are
    already visually approved.
 3. After explicit approval, integrate only approved right A/B.
