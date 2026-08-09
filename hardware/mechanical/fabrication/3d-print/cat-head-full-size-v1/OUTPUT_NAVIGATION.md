@@ -68,8 +68,8 @@ current review is always easy to find.
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd`
 - Right B local-relief numeric contract and validation:
   `config/right-b-panel-tab-local-clearance-review-v1.json`
-- Selected right upper-head legacy small-flange removal — pending user visual
-  approval; isolated review only:
+- Selected right upper-head legacy small-flange removal — user visually
+  approved 2026-08-09; isolated review only:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1.FCStd`
 - Legacy small-flange removal numeric contract:
   `config/right-upper-head-legacy-small-flange-removal-review-v1.json`

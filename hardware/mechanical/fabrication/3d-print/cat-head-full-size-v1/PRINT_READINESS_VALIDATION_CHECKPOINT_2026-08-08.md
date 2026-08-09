@@ -21,7 +21,7 @@ reserve per side before brim and support generation.
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
 - User-approved B shape review:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd`
-- Pending selected legacy small-flange removal review:
+- User-approved selected legacy small-flange removal review:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1.FCStd`
 
 ## Accepted decisions and dimensions
@@ -78,10 +78,10 @@ prusa-slicer --info hardware/mechanical/fabrication/3d-print/cat-head-full-size-
 
 ## Next physical review
 
-1. Review the selected legacy small-flange removal; the right-B relief is
+1. Review existing right-A short M3 insert contract.
+2. Drill and validate B; its relief and the selected legacy removal are
    already visually approved.
-2. Review existing right-A short M3 insert contract.
-3. After explicit approval, drill B and integrate only approved right A/B.
+3. After explicit approval, integrate only approved right A/B.
 4. Print small ASA fit/tool/pull-out coupons before mirroring.
 5. Review complete head and slicer previews before ASA release.
 6. Measure the actual purchased rail and approve a current V0.5-M2 socket/cap

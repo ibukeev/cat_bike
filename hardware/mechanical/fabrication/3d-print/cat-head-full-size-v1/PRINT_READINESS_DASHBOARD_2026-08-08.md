@@ -12,7 +12,7 @@ validated as a complete printable assembly.
 | Eye mounting | Four broad-root flange layout per side accepted in review | Make eye bucket one printable body and pass insertion/access |
 | Right panel, upper head, and ear topology | Right-side FreeCAD references approved | References are not production unions or shell exports |
 | Right A connector | Approved hole preserved; isolated 25 degree ball-end plus M3 x 3 short-insert proposal passes geometry gates | Needs user hardware approval, ASA insert coupon, and production integration |
-| Right B connector | Isolated 1.9 mm local-relief proposal passes 0.4450 mm head clearance and 94.72 mm3 root gates; shape visually approved | Selected legacy small upper-head projection removal still needs visual approval, then B hole, hardware, and access review |
+| Right B connector | Isolated 1.9 mm local-relief and selected legacy small upper-head projection removal are visually approved | Needs B hole, hardware, and access review, then controlled right-side integration |
 | Left connectors | Not mirrored from controlled right-side solution | Mirror after right A/B approval and rerun bilateral checks |
 | Rear aluminum interface | V0.5-M2 preserved and unchanged | Final ASA rear structure must consume complete metal envelopes |
 | Complete head | No unified production source or full-head validation | Connected-body, exterior, seam, motion, hardware, and service checks |
@@ -23,17 +23,16 @@ validated as a complete printable assembly.
 ## Shortest print-critical order
 
 1. Approve the isolated right A short-insert hardware contract and validate an ASA insert coupon.
-2. Review the isolated selected legacy small-flange removal; the right-B relief itself is already visually approved.
-3. Drill and validate right B after the legacy-removal decision.
-4. Integrate only approved right-side A/B owner geometry and require one
+2. Drill and validate right B; its relief and the selected legacy-projection removal are approved.
+3. Integrate only approved right-side A/B owner geometry and require one
    connected body.
-5. Validate right-side topology, exterior, access, clearance, and insertion.
-6. Mirror A/B only after explicit approval, then rerun bilateral checks.
-7. Integrate accepted lower/rear, reinforcement, eye, and ear/panel changes
+4. Validate right-side topology, exterior, access, clearance, and insertion.
+5. Mirror A/B only after explicit approval, then rerun bilateral checks.
+6. Integrate accepted lower/rear, reinforcement, eye, and ear/panel changes
    into one production source while preserving aluminum V0.5-M2.
-8. Run complete-head collision, insertion, exterior, connected-component, and
+7. Run complete-head collision, insertion, exterior, connected-component, and
    service validation.
-9. Export production STLs, slice documented orientations, and review the
+8. Export production STLs, slice documented orientations, and review the
    complete 3D head plus slicer previews before ASA printing.
 
 Do not start the structural ASA head print from the current review outputs.

@@ -8,6 +8,10 @@ projection selected by the user on
 upper-head object is preserved and hidden for comparison. Nothing is
 integrated, mirrored, exported, sliced, or released for printing.
 
+On 2026-08-09 the user visually approved this isolated removal with
+“lgtm go next.” Approval applies only to the selected Face1668 projection
+removal; it does not authorize integration or mirroring.
+
 The preceding right-B `1.9 mm` panel-tab relief was visually approved by the
 user before this bucket started.
 
@@ -82,11 +86,10 @@ Use only the official FreeCAD GUI and allowlisted operations:
    B-clearance, panel-clearance, and ear-context checks.
 7. Save checkpoint `legacy_small_flange_removal_review_v1_validated`.
 
-## Next physical review
+## Approval and next review
 
-Open the FCStd and inspect the saved clean context. For the exact local change,
-hide the complete compound, show either
-`VALIDATION_ONLY__FACE1668_C001_NEIGHBORHOOD_V1` (before) or
-`REVIEW_ONLY__FACE1668_REMOVAL_LOCAL_CONTEXT_V1` (after), and use Left view.
-Approval applies only to this selected-projection removal. Integration remains
-held until explicit approval.
+The local removal review is complete. The next controlled review is the
+existing right-A short heat-set-insert and 25-degree tool-access contract:
+`output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`.
+The approved removal remains held from integration until the right-side
+connector package receives explicit integration approval.

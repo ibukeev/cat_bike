@@ -1,7 +1,12 @@
 {
   "schema_version": 1,
   "review_id": "CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1",
-  "status": "isolated right-side removal proposal pending user visual approval; baseline upper head preserved; not integrated, mirrored, exported, or print-ready",
+  "status": "isolated right-side removal proposal visually approved by user on 2026-08-09; baseline upper head preserved; not integrated, mirrored, exported, or print-ready",
+  "user_approval": {
+    "date": "2026-08-09",
+    "verbatim": "lgtm go next",
+    "scope": "selected Face1668 legacy internal-projection removal only"
+  },
   "source_review": {
     "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd",
     "sha256": "e27b49f52cf7f399bc5b3cb495e039809353abdd0724407588544cba7e0ea5cd",
@@ -106,8 +111,8 @@
     "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
   ],
   "review_holds": [
-    "User visual approval is required for the selected legacy-projection removal.",
     "The approved upper-head V3 source object must not be replaced before explicit integration approval.",
+    "The approved removal remains an isolated proposal until a controlled right-side integration bucket.",
     "No production union, mirror, aluminum change, fabrication export, slicing, or print release is authorized."
   ]
 }

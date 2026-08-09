@@ -1,28 +1,10 @@
-# Cat-Head Return Review Queue — 2026-08-08
+# Cat-Head Return Review Queue — updated 2026-08-09
 
 This is the shortest review queue after the unsupervised validation pass. It
 does not authorize integration, mirroring, fabrication export, slicing, or
 printing.
 
-## 1. Selected legacy small-flange removal
-
-Open:
-`output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1.FCStd`
-
-Review only the old small projection selected as
-`PROPOSED__RIGHT_UPPER_HEAD__VALIDATION_COMPOUND_V3.Face1668`.
-
-- Clean context: `review/01-clean-context-isometric.png`.
-- Internal before: `review/04-before-local-inside-left.png`.
-- Internal after: `review/05-after-local-inside-left.png`.
-- In FreeCAD, hide the complete proposal and alternate
-  `VALIDATION_ONLY__FACE1668_C001_NEIGHBORHOOD_V1` and
-  `REVIEW_ONLY__FACE1668_REMOVAL_LOCAL_CONTEXT_V1` in Left view.
-
-Question to answer: does removing this one legacy internal projection look
-correct while the exterior wall remains intact?
-
-## 2. Right-A short-insert hardware contract
+## 1. Right-A short-insert hardware contract
 
 Open:
 `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
@@ -33,6 +15,8 @@ panel-side ball-end access path.
 
 ## Already accepted; do not re-review
 
+- Selected Face1668 legacy internal-projection removal: visually approved
+  2026-08-09.
 - Right-B `1.9 mm` local-relief shape: visually approved.
 - Right-A common M3 hole placement: approved as “Holes are OK.”
 - Right translucent panel, right upper-head topology, and right-ear topology:
@@ -55,7 +39,8 @@ panel-side ball-end access path.
 
 ## Work intentionally held
 
-- B hole/fastener/access work depends on the selected-projection decision.
+- B hole/fastener/access is now ready as the next geometry bucket after the
+  right-A hardware decision.
 - Right-side production integration depends on both review items above.
 - Left mirror depends on explicit right-side integration approval.
 - Eye, central/front/side panel, and ear slot work require exact user-selected

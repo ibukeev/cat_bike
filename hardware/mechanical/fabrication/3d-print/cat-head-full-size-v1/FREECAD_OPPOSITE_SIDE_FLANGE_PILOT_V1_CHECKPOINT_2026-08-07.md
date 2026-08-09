@@ -1093,13 +1093,13 @@ unchanged B head tab. For owner context, show
 `PROPOSED__RIGHT_EAR__VALIDATION_COMPOUND_V1`; hide them again for the clean
 pair close-up.
 
-The user visually approved this relieved B shape on 2026-08-08. The next B
-bucket remains hole placement only after the separately selected legacy small
-upper-head projection removal is reviewed. No B hole, production union,
-mirror, aluminum change, fabrication export, slicing, or ASA print release is
-authorized yet.
+The user visually approved this relieved B shape on 2026-08-08. The selected
+legacy small upper-head projection removal was then visually approved on
+2026-08-09, so the B hole/fastener/access bucket is now unblocked. No B hole,
+production union, mirror, aluminum change, fabrication export, slicing, or ASA
+print release is authorized yet.
 
-## Right upper-head selected legacy small-flange removal review V1 — pending user approval
+## Right upper-head selected legacy small-flange removal review V1 — user visually approved
 
 The user selected
 `PROPOSED__RIGHT_UPPER_HEAD__VALIDATION_COMPOUND_V3.Face1668` and authorized an
@@ -1125,11 +1125,11 @@ solids. Its bounding box is unchanged. The approved B head root remains
 translucent panel remains non-interfering at `0.0353 mm`. Aluminum V0.5-M2 and
 every other workstream are frozen.
 
-Next physical review: compare the saved internal Left-view before/after images
-or toggle the two local-context objects documented in the dedicated
-checkpoint. Approval applies only to this selected projection removal. No
-integration, mirror, aluminum edit, fabrication export, slicing, or ASA print
-release is authorized.
+On 2026-08-09 the user visually approved this isolated removal with
+“lgtm go next.” Approval applies only to the selected Face1668 projection
+removal. The next review is the existing right-A short heat-set-insert and
+25-degree tool-access contract. No integration, mirror, aluminum edit,
+fabrication export, slicing, or ASA print release is authorized.
 
 ## Right A tool-access audit V1 — pending user hardware approval
 
