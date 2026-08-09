@@ -1040,7 +1040,7 @@ prior 3.4 mm bore cutter, move both cutters by
 `(-1.217049525, -4.29599331, -0.559672965) mm`, and cut only the proposal
 copies. No source owner is cut or modified.
 
-## Right B panel-tab local-clearance review V1 — pending user approval
+## Right B panel-tab local-clearance review V1 — user visually approved
 
 The right-B shape-only bucket preserves the approved B anchor, unchanged B
 head tab, `26 x 12 x 4 mm` tab envelope, `0.3000 mm` pair gap, approved
@@ -1093,11 +1093,43 @@ unchanged B head tab. For owner context, show
 `PROPOSED__RIGHT_EAR__VALIDATION_COMPOUND_V1`; hide them again for the clean
 pair close-up.
 
-Next physical review: confirm the relieved B panel tab still has an acceptable
-shape and remains correctly paired with the unchanged B head tab. After
-explicit shape approval, the next bucket is B hole placement only. No B hole,
-production union, mirror, aluminum change, fabrication export, slicing, or
-ASA print release is authorized yet.
+The user visually approved this relieved B shape on 2026-08-08. The next B
+bucket remains hole placement only after the separately selected legacy small
+upper-head projection removal is reviewed. No B hole, production union,
+mirror, aluminum change, fabrication export, slicing, or ASA print release is
+authorized yet.
+
+## Right upper-head selected legacy small-flange removal review V1 — pending user approval
+
+The user selected
+`PROPOSED__RIGHT_UPPER_HEAD__VALIDATION_COMPOUND_V3.Face1668` and authorized an
+isolated proposal to remove that old small internal projection. The accepted
+V3 upper-head source remains unchanged. A separate C001 copy was cut using the
+numeric `12.4 x 2.4 x 5.3 mm` contract while retaining a `1.8 mm` exterior
+wall; only that modified C001 copy was substituted into a separate 42-part
+validation compound.
+
+- Review:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1.FCStd`
+- Contract:
+  `config/right-upper-head-legacy-small-flange-removal-review-v1.json`
+- Dedicated checkpoint:
+  `RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1_CHECKPOINT_2026-08-08.md`
+- FCStd SHA-256:
+  `9d18d60dc7db24c97fd7931fdda24c87bea546309d68eef325f62bae9ad4731e`.
+- FCStd ZIP validation: PASS, `7999704` bytes.
+
+The complete proposal is valid, closed, and self-intersection-free with 42
+solids. Its bounding box is unchanged. The approved B head root remains
+`124.93 mm3`; the relieved B panel tab remains clear by `0.445 mm`; the
+translucent panel remains non-interfering at `0.0353 mm`. Aluminum V0.5-M2 and
+every other workstream are frozen.
+
+Next physical review: compare the saved internal Left-view before/after images
+or toggle the two local-context objects documented in the dedicated
+checkpoint. Approval applies only to this selected projection removal. No
+integration, mirror, aluminum edit, fabrication export, slicing, or ASA print
+release is authorized.
 
 ## Right A tool-access audit V1 — pending user hardware approval
 

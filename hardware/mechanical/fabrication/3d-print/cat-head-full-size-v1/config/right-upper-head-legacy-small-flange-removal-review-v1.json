@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1",
+  "status": "isolated right-side removal proposal pending user visual approval; baseline upper head preserved; not integrated, mirrored, exported, or print-ready",
+  "source_review": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd",
+    "sha256": "e27b49f52cf7f399bc5b3cb495e039809353abdd0724407588544cba7e0ea5cd",
+    "preserved_upper_head_object": "PROPOSED__RIGHT_UPPER_HEAD__VALIDATION_COMPOUND_V3",
+    "modified_component_copy": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref005"
+  },
+  "user_selected_anchor": {
+    "object": "PROPOSED__RIGHT_UPPER_HEAD__VALIDATION_COMPOUND_V3",
+    "subelement": "Face1668",
+    "owning_component": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3",
+    "centroid_mm": [95.14, 205.01, 188.54],
+    "normal": [-0.72, -0.24, -0.65],
+    "area_mm2": 24.0,
+    "datum_object": "REVIEW_ONLY__USER_SELECTED_LEGACY_FLANGE_FACE1668_DATUM_V1",
+    "marker_object": "REVIEW_ONLY__USER_SELECTED_FACE1668_MARKER_V1"
+  },
+  "numeric_contract": {
+    "intent": "remove only the selected legacy internal projection while preserving the exterior wall and every accepted connector owner",
+    "local_profile_mm": [12.4, 2.4],
+    "selected_face_nominal_profile_mm": [12.0, 2.0],
+    "profile_clearance_per_side_mm": 0.2,
+    "opposing_face_separation_mm": 7.0,
+    "inward_cut_depth_mm": 5.2,
+    "outside_overcut_mm": 0.1,
+    "cutter_total_height_mm": 5.3,
+    "preserved_exterior_wall_mm": 1.8,
+    "local_frame": {
+      "u": [0.4770448111, -0.8525166947, -0.2136434727],
+      "v": [0.503238989, 0.4642507463, -0.7288496172],
+      "w_inward": [0.7205406083, 0.2401802028, 0.6504880491]
+    },
+    "cutter_origin_mm": [91.5063813236, 209.7144845913, 190.6741602665],
+    "construction_rotations_xyz_deg": [-20.2656974709, 46.0991321094, -46.5306371426],
+    "freecad_final_yaw_pitch_roll_deg": [-60.7698, 12.336, -48.2515],
+    "cutter_object": "VALIDATION_ONLY__FACE1668_DEPTH_5P2"
+  },
+  "proposal": {
+    "component_object": "PROPOSED__RIGHT_UPPER_HEAD_C001_LEGACY_SMALL_FLANGE_REMOVED_V1",
+    "complete_compound_object": "PROPOSED__RIGHT_UPPER_HEAD__LEGACY_SMALL_FLANGE_REMOVED_VALIDATION_COMPOUND_V1",
+    "local_review_object": "REVIEW_ONLY__FACE1668_REMOVAL_LOCAL_CONTEXT_V1",
+    "operation": "subtract the contracted cutter from a separate C001 shape copy, then replace only C001 in a separate 42-component validation compound",
+    "original_c001_volume_mm3": 75969.39,
+    "result_c001_volume_mm3": 75860.78,
+    "net_c001_volume_change_mm3": -108.61,
+    "local_cutter_intersection_mm3": 112.74,
+    "original_complete_volume_mm3": 150643.54,
+    "result_complete_volume_mm3": 150534.60,
+    "net_complete_volume_change_mm3": -108.94
+  },
+  "validation": {
+    "complete_shape_valid": true,
+    "complete_shape_closed": true,
+    "complete_shape_self_intersection": false,
+    "complete_solids": 42,
+    "complete_shells": 42,
+    "complete_faces": 2726,
+    "complete_edges": 4312,
+    "complete_vertices": 1625,
+    "bounding_box_unchanged": true,
+    "bounding_box_mm": {
+      "x": [-30.0, 126.94],
+      "y": [42.84, 269.34],
+      "z": [109.76, 268.15]
+    },
+    "right_b_head_root_overlap_after_removal_mm3": 124.93,
+    "right_b_panel_tab_clearance_after_removal_mm": 0.445,
+    "right_b_panel_tab_interference": false,
+    "translucent_panel_clearance_after_removal_mm": 0.0353,
+    "translucent_panel_interference": false,
+    "ear_relationship_after_removal": "touching at inherited accepted owner seams; unchanged review relationship"
+  },
+  "review_output": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1.FCStd",
+    "sha256": "9d18d60dc7db24c97fd7931fdda24c87bea546309d68eef325f62bae9ad4731e",
+    "zip_validation": "PASS",
+    "size_bytes": 7999704,
+    "saved_checkpoint": "legacy_small_flange_removal_review_v1_validated",
+    "saved_default_view": "clean right upper-head proposal with approved B pair, translucent panel, and ear context",
+    "evidence": [
+      {
+        "file": "review/01-clean-context-isometric.png",
+        "sha256": "b240ae88c91e049be9070fa935cdb0366a254890673368470368db3fb34fb38e"
+      },
+      {
+        "file": "review/04-before-local-inside-left.png",
+        "sha256": "e3f04ec4cf4eb18aee83c2207ffc2f00d5200e643357762442d93a97225cf2b0"
+      },
+      {
+        "file": "review/05-after-local-inside-left.png",
+        "sha256": "8043fb00287bd553a486c1b1face8e8fc51ab7aa289d0ece37a253df96ac9ea2"
+      }
+    ]
+  },
+  "frozen_workstreams": [
+    "approved right A drilled pair and pending A hardware contract",
+    "user-approved right B 1.9 mm local-relief shape and both B tab owners",
+    "approved right translucent-panel topology reference",
+    "approved right-ear topology reference",
+    "all left-side geometry",
+    "lower-face and rear-cassette ownership",
+    "reinforcement, eyes, and C006",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "review_holds": [
+    "User visual approval is required for the selected legacy-projection removal.",
+    "The approved upper-head V3 source object must not be replaced before explicit integration approval.",
+    "No production union, mirror, aluminum change, fabrication export, slicing, or print release is authorized."
+  ]
+}

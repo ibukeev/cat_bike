@@ -64,16 +64,27 @@ current review is always easy to find.
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-panel-tab-clearance-review-v1/review/`
 - Right A M3 drilled pair — user-approved 2026-08-08; tool access held:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-m3-hole-axis-review-v1/CAT_HEAD_RIGHT_A_M3_HOLE_AXIS_REVIEW_V1.FCStd`
-- Right B panel-tab local-relief proposal — pending user visual approval:
+- Right B panel-tab local-relief proposal — user visually approved 2026-08-08:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1/CAT_HEAD_RIGHT_B_PANEL_TAB_CLEARANCE_REVIEW_V1.FCStd`
 - Right B local-relief numeric contract and validation:
   `config/right-b-panel-tab-local-clearance-review-v1.json`
+- Selected right upper-head legacy small-flange removal — pending user visual
+  approval; isolated review only:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1.FCStd`
+- Legacy small-flange removal numeric contract:
+  `config/right-upper-head-legacy-small-flange-removal-review-v1.json`
+- Legacy small-flange removal checkpoint and review instructions:
+  `RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1_CHECKPOINT_2026-08-08.md`
+- Legacy small-flange clean context and internal before/after evidence:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/review/`
 - Right A tool-access and short-insert proposal — pending user approval:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
 - Right A tool-access numeric contract and validation:
   `config/right-a-tool-access-audit-v1.json`
 - Current print-readiness dashboard:
   `PRINT_READINESS_DASHBOARD_2026-08-08.md`
+- Short return review queue:
+  `RETURN_REVIEW_QUEUE_2026-08-08.md`
 - Physical-feedback closure matrix:
   `FEEDBACK_CLOSURE_MATRIX_2026-08-08.md`
 - Strict topology/margin validation checkpoint:

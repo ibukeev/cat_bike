@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "review_id": "CAT_HEAD_RIGHT_B_PANEL_TAB_LOCAL_CLEARANCE_REVIEW_V1",
-  "status": "isolated right B panel-tab local-relief proposal pending user visual approval; not drilled, integrated, mirrored, or print-ready",
+  "status": "isolated right B panel-tab local-relief proposal visually approved by user on 2026-08-08; not drilled, integrated, mirrored, or print-ready",
   "source_review": {
     "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-m3-hole-axis-review-v1/CAT_HEAD_RIGHT_A_M3_HOLE_AXIS_REVIEW_V1.FCStd",
     "sha256": "ea76555c39aa34429e2bbcc38bbc0b8f2d9f14a27b43899df754da2a11ab13d4",
@@ -71,8 +71,8 @@
     "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
   ],
   "review_holds": [
-    "User visual approval is required for the B local-relief shape.",
     "B hole location, hardware envelopes, and tool access require a separate hole-only bucket after shape approval.",
+    "The separately selected legacy small upper-head projection removal requires visual approval before any integration.",
     "No production union, mirror, aluminum change, fabrication export, slicing, or print release is authorized."
   ]
 }
