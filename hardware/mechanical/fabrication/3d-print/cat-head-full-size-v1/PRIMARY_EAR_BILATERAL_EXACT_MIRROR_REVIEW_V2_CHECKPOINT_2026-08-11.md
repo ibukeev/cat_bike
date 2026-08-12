@@ -2,7 +2,8 @@
 
 ## Status
 
-Digital pass; awaiting user visual approval. This is not a print release.
+Digital pass and user visual approval on 2026-08-11 (`LGTM`). HS-09 is closed.
+This is the frozen bilateral primary-ear source, not a print release.
 
 Bilateral V1 is rejected because it reused a stale left C001/A/B owner containing
 the obsolete four-hole lattice/pin connector. No geometry from that left owner is
@@ -83,5 +84,6 @@ Open the V2 review file and confirm:
 3. each ear and head flange meet in the same way on both sides;
 4. nothing protrudes from the exterior ear surface.
 
-After explicit approval, update the head-shell completion tracker. Printing
-remains blocked by the other open shell gates.
+The next controlled work item is HS-10: build the right eye bucket and rear cap
+as one serviceable module and correct the F-21 upper/lower connector layout.
+Printing remains blocked by the other open shell gates.
