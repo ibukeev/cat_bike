@@ -1,0 +1,33 @@
+{
+  "status": "REVIEW_ONLY",
+  "problem": "Continue the untouched main eye body to the two disconnected front-plank wall segments.",
+  "frozen_owner": "PROPOSED__RIGHT_EYE_BUCKET__SIX_SOURCE_POST_CLEARANCE_V1",
+  "frozen_rear_cap": "PROPOSED__RIGHT_EYE_REAR_CAP__ONE_BODY_V1_ref",
+  "approved_face_pairs": [
+    [
+      67,
+      246
+    ],
+    [
+      45,
+      338
+    ]
+  ],
+  "operation": "additive_only_wall_continuations",
+  "wall_thickness_mm": 2.0,
+  "depth_range_mm": [
+    0.0,
+    2.0
+  ],
+  "main_wall_overlap_mm": 0.8,
+  "plane_rule": "continue the untouched main-wall cross-section through the front overlap zone",
+  "baseline_cut_or_replaced": false,
+  "production_gate6_modified": false,
+  "holds": [
+    "left_mirror",
+    "production_integration",
+    "STL_print_release",
+    "slicing",
+    "ASA_printing"
+  ]
+}
