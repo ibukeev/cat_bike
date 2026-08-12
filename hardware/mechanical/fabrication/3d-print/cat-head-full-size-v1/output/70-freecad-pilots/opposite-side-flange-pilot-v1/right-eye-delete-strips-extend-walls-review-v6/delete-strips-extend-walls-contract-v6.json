@@ -1,0 +1,34 @@
+{
+  "status": "REVIEW_ONLY",
+  "operation": "delete_two_floating_front_strips_and_extend_two_main_walls",
+  "selected_main_faces": [
+    679,
+    682
+  ],
+  "termination_plane_face": 55,
+  "omitted_original_bezel_segments": [
+    0,
+    1
+  ],
+  "retained_exact_bezel_segments": [
+    2,
+    3
+  ],
+  "main_wall_extension_segments": [
+    0,
+    1
+  ],
+  "termination_depth_mm": 0.0,
+  "main_wall_original_front_depth_mm": 1.2,
+  "extension_end_depth_mm": 1.3499999999999999,
+  "owner_overlap_mm": 0.15,
+  "main_wall_thickness_mm": 2.0,
+  "production_generator_modified": false,
+  "holds": [
+    "left_mirror",
+    "production_integration",
+    "STL_print_release",
+    "slicing",
+    "ASA_printing"
+  ]
+}
