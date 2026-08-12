@@ -1,0 +1,11 @@
+{
+  "review": "CAT_HEAD_RIGHT_EYE_UPPER_PERIMETER_CONNECTOR_PAIR_CLEAN_REVIEW_V2",
+  "status": "isolated_right_side_clean_review_awaiting_visual_approval",
+  "method": "Omit only the obsolete exact owner components and replace them one-for-one with the approved relocated pair.",
+  "obsolete_bucket_component": {"name": "bucket_component_05", "center_mm": [84.734894, 87.581116, 149.253662]},
+  "obsolete_cap_component": {"name": "cap_component_06", "center_mm": [83.570908, 90.492157, 148.612564]},
+  "retained_pair_components": ["bucket_component_01", "cap_component_03"],
+  "approved_upper_axis_mm": [72.2476, 78.1286, 175.5293],
+  "result": {"connector_pairs": 2, "bucket_solids": 6, "cap_solids": 7},
+  "holds": ["No production union", "No left mirror", "No print release"]
+}

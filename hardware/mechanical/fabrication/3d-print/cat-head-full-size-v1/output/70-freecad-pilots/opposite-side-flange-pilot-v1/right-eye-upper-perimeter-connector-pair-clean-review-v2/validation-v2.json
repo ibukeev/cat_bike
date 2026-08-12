@@ -1,0 +1,13 @@
+{
+  "status": "PASS_CLEAN_COMPONENT_REPLACEMENT_AWAITING_VISUAL_APPROVAL",
+  "bucket": {"valid": true, "closed": true, "solids": 6, "faces": 637, "edges": 999, "vertices": 362, "volume_mm3": 6629.69},
+  "rear_cap": {"valid": true, "closed": true, "solids": 7, "faces": 457, "edges": 729, "vertices": 280, "volume_mm3": 4410.85},
+  "obsolete_pair_absent": true,
+  "retained_lower_pair_present": true,
+  "approved_upper_pair_present": true,
+  "connector_pair_count": 2,
+  "four_cap_diffuser_retainer_posts_preserved": true,
+  "production_union": false,
+  "mirrored": false,
+  "print_released": false
+}
