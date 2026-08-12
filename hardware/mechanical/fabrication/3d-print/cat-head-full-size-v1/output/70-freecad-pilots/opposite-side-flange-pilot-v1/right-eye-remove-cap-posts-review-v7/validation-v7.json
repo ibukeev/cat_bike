@@ -1,0 +1,54 @@
+{
+  "status": "REVIEW_ONLY",
+  "operation": "remove_four_rear_cap_diffuser_posts_and_restore_bucket_pockets",
+  "right_side_only": true,
+  "bucket": {
+    "object": "PROPOSED__RIGHT_EYE_BUCKET__DELETE_STRIPS_EXTEND_WALLS_PRE_CLEARANCE_V6_ref_ref",
+    "valid_closed_solid": true,
+    "self_intersection": false,
+    "faces": 630,
+    "edges": 1120,
+    "vertices": 481,
+    "shells": 1,
+    "solids": 1,
+    "volume_mm3": 6649.60,
+    "v6_volume_mm3": 6518.97,
+    "restored_post_pocket_material_mm3": 130.63
+  },
+  "rear_cap": {
+    "object": "PROPOSED__RIGHT_EYE_REAR_CAP__POSTS_REMOVED_V7",
+    "valid_closed_solid": true,
+    "self_intersection": false,
+    "faces": 424,
+    "edges": 722,
+    "vertices": 294,
+    "shells": 1,
+    "solids": 1,
+    "volume_mm3": 4212.35,
+    "v6_volume_mm3": 4388.09,
+    "removed_post_count": 4,
+    "removed_post_cross_section_mm": [2.0, 2.0],
+    "removed_post_material_mm3": 175.74,
+    "preserved_parts": [
+      "rear_cap_plate_with_wire_port",
+      "two_m2_5_fastener_ears"
+    ]
+  },
+  "spatial": {
+    "bucket_rear_cap_intersects": false,
+    "bucket_rear_cap_minimum_clearance_mm": 0.0239,
+    "minimum_clearance_is_known_unrelated_near_contact": true
+  },
+  "fcstd": {
+    "valid_zip": true,
+    "size_bytes": 1784806
+  },
+  "replacement_wall_stoppers_added": false,
+  "holds": [
+    "left_mirror",
+    "production_generator_integration",
+    "STL_print_release",
+    "slicing",
+    "ASA_printing"
+  ]
+}
