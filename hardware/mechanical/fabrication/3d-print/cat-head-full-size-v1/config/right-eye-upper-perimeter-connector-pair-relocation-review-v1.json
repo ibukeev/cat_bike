@@ -1,0 +1,37 @@
+{
+  "review": "CAT_HEAD_RIGHT_EYE_UPPER_PERIMETER_CONNECTOR_PAIR_RELOCATION_REVIEW_V1",
+  "status": "isolated_right_side_proposal_awaiting_visual_approval",
+  "problem": "Relocate the duplicated lower right-eye rear-cap connector pair to the user-selected upper perimeter.",
+  "selected_anchor": {
+    "owner": "AUDIT__RIGHT_EYE_REAR_CAP_COMPONENT_SOLIDS",
+    "subelement": "Edge74",
+    "edge_length_mm": 69.4377,
+    "approved_axis_on_eye_plane_mm": [72.2476, 78.1286, 175.5293]
+  },
+  "frozen": [
+    "retained lower bucket boss and cap ear",
+    "right eye bucket and rear-cap source geometry",
+    "visible aperture and diffuser",
+    "eye-to-head flanges and head owners",
+    "lower-face and rear-cassette ownership",
+    "reinforcement, C006, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "move": {
+    "translation_mm": [-16.8524, 1.4636, 23.8713],
+    "moves_both_mating_halves_together": true,
+    "retained_lower_axis_mm": [66.3050, 63.7090, 134.3550],
+    "resulting_center_span_mm": 44.0291
+  },
+  "hardware": {
+    "standard": "existing M2.5 cylindrical pair",
+    "bucket_boss_outer_diameter_mm": 6.0,
+    "through_hole_diameter_mm": 2.8,
+    "engagement_mm": 4.0,
+    "mating_clearance_mm": 0.3
+  },
+  "holds": [
+    "No production owner subtraction or union",
+    "No mirroring",
+    "No STL, G-code, slicer, ASA, or print release"
+  ]
+}

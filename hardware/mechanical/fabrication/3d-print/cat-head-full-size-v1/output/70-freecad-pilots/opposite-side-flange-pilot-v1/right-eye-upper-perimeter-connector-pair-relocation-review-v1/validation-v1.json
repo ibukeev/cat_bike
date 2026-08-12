@@ -1,0 +1,35 @@
+{
+  "status": "PASS_ISOLATED_PROPOSAL_AWAITING_VISUAL_APPROVAL",
+  "proposal_solids": {
+    "bucket_boss": {
+      "valid": true,
+      "closed": true,
+      "solids": 1,
+      "volume_mm3": 87.46
+    },
+    "cap_ear": {
+      "valid": true,
+      "closed": true,
+      "solids": 1,
+      "volume_mm3": 39.36
+    }
+  },
+  "pair": {
+    "same_rigid_translation": true,
+    "translation_mm": [-16.8524, 1.4636, 23.8713],
+    "mating_clearance_mm": 0.3000,
+    "center_span_from_retained_lower_mm": 44.0291
+  },
+  "owner_engagement": {
+    "bucket_boss_to_bucket_mm3": 11.8904,
+    "cap_ear_to_rear_cap_mm3": 10.2392,
+    "note": "Positive overlap confirms correct owner contact for this existing cylindrical design; production union is held."
+  },
+  "review_truth": {
+    "frozen_audit_compounds_still_show_old_candidate": true,
+    "relocated_pair_is_separately_named_proposed_geometry": true,
+    "integrated": false,
+    "mirrored": false,
+    "print_released": false
+  }
+}
