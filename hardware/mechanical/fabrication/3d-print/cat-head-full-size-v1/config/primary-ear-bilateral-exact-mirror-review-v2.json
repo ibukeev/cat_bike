@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "status": "DIGITAL_PASS_AWAITING_USER_VISUAL_APPROVAL",
+  "source_document": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-integrated-through-channel-review-v3/CAT_HEAD_RIGHT_PRIMARY_EAR_INTEGRATED_THROUGH_CHANNEL_REVIEW_V3.FCStd",
+  "review_document": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/primary-ear-bilateral-exact-mirror-review-v2/CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd",
+  "mirror": {
+    "plane": "YZ",
+    "plane_x_mm": 0.0,
+    "method": "exact mirror of the two approved final right-side solids only"
+  },
+  "included_source_objects": [
+    "PROPOSED__RIGHT_UPPER_HEAD_PRIMARY_EAR_TWO_ROUND_CHANNELS_INTEGRATED_V3",
+    "PROPOSED__RIGHT_EAR_PRIMARY_EAR_ROUND_PLUS_SLOT_CHANNELS_INTEGRATED_V3"
+  ],
+  "excluded": [
+    "all legacy left owners",
+    "all historical dependency objects from the right source document",
+    "old four-hole flange geometry",
+    "old lattice and pin geometry",
+    "review-only shaft proofs"
+  ],
+  "frozen_interface": {
+    "bolt_spacing_mm": 9.5,
+    "round_channel_diameter_mm": 3.4,
+    "ear_slot_mm": [3.4, 5.0],
+    "pair_gap_mm": 0.35,
+    "flange_width_mm": 21.5,
+    "flange_height_mm": 10.4,
+    "flange_thickness_mm": 4.0,
+    "owner_embed_mm": 1.2
+  },
+  "validation": {
+    "document_object_count": 4,
+    "right_head": {
+      "faces": 1680,
+      "edges": 2720,
+      "vertices": 1009,
+      "solids": 1,
+      "volume_mm3": 76127.47,
+      "surface_area_mm2": 82658.22,
+      "bbox_mm": [[-30.0, 126.94], [63.06, 269.34], [109.76, 268.15]],
+      "valid_closed_solid": true,
+      "self_intersections": false
+    },
+    "left_head": {
+      "faces": 1680,
+      "edges": 2720,
+      "vertices": 1009,
+      "solids": 1,
+      "volume_mm3": 76127.47,
+      "surface_area_mm2": 82658.22,
+      "bbox_mm": [[-126.94, 30.0], [63.06, 269.34], [109.76, 268.15]],
+      "valid_closed_solid": true,
+      "self_intersections": false
+    },
+    "right_ear": {
+      "faces": 57,
+      "edges": 111,
+      "vertices": 56,
+      "solids": 1,
+      "volume_mm3": 17567.11,
+      "surface_area_mm2": 27137.23,
+      "bbox_mm": [[55.8, 151.92], [124.45, 210.16], [187.26, 330.0]],
+      "valid_closed_solid": true,
+      "self_intersections": false
+    },
+    "left_ear": {
+      "faces": 57,
+      "edges": 111,
+      "vertices": 56,
+      "solids": 1,
+      "volume_mm3": 17567.11,
+      "surface_area_mm2": 27137.23,
+      "bbox_mm": [[-151.92, -55.8], [124.45, 210.16], [187.26, 330.0]],
+      "valid_closed_solid": true,
+      "self_intersections": false
+    },
+    "exact_mirror_invariants": {
+      "matching_topology": true,
+      "matching_volume": true,
+      "matching_surface_area": true,
+      "x_bounds_sign_reversed": true,
+      "y_bounds_unchanged": true,
+      "z_bounds_unchanged": true
+    }
+  },
+  "release_holds": {
+    "user_visual_approval_required": true,
+    "stl_export": false,
+    "gcode_export": false,
+    "print_release": false
+  }
+}
