@@ -1,0 +1,42 @@
+{
+  "review": "CAT_HEAD_RIGHT_EYE_SIX_SOURCE_REBUILD_REVIEW_V1",
+  "status": "PASS_AWAITING_VISUAL_APPROVAL",
+  "right_side_only": true,
+  "source_solid_count": 6,
+  "exact_source_placement_preserved": true,
+  "staged_union_volumes_mm3": {
+    "components_01_02": 3501.06,
+    "components_03_04": 2796.66,
+    "components_03_04_06": 2990.87,
+    "five_source_union": 6453.63,
+    "six_source_union": 6529.20,
+    "final_after_post_clearance": 6398.56
+  },
+  "final_topology": {
+    "valid": true,
+    "closed": true,
+    "shells": 1,
+    "solids": 1,
+    "faces": 656,
+    "edges": 1197,
+    "vertices": 530,
+    "self_intersection": false
+  },
+  "final_bounds_mm": {
+    "x": [27.49, 103.84],
+    "y": [50.23, 102.80],
+    "z": [118.48, 178.89]
+  },
+  "rear_cap": {
+    "volumetric_interference_mm3": 0.0,
+    "minimum_clearance_mm": 0.0239,
+    "known_near_contact_held": true
+  },
+  "holds": [
+    "left_mirror",
+    "production_integration",
+    "STL_export",
+    "slicing",
+    "ASA_print_release"
+  ]
+}
