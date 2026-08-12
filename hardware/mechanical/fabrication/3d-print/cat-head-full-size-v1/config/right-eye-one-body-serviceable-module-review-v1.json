@@ -1,0 +1,42 @@
+{
+  "review": "CAT_HEAD_RIGHT_EYE_ONE_BODY_SERVICEABLE_MODULE_REVIEW_V1",
+  "work_item": "HS-10",
+  "status": "isolated_right_side_proposal_awaiting_visual_approval",
+  "source_review": "CAT_HEAD_RIGHT_EYE_UPPER_PERIMETER_CONNECTOR_PAIR_CLEAN_REVIEW_V2",
+  "visible_proposals": [
+    "PROPOSED__RIGHT_EYE_BUCKET__ONE_BODY_POST_CLEARANCE_V3",
+    "PROPOSED__RIGHT_EYE_REAR_CAP__ONE_BODY_V1"
+  ],
+  "frozen_interfaces": {
+    "retained_lower_connector_axis_mm": [66.305, 63.709, 134.355],
+    "approved_upper_connector_axis_mm": [72.2476, 78.1286, 175.5293],
+    "axis_span_mm": 44.0291,
+    "hardware": "M2.5",
+    "boss_outer_diameter_mm": 6.0,
+    "through_channel_diameter_mm": 2.8,
+    "connector_face_gap_mm": 0.3
+  },
+  "post_clearance": {
+    "post_count": 4,
+    "posts_moved": false,
+    "centered_tool_scale": 1.25,
+    "method": "Subtract four centered scaled copies of the exact cap posts from the fused bucket owner."
+  },
+  "acceptance": {
+    "bucket_valid_closed_solid": true,
+    "bucket_solid_count": 1,
+    "cap_valid_closed_solid": true,
+    "cap_solid_count": 1,
+    "owner_intersection_mm3": 0.0,
+    "global_minimum_clearance_mm": 0.0239,
+    "retained_pair_gap_mm": 0.3,
+    "upper_pair_gap_mm": 0.3,
+    "main_interface_gap_mm": 0.2987
+  },
+  "holds": [
+    "No left mirror",
+    "No production integration",
+    "No STL export",
+    "No print release"
+  ]
+}

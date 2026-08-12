@@ -1,0 +1,47 @@
+{
+  "review": "CAT_HEAD_RIGHT_EYE_ONE_BODY_SERVICEABLE_MODULE_REVIEW_V1",
+  "bucket": {
+    "object": "PROPOSED__RIGHT_EYE_BUCKET__ONE_BODY_POST_CLEARANCE_V3",
+    "valid": true,
+    "closed": true,
+    "shells": 1,
+    "solids": 1,
+    "faces": 656,
+    "edges": 1197,
+    "vertices": 530,
+    "volume_mm3": 6398.56,
+    "self_intersection": false,
+    "bbox_mm": {
+      "x": [27.49, 103.84],
+      "y": [50.23, 102.80],
+      "z": [118.48, 178.89]
+    }
+  },
+  "rear_cap": {
+    "object": "PROPOSED__RIGHT_EYE_REAR_CAP__ONE_BODY_V1",
+    "valid": true,
+    "closed": true,
+    "shells": 1,
+    "solids": 1,
+    "faces": 471,
+    "edges": 858,
+    "vertices": 384,
+    "volume_mm3": 4388.09,
+    "self_intersection": false,
+    "bbox_mm": {
+      "x": [25.91, 101.99],
+      "y": [52.83, 105.20],
+      "z": [120.70, 178.35]
+    }
+  },
+  "fit": {
+    "initial_fusion_only_intersection_mm3": 69.8036,
+    "final_intersection": false,
+    "final_intersection_mm3": 0.0,
+    "global_minimum_clearance_mm": 0.0239,
+    "retained_connector_gap_mm": 0.3,
+    "upper_connector_gap_mm": 0.3,
+    "main_cap_bucket_gap_mm": 0.2987
+  },
+  "review_state": "awaiting_visual_approval"
+}
