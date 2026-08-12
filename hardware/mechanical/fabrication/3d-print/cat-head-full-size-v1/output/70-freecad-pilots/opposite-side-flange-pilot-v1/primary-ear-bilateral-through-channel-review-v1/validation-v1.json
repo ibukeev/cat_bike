@@ -1,0 +1,48 @@
+{
+  "review_id": "CAT_HEAD_PRIMARY_EAR_BILATERAL_THROUGH_CHANNEL_REVIEW_V1",
+  "result": "pass",
+  "fcstd_valid": true,
+  "fcstd_size_bytes": 10140583,
+  "left_c001_ab_primary_ear_integrated": {
+    "object": "PROPOSED__LEFT_C001_AB_PRIMARY_EAR_INTEGRATED_V2",
+    "valid": true,
+    "closed": true,
+    "solids": 1,
+    "faces": 1986,
+    "self_intersections": false,
+    "bounds_preserved_from_c001_ab_source": true
+  },
+  "left_ear_integrated": {
+    "object": "PROPOSED__LEFT_EAR_PRIMARY_EAR_ROUND_PLUS_SLOT_CHANNELS_EXACT_MIRROR_V1",
+    "valid": true,
+    "closed": true,
+    "solids": 1,
+    "faces": 57,
+    "volume_mm3": 17567.11,
+    "self_intersections": false
+  },
+  "proof_shaft_clearance_mm": {
+    "left_a_head": 0.1955,
+    "left_a_ear": 0.1956,
+    "left_b_head": 0.1946,
+    "left_b_ear": 0.1962
+  },
+  "symmetry": {
+    "plane": "YZ at X=0",
+    "ear_volume_equal": true,
+    "ear_bounds_exact_x_mirror": true,
+    "head_flange_volume_equal": true,
+    "head_flange_bounds_exact_x_mirror": true
+  },
+  "frozen_context": {
+    "left_c001_ab_preserved_as_operation_base": true,
+    "left_c002_c003_c004_to_c041_not_modified": true,
+    "aluminum_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79"
+  },
+  "limitations": [
+    "The 41-part left upper-head remains a deliberate non-production assembly compound.",
+    "The saved review modifies only copied left C001+A/B and adds the mirrored ear interface.",
+    "Washer, nut, driver, and physical bolt-removal access still require visual approval.",
+    "No STL, G-code, slicer project, mirror-template, or ASA print release was created."
+  ]
+}

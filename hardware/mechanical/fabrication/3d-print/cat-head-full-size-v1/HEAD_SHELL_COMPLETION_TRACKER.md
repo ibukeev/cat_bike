@@ -12,17 +12,16 @@ estimate. An accepted isolated review is crossed off only when that gate's
 stated exit condition is satisfied; it does not imply that the geometry is
 already integrated or printable.
 
-**Next active work:** `HS-09` exact left-side mirror and bilateral validation
-of the user-approved right integrated through-channel V3. The approved right
-head and ear are each valid closed one-solid bodies, and two 3.0 mm proof
-shafts pass both paired apertures with at least `0.1946 mm` radial clearance.
-The head uses two round 3.4 mm channels; the ear uses one round 3.4 mm channel
-plus one `3.4 x 5.0 mm` adjustment slot. Mirror only this approved feature into
-the accepted left owners, preserving accepted A/B connectors and all other
-workstreams. Bilateral washer/nut/driver access, removal review, and print
-export remain pending. F-21 is tracked under HS-10. `HS-04` remains queued
-until final upper-head print orientation is frozen. Structural shell printing
-remains blocked.
+**Next active work:** `HS-09` visual approval of bilateral primary-ear
+through-channel V1. The approved right feature is mirrored exactly across
+`X=0` into copied left C001+A/B and the left ear; C002, repaired C003, and
+C004-C041 remain frozen assembly context. Both new left outputs are valid
+closed one-solid parts with no self-intersections. Four 3.0 mm shaft proofs
+clear the left paired apertures by at least `0.1946 mm`, and ear/flange
+volumes and bounds match the right by exact X mirror. Bilateral
+washer/nut/driver access and removal still require visual approval. F-21 is
+tracked under HS-10. `HS-04` remains queued until final upper-head print
+orientation is frozen. Structural shell printing remains blocked.
 
 ## Progress table
 
@@ -36,7 +35,7 @@ remains blocked.
 | HS-06 | [x] | ~~Integrate right A/B tabs into copied real owners~~ | `PROPOSED__RIGHT_TRANSLUCENT_PANEL__A_B_INTEGRATED_V1` and `PROPOSED__RIGHT_UPPER_HEAD_C001__A_B_INTEGRATED_V1` are valid closed one-solid unions; no tab is floating. | Preserve these exact integration results through HS-07 review. |
 | HS-07 | [x] | ~~Validate and visually approve integrated right A/B~~ | Topology, roots, gaps, insertion, drivers, exterior context, and ear collision digitally passed; user visually approved `CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd` on 2026-08-09. | Preserve the exact approved right integrated owners through bilateral validation. |
 | HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
-| HS-09 | [ ] | Finish remaining primary ear interface | User approved integrated right through-channel V3 on 2026-08-11. It preserves `21.5 x 10.4 x 4.0 mm` flange envelopes, `1.20 mm` owner embed, `9.5 mm` bolt-axis spacing, and the exact `0.3500 mm` pair gap. Both final right owners are valid closed one-solid bodies with no self-intersections. Two 3.0 mm proof shafts pass both owners with minimum `0.1946 mm` radial clearance; the head has two round channels and the ear has one round channel plus one slot. | Mirror the exact approved feature into the accepted left owners without replacing the approved left A/B geometry; rerun topology, shaft, access, removal, symmetry, and frozen-baseline checks on both sides; then obtain full bilateral visual approval. |
+| HS-09 | [ ] | Finish remaining primary ear interface | Bilateral V1 mirrors the user-approved right V3 feature exactly into copied left C001+A/B and the left ear without replacing accepted left A/B geometry. Left C001+A/B interface and ear are valid closed one-solid outputs with no self-intersections. Shaft A/B clearances are `0.1955/0.1956/0.1946/0.1962 mm`; ear and flange volumes/bounds are exact X mirrors. C002, repaired C003, C004-C041, C006, and aluminum remain frozen. | User visually confirms bilateral symmetry, exterior containment, persistent apertures after hiding shafts, unchanged A/B connectors, and washer/nut/driver/removal access. |
 | HS-10 | [ ] | Build each eye bucket and rear cap as one serviceable module | Current left/right eye-bucket exports each contain six slicer parts; F-21 still requires moving one eye rear-cap connector from lower to upper. | Right bezel/chamber/features form one valid body and its rear cap has one upper plus one lower connector; then mirror after approval. |
 | HS-11 | [ ] | Integrate and validate all eight eye flanges | Four broad-root flange locations per side were visually accepted but remain review geometry. | All flanges are unioned to eye/head owners; insertion, screw/tool access, vibration support, and final reinforcement clearance pass. |
 | HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
@@ -76,6 +75,7 @@ condition, saved evidence, and affected checkpoint must all be updated.
 - [Right primary-ear legacy-flange flush owner-cut review V2 checkpoint](RIGHT_PRIMARY_EAR_LEGACY_FLANGE_FLUSH_OWNER_CUT_REVIEW_V2_CHECKPOINT_2026-08-10.md)
 - [Right primary-ear clean-owner dual-bolt recovery V2 checkpoint](RIGHT_PRIMARY_EAR_CLEAN_OWNER_DUAL_BOLT_FLANGE_PAIR_RECOVERY_REVIEW_V2_CHECKPOINT_2026-08-11.md)
 - [Right primary-ear clean-owner compact pair V4 checkpoint](RIGHT_PRIMARY_EAR_CLEAN_OWNER_COMPACT_PAIR_REVIEW_V4_CHECKPOINT_2026-08-11.md)
+- [Primary-ear bilateral through-channel V1 checkpoint](PRIMARY_EAR_BILATERAL_THROUGH_CHANNEL_REVIEW_V1_CHECKPOINT_2026-08-11.md)
 - [Superseded right primary-ear Face2 compact pair V3 checkpoint](RIGHT_PRIMARY_EAR_FACE2_COMPACT_PAIR_REVIEW_V3_CHECKPOINT_2026-08-11.md)
 - [Aluminum interface control](../../../interfaces/cat-head-shell-aluminum-interface-v05.json)
 

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_PRIMARY_EAR_BILATERAL_THROUGH_CHANNEL_REVIEW_V1",
+  "status": "digital pass; awaiting bilateral visual approval; not print-ready",
+  "units": "mm",
+  "approved_source": {
+    "right_review": "CAT_HEAD_RIGHT_PRIMARY_EAR_INTEGRATED_THROUGH_CHANNEL_REVIEW_V3.FCStd",
+    "user_approval_date": "2026-08-11",
+    "user_approval_text": "OK good enough",
+    "mirror_plane": "YZ at X=0"
+  },
+  "contract": {
+    "single_problem": "mirror the approved primary-ear two-bolt interface to the left while preserving accepted left A/B geometry",
+    "flange_envelope_mm": [21.5, 10.4, 4.0],
+    "owner_embed_mm": 1.2,
+    "pair_gap_mm": 0.35,
+    "bolt_axis_spacing_mm": 9.5,
+    "round_channel_diameter_mm": 3.4,
+    "ear_slot_mm": [3.4, 5.0],
+    "proof_shaft_diameter_mm": 3.0,
+    "preserve_left_c001_ab": true,
+    "preserve_left_c002_c003_c004_to_c041": true,
+    "preserve_c006": true,
+    "preserve_eyes_lower_face_rear_cassette_reinforcement": true,
+    "preserve_aluminum_interface": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2",
+    "fabrication_export_authorized": false
+  },
+  "validation": {
+    "left_c001_ab_interface_valid_closed_one_solid": true,
+    "left_c001_ab_interface_faces": 1986,
+    "left_ear_valid_closed_one_solid": true,
+    "left_ear_faces": 57,
+    "left_outputs_no_self_intersection": true,
+    "left_shaft_a_head_clearance_mm": 0.1955,
+    "left_shaft_a_ear_clearance_mm": 0.1956,
+    "left_shaft_b_head_clearance_mm": 0.1946,
+    "left_shaft_b_ear_clearance_mm": 0.1962,
+    "right_left_ear_volume_match_mm3": 17567.11,
+    "right_left_ear_bounds_exact_x_mirror": true,
+    "right_left_head_flange_volume_match_mm3": 821.77,
+    "right_left_head_flange_bounds_exact_x_mirror": true,
+    "left_c001_ab_bounds_unchanged": true,
+    "aluminum_sha256_unchanged": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79"
+  },
+  "output": {
+    "review_fcstd": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/primary-ear-bilateral-through-channel-review-v1/CAT_HEAD_PRIMARY_EAR_BILATERAL_THROUGH_CHANNEL_REVIEW_V1.FCStd",
+    "review_fcstd_sha256": "3b70d35842f41c844d6e43a1ba676a1334eac5c5cd0e01d275dd09507af9abde",
+    "review_fcstd_size_bytes": 10140583
+  }
+}
