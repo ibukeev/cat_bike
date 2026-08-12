@@ -1,0 +1,87 @@
+# Cat-Head Shell Completion Tracker
+
+This is the canonical progress view for finishing the full-size cat-head shell.
+Update it after every accepted CAD review, integration, physical coupon, or
+release-gate result. Detailed evidence remains in the linked checkpoints and
+the [physical-feedback closure matrix](FEEDBACK_CLOSURE_MATRIX_2026-08-08.md).
+
+**Current release state: HOLD — no structural ASA shell is print-released.**
+
+**Current position:** 6 of 20 gates complete. This is a gate count, not a time
+estimate. An accepted isolated review is crossed off only when that gate's
+stated exit condition is satisfied; it does not imply that the geometry is
+already integrated or printable.
+
+**Next active work:** `HS-09` exact left-side mirror and bilateral validation
+of the user-approved right integrated through-channel V3. The approved right
+head and ear are each valid closed one-solid bodies, and two 3.0 mm proof
+shafts pass both paired apertures with at least `0.1946 mm` radial clearance.
+The head uses two round 3.4 mm channels; the ear uses one round 3.4 mm channel
+plus one `3.4 x 5.0 mm` adjustment slot. Mirror only this approved feature into
+the accepted left owners, preserving accepted A/B connectors and all other
+workstreams. Bilateral washer/nut/driver access, removal review, and print
+export remain pending. F-21 is tracked under HS-10. `HS-04` remains queued
+until final upper-head print orientation is frozen. Structural shell printing
+remains blocked.
+
+## Progress table
+
+| ID | Done | Work item | Current evidence/state | Exit condition or next review |
+|---|---|---|---|---|
+| HS-01 | [x] | ~~Freeze accepted shell and metal baselines~~ | V10 visual reference, exact ears/upper-head sources, lower-face/rear-cassette direction, C006, and `CAT-HEAD-SHELL-ALUMINUM-V0.5-M2` are preserved. | Keep fixture comparisons passing through every later integration. |
+| HS-02 | [x] | ~~Approve repairable right-side topology references~~ | Right translucent panel, upper head, and ear references were individually reviewed and accepted. | Use only these controlled references as integration owners. |
+| HS-03 | [x] | ~~Approve right A/B connector geometry and access~~ | Right-A surface-open V4 and Right-B surface-open V2 visually approved 2026-08-09; 3.4 mm bores, 0.3 mm pair gaps, short inserts, and driver paths digitally pass. | Preserve the exact approved objects and contracts in integration. |
+| HS-04 | [ ] | Produce exact-orientation ASA short-insert coupon | Approved 4.25 x 3.20 mm cavities are ready, but the final integrated upper-head print orientation is not frozen; a coupon printed now could test the wrong layer direction. | Freeze the upper-head print orientation, then export/slice the A/B cavity coupon in that exact orientation. |
+| HS-05 | [ ] | Physically qualify the M3 short-insert joint | No heat-set, torque, pull-out, vibration, or repeated-assembly result yet. | Install the real insert in ASA; verify seating, M3 x 8 engagement, torque, pull-out, and no wall damage. |
+| HS-06 | [x] | ~~Integrate right A/B tabs into copied real owners~~ | `PROPOSED__RIGHT_TRANSLUCENT_PANEL__A_B_INTEGRATED_V1` and `PROPOSED__RIGHT_UPPER_HEAD_C001__A_B_INTEGRATED_V1` are valid closed one-solid unions; no tab is floating. | Preserve these exact integration results through HS-07 review. |
+| HS-07 | [x] | ~~Validate and visually approve integrated right A/B~~ | Topology, roots, gaps, insertion, drivers, exterior context, and ear collision digitally passed; user visually approved `CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd` on 2026-08-09. | Preserve the exact approved right integrated owners through bilateral validation. |
+| HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
+| HS-09 | [ ] | Finish remaining primary ear interface | User approved integrated right through-channel V3 on 2026-08-11. It preserves `21.5 x 10.4 x 4.0 mm` flange envelopes, `1.20 mm` owner embed, `9.5 mm` bolt-axis spacing, and the exact `0.3500 mm` pair gap. Both final right owners are valid closed one-solid bodies with no self-intersections. Two 3.0 mm proof shafts pass both owners with minimum `0.1946 mm` radial clearance; the head has two round channels and the ear has one round channel plus one slot. | Mirror the exact approved feature into the accepted left owners without replacing the approved left A/B geometry; rerun topology, shaft, access, removal, symmetry, and frozen-baseline checks on both sides; then obtain full bilateral visual approval. |
+| HS-10 | [ ] | Build each eye bucket and rear cap as one serviceable module | Current left/right eye-bucket exports each contain six slicer parts; F-21 still requires moving one eye rear-cap connector from lower to upper. | Right bezel/chamber/features form one valid body and its rear cap has one upper plus one lower connector; then mirror after approval. |
+| HS-11 | [ ] | Integrate and validate all eight eye flanges | Four broad-root flange locations per side were visually accepted but remain review geometry. | All flanges are unioned to eye/head owners; insertion, screw/tool access, vibration support, and final reinforcement clearance pass. |
+| HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
+| HS-13 | [ ] | Integrate lower face and rear cassette around aluminum | Lossless V5 ownership direction is accepted; production owners and final cassette are not unified. | Lower faces are reduced as approved, transferred geometry belongs to one cassette, and V0.5-M2 rail/plate insertion and removal remain unobstructed. |
+| HS-14 | [ ] | Add final cassette M5 pads and service sockets | Legacy Gate 8 pads are invalid; the real rail and 21.00 mm serviceable socket still require qualification. | Actual rail measured; socket/cap coupon passes; cassette pads/sockets integrate with hardware and tool access. |
+| HS-15 | [ ] | Integrate reinforcement and seam rails | Requested reinforcement direction was accepted, but rails/ribs are not final owner unions or fully collision-clipped. | Complementary seam ownership is explicit; every reinforcement is interior, connected, collision-free, and compatible with eyes, ears, cassette, and metal. |
+| HS-16 | [ ] | Guarantee clean maximal mirror landing surfaces | Whole-head landing audit is not complete; `C013` and any other exterior-reaching connector/reinforcement must not fragment mirror regions. | Each maximal connected coplanar exterior region is continuous and unobstructed; planarity residual is at most 0.05 mm; no exterior bumps or hidden protrusions. |
+| HS-17 | [ ] | Capture lamp, cable, beam, steering, and service envelopes | Final measured physical envelopes are missing (`F-03`). | Complete motion/insertion/removal sweeps pass with wiring, tools, hands, lamp, steering, ears, eyes, cassette, and aluminum represented. |
+| HS-18 | [ ] | Create unified production shell bodies | Current Gate 8 shells report 61/61/41/42 slicer parts. | Every exported shell owner is a deliberate valid connected body; zero accidental loose or duplicate components. |
+| HS-19 | [ ] | Generate the final minimal-count mirror set | Existing mirror-cap work is prototype-only and predates the final integrated shell. | One largest practical mirror piece per maximal planar landing region; split only at real bends, required removable/service seams, openings, or 240 x 200 mm backing-cap limit; 0.9 mm perimeter reveal and labeled 1:1 templates. |
+| HS-20 | [ ] | Full-head print release | Production STLs, final orientations, supports/brims, and full-head review do not exist. | Complete bilateral validation passes; slicer shows one intended body per part and at least 10 mm XY reserve per side before brim/support; user approves 3D assembly and slicer previews. |
+
+## Definition of the finish line
+
+The head-shell design is complete only when `HS-01` through `HS-19` are
+checked. Structural ASA printing may start only after `HS-20` is also checked.
+
+No item may be checked solely because an isolated object looks good. Its exit
+condition, saved evidence, and affected checkpoint must all be updated.
+
+## Source-of-truth links
+
+- [Output navigation](OUTPUT_NAVIGATION.md)
+- [Print-readiness dashboard](PRINT_READINESS_DASHBOARD_2026-08-08.md)
+- [Physical-feedback closure matrix](FEEDBACK_CLOSURE_MATRIX_2026-08-08.md)
+- [Right-A surface-open insert checkpoint](RIGHT_A_SURFACE_OPEN_INSERT_CORRECTION_V1_CHECKPOINT_2026-08-09.md)
+- [Right-B hole/access checkpoint](RIGHT_B_HOLE_ACCESS_REVIEW_V1_CHECKPOINT_2026-08-09.md)
+- [Left C001 topology repair V2 checkpoint](LEFT_UPPER_HEAD_C001_TOPOLOGY_REPAIR_V2_CHECKPOINT_2026-08-09.md)
+- [Left full-owner C001 integration V1 checkpoint](LEFT_UPPER_HEAD_FULL_OWNER_C001_INTEGRATION_V1_CHECKPOINT_2026-08-10.md)
+- [Left C003 anchor diagnostic V1 checkpoint](LEFT_UPPER_HEAD_C003_ANCHOR_DIAGNOSTIC_V1_CHECKPOINT_2026-08-10.md)
+- [Left C003 topology repair V1 checkpoint](LEFT_UPPER_HEAD_C003_TOPOLOGY_REPAIR_V1_CHECKPOINT_2026-08-10.md)
+- [Left full-owner C001+C003 integration V1 checkpoint](LEFT_UPPER_HEAD_FULL_OWNER_C001_C003_INTEGRATION_V1_CHECKPOINT_2026-08-10.md)
+- [Right primary ear hole/slot anchor review V1 checkpoint](RIGHT_PRIMARY_EAR_HOLE_SLOT_ANCHOR_REVIEW_V1_CHECKPOINT_2026-08-10.md)
+- [Right primary ear dual-bolt flange proposal V1 checkpoint](RIGHT_PRIMARY_EAR_DUAL_BOLT_FLANGE_PROPOSAL_V1_CHECKPOINT_2026-08-10.md)
+- [Right primary-ear legacy four-feature removal envelope V1 checkpoint](RIGHT_PRIMARY_EAR_LEGACY_FOUR_FEATURE_REMOVAL_ENVELOPE_V1_CHECKPOINT_2026-08-10.md)
+- [Right primary-ear legacy-flange owner-cut review V1 checkpoint](RIGHT_PRIMARY_EAR_LEGACY_FLANGE_OWNER_CUT_REVIEW_V1_CHECKPOINT_2026-08-10.md)
+- [Right primary-ear legacy-flange flush owner-cut review V2 checkpoint](RIGHT_PRIMARY_EAR_LEGACY_FLANGE_FLUSH_OWNER_CUT_REVIEW_V2_CHECKPOINT_2026-08-10.md)
+- [Right primary-ear clean-owner dual-bolt recovery V2 checkpoint](RIGHT_PRIMARY_EAR_CLEAN_OWNER_DUAL_BOLT_FLANGE_PAIR_RECOVERY_REVIEW_V2_CHECKPOINT_2026-08-11.md)
+- [Right primary-ear clean-owner compact pair V4 checkpoint](RIGHT_PRIMARY_EAR_CLEAN_OWNER_COMPACT_PAIR_REVIEW_V4_CHECKPOINT_2026-08-11.md)
+- [Superseded right primary-ear Face2 compact pair V3 checkpoint](RIGHT_PRIMARY_EAR_FACE2_COMPACT_PAIR_REVIEW_V3_CHECKPOINT_2026-08-11.md)
+- [Aluminum interface control](../../../interfaces/cat-head-shell-aluminum-interface-v05.json)
+
+## Update rule
+
+Whenever a gate changes, update its checkbox, evidence/state, and exit
+condition here in the same change as the detailed checkpoint. Add the review
+file and evidence folder to `OUTPUT_NAVIGATION.md`; never treat this tracker as
+a substitute for geometry validation.

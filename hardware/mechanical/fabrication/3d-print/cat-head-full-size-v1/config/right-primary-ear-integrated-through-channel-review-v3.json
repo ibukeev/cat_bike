@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "digital_pass_awaiting_visual_approval",
+  "side": "right_only",
+  "source_review": "right-primary-ear-clean-owner-compact-pair-review-v4",
+  "selected_anchors": {
+    "head_round_channel_a": "head flange Face6",
+    "head_round_channel_b": "head flange Face7",
+    "ear_round_channel_a": "ear flange Face6",
+    "ear_slot_channel_b": "ear flange Face7/Face10 midpoint"
+  },
+  "geometry_contract": {
+    "bolt_axis_unit": [0.940521905, 0.141403293, 0.308907195],
+    "bolt_center_spacing_mm": 9.4977,
+    "nominal_spacing_mm": 9.5,
+    "round_channel_diameter_mm": 3.4,
+    "ear_slot_width_mm": 3.4,
+    "ear_slot_total_length_mm": 5.0,
+    "pair_gap_mm": 0.35,
+    "proof_shaft_diameter_mm": 3.0,
+    "proof_shaft_length_mm": 18.0
+  },
+  "operation_order": [
+    "cut the two channels into copied clean owners",
+    "union the already-holed compact flanges to the cut owners",
+    "validate two full-length M3 shaft proofs"
+  ],
+  "frozen_workstreams": [
+    "left side",
+    "eyes",
+    "reinforcement",
+    "rear cassette",
+    "lower faces",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "release_holds": [
+    "visual approval",
+    "left mirror",
+    "STL export",
+    "slicing and G-code",
+    "ASA print release"
+  ]
+}

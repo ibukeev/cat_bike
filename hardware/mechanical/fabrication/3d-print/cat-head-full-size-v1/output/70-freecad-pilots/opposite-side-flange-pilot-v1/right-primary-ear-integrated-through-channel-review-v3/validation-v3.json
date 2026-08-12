@@ -1,0 +1,51 @@
+{
+  "status": "PASS_DIGITAL_AWAITING_VISUAL_APPROVAL",
+  "document": "CAT_HEAD_RIGHT_PRIMARY_EAR_INTEGRATED_THROUGH_CHANNEL_REVIEW_V3.FCStd",
+  "file_integrity": {
+    "valid_fcstd": true,
+    "size_bytes": 3494207
+  },
+  "axis": {
+    "unit_vector": [0.940521905, 0.141403293, 0.308907195],
+    "measured_center_spacing_mm": 9.4977,
+    "nominal_center_spacing_mm": 9.5,
+    "rotation_order_verified": true
+  },
+  "head_integrated_owner": {
+    "object": "PROPOSED__RIGHT_UPPER_HEAD_PRIMARY_EAR_TWO_ROUND_CHANNELS_INTEGRATED_V3",
+    "volume_mm3": 76127.47,
+    "faces": 1680,
+    "solids": 1,
+    "valid_closed_solid": true,
+    "self_intersections": false
+  },
+  "ear_integrated_owner": {
+    "object": "PROPOSED__RIGHT_EAR_PRIMARY_EAR_ROUND_PLUS_SLOT_CHANNELS_INTEGRATED_V3",
+    "volume_mm3": 17567.11,
+    "faces": 57,
+    "solids": 1,
+    "valid_closed_solid": true,
+    "self_intersections": false
+  },
+  "full_length_m3_shaft_proofs": {
+    "diameter_mm": 3.0,
+    "length_mm": 18.0,
+    "shaft_a_minimum_radial_clearance_mm": 0.1955,
+    "shaft_b_minimum_radial_clearance_mm": 0.1946,
+    "shaft_owner_intersections": 0,
+    "pass": true
+  },
+  "baseline_owner_overlap": {
+    "volume_mm3": 51.7854,
+    "unchanged_from_sources": true,
+    "note": "Existing remote head-ear owner overlap; not introduced by this interface change."
+  },
+  "scope": {
+    "right_only": true,
+    "owners_integrated": true,
+    "continuous_channels_cut": true,
+    "left_mirror": false,
+    "stl_export": false,
+    "print_release": false
+  }
+}
