@@ -1,0 +1,34 @@
+{
+  "review": "CAT_HEAD_RIGHT_EYE_UPPER_RIM_STRUCTURAL_ROOT_REVIEW_V1",
+  "work_item": "HS-10",
+  "status": "isolated_right_side_proposal_awaiting_visual_approval",
+  "problem": "Upper eye rim/baffle component was visually floating and absent from the prior fused bucket result.",
+  "structured_anchor": {
+    "object": "PROPOSED__RIGHT_EYE_BUCKET__ONE_BODY_POST_CLEARANCE_V3",
+    "subelement": "Face476",
+    "picked_point_mm": [46.68, 67.60, 166.62]
+  },
+  "source_component": "CLEAN_SOURCE__RIGHT_EYE_BUCKET_COMPONENT_04__SOLID",
+  "proposal_translation_mm": [0.5, 0.5, 0.5],
+  "frozen": [
+    "eye aperture and exterior owner except the 0.5 mm local rim-root seating translation",
+    "both M2.5 cap connector axes",
+    "rear cap and four retainer posts",
+    "head and ear owners",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "acceptance": {
+    "bucket_valid_closed_solid": true,
+    "bucket_solid_count": 1,
+    "rim_common_volume_mm3": 2242.5184,
+    "rear_cap_intersection": false,
+    "global_minimum_cap_clearance_mm": 0.0239,
+    "self_intersection": false
+  },
+  "holds": [
+    "No left mirror",
+    "No production integration",
+    "No STL export",
+    "No print release"
+  ]
+}

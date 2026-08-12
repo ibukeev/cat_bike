@@ -1,0 +1,29 @@
+{
+  "review": "CAT_HEAD_RIGHT_EYE_UPPER_RIM_STRUCTURAL_ROOT_REVIEW_V1",
+  "prior_failure": {
+    "prior_object": "PROPOSED__RIGHT_EYE_BUCKET__ONE_BODY_POST_CLEARANCE_V3_ref",
+    "missing_source_component": "CLEAN_SOURCE__RIGHT_EYE_BUCKET_COMPONENT_04__SOLID_ref_ref",
+    "common_volume_mm3": 0.0,
+    "reason": "Coincident/sliver input was omitted by the prior multi-fuse result."
+  },
+  "proposal": {
+    "object": "PROPOSED__RIGHT_EYE_BUCKET__RIM_STRUCTURALLY_JOINED_V2",
+    "source_rim_translation_mm": [0.5, 0.5, 0.5],
+    "valid": true,
+    "closed": true,
+    "shells": 1,
+    "solids": 1,
+    "faces": 656,
+    "edges": 1197,
+    "vertices": 530,
+    "volume_mm3": 6398.56,
+    "source_rim_common_volume_mm3": 2242.5184,
+    "self_intersection": false
+  },
+  "fit": {
+    "rear_cap_intersection": false,
+    "global_minimum_clearance_mm": 0.0239,
+    "isolated_shifted_rim_to_cap_clearance_mm": 1.5549
+  },
+  "review_state": "awaiting_visual_approval"
+}
