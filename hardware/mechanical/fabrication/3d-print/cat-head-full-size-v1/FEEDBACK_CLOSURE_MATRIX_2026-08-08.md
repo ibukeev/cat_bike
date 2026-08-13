@@ -57,16 +57,16 @@ required reserve is `20 mm` total for `10 mm` per side, before brim/support.
 | F-16 | Old two-top-flange central-panel layout is uncorrected. | Open. | Select the lower vertical nose owner for a third broad point. |
 | F-17 | Front nose skirt/connector has no accepted corrected review. | Open. | Identify the exact part and collision faces. |
 | F-18 | Side-panel side/STL and collision faces are not confirmed. | Open. | Identify the side and two owner regions. |
-| F-19 | V9 preserves the valid V8 right bucket/cap and adds exact valid left mirrors; both owner pairs have zero interference. Final reinforcement/skirts are not yet in the same integrated review. | Bilateral eye-owner digital pass; final integration hold. | Visually approve V9, then test insertion/removal against final reinforcement and skirts during HS-11. |
+| F-19 | V9 preserves the valid V8 right bucket/cap and adds exact valid left mirrors; both owner pairs have zero interference. User visually approved and promoted V9 on 2026-08-13. Final reinforcement/skirts are not yet in the same integrated review. | Bilateral eye-owner accepted; final integration hold. | Test insertion/removal against final reinforcement and skirts during HS-11. |
 | F-20 | The accepted connector owners are present in both single-solid bucket/cap pairs; bilateral topology and owner-to-owner clearance pass. Head-owner flange integration and final tool access remain HS-11. | Bilateral eye-owner digital pass; head-owner/access hold. | Approve V9, then union all eight eye/head flanges in HS-11. |
-| F-21 | The accepted lower and relocated upper M2.5 connector features are present on both exact-mirrored sides; each side has exactly one bucket and one cap solid. | Bilateral digital pass; visual approval hold. | Visually approve V9, then promote the validated left owners. |
+| F-21 | The accepted lower and relocated upper M2.5 connector features are present on both exact-mirrored sides; each side has exactly one bucket and one cap solid. V9 was visually approved and promoted 2026-08-13. | Bilateral owner gate accepted. | Preserve the exact promoted owners through HS-11. |
 | F-22 | The original broad right-side pair has exactly two M3 paths. Ear flush-cut V2 removes 656.3880 mm3 including the 33.38 mm3 V1 root residue. Recovery V1 was then rejected because stale upper-head context resurrected a separate four-aperture lattice. Clean-owner recovery V2 removes only that additional 8.09 mm3; both owners remain valid closed solids, bounds are unchanged, and original pair engagement remains 524.2914/511.0390 mm3 on head/ear. | Clean-owner recovery V2 digitally valid; visual approval and owner integration open. | Approve clean-owner V2; integrate/review the exact two-bolt pair in copied right owners before any mirror. |
-| F-23 | Both V9 buckets are valid closed one-solid owners (`630` faces, `6649.60 mm3` each); exact mirrored bounds and left STEP round-trip pass. | Bilateral digital pass; visual/promotion hold. | Visually approve V9 and promote the validated left owner. |
+| F-23 | Both V9 buckets are valid closed one-solid owners (`630` faces, `6649.60 mm3` each); exact mirrored bounds and left STEP round-trip pass. User approved and promoted V9 on 2026-08-13. | Bilateral owner gate accepted. | Preserve one intended bucket solid per side through HS-11. |
 | F-24 | C002 remains rejected; broad-base V3 was accepted. | Accepted review; production/insertion hold. | Integrate one right pair without restoring C002. |
 | F-25 | Clean references exist; final reinforcement is not clipped/unioned. | Partial; production hold. | Add exterior-deviation gate during unified integration. |
 | F-26 | Shells report 61/61/41/42 slicer parts. | FAIL; hard Gate 3–8 validator added. | Replace append/join export with approved true owner unions. |
 | F-27 | Requested rail/tie direction was accepted as “much better.” | Accepted review; seam integration open. | Assign complementary seam ownership and collision-test pairs. |
-| F-28 | User-approved V6 full-thickness wall continuations are preserved in both V9 buckets; both are one valid solid and detached strips are absent. Full-head bilateral context was generated. | Bilateral digital pass; visual approval hold. | Visually approve the V9 full-head context, then preserve these exact owners through HS-11. |
+| F-28 | User-approved V6 full-thickness wall continuations are preserved in both V9 buckets; both are one valid solid and detached strips are absent. User visually approved the V9 full-head context on 2026-08-13. | Bilateral owner gate accepted. | Preserve these exact owners through HS-11. |
 | F-29 | V5 seam accepted; current lower parts fail 10 mm margin. | Accepted direction; hard margin gate added. | Complete bodies, slice with brim/support, verify 10 mm margins. |
 
 ## Acceptance-test grouping
@@ -86,12 +86,8 @@ required reserve is `20 mm` total for `10 mm` per side, before brim/support.
 
 ## Next controlled sequence
 
-1. Visually review bilateral V9: exact left/right exterior/aperture,
-   continuous bucket walls, removable post-free caps, and the retained lower
-   plus relocated upper M2.5 connector pair on both sides.
-2. After explicit V9 approval, promote the validated left STEP owners without
-   changing the approved right V8 sources.
-3. Complete HS-11 by integrating all eight already-approved eye/head flange
+1. Completed 2026-08-13: bilateral V9 was visually approved and promoted.
+2. Complete HS-11 by integrating all eight already-approved eye/head flange
    roots and verifying the final tool paths; do not restore C002.
 4. Hold central/front/side panels until exact parts and collision faces are
    identified.

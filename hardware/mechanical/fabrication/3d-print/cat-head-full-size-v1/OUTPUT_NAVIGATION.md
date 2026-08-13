@@ -5,15 +5,16 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current FreeCAD bilateral-eye exact-mirror review (V9; bilateral digital
-  pass, awaiting visual approval before left production promotion or print
-  release):
+- Approved FreeCAD bilateral-eye exact-mirror review V9 — visually approved
+  and promoted 2026-08-13; still not a print release:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/CAT_HEAD_EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9.FCStd`
 - Current bilateral-eye Blender context review:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/CAT_HEAD_EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9.blend`
 - Current bilateral-eye validation and checkpoint:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/validation-v9.json` and
   `EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9_CHECKPOINT_2026-08-13.md`
+- Controlled bilateral production owners:
+  `production/eye-modules-v9/`
 - Current Blender review:
   `output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend`
 - Current validation:
@@ -40,8 +41,9 @@ current review is always easy to find.
   bucket and removable rear cap are unchanged; the left owners are exact
   `X=0` mirrors. All four are valid, watertight, one-solid owners with matching
   bilateral topology/volume, no self-intersection, and no owner interference.
-  The left STEP round-trip also passes. Awaiting visual approval; no left
-  production integration, STL, slicing, ASA recommendation, or print release:
+  The left STEP round-trip also passes. User visually approved V9 and the
+  owners were promoted unchanged on 2026-08-13. No flange union, STL, slicing,
+  ASA recommendation, or print release:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/CAT_HEAD_EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9.FCStd`
 - V9 full-head evidence, validation, contract, and checkpoint:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/`,

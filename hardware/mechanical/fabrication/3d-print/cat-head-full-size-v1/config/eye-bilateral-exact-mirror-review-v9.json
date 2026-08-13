@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "review_id": "eye-bilateral-exact-mirror-review-v9",
-  "status": "REVIEW_ONLY_AWAITING_VISUAL_APPROVAL",
+  "status": "VISUALLY_APPROVED_AND_PROMOTED_2026-08-13",
   "single_problem": "Mirror the user-approved V8 right eye bucket and removable rear cap exactly to the left without changing either approved right owner.",
   "mirror_datum": {
     "plane": "YZ",
@@ -39,8 +39,6 @@
   },
   "review_condition": "Approve only if the left owners are exact bilateral counterparts, both eyes occupy the intended full-head locations, and no detached strips, rejected posts, obsolete pockets, or unexplained geometry are present.",
   "release_holds": [
-    "visual approval of V9",
-    "production integration of left owners",
     "HS-11 eight-flange integration",
     "final reinforcement and skirt clearance",
     "STL export",

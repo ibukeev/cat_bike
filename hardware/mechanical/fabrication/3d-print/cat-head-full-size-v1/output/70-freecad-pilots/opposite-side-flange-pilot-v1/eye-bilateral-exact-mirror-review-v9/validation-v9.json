@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "BILATERAL_DIGITAL_PASS_AWAITING_VISUAL_APPROVAL",
+  "status": "BILATERAL_DIGITAL_PASS_VISUALLY_APPROVED_PROMOTED_2026-08-13",
   "mirror_plane": "X=0 / YZ",
   "objects": {
     "right_bucket": {
@@ -81,8 +81,6 @@
     "left_eye_rear_cap_exact_x0_mirror_v9.step": "b87a4fc7898c269a89498c8c1f5ed19eb0ef9e45c1e1a57b9245b07bbafc0dee"
   },
   "holds": [
-    "V9 visual approval",
-    "left production promotion",
     "HS-11 all-eight-flange integration",
     "final reinforcement and skirt clearance",
     "STL export",

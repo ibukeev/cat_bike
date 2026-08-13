@@ -8,9 +8,11 @@ bucket and removable rear cap. No right-side geometry, head shell, ear,
 lower-face/rear-cassette, reinforcement, or aluminum-interface geometry was
 changed.
 
-V9 passes all bilateral digital gates and is awaiting visual approval. It is
-not a production integration, STL, slicer project, ASA recommendation, or
-fabrication release.
+V9 passes all bilateral digital gates and the user visually approved it on
+2026-08-13. The validated STEP owners were promoted unchanged to
+`production/eye-modules-v9/`. This closes HS-10, but it is not an all-eight-
+flange integration, STL, slicer project, ASA recommendation, or fabrication
+release.
 
 ## Current review files
 
@@ -70,7 +72,7 @@ full-head context.
 - Do not start ASA shell printing from V9. HS-11 and later shell integration
   gates remain open.
 
-## Exact regeneration command
+## Exact regeneration and promotion commands
 
 The FreeCAD owners are the saved structured result of Part Mirror across the
 global YZ plane from the exact V8 owners. After exporting the four review-only
@@ -79,6 +81,8 @@ OBJ meshes, regenerate the visual pack with:
 ```sh
 python3 -m py_compile hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_eye_bilateral_exact_mirror_review_v9.py
 blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/generate_eye_bilateral_exact_mirror_review_v9.py -- hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/CAT_HEAD_EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9.blend
+bash hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/promote_bilateral_eye_production_owners_v9.sh
+(cd hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/production/eye-modules-v9 && sha256sum -c SHA256SUMS)
 ```
 
 ## Next physical review
@@ -90,6 +94,8 @@ blender --background --python hardware/mechanical/fabrication/3d-print/cat-head-
 3. Open the Blender review and confirm both eye assemblies occupy the intended
    full-head locations with no detached strips, posts, pockets, or unexplained
    geometry.
-4. If V9 is visually approved, mark HS-10 complete, promote the left STEP
-   owners, then start HS-11: integrate and validate the already accepted four
-   eye/head flange roots per side.
+4. Completed 2026-08-13: V9 visually approved, hashes verified, and both
+   bilateral production-owner pairs promoted.
+5. Start HS-11 from the accepted V3 broad-base layout: integrate and validate
+   the four eye/head flange roots per side without restoring C002/C004 source
+   mounts or changing the approved V9 owners.
