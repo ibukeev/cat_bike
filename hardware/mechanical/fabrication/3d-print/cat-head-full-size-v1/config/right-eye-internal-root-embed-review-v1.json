@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "right-side internal root-embed proposal only; no owner Boolean, mirror, STL, G-code, or print release",
+  "source_reinforcement_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
+  "accepted_flange_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-eye-mount-reviews/eye-all-eight-flange-broad-base-review-v3/eye-all-eight-flange-broad-base-review-v3.blend",
+  "current_right_bucket_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_bucket_v9.obj",
+  "current_right_cap_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_rear_cap_v9.obj",
+  "approved_clearance_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/validation-v2.json",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1",
+  "objects": {
+    "lower_face_owner": "right_lower_face",
+    "c048": "R1_RET__R__C048__rib",
+    "outer_eye_flange": "E4_PROPOSED__R__OUTER__EYE_flange_broad_base",
+    "lower_eye_flange": "E4_PROPOSED__R__LOWER__EYE_flange_broad_base",
+    "outer_head_flange": "E4_PROPOSED__R__OUTER__HEAD_flange_broad_base",
+    "lower_head_flange": "E4_PROPOSED__R__LOWER__HEAD_flange_broad_base"
+  },
+  "locked_contract": {
+    "internal_embed_mm": 0.8,
+    "root_overlap_with_approved_feature_mm": 0.4,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "minimum_eye_clearance_mm": 4.0,
+    "minimum_positive_owner_root_volume_mm3": 1.0,
+    "minimum_positive_owner_root_volume_freecad_mm3": 0.05,
+    "right_v9_cap_service_gap_mm": 0.0239,
+    "c048_root_side_face_index_zero_based": 3,
+    "c048_owner_inward_normal_sign": -1.0,
+    "c048_root_safe_end_fraction": 0.25
+  },
+  "holds": [
+    "Do not move or reshape any approved mating tab, mating face, bore center, bore axis, or 0.3 mm pair gap.",
+    "Extend only the hidden owner-side roots of the two right eye flanges and C048.",
+    "Preserve the V9 eye exterior, shell exterior, C046/C048 eye-clearance surfaces, C006, and aluminum V0.5-M2.",
+    "No owner Boolean, left mirror, STL, G-code, or print release before visual approval."
+  ]
+}

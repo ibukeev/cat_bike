@@ -5,6 +5,16 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current HS-11 internal-root proposal — adds only hidden owner-side embed to
+  the two right eye flanges and C048; all exact OCCT root/gap/clearance checks
+  pass. Awaiting visual approval; no owner Boolean, mirror, or print release:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/CAT_HEAD_RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1.FCStd`
+- Proposal contract, Blender context, evidence, validation, and checkpoint:
+  `config/right-eye-internal-root-embed-review-v1.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/CAT_HEAD_RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1.blend`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/validation-v1.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/`, and
+  `RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1_CHECKPOINT_2026-08-13.md`
 - Current HS-11 owner-integration audit — fail-closed because the two approved
   eye-side V3 flange roots and C048 have zero-depth owner contact; no printable
   Boolean was accepted. Open this to inspect the exact staged owners/features:
@@ -13,8 +23,8 @@ current review is always easy to find.
   `RIGHT_EYE_FLANGE_REINFORCEMENT_OWNER_INTEGRATION_AUDIT_V1_CHECKPOINT_2026-08-13.md` and
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/validation-v1.json`
 - Current HS-11 right-eye reinforcement-clearance V2 — gives both C046 and
-  C048 at least `4.0 mm` clearance from the V9 eye; awaiting visual approval
-  and not a production Boolean, mirror, or print release:
+  C048 at least `4.0 mm` clearance from the V9 eye; visually approved
+  2026-08-13 and preserved by the current root proposal:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/CAT_HEAD_RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2.FCStd`
 - V2 Blender comparison, validation, evidence, and checkpoint:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/CAT_HEAD_RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2.blend`,

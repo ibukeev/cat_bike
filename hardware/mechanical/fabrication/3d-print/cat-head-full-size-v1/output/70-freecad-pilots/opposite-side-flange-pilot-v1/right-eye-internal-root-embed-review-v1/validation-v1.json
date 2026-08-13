@@ -1,0 +1,139 @@
+{
+  "status": "right-side internal root-embed proposal only; no owner Boolean, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "internal_embed_mm": 0.8,
+    "root_overlap_with_approved_feature_mm": 0.4,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "minimum_eye_clearance_mm": 4.0,
+    "minimum_positive_owner_root_volume_mm3": 1.0,
+    "minimum_positive_owner_root_volume_freecad_mm3": 0.05,
+    "right_v9_cap_service_gap_mm": 0.0239,
+    "c048_root_side_face_index_zero_based": 3,
+    "c048_owner_inward_normal_sign": -1.0,
+    "c048_root_safe_end_fraction": 0.25
+  },
+  "eye_flange_root_records": {
+    "outer": {
+      "approved_flange_fingerprint": "5c985dfb1dd64804392e161d8bb167db9cbc8d4ab8939332505adee34af64743",
+      "root_addition_topology": {
+        "vertices": 56,
+        "edges": 88,
+        "faces": 32,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 223.0952
+      },
+      "proposal_topology": {
+        "vertices": 171,
+        "edges": 262,
+        "faces": 91,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 835.7936
+      },
+      "root_overlap_with_v9_bucket_mm3": 28.7707,
+      "proposal_overlap_with_v9_bucket_mm3": 305.5302,
+      "proposal_to_matching_head_flange_clearance_mm": 0.3
+    },
+    "lower": {
+      "approved_flange_fingerprint": "5fb57355a4a068a3c6b16bf1356dc7fd09040f7b8fb81168ab9df8b762d57556",
+      "root_addition_topology": {
+        "vertices": 56,
+        "edges": 88,
+        "faces": 32,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 223.0953
+      },
+      "proposal_topology": {
+        "vertices": 150,
+        "edges": 231,
+        "faces": 81,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 835.7931
+      },
+      "root_overlap_with_v9_bucket_mm3": 28.8,
+      "proposal_overlap_with_v9_bucket_mm3": 2398.1694,
+      "proposal_to_matching_head_flange_clearance_mm": 0.3
+    }
+  },
+  "c048_root_record": {
+    "approved_contact_face_zero_based": 3,
+    "owner_embed_direction": [
+      -0.56575,
+      -0.428613,
+      -0.704427
+    ],
+    "root_addition_topology": {
+      "vertices": 8,
+      "edges": 12,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 80.2984
+    },
+    "proposal_topology": {
+      "vertices": 23,
+      "edges": 34,
+      "faces": 13,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 529.2734
+    },
+    "root_overlap_with_lower_face_mm3": 0.0,
+    "proposal_overlap_with_lower_face_mm3": 1183.3204,
+    "proposal_eye_clearance_mm": 4.0317
+  },
+  "right_cap_interference": false,
+  "right_cap_clearance_mm": 0.0239,
+  "eye_root_additions_positive_owner_overlap": true,
+  "c048_root_owner_overlap_requires_freecad_exact_validation": true,
+  "freecad_exact_validation": {
+    "outer_eye_root_owner_overlap_mm3": 28.7708,
+    "lower_eye_root_owner_overlap_mm3": 28.8,
+    "c048_root_lower_face_owner_overlap_mm3": 50.1816,
+    "c048_eye_clearance_mm": 4.0317,
+    "outer_flange_pair_gap_mm": 0.3,
+    "lower_flange_pair_gap_mm": 0.3,
+    "outer_exact_flange_plus_root_valid_one_solid": true,
+    "lower_exact_flange_plus_root_valid_one_solid": true,
+    "c048_proposal_valid_one_solid": true,
+    "all_root_additions_valid_one_solid": true,
+    "fcstd_zip_valid": true,
+    "fcstd_size_bytes": 1314202,
+    "review_fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/CAT_HEAD_RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1.FCStd"
+  },
+  "approved_mating_geometry_moved": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Do not move or reshape any approved mating tab, mating face, bore center, bore axis, or 0.3 mm pair gap.",
+    "Extend only the hidden owner-side roots of the two right eye flanges and C048.",
+    "Preserve the V9 eye exterior, shell exterior, C046/C048 eye-clearance surfaces, C006, and aluminum V0.5-M2.",
+    "No owner Boolean, left mirror, STL, G-code, or print release before visual approval."
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/CAT_HEAD_RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/01-right-root-embed-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/02-right-eye-root-additions-highlighted.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/03-c048-root-addition-highlighted.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/04-root-additions-isolated.png"
+    ],
+    "review_objs": {
+      "right_lower_face_context": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/right_lower_face_context.obj",
+      "right_eye_bucket_v9": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/right_eye_bucket_v9.obj",
+      "right_eye_rear_cap_v9": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/right_eye_rear_cap_v9.obj",
+      "proposed_outer_eye_flange_with_root_embed": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/proposed_outer_eye_flange_with_root_embed.obj",
+      "proposed_lower_eye_flange_with_root_embed": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/proposed_lower_eye_flange_with_root_embed.obj",
+      "proposed_c048_with_root_embed": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/proposed_c048_with_root_embed.obj",
+      "outer_root_addition": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/outer_root_addition.obj",
+      "lower_root_addition": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/lower_root_addition.obj",
+      "c048_root_addition": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/c048_root_addition.obj",
+      "approved_outer_head_flange": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/approved_outer_head_flange.obj",
+      "approved_lower_head_flange": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/approved_lower_head_flange.obj"
+    }
+  }
+}
