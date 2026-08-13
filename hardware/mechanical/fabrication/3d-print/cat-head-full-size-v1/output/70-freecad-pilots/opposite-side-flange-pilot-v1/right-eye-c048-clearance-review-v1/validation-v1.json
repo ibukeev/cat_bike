@@ -1,0 +1,78 @@
+{
+  "status": "right-side C048 reinforcement clearance proposal only; no owner Boolean, mirror, STL, G-code, or print release",
+  "offending_object": "R1_RET__R__C048__rib",
+  "selected_anchor": {
+    "eye_side_end_face_vertices": [
+      0,
+      1,
+      2
+    ],
+    "eye_side_centroid_mm": [
+      37.2865,
+      54.3104,
+      125.1719
+    ],
+    "far_end_face_vertices": [
+      3,
+      4,
+      5
+    ],
+    "far_end_centroid_mm": [
+      80.3938,
+      57.035,
+      88.8931
+    ],
+    "original_axis_unit": [
+      0.764211,
+      0.048302,
+      -0.643155
+    ]
+  },
+  "original_length_mm": 56.4076,
+  "trim_fraction": 0.09,
+  "removed_eye_side_length_mm": 5.0767,
+  "remaining_rib_length_mm": 51.3309,
+  "minimum_required_remaining_length_mm": 20.0,
+  "v9_bucket_clearance_mm": 2.014,
+  "lower_eye_flange_clearance_mm": 13.6708,
+  "minimum_required_clearance_mm": 2.0,
+  "candidate_topology": {
+    "vertices": 6,
+    "edges": 9,
+    "faces": 5,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "candidate_overlaps_lower_face_owner": true,
+  "candidate_overlaps_lower_head_flange": false,
+  "v9_bucket_overlap": false,
+  "lower_eye_flange_overlap": false,
+  "far_end_preserved_exactly": true,
+  "production_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Trim only C048's eye-side end along its original long axis.",
+    "Preserve the far triangular end and the original triangular cross-section without scaling or rotation.",
+    "The proposal must remain one closed manifold solid and overlap the lower-face owner.",
+    "The proposal must clear the V9 bucket and removable lower eye flange by at least 2.0 mm.",
+    "Do not change the accepted V3 flange geometry, V9 eye, shell exterior, C006, or aluminum V0.5-M2."
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/CAT_HEAD_RIGHT_EYE_C048_CLEARANCE_REVIEW_V1.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/01-rejected-original-collision.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/02-proposed-trimmed-clearance.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/03-proposed-side-clearance.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/04-proposed-rib-isolated.png"
+    ],
+    "review_objs": {
+      "right_lower_face_context": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/right_lower_face_context.obj",
+      "current_right_eye_bucket_v9": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/current_right_eye_bucket_v9.obj",
+      "rejected_colliding_c048_original": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/rejected_colliding_c048_original.obj",
+      "proposed_trimmed_c048_clearance_v1": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/proposed_trimmed_c048_clearance_v1.obj",
+      "accepted_right_lower_head_flange_v3": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/accepted_right_lower_head_flange_v3.obj",
+      "accepted_right_lower_eye_flange_v3": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/accepted_right_lower_eye_flange_v3.obj"
+    }
+  }
+}

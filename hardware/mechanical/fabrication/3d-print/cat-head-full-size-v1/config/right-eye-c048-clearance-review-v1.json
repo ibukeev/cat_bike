@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "right-side C048 reinforcement clearance proposal only; no owner Boolean, mirror, STL, G-code, or print release",
+  "source_reinforcement_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
+  "current_right_bucket_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_bucket_v9.obj",
+  "accepted_flange_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-eye-mount-reviews/eye-all-eight-flange-broad-base-review-v3/eye-all-eight-flange-broad-base-review-v3.blend",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1",
+  "offending_rib": "R1_RET__R__C048__rib",
+  "lower_face_owner": "right_lower_face",
+  "lower_head_flange": "E4_PROPOSED__R__LOWER__HEAD_flange_broad_base",
+  "lower_eye_flange": "E4_PROPOSED__R__LOWER__EYE_flange_broad_base",
+  "minimum_eye_clearance_mm": 2.0,
+  "minimum_remaining_rib_length_mm": 20.0,
+  "search_step_fraction": 0.001,
+  "holds": [
+    "Trim only C048's eye-side end along its original long axis.",
+    "Preserve the far triangular end and the original triangular cross-section without scaling or rotation.",
+    "The proposal must remain one closed manifold solid and overlap the lower-face owner.",
+    "The proposal must clear the V9 bucket and removable lower eye flange by at least 2.0 mm.",
+    "Do not change the accepted V3 flange geometry, V9 eye, shell exterior, C006, or aluminum V0.5-M2."
+  ]
+}
