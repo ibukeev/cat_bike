@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "right-side owner-alignment proposal only; no production Boolean, mirror, STL, G-code, or print release",
+  "frozen_context_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+  "accepted_flange_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-eye-mount-reviews/eye-all-eight-flange-broad-base-review-v3/eye-all-eight-flange-broad-base-review-v3.blend",
+  "current_right_bucket_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_bucket_v9.obj",
+  "current_right_cap_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_rear_cap_v9.obj",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1",
+  "right_owner_objects": {
+    "outer_head": "right_upper_head",
+    "lower_head": "right_lower_face",
+    "eye_bucket": "PROPOSED__RIGHT_EYE_BUCKET__V9",
+    "eye_rear_cap": "PROPOSED__RIGHT_EYE_REAR_CAP__V9"
+  },
+  "right_flange_objects": {
+    "outer_head": "E4_PROPOSED__R__OUTER__HEAD_flange_broad_base",
+    "outer_eye": "E4_PROPOSED__R__OUTER__EYE_flange_broad_base",
+    "lower_head": "E4_PROPOSED__R__LOWER__HEAD_flange_broad_base",
+    "lower_eye": "E4_PROPOSED__R__LOWER__EYE_flange_broad_base"
+  },
+  "locked_contract": {
+    "flange_tab_mm": [12.0, 8.0, 2.4],
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "front_recess_mm": 0.6,
+    "broad_base_total_depth_mm": 4.0,
+    "broad_base_overlap_mm": 0.8,
+    "broad_base_flange_footprint_mm": [12.0, 8.0],
+    "broad_base_owner_footprint_mm": [16.0, 12.0]
+  },
+  "holds": [
+    "Use the accepted V3 flange meshes and numeric datums unchanged.",
+    "Use the current V9 right eye bucket; never restore a Gate 6 eye owner.",
+    "C002 and C004 source mount objects are forbidden and absent.",
+    "Preserve V10 head context, V5 lower-face ownership, C006, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2.",
+    "Do not fuse the proposal into an owner before explicit visual approval."
+  ]
+}

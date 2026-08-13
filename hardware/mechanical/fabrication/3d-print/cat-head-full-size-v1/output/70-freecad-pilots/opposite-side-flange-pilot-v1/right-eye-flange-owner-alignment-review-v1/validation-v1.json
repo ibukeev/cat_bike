@@ -1,0 +1,166 @@
+{
+  "status": "right-side owner-alignment proposal only; no production Boolean, mirror, STL, G-code, or print release",
+  "config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/right-eye-flange-owner-alignment-review-v1.json",
+  "source_context": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+  "accepted_flange_source": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-eye-mount-reviews/eye-all-eight-flange-broad-base-review-v3/eye-all-eight-flange-broad-base-review-v3.blend",
+  "current_right_bucket_source": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_bucket_v9.obj",
+  "locked_contract": {
+    "flange_tab_mm": [
+      12.0,
+      8.0,
+      2.4
+    ],
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "front_recess_mm": 0.6,
+    "broad_base_total_depth_mm": 4.0,
+    "broad_base_overlap_mm": 0.8,
+    "broad_base_flange_footprint_mm": [
+      12.0,
+      8.0
+    ],
+    "broad_base_owner_footprint_mm": [
+      16.0,
+      12.0
+    ]
+  },
+  "right_flange_count": 4,
+  "candidate_records": [
+    {
+      "role": "outer_head",
+      "candidate": "E4_PROPOSED__R__OUTER__HEAD_flange_broad_base",
+      "owner": "right_upper_head",
+      "mesh_fingerprint": "f903bbb0715008c33cde90f66ece74f613181dd4e700b7ef9e6e6496b574dfe4",
+      "bounds_mm": {
+        "min": [
+          100.6744,
+          79.6188,
+          137.7101
+        ],
+        "dimensions": [
+          8.8587,
+          14.3555,
+          18.0302
+        ]
+      },
+      "topology": {
+        "vertices": 62,
+        "edges": 98,
+        "faces": 36,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "overlaps_current_owner": true
+    },
+    {
+      "role": "outer_eye",
+      "candidate": "E4_PROPOSED__R__OUTER__EYE_flange_broad_base",
+      "owner": "PROPOSED__RIGHT_EYE_BUCKET__V9",
+      "mesh_fingerprint": "5c985dfb1dd64804392e161d8bb167db9cbc8d4ab8939332505adee34af64743",
+      "bounds_mm": {
+        "min": [
+          94.4503,
+          75.5327,
+          138.6056
+        ],
+        "dimensions": [
+          8.8587,
+          14.3555,
+          18.0302
+        ]
+      },
+      "topology": {
+        "vertices": 62,
+        "edges": 98,
+        "faces": 36,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "overlaps_current_owner": true
+    },
+    {
+      "role": "lower_head",
+      "candidate": "E4_PROPOSED__R__LOWER__HEAD_flange_broad_base",
+      "owner": "right_lower_face",
+      "mesh_fingerprint": "a93109b146ee00c17f3c8cccae8e8c99042e1bf84d6f289aacb528ac0c6aad11",
+      "bounds_mm": {
+        "min": [
+          57.1727,
+          55.4862,
+          113.3966
+        ],
+        "dimensions": [
+          19.257,
+          16.458,
+          9.0913
+        ]
+      },
+      "topology": {
+        "vertices": 64,
+        "edges": 101,
+        "faces": 37,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "overlaps_current_owner": true
+    },
+    {
+      "role": "lower_eye",
+      "candidate": "E4_PROPOSED__R__LOWER__EYE_flange_broad_base",
+      "owner": "PROPOSED__RIGHT_EYE_BUCKET__V9",
+      "mesh_fingerprint": "5fb57355a4a068a3c6b16bf1356dc7fd09040f7b8fb81168ab9df8b762d57556",
+      "bounds_mm": {
+        "min": [
+          57.6008,
+          58.1208,
+          119.7705
+        ],
+        "dimensions": [
+          19.257,
+          16.458,
+          9.0913
+        ]
+      },
+      "topology": {
+        "vertices": 64,
+        "edges": 100,
+        "faces": 36,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "overlaps_current_owner": true
+    }
+  ],
+  "all_four_flange_roots_overlap_current_owners": true,
+  "all_four_flange_meshes_closed_and_manifold": true,
+  "forbidden_source_mounts_present": false,
+  "production_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Use the accepted V3 flange meshes and numeric datums unchanged.",
+    "Use the current V9 right eye bucket; never restore a Gate 6 eye owner.",
+    "C002 and C004 source mount objects are forbidden and absent.",
+    "Preserve V10 head context, V5 lower-face ownership, C006, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2.",
+    "Do not fuse the proposal into an owner before explicit visual approval."
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/CAT_HEAD_RIGHT_EYE_FLANGE_OWNER_ALIGNMENT_REVIEW_V1.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/01-right-flanges-whole-head.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/02-right-four-flanges-interior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/03-right-outer-pair.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/04-right-lower-pair.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/05-right-four-flanges-side.png"
+    ],
+    "review_objs": {
+      "right_upper_head_context": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/right_upper_head_context.obj",
+      "right_lower_face_context": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/right_lower_face_context.obj",
+      "right_eye_bucket_v9": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/right_eye_bucket_v9.obj",
+      "outer_head": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/outer_head.obj",
+      "outer_eye": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/outer_eye.obj",
+      "lower_head": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/lower_head.obj",
+      "lower_eye": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/review/lower_eye.obj"
+    }
+  }
+}
