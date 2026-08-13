@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "right-side copied-owner integration review; no mirror, STL, G-code, or print release",
+  "source_reinforcement_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
+  "frozen_full_head_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+  "accepted_flange_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-eye-mount-reviews/eye-all-eight-flange-broad-base-review-v3/eye-all-eight-flange-broad-base-review-v3.blend",
+  "current_right_bucket_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_bucket_v9.obj",
+  "current_right_cap_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_rear_cap_v9.obj",
+  "approved_reinforcement_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/validation-v2.json",
+  "approved_flange_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1/validation-v1.json",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1",
+  "owners": {
+    "outer_head": "right_upper_head",
+    "lower_head": "right_lower_face"
+  },
+  "reinforcements": {
+    "c046": "R1_RET__R__C046__rib",
+    "c048": "R1_RET__R__C048__rib"
+  },
+  "flanges": {
+    "outer_head": "E4_PROPOSED__R__OUTER__HEAD_flange_broad_base",
+    "outer_eye": "E4_PROPOSED__R__OUTER__EYE_flange_broad_base",
+    "lower_head": "E4_PROPOSED__R__LOWER__HEAD_flange_broad_base",
+    "lower_eye": "E4_PROPOSED__R__LOWER__EYE_flange_broad_base"
+  },
+  "locked_contract": {
+    "c046_rigid_offset_mm": 4.229,
+    "c046_away_unit": [0.206134, -0.13113, -0.969698],
+    "c048_trim_fraction": 0.15,
+    "minimum_eye_clearance_mm": 4.0,
+    "flange_tab_mm": [12.0, 8.0, 2.4],
+    "m2_5_clearance_diameter_mm": 2.8,
+    "m2_5_proof_shaft_diameter_mm": 2.5,
+    "m2_5_proof_shaft_length_mm": 18.0,
+    "mating_gap_mm": 0.3,
+    "front_recess_mm": 0.6,
+    "broad_base_total_depth_mm": 4.0,
+    "broad_base_overlap_mm": 0.8,
+    "right_v9_cap_service_gap_mm": 0.0239
+  },
+  "holds": [
+    "Copy and integrate only the right upper-head, right lower-face, and V9 right-eye bucket owners.",
+    "Use the exact accepted V3 flange meshes without moving or reshaping them.",
+    "Apply only the approved C046 rigid translation and C048 eye-end trim.",
+    "Keep the V9 rear cap separate and unchanged.",
+    "Preserve C006 and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2.",
+    "Do not mirror, export STL/G-code, or release for printing in this review."
+  ]
+}

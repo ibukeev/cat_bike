@@ -5,6 +5,13 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current HS-11 owner-integration audit — fail-closed because the two approved
+  eye-side V3 flange roots and C048 have zero-depth owner contact; no printable
+  Boolean was accepted. Open this to inspect the exact staged owners/features:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/CAT_HEAD_RIGHT_EYE_FLANGE_REINFORCEMENT_OWNER_INTEGRATION_AUDIT_V1.FCStd`
+- Audit checkpoint and staging validation:
+  `RIGHT_EYE_FLANGE_REINFORCEMENT_OWNER_INTEGRATION_AUDIT_V1_CHECKPOINT_2026-08-13.md` and
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/validation-v1.json`
 - Current HS-11 right-eye reinforcement-clearance V2 — gives both C046 and
   C048 at least `4.0 mm` clearance from the V9 eye; awaiting visual approval
   and not a production Boolean, mirror, or print release:

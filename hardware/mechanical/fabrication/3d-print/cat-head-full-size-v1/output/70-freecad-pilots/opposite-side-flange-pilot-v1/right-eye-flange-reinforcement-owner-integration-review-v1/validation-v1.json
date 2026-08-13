@@ -1,0 +1,303 @@
+{
+  "status": "right-side copied-owner integration review; no mirror, STL, G-code, or print release",
+  "source_hashes": {
+    "v9_right_bucket_obj": "2594f4458c637c0cc6ed41bbc76bd6eab3f7bd02a09945f86abd5c559c6959d9",
+    "v9_right_cap_obj": "04badf5236ecac1e23e403ffbb19f214420087896304d116cdc0dfc23bb51df5",
+    "production_v9_sha256_manifest": "3cb58e765245b62d87c655d2fbcbfcb31a5f1a279f9acd1fd168ee9cb6817321"
+  },
+  "source_owner_topology": {
+    "right_upper_head": {
+      "vertices": 1587,
+      "edges": 2607,
+      "faces": 1056,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 150608.0697
+    },
+    "right_lower_face": {
+      "vertices": 1622,
+      "edges": 2667,
+      "faces": 1131,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121419.4251
+    },
+    "R1_RET__R__C046__rib": {
+      "vertices": 6,
+      "edges": 11,
+      "faces": 7,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 202.6928
+    },
+    "R1_RET__R__C048__rib": {
+      "vertices": 6,
+      "edges": 9,
+      "faces": 5,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 654.328
+    }
+  },
+  "accepted_flange_topology_before_union": {
+    "E4_PROPOSED__R__OUTER__HEAD_flange_broad_base": {
+      "vertices": 62,
+      "edges": 98,
+      "faces": 36,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 684.844
+    },
+    "E4_PROPOSED__R__OUTER__EYE_flange_broad_base": {
+      "vertices": 62,
+      "edges": 98,
+      "faces": 36,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 684.8444
+    },
+    "E4_PROPOSED__R__LOWER__HEAD_flange_broad_base": {
+      "vertices": 64,
+      "edges": 101,
+      "faces": 37,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 684.8444
+    },
+    "E4_PROPOSED__R__LOWER__EYE_flange_broad_base": {
+      "vertices": 64,
+      "edges": 100,
+      "faces": 36,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 684.8444
+    }
+  },
+  "staged_owner_topology": {
+    "upper": {
+      "vertices": 1587,
+      "edges": 2607,
+      "faces": 1056,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 150608.0697
+    },
+    "lower": {
+      "vertices": 1622,
+      "edges": 2667,
+      "faces": 1131,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121419.4251
+    },
+    "bucket": {
+      "vertices": 481,
+      "edges": 1473,
+      "faces": 982,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 6649.6022
+    },
+    "cap": {
+      "vertices": 294,
+      "edges": 894,
+      "faces": 596,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 4212.3514
+    }
+  },
+  "staged_owner_component_counts": {
+    "upper": 42,
+    "lower": 63,
+    "bucket": 1
+  },
+  "component_local_occt_handoff": {
+    "upper": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_001.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_002.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_003.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_004.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_005.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_006.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_007.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_008.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_009.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_010.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_011.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_012.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_013.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_014.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_015.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_016.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_017.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_018.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_019.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_020.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_021.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_022.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_023.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_024.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_025.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_026.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_027.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_028.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_029.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_030.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_031.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_032.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_033.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_034.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_035.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_036.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_037.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_038.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_039.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_040.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_041.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/upper_components/upper_owner_component_042.obj"
+    ],
+    "lower": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_001.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_002.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_003.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_004.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_005.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_006.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_007.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_008.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_009.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_010.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_011.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_012.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_013.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_014.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_015.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_016.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_017.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_018.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_019.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_020.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_021.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_022.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_023.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_024.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_025.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_026.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_027.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_028.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_029.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_030.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_031.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_032.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_033.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_034.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_035.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_036.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_037.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_038.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_039.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_040.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_041.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_042.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_043.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_044.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_045.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_046.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_047.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_048.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_049.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_050.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_051.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_052.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_053.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_054.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_055.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_056.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_057.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_058.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_059.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_060.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_061.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_062.obj",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/lower_components/lower_owner_component_063.obj"
+    ]
+  },
+  "approved_reinforcement_eye_clearance_mm": {
+    "c046_mm": 4.6063,
+    "c048_mm": 4.0317
+  },
+  "m2_5_shaft_path_checks": {
+    "outer": {
+      "head_eye_axis_error_mm": 4.4e-05,
+      "head_flange_overlap": false,
+      "eye_flange_overlap": false
+    },
+    "lower": {
+      "head_eye_axis_error_mm": 3.8e-05,
+      "head_flange_overlap": false,
+      "eye_flange_overlap": false
+    }
+  },
+  "right_rear_cap_interference_with_integrated_bucket": false,
+  "right_rear_cap_clearance_mm": 0.0239,
+  "forbidden_source_mounts_in_review": false,
+  "production_boolean_performed_on_copied_right_owners": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "locked_contract": {
+    "c046_rigid_offset_mm": 4.229,
+    "c046_away_unit": [
+      0.206134,
+      -0.13113,
+      -0.969698
+    ],
+    "c048_trim_fraction": 0.15,
+    "minimum_eye_clearance_mm": 4.0,
+    "flange_tab_mm": [
+      12.0,
+      8.0,
+      2.4
+    ],
+    "m2_5_clearance_diameter_mm": 2.8,
+    "m2_5_proof_shaft_diameter_mm": 2.5,
+    "m2_5_proof_shaft_length_mm": 18.0,
+    "mating_gap_mm": 0.3,
+    "front_recess_mm": 0.6,
+    "broad_base_total_depth_mm": 4.0,
+    "broad_base_overlap_mm": 0.8,
+    "right_v9_cap_service_gap_mm": 0.0239
+  },
+  "holds": [
+    "Copy and integrate only the right upper-head, right lower-face, and V9 right-eye bucket owners.",
+    "Use the exact accepted V3 flange meshes without moving or reshaping them.",
+    "Apply only the approved C046 rigid translation and C048 eye-end trim.",
+    "Keep the V9 rear cap separate and unchanged.",
+    "Preserve C006 and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2.",
+    "Do not mirror, export STL/G-code, or release for printing in this review."
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/CAT_HEAD_RIGHT_EYE_FLANGE_REINFORCEMENT_OWNER_INTEGRATION_REVIEW_V1.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/01-right-integrated-whole-head-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/02-right-three-integrated-owners-interior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/03-right-integrated-outer-interface.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/04-right-integrated-lower-interface.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/05-right-integrated-side-clearance.png"
+    ],
+    "review_objs": {
+      "staged_right_upper_head": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/staged_right_upper_head.obj",
+      "staged_right_lower_face": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/staged_right_lower_face.obj",
+      "staged_right_eye_bucket": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/staged_right_eye_bucket.obj",
+      "unchanged_right_eye_rear_cap": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/unchanged_right_eye_rear_cap.obj",
+      "approved_outer_head_flange": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/approved_outer_head_flange.obj",
+      "approved_outer_eye_flange": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/approved_outer_eye_flange.obj",
+      "approved_lower_head_flange": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/approved_lower_head_flange.obj",
+      "approved_lower_eye_flange": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/approved_lower_eye_flange.obj",
+      "approved_c046_clearance_v2": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/approved_c046_clearance_v2.obj",
+      "approved_c048_clearance_v2": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/approved_c048_clearance_v2.obj",
+      "m2_5_outer_shaft": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/m2_5_outer_shaft.obj",
+      "m2_5_lower_shaft": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1/review/m2_5_lower_shaft.obj"
+    }
+  }
+}

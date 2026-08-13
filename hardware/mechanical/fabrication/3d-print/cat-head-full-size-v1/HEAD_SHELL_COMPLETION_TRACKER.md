@@ -12,16 +12,15 @@ estimate. An accepted isolated review is crossed off only when that gate's
 stated exit condition is satisfied; it does not imply that the geometry is
 already integrated or printable.
 
-**Next active work:** `HS-11`. The user visually approved the right-side V1
-locations of the exact four accepted broad-base V3 flange candidates on
-2026-08-13, then identified a collision between the V9 eye and reinforcement
-`R1_RET__R__C048__rib`, followed by a minor conflict with adjacent triangular
-rib `R1_RET__R__C046__rib`. A right-side-only V2 proposal now gives both ribs
-at least `4.0 mm` V9-eye clearance while retaining their lower-face and mutual
-structural contacts. It is not Boolean-integrated or mirrored and requires
-visual approval before copied right production owners are built. `HS-04`
-remains queued until final upper-
-head print orientation is frozen. Structural shell printing remains blocked.
+**Next active work:** `HS-11`. The user visually approved the exact four
+right-side V3 flange locations and the C046/C048 V2 clearance correction on
+2026-08-13. The subsequent OCCT integration audit failed closed: both eye-side
+flange roots and C048 have zero-depth contact with their copied receiving
+owners, so no valid printable union was accepted. The next isolated proposal
+must add only a small internal owner-side embed while preserving holes, axes,
+mating faces, exterior surfaces, eye clearance, C006, and aluminum V0.5-M2.
+`HS-04` remains queued until final upper-head print orientation is frozen.
+Structural shell printing remains blocked.
 
 ## Progress table
 
@@ -37,7 +36,7 @@ head print orientation is frozen. Structural shell printing remains blocked.
 | HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
 | HS-09 | [x] | ~~Finish remaining primary ear interface~~ | User visually approved the clean bilateral V2 on 2026-08-11. V2 contains only the approved right head/ear final solids and their exact `X=0` mirrors; the stale left owner, four-hole lattice, pins, and proof shafts are absent. All four solids are valid, closed, self-intersection-free, and the mirrored topology, volume, area, and bounds match. | Preserve `CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd` unchanged through final full-head integration. |
 | HS-10 | [x] | ~~Build each eye bucket and rear cap as one serviceable module~~ | V9 was visually approved and promoted on 2026-08-13. Both bilateral bucket/cap pairs are valid, watertight, one-solid, self-intersection-free, topology/volume matched, STEP-round-trip verified, and retain the non-interfering `0.0239 mm` service gap. | Preserve `production/eye-modules-v9/` unchanged through HS-11 and later full-head validation. |
-| HS-11 | [ ] | Integrate and validate all eight eye flanges | Right-side V1 flange locations were visually approved 2026-08-13. V2 moves triangular C046 rigidly `4.229 mm` and trims C048 by `8.4611 mm`; clearances are `4.6063/4.0317 mm`. Both remain closed, lower-face-rooted, and mutually overlapping. No Boolean/mirror has occurred. | Visually approve the isolated V2 C046+C048 correction; then union copied right owners, validate insertion/tool/all-reinforcement clearance, mirror exactly, and repeat bilateral validation. |
+| HS-11 | [ ] | Integrate and validate all eight eye flanges | Right V3 locations and C046/C048 V2 were visually approved. OCCT audit proves positive overlap for both head flanges and C046, but only `0.0000 mm` contact for both eye flanges and C048; invalid/empty fuses were rejected. | Approve minimal internal root embeds; component-local fuse copied right owners, preserve all original solids, validate hardware/clearance, mirror exactly, and repeat bilaterally. |
 | HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
 | HS-13 | [ ] | Integrate lower face and rear cassette around aluminum | Lossless V5 ownership direction is accepted; production owners and final cassette are not unified. | Lower faces are reduced as approved, transferred geometry belongs to one cassette, and V0.5-M2 rail/plate insertion and removal remain unobstructed. |
 | HS-14 | [ ] | Add final cassette M5 pads and service sockets | Legacy Gate 8 pads are invalid; the real rail and 21.00 mm serviceable socket still require qualification. | Actual rail measured; socket/cap coupon passes; cassette pads/sockets integrate with hardware and tool access. |
