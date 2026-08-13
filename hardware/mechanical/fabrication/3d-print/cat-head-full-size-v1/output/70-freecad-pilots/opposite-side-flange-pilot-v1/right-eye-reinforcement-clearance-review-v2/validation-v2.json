@@ -1,0 +1,84 @@
+{
+  "status": "right-side C046+C048 reinforcement clearance proposal only; no owner Boolean, mirror, STL, G-code, or print release",
+  "selected_anchors": {
+    "c046_object": "R1_RET__R__C046__rib",
+    "c046_closest_vertex_mm": [
+      29.9249,
+      56.1191,
+      122.7799
+    ],
+    "c046_away_unit": [
+      0.206134,
+      -0.13113,
+      -0.969698
+    ],
+    "c048_eye_side_vertices": [
+      0,
+      1,
+      2
+    ],
+    "c048_far_end_vertices": [
+      3,
+      4,
+      5
+    ]
+  },
+  "minimum_required_eye_clearance_mm": 4.0,
+  "c046_original_eye_clearance_mm": 0.3773,
+  "c046_rigid_offset_mm": 4.229,
+  "c046_proposed_eye_clearance_mm": 4.6063,
+  "c046_topology": {
+    "vertices": 6,
+    "edges": 11,
+    "faces": 7,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "c046_overlaps_lower_face_owner": true,
+  "c048_original_length_mm": 56.4076,
+  "c048_trim_fraction": 0.15,
+  "c048_removed_eye_side_length_mm": 8.4611,
+  "c048_remaining_length_mm": 47.9464,
+  "c048_proposed_eye_clearance_mm": 4.0317,
+  "c048_far_end_preserved_exactly": true,
+  "c048_topology": {
+    "vertices": 6,
+    "edges": 9,
+    "faces": 5,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "c048_overlaps_lower_face_owner": true,
+  "proposed_c046_overlaps_proposed_c048": true,
+  "c046_eye_overlap": false,
+  "c048_eye_overlap": false,
+  "production_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Change only C046 and C048 on the right side.",
+    "Translate C046 rigidly away from the V9 eye; do not scale, rotate, or distort it.",
+    "Trim only C048's eye-side end along its original long axis; preserve its far end and triangular cross-section.",
+    "Both proposals must remain closed manifold solids, overlap the lower-face owner, overlap each other, and clear the V9 eye by at least 4.0 mm.",
+    "Do not change the accepted V3 flange geometry, V9 eye, shell exterior, C006, or aluminum V0.5-M2."
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/CAT_HEAD_RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/01-rejected-original-clearance.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/02-proposed-four-mm-clearance.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/03-proposed-side-clearance.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/04-proposed-reinforcement-isolated.png"
+    ],
+    "review_objs": {
+      "right_lower_face_context": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/right_lower_face_context.obj",
+      "current_right_eye_bucket_v9": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/current_right_eye_bucket_v9.obj",
+      "rejected_c046_original": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/rejected_c046_original.obj",
+      "rejected_c048_original": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/rejected_c048_original.obj",
+      "proposed_c046_clearance_v2": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/proposed_c046_clearance_v2.obj",
+      "proposed_c048_clearance_v2": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/proposed_c048_clearance_v2.obj",
+      "accepted_right_lower_head_flange_v3": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/accepted_right_lower_head_flange_v3.obj",
+      "accepted_right_lower_eye_flange_v3": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/accepted_right_lower_eye_flange_v3.obj"
+    }
+  }
+}

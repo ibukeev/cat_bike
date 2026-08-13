@@ -5,15 +5,15 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 right-eye C048 reinforcement-clearance review — trims only the
-  eye-side end of `R1_RET__R__C048__rib`; awaiting visual approval and not a
-  production Boolean, mirror, or print release:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/CAT_HEAD_RIGHT_EYE_C048_CLEARANCE_REVIEW_V1.FCStd`
-- C048 Blender comparison, validation, evidence, and checkpoint:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/CAT_HEAD_RIGHT_EYE_C048_CLEARANCE_REVIEW_V1.blend`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/validation-v1.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/`, and
-  `RIGHT_EYE_C048_CLEARANCE_REVIEW_V1_CHECKPOINT_2026-08-13.md`
+- Current HS-11 right-eye reinforcement-clearance V2 — gives both C046 and
+  C048 at least `4.0 mm` clearance from the V9 eye; awaiting visual approval
+  and not a production Boolean, mirror, or print release:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/CAT_HEAD_RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2.FCStd`
+- V2 Blender comparison, validation, evidence, and checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/CAT_HEAD_RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2.blend`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/validation-v2.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/`, and
+  `RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2_CHECKPOINT_2026-08-13.md`
 - Approved FreeCAD bilateral-eye exact-mirror review V9 — visually approved
   and promoted 2026-08-13; still not a print release:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/CAT_HEAD_EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9.FCStd`
@@ -46,19 +46,18 @@ current review is always easy to find.
 
 ## FreeCAD controlled-change pilot
 
-- Current HS-11 C048 clearance review — the user approved the V1 right flange
-  locations and identified `R1_RET__R__C048__rib` crossing the V9 eye. The
-  isolated proposal shortens only its eye-side end by `5.0767 mm`; the
-  remaining `51.3309 mm` closed rib retains the exact far end and lower-face
-  root, clears the V9 eye by `2.014 mm`, and clears the lower eye flange by
-  `13.6708 mm`. Awaiting visual approval; no owner Boolean, mirror, STL,
-  slicing, or print release:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/CAT_HEAD_RIGHT_EYE_C048_CLEARANCE_REVIEW_V1.FCStd`
-- C048 contract, validation, evidence, and checkpoint:
-  `config/right-eye-c048-clearance-review-v1.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/validation-v1.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1/review/`, and
-  `RIGHT_EYE_C048_CLEARANCE_REVIEW_V1_CHECKPOINT_2026-08-13.md`
+- Current HS-11 reinforcement-clearance V2 — the user accepted the C048 V1
+  direction but identified minor crowding at triangular C046. V2 moves C046
+  rigidly `4.229 mm` away and trims `8.4611 mm` from C048's eye-side end.
+  C046/C048 clear the V9 eye by `4.6063/4.0317 mm`, remain closed, retain
+  lower-face contact, and overlap each other. Awaiting visual approval; no
+  owner Boolean, mirror, STL, slicing, or print release:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/CAT_HEAD_RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2.FCStd`
+- V2 contract, validation, evidence, and checkpoint:
+  `config/right-eye-reinforcement-clearance-review-v2.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/validation-v2.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/review/`, and
+  `RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2_CHECKPOINT_2026-08-13.md`
 - Current bilateral-eye exact-mirror V9 review — the user-approved V8 right
   bucket and removable rear cap are unchanged; the left owners are exact
   `X=0` mirrors. All four are valid, watertight, one-solid owners with matching
