@@ -5,16 +5,21 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 internal-root proposal — adds only hidden owner-side embed to
-  the two right eye flanges and C048; all exact OCCT root/gap/clearance checks
-  pass. Awaiting visual approval; no owner Boolean, mirror, or print release:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/CAT_HEAD_RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1.FCStd`
-- Proposal contract, Blender context, evidence, validation, and checkpoint:
-  `config/right-eye-internal-root-embed-review-v1.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/CAT_HEAD_RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1.blend`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/validation-v1.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/review/`, and
-  `RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1_CHECKPOINT_2026-08-13.md`
+- Current HS-11 V2 eye-root proposal — preserves the accepted flanges and
+  replaces rejected V1's protruding tapered roots with straight `22 x 8 mm`
+  rectangular internal bases, `1.6 mm` into the owner and `0.4 mm` into the
+  accepted flange. Exact owner engagement is `59.1390 / 60.9575 mm3`; both
+  mating gaps remain `0.3000 mm`. Awaiting visual approval; no owner Boolean,
+  mirror, STL, G-code, or print release:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/CAT_HEAD_RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_V2.FCStd`
+- V2 contract, Blender context, evidence, validation, and checkpoint:
+  `config/right-eye-rectangular-root-review-v2.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/CAT_HEAD_RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_V2.blend`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/validation-v2.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/review/`, and
+  `RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_V2_CHECKPOINT_2026-08-13.md`
+- Rejected V1 is retained only as traceable evidence at
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/`.
 - Current HS-11 owner-integration audit — fail-closed because the two approved
   eye-side V3 flange roots and C048 have zero-depth owner contact; no printable
   Boolean was accepted. Open this to inspect the exact staged owners/features:

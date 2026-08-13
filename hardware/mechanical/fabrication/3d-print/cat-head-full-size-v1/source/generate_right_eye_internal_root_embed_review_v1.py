@@ -164,17 +164,31 @@ def intersection_volume(first, second) -> float:
         bpy.data.objects.remove(target, do_unlink=True); bpy.data.objects.remove(tool, do_unlink=True)
 
 
-def build_eye_root(name, flange, frame, embed, overlap, hole_diameter):
+def build_eye_root(name, flange, owner, frame, embed, overlap, hole_diameter, root_width, root_depth, flange_width):
     backing = frame["radial"]
     center = frame["eye_center"]
     owner_face = center + backing * frame["dimensions"][2] / 2.0
     old_owner_end = owner_face + backing * (4.0 - 0.8)
     root_material = material("PROPOSED_INTERNAL_ROOT_BUILD", (1.0, 0.03, 0.62, 1.0))
-    root = v2.tapered_prism(name, old_owner_end - backing * overlap, old_owner_end + backing * embed,
-                            frame["tangent"], frame["inward"], 16.0, 16.0, 12.0, 12.0, root_material)
-    gate6.cut_axis_hole(root, f"{name}__M2_5_CLEARANCE", frame["eye_hole_center"], frame["radial"], hole_diameter, 12.0)
+    shift = max(0.0, (root_width - flange_width) / 2.0)
+    candidates = []
+    for sign in (-1.0, 1.0):
+        shifted_start = old_owner_end - backing * overlap + frame["tangent"] * shift * sign
+        shifted_end = old_owner_end + backing * embed + frame["tangent"] * shift * sign
+        candidate = v2.tapered_prism(
+            f"{name}__DIRECTION_{int(sign):+d}", shifted_start, shifted_end,
+            frame["tangent"], frame["inward"], root_width, root_width,
+            root_depth, root_depth, root_material,
+        )
+        gate6.cut_axis_hole(candidate, f"{candidate.name}__M2_5_CLEARANCE", frame["eye_hole_center"], frame["radial"], hole_diameter, 12.0)
+        candidates.append((intersection_volume(candidate, owner), candidate))
+    candidates.sort(key=lambda item: item[0], reverse=True)
+    root = candidates[0][1]
+    bpy.data.objects.remove(candidates[1][1], do_unlink=True)
+    root.name = name
     proposal = duplicate(flange, name.replace("ROOT_ADDITION", "FLANGE_WITH_ROOT_EMBED"))
-    apply_union(proposal, duplicate(root, f"TOOL__{name}"), "UNION__INTERNAL_ROOT_EMBED")
+    if not root_width == 22.0:
+        apply_union(proposal, duplicate(root, f"TOOL__{name}"), "UNION__INTERNAL_ROOT_EMBED")
     return root, proposal
 
 
@@ -205,7 +219,8 @@ def export_obj(obj, path):
 
 
 def main():
-    config = json.loads(CONFIG_PATH.read_text(encoding="utf-8")); source = repo_path(config["source_reinforcement_blend"])
+    config_path = Path(sys.argv[sys.argv.index("--") + 1]).resolve() if "--" in sys.argv else CONFIG_PATH
+    config = json.loads(config_path.read_text(encoding="utf-8")); source = repo_path(config["source_reinforcement_blend"])
     if Path(bpy.data.filepath).resolve() != source: raise RuntimeError(f"open controlled reinforcement source: {source}")
     output = repo_path(config["output_dir"]); (output / "review").mkdir(parents=True, exist_ok=True)
     contract = config["locked_contract"]; names = config["objects"]
@@ -224,8 +239,10 @@ def main():
     for role in ("outer", "lower"):
         key = f"{role}_eye_flange"
         root, proposal = build_eye_root(f"PROPOSED__RIGHT_{role.upper()}_EYE_FLANGE__ROOT_ADDITION_V1",
-                                        flanges[names[key]], frame[role], contract["internal_embed_mm"],
-                                        contract["root_overlap_with_approved_feature_mm"], contract["m2_5_clearance_diameter_mm"])
+                                        flanges[names[key]], bucket, frame[role], contract["internal_embed_mm"],
+                                        contract["root_overlap_with_approved_feature_mm"], contract["m2_5_clearance_diameter_mm"],
+                                        contract.get("root_width_mm", 16.0), contract.get("root_depth_mm", 12.0),
+                                        contract.get("approved_flange_width_mm", contract.get("root_width_mm", 16.0)))
         root_additions[role] = root; eye_proposals[role] = proposal
 
     contact_faces = [int(contract["c048_root_side_face_index_zero_based"])]
@@ -236,7 +253,7 @@ def main():
             direction = base_normal * sign
             root = localized_prism_from_side_face(
                 f"TMP__C048_ROOT_FACE_{contact_face}_SIGN_{int(sign):+d}", c048, contact_face, direction,
-                contract["internal_embed_mm"], contract["root_overlap_with_approved_feature_mm"],
+                contract.get("c048_internal_embed_mm", contract["internal_embed_mm"]), contract["root_overlap_with_approved_feature_mm"],
                 contract["c048_root_safe_end_fraction"],
             )
             proposal = duplicate(c048, f"TMP__C048_PROPOSAL_FACE_{contact_face}_SIGN_{int(sign):+d}")
@@ -285,6 +302,7 @@ def main():
             "root_overlap_with_v9_bucket_mm3": intersection_volume(root, bucket),
             "proposal_overlap_with_v9_bucket_mm3": intersection_volume(proposal, bucket),
             "proposal_to_matching_head_flange_clearance_mm": round(distance(proposal, flanges[names[f"{role}_head_flange"]]), 4),
+            "freecad_exact_fuse_required": contract.get("root_width_mm") == 22.0,
         }
     c048_record = {
         "approved_contact_face_zero_based": contact_face,
@@ -337,7 +355,8 @@ def main():
     for obj in bpy.data.objects:
         if obj.type == "MESH": obj.hide_set(obj not in context); obj.hide_render = obj not in context
     scene["REVIEW_ONLY"] = True; scene["OWNER_BOOLEAN_PERFORMED"] = False; scene["MIRROR_PERFORMED"] = False; scene["PRINT_RELEASE"] = False
-    blend_path = output / "CAT_HEAD_RIGHT_EYE_INTERNAL_ROOT_EMBED_REVIEW_V1.blend"; bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
+    review_version = "V2" if contract.get("root_width_mm") == 22.0 else "V1"
+    blend_path = output / f"CAT_HEAD_RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_{review_version}.blend"; bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
     report = {
         "status": config["status"], "locked_contract": contract,
         "eye_flange_root_records": records, "c048_root_record": c048_record,
@@ -348,7 +367,7 @@ def main():
         "no_stl_or_gcode_exported": True, "holds": config["holds"],
         "generated_files": {"blend": str(blend_path.relative_to(REPO_ROOT)), "renders": renders, "review_objs": review_objs},
     }
-    (output / "validation-v1.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    (output / f"validation-{review_version.lower()}.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))
 
 
