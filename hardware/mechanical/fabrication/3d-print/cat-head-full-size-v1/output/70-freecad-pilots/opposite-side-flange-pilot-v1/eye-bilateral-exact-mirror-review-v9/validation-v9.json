@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "status": "BILATERAL_DIGITAL_PASS_AWAITING_VISUAL_APPROVAL",
+  "mirror_plane": "X=0 / YZ",
+  "objects": {
+    "right_bucket": {
+      "valid_closed_solid": true,
+      "self_intersection_free": true,
+      "shells": 1,
+      "solids": 1,
+      "faces": 630,
+      "edges": 1120,
+      "vertices": 481,
+      "volume_mm3": 6649.60,
+      "bbox_mm": {"x": [27.49, 104.18], "y": [49.33, 102.80], "z": [118.48, 179.13]}
+    },
+    "left_bucket": {
+      "valid_closed_solid": true,
+      "self_intersection_free": true,
+      "shells": 1,
+      "solids": 1,
+      "faces": 630,
+      "edges": 1120,
+      "vertices": 481,
+      "volume_mm3": 6649.60,
+      "bbox_mm": {"x": [-104.18, -27.49], "y": [49.33, 102.80], "z": [118.48, 179.13]}
+    },
+    "right_rear_cap": {
+      "valid_closed_solid": true,
+      "self_intersection_free": true,
+      "shells": 1,
+      "solids": 1,
+      "faces": 424,
+      "edges": 722,
+      "vertices": 294,
+      "volume_mm3": 4212.35,
+      "bbox_mm": {"x": [25.91, 99.90], "y": [61.84, 105.20], "z": [120.70, 176.86]}
+    },
+    "left_rear_cap": {
+      "valid_closed_solid": true,
+      "self_intersection_free": true,
+      "shells": 1,
+      "solids": 1,
+      "faces": 424,
+      "edges": 722,
+      "vertices": 294,
+      "volume_mm3": 4212.35,
+      "bbox_mm": {"x": [-99.90, -25.91], "y": [61.84, 105.20], "z": [120.70, 176.86]}
+    }
+  },
+  "mirror_equivalence": {
+    "bucket_topology_volume_and_yz_bounds_match": true,
+    "rear_cap_topology_volume_and_yz_bounds_match": true,
+    "x_bounds_are_exact_sign_reversals": true
+  },
+  "assembly": {
+    "right_bucket_cap_interference": false,
+    "right_bucket_cap_minimum_clearance_mm": 0.0239,
+    "left_bucket_cap_interference": false,
+    "left_bucket_cap_minimum_clearance_mm": 0.0239,
+    "right_left_bucket_interference": false,
+    "right_left_bucket_minimum_clearance_mm": 54.9791,
+    "right_left_rear_cap_interference": false,
+    "right_left_rear_cap_minimum_clearance_mm": 51.8270
+  },
+  "left_step_round_trip": {
+    "bucket_valid_closed_solid": true,
+    "bucket_faces_edges_vertices": [630, 1120, 481],
+    "bucket_volume_mm3": 6649.61,
+    "rear_cap_valid_closed_solid": true,
+    "rear_cap_faces_edges_vertices": [424, 722, 294],
+    "rear_cap_volume_mm3": 4212.35,
+    "self_intersection_free": true,
+    "bucket_cap_interference": false,
+    "minimum_bucket_cap_clearance_mm": 0.0239
+  },
+  "artifact_sha256": {
+    "CAT_HEAD_EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9.FCStd": "6b26b4ad7809cb0b46de88603c5f3464d429da2361123a8ae3a46ad0fc929303",
+    "CAT_HEAD_EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9.blend": "d43b445a8b9ff133ad1efaf8036ff072352d0c807146a21d94b88b1c13c50580",
+    "left_eye_bucket_exact_x0_mirror_v9.step": "6450be468392ad114e47afab8c301b1c8d7347f7b6777538f8fa8570cbfb979a",
+    "left_eye_rear_cap_exact_x0_mirror_v9.step": "b87a4fc7898c269a89498c8c1f5ed19eb0ef9e45c1e1a57b9245b07bbafc0dee"
+  },
+  "holds": [
+    "V9 visual approval",
+    "left production promotion",
+    "HS-11 all-eight-flange integration",
+    "final reinforcement and skirt clearance",
+    "STL export",
+    "slicing",
+    "ASA printing",
+    "fabrication release"
+  ]
+}

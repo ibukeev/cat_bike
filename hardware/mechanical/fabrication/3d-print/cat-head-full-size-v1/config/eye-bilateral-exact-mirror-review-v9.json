@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "review_id": "eye-bilateral-exact-mirror-review-v9",
+  "status": "REVIEW_ONLY_AWAITING_VISUAL_APPROVAL",
+  "single_problem": "Mirror the user-approved V8 right eye bucket and removable rear cap exactly to the left without changing either approved right owner.",
+  "mirror_datum": {
+    "plane": "YZ",
+    "equation": "X=0"
+  },
+  "accepted_right_sources": {
+    "bucket": {
+      "file": "production/eye-modules-v8/right/right_eye_bucket_production_owner_v8.step",
+      "sha256": "f952fd29451518eb8a019e8810fdfd043266486b568ec1d5c78a0525f2e2b2de"
+    },
+    "rear_cap": {
+      "file": "production/eye-modules-v8/right/right_eye_rear_cap_production_owner_v8.step",
+      "sha256": "fe647e10d1888211563bfe313adb27321a963c1a7beaf339e066f75b21ff444c"
+    }
+  },
+  "frozen": [
+    "approved V8 right-eye topology and volume",
+    "V6 continuous full-thickness bucket walls",
+    "V7 post-free removable rear cap",
+    "accepted lower and relocated upper M2.5 connector pair",
+    "exact upper-head and ear owners",
+    "lower-face and rear-cassette ownership",
+    "C006 reinforcement direction",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "numeric_contract": {
+    "right_geometry_change_mm": 0.0,
+    "mirror_coordinate_rule": "(-x,y,z)",
+    "topology_counts_must_match_per_mirrored_pair": true,
+    "volume_tolerance_mm3": 0.01,
+    "unintended_interference_allowed": false,
+    "required_solids_per_owner": 1,
+    "required_shells_per_owner": 1,
+    "self_intersection_allowed": false
+  },
+  "review_condition": "Approve only if the left owners are exact bilateral counterparts, both eyes occupy the intended full-head locations, and no detached strips, rejected posts, obsolete pockets, or unexplained geometry are present.",
+  "release_holds": [
+    "visual approval of V9",
+    "production integration of left owners",
+    "HS-11 eight-flange integration",
+    "final reinforcement and skirt clearance",
+    "STL export",
+    "slicing",
+    "ASA printing",
+    "fabrication release"
+  ]
+}
