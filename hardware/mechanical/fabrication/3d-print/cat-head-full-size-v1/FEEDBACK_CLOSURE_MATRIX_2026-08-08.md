@@ -48,25 +48,25 @@ required reserve is `20 mm` total for `10 mm` per side, before brim/support.
 | F-07 | Ear-root insertion-fit V3 includes 13 mm corner relief. | Accepted review/digital pass; physical hold. | Print the fit coupon. |
 | F-08 | V3 lower-center relief and 41-sample path per side clear digitally. | Accepted review/digital pass; physical hold. | Include the lower center in the fit/service test. |
 | F-09 | V3 has 2.5 mm deep-body and 1.0 mm cap clearance. | Accepted review/digital pass; physical hold. | Confirm real ASA tolerance by hand fit. |
-| F-10 | V10/A-B uses seated datums and separated retention points; right-A hardware, right-B relief, and selected legacy-projection removal are visually approved. | Layout and A hardware accepted; right-B and production hold. | Drill and validate B, then integrate right side only after approval. |
+| F-10 | V10/A-B uses seated datums and separated retention points. Right and mirrored-left owner integrations, including repaired C001/C003, passed bilateral digital validation and visual review by 2026-08-10. | Bilateral integrated review accepted; production and physical holds remain. | Preserve the accepted owners; freeze exact print orientation and qualify the insert joint physically before print release. |
 | F-11 | Two widely separated sets replace the continuous connector. | Accepted layout; production hold. | Finish right A/B; mirror only after approval. |
-| F-12 | Broad roots and the right-A short-insert/25-degree tool-access contract are visually approved. | Digital pass; physical coupon/production hold. | Print the exact-orientation ASA insert coupon and test torque/pull-out. |
+| F-12 | Broad roots and both 25-degree tool paths pass. A V4 and B V2 surface-open cavities are approved and remain valid after right-side owner union. | Integrated digital pass; physical coupon and production hold. | Freeze the upper-head print orientation, then print the exact-orientation ASA insert coupon and test installation, torque, and pull-out. |
 | F-13 | Widely separated A/B points target outer-root flapping. | Accepted layout; production/physical hold. | Integrate one side and perform anti-flap hand test. |
 | F-14 | Outer grounding uses the under-ear owner pair, not an exterior stick. | Accepted layout; production/physical hold. | Same one-side integration and test as F-13. |
 | F-15 | Old central back-skirt is uncorrected against final reinforcement. | Open. | Select exact collision faces for a one-panel proposal. |
 | F-16 | Old two-top-flange central-panel layout is uncorrected. | Open. | Select the lower vertical nose owner for a third broad point. |
 | F-17 | Front nose skirt/connector has no accepted corrected review. | Open. | Identify the exact part and collision faces. |
 | F-18 | Side-panel side/STL and collision faces are not confirmed. | Open. | Identify the side and two owner regions. |
-| F-19 | Eye insertion against final reinforcement/skirts has not passed. | Open integration test. | Rebuild right eye as one body, then test in full context. |
-| F-20 | Eye broad-base V3 separated pairs were accepted. | Accepted review; production/access hold. | Union one right eye pair into owners and validate access. |
-| F-21 | One rear-cap connector has not moved from lower to upper. | Open. | Select cap/bucket faces and review one-side relocation. |
-| F-22 | Pin-to-pin ear interface lacks an accepted hole/slot rebuild. | Open. | Select flange pair; review 3.4 mm hole plus 3.4 x 5 mm slot. |
-| F-23 | Current eye buckets still contain six slicer parts. | Open geometry; hard validator active. | True-union right bezel/chamber/features; require one part. |
+| F-19 | V8 promotes one valid right bucket and one valid removable cap with zero interference; final reinforcement/skirts are not yet in the same review. | Right owner digital pass; full-context hold. | Approve V8, mirror, then test bilateral insertion/removal against final reinforcement and skirts. |
+| F-20 | The accepted right connector owners are included in the single-solid V8 bucket/cap; topology and owner-to-owner clearance pass. Head-owner flange integration and final tool access remain HS-11. | Right eye-owner digital pass; head-owner/access hold. | Complete bilateral eye module review, then union all eight eye/head flanges in HS-11. |
+| F-21 | The accepted retained lower and relocated upper M2.5 connector features are present in V8; exactly one bucket and one cap solid result. | Right-side production-owner digital pass; bilateral review hold. | Visually approve clean V8 and exact-mirror the approved owners. |
+| F-22 | The original broad right-side pair has exactly two M3 paths. Ear flush-cut V2 removes 656.3880 mm3 including the 33.38 mm3 V1 root residue. Recovery V1 was then rejected because stale upper-head context resurrected a separate four-aperture lattice. Clean-owner recovery V2 removes only that additional 8.09 mm3; both owners remain valid closed solids, bounds are unchanged, and original pair engagement remains 524.2914/511.0390 mm3 on head/ear. | Clean-owner recovery V2 digitally valid; visual approval and owner integration open. | Approve clean-owner V2; integrate/review the exact two-bolt pair in copied right owners before any mirror. |
+| F-23 | Right V8 bucket is one valid closed solid (`630` faces, `6649.60 mm3`); STEP round-trip retains one solid. Left is not yet promoted. | Right-side digital pass; bilateral hold. | Approve V8, exact-mirror, and verify both promoted buckets remain one intended solid. |
 | F-24 | C002 remains rejected; broad-base V3 was accepted. | Accepted review; production/insertion hold. | Integrate one right pair without restoring C002. |
 | F-25 | Clean references exist; final reinforcement is not clipped/unioned. | Partial; production hold. | Add exterior-deviation gate during unified integration. |
 | F-26 | Shells report 61/61/41/42 slicer parts. | FAIL; hard Gate 3–8 validator added. | Replace append/join export with approved true owner unions. |
 | F-27 | Requested rail/tie direction was accepted as “much better.” | Accepted review; seam integration open. | Assign complementary seam ownership and collision-test pairs. |
-| F-28 | Eye bezel/chamber remains weak and disconnected. | Open geometry; hard validator active. | Add broad right-eye shoulder and prove one-body topology. |
+| F-28 | User-approved V6 extends both full-thickness main walls to the selected termination plane; V8 bucket is one valid solid and the detached strips are absent. | Right-side integrated digital pass; bilateral/full-context hold. | Approve V8, exact-mirror, and validate both eyes in full-head context. |
 | F-29 | V5 seam accepted; current lower parts fail 10 mm margin. | Accepted direction; hard margin gate added. | Complete bodies, slice with brim/support, verify 10 mm margins. |
 
 ## Acceptance-test grouping
@@ -86,12 +86,14 @@ required reserve is `20 mm` total for `10 mm` per side, before brim/support.
 
 ## Next controlled sequence
 
-1. Print and destructively test the approved right-A short-insert coupon while
-   right-B hole/fastener/access work proceeds.
-2. After B approval, integrate only approved right A/B and rerun topology,
-   clearance, access, exterior, and insertion checks.
-3. Build the right eye as the next one-body proposal only after selecting its
-   bezel/chamber owner faces and numeric shoulder contract.
+1. Visually review the clean right-eye V8 production owners: unchanged
+   exterior/aperture, continuous bucket walls, removable post-free cap, and
+   exactly the retained lower plus relocated upper M2.5 connector pair.
+2. After explicit V8 approval, exact-mirror the approved right owners across
+   `X = 0`, rerun topology/self-intersection/interference gates on both sides,
+   and show both eyes in full-head context.
+3. Complete HS-11 by integrating all eight already-approved eye/head flange
+   roots and verifying the final tool paths; do not restore C002.
 4. Hold central/front/side panels until exact parts and collision faces are
    identified.
 5. Do not export production STL or start structural ASA printing until the

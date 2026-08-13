@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "status": "RIGHT_SIDE_PRODUCTION_OWNERS_VALIDATED_NOT_PRINT_RELEASED",
+  "source_review": "right-eye-remove-cap-posts-review-v7/CAT_HEAD_RIGHT_EYE_REMOVE_CAP_POSTS_REVIEW_V7.FCStd",
+  "source_review_sha256": "922eeefbe6850cc2a675d6695b82aa1fb1a7cc928ce4beb3253c01bd59083fa6",
+  "approved_contract": {
+    "preserve_v6_continuous_full_thickness_walls": true,
+    "remove_four_rear_cap_posts": true,
+    "restore_four_obsolete_bucket_post_pockets": true,
+    "preserve_one_upper_and_one_lower_m2_5_connector_pair": true,
+    "preserve_wire_port": true,
+    "preserve_diffuser": true,
+    "replacement_stoppers_added": false
+  },
+  "bucket": {
+    "file": "right_eye_bucket_production_owner_v8.step",
+    "valid_closed_solid": true,
+    "self_intersection_free": true,
+    "shells": 1,
+    "solids": 1,
+    "faces": 630,
+    "edges": 1120,
+    "vertices": 481,
+    "volume_mm3": 6649.60,
+    "bbox_mm": {
+      "x": [27.49, 104.18],
+      "y": [49.33, 102.80],
+      "z": [118.48, 179.13]
+    }
+  },
+  "rear_cap": {
+    "file": "right_eye_rear_cap_production_owner_v8.step",
+    "valid_closed_solid": true,
+    "self_intersection_free": true,
+    "shells": 1,
+    "solids": 1,
+    "faces": 424,
+    "edges": 722,
+    "vertices": 294,
+    "volume_mm3": 4212.35,
+    "bbox_mm": {
+      "x": [25.91, 99.90],
+      "y": [61.84, 105.20],
+      "z": [120.70, 176.86]
+    }
+  },
+  "assembly": {
+    "bucket_cap_interference": false,
+    "minimum_bucket_cap_clearance_mm": 0.0239,
+    "known_near_contact_unchanged_from_approved_v7": true
+  },
+  "round_trip": {
+    "format": "STEP",
+    "bucket_topology_volume_and_bounds_match_v7": true,
+    "rear_cap_topology_volume_and_bounds_match_v7": true,
+    "bucket_cap_interference_after_reimport": false
+  },
+  "holds": [
+    "left_mirror",
+    "bilateral_full_head_integration",
+    "STL_export",
+    "slicing",
+    "ASA_printing",
+    "fabrication_release"
+  ]
+}

@@ -5,6 +5,9 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current FreeCAD right-eye production-owner review (V8; awaiting visual
+  approval before any mirror or print release):
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-production-owner-review-v8/CAT_HEAD_RIGHT_EYE_PRODUCTION_OWNER_REVIEW_V8.FCStd`
 - Current Blender review:
   `output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend`
 - Current validation:
@@ -26,6 +29,87 @@ current review is always easy to find.
   `ear-root-marked-relocation-m3-through-bolt-{left,right}-{a,b}-{orange,green}-owner-root.png`.
 
 ## FreeCAD controlled-change pilot
+
+- Current right-eye production-owner review V8 — exact promotion of the
+  user-approved V6 continuous-wall bucket and V7 post-free removable cap.
+  The clean file contains only the bucket, cap, and frozen diffuser context;
+  no left mirror, STL, slicing, or print release:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-production-owner-review-v8/CAT_HEAD_RIGHT_EYE_PRODUCTION_OWNER_REVIEW_V8.FCStd`
+- V8 validation and checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-production-owner-review-v8/validation-v8.json` and
+  `RIGHT_EYE_PRODUCTION_OWNER_REVIEW_V8_CHECKPOINT_2026-08-12.md`
+- Controlled right production inputs:
+  `production/eye-modules-v8/right/`
+
+- Current right primary-ear integrated through-channel V3 — the V4 clean
+  owners are cut first, then unioned to the unchanged compact flanges. Two
+  full-length 3.0 mm shaft proofs clear both integrated owners by at least
+  `0.1946 mm` radially. The head retains two round 3.4 mm channels; the ear
+  retains one round channel plus one `3.4 x 5.0 mm` slot. Awaiting visual
+  approval; no left mirror, export, or print release:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-integrated-through-channel-review-v3/CAT_HEAD_RIGHT_PRIMARY_EAR_INTEGRATED_THROUGH_CHANNEL_REVIEW_V3.FCStd`
+- Integration contract, validation, and checkpoint:
+  `config/right-primary-ear-integrated-through-channel-review-v3.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-integrated-through-channel-review-v3/validation-v3.json`, and
+  `RIGHT_PRIMARY_EAR_INTEGRATED_THROUGH_CHANNEL_REVIEW_V3_CHECKPOINT_2026-08-11.md`
+- The clean-owner compact-pair V4 below is the preserved isolated source
+  review for this integration, not the active review. It uses the untouched
+  repaired upper head and flush-clean ear. The
+  approved-direction V3 flange solids are copied without geometric change:
+  existing two bolt axes, `21.5 x 10.4 x 4.0 mm` envelopes, `1.20 mm` owner
+  embed, and exact `0.3500 mm` pair gap. Digital gates pass; awaiting visual
+  approval. The flanges are separate proposals and do not drill the owners.
+  No mirroring, export, or print release:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-clean-owner-compact-pair-review-v4/CAT_HEAD_RIGHT_PRIMARY_EAR_CLEAN_OWNER_COMPACT_PAIR_REVIEW_V4.FCStd`
+- V4 contract, validation, evidence, and checkpoint:
+  `config/right-primary-ear-clean-owner-compact-pair-review-v4.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-clean-owner-compact-pair-review-v4/validation-v4.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-clean-owner-compact-pair-review-v4/review/`, and
+  `RIGHT_PRIMARY_EAR_CLEAN_OWNER_COMPACT_PAIR_REVIEW_V4_CHECKPOINT_2026-08-11.md`
+- Corrected structured source audit — proves the exact `623.007 mm3`
+  rectangular four-hole legacy extrusion belongs to the ear owner, not the
+  upper-head owner:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-owner-source-audit-v1/CAT_HEAD_RIGHT_PRIMARY_EAR_OWNER_SOURCE_AUDIT_V1.FCStd`
+- Superseded Face2 compact-pair V3 — flange geometry remains reusable, but its
+  owner context used an upper-head copy with an unnecessary `8.09 mm3` cut.
+  Do not use V3 as an integration, mirror, export, or print source:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-face2-compact-pair-review-v3/CAT_HEAD_RIGHT_PRIMARY_EAR_FACE2_COMPACT_PAIR_REVIEW_V3.FCStd`
+
+- Rejected Face2 compact V2 — `20.0 mm` width left only `2.75 mm` outside
+  the ear-side slot, below the `3.50 mm` material gate:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-face2-compact-pair-review-v2/CAT_HEAD_RIGHT_PRIMARY_EAR_FACE2_COMPACT_PAIR_REVIEW_V2.FCStd`
+- Rejected Face2 compact V1 — `1.10 mm` embed left only `76.4957 mm3`
+  ear-owner overlap, below the `80.0 mm3` gate. See
+  `RIGHT_PRIMARY_EAR_FACE2_COMPACT_PAIR_REVIEW_V1_CHECKPOINT_2026-08-11.md`.
+
+- Superseded clean-owner recovery V2 remains the preserved broad-pair
+  baseline before the approved compacting direction:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-clean-owner-dual-bolt-flange-pair-recovery-review-v2/CAT_HEAD_RIGHT_PRIMARY_EAR_CLEAN_OWNER_DUAL_BOLT_FLANGE_PAIR_RECOVERY_REVIEW_V2.FCStd`
+
+- Rejected recovery V1 — it restored the correct original flange pair but
+  reused stale upper-head context containing the obsolete four-aperture lattice:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-original-dual-bolt-flange-pair-recovery-review-v1/CAT_HEAD_RIGHT_PRIMARY_EAR_ORIGINAL_DUAL_BOLT_FLANGE_PAIR_RECOVERY_REVIEW_V1.FCStd`
+
+- Rejected compact replacement review — digital gates passed, but it
+  misunderstood the request and visually buried/partially destroyed the
+  established pair; do not integrate, mirror, export, or print:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-style-compact-two-hole-review-v1/CAT_HEAD_RIGHT_PRIMARY_EAR_LEGACY_STYLE_COMPACT_TWO_HOLE_REVIEW_V1.FCStd`
+- Rejected compact review contract, validation, and checkpoint:
+  `config/right-primary-ear-legacy-style-compact-two-hole-review-v1.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-style-compact-two-hole-review-v1/validation-v1.json`, and
+  `RIGHT_PRIMARY_EAR_LEGACY_STYLE_COMPACT_TWO_HOLE_REVIEW_V1_CHECKPOINT_2026-08-11.md`
+
+- Rejected right primary-ear inboard-lateral flange review — V4 passed
+  topology and owner-root checks but failed user visual review because the
+  flange still protrudes beyond the local ear surface; do not integrate,
+  mirror, export, or print:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-flange-inboard-lateral-review-v4/CAT_HEAD_RIGHT_PRIMARY_EAR_FLANGE_INBOARD_LATERAL_REVIEW_V4.FCStd`
+- V4 contract, validation, and checkpoint:
+  `config/right-primary-ear-flange-inboard-lateral-review-v4.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-flange-inboard-lateral-review-v4/validation-v4.json`, and
+  `RIGHT_PRIMARY_EAR_FLANGE_INBOARD_LATERAL_REVIEW_V4_CHECKPOINT_2026-08-11.md`
+- Restored clean pre-relocation baseline for the next controlled proposal:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-flange-flush-owner-cut-review-v2/CAT_HEAD_RIGHT_PRIMARY_EAR_LEGACY_FLANGE_FLUSH_OWNER_CUT_REVIEW_V2.FCStd`
 
 - Pilot document:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1.FCStd`
@@ -82,8 +166,68 @@ current review is always easy to find.
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd`
 - Right A tool-access numeric contract and validation:
   `config/right-a-tool-access-audit-v1.json`
+- Corrected right-A surface-open insert review — digitally validated and user
+  visually approved 2026-08-09; prior trapped V3 pocket rejected:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-surface-open-insert-correction-v1/CAT_HEAD_RIGHT_A_SURFACE_OPEN_INSERT_CORRECTION_V1.FCStd`
+- Corrected right-A contract and checkpoint:
+  `config/right-a-surface-open-insert-correction-v1.json` and
+  `RIGHT_A_SURFACE_OPEN_INSERT_CORRECTION_V1_CHECKPOINT_2026-08-09.md`
+- Final right-B surface-open hole/access review — digitally validated and user
+  visually approved 2026-08-09:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-hole-access-review-v1/CAT_HEAD_RIGHT_B_HOLE_ACCESS_REVIEW_V1.FCStd`
+- Final right-B contract and checkpoint:
+  `config/right-b-hole-access-review-v1.json` and
+  `RIGHT_B_HOLE_ACCESS_REVIEW_V1_CHECKPOINT_2026-08-09.md`
+- Integrated right-side A/B owner review — digital pass and user visually
+  approved 2026-08-09; not print-ready:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-owner-integration-review-v1/CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd`
+- Integrated right-side contract and checkpoint:
+  `config/right-ab-owner-integration-review-v1.json` and
+  `RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1_CHECKPOINT_2026-08-09.md`
+- Bilateral A/B mirror review — left panel integrated successfully; mirrored
+  left head-tab placement visually approved and frozen 2026-08-09; left C001
+  production union remains blocked and this is not a print release:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/bilateral-ab-mirror-review-v1/CAT_HEAD_BILATERAL_AB_MIRROR_REVIEW_V1.FCStd`
+- Bilateral review evidence, contract, and checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/bilateral-ab-mirror-review-v1/review/`,
+  `config/bilateral-ab-mirror-review-v1.json`, and
+  `BILATERAL_AB_MIRROR_REVIEW_V1_CHECKPOINT_2026-08-09.md`
+- Current isolated left-C001 topology/integration review — FreeCAD Part and
+  A/B review-copy union gates pass; one marked `0.2343 mm` exterior
+  triangulation reinterpretation awaits visual approval; not print-ready:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c001-topology-repair-v2/CAT_HEAD_LEFT_UPPER_HEAD_C001_AB_INTEGRATION_REVIEW_V2.FCStd`
+- Left-C001 V2 evidence, numeric contract, and checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c001-topology-repair-v2/review/`,
+  `config/left-upper-head-c001-topology-repair-review-v2.json`, and
+  `LEFT_UPPER_HEAD_C001_TOPOLOGY_REPAIR_V2_CHECKPOINT_2026-08-09.md`
+- Complete-left-owner C001 integration review — user visually approved
+  2026-08-10; C001 V2 and A/B are integrated; C002-C041 are exact; inherited
+  C003 remains a separate OCCT-invalid hold; not print-ready:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-full-owner-c001-integration-v1/CAT_HEAD_LEFT_FULL_OWNER_C001_AB_BILATERAL_VALIDATION_V1.FCStd`
+- Complete-left-owner evidence, contract, validation, and checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-full-owner-c001-integration-v1/review/`,
+  `config/left-upper-head-full-owner-c001-integration-v1.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-full-owner-c001-integration-v1/validation.json`, and
+  `LEFT_UPPER_HEAD_FULL_OWNER_C001_INTEGRATION_V1_CHECKPOINT_2026-08-10.md`
+- Current C003 isolated topology proposal — Blender and FreeCAD/OCCT gates
+  pass; the minimal five-object FCStd is saved; awaiting visual approval before
+  owner integration:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c003-topology-repair-v1/CAT_HEAD_LEFT_UPPER_HEAD_C003_TOPOLOGY_REPAIR_REVIEW_V1.FCStd`
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c003-topology-repair-v1/CAT_HEAD_LEFT_UPPER_HEAD_C003_TOPOLOGY_REPAIR_REVIEW_V1.blend`
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c003-topology-repair-v1/PROPOSED__LEFT_UPPER_HEAD_C003__TOPOLOGY_REPAIR_V1.stl`
+- C003 proposal evidence, contract, validation, and checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c003-topology-repair-v1/review/`,
+  `config/left-upper-head-c003-topology-repair-review-v1.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c003-topology-repair-v1/validation.json`, and
+  `LEFT_UPPER_HEAD_C003_TOPOLOGY_REPAIR_V1_CHECKPOINT_2026-08-10.md`
+- Frozen C003 anchor diagnostic (source-only):
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c003-topology-repair-v1/CAT_HEAD_LEFT_UPPER_HEAD_C003_ANCHOR_DIAGNOSTIC_V1.FCStd`
+- Pre-proposal diagnostic copy — does not contain the proposal and must not be approved:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c003-topology-repair-v1/CAT_HEAD_LEFT_UPPER_HEAD_C003_PRE_PROPOSAL_DIAGNOSTIC_COPY_V1.FCStd`
 - Current print-readiness dashboard:
   `PRINT_READINESS_DASHBOARD_2026-08-08.md`
+- Canonical head-shell completion tracker:
+  `HEAD_SHELL_COMPLETION_TRACKER.md`
 - Short return review queue:
   `RETURN_REVIEW_QUEUE_2026-08-08.md`
 - Physical-feedback closure matrix:
@@ -208,6 +352,17 @@ remain held.
   These are not integrated CAD baselines or print releases.
 
 ## Current decision state
+
+The C001+C003 copied complete-left-owner integration was visually approved on
+2026-08-10 with `LGTM - they look similar`; HS-08 is closed. The current active
+review is the F-22 copied-owner flush-cut V2:
+`output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-flange-flush-owner-cut-review-v2/CAT_HEAD_RIGHT_PRIMARY_EAR_LEGACY_FLANGE_FLUSH_OWNER_CUT_REVIEW_V2.FCStd`.
+V1 is rejected because its deliberate `0.20 mm` root skin remained visible.
+V2 removes that additional `33.38 mm3` and `656.3880 mm3` total. The result
+is one valid closed solid with unchanged exterior bounds and unchanged
+`511.0390 mm3` replacement-pair engagement. The source owner and replacement
+pair remain frozen. Integration, left mirror, export, and print release have
+not occurred.
 
 The requested reinforcement additions were reviewed as “much better” on
 2026-08-05. That acceptance applies only to the reinforcement direction; it is
