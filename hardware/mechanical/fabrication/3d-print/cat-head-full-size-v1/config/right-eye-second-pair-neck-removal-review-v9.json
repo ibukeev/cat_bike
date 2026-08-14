@@ -1,0 +1,22 @@
+{
+  "schema_version": 9,
+  "status": "isolated right-side deletion proposal; preserve both existing flange pairs and remove only the disconnected legacy lower-face neck component; no owner integration, mirror, STL, G-code, or print release",
+  "source_v7_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/CAT_HEAD_RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7.blend",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9",
+  "locked_contract": {
+    "removed_component_vertex_count": 65,
+    "removed_component_face_count": 32,
+    "removed_component_bbox_min_mm": [59.88083, 58.73140, 117.14426],
+    "removed_component_bbox_max_mm": [74.04919, 70.71507, 122.48790],
+    "bbox_tolerance_mm": 0.001,
+    "maximum_component_distance_to_lower_head_flange_mm": 0.001,
+    "mating_gap_mm": 0.3,
+    "maximum_pair_gap_error_mm": 0.01
+  },
+  "holds": [
+    "Do not move, resize, rotate, rebuild, or replace either flange pair.",
+    "Delete exactly one disconnected lower-face component: the 65-vertex, 32-face component locked by the bounding box and zero-distance tests.",
+    "Do not cut the remaining lower-face shell or any upper-head, eye-bucket, rear-cassette, C006, C046, C048, or aluminum-interface geometry.",
+    "No owner integration, left mirror, STL, G-code, slicing, ASA printing, or print release before explicit visual approval."
+  ]
+}

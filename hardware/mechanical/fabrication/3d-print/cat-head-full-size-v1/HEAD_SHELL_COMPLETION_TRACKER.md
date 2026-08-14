@@ -12,14 +12,13 @@ estimate. An accepted isolated review is crossed off only when that gate's
 stated exit condition is satisfied; it does not imply that the geometry is
 already integrated or printable.
 
-**Next active work:** `HS-11`. V8 was rejected because it fabricated a duplicate
-inner-upper pair instead of modifying the existing second pair. The cleaned V8
-review restores the unchanged V7 second pair for identification. Its head leaf
-is `25.4458 mm` from the upper head, overlaps the upper head by `0.0 mm3`, and
-still overlaps the lower face by `26.2422 mm3`; therefore direct upper-head
-ownership cannot be claimed without relocating the interface or adding a
-forbidden bridge. C046/C048 and every frozen workstream remain unchanged.
-Owner integration, bilateral mirror/validation, and print release remain held.
+**Next active work:** `HS-11`. V9 preserves both existing V7 flange pairs and
+removes only the obsolete lower-head neck/residue beneath the second head-side
+flange. The exact deletion is isolated and digitally validated: one connected
+component removed, all four flange fingerprints unchanged, second-pair gap
+`0.3000 mm`, and zero pair interference. The inherited revised lower-face mesh
+still fails FreeCAD watertight/self-intersection checks, so production-owner
+integration, bilateral mirror/validation, and print release remain held.
 `HS-04` remains queued until final upper-head print orientation is frozen.
 
 ## Progress table
@@ -36,7 +35,7 @@ Owner integration, bilateral mirror/validation, and print release remain held.
 | HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
 | HS-09 | [x] | ~~Finish remaining primary ear interface~~ | User visually approved the clean bilateral V2 on 2026-08-11. V2 contains only the approved right head/ear final solids and their exact `X=0` mirrors; the stale left owner, four-hole lattice, pins, and proof shafts are absent. All four solids are valid, closed, self-intersection-free, and the mirrored topology, volume, area, and bounds match. | Preserve `CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd` unchanged through final full-head integration. |
 | HS-10 | [x] | ~~Build each eye bucket and rear cap as one serviceable module~~ | V9 was visually approved and promoted on 2026-08-13. Both bilateral bucket/cap pairs are valid, watertight, one-solid, self-intersection-free, topology/volume matched, STEP-round-trip verified, and retain the non-interfering `0.0239 mm` service gap. | Preserve `production/eye-modules-v9/` unchanged through HS-11 and later full-head validation. |
-| HS-11 | [ ] | Integrate and validate all eight eye flanges | Right locations and C046/C048 V2 were visually approved. V8 inner-upper additions were rejected as duplicate/wrong-interface geometry. Cleaned V8 restores the existing second V7 pair: exact topology, `0.3000 mm` gap, and zero pair interference pass, but its head leaf has no upper-head overlap and remains lower-face owned. | Resolve the ownership/location conflict without a pole or bridge; approve an isolated right-side proposal, then integrate copied owners, revalidate hardware/clearance/exterior, mirror exactly, and repeat bilaterally. |
+| HS-11 | [ ] | Integrate and validate all eight eye flanges | Right locations and C046/C048 V2 were visually approved. V9 preserves both existing V7 pairs and deletes only the obsolete lower-head neck component; all flange geometry is unchanged and the second pair remains at `0.3000 mm` with zero interference. The revised lower-face review mesh is not yet a watertight FreeCAD solid. | Visually approve V9, repair the inherited lower-face topology without changing its exterior, integrate copied owners, revalidate hardware/clearance/exterior, mirror exactly, and repeat bilaterally. |
 | HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
 | HS-13 | [ ] | Integrate lower face and rear cassette around aluminum | Lossless V5 ownership direction is accepted; production owners and final cassette are not unified. | Lower faces are reduced as approved, transferred geometry belongs to one cassette, and V0.5-M2 rail/plate insertion and removal remain unobstructed. |
 | HS-14 | [ ] | Add final cassette M5 pads and service sockets | Legacy Gate 8 pads are invalid; the real rail and 21.00 mm serviceable socket still require qualification. | Actual rail measured; socket/cap coupon passes; cassette pads/sockets integrate with hardware and tool access. |
@@ -84,6 +83,7 @@ condition, saved evidence, and affected checkpoint must all be updated.
 - [Right eye rectangular internal-base V2 checkpoint](RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_V2_CHECKPOINT_2026-08-13.md)
 - [Current right-eye all-four local-skin clip V7 checkpoint](RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7_CHECKPOINT_2026-08-13.md)
 - [Current right-eye upper-head-only dual-pair V8 checkpoint](RIGHT_EYE_UPPER_HEAD_ONLY_DUAL_PAIR_REVIEW_V8_CHECKPOINT_2026-08-13.md)
+- [Current right-eye second-pair neck-removal V9 checkpoint](RIGHT_EYE_SECOND_PAIR_NECK_REMOVAL_REVIEW_V9_CHECKPOINT_2026-08-14.md)
 - [Superseded right-eye head-flange exterior-clip V6 checkpoint](RIGHT_EYE_HEAD_FLANGE_EXTERIOR_CLIP_REVIEW_V6_CHECKPOINT_2026-08-13.md)
 - [Superseded right-eye all-four plain-flange thickness V5 checkpoint](RIGHT_EYE_ALL_FOUR_PLAIN_FLANGE_THICKNESS_REVIEW_V5_CHECKPOINT_2026-08-13.md)
 - [Rejected right-eye outer-pair radial-thickness V4 checkpoint](RIGHT_EYE_OUTER_PAIR_RADIAL_THICKNESS_REVIEW_V4_CHECKPOINT_2026-08-13.md)

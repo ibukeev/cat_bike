@@ -1,0 +1,141 @@
+{
+  "status": "isolated right-side deletion proposal; preserve both existing flange pairs and remove only the disconnected legacy lower-face neck component; no owner integration, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "removed_component_vertex_count": 65,
+    "removed_component_face_count": 32,
+    "removed_component_bbox_min_mm": [
+      59.88083,
+      58.7314,
+      117.14426
+    ],
+    "removed_component_bbox_max_mm": [
+      74.04919,
+      70.71507,
+      122.4879
+    ],
+    "bbox_tolerance_mm": 0.001,
+    "maximum_component_distance_to_lower_head_flange_mm": 0.001,
+    "mating_gap_mm": 0.3,
+    "maximum_pair_gap_error_mm": 0.01
+  },
+  "removed_component": {
+    "vertex_count": 65,
+    "face_count": 32,
+    "bbox_min_mm": [
+      59.88083,
+      58.7314,
+      117.14426
+    ],
+    "bbox_max_mm": [
+      74.04919,
+      70.71507,
+      122.4879
+    ],
+    "minimum_vertex_distance_to_flange_mm": 0.0
+  },
+  "lower_face_before": {
+    "topology": {
+      "vertices": 1622,
+      "edges": 2667,
+      "faces": 1131,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121419.4251
+    },
+    "component_count": 63,
+    "fingerprint": "db0f4628027768faaa160dc6a5501ce3a54433e27663222b2ebea68bf1db7721"
+  },
+  "lower_face_after": {
+    "topology": {
+      "vertices": 1557,
+      "edges": 2570,
+      "faces": 1099,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121203.5966
+    },
+    "component_count": 62,
+    "fingerprint": "8a7b8ea56c6b9dd129e9b031bf265e0992627dc4de5db5e33039dab0cf4ad2d2"
+  },
+  "flanges": {
+    "outer_head": {
+      "source_object": "PROPOSED__RIGHT_OUTER_HEAD__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "review_object": "RETAINED__V9__OUTER_HEAD__UNCHANGED",
+      "fingerprint": "7031c4eb248a0a49d370e8f3c6e777a4a8a1f821907b9ad4c3c5579e12250132",
+      "topology": {
+        "vertices": 62,
+        "edges": 186,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 323.1773
+      }
+    },
+    "outer_eye": {
+      "source_object": "PROPOSED__RIGHT_OUTER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "review_object": "RETAINED__V9__OUTER_EYE__UNCHANGED",
+      "fingerprint": "b8960db4b8ae67bc426db8411ec92336e6364919d260c8defc6841f13dbbee4d",
+      "topology": {
+        "vertices": 76,
+        "edges": 228,
+        "faces": 152,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.6557
+      }
+    },
+    "second_head": {
+      "source_object": "PROPOSED__RIGHT_LOWER_HEAD__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "review_object": "RETAINED__V9__SECOND_HEAD__UNCHANGED",
+      "fingerprint": "87b2150d9b67e282994f2ccf6f6b0d7954ed3491608f7de489979b67f476f88e",
+      "topology": {
+        "vertices": 59,
+        "edges": 177,
+        "faces": 118,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 421.4876
+      }
+    },
+    "second_eye": {
+      "source_object": "PROPOSED__RIGHT_LOWER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "review_object": "RETAINED__V9__SECOND_EYE__UNCHANGED",
+      "fingerprint": "7206b381c3be8150a416a789875f225ca9b85862d54f847290cd0239271031ed",
+      "topology": {
+        "vertices": 68,
+        "edges": 204,
+        "faces": 136,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 394.7601
+      }
+    }
+  },
+  "retained_second_pair": {
+    "minimum_clearance_mm": 0.3,
+    "interference_mm3": 0.0,
+    "head_leaf_overlap_revised_lower_face_mm3": 35.4253,
+    "head_leaf_overlap_upper_head_mm3": 0.0
+  },
+  "geometry_changed": [
+    "PROPOSED__RIGHT_LOWER_FACE__LEGACY_EYE_NECK_REMOVED_V9"
+  ],
+  "flange_geometry_changed": false,
+  "flange_location_changed": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Do not move, resize, rotate, rebuild, or replace either flange pair.",
+    "Delete exactly one disconnected lower-face component: the 65-vertex, 32-face component locked by the bounding box and zero-distance tests.",
+    "Do not cut the remaining lower-face shell or any upper-head, eye-bucket, rear-cassette, C006, C046, C048, or aluminum-interface geometry.",
+    "No owner integration, left mirror, STL, G-code, slicing, ASA printing, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/review/01-v9-before-neck-removal.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/review/02-v9-after-neck-removal.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/review/03-v9-after-full-owner-context.png"
+    ]
+  }
+}

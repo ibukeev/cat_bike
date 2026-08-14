@@ -5,6 +5,19 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current HS-11 V9 neck-removal review — both existing right-eye flange pairs
+  remain in their V7 positions and retain their geometry. V9 removes only the
+  isolated lower-head neck/residue beneath the second head-side flange. The
+  retained second pair still has a `0.3000 mm` gap and zero interference:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/CAT_HEAD_RIGHT_EYE_SECOND_PAIR_NECK_REMOVAL_REVIEW_V9.FCStd`
+- V9 before/after evidence, validation, and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/review/`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/validation-v9.json`, and
+  `RIGHT_EYE_SECOND_PAIR_NECK_REMOVAL_REVIEW_V9_CHECKPOINT_2026-08-14.md`.
+- V9 is an isolated review, not an owner Boolean, mirror, STL, G-code, or
+  print release. The inherited lower-face review mesh still requires topology
+  repair before production integration.
+
 - Cleaned HS-11 V8 identification review — **rejected as a structural
   proposal**. The fabricated inner-upper pair has been removed from the
   interactive FreeCAD file and the unchanged validated V7 second pair has
