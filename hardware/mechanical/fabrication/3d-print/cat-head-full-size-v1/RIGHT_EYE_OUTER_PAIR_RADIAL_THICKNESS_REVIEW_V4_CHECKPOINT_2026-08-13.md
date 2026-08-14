@@ -2,12 +2,11 @@
 
 ## Status
 
-V3 is rejected: it incorrectly treated the `8.0 mm` flange depth as the
-dimension to double and extended along the flange-depth axis, producing a tall
-wall. V4 instead doubles only the `2.4 mm` radial thickness toward each
-member's shell interior. The head member is rebuilt from a plain flange bar;
-no broad base, wedge, or tapered root is present. This remains an isolated
-right-side review with no mirror or print release.
+**Rejected and superseded by V5.** V3 incorrectly treated the `8.0 mm`
+flange depth as the dimension to double and extended along the flange-depth
+axis, producing a tall wall. V4 corrected the head member, but its eye-side
+layer was wholly contained by the eye bucket and did not thicken the actual
+eye-flange solid. Do not integrate, mirror, export, or print V4.
 
 ## Review files
 

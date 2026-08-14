@@ -1,0 +1,163 @@
+{
+  "status": "isolated right-side four-flange thickness proposal ready for validation; no owner Boolean, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "roles": [
+      "outer_eye",
+      "outer_head",
+      "lower_eye",
+      "lower_head"
+    ],
+    "flange_length_mm": 12.0,
+    "flange_depth_mm": 8.0,
+    "existing_radial_thickness_mm": 2.4,
+    "added_owner_side_thickness_mm": 2.4,
+    "total_radial_thickness_mm": 4.8,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "mating_face_shift_mm": 0.0,
+    "hole_axis_shift_mm": 0.0
+  },
+  "construction": "four standalone plain 12 x 8 x 4.8 mm flange leaves; mating faces fixed; owner-side face moved 2.4 mm toward owner",
+  "flanges": {
+    "outer_head": {
+      "object": "PROPOSED__RIGHT_OUTER_HEAD__PLAIN_FLANGE_4P8MM_V5",
+      "mount_edge_indices": [
+        2,
+        3
+      ],
+      "m2_5_hole_center_mm": [
+        102.95823,
+        85.96094,
+        146.90749
+      ],
+      "m2_5_hole_axis": [
+        -0.931499,
+        -0.355313,
+        0.077868
+      ],
+      "owner_overlap_mm3": 56.2443,
+      "mating_face_shift_mm": 0.0,
+      "topology": {
+        "vertices": 75,
+        "edges": 108,
+        "faces": 33,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.8323
+      }
+    },
+    "outer_eye": {
+      "object": "PROPOSED__RIGHT_OUTER_EYE__PLAIN_FLANGE_4P8MM_V5",
+      "mount_edge_indices": [
+        2,
+        3
+      ],
+      "m2_5_hole_center_mm": [
+        100.44318,
+        85.00159,
+        147.11774
+      ],
+      "m2_5_hole_axis": [
+        -0.931499,
+        -0.355313,
+        0.077868
+      ],
+      "owner_overlap_mm3": 247.0647,
+      "mating_face_shift_mm": 0.0,
+      "topology": {
+        "vertices": 73,
+        "edges": 106,
+        "faces": 33,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.893
+      }
+    },
+    "lower_head": {
+      "object": "PROPOSED__RIGHT_LOWER_HEAD__PLAIN_FLANGE_4P8MM_V5",
+      "mount_edge_indices": [
+        3,
+        0
+      ],
+      "m2_5_hole_center_mm": [
+        66.67402,
+        65.45099,
+        119.65581
+      ],
+      "m2_5_hole_axis": [
+        0.037231,
+        0.229102,
+        0.97269
+      ],
+      "owner_overlap_mm3": 431.8112,
+      "mating_face_shift_mm": 8e-06,
+      "topology": {
+        "vertices": 65,
+        "edges": 96,
+        "faces": 31,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.8381
+      }
+    },
+    "lower_eye": {
+      "object": "PROPOSED__RIGHT_LOWER_EYE__PLAIN_FLANGE_4P8MM_V5",
+      "mount_edge_indices": [
+        3,
+        0
+      ],
+      "m2_5_hole_center_mm": [
+        66.77454,
+        66.06956,
+        122.28207
+      ],
+      "m2_5_hole_axis": [
+        0.037231,
+        0.229102,
+        0.97269
+      ],
+      "owner_overlap_mm3": 248.3147,
+      "mating_face_shift_mm": 8e-06,
+      "topology": {
+        "vertices": 66,
+        "edges": 97,
+        "faces": 31,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.792
+      }
+    }
+  },
+  "pairs": {
+    "outer": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 0.3
+    },
+    "lower": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 0.3
+    }
+  },
+  "all_four_are_real_standalone_thickened_solids": true,
+  "v4_contained_eye_layer_reused": false,
+  "broad_base_or_wedge_present": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Build four standalone plain rectangular flange solids; do not hide an eye-side addition inside the bucket owner.",
+    "Keep every existing mating face, flange centerline, M2.5 axis, bore center, and 0.3 mm pair gap fixed.",
+    "Add the 2.4 mm only behind each mating face toward its receiving owner, for 4.8 mm total thickness.",
+    "No broad base, wedge, taper, neck, bridge, boss, or exterior protrusion.",
+    "Preserve the V9 eye bucket, right upper head, right lower face, C046/C048, C006, panels, rear cassette, and aluminum workstream.",
+    "No owner Boolean, left mirror, STL, G-code, slicing, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/review/01-v5-all-four-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/review/02-v5-outer-pair-close.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/review/03-v5-lower-pair-close.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/review/04-v5-four-thick-flanges-isolated.png"
+    ]
+  }
+}

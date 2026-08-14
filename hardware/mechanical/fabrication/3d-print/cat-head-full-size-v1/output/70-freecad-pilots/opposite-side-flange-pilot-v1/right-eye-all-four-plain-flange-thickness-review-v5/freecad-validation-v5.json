@@ -1,0 +1,68 @@
+{
+  "status": "exact isolated right-side four-flange thickness review built; visual review required; structural owner-root gate remains held",
+  "fcstd_archive_valid": true,
+  "fcstd_size_bytes": 250366,
+  "flanges": {
+    "outer_head": {
+      "object": "PROPOSED__RIGHT_OUTER_HEAD__PLAIN_FLANGE_4P8MM_V5__EXACT",
+      "valid": true,
+      "self_intersection_free": true,
+      "solids": 1,
+      "faces": 145,
+      "volume_mm3": 431.8158,
+      "owner_overlap_mm3": 56.2443,
+      "owner_overlap_80mm3_gate": false
+    },
+    "outer_eye": {
+      "object": "PROPOSED__RIGHT_OUTER_EYE__PLAIN_FLANGE_4P8MM_V5__EXACT",
+      "valid": true,
+      "self_intersection_free": true,
+      "solids": 1,
+      "faces": 142,
+      "volume_mm3": 431.8714,
+      "owner_overlap_mm3": 247.0647,
+      "owner_overlap_80mm3_gate": true
+    },
+    "lower_head": {
+      "object": "PROPOSED__RIGHT_LOWER_HEAD__PLAIN_FLANGE_4P8MM_V5__EXACT",
+      "valid": true,
+      "self_intersection_free": true,
+      "solids": 1,
+      "faces": 126,
+      "volume_mm3": 431.8105,
+      "owner_overlap_mm3": 431.8112,
+      "owner_overlap_80mm3_gate": true
+    },
+    "lower_eye": {
+      "object": "PROPOSED__RIGHT_LOWER_EYE__PLAIN_FLANGE_4P8MM_V5__EXACT",
+      "valid": true,
+      "self_intersection_free": true,
+      "solids": 1,
+      "faces": 129,
+      "volume_mm3": 431.7853,
+      "owner_overlap_mm3": 248.3147,
+      "owner_overlap_80mm3_gate": true
+    }
+  },
+  "pairs": {
+    "outer": {"intersects": false, "minimum_clearance_mm": 0.3},
+    "lower": {"intersects": false, "minimum_clearance_mm": 0.3}
+  },
+  "contract": {
+    "flange_dimensions_mm": [12.0, 8.0, 4.8],
+    "added_owner_side_thickness_mm": 2.4,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_face_shift_mm": 0.0,
+    "hole_axis_shift_mm": 0.0
+  },
+  "holds": {
+    "all_four_real_standalone_thickened_flange_solids": true,
+    "v4_contained_eye_layer_reused": false,
+    "broad_base_or_wedge_present": false,
+    "owner_boolean_performed": false,
+    "left_mirror_performed": false,
+    "stl_or_gcode_exported": false,
+    "print_release": false,
+    "outer_head_owner_root_gate_passed": false
+  }
+}

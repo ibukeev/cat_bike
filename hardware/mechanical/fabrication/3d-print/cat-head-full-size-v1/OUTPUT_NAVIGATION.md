@@ -5,21 +5,23 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 outer-pair V4 — replaces the rejected wrong-axis V3 with a
-  plain rectangular pair. Each `12 x 8 x 2.4 mm` flange receives `2.4 mm`
-  additional thickness along the shell-interior radial axis for `4.8 mm`
-  total thickness. The `2.8 mm` M2.5 bore axes and `0.3000 mm` mating gap are
-  preserved; the malformed broad-base/wedge geometry is absent and the lower
-  pair is unchanged. Exact right-side results are valid closed one-solids and
-  do not interfere. Awaiting visual approval; no production integration,
-  mirror, STL, G-code, or print release:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4/CAT_HEAD_RIGHT_EYE_OUTER_PAIR_RADIAL_THICKNESS_REVIEW_V4.FCStd`
-- V4 contract, Blender context, validation, and checkpoint:
-  `config/right-eye-outer-pair-radial-thickness-review-v4.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4/CAT_HEAD_RIGHT_EYE_OUTER_PAIR_RADIAL_THICKNESS_REVIEW_V4.blend`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4/validation-v4.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4/freecad-validation-v4.json`, and
-  `RIGHT_EYE_OUTER_PAIR_RADIAL_THICKNESS_REVIEW_V4_CHECKPOINT_2026-08-13.md`
+- Current HS-11 all-four V5 — replaces rejected V4 with four real standalone
+  plain flange solids: outer-eye, outer-head, lower-eye, and lower-head. Each
+  is `12 x 8 x 4.8 mm`, with `2.4 mm` added only on its owner side. All
+  mating faces and `2.8 mm` M2.5 axes remain fixed; both pair gaps remain
+  `0.3000 mm`. All four exact objects are valid one-solids with no pair
+  interference. Shape review is ready, but production integration remains
+  held because outer-head owner overlap is `56.2443 mm3`, below the
+  `80 mm3` direct-root gate:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/CAT_HEAD_RIGHT_EYE_ALL_FOUR_PLAIN_FLANGE_THICKNESS_REVIEW_V5.FCStd`
+- V5 contract, Blender context, validation, and checkpoint:
+  `config/right-eye-all-four-plain-flange-thickness-review-v5.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/CAT_HEAD_RIGHT_EYE_ALL_FOUR_PLAIN_FLANGE_THICKNESS_REVIEW_V5.blend`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/validation-v5.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/freecad-validation-v5.json`, and
+  `RIGHT_EYE_ALL_FOUR_PLAIN_FLANGE_THICKNESS_REVIEW_V5_CHECKPOINT_2026-08-13.md`
+- Rejected V4 is retained only as traceable evidence at
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4/`.
 - Rejected V3 wrong-axis depth extension is retained only as traceable evidence
   at `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/`.
 - Rejected V2 broad-base proposal is retained only as traceable evidence at
