@@ -5,20 +5,19 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 V6 exterior-clip review  -  preserves the accepted V5 4.8 mm
-  thickness, both unchanged eye-side leaves, every M2.5 axis, and both
-  0.3000 mm gaps. Only the two outward head-flange corners are clipped to the
-  frozen angled owner skins. All four exact objects are valid watertight
-  one-solids and both exterior-deviation checks pass:
-  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/CAT_HEAD_RIGHT_EYE_HEAD_FLANGE_EXTERIOR_CLIP_REVIEW_V6.FCStd
-- V6 contract, validation, evidence, and resumable checkpoint:
-  config/right-eye-head-flange-exterior-clip-review-v6.json,
-  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/validation-v6.json,
-  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/freecad-validation-v6.json,
-  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/review/, and
-  RIGHT_EYE_HEAD_FLANGE_EXTERIOR_CLIP_REVIEW_V6_CHECKPOINT_2026-08-13.md
-- V6 is not a print release: the outer/lower bore ligaments remain below the
-  3.5 mm gate, and the lower-head direct-root audit remains below 80 mm3.
+- Current HS-11 V7 all-four local-skin clip review - clips all four right-side
+  flange leaves 0.03 mm inside the adjacent frozen owner skins while
+  preserving every M2.5 axis, mating plane, and both 0.3000 mm gaps. All four
+  exact objects are valid watertight one-solids with positive owner overlap:
+  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/CAT_HEAD_RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7.FCStd
+- V7 contract, validation, evidence, and resumable checkpoint:
+  config/right-eye-all-four-flange-local-skin-clip-review-v7.json,
+  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/validation-v7.json,
+  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/freecad-validation-v7.json,
+  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/review/, and
+  RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7_CHECKPOINT_2026-08-13.md
+- V7 is not a print release: the lower-head direct-root audit and prior
+  outer/lower bore ligaments remain below their structural gates.
 
 - Current HS-11 all-four V5 — replaces rejected V4 with four real standalone
   plain flange solids: outer-eye, outer-head, lower-eye, and lower-head. Each

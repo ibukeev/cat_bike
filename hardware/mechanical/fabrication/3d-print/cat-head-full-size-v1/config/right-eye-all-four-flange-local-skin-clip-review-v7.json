@@ -1,0 +1,29 @@
+{
+  "schema_version": 7,
+  "status": "isolated right-side local-skin-clipped four-flange correction; no owner Boolean, mirror, STL, G-code, or print release",
+  "source_v6_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/CAT_HEAD_RIGHT_EYE_HEAD_FLANGE_EXTERIOR_CLIP_REVIEW_V6.blend",
+  "source_v6_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/validation-v6.json",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7",
+  "locked_contract": {
+    "flange_length_mm": 12.0,
+    "flange_depth_mm": 8.0,
+    "total_radial_thickness_mm": 4.8,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "mating_face_shift_mm": 0.0,
+    "hole_axis_shift_mm": 0.0,
+    "exterior_recess_mm": 0.03,
+    "maximum_exterior_positive_deviation_mm": 0.02,
+    "minimum_direct_owner_overlap_mm3": 1.0,
+    "minimum_face_area_mm2": 20.0,
+    "maximum_face_distance_from_role_anchor_mm": 18.0,
+    "minimum_reference_normal_dot": 0.15
+  },
+  "holds": [
+    "Keep all four mating planes, M2.5 axes, bore centers, and both 0.3000 mm gaps fixed.",
+    "Trim only material visibly outside adjacent frozen owner-skin facets.",
+    "Do not cut or modify the V9 eye bucket, upper head, or lower face.",
+    "Preserve C046, C048, C006, rear cassette, panels, and the aluminum workstream.",
+    "No owner integration, left mirror, STL, G-code, slicing, or print release before explicit visual approval."
+  ]
+}

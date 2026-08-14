@@ -1,0 +1,189 @@
+{
+  "status": "isolated right-side local-skin-clipped four-flange correction; no owner Boolean, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "flange_length_mm": 12.0,
+    "flange_depth_mm": 8.0,
+    "total_radial_thickness_mm": 4.8,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "mating_face_shift_mm": 0.0,
+    "hole_axis_shift_mm": 0.0,
+    "exterior_recess_mm": 0.03,
+    "maximum_exterior_positive_deviation_mm": 0.02,
+    "minimum_direct_owner_overlap_mm3": 1.0,
+    "minimum_face_area_mm2": 20.0,
+    "maximum_face_distance_from_role_anchor_mm": 18.0,
+    "minimum_reference_normal_dot": 0.15
+  },
+  "construction": "V6 four-leaf geometry clipped only by adjacent frozen head-skin interior half-spaces",
+  "roles": {
+    "outer": {
+      "candidate_count": 1,
+      "applied_planes": [
+        {
+          "owner_face_zero_based": 11,
+          "point_mm": [
+            109.945,
+            89.528008,
+            138.12851
+          ],
+          "outward_normal": [
+            0.87094963,
+            -0.46469733,
+            0.15969746
+          ],
+          "face_area_mm2": 1225.0516,
+          "anchor_distance_mm": 0.0,
+          "normal_dot_reference": 1.0,
+          "reference_plane_offset_mm": 0.0,
+          "changed": [
+            {
+              "flange": "PROPOSED__RIGHT_OUTER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+              "removed_mm3": 0.1381
+            }
+          ]
+        }
+      ]
+    },
+    "lower": {
+      "candidate_count": 2,
+      "applied_planes": [
+        {
+          "owner_face_zero_based": 13,
+          "point_mm": [
+            73.326004,
+            58.3755,
+            109.982498
+          ],
+          "outward_normal": [
+            0.30968931,
+            -0.90219623,
+            0.3002241
+          ],
+          "face_area_mm2": 1410.3846,
+          "anchor_distance_mm": 0.0,
+          "normal_dot_reference": 1.0,
+          "reference_plane_offset_mm": 0.999998,
+          "changed": [
+            {
+              "flange": "PROPOSED__RIGHT_LOWER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+              "removed_mm3": 0.4058
+            }
+          ]
+        },
+        {
+          "owner_face_zero_based": 1041,
+          "point_mm": [
+            59.061684,
+            53.642727,
+            107.143341
+          ],
+          "outward_normal": [
+            0.30968922,
+            -0.90219641,
+            0.30022395
+          ],
+          "face_area_mm2": 225.6302,
+          "anchor_distance_mm": 17.4265,
+          "normal_dot_reference": 1.0,
+          "reference_plane_offset_mm": 0.0,
+          "changed": [
+            {
+              "flange": "PROPOSED__RIGHT_LOWER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+              "removed_mm3": 36.5431
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "flanges": {
+    "outer_head": {
+      "object": "PROPOSED__RIGHT_OUTER_HEAD__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "topology": {
+        "vertices": 62,
+        "edges": 186,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 323.1773
+      },
+      "connected_components": 1,
+      "direct_owner_overlap_mm3": 122.516,
+      "direct_owner_overlap_positive": true
+    },
+    "outer_eye": {
+      "object": "PROPOSED__RIGHT_OUTER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "topology": {
+        "vertices": 76,
+        "edges": 228,
+        "faces": 152,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.6557
+      },
+      "connected_components": 1,
+      "direct_owner_overlap_mm3": 247.0317,
+      "direct_owner_overlap_positive": true
+    },
+    "lower_head": {
+      "object": "PROPOSED__RIGHT_LOWER_HEAD__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "topology": {
+        "vertices": 59,
+        "edges": 177,
+        "faces": 118,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 421.4876
+      },
+      "connected_components": 1,
+      "direct_owner_overlap_mm3": 26.2422,
+      "direct_owner_overlap_positive": true
+    },
+    "lower_eye": {
+      "object": "PROPOSED__RIGHT_LOWER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "topology": {
+        "vertices": 68,
+        "edges": 204,
+        "faces": 136,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 394.7601
+      },
+      "connected_components": 1,
+      "direct_owner_overlap_mm3": 211.3736,
+      "direct_owner_overlap_positive": true
+    }
+  },
+  "pairs": {
+    "outer": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 0.3
+    },
+    "lower": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 0.3
+    }
+  },
+  "mating_face_shift_mm": 0.0,
+  "hole_axis_shift_mm": 0.0,
+  "frozen_owner_geometry_modified": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Keep all four mating planes, M2.5 axes, bore centers, and both 0.3000 mm gaps fixed.",
+    "Trim only material visibly outside adjacent frozen owner-skin facets.",
+    "Do not cut or modify the V9 eye bucket, upper head, or lower face.",
+    "Preserve C046, C048, C006, rear cassette, panels, and the aluminum workstream.",
+    "No owner integration, left mirror, STL, G-code, slicing, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/review/01-v7-all-four-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/review/02-v7-outer-pair-exterior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/review/03-v7-lower-pair-exterior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/review/04-v7-four-flanges-isolated.png"
+    ]
+  }
+}

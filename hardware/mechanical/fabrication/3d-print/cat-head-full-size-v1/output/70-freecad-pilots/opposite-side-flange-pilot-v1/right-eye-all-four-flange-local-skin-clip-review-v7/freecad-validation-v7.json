@@ -1,0 +1,49 @@
+{
+  "document": "CAT_HEAD_RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7.FCStd",
+  "status": "isolated right-side exact-solid review; not integrated, mirrored, or print-released",
+  "locked_exterior_recess_mm": 0.03,
+  "exact_solids": {
+    "outer_head": {
+      "valid": true,
+      "watertight": true,
+      "solid_count": 1,
+      "self_intersection_free": true,
+      "volume_mm3": 323.18
+    },
+    "outer_eye": {
+      "valid": true,
+      "watertight": true,
+      "solid_count": 1,
+      "self_intersection_free": true,
+      "volume_mm3": 431.66
+    },
+    "lower_head": {
+      "valid": true,
+      "watertight": true,
+      "solid_count": 1,
+      "self_intersection_free": true,
+      "volume_mm3": 421.49
+    },
+    "lower_eye": {
+      "valid": true,
+      "watertight": true,
+      "solid_count": 1,
+      "self_intersection_free": true,
+      "volume_mm3": 394.76
+    }
+  },
+  "pair_clearance_mm": {
+    "outer": 0.3,
+    "lower": 0.3
+  },
+  "direct_owner_overlap_mm3": {
+    "outer_head": 122.516,
+    "outer_eye": 247.0317,
+    "lower_head": 26.2422,
+    "lower_eye": 211.3736
+  },
+  "frozen_owner_geometry_modified": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "stl_or_gcode_exported": false
+}
