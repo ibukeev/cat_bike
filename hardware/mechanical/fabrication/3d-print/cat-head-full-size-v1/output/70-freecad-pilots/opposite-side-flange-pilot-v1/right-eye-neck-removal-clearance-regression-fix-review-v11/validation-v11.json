@@ -1,0 +1,252 @@
+{
+  "status": "isolated right-side regression-repair review: preserve the accepted V10 neck removal and restore the exact user-approved V2 C046/C048 eye clearances; no owner Boolean, mirror, STL, G-code, or print release",
+  "regression_cause": "V10 rebuilt the lower-face review from V7 and therefore retained the original C046/C048 components instead of the user-approved V2 clearance geometry.",
+  "v10_neck_removal_preserved": {
+    "source_lower_face_fingerprint": "caaef27fe09c33b557407060a7af0ea665aa0d92f7175ef8c79d1002daca95e5",
+    "source_lower_face_topology": {
+      "vertices": 1541,
+      "edges": 2545,
+      "faces": 1090,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121015.2614
+    },
+    "accepted_v10_removed_actual_neck_component": {
+      "vertex_count": 81,
+      "face_count": 41,
+      "bbox_min_mm": [
+        99.26609,
+        79.87835,
+        117.5763
+      ],
+      "bbox_max_mm": [
+        105.82408,
+        90.58801,
+        153.82234
+      ],
+      "minimum_vertex_distance_to_selected_outer_head_flange_mm": 0.0
+    },
+    "accepted_v10_restored_component": {
+      "vertex_count": 65,
+      "face_count": 32,
+      "bbox_min_mm": [
+        59.88083,
+        58.7314,
+        117.14426
+      ],
+      "bbox_max_mm": [
+        74.04919,
+        70.71507,
+        122.4879
+      ],
+      "status": "restored_from_frozen_v7_source"
+    }
+  },
+  "stale_components_removed": {
+    "c046": {
+      "vertex_count": 6,
+      "face_count": 7,
+      "bbox_min_mm": [
+        29.92491,
+        47.50568,
+        115.37617
+      ],
+      "bbox_max_mm": [
+        42.46059,
+        58.6119,
+        123.47581
+      ]
+    },
+    "c048": {
+      "vertex_count": 6,
+      "face_count": 5,
+      "bbox_min_mm": [
+        36.37653,
+        51.42321,
+        87.5951
+      ],
+      "bbox_max_mm": [
+        81.74683,
+        61.09498,
+        126.69158
+      ]
+    }
+  },
+  "lower_face_after_stale_rib_removal": {
+    "fingerprint": "b216b1d6fc2614c6415785870681c5ab58e2ef6824c292b2bb518076aa57d2e0",
+    "topology": {
+      "vertices": 1529,
+      "edges": 2525,
+      "faces": 1078,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 120158.2405
+    },
+    "component_count": 60
+  },
+  "restored_approved_v2_reinforcements": {
+    "c046": {
+      "topology": {
+        "vertices": 6,
+        "edges": 11,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 202.6929
+      },
+      "eye_clearance_mm": 4.6063,
+      "expected_eye_clearance_mm": 4.6063,
+      "overlaps_lower_face_owner": true
+    },
+    "c048": {
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 472.7519
+      },
+      "eye_clearance_mm": 4.0317,
+      "expected_eye_clearance_mm": 4.0317,
+      "overlaps_lower_face_owner": true,
+      "far_end_preserved_exactly": true
+    },
+    "mutual_structural_contact": true,
+    "eye_interference": false
+  },
+  "retained_flanges": {
+    "outer_head": {
+      "fingerprint": "7031c4eb248a0a49d370e8f3c6e777a4a8a1f821907b9ad4c3c5579e12250132",
+      "topology": {
+        "vertices": 62,
+        "edges": 186,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 323.1773
+      }
+    },
+    "outer_eye": {
+      "fingerprint": "b8960db4b8ae67bc426db8411ec92336e6364919d260c8defc6841f13dbbee4d",
+      "topology": {
+        "vertices": 76,
+        "edges": 228,
+        "faces": 152,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.6557
+      }
+    },
+    "second_head": {
+      "fingerprint": "87b2150d9b67e282994f2ccf6f6b0d7954ed3491608f7de489979b67f476f88e",
+      "topology": {
+        "vertices": 59,
+        "edges": 177,
+        "faces": 118,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 421.4876
+      }
+    },
+    "second_eye": {
+      "fingerprint": "7206b381c3be8150a416a789875f225ca9b85862d54f847290cd0239271031ed",
+      "topology": {
+        "vertices": 68,
+        "edges": 204,
+        "faces": 136,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 394.7601
+      }
+    }
+  },
+  "retained_pairs": {
+    "outer": {
+      "minimum_clearance_mm": 0.3,
+      "interference_mm3": 0.0
+    },
+    "second": {
+      "minimum_clearance_mm": 0.3,
+      "interference_mm3": 0.0
+    }
+  },
+  "eye_geometry_changed": false,
+  "flange_geometry_changed": false,
+  "flange_location_changed": false,
+  "other_reinforcement_changed": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "locked_contract": {
+    "bbox_tolerance_mm": 0.001,
+    "stale_c046": {
+      "vertex_count": 6,
+      "face_count": 7,
+      "bbox_min_mm": [
+        29.92491,
+        47.50568,
+        115.37617
+      ],
+      "bbox_max_mm": [
+        42.46059,
+        58.6119,
+        123.47581
+      ]
+    },
+    "stale_c048": {
+      "vertex_count": 6,
+      "face_count": 5,
+      "bbox_min_mm": [
+        36.37653,
+        51.42321,
+        87.5951
+      ],
+      "bbox_max_mm": [
+        81.74683,
+        61.09498,
+        126.69158
+      ]
+    },
+    "c046_rigid_offset_mm": 4.229,
+    "c046_away_unit": [
+      0.206134,
+      -0.13113,
+      -0.969698
+    ],
+    "c048_trim_fraction": 0.15,
+    "approved_c046_eye_clearance_mm": 4.6063,
+    "approved_c048_eye_clearance_mm": 4.0317,
+    "maximum_clearance_difference_mm": 0.01,
+    "mating_gap_mm": 0.3,
+    "maximum_pair_gap_error_mm": 0.01
+  },
+  "holds": [
+    "Preserve the accepted V10 actual outer-neck removal exactly.",
+    "Delete only the stale original C046 and C048 components locked by topology and bounding box from the V10 lower-face review copy.",
+    "Restore C046 using exactly the approved V2 4.229 mm rigid translation; do not scale, rotate, or deform it.",
+    "Restore C048 using exactly the approved V2 0.15 eye-side trim; preserve its far end and triangular cross-section.",
+    "Do not move or modify the V9 eye bucket, either flange pair, the upper-head shell, other reinforcement, rear cassette, C006, or aluminum V0.5-M2.",
+    "No owner Boolean, left mirror, STL, G-code, slicing, ASA printing, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/CAT_HEAD_RIGHT_EYE_NECK_REMOVAL_CLEARANCE_REGRESSION_FIX_REVIEW_V11.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/01-v11-restored-clearance-close-up.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/02-v11-restored-clearance-side.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/03-v11-full-right-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/04-v11-eye-and-restored-ribs-isolated.png"
+    ],
+    "review_objs": {
+      "right_lower_face_v10_neck_removed_stale_ribs_removed_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/right_lower_face_v10_neck_removed_stale_ribs_removed_v11.obj",
+      "right_upper_head_frozen_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/right_upper_head_frozen_v11.obj",
+      "right_eye_bucket_frozen_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/right_eye_bucket_frozen_v11.obj",
+      "restored_c046_approved_clearance_v2_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/restored_c046_approved_clearance_v2_v11.obj",
+      "restored_c048_approved_clearance_v2_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/restored_c048_approved_clearance_v2_v11.obj",
+      "outer_head_unchanged_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/outer_head_unchanged_v11.obj",
+      "outer_eye_unchanged_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/outer_eye_unchanged_v11.obj",
+      "second_head_unchanged_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/second_head_unchanged_v11.obj",
+      "second_eye_unchanged_v11": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11/review/second_eye_unchanged_v11.obj"
+    }
+  }
+}

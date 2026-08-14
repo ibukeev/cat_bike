@@ -1,5 +1,10 @@
 # Right eye outer-neck removal / upper-head owner — V10 checkpoint
 
+> **Superseded combined context:** the user accepted the V10 neck removal, but
+> V10 resurrected the pre-clearance C046/C048 positions. Use V11 for combined
+> neck-plus-reinforcement review. The V10 neck deletion itself is preserved
+> exactly in V11.
+
 ## Scope
 
 - Correct rejected V9 by rebuilding the review from frozen V7 geometry.

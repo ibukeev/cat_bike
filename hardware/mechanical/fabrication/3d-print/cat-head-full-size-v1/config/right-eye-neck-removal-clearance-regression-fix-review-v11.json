@@ -1,0 +1,50 @@
+{
+  "schema_version": 11,
+  "status": "isolated right-side regression-repair review: preserve the accepted V10 neck removal and restore the exact user-approved V2 C046/C048 eye clearances; no owner Boolean, mirror, STL, G-code, or print release",
+  "source_v10_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/CAT_HEAD_RIGHT_EYE_OUTER_NECK_REMOVAL_UPPER_HEAD_OWNER_REVIEW_V10.blend",
+  "source_v10_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/validation-v10.json",
+  "source_v2_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2/validation-v2.json",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11",
+  "objects": {
+    "v10_lower_face": "PROPOSED__RIGHT_LOWER_FACE__ACTUAL_OUTER_NECK_REMOVED_V10",
+    "upper_head": "right_upper_head",
+    "eye_bucket": "FROZEN__RIGHT_EYE_BUCKET_V9_V6",
+    "c046_source": "R1_RET__R__C046__rib",
+    "c048_source": "R1_RET__R__C048__rib",
+    "outer_head_flange": "RETAINED__V10__OUTER_HEAD__UNCHANGED",
+    "outer_eye_flange": "RETAINED__V10__OUTER_EYE__UNCHANGED",
+    "second_head_flange": "RETAINED__V10__SECOND_HEAD__UNCHANGED",
+    "second_eye_flange": "RETAINED__V10__SECOND_EYE__UNCHANGED"
+  },
+  "locked_contract": {
+    "bbox_tolerance_mm": 0.001,
+    "stale_c046": {
+      "vertex_count": 6,
+      "face_count": 7,
+      "bbox_min_mm": [29.92491, 47.50568, 115.37617],
+      "bbox_max_mm": [42.46059, 58.61190, 123.47581]
+    },
+    "stale_c048": {
+      "vertex_count": 6,
+      "face_count": 5,
+      "bbox_min_mm": [36.37653, 51.42321, 87.59510],
+      "bbox_max_mm": [81.74683, 61.09498, 126.69158]
+    },
+    "c046_rigid_offset_mm": 4.229,
+    "c046_away_unit": [0.206134, -0.131130, -0.969698],
+    "c048_trim_fraction": 0.15,
+    "approved_c046_eye_clearance_mm": 4.6063,
+    "approved_c048_eye_clearance_mm": 4.0317,
+    "maximum_clearance_difference_mm": 0.01,
+    "mating_gap_mm": 0.3,
+    "maximum_pair_gap_error_mm": 0.01
+  },
+  "holds": [
+    "Preserve the accepted V10 actual outer-neck removal exactly.",
+    "Delete only the stale original C046 and C048 components locked by topology and bounding box from the V10 lower-face review copy.",
+    "Restore C046 using exactly the approved V2 4.229 mm rigid translation; do not scale, rotate, or deform it.",
+    "Restore C048 using exactly the approved V2 0.15 eye-side trim; preserve its far end and triangular cross-section.",
+    "Do not move or modify the V9 eye bucket, either flange pair, the upper-head shell, other reinforcement, rear cassette, C006, or aluminum V0.5-M2.",
+    "No owner Boolean, left mirror, STL, G-code, slicing, ASA printing, or print release before explicit visual approval."
+  ]
+}
