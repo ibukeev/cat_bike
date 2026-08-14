@@ -5,21 +5,22 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 V8 upper-head-only dual-pair review — rejects the V7
-  lower-face flange and pole. The lower face owns zero eye-mount geometry;
-  both head leaves root directly into the frozen right upper-head shell. The
-  retained outer pair is `12 x 8 x 4.8 mm`; the measured replacement pair is
-  `18 x 18 x 4.8 mm`; both use `2.8 mm` M2.5 through-holes and `0.3000 mm`
-  gaps. All four exact leaves are valid one-solids, pair interference is zero,
-  and direct owner overlap exceeds the `80 mm3` gate:
+- Cleaned HS-11 V8 identification review — **rejected as a structural
+  proposal**. The fabricated inner-upper pair has been removed from the
+  interactive FreeCAD file and the unchanged validated V7 second pair has
+  been restored. Use this file only to confirm pair identity and context. Its
+  head leaf is `25.4458 mm` from the upper head, has `0.0 mm3` upper-head
+  overlap, and remains lower-face owned, so HS-11 is unresolved:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/CAT_HEAD_RIGHT_EYE_UPPER_HEAD_ONLY_DUAL_PAIR_REVIEW_V8.FCStd`
-- V8 contract, validation, evidence, and resumable checkpoint:
+- Historical V8 contract/validation/evidence and the corrected resumable
+  checkpoint:
   `config/right-eye-upper-head-only-dual-pair-review-v8.json`,
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/validation-v8.json`,
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/review/`, and
   `RIGHT_EYE_UPPER_HEAD_ONLY_DUAL_PAIR_REVIEW_V8_CHECKPOINT_2026-08-13.md`.
-- V7 is rejected for incorrect lower-face flange ownership. V8 is still an
-  isolated review: no owner Boolean, left mirror, STL, G-code, or print release.
+- V7 remains rejected for incorrect lower-face ownership; V8 remains rejected
+  for duplicate wrong-interface geometry. No owner Boolean, left mirror, STL,
+  G-code, or print release exists.
 
 - Current HS-11 all-four V5 — replaces rejected V4 with four real standalone
   plain flange solids: outer-eye, outer-head, lower-eye, and lower-head. Each

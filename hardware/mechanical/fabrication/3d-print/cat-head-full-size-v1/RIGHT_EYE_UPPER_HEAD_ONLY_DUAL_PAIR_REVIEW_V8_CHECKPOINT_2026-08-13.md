@@ -2,12 +2,18 @@
 
 ## State
 
-V8 is the current isolated right-side HS-11 review. It corrects the V7
-ownership error: the right lower face owns **zero** eye-flange geometry, and
-there is no pole, neck, bridge, or cantilever between that lower face and an
-eye flange. Both head-side flange leaves are proposed additions to the frozen
-`right_upper_head` shell only. They remain separate review solids until visual
-approval; no owner Boolean has been performed.
+**REJECTED on visual review.** The fabricated `INNER_UPPER` pair was not the
+existing second connector pair and must not be integrated, mirrored, exported,
+or printed. The interactive FreeCAD review has been cleaned to remove those
+four duplicate mesh/exact objects and to restore the unchanged validated V7
+second pair for identification only.
+
+The restored second pair is geometrically valid, but its head-side leaf has
+`0.0 mm3` overlap with `right_upper_head`, `26.2422 mm3` overlap with
+`right_lower_face`, and a measured shortest distance of `25.4458 mm` to the
+upper-head shell. Therefore it is not an upper-head-owned production solution.
+Renaming it or joining it with a pole/bridge is explicitly disallowed. HS-11
+remains open.
 
 This is **not** a print release. No left mirror, STL, G-code, slicing, or ASA
 printing is authorized from V8.
@@ -29,7 +35,7 @@ printing is authorized from V8.
 - Ownership audit:
   `source/audit_right_eye_upper_head_owner_edges_v8.py`
 
-## Accepted/frozen decisions and dimensions
+## Historical rejected V8 contract
 
 - Preserve the validated outer pair on eye edge `[2,3]` unchanged:
   `12 x 8 x 4.8 mm`, one `2.8 mm` M2.5 through-hole per leaf.
@@ -45,7 +51,7 @@ printing is authorized from V8.
 - Freeze the V9 eye bucket, C046, C048, C006, lower face, rear cassette, shell
   panels, and aluminum workstream `CAT-HEAD-SHELL-ALUMINUM-V0.5-M2`.
 
-## Validation performed
+## Historical validation of the rejected fabricated pair
 
 - FreeCAD/OCCT exact conversion: the V9 bucket and all four proposal leaves
   are valid, self-intersection-free, one-solid shapes.
@@ -66,6 +72,8 @@ printing is authorized from V8.
 
 ## Rejected/unsafe variants
 
+- The V8 `INNER_UPPER` head/eye additions: rejected as duplicate geometry at
+  the wrong interface. They have been removed from the interactive FCStd.
 - V7 lower-face-owned head flange and its pole/neck connector: rejected for
   wrong ownership and exterior protrusion.
 - Eye edge `[1,2]` as a replacement mount: rejected because the bucket and
@@ -85,18 +93,22 @@ blender --background output/70-freecad-pilots/opposite-side-flange-pilot-v1/righ
 blender --background output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/CAT_HEAD_RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7.blend --python source/audit_right_eye_upper_head_owner_edges_v8.py
 ```
 
+## Current cleaned-review validation
+
+- FCStd archive integrity: PASS (`449705` bytes).
+- Restored existing second head leaf: valid one-solid, `421.49 mm3`.
+- Restored existing second eye leaf: valid one-solid, `394.76 mm3`.
+- Restored pair clearance: `0.3000 mm`; interference: none.
+- Default review presentation: upper-head context, lower-face context, exact
+  V9 eye bucket, accepted outer pair, and restored existing second pair in
+  standard isometric view.
+- No shell geometry, owner Boolean, mirror, STL, G-code, or print release was
+  created by this cleanup.
+
 ## Next physical/visual review
 
-Open the V8 FreeCAD file. It defaults to the exact V9 bucket plus four exact
-proposal leaves, with both shell contexts hidden.
-
-1. Show `FROZEN__RIGHT_UPPER_HEAD_CONTEXT_V8`: confirm both objects whose names
-   contain `HEAD__UPPER_HEAD_ONLY_V8__EXACT` lie inside and directly root into
-   the upper-head shell, with no exterior protrusion.
-2. Hide the upper-head context and show
-   `FROZEN__RIGHT_LOWER_FACE_CONTEXT_ONLY_V8`: confirm the lower face has no eye
-   flange, pole, neck, or bridge.
-3. Confirm the two pairs are widely separated, each pair has aligned holes,
-   and neither pair collides with the V9 eye bucket.
-4. Only after explicit visual approval may the copied right owners be
-   integrated and revalidated. Mirroring and print release remain later gates.
+Open the cleaned V8 FreeCAD file only to confirm identification: the fabricated
+inner pair is absent and the restored existing second pair is the intended
+pair. The next structural proposal must resolve the mutually incompatible
+current facts—retain that location, require direct upper-head ownership, and
+forbid a 25.4458 mm bridge—before any owner geometry is changed.

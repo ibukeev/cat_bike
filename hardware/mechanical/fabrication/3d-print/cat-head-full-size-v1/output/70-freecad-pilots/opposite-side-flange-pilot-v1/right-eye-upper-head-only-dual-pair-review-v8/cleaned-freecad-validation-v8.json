@@ -1,0 +1,44 @@
+{
+  "status": "rejected_geometry_cleaned_for_identification_only",
+  "date": "2026-08-13",
+  "removed_objects": [
+    "PROPOSED__RIGHT_INNER_UPPER_HEAD__UPPER_HEAD_ONLY_V8",
+    "PROPOSED__RIGHT_INNER_UPPER_EYE__UPPER_HEAD_ONLY_V8",
+    "PROPOSED__RIGHT_INNER_UPPER_HEAD__UPPER_HEAD_ONLY_V8__EXACT",
+    "PROPOSED__RIGHT_INNER_UPPER_EYE__UPPER_HEAD_ONLY_V8__EXACT"
+  ],
+  "restored_exact_objects": {
+    "RETAINED__RIGHT_EXISTING_SECOND_HEAD__V7__EXACT": {
+      "volume_mm3": 421.49,
+      "valid": true,
+      "solid_count": 1,
+      "self_intersection_free": true
+    },
+    "RETAINED__RIGHT_EXISTING_SECOND_EYE__V7__EXACT": {
+      "volume_mm3": 394.76,
+      "valid": true,
+      "solid_count": 1,
+      "self_intersection_free": true
+    }
+  },
+  "restored_pair": {
+    "minimum_clearance_mm": 0.3,
+    "interference": false
+  },
+  "ownership_measurements": {
+    "existing_second_head_to_upper_head_overlap_mm3": 0.0,
+    "existing_second_head_to_lower_face_overlap_mm3": 26.2422,
+    "existing_second_head_to_upper_head_minimum_distance_mm": 25.4458
+  },
+  "fcstd": {
+    "archive_valid": true,
+    "size_bytes": 449705
+  },
+  "production_actions": {
+    "owner_boolean": false,
+    "mirror": false,
+    "stl_export": false,
+    "gcode_export": false,
+    "print_release": false
+  }
+}
