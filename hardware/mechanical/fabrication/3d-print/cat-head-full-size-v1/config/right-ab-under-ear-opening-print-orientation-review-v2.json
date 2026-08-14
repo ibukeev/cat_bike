@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_AB_UNDER_EAR_OPENING_PRINT_ORIENTATION_REVIEW_V2",
+  "status": "isolated user-preferred orientation proposal; visual approval required before coupon or production export",
+  "scope": "place the approved right upper-head C001 A/B owner with its under-ear opening plane on the bed",
+  "review_object_name": "REVIEW__RIGHT_UPPER_HEAD_C001__A_B__UNDER_EAR_OPENING_DOWN_V2",
+  "blend_filename": "right-ab-under-ear-opening-print-orientation-review-v2.blend",
+  "validation_filename": "orientation-validation-v2.json",
+  "source": {
+    "freecad": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-owner-integration-review-v1/CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd",
+    "object": "PROPOSED__RIGHT_UPPER_HEAD_C001__A_B_INTEGRATED_V1",
+    "freecad_sha256": "e9974661a5a0a71a12bcb6ab6d0d66ceae354fd8744486ff08ce72e20cf0376c",
+    "source_approval": "user LGTM 2026-08-09"
+  },
+  "numeric_contract": {
+    "geometry_change_mm": 0.0,
+    "conservative_printer_envelope_mm": [
+      240.0,
+      200.0,
+      210.0
+    ],
+    "required_xy_reserve_each_side_mm": 10.0,
+    "contact_plane_tolerance_mm": 0.2,
+    "support_threshold_deg": 45.0,
+    "bed_datum_semantic": "right under-ear opening plane",
+    "selected_source_outward_bed_normal": [
+      0.998906016,
+      -0.036057804,
+      0.029776497
+    ],
+    "selected_optimized_yaw_deg": 96.5,
+    "selected_rotation_quaternion_wxyz": [
+      0.463786364,
+      -0.517753959,
+      0.496808916,
+      0.519628584
+    ]
+  },
+  "audit_results": {
+    "oriented_xyz_mm": [
+      203.498,
+      163.628,
+      155.848
+    ],
+    "xy_margin_each_side_mm": [
+      18.251,
+      18.186
+    ],
+    "true_bed_contact_area_mm2": 3437.37,
+    "estimated_support_facing_area_45deg_mm2": 3457.07,
+    "a_insert_axis_angle_from_layer_normal_deg": 83.899,
+    "b_insert_axis_angle_from_layer_normal_deg": 57.421,
+    "fits_conservative_envelope": true,
+    "meets_10mm_xy_reserve_each_side": true,
+    "selection_reason": "user explicitly prefers the under-ear opening on the bed; yaw maximizes the minimum XY reserve"
+  },
+  "frozen_workstreams": [
+    "all head and eye geometry",
+    "A/B insert cavity dimensions and positions",
+    "ears",
+    "lower face and rear cassette",
+    "reinforcement",
+    "C006",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "holds": [
+    "No production STL, 3MF, G-code, or ASA shell release.",
+    "No exact-orientation insert coupon until this orientation is visually approved.",
+    "PrusaSlicer must independently confirm support, brim, collision, and 10 mm reserve before production release."
+  ]
+}

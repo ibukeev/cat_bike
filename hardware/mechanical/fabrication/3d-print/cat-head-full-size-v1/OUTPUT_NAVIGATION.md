@@ -5,17 +5,19 @@ current review is always easy to find.
 
 ## Open this first
 
-- HS-04 exact-orientation proposal — **visual approval required; not a print
-  source**. Open the Blender review and confirm the blue approved C001 owner
-  rests on the bed and stays inside the orange 10 mm reserve boundary. The
-  measured envelope is `194.385 x 172.420 x 164.737 mm`, with
-  `22.808/13.790 mm` reserve per side. No STL, 3MF, G-code, or coupon was
+- HS-04 under-ear-opening-on-bed V2 — **visual approval required; not a print
+  source**. Open the Blender review and confirm the intended under-ear opening
+  is bed-facing and the blue approved C001 owner stays inside the orange 10 mm
+  reserve boundary. The measured envelope is `203.498 x 163.628 x 155.848 mm`,
+  with `18.251/18.186 mm` reserve per side. No STL, 3MF, G-code, or coupon was
   released:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-print-orientation-review-v1/right-ab-print-orientation-review-v1.blend`.
-- HS-04 contract, evidence, and resumable checkpoint:
-  `config/right-ab-print-orientation-review-v1.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-print-orientation-review-v1/review/`, and
-  `RIGHT_AB_PRINT_ORIENTATION_REVIEW_V1_CHECKPOINT_2026-08-14.md`.
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-under-ear-opening-print-orientation-review-v2/right-ab-under-ear-opening-print-orientation-review-v2.blend`.
+- HS-04 V2 contract, evidence, and resumable checkpoint:
+  `config/right-ab-under-ear-opening-print-orientation-review-v2.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-under-ear-opening-print-orientation-review-v2/review/`, and
+  `RIGHT_AB_UNDER_EAR_OPENING_PRINT_ORIENTATION_REVIEW_V2_CHECKPOINT_2026-08-14.md`.
+- The prior V1 optimizer-selected placement is rejected and retained only as
+  traceable evidence.
 - Current HS-11 V12 topology diagnostic — **HOLD, not a review approval or
   print source**. The approved V11 geometry is frozen. Sixty unchanged
   lower-face components were isolated; the inherited primary owner component

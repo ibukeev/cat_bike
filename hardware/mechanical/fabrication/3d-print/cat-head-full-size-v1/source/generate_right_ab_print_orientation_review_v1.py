@@ -69,7 +69,10 @@ def main():
     bpy.ops.object.delete(use_global=False)
     bpy.ops.wm.stl_import(filepath=str(Path(args.input_stl).resolve()))
     part = bpy.context.selected_objects[0]
-    part.name = "REVIEW__RIGHT_UPPER_HEAD_C001__A_B__PRINT_ORIENTATION_V1"
+    part.name = config.get(
+        "review_object_name",
+        "REVIEW__RIGHT_UPPER_HEAD_C001__A_B__PRINT_ORIENTATION_V1",
+    )
 
     quaternion = config["numeric_contract"]["selected_rotation_quaternion_wxyz"]
     part.rotation_mode = "QUATERNION"
@@ -152,8 +155,10 @@ def main():
         "dimension_check": "PASS",
         "production_export_created": False,
     }
-    (output_dir / "orientation-validation-v1.json").write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
-    bpy.ops.wm.save_as_mainfile(filepath=str(output_dir / "right-ab-print-orientation-review-v1.blend"))
+    validation_filename = config.get("validation_filename", "orientation-validation-v1.json")
+    blend_filename = config.get("blend_filename", "right-ab-print-orientation-review-v1.blend")
+    (output_dir / validation_filename).write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
+    bpy.ops.wm.save_as_mainfile(filepath=str(output_dir / blend_filename))
 
 
 if __name__ == "__main__":

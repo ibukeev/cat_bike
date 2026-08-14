@@ -2,7 +2,11 @@
 
 ## Status
 
-An isolated, zero-geometry-change print-orientation proposal is ready for the
+**Rejected and superseded on 2026-08-14.** The user prints this owner with the
+under-ear opening on the bed. Use the V2 checkpoint and review instead:
+`RIGHT_AB_UNDER_EAR_OPENING_PRINT_ORIENTATION_REVIEW_V2_CHECKPOINT_2026-08-14.md`.
+
+This historical isolated, zero-geometry-change proposal was generated for the
 approved right upper-head C001 A/B owner. The numeric audit checks the real
 integrated solid against the conservative `240 x 200 x 210 mm` MK4S envelope
 and the project requirement for at least `10 mm` XY reserve on every side.

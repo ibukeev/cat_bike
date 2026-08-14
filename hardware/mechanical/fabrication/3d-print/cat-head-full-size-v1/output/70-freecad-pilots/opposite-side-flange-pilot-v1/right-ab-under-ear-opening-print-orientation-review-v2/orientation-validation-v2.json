@@ -1,0 +1,17 @@
+{
+  "review_id": "CAT_HEAD_RIGHT_AB_UNDER_EAR_OPENING_PRINT_ORIENTATION_REVIEW_V2",
+  "geometry_change_mm": 0.0,
+  "actual_oriented_xyz_mm": [
+    203.4978,
+    163.6278,
+    155.8483
+  ],
+  "expected_oriented_xyz_mm": [
+    203.498,
+    163.628,
+    155.848
+  ],
+  "dimension_check_tolerance_mm": 0.01,
+  "dimension_check": "PASS",
+  "production_export_created": false
+}
