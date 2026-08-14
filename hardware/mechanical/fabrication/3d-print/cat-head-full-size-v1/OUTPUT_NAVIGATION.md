@@ -5,12 +5,12 @@ current review is always easy to find.
 
 ## Open this first
 
-- HS-04 under-ear-opening-on-bed V2 — **visual approval required; not a print
-  source**. Open the Blender review and confirm the intended under-ear opening
-  is bed-facing and the blue approved C001 owner stays inside the orange 10 mm
-  reserve boundary. The measured envelope is `203.498 x 163.628 x 155.848 mm`,
-  with `18.251/18.186 mm` reserve per side. No STL, 3MF, G-code, or coupon was
-  released:
+- HS-04 displayed V2 orientation — **visually approved 2026-08-14; not a
+  full-shell print source**. The user explicitly confirmed that the under-ear
+  opening is not bed-facing; the historical artifact name must not be treated as
+  a datum description. Preserve the exact approved quaternion. The measured
+  envelope is `203.498 x 163.628 x 155.848 mm`, with `18.251/18.186 mm` reserve
+  per side. No STL, 3MF, G-code, or coupon has yet been released:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-under-ear-opening-print-orientation-review-v2/right-ab-under-ear-opening-print-orientation-review-v2.blend`.
 - HS-04 V2 contract, evidence, and resumable checkpoint:
   `config/right-ab-under-ear-opening-print-orientation-review-v2.json`,

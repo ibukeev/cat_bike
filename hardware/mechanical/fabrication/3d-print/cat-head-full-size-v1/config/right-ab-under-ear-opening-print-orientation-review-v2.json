@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "review_id": "CAT_HEAD_RIGHT_AB_UNDER_EAR_OPENING_PRINT_ORIENTATION_REVIEW_V2",
-  "status": "isolated user-preferred orientation proposal; visual approval required before coupon or production export",
-  "scope": "place the approved right upper-head C001 A/B owner with its under-ear opening plane on the bed",
+  "status": "displayed V2 placement visually approved by user 2026-08-14; historical under-ear-opening bed-datum claim rejected",
+  "scope": "preserve the exact user-approved displayed V2 placement of the right upper-head C001 A/B owner",
   "review_object_name": "REVIEW__RIGHT_UPPER_HEAD_C001__A_B__UNDER_EAR_OPENING_DOWN_V2",
   "blend_filename": "right-ab-under-ear-opening-print-orientation-review-v2.blend",
   "validation_filename": "orientation-validation-v2.json",
@@ -22,7 +22,7 @@
     "required_xy_reserve_each_side_mm": 10.0,
     "contact_plane_tolerance_mm": 0.2,
     "support_threshold_deg": 45.0,
-    "bed_datum_semantic": "right under-ear opening plane",
+    "bed_datum_semantic": "selected contact plane in the approved displayed V2 placement; explicitly not the under-ear opening",
     "selected_source_outward_bed_normal": [
       0.998906016,
       -0.036057804,
@@ -52,7 +52,7 @@
     "b_insert_axis_angle_from_layer_normal_deg": 57.421,
     "fits_conservative_envelope": true,
     "meets_10mm_xy_reserve_each_side": true,
-    "selection_reason": "user explicitly prefers the under-ear opening on the bed; yaw maximizes the minimum XY reserve"
+    "selection_reason": "user confirmed the under-ear opening is not bed-facing but visually approved the exact displayed V2 quaternion; yaw maximizes the minimum XY reserve"
   },
   "frozen_workstreams": [
     "all head and eye geometry",
@@ -65,7 +65,7 @@
   ],
   "holds": [
     "No production STL, 3MF, G-code, or ASA shell release.",
-    "No exact-orientation insert coupon until this orientation is visually approved.",
+    "An exact-orientation insert coupon may now be built from the approved displayed V2 quaternion.",
     "PrusaSlicer must independently confirm support, brim, collision, and 10 mm reserve before production release."
   ]
 }

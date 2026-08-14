@@ -2,13 +2,13 @@
 
 ## Status
 
-An isolated, zero-geometry-change print-orientation proposal now matches the
-user's established physical printing method: the right under-ear opening plane
-is placed on the bed. This V2 supersedes the rejected V1 optimizer-selected
-orientation.
+The user visually approved the exact displayed V2 placement on 2026-08-14.
+The user also corrected its semantic description: the under-ear opening is not
+bed-facing. Therefore the historical filename remains only as artifact identity;
+it must not be interpreted as the approved bed datum.
 
-V2 is ready for visual review only. No production STL, 3MF, G-code, coupon, or
-ASA shell release was created.
+No geometry changed. No production STL, 3MF, G-code, coupon, or ASA shell
+release was created.
 
 ## Frozen source and ownership
 
@@ -19,7 +19,8 @@ ASA shell release was created.
   `e9974661a5a0a71a12bcb6ab6d0d66ceae354fd8744486ff08ce72e20cf0376c`
 - Source approval: user `LGTM`, 2026-08-09.
 - Source topology: valid, closed, self-intersection-free, one solid.
-- Bed datum semantic: right under-ear opening plane.
+- Placement semantic: exact displayed V2 quaternion approved; the under-ear
+  opening is explicitly not bed-facing.
 
 Only the isolated review placement changes. Head and eye geometry, A/B insert
 cavities, ears, lower face, rear cassette, reinforcement, C006, and
@@ -27,7 +28,7 @@ cavities, ears, lower face, rear cassette, reinforcement, C006, and
 
 ## Numeric design contract
 
-- Source outward under-ear-opening bed normal:
+- Selected-contact-plane source outward normal:
   `[0.998906016, -0.036057804, 0.029776497]`.
 - Optimized yaw around that fixed bed normal: `96.5 deg`.
 - Exact rotation quaternion, WXYZ:
@@ -41,8 +42,8 @@ cavities, ears, lower face, rear cassette, reinforcement, C006, and
 - A/B insert axes from the layer normal: `83.899/57.421 deg`.
 - Geometry change: `0.0 mm`.
 
-The fixed user-preferred bed datum fits the conservative envelope and exceeds
-the reserve gate. Yaw was optimized only within that fixed orientation.
+The exact displayed placement fits the conservative envelope and exceeds the
+reserve gate. Yaw was optimized only within that frozen orientation.
 
 ## Current review outputs
 
@@ -62,8 +63,8 @@ the contract within `0.01 mm`: PASS.
 
 ## Rejected or unsafe variants
 
-- V1 is rejected because it optimized support exposure without preserving the
-  user's established under-ear-opening-on-bed setup.
+- V1 remains rejected because the user preferred the displayed V2 placement.
+- The claim that V2 places the under-ear opening on the bed is rejected.
 - Yaw variants violating `10 mm` reserve on any XY side remain rejected.
 - No geometry was recut to force an orientation.
 - This review does not claim PrusaSlicer support, brim, collision, or actual-bed
@@ -82,13 +83,8 @@ the contract within `0.01 mm`: PASS.
 
 ## Next physical review
 
-Open `right-ab-under-ear-opening-print-orientation-review-v2.blend` and check:
-
-1. the intended under-ear opening is the bed-facing datum;
-2. the blue owner rests on the bed without floating or intersecting it;
-3. the complete top footprint stays inside the orange `10 mm` reserve boundary;
-4. no A/B flange, cavity, or other owner feature is omitted;
-5. approve or reject this placement.
-
-After approval, HS-04 may build and slice the exact-orientation A/B ASA
-short-insert coupon. Structural shell printing remains held.
+The exact displayed V2 placement is visually approved. HS-04 may now build and
+slice the A/B ASA short-insert coupon using the frozen quaternion above.
+PrusaSlicer must independently confirm layer continuity, support requirements,
+brim/adhesion strategy, collisions, and actual bed clearance. Structural shell
+printing remains held.

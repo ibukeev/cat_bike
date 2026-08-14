@@ -22,11 +22,12 @@ seam/slot face pairs. FreeCAD fusion and both Blender self-union solvers were
 rejected by the locked topology gates, so a bounded repartition of only those
 mapped faces is next. Production-owner integration, bilateral mirror/validation,
 and print release remain held.
-`HS-04` now has a corrected V2 isolated orientation proposal matching the
-user's established under-ear-opening-on-bed setup. It measures
+`HS-04` now has an exact displayed V2 orientation visually approved by the user
+on 2026-08-14. The user explicitly confirmed that the under-ear opening is not
+bed-facing despite the historical artifact name. The placement measures
 `203.498 x 163.628 x 155.848 mm`, retains `18.251/18.186 mm` XY reserve per
-side, and creates no production export. The rejected V1 remains traceable.
-V2 must be explicitly approved before the exact ASA coupon is built.
+side, and creates no production export. The exact-orientation A/B short-insert
+coupon is the next HS-04 action.
 
 ## Progress table
 
@@ -35,7 +36,7 @@ V2 must be explicitly approved before the exact ASA coupon is built.
 | HS-01 | [x] | ~~Freeze accepted shell and metal baselines~~ | V10 visual reference, exact ears/upper-head sources, lower-face/rear-cassette direction, C006, and `CAT-HEAD-SHELL-ALUMINUM-V0.5-M2` are preserved. | Keep fixture comparisons passing through every later integration. |
 | HS-02 | [x] | ~~Approve repairable right-side topology references~~ | Right translucent panel, upper head, and ear references were individually reviewed and accepted. | Use only these controlled references as integration owners. |
 | HS-03 | [x] | ~~Approve right A/B connector geometry and access~~ | Right-A surface-open V4 and Right-B surface-open V2 visually approved 2026-08-09; 3.4 mm bores, 0.3 mm pair gaps, short inserts, and driver paths digitally pass. | Preserve the exact approved objects and contracts in integration. |
-| HS-04 | [ ] | Produce exact-orientation ASA short-insert coupon | Corrected V2 places the under-ear opening on the bed and passes the conservative envelope and 10 mm reserve audit at `203.498 x 163.628 x 155.848 mm`; A/B axes are `83.899/57.421 deg` from the layer normal. V1 is rejected; no production export exists. | User visually approves the V2 bed placement; then export/slice the A/B cavity coupon in that exact orientation. |
+| HS-04 | [ ] | Produce exact-orientation ASA short-insert coupon | The exact displayed V2 placement is visually approved and passes the conservative envelope and 10 mm reserve audit at `203.498 x 163.628 x 155.848 mm`; A/B axes are `83.899/57.421 deg` from the layer normal. The under-ear opening is not bed-facing. V1 is rejected; no production export exists. | Export/slice the A/B cavity coupon using the frozen V2 quaternion; validate layer continuity, supports, brim/adhesion, collisions, and actual bed clearance. |
 | HS-05 | [ ] | Physically qualify the M3 short-insert joint | No heat-set, torque, pull-out, vibration, or repeated-assembly result yet. | Install the real insert in ASA; verify seating, M3 x 8 engagement, torque, pull-out, and no wall damage. |
 | HS-06 | [x] | ~~Integrate right A/B tabs into copied real owners~~ | `PROPOSED__RIGHT_TRANSLUCENT_PANEL__A_B_INTEGRATED_V1` and `PROPOSED__RIGHT_UPPER_HEAD_C001__A_B_INTEGRATED_V1` are valid closed one-solid unions; no tab is floating. | Preserve these exact integration results through HS-07 review. |
 | HS-07 | [x] | ~~Validate and visually approve integrated right A/B~~ | Topology, roots, gaps, insertion, drivers, exterior context, and ear collision digitally passed; user visually approved `CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd` on 2026-08-09. | Preserve the exact approved right integrated owners through bilateral validation. |
