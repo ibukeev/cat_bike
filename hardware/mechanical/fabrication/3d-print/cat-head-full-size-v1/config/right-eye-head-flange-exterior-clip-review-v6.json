@@ -1,0 +1,39 @@
+{
+  "schema_version": 6,
+  "status": "isolated right-side owner-skin-clipped head-flange proposal ready for validation; no owner Boolean, mirror, STL, G-code, or print release",
+  "source_reinforcement_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
+  "current_right_bucket_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_bucket_v9.obj",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6",
+  "locked_contract": {
+    "roles": [
+      "outer_eye",
+      "outer_head",
+      "lower_eye",
+      "lower_head"
+    ],
+    "flange_length_mm": 12.0,
+    "flange_depth_mm": 8.0,
+    "total_radial_thickness_mm": 4.8,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "mating_face_shift_mm": 0.0,
+    "hole_axis_shift_mm": 0.0,
+    "head_exterior_recess_mm": 0.01,
+    "minimum_bore_to_clipped_edge_mm": 3.5,
+    "maximum_exterior_positive_deviation_mm": 0.02,
+    "minimum_direct_owner_overlap_mm3": 80.0
+  },
+  "anchors": {
+    "outer_head": "large exterior owner-skin plane crossing only the outward flange corner; resolved geometrically from the frozen right-upper-head mesh",
+    "lower_head": "large exterior owner-skin plane crossing only the outward flange corner; resolved geometrically from the frozen right-lower-face mesh"
+  },
+  "holds": [
+    "Keep both V5 eye-side flange solids geometrically unchanged.",
+    "Keep all four mating planes, flange centerlines, M2.5 axes, bore centers, and both 0.3 mm pair gaps fixed.",
+    "Clip only the exterior-breaching corners of the two head-side flange solids against geometrically classified large exterior owner-skin planes; never use the nearest internal mount facet.",
+    "Do not cut or modify either frozen head owner.",
+    "No broad base, wedge, taper, neck, bridge, boss, or exterior protrusion.",
+    "Preserve the V9 eye bucket, upper head, lower face, C046/C048, C006, panels, rear cassette, and aluminum workstream.",
+    "No production owner Boolean, left mirror, STL, G-code, slicing, or print release before explicit visual approval."
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "status": "isolated right-side owner-skin-clipped head-flange proposal ready for validation; no owner Boolean, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "roles": [
+      "outer_eye",
+      "outer_head",
+      "lower_eye",
+      "lower_head"
+    ],
+    "flange_length_mm": 12.0,
+    "flange_depth_mm": 8.0,
+    "total_radial_thickness_mm": 4.8,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "mating_face_shift_mm": 0.0,
+    "hole_axis_shift_mm": 0.0,
+    "head_exterior_recess_mm": 0.01,
+    "minimum_bore_to_clipped_edge_mm": 3.5,
+    "maximum_exterior_positive_deviation_mm": 0.02,
+    "minimum_direct_owner_overlap_mm3": 80.0
+  },
+  "anchors": {
+    "outer_head": {
+      "owner": "right_upper_head",
+      "source_polygon_index_zero_based": 11,
+      "source_anchor_point_mm": [
+        109.945,
+        89.528008,
+        138.12851
+      ],
+      "outward_normal": [
+        0.87094963,
+        -0.46469733,
+        0.15969746
+      ],
+      "nearest_distance_from_mount_anchor_mm": 4e-06,
+      "clip_recess_mm": 0.01,
+      "source_face_area_mm2": 1225.0516,
+      "anchor_signed_distance_mm": 4e-06,
+      "head_flange_center_signed_distance_mm": -2.408313,
+      "pre_clip_signed_range_mm": [
+        -6.589602,
+        3.29395
+      ],
+      "selection_method": "large exterior owner skin crossing only outward flange corner"
+    },
+    "lower_head": {
+      "owner": "right_lower_face",
+      "source_polygon_index_zero_based": 1041,
+      "source_anchor_point_mm": [
+        59.061684,
+        53.642727,
+        107.143341
+      ],
+      "outward_normal": [
+        0.30968922,
+        -0.90219641,
+        0.30022395
+      ],
+      "nearest_distance_from_mount_anchor_mm": 0.999998,
+      "clip_recess_mm": 0.01,
+      "source_face_area_mm2": 225.6302,
+      "anchor_signed_distance_mm": 0.999998,
+      "head_flange_center_signed_distance_mm": -3.744554,
+      "pre_clip_signed_range_mm": [
+        -8.423865,
+        0.702294
+      ],
+      "selection_method": "large exterior owner skin crossing only outward flange corner"
+    }
+  },
+  "construction": "V5 flange locations and 4.8 mm thickness preserved; only exterior-breaching head-side corners clipped to geometrically classified large frozen-owner skin planes",
+  "flanges": {
+    "outer_head": {
+      "object": "PROPOSED__RIGHT_OUTER_HEAD__PLAIN_FLANGE_4P8MM_EXTERIOR_CLIPPED_V6",
+      "owner": "right_upper_head",
+      "owner_overlap_mm3": 122.516,
+      "owner_overlap_80mm3_gate": true,
+      "pre_clip_blank_volume_mm3": 460.7998,
+      "post_clip_pre_bore_volume_mm3": 352.26,
+      "final_post_bore_volume_mm3": 323.1773,
+      "removed_exterior_volume_mm3": 108.5398,
+      "mating_face_shift_mm": 0.0,
+      "hole_axis_shift_mm": 0.0,
+      "maximum_exterior_positive_deviation_mm": -1.3e-05,
+      "bore_to_clipped_edge_margin_mm": 1.6155,
+      "bore_to_clipped_edge_3p5mm_gate": false,
+      "connected_components": 1,
+      "topology": {
+        "vertices": 62,
+        "edges": 186,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 323.1773
+      }
+    },
+    "outer_eye": {
+      "object": "PROPOSED__RIGHT_OUTER_EYE__PLAIN_FLANGE_4P8MM_UNCHANGED_V6",
+      "owner": "FROZEN__RIGHT_EYE_BUCKET_V9_V6",
+      "owner_overlap_mm3": 247.0647,
+      "owner_overlap_80mm3_gate": true,
+      "pre_clip_blank_volume_mm3": null,
+      "post_clip_pre_bore_volume_mm3": null,
+      "final_post_bore_volume_mm3": 431.893,
+      "removed_exterior_volume_mm3": 0.0,
+      "mating_face_shift_mm": 0.0,
+      "hole_axis_shift_mm": 0.0,
+      "maximum_exterior_positive_deviation_mm": null,
+      "bore_to_clipped_edge_margin_mm": null,
+      "bore_to_clipped_edge_3p5mm_gate": null,
+      "connected_components": 1,
+      "topology": {
+        "vertices": 73,
+        "edges": 106,
+        "faces": 33,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.893
+      }
+    },
+    "lower_head": {
+      "object": "PROPOSED__RIGHT_LOWER_HEAD__PLAIN_FLANGE_4P8MM_EXTERIOR_CLIPPED_V6",
+      "owner": "right_lower_face",
+      "owner_overlap_mm3": 26.2422,
+      "owner_overlap_80mm3_gate": false,
+      "pre_clip_blank_volume_mm3": 460.8002,
+      "post_clip_pre_bore_volume_mm3": 450.7073,
+      "final_post_bore_volume_mm3": 421.4876,
+      "removed_exterior_volume_mm3": 10.0929,
+      "mating_face_shift_mm": 0.0,
+      "hole_axis_shift_mm": 0.0,
+      "maximum_exterior_positive_deviation_mm": -1.4e-05,
+      "bore_to_clipped_edge_margin_mm": 3.1294,
+      "bore_to_clipped_edge_3p5mm_gate": false,
+      "connected_components": 1,
+      "topology": {
+        "vertices": 59,
+        "edges": 177,
+        "faces": 118,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 421.4876
+      }
+    },
+    "lower_eye": {
+      "object": "PROPOSED__RIGHT_LOWER_EYE__PLAIN_FLANGE_4P8MM_UNCHANGED_V6",
+      "owner": "FROZEN__RIGHT_EYE_BUCKET_V9_V6",
+      "owner_overlap_mm3": 248.3147,
+      "owner_overlap_80mm3_gate": true,
+      "pre_clip_blank_volume_mm3": null,
+      "post_clip_pre_bore_volume_mm3": null,
+      "final_post_bore_volume_mm3": 431.792,
+      "removed_exterior_volume_mm3": 0.0,
+      "mating_face_shift_mm": 0.0,
+      "hole_axis_shift_mm": 0.0,
+      "maximum_exterior_positive_deviation_mm": null,
+      "bore_to_clipped_edge_margin_mm": null,
+      "bore_to_clipped_edge_3p5mm_gate": null,
+      "connected_components": 1,
+      "topology": {
+        "vertices": 66,
+        "edges": 97,
+        "faces": 31,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.792
+      }
+    }
+  },
+  "pairs": {
+    "outer": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 0.3
+    },
+    "lower": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 0.3
+    }
+  },
+  "both_eye_side_v5_shapes_unchanged": true,
+  "both_head_side_exterior_breaches_clipped": true,
+  "structural_print_release_hold": "Any false bore-to-clipped-edge 3.5 mm gate remains an explicit hold; no hole or flange relocation was authorized.",
+  "frozen_owner_geometry_modified": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Keep both V5 eye-side flange solids geometrically unchanged.",
+    "Keep all four mating planes, flange centerlines, M2.5 axes, bore centers, and both 0.3 mm pair gaps fixed.",
+    "Clip only the exterior-breaching corners of the two head-side flange solids against geometrically classified large exterior owner-skin planes; never use the nearest internal mount facet.",
+    "Do not cut or modify either frozen head owner.",
+    "No broad base, wedge, taper, neck, bridge, boss, or exterior protrusion.",
+    "Preserve the V9 eye bucket, upper head, lower face, C046/C048, C006, panels, rear cassette, and aluminum workstream.",
+    "No production owner Boolean, left mirror, STL, G-code, slicing, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/review/01-v6-all-four-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/review/02-v6-outer-head-exterior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/review/03-v6-lower-head-exterior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/review/04-v6-four-flanges-isolated.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/review/05-v6-owner-clip-plane-anchors.png"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "FreeCAD exact review passes shape validity and pair clearance; isolated review only",
+  "review_file": "CAT_HEAD_RIGHT_EYE_HEAD_FLANGE_EXTERIOR_CLIP_REVIEW_V6.FCStd",
+  "objects": {
+    "outer_head": {
+      "valid": true,
+      "closed": true,
+      "solids": 1,
+      "volume_mm3": 323.18
+    },
+    "outer_eye": {
+      "valid": true,
+      "closed": true,
+      "solids": 1,
+      "volume_mm3": 431.87
+    },
+    "lower_head": {
+      "valid": true,
+      "closed": true,
+      "solids": 1,
+      "volume_mm3": 421.49
+    },
+    "lower_eye": {
+      "valid": true,
+      "closed": true,
+      "solids": 1,
+      "volume_mm3": 431.79
+    }
+  },
+  "pair_clearance_mm": {
+    "outer": 0.3,
+    "lower": 0.3
+  },
+  "exterior_positive_deviation_mm": {
+    "outer_head": -1.3e-05,
+    "lower_head": -1.4e-05
+  },
+  "unchanged_geometry": {
+    "outer_eye": true,
+    "lower_eye": true,
+    "mating_faces": true,
+    "hole_axes": true,
+    "hole_centers": true
+  },
+  "structural_holds": {
+    "outer_head_bore_to_trim_edge_mm": {
+      "value": 1.6155,
+      "minimum": 3.5,
+      "pass": false
+    },
+    "lower_head_bore_to_trim_edge_mm": {
+      "value": 3.1294,
+      "minimum": 3.5,
+      "pass": false
+    },
+    "lower_head_direct_owner_overlap_mm3": {
+      "value": 26.2422,
+      "minimum": 80.0,
+      "pass": false
+    }
+  },
+  "production_owner_boolean": false,
+  "mirror_performed": false,
+  "stl_or_gcode_exported": false,
+  "print_release": false
+}
