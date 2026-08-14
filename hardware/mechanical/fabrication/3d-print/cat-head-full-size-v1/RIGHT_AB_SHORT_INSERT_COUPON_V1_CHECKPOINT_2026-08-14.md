@@ -2,6 +2,12 @@
 
 ## Status
 
+**REJECTED AS THE REQUESTED SHELL-ORIENTATION HANDOFF.** The user clarified on
+2026-08-14 that these connectors are not printed separately from the head shell.
+Use `RIGHT_UPPER_HEAD_C001_AB_SLICER_ORIENTATION_HANDOFF_V1_CHECKPOINT_2026-08-14.md`
+and its one-object complete-shell 3MF instead. This coupon work remains only as
+traceable historical evidence and is not the current physical-review input.
+
 The exact approved Right-A V4 and Right-B V2 tab geometries are packaged in an
 editable PrusaSlicer project as two separately selectable and movable objects.
 The user requested this handoff to choose the print orientation in PrusaSlicer.

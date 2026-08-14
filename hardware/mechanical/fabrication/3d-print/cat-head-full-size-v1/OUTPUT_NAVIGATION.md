@@ -5,24 +5,25 @@ current review is always easy to find.
 
 ## Open this first
 
-- Open the editable HS-04 coupon project first:
-  output/40-prototypes/right-ab-short-insert-coupon-v1/CAT_HEAD_RIGHT_AB_SHORT_INSERT_COUPON_V1.3mf.
-  It contains named Right-A V4 and Right-B V2 coupons as two separate movable
-  manifold objects. No scale, supports, brim, or G-code are baked in. The initial
-  orientation has 0.0 mm2 planar bed contact for both objects and is not a
-  print recommendation; rotate them in PrusaSlicer and save the preferred project.
-- Coupon contract, validation, evidence, and resumable checkpoint:
-  config/right-ab-short-insert-coupon-v1.json,
-  output/40-prototypes/right-ab-short-insert-coupon-v1/validation-v1.json,
-  output/40-prototypes/right-ab-short-insert-coupon-v1/review/, and
-  RIGHT_AB_SHORT_INSERT_COUPON_V1_CHECKPOINT_2026-08-14.md.
+- Open the editable complete-shell HS-04 orientation project first:
+  `output/50-slicer-projects/right-upper-head-c001-ab-orientation-handoff-v1/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ORIENTATION_HANDOFF_V1.3mf`.
+  It contains one complete right upper-head C001 shell object with the approved
+  A/B features integrated. It does not contain detached coupons. No scale,
+  supports, brim, or G-code are baked in; rotate the whole object in
+  PrusaSlicer and save the preferred project.
+- Validation and resumable checkpoint:
+  `output/50-slicer-projects/right-upper-head-c001-ab-orientation-handoff-v1/validation-v1.json`
+  and `RIGHT_UPPER_HEAD_C001_AB_SLICER_ORIENTATION_HANDOFF_V1_CHECKPOINT_2026-08-14.md`.
+- The earlier standalone A/B coupon project is rejected as the requested
+  orientation handoff and remains only as traceable historical evidence.
 
 - HS-04 displayed V2 orientation — **visually approved 2026-08-14; not a
   full-shell print source**. The user explicitly confirmed that the under-ear
   opening is not bed-facing; the historical artifact name must not be treated as
   a datum description. Preserve the exact approved quaternion. The measured
   envelope is `203.498 x 163.628 x 155.848 mm`, with `18.251/18.186 mm` reserve
-  per side. The editable isolated A/B coupon 3MF exists above; no full-shell STL or G-code has been released:
+  per side. The editable full-shell orientation handoff exists above; no G-code
+  or full-shell print release has been issued:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-under-ear-opening-print-orientation-review-v2/right-ab-under-ear-opening-print-orientation-review-v2.blend`.
 - HS-04 V2 contract, evidence, and resumable checkpoint:
   `config/right-ab-under-ear-opening-print-orientation-review-v2.json`,

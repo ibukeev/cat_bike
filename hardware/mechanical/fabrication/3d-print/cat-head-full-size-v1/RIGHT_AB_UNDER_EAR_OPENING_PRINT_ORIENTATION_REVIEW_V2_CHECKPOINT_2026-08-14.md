@@ -7,9 +7,11 @@ The user also corrected its semantic description: the under-ear opening is not
 bed-facing. Therefore the historical filename remains only as artifact identity;
 it must not be interpreted as the approved bed datum.
 
-No geometry changed in this orientation review. A later isolated A/B coupon 3MF
-was created at output/40-prototypes/right-ab-short-insert-coupon-v1/; no
-full-shell STL, G-code, or ASA shell release was created.
+No geometry changed in this orientation review. The later standalone A/B coupon
+3MF was rejected as the requested handoff after the user clarified that the
+connectors print as part of the shell. A one-object complete-shell orientation
+handoff now exists under `output/50-slicer-projects/`; no G-code or ASA shell
+print release was created.
 
 ## Frozen source and ownership
 
@@ -84,8 +86,8 @@ the contract within `0.01 mm`: PASS.
 
 ## Next physical review
 
-The exact isolated A/B coupon is now available as a two-object editable 3MF.
-Its initial displayed-V2 orientation has zero planar bed contact, so the user
-will rotate both objects and save the preferred PrusaSlicer project. Then
-PrusaSlicer must confirm layer continuity, supports, brim/adhesion, collisions,
-and actual bed clearance. Structural shell printing remains held.
+The complete right upper-head C001 shell with integrated A/B features is now
+available as a one-object editable 3MF. The user will rotate that complete shell
+and save the preferred PrusaSlicer project. Then PrusaSlicer must confirm layer
+continuity, supports, brim/adhesion, collisions, and actual bed clearance.
+Structural shell printing remains held.
