@@ -1,0 +1,41 @@
+{
+  "status": "exact isolated right outer eye/head pair ready for visual review; not integrated or print released",
+  "eye_result": {
+    "object": "PROPOSED__RIGHT_EYE_BUCKET_FACE879_DOUBLED_INWARD_V3__EXACT",
+    "valid": true,
+    "closed": true,
+    "solids": 1,
+    "faces": 918,
+    "volume_mm3": 6880.0
+  },
+  "head_result": {
+    "object": "PROPOSED__RIGHT_OUTER_HEAD_FLANGE_DOUBLED_INWARD_V3__EXACT",
+    "valid": true,
+    "closed": true,
+    "solids": 1,
+    "faces": 105,
+    "volume_mm3": 913.32
+  },
+  "pair": {
+    "intersects": false,
+    "minimum_clearance_mm": 0.3
+  },
+  "construction": {
+    "selected_eye_face": "FROZEN__RIGHT_EYE_BUCKET_V9_V2__SOLID.Face879",
+    "existing_depth_mm": 8.0,
+    "added_owner_side_depth_mm": 8.0,
+    "total_owner_side_depth_mm": 16.0,
+    "hidden_union_overlap_mm": 0.4,
+    "eye_extension_owner_overlap_mm3": 11.52,
+    "head_extension_owner_overlap_mm3": 2.337,
+    "extension_pair_overlap_mm3": 0.0
+  },
+  "holds": {
+    "v2_rectangular_base_present": false,
+    "lower_pair_modified": false,
+    "left_mirror_performed": false,
+    "production_owner_integration_performed": false,
+    "stl_or_gcode_exported": false,
+    "print_release": false
+  }
+}

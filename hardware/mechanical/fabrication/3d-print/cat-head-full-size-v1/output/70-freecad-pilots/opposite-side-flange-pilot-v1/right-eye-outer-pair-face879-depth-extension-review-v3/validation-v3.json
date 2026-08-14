@@ -1,0 +1,69 @@
+{
+  "status": "isolated right outer eye/head flange depth-extension proposal only; no owner Boolean, lower-pair edit, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "user_selected_eye_owner": "FROZEN__RIGHT_EYE_BUCKET_V9_V2__SOLID",
+    "user_selected_eye_face": "Face879",
+    "selected_face_centroid_mm": [
+      99.28,
+      87.91,
+      146.48
+    ],
+    "selected_face_normal": [
+      -0.3637,
+      0.9097,
+      -0.2003
+    ],
+    "selected_face_area_mm2": 28.8,
+    "existing_flange_length_mm": 12.0,
+    "existing_flange_depth_mm": 8.0,
+    "existing_flange_thickness_mm": 2.4,
+    "added_inward_depth_mm": 8.0,
+    "total_owner_side_depth_mm": 16.0,
+    "union_overlap_mm": 0.4,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3
+  },
+  "approved_outer_eye_flange_fingerprint": "5c985dfb1dd64804392e161d8bb167db9cbc8d4ab8939332505adee34af64743",
+  "approved_outer_head_flange_fingerprint": "f903bbb0715008c33cde90f66ece74f613181dd4e700b7ef9e6e6496b574dfe4",
+  "lower_eye_flange_fingerprint_unchanged": "5fb57355a4a068a3c6b16bf1356dc7fd09040f7b8fb81168ab9df8b762d57556",
+  "lower_head_flange_fingerprint_unchanged": "a93109b146ee00c17f3c8cccae8e8c99042e1bf84d6f289aacb528ac0c6aad11",
+  "eye_extension_topology": {
+    "vertices": 8,
+    "edges": 12,
+    "faces": 6,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "volume_mm3": 241.9199
+  },
+  "head_extension_topology": {
+    "vertices": 8,
+    "edges": 12,
+    "faces": 6,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "volume_mm3": 241.9203
+  },
+  "eye_extension_owner_overlap_mm3": 11.52,
+  "head_extension_owner_overlap_mm3": 2.337,
+  "extension_pair_overlap_mm3": 0.0,
+  "accepted_pair_clearance_mm": 0.3,
+  "v2_outer_rectangular_base_present": false,
+  "lower_pair_modified": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Delete and do not reuse the entire V2 outer rectangular-base proposal.",
+    "Keep the accepted outer eye/head flange locations, axes, mating faces, bores, and 0.3 mm gap fixed.",
+    "Extend only the existing 12 x 2.4 mm owner-end section by 8.0 mm inward on both members of the outer pair.",
+    "Do not alter the lower eye/head flange pair.",
+    "No broad base, wedge, taper, neck, owner Boolean, mirror, STL, G-code, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/review/01-outer-pair-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/review/02-face879-depth-extensions-highlighted.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/review/03-extensions-isolated.png"
+    ]
+  }
+}

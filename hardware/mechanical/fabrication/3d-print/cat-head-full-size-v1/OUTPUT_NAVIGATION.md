@@ -5,19 +5,21 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 V2 eye-root proposal — preserves the accepted flanges and
-  replaces rejected V1's protruding tapered roots with straight `22 x 8 mm`
-  rectangular internal bases, `1.6 mm` into the owner and `0.4 mm` into the
-  accepted flange. Exact owner engagement is `59.1390 / 60.9575 mm3`; both
-  mating gaps remain `0.3000 mm`. Awaiting visual approval; no owner Boolean,
+- Current HS-11 outer-pair V3 — directly extends eye-owner `Face879` and the
+  corresponding head flange `8.0 mm` into their respective owners. Exact
+  results are valid closed one-solids, do not interfere, and retain the
+  `0.3000 mm` mating gap. V2's broad rectangular base is absent; the lower
+  pair is unchanged. Awaiting visual approval; no production integration,
   mirror, STL, G-code, or print release:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/CAT_HEAD_RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_V2.FCStd`
-- V2 contract, Blender context, evidence, validation, and checkpoint:
-  `config/right-eye-rectangular-root-review-v2.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/CAT_HEAD_RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_V2.blend`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/validation-v2.json`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/review/`, and
-  `RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_V2_CHECKPOINT_2026-08-13.md`
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/CAT_HEAD_RIGHT_EYE_OUTER_PAIR_FACE879_DEPTH_EXTENSION_REVIEW_V3.FCStd`
+- V3 contract, Blender context, validation, and checkpoint:
+  `config/right-eye-outer-pair-face879-depth-extension-review-v3.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/CAT_HEAD_RIGHT_EYE_OUTER_PAIR_FACE879_DEPTH_EXTENSION_REVIEW_V3.blend`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/validation-v3.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/freecad-validation-v3.json`, and
+  `RIGHT_EYE_OUTER_PAIR_FACE879_DEPTH_EXTENSION_REVIEW_V3_CHECKPOINT_2026-08-13.md`
+- Rejected V2 broad-base proposal is retained only as traceable evidence at
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2/`.
 - Rejected V1 is retained only as traceable evidence at
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1/`.
 - Current HS-11 owner-integration audit — fail-closed because the two approved

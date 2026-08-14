@@ -2,11 +2,11 @@
 
 ## Status
 
-HS-11 has a validated **right-side V2 proposal ready for visual review**.
+HS-11 V2 is **rejected and superseded by the Face879 depth-extension V3**.
 V1 is rejected because its `16 x 12 mm` tapered roots protruded outside the
-shell. V2 preserves both accepted V3 flanges and adds only a simple straight
-rectangular internal base to each one. No copied owner has been Booleaned, no
-left mirror exists, and no STL, G-code, or print release exists.
+shell. The user subsequently rejected V2's broad rectangular-base strategy.
+Retain these files only as traceable rejected evidence; do not promote or
+integrate them.
 
 ## Review files
 
