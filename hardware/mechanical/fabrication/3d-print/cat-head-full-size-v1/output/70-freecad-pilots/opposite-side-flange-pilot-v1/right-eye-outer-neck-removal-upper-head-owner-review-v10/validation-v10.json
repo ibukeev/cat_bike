@@ -1,0 +1,179 @@
+{
+  "status": "corrected isolated right-side owner review; restore the V7 lower-face source, delete only the long disconnected lower-face neck touching the selected outer head flange, and retain that flange at its existing upper-head-supported location; no owner Boolean, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "removed_component_vertex_count": 81,
+    "removed_component_face_count": 41,
+    "removed_component_bbox_min_mm": [
+      99.2661,
+      79.8783,
+      117.5763
+    ],
+    "removed_component_bbox_max_mm": [
+      105.8241,
+      90.588,
+      153.8223
+    ],
+    "bbox_tolerance_mm": 0.001,
+    "maximum_component_distance_to_outer_head_flange_mm": 0.001,
+    "restored_v9_wrongly_deleted_component_vertex_count": 65,
+    "restored_v9_wrongly_deleted_component_face_count": 32,
+    "restored_v9_wrongly_deleted_component_bbox_min_mm": [
+      59.88083,
+      58.7314,
+      117.14426
+    ],
+    "restored_v9_wrongly_deleted_component_bbox_max_mm": [
+      74.04919,
+      70.71507,
+      122.4879
+    ],
+    "mating_gap_mm": 0.3,
+    "maximum_pair_gap_error_mm": 0.01,
+    "minimum_outer_head_flange_upper_head_overlap_mm3": 80.0
+  },
+  "removed_actual_neck_component": {
+    "vertex_count": 81,
+    "face_count": 41,
+    "bbox_min_mm": [
+      99.26609,
+      79.87835,
+      117.5763
+    ],
+    "bbox_max_mm": [
+      105.82408,
+      90.58801,
+      153.82234
+    ],
+    "minimum_vertex_distance_to_selected_outer_head_flange_mm": 0.0
+  },
+  "restored_v9_wrongly_deleted_component": {
+    "vertex_count": 65,
+    "face_count": 32,
+    "bbox_min_mm": [
+      59.88083,
+      58.7314,
+      117.14426
+    ],
+    "bbox_max_mm": [
+      74.04919,
+      70.71507,
+      122.4879
+    ],
+    "status": "restored_from_frozen_v7_source"
+  },
+  "lower_face_before": {
+    "topology": {
+      "vertices": 1622,
+      "edges": 2667,
+      "faces": 1131,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121419.4251
+    },
+    "component_count": 63
+  },
+  "lower_face_after": {
+    "topology": {
+      "vertices": 1541,
+      "edges": 2545,
+      "faces": 1090,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 121015.2614
+    },
+    "component_count": 62
+  },
+  "flanges": {
+    "outer_head": {
+      "source_object": "PROPOSED__RIGHT_OUTER_HEAD__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "review_object": "RETAINED__V10__OUTER_HEAD__UNCHANGED",
+      "fingerprint": "7031c4eb248a0a49d370e8f3c6e777a4a8a1f821907b9ad4c3c5579e12250132",
+      "topology": {
+        "vertices": 62,
+        "edges": 186,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 323.1773
+      }
+    },
+    "outer_eye": {
+      "source_object": "PROPOSED__RIGHT_OUTER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "review_object": "RETAINED__V10__OUTER_EYE__UNCHANGED",
+      "fingerprint": "b8960db4b8ae67bc426db8411ec92336e6364919d260c8defc6841f13dbbee4d",
+      "topology": {
+        "vertices": 76,
+        "edges": 228,
+        "faces": 152,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.6557
+      }
+    },
+    "second_head": {
+      "source_object": "PROPOSED__RIGHT_LOWER_HEAD__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "review_object": "RETAINED__V10__SECOND_HEAD__UNCHANGED",
+      "fingerprint": "87b2150d9b67e282994f2ccf6f6b0d7954ed3491608f7de489979b67f476f88e",
+      "topology": {
+        "vertices": 59,
+        "edges": 177,
+        "faces": 118,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 421.4876
+      }
+    },
+    "second_eye": {
+      "source_object": "PROPOSED__RIGHT_LOWER_EYE__PLAIN_FLANGE_4P8MM_LOCAL_SKIN_CLIPPED_V7",
+      "review_object": "RETAINED__V10__SECOND_EYE__UNCHANGED",
+      "fingerprint": "7206b381c3be8150a416a789875f225ca9b85862d54f847290cd0239271031ed",
+      "topology": {
+        "vertices": 68,
+        "edges": 204,
+        "faces": 136,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 394.7601
+      }
+    }
+  },
+  "retained_pairs": {
+    "outer": {
+      "minimum_clearance_mm": 0.3,
+      "interference_mm3": 0.0
+    },
+    "second": {
+      "minimum_clearance_mm": 0.3,
+      "interference_mm3": 0.0
+    }
+  },
+  "outer_head_flange_owner": {
+    "upper_head_overlap_mm3": 122.516,
+    "revised_lower_face_overlap_mm3": 0.0,
+    "assigned_owner": "right_upper_head",
+    "spatial_relocation_performed": false
+  },
+  "geometry_changed": [
+    "PROPOSED__RIGHT_LOWER_FACE__ACTUAL_OUTER_NECK_REMOVED_V10"
+  ],
+  "flange_geometry_changed": false,
+  "flange_location_changed": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Delete only the 81-vertex, 41-face disconnected lower-face neck locked by its bounding box and zero-distance contact to the selected outer head flange.",
+    "Restore the 65-vertex, 32-face component that V9 deleted incorrectly by rebuilding from the frozen V7 source.",
+    "Do not translate, rotate, resize, rebuild, re-bore, or otherwise change either existing flange pair.",
+    "Treat the retained outer head flange as upper-head owned only if direct overlap with the frozen upper head remains at least 80 mm3.",
+    "Do not cut or modify the main lower-face shell, upper-head shell, eye bucket, reinforcement, rear cassette, C006, or aluminum-interface geometry.",
+    "No owner Boolean, left mirror, STL, G-code, slicing, ASA printing, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/review/01-v10-before-actual-neck-removal.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/review/02-v10-after-actual-neck-removal.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/review/03-v10-after-full-owner-context.png"
+    ]
+  }
+}

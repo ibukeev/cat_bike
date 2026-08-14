@@ -1,5 +1,7 @@
 # Right eye second-pair neck removal — V9 checkpoint
 
+> **Rejected 2026-08-14:** V9 deleted the wrong 65-vertex / 32-face component and left the actual long outer neck attached to the lower face. Do not use V9 as a valid correction. Use `RIGHT_EYE_OUTER_NECK_REMOVAL_UPPER_HEAD_OWNER_REVIEW_V10_CHECKPOINT_2026-08-14.md`.
+
 ## Scope
 
 - Preserve both existing right-eye flange pairs in their current locations and geometry.

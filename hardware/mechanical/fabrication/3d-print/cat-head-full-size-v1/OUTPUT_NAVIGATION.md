@@ -5,18 +5,23 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 V9 neck-removal review — both existing right-eye flange pairs
-  remain in their V7 positions and retain their geometry. V9 removes only the
-  isolated lower-head neck/residue beneath the second head-side flange. The
-  retained second pair still has a `0.3000 mm` gap and zero interference:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/CAT_HEAD_RIGHT_EYE_SECOND_PAIR_NECK_REMOVAL_REVIEW_V9.FCStd`
-- V9 before/after evidence, validation, and resumable checkpoint:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/review/`,
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9/validation-v9.json`, and
-  `RIGHT_EYE_SECOND_PAIR_NECK_REMOVAL_REVIEW_V9_CHECKPOINT_2026-08-14.md`.
-- V9 is an isolated review, not an owner Boolean, mirror, STL, G-code, or
-  print release. The inherited lower-face review mesh still requires topology
-  repair before production integration.
+- Current HS-11 V10 corrected outer-neck / upper-head-owner review — both
+  existing right-eye flange pairs remain in their accepted V7 positions and
+  retain their geometry. V10 removes the actual long 81-vertex / 41-face neck
+  from the lower face and restores the 65-vertex / 32-face material that V9
+  deleted by mistake. The selected outer head flange directly overlaps the
+  upper head by `122.5160 mm^3` and the corrected lower face by `0.0000 mm^3`.
+  Both pair gaps remain `0.3000 mm` with zero interference:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/CAT_HEAD_RIGHT_EYE_OUTER_NECK_REMOVAL_UPPER_HEAD_OWNER_REVIEW_V10.FCStd`
+- V10 Blender review, evidence, validation, and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/CAT_HEAD_RIGHT_EYE_OUTER_NECK_REMOVAL_UPPER_HEAD_OWNER_REVIEW_V10.blend`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/review/`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10/validation-v10.json`, and
+  `RIGHT_EYE_OUTER_NECK_REMOVAL_UPPER_HEAD_OWNER_REVIEW_V10_CHECKPOINT_2026-08-14.md`.
+- V9 is rejected because it removed the wrong component. V10 is still an
+  isolated review, not an owner Boolean, mirror, STL, G-code, or print release.
+  The inherited lower-face mesh still requires topology repair before production
+  integration.
 
 - Cleaned HS-11 V8 identification review — **rejected as a structural
   proposal**. The fabricated inner-upper pair has been removed from the
