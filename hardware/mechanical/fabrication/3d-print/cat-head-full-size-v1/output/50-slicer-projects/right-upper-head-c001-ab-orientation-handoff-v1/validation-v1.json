@@ -1,11 +1,10 @@
 {
-  "status": "PASS",
+  "status": "SUPERSEDED_BY_USER_ORIENTATION",
   "purpose": "Editable print-orientation handoff for the complete reviewed right upper-head shell owner",
   "source_freecad": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-owner-integration-review-v1/CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd",
   "source_object": "PROPOSED__RIGHT_UPPER_HEAD_C001__A_B_INTEGRATED_V1",
   "source_freecad_sha256": "e9974661a5a0a71a12bcb6ab6d0d66ceae354fd8744486ff08ce72e20cf0376c",
   "exact_stl_sha256": "e660e0537f17a7462d2c1a1c9201de89f3fa45601b41a3a016d76e8c8a38009a",
-  "project_3mf_sha256": "c41b8582f5aebe04909b90c25db7431baa150f76eb4f82437d8206420c60cfed",
   "geometry_change_mm": 0.0,
   "scale": 1.0,
   "prusa_slicer_info": {
@@ -30,5 +29,7 @@
     "G-code",
     "print-release approval"
   ],
-  "next_action": "Open the 3MF, rotate the single complete shell object to the intended under-ear-opening print orientation, do not scale, and save the user-oriented project."
+  "next_action": "Open the 3MF, rotate the single complete shell object to the intended under-ear-opening print orientation, do not scale, and save the user-oriented project.",
+  "artifact_hash_at_validation": "c41b8582f5aebe04909b90c25db7431baa150f76eb4f82437d8206420c60cfed",
+  "superseded_by": "user-orientation-validation-v1.json"
 }

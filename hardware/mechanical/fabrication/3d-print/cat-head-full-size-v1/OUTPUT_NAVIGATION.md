@@ -7,13 +7,14 @@ current review is always easy to find.
 
 - Open the editable complete-shell HS-04 orientation project first:
   `output/50-slicer-projects/right-upper-head-c001-ab-orientation-handoff-v1/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ORIENTATION_HANDOFF_V1.3mf`.
-  It contains one complete right upper-head C001 shell object with the approved
-  A/B features integrated. It does not contain detached coupons. No scale,
-  supports, brim, or G-code are baked in; rotate the whole object in
-  PrusaSlicer and save the preferred project.
+  The user rotated and saved this one-object complete right upper-head C001
+  shell with its approved A/B features integrated. The exact saved transform is
+  preserved. Validation is HOLD: rear MK4 bed margin is `1.8748 mm`, planar bed
+  contact is `0.0 mm2`, brim is `0 mm`, and the embedded profile is Generic PLA.
+  No G-code or print release exists.
 - Validation and resumable checkpoint:
-  `output/50-slicer-projects/right-upper-head-c001-ab-orientation-handoff-v1/validation-v1.json`
-  and `RIGHT_UPPER_HEAD_C001_AB_SLICER_ORIENTATION_HANDOFF_V1_CHECKPOINT_2026-08-14.md`.
+  `output/50-slicer-projects/right-upper-head-c001-ab-orientation-handoff-v1/user-orientation-validation-v1.json`
+  and `RIGHT_UPPER_HEAD_C001_AB_USER_ORIENTATION_V1_CHECKPOINT_2026-08-14.md`.
 - The earlier standalone A/B coupon project is rejected as the requested
   orientation handoff and remains only as traceable historical evidence.
 

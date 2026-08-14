@@ -1,0 +1,77 @@
+{
+  "status": "HOLD",
+  "reason": "The user-saved rotation is retained exactly and fits the configured MK4 bed nominally, but rear bed margin, planar contact, material profile, and brim gates are not ready for release.",
+  "project_sha256": "0941d65a81594754d33382a584ad2963ed2c14f6034a1a8534d724d9cca8c8a6",
+  "geometry": {
+    "parts": 1,
+    "facets": 3418,
+    "manifold": true,
+    "volume_mm3": 77958.335938,
+    "scale": 1.0,
+    "rotation_determinant": 1.0000000003
+  },
+  "saved_transform_3mf": [
+    0.622046419,
+    -0.267301093,
+    -0.735940472,
+    -0.069302815,
+    -0.955029261,
+    0.288298858,
+    -0.779907284,
+    -0.128332526,
+    -0.61259725,
+    111.575601,
+    105.453971,
+    55.0493613
+  ],
+  "configured_printer": {
+    "model": "Original Prusa MK4",
+    "bed_mm": [
+      250.0,
+      210.0
+    ],
+    "max_height_mm": 220.0,
+    "nozzle_mm": 0.4
+  },
+  "placed_bbox_mm": {
+    "min": [
+      18.498925,
+      11.052374,
+      0.0
+    ],
+    "max": [
+      219.585181,
+      208.125205,
+      126.379858
+    ],
+    "size": [
+      201.086257,
+      197.072832,
+      126.379858
+    ]
+  },
+  "bed_margins_mm": {
+    "left": 18.498925,
+    "right": 30.414819,
+    "front": 11.052374,
+    "rear": 1.874795,
+    "required_each_side": 10.0,
+    "pass": false
+  },
+  "planar_bed_contact_mm2_at_0p05mm": 0.0,
+  "yaw_only_search": {
+    "can_reach_10mm_each_side": false,
+    "best_minimum_centered_margin_mm": 8.047983,
+    "best_relative_yaw_deg": 5.8
+  },
+  "saved_slicer_settings": {
+    "filament": "Generic PLA @PG",
+    "filament_type": "PLA",
+    "support_material": true,
+    "support_material_auto": true,
+    "support_threshold_deg": 45,
+    "brim_width_mm": 0.0
+  },
+  "gcode_generated": false,
+  "next_action": "Preserve this rotation as the visual reference. Before release, make a small tilt adjustment to reduce the 197.073 mm Y footprint, select an ASA profile, choose brim/support settings, and then authorize a diagnostic slice."
+}
