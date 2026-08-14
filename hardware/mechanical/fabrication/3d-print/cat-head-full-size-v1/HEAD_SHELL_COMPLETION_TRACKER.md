@@ -12,16 +12,17 @@ estimate. An accepted isolated review is crossed off only when that gate's
 stated exit condition is satisfied; it does not imply that the geometry is
 already integrated or printable.
 
-**Next active work:** `HS-11`. V1 through V6 are superseded or rejected.
-Isolated right V7 locally clips all four `12 x 8 x 4.8 mm` flange leaves
-0.03 mm inside the adjacent frozen owner skins while preserving every mating
-plane, M2.5 axis, and both `0.3000 mm` gaps. All four exact solids are valid,
-watertight one-solids and retain positive direct owner overlap. Production
-integration remains held because lower-head overlap is only `26.2422 mm3`
-versus the `80 mm3` gate and the prior bore-ligament holds remain open.
-C046/C048 and every frozen workstream remain unchanged. No left mirror, STL,
-G-code, or print release has occurred. `HS-04` remains queued until final
-upper-head print orientation is frozen.
+**Next active work:** `HS-11`. V1 through V7 are superseded or rejected.
+Isolated right V8 removes the wrong lower-face flange and pole completely.
+Both head-side leaves now root directly into the frozen right upper-head shell;
+the lower face owns zero eye-mount geometry. The retained outer pair is
+`12 x 8 x 4.8 mm`, the measured replacement pair is `18 x 18 x 4.8 mm`, both
+use `2.8 mm` M2.5 through-holes, and both gaps are `0.3000 mm`. All four exact
+solids are valid one-solids, pair interference is zero, direct owner overlaps
+pass the `80 mm3` gate, and exterior deviation passes. C046/C048 and every
+frozen workstream remain unchanged. Visual approval, copied-owner integration,
+bilateral mirror/validation, and print release remain held. `HS-04` remains
+queued until final upper-head print orientation is frozen.
 
 ## Progress table
 
@@ -37,7 +38,7 @@ upper-head print orientation is frozen.
 | HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
 | HS-09 | [x] | ~~Finish remaining primary ear interface~~ | User visually approved the clean bilateral V2 on 2026-08-11. V2 contains only the approved right head/ear final solids and their exact `X=0` mirrors; the stale left owner, four-hole lattice, pins, and proof shafts are absent. All four solids are valid, closed, self-intersection-free, and the mirrored topology, volume, area, and bounds match. | Preserve `CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd` unchanged through final full-head integration. |
 | HS-10 | [x] | ~~Build each eye bucket and rear cap as one serviceable module~~ | V9 was visually approved and promoted on 2026-08-13. Both bilateral bucket/cap pairs are valid, watertight, one-solid, self-intersection-free, topology/volume matched, STEP-round-trip verified, and retain the non-interfering `0.0239 mm` service gap. | Preserve `production/eye-modules-v9/` unchanged through HS-11 and later full-head validation. |
-| HS-11 | [ ] | Integrate and validate all eight eye flanges | Right locations and C046/C048 V2 were visually approved. V1-V6 are superseded or rejected. V7 clips all four right-side `12 x 8 x 4.8 mm` leaves against local owner skins with a 0.03 mm inward recess. Exact topology passes, both `0.3000 mm` gaps pass, axes are fixed, and all direct overlaps remain positive. Lower-head overlap is only `26.2422 mm3`; prior 1.6155/3.1294 mm bore ligaments also remain below the 3.5 mm gate. | Visually approve V7 exterior containment; then reinforce only the held roots/ligaments without changing the approved exterior envelope or mating geometry, integrate copied right owners, validate hardware/clearance, mirror exactly, and repeat bilaterally. |
+| HS-11 | [ ] | Integrate and validate all eight eye flanges | Right locations and C046/C048 V2 were visually approved. V1-V7 are superseded or rejected. V8 retains the outer pair and replaces the wrong lower-face flange/pole with a measured inner-upper pair. Both head leaves are upper-head owned; lower-face flange count and pole/neck/bridge count are zero. Exact topology, `0.3000 mm` gaps, zero interference, direct owner overlaps, pair separation, and exterior containment pass. | Visually approve V8 ownership and placement; integrate only copied right upper-head/V9 owners, revalidate holes/hardware/clearance/exterior, mirror exactly, and repeat bilaterally. |
 | HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
 | HS-13 | [ ] | Integrate lower face and rear cassette around aluminum | Lossless V5 ownership direction is accepted; production owners and final cassette are not unified. | Lower faces are reduced as approved, transferred geometry belongs to one cassette, and V0.5-M2 rail/plate insertion and removal remain unobstructed. |
 | HS-14 | [ ] | Add final cassette M5 pads and service sockets | Legacy Gate 8 pads are invalid; the real rail and 21.00 mm serviceable socket still require qualification. | Actual rail measured; socket/cap coupon passes; cassette pads/sockets integrate with hardware and tool access. |
@@ -84,6 +85,7 @@ condition, saved evidence, and affected checkpoint must all be updated.
 - [Right eye reinforcement clearance V2 checkpoint](RIGHT_EYE_REINFORCEMENT_CLEARANCE_REVIEW_V2_CHECKPOINT_2026-08-13.md)
 - [Right eye rectangular internal-base V2 checkpoint](RIGHT_EYE_RECTANGULAR_ROOT_REVIEW_V2_CHECKPOINT_2026-08-13.md)
 - [Current right-eye all-four local-skin clip V7 checkpoint](RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7_CHECKPOINT_2026-08-13.md)
+- [Current right-eye upper-head-only dual-pair V8 checkpoint](RIGHT_EYE_UPPER_HEAD_ONLY_DUAL_PAIR_REVIEW_V8_CHECKPOINT_2026-08-13.md)
 - [Superseded right-eye head-flange exterior-clip V6 checkpoint](RIGHT_EYE_HEAD_FLANGE_EXTERIOR_CLIP_REVIEW_V6_CHECKPOINT_2026-08-13.md)
 - [Superseded right-eye all-four plain-flange thickness V5 checkpoint](RIGHT_EYE_ALL_FOUR_PLAIN_FLANGE_THICKNESS_REVIEW_V5_CHECKPOINT_2026-08-13.md)
 - [Rejected right-eye outer-pair radial-thickness V4 checkpoint](RIGHT_EYE_OUTER_PAIR_RADIAL_THICKNESS_REVIEW_V4_CHECKPOINT_2026-08-13.md)

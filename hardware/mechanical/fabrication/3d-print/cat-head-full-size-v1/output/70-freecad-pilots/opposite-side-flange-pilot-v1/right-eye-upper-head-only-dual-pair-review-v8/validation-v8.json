@@ -1,0 +1,224 @@
+{
+  "status": "isolated right-side ownership correction; retained outer pair plus measured inner-upper pair, both owned only by the upper head and V9 eye bucket; no lower-face flange, owner Boolean, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "retained_outer_edge_indices": [
+      2,
+      3
+    ],
+    "replacement_inner_upper_edge_indices": [
+      0,
+      1
+    ],
+    "replacement_edge_fraction_from_midpoint": 0.3,
+    "forbidden_lower_edge_indices": [
+      3,
+      0
+    ],
+    "retained_outer_flange_dimensions_mm": [
+      12.0,
+      8.0,
+      4.8
+    ],
+    "replacement_plain_flange_dimensions_mm": [
+      18.0,
+      18.0,
+      4.8
+    ],
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "exterior_recess_mm": 0.03,
+    "maximum_exterior_positive_deviation_mm": 0.02,
+    "minimum_direct_owner_overlap_mm3": 80.0,
+    "minimum_pair_center_separation_mm": 35.0,
+    "minimum_face_area_mm2": 20.0,
+    "maximum_face_distance_from_role_anchor_mm": 6.0,
+    "minimum_reference_normal_dot": 0.15
+  },
+  "construction": "retained outer pair plus measured inner-upper plain rectangular pair; both head leaves owned only by right_upper_head",
+  "flanges": {
+    "outer_head": {
+      "object": "PROPOSED__RIGHT_OUTER_HEAD__UPPER_HEAD_ONLY_V8",
+      "owner": "right_upper_head",
+      "owner_overlap_mm3": 122.516,
+      "topology": {
+        "vertices": 62,
+        "edges": 186,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 323.1773
+      },
+      "connected_components": 1,
+      "mount_edge_indices": [
+        2,
+        3
+      ],
+      "hole_center_mm": [
+        102.95823,
+        85.96094,
+        146.90749
+      ],
+      "hole_axis": [
+        -0.9314985,
+        -0.3553128,
+        0.0778683
+      ]
+    },
+    "outer_eye": {
+      "object": "PROPOSED__RIGHT_OUTER_EYE__UPPER_HEAD_ONLY_V8",
+      "owner": "FROZEN__RIGHT_EYE_BUCKET_V9_V6",
+      "owner_overlap_mm3": 247.0317,
+      "topology": {
+        "vertices": 76,
+        "edges": 228,
+        "faces": 152,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.6557
+      },
+      "connected_components": 1,
+      "mount_edge_indices": [
+        2,
+        3
+      ],
+      "hole_center_mm": [
+        100.44318,
+        85.00159,
+        147.11774
+      ],
+      "hole_axis": [
+        -0.9314985,
+        -0.3553128,
+        0.0778683
+      ]
+    },
+    "inner_upper_head": {
+      "object": "PROPOSED__RIGHT_INNER_UPPER_HEAD__UPPER_HEAD_ONLY_V8",
+      "owner": "right_upper_head",
+      "owner_overlap_mm3": 1525.8565,
+      "topology": {
+        "vertices": 60,
+        "edges": 180,
+        "faces": 120,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1525.8566
+      },
+      "connected_components": 1,
+      "mount_edge_indices": [
+        0,
+        1
+      ],
+      "hole_center_mm": [
+        38.25702,
+        64.86587,
+        157.51137
+      ],
+      "hole_axis": [
+        0.898033,
+        0.2853384,
+        -0.3348417
+      ]
+    },
+    "inner_upper_eye": {
+      "object": "PROPOSED__RIGHT_INNER_UPPER_EYE__UPPER_HEAD_ONLY_V8",
+      "owner": "FROZEN__RIGHT_EYE_BUCKET_V9_V6",
+      "owner_overlap_mm3": 166.6481,
+      "topology": {
+        "vertices": 70,
+        "edges": 210,
+        "faces": 140,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1526.1002
+      },
+      "connected_components": 1,
+      "mount_edge_indices": [
+        0,
+        1
+      ],
+      "hole_center_mm": [
+        40.68171,
+        65.63628,
+        156.60728
+      ],
+      "hole_axis": [
+        0.898033,
+        0.2853384,
+        -0.3348417
+      ]
+    }
+  },
+  "pairs": {
+    "outer": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 0.3
+    },
+    "inner_upper": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 0.3
+    }
+  },
+  "pair_anchor_separation_mm": 65.3136,
+  "clipping": {
+    "outer": [
+      {
+        "source": "validated V7 local-skin-clipped outer pair reused unchanged"
+      }
+    ],
+    "inner_upper": [
+      {
+        "owner_face_zero_based": 888,
+        "point_mm": [
+          70.676361,
+          82.654121,
+          193.157715
+        ],
+        "outward_normal": [
+          0.33693749,
+          -0.89335465,
+          0.29730585
+        ],
+        "anchor_distance_mm": 0.35137,
+        "removed_mm3": 0.1245,
+        "post_clip_exterior_deviation_mm": -1.5e-05,
+        "source_face_area_mm2": 119.4003,
+        "anchor_signed_distance_mm": -0.35137,
+        "head_flange_center_signed_distance_mm": -9.808126,
+        "pre_clip_signed_range_mm": [
+          -19.611816,
+          0.120069
+        ],
+        "selection_method": "large exterior owner skin crossing only outward flange corner"
+      }
+    ]
+  },
+  "head_owner_set": [
+    "right_upper_head"
+  ],
+  "lower_face_flange_count": 0,
+  "pole_neck_bridge_count": 0,
+  "legacy_lower_pair_present": false,
+  "frozen_owner_geometry_modified": false,
+  "owner_boolean_performed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "The right lower-face owner carries zero eye-mount flange geometry in this proposal.",
+    "Both head-side leaves root directly into the frozen right upper-head shell with no pole, neck, bridge, or cantilever.",
+    "Keep the current V9 right eye bucket unchanged.",
+    "Preserve the outer pair edge [2,3]; replace the old lower pair on edge [3,0] with a directly rooted inner-upper pair on edge [0,1] at +0.30 edge fraction.",
+    "Preserve the retained 12 x 8 x 4.8 mm pair; use measured 18 x 18 x 4.8 mm plain leaves for the replacement pair, 2.8 mm M2.5 through holes, and 0.300 mm mating gaps.",
+    "Preserve C046, C048, C006, rear cassette, panels, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2.",
+    "No owner integration, left mirror, STL, G-code, slicing, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/review/01-v8-upper-head-only-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/review/02-v8-two-head-leaves-with-upper-head.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/review/03-v8-two-pairs-with-v9-eye.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/review/04-v8-lower-face-zero-flanges.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/review/05-v8-four-leaves-isolated.png"
+    ]
+  }
+}

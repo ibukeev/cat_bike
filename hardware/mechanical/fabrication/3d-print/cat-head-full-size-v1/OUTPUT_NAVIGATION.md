@@ -5,19 +5,21 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 V7 all-four local-skin clip review - clips all four right-side
-  flange leaves 0.03 mm inside the adjacent frozen owner skins while
-  preserving every M2.5 axis, mating plane, and both 0.3000 mm gaps. All four
-  exact objects are valid watertight one-solids with positive owner overlap:
-  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/CAT_HEAD_RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7.FCStd
-- V7 contract, validation, evidence, and resumable checkpoint:
-  config/right-eye-all-four-flange-local-skin-clip-review-v7.json,
-  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/validation-v7.json,
-  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/freecad-validation-v7.json,
-  output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/review/, and
-  RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7_CHECKPOINT_2026-08-13.md
-- V7 is not a print release: the lower-head direct-root audit and prior
-  outer/lower bore ligaments remain below their structural gates.
+- Current HS-11 V8 upper-head-only dual-pair review — rejects the V7
+  lower-face flange and pole. The lower face owns zero eye-mount geometry;
+  both head leaves root directly into the frozen right upper-head shell. The
+  retained outer pair is `12 x 8 x 4.8 mm`; the measured replacement pair is
+  `18 x 18 x 4.8 mm`; both use `2.8 mm` M2.5 through-holes and `0.3000 mm`
+  gaps. All four exact leaves are valid one-solids, pair interference is zero,
+  and direct owner overlap exceeds the `80 mm3` gate:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/CAT_HEAD_RIGHT_EYE_UPPER_HEAD_ONLY_DUAL_PAIR_REVIEW_V8.FCStd`
+- V8 contract, validation, evidence, and resumable checkpoint:
+  `config/right-eye-upper-head-only-dual-pair-review-v8.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/validation-v8.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8/review/`, and
+  `RIGHT_EYE_UPPER_HEAD_ONLY_DUAL_PAIR_REVIEW_V8_CHECKPOINT_2026-08-13.md`.
+- V7 is rejected for incorrect lower-face flange ownership. V8 is still an
+  isolated review: no owner Boolean, left mirror, STL, G-code, or print release.
 
 - Current HS-11 all-four V5 — replaces rejected V4 with four real standalone
   plain flange solids: outer-eye, outer-head, lower-eye, and lower-head. Each

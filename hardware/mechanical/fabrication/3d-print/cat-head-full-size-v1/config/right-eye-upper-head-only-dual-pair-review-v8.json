@@ -1,0 +1,33 @@
+{
+  "schema_version": 8,
+  "status": "isolated right-side ownership correction; retained outer pair plus measured inner-upper pair, both owned only by the upper head and V9 eye bucket; no lower-face flange, owner Boolean, mirror, STL, G-code, or print release",
+  "source_v7_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7/CAT_HEAD_RIGHT_EYE_ALL_FOUR_FLANGE_LOCAL_SKIN_CLIP_REVIEW_V7.blend",
+  "source_v6_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6/validation-v6.json",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8",
+  "locked_contract": {
+    "retained_outer_edge_indices": [2, 3],
+    "replacement_inner_upper_edge_indices": [0, 1],
+    "replacement_edge_fraction_from_midpoint": 0.30,
+    "forbidden_lower_edge_indices": [3, 0],
+    "retained_outer_flange_dimensions_mm": [12.0, 8.0, 4.8],
+    "replacement_plain_flange_dimensions_mm": [18.0, 18.0, 4.8],
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3,
+    "exterior_recess_mm": 0.03,
+    "maximum_exterior_positive_deviation_mm": 0.02,
+    "minimum_direct_owner_overlap_mm3": 80.0,
+    "minimum_pair_center_separation_mm": 35.0,
+    "minimum_face_area_mm2": 20.0,
+    "maximum_face_distance_from_role_anchor_mm": 6.0,
+    "minimum_reference_normal_dot": 0.15
+  },
+  "holds": [
+    "The right lower-face owner carries zero eye-mount flange geometry in this proposal.",
+    "Both head-side leaves root directly into the frozen right upper-head shell with no pole, neck, bridge, or cantilever.",
+    "Keep the current V9 right eye bucket unchanged.",
+    "Preserve the outer pair edge [2,3]; replace the old lower pair on edge [3,0] with a directly rooted inner-upper pair on edge [0,1] at +0.30 edge fraction.",
+    "Preserve the retained 12 x 8 x 4.8 mm pair; use measured 18 x 18 x 4.8 mm plain leaves for the replacement pair, 2.8 mm M2.5 through holes, and 0.300 mm mating gaps.",
+    "Preserve C046, C048, C006, rear cassette, panels, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2.",
+    "No owner integration, left mirror, STL, G-code, slicing, or print release before explicit visual approval."
+  ]
+}
