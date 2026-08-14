@@ -5,6 +5,18 @@ current review is always easy to find.
 
 ## Open this first
 
+- Open the ASA diagnostic project for the current right C001 A/B shell:
+  `output/50-slicer-projects/right-upper-head-c001-ab-asa-diagnostic-v1/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_DIAGNOSTIC_V1.3mf`.
+  It preserves the user's exact saved rotation and geometry, embeds the
+  installed Prusament ASA/MK4 baseline, automatic snug supports at `45 deg`,
+  and an `8 mm` outer brim. PrusaSlicer completes the diagnostic slice
+  (`14h 17m`, `139.30 g`), but this remains **HOLD / not print-ready**: the
+  combined object/brim/support margins are `15.4146/27.3374/4.05255/1.874795
+  mm` left/right/front/rear, failing the frozen `10 mm` front and rear gates.
+  The local G-code is diagnostic only and is intentionally not committed.
+- Validation and resumable checkpoint:
+  `output/50-slicer-projects/right-upper-head-c001-ab-asa-diagnostic-v1/validation-v1.json`
+  and `RIGHT_UPPER_HEAD_C001_AB_ASA_DIAGNOSTIC_V1_CHECKPOINT_2026-08-14.md`.
 - Open the editable complete-shell HS-04 orientation project first:
   `output/50-slicer-projects/right-upper-head-c001-ab-orientation-handoff-v1/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ORIENTATION_HANDOFF_V1.3mf`.
   The user rotated and saved this one-object complete right upper-head C001

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "status": "HOLD",
+  "reason": "The exact user-saved orientation slices successfully with ASA, automatic snug supports, and an 8 mm brim, but the combined object/brim/support envelope does not retain the required 10 mm margin on every MK4 bed edge.",
+  "source_project": "../right-upper-head-c001-ab-orientation-handoff-v1/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ORIENTATION_HANDOFF_V1.3mf",
+  "source_project_sha256": "0941d65a81594754d33382a584ad2963ed2c14f6034a1a8534d724d9cca8c8a6",
+  "diagnostic_project": "CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_DIAGNOSTIC_V1.3mf",
+  "diagnostic_project_sha256": "423584124419c803feff141521f7663c26b722ba686aa20acc7e15402f7343b1",
+  "geometry_member_sha256": "482d7ceba6420d2dbbdb104dbed70da5d1c2f69f0bb998e0054eeb5069eed6d5",
+  "geometry_preservation": {
+    "source_and_diagnostic_geometry_member_identical": true,
+    "parts": 1,
+    "facets": 3418,
+    "manifold": true,
+    "volume_mm3": 77958.335938,
+    "scale": 1.0,
+    "saved_transform_3mf": [
+      0.622046419,
+      -0.267301093,
+      -0.735940472,
+      -0.069302815,
+      -0.955029261,
+      0.288298858,
+      -0.779907284,
+      -0.128332526,
+      -0.61259725,
+      111.575601,
+      105.453971,
+      55.0493613
+    ]
+  },
+  "printer": {
+    "model": "Original Prusa MK4",
+    "bed_mm": [250.0, 210.0],
+    "max_height_mm": 220.0,
+    "nozzle_mm": 0.4
+  },
+  "process": {
+    "layer_height_mm": 0.2,
+    "filament_profile": "Prusament ASA @MK4",
+    "filament_type": "ASA",
+    "nozzle_temperature_c": 260,
+    "first_layer_bed_temperature_c": 105,
+    "bed_temperature_c": 110,
+    "support_material": true,
+    "support_material_auto": true,
+    "support_material_style": "snug",
+    "support_threshold_deg": 45,
+    "brim_type": "outer_only",
+    "brim_width_mm": 8.0,
+    "brim_separation_mm": 0.1
+  },
+  "object_bbox_mm": {
+    "min": [18.498925, 11.052374, 0.0],
+    "max": [219.585181, 208.125205, 126.379858],
+    "size": [201.086257, 197.072832, 126.379858]
+  },
+  "first_layer_brim_and_support_bbox_mm_from_m555": {
+    "min": [15.4146, 4.05255],
+    "max": [222.6626, 193.54455],
+    "size": [207.248, 189.492]
+  },
+  "combined_object_brim_support_xy_bbox_mm": {
+    "min": [15.4146, 4.05255],
+    "max": [222.6626, 208.125205],
+    "margins": {
+      "left": 15.4146,
+      "right": 27.3374,
+      "front": 4.05255,
+      "rear": 1.874795,
+      "required_each_side": 10.0,
+      "pass": false
+    }
+  },
+  "diagnostic_slice": {
+    "completed": true,
+    "prusa_slicer_version": "2.7.4",
+    "gcode_filename": "CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_DIAGNOSTIC_V1.gcode",
+    "gcode_sha256": "c421bb4995b725c1f31062324b3f61d3ce3e8c8917fb7255ea898c4be0ea12f2",
+    "gcode_size_bytes": 20259503,
+    "estimated_print_time": "14h 17m 34s",
+    "filament_length_mm": 54123.65,
+    "filament_volume_cm3": 130.18,
+    "filament_mass_g": 139.30,
+    "release_approved": false,
+    "gcode_committed": false
+  },
+  "release_gates": {
+    "one_connected_manifold_part": "PASS",
+    "scale_1": "PASS",
+    "exact_user_rotation_preserved": "PASS",
+    "asa_profile_embedded": "PASS",
+    "automatic_snug_supports_45deg": "PASS",
+    "outer_brim_8mm": "PASS",
+    "slice_completes": "PASS",
+    "minimum_10mm_xy_margin": "FAIL",
+    "overall": "HOLD"
+  },
+  "next_action": "In a new derivative only, make a small non-yaw tilt adjustment that reduces the 197.073 mm projected Y footprint while retaining the under-ear opening as the bed-facing region, then re-slice and require at least 10 mm combined object/brim/support margin on every edge."
+}
