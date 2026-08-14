@@ -5,12 +5,24 @@ current review is always easy to find.
 
 ## Open this first
 
+- Open the editable HS-04 coupon project first:
+  output/40-prototypes/right-ab-short-insert-coupon-v1/CAT_HEAD_RIGHT_AB_SHORT_INSERT_COUPON_V1.3mf.
+  It contains named Right-A V4 and Right-B V2 coupons as two separate movable
+  manifold objects. No scale, supports, brim, or G-code are baked in. The initial
+  orientation has 0.0 mm2 planar bed contact for both objects and is not a
+  print recommendation; rotate them in PrusaSlicer and save the preferred project.
+- Coupon contract, validation, evidence, and resumable checkpoint:
+  config/right-ab-short-insert-coupon-v1.json,
+  output/40-prototypes/right-ab-short-insert-coupon-v1/validation-v1.json,
+  output/40-prototypes/right-ab-short-insert-coupon-v1/review/, and
+  RIGHT_AB_SHORT_INSERT_COUPON_V1_CHECKPOINT_2026-08-14.md.
+
 - HS-04 displayed V2 orientation — **visually approved 2026-08-14; not a
   full-shell print source**. The user explicitly confirmed that the under-ear
   opening is not bed-facing; the historical artifact name must not be treated as
   a datum description. Preserve the exact approved quaternion. The measured
   envelope is `203.498 x 163.628 x 155.848 mm`, with `18.251/18.186 mm` reserve
-  per side. No STL, 3MF, G-code, or coupon has yet been released:
+  per side. The editable isolated A/B coupon 3MF exists above; no full-shell STL or G-code has been released:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-under-ear-opening-print-orientation-review-v2/right-ab-under-ear-opening-print-orientation-review-v2.blend`.
 - HS-04 V2 contract, evidence, and resumable checkpoint:
   `config/right-ab-under-ear-opening-print-orientation-review-v2.json`,

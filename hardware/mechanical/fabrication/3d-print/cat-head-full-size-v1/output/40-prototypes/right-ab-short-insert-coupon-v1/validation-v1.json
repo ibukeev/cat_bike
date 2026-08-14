@@ -1,0 +1,102 @@
+{
+  "review_id": "CAT_HEAD_RIGHT_AB_SHORT_INSERT_COUPON_V1",
+  "status": "DIGITAL_GEOMETRY_PASS_USER_ORIENTATION_PENDING",
+  "geometry_change_mm": 0.0,
+  "scale": 1.0,
+  "rotation_quaternion_wxyz": [
+    0.463786364,
+    -0.517753959,
+    0.496808916,
+    0.519628584
+  ],
+  "packing_gap_mm": 12.0,
+  "combined_oriented_xyz_mm": [
+    68.5542,
+    12.8231,
+    24.0911
+  ],
+  "xy_reserve_each_side_mm": [
+    85.7229,
+    93.5884
+  ],
+  "a": {
+    "source_object": "PROPOSED__RIGHT_A__HEAD_TAB__M3X3_SHORT_INSERT_SURFACE_OPEN_V4_ref",
+    "bounds": {
+      "min_mm": [
+        -34.2771,
+        -4.9176,
+        0.0
+      ],
+      "max_mm": [
+        -5.9856,
+        4.9176,
+        18.4034
+      ],
+      "size_mm": [
+        28.2915,
+        9.8352,
+        18.4034
+      ]
+    },
+    "topology": {
+      "vertices": 204,
+      "edges": 612,
+      "faces": 408,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": 1,
+      "volume_mm3": 1195.4867837388222
+    },
+    "bed_contact_area_within_tolerance_mm2": 0.0,
+    "stl": "right-a-v4-short-insert-coupon-exact-orientation.stl",
+    "stl_sha256": "879a8bd83fe5326a83bdc6fca4111212cd02dcfd8dc08cb5e19730f8fac7cd5b"
+  },
+  "b": {
+    "source_object": "PROPOSED__RIGHT_B__HEAD_TAB__M3X3_SHORT_INSERT_SURFACE_OPEN_V2_ref",
+    "bounds": {
+      "min_mm": [
+        6.0144,
+        -6.4116,
+        0.0
+      ],
+      "max_mm": [
+        34.2771,
+        6.4116,
+        24.0911
+      ],
+      "size_mm": [
+        28.2627,
+        12.8231,
+        24.0911
+      ]
+    },
+    "topology": {
+      "vertices": 204,
+      "edges": 612,
+      "faces": 408,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": 1,
+      "volume_mm3": 1195.4856871957784
+    },
+    "bed_contact_area_within_tolerance_mm2": 0.0,
+    "stl": "right-b-v2-short-insert-coupon-exact-orientation.stl",
+    "stl_sha256": "e68acac2c93048bfbe78c7aa421528c8f1b50b8fda4027c06204adb3caa19ff8"
+  },
+  "full_shell_export_created": false,
+  "gcode_created": false,
+  "physical_qualification_complete": false,
+  "slicer_project": {
+    "file": "CAT_HEAD_RIGHT_AB_SHORT_INSERT_COUPON_V1.3mf",
+    "sha256": "c4fe5f6cbde678e7fd9d1267f7837ed039cc63a90eda910ab7648803782a78df",
+    "object_count": 2,
+    "objects": [
+      "RIGHT_A_V4_SHORT_INSERT_COUPON",
+      "RIGHT_B_V2_SHORT_INSERT_COUPON"
+    ],
+    "separately_movable": true,
+    "supports_baked_in": false,
+    "gcode_created": false,
+    "initial_orientation_print_approved": false
+  }
+}
