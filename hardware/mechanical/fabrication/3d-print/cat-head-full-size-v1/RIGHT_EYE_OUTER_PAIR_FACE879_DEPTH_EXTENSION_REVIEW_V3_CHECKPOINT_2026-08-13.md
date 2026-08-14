@@ -2,12 +2,11 @@
 
 ## Status
 
-HS-11 has a new isolated right outer-pair proposal ready for visual review.
+HS-11 V3 is **rejected and superseded by radial-thickness V4**.
 The V2 `22 x 8 mm` rectangular-base concept is rejected and is absent from
-this review. V3 changes only the existing owner-end section: the eye-side
-`Face879` and the corresponding head-side end face each extend `8.0 mm` into
-their own owner. The lower flange pair is unchanged. No left mirror, STL,
-G-code, or print release exists.
+this review. V3 incorrectly extended the `8.0 mm` flange depth along the wrong
+axis and retained the broad-base head geometry. Retain V3 only as rejected
+traceable evidence; do not integrate or mirror it.
 
 ## Review files
 

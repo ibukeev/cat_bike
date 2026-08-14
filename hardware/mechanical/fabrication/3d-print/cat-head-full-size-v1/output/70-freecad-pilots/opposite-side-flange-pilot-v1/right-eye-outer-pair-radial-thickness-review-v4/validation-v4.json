@@ -1,0 +1,80 @@
+{
+  "status": "isolated right outer eye/head radial-thickness proposal ready for validation; no lower-pair edit, mirror, STL, G-code, or print release",
+  "locked_contract": {
+    "user_selected_eye_owner": "FROZEN__RIGHT_EYE_BUCKET_V9_V2__SOLID",
+    "user_selected_eye_face": "Face879",
+    "selected_face_centroid_mm": [
+      99.28,
+      87.91,
+      146.48
+    ],
+    "selected_face_normal": [
+      -0.3637,
+      0.9097,
+      -0.2003
+    ],
+    "flange_length_mm": 12.0,
+    "flange_depth_mm": 8.0,
+    "existing_radial_thickness_mm": 2.4,
+    "added_shell_interior_thickness_mm": 2.4,
+    "total_radial_thickness_mm": 4.8,
+    "hidden_union_overlap_mm": 0.4,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3
+  },
+  "construction_axis": "radial shell-interior thickness; not flange-depth/inward axis",
+  "broad_base_objects_created": false,
+  "v2_rectangular_base_present": false,
+  "v3_depth_extensions_present": false,
+  "eye_layer_owner_overlap_mm3": 67.1725,
+  "head_layer_owner_overlap_mm3": 68.0886,
+  "layer_pair_overlap_mm3": 0.0,
+  "mating_clearance_mm": 0.3,
+  "topology": {
+    "plain_head": {
+      "vertices": 70,
+      "edges": 101,
+      "faces": 31,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 215.858
+    },
+    "eye_layer": {
+      "vertices": 71,
+      "edges": 104,
+      "faces": 33,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 251.8381
+    },
+    "head_layer": {
+      "vertices": 56,
+      "edges": 88,
+      "faces": 32,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 251.7553
+    }
+  },
+  "lower_eye_flange_fingerprint_unchanged": "5fb57355a4a068a3c6b16bf1356dc7fd09040f7b8fb81168ab9df8b762d57556",
+  "lower_head_flange_fingerprint_unchanged": "a93109b146ee00c17f3c8cccae8e8c99042e1bf84d6f289aacb528ac0c6aad11",
+  "lower_pair_modified": false,
+  "mirror_performed": false,
+  "owner_boolean_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "holds": [
+    "Reject and do not reuse the V2 broad rectangular bases or V3 depth extensions.",
+    "The head-side source must be a plain flange bar, not any broad-base or tapered-root object.",
+    "Add only 2.4 mm along each member's shell-interior radial direction, for 4.8 mm total thickness.",
+    "Preserve mating faces, M2.5 axes, bore centers, and 0.3 mm gap.",
+    "Do not alter the lower pair, C046/C048, panels, eye placement, or metal workstream.",
+    "No production integration, mirror, STL, G-code, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4/review/01-v4-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4/review/02-v4-plain-pair-close.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4/review/03-v4-added-thickness-isolated.png"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "exact isolated right outer eye/head radial-thickness review ready for visual approval; not production integrated",
+  "eye_result": {
+    "object": "PROPOSED__RIGHT_EYE_BUCKET_OUTER_FLANGE_4P8MM_THICK_V4__EXACT",
+    "valid": true,
+    "closed": true,
+    "solids": 1,
+    "faces": 924,
+    "volume_mm3": 6649.63,
+    "note": "The shell-interior layer is contained by the existing bucket owner at this location, so it creates no exterior protrusion."
+  },
+  "head_result": {
+    "object": "PROPOSED__RIGHT_OUTER_HEAD_PLAIN_FLANGE_4P8MM_THICK_V4__EXACT",
+    "valid": true,
+    "closed": true,
+    "solids": 1,
+    "faces": 160,
+    "volume_mm3": 431.63,
+    "source_form": "plain 12 x 8 x 2.4 mm flange bar; no broad base or wedge"
+  },
+  "pair": {
+    "intersects": false,
+    "minimum_clearance_mm": 0.3
+  },
+  "holds": {
+    "v2_broad_rectangular_base_present": false,
+    "v3_depth_extensions_present": false,
+    "lower_pair_modified": false,
+    "left_mirror_performed": false,
+    "production_owner_integration_performed": false,
+    "stl_or_gcode_exported": false,
+    "print_release": false
+  }
+}

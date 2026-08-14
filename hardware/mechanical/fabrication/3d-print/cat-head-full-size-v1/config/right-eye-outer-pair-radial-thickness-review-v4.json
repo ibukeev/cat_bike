@@ -1,0 +1,30 @@
+{
+  "schema_version": 4,
+  "status": "isolated right outer eye/head radial-thickness proposal ready for validation; no lower-pair edit, mirror, STL, G-code, or print release",
+  "source_reinforcement_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
+  "current_right_bucket_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/review/review_only_right_eye_bucket_v9.obj",
+  "prior_v3_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3/validation-v3.json",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4",
+  "locked_contract": {
+    "user_selected_eye_owner": "FROZEN__RIGHT_EYE_BUCKET_V9_V2__SOLID",
+    "user_selected_eye_face": "Face879",
+    "selected_face_centroid_mm": [99.28, 87.91, 146.48],
+    "selected_face_normal": [-0.3637, 0.9097, -0.2003],
+    "flange_length_mm": 12.0,
+    "flange_depth_mm": 8.0,
+    "existing_radial_thickness_mm": 2.4,
+    "added_shell_interior_thickness_mm": 2.4,
+    "total_radial_thickness_mm": 4.8,
+    "hidden_union_overlap_mm": 0.4,
+    "m2_5_clearance_diameter_mm": 2.8,
+    "mating_gap_mm": 0.3
+  },
+  "holds": [
+    "Reject and do not reuse the V2 broad rectangular bases or V3 depth extensions.",
+    "The head-side source must be a plain flange bar, not any broad-base or tapered-root object.",
+    "Add only 2.4 mm along each member's shell-interior radial direction, for 4.8 mm total thickness.",
+    "Preserve mating faces, M2.5 axes, bore centers, and 0.3 mm gap.",
+    "Do not alter the lower pair, C046/C048, panels, eye placement, or metal workstream.",
+    "No production integration, mirror, STL, G-code, or print release before explicit visual approval."
+  ]
+}
