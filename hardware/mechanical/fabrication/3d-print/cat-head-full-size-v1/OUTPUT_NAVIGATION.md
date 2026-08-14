@@ -5,6 +5,29 @@ current review is always easy to find.
 
 ## Open this first
 
+- HS-04 exact-orientation proposal — **visual approval required; not a print
+  source**. Open the Blender review and confirm the blue approved C001 owner
+  rests on the bed and stays inside the orange 10 mm reserve boundary. The
+  measured envelope is `194.385 x 172.420 x 164.737 mm`, with
+  `22.808/13.790 mm` reserve per side. No STL, 3MF, G-code, or coupon was
+  released:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-print-orientation-review-v1/right-ab-print-orientation-review-v1.blend`.
+- HS-04 contract, evidence, and resumable checkpoint:
+  `config/right-ab-print-orientation-review-v1.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-print-orientation-review-v1/review/`, and
+  `RIGHT_AB_PRINT_ORIENTATION_REVIEW_V1_CHECKPOINT_2026-08-14.md`.
+- Current HS-11 V12 topology diagnostic — **HOLD, not a review approval or
+  print source**. The approved V11 geometry is frozen. Sixty unchanged
+  lower-face components were isolated; the inherited primary owner component
+  is closed/manifold as a mesh but contains `41` triangle intersections across
+  `21` mapped legacy seam/slot face pairs. FreeCAD fusion, Blender EXACT
+  self-union, and Blender MANIFOLD self-union were rejected. Use the checkpoint
+  and component inventory to resume the bounded seam repartition:
+  `RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V12_CHECKPOINT_2026-08-14.md` and
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/component-inventory-v12.json`.
+- V12 contract and reproducible component exporter:
+  `config/right-lower-face-topology-repair-review-v12.json` and
+  `source/export_right_lower_face_v11_components_for_v12.py`.
 - Current HS-11 V11 regression-repair review — preserves the user-accepted V10
   outer-neck deletion and restores the exact user-approved V2 C046/C048
   clearance geometry. The stale original C046/C048 components are absent;

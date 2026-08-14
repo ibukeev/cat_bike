@@ -2,6 +2,8 @@
 
 ## Status and scope
 
+- **Visually approved by the user on 2026-08-14.** V11 is the frozen right-side
+  neck-removal plus reinforcement-clearance baseline for the next HS-11 gate.
 - The user visually accepted the V10 actual outer-neck removal.
 - V10 nevertheless regressed the previously approved eye clearance because it rebuilt the lower-face review from V7 and carried the original C046/C048 reinforcement components.
 - V11 preserves the accepted V10 lower-face result, removes only those two stale components, and restores the exact user-approved V2 C046/C048 geometry.
@@ -53,11 +55,14 @@ blender --background hardware/mechanical/fabrication/3d-print/cat-head-full-size
 
 The `.FCStd` is assembled from the generated review OBJs through the FreeCAD bridge. It is review geometry, not a production owner file.
 
-## Next physical review
+## Completed physical review
 
-Open the V11 FreeCAD file and check only:
+The user reviewed the V11 FreeCAD file and accepted all four required checks:
 
 1. The accepted long outer neck is still absent.
 2. C046 and C048 no longer collide or crowd the eye; visible gaps should match the previously approved V2 arrangement.
 3. Both restored ribs still meet the lower-face structure and each other.
 4. Both flange pairs remain in the accepted locations, with no new bridge, pole, shell cut, or exterior protrusion.
+
+The next separate bucket is the inherited right lower-face topology repair.
+V11 geometry remains frozen during that repair.

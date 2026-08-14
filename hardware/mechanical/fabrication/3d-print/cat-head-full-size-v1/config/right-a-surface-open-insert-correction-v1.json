@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_A_SURFACE_OPEN_INSERT_CORRECTION_V1",
+  "status": "isolated right-A cavity-installability correction visually approved 2026-08-09 and consumed by the copied right-side owner-integration review; not mirrored or print-ready",
+  "physical_problem": "the approved right-A V3 cavity begins 0.2 mm behind the mating face, leaving a trapped internal 4.25 mm pocket behind a 3.4 mm opening; the 4.20 mm insert cannot be installed",
+  "source_review": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1/CAT_HEAD_RIGHT_A_TOOL_ACCESS_AUDIT_V1.FCStd",
+    "sha256": "31b304cc9bf7de9dba330c5b1d70f3c30d969b72c12e836b3af6a2f0bbd511a3",
+    "approved_axis_contract": "config/right-a-m3-hole-axis-review-v1.json",
+    "approved_hardware_contract": "config/right-a-tool-access-audit-v1.json",
+    "frozen_v10_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+    "aluminum_v05_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79"
+  },
+  "approved_structured_anchors": {
+    "datum": "REVIEW_ONLY__ANCHOR_CANDIDATE_A__FRONT",
+    "datum_center_mm": [111.893448, 122.44278, 182.029526],
+    "common_bore_axis_center_mm": [104.4048820139, 120.3391366839, 178.2794638319],
+    "panel_tab": "PROPOSED__RIGHT_A__PANEL_TAB__M3_BORE_MINUS_4P5_V2",
+    "head_tab": "PROPOSED__RIGHT_A__HEAD_TAB__M3_BORE_MINUS_4P5_V2"
+  },
+  "local_frame": {
+    "across": [-0.45026046, 0.01124268, 0.89282644],
+    "tangent": [0.27045545, 0.95466518, 0.12437177],
+    "interior": [-0.85095203, 0.29746947, -0.43288863]
+  },
+  "frozen_dimensions": {
+    "common_bore_diameter_mm": 3.4,
+    "pair_gap_mm": 0.3,
+    "tab_thickness_mm": 4.0,
+    "insert": "M3 x 3 mm short heat-set insert",
+    "assumed_insert_maximum_body_diameter_mm": 4.2,
+    "low_profile_screw": "M3 x 8",
+    "panel_washer_outer_diameter_mm": 7.0,
+    "panel_washer_thickness_mm": 0.8,
+    "panel_ball_hex_angle_deg": 25.0
+  },
+  "only_geometry_change": {
+    "old_rejected_proposal": "PROPOSED__RIGHT_A__HEAD_TAB__M3X3_SHORT_INSERT_RECESSED_V3",
+    "new_proposal": "PROPOSED__RIGHT_A__HEAD_TAB__M3X3_SHORT_INSERT_SURFACE_OPEN_V4",
+    "cavity_diameter_mm": 4.25,
+    "effective_cavity_depth_from_mating_face_mm": 3.2,
+    "insert_seating_recess_below_mating_face_mm": 0.2,
+    "remaining_exterior_wall_mm": 0.8,
+    "cutter_start_mm": [105.9132545549, 120.3014737059, 175.2884952579],
+    "cutter_height_with_mating_face_boolean_overshoot_mm": 3.25,
+    "cutter_rotation_xyz_deg": [-0.721443726, -26.760396045, 72.368343247],
+    "calculated_m3x8_thread_engagement_mm": 2.7,
+    "calculated_unengaged_insert_depth_mm": 0.3
+  },
+  "acceptance_gates": {
+    "surface_open_to_insert_body": true,
+    "insert_mating_side_insertion_sweep_interference_mm3": 0.0,
+    "minimum_radial_edge_material_mm": 3.5,
+    "edge_envelope_radius_mm": 5.625,
+    "minimum_head_owner_root_overlap_mm3": 80.0,
+    "pair_gap_mm": 0.3,
+    "minimum_exterior_wall_mm": 0.8,
+    "unintended_owner_interference_mm3": 0.0,
+    "closed_valid_solid": true,
+    "self_intersection": false,
+    "exterior_bounding_box_unchanged": true
+  },
+  "frozen_workstreams": [
+    "approved right-A panel tab, bore axis, washer, screw, and 25-degree driver path",
+    "right-B isolated proposal",
+    "all panel, upper-head, and ear owner geometry",
+    "all left-side geometry",
+    "lower-face and rear-cassette ownership",
+    "reinforcement, eyes, and C006",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "required_review_views": [
+    "whole-head frozen V10 context",
+    "right-A owners plus corrected pair",
+    "surface-open cavity with seated validation insert",
+    "mating-side insertion sweep",
+    "isolated corrected head tab"
+  ],
+  "approval_condition": "user explicitly approves the surface-open right-A V4 cavity after reviewing it in owner context; no prior approval is inferred for the correction",
+  "review_output": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-surface-open-insert-correction-v1/CAT_HEAD_RIGHT_A_SURFACE_OPEN_INSERT_CORRECTION_V1.FCStd",
+    "freecad_sha256": "a362f5c51299067d792d4afb1dacda19aaa3067fd8e6dc6d80ef174668994b80",
+    "fcstd_size_bytes": 5064576,
+    "fcstd_zip_validation": "PASS",
+    "review_directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-surface-open-insert-correction-v1/review",
+    "frozen_whole_head_context": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-full-head-context.png"
+  },
+  "validation_results": {
+    "corrected_head_tab_closed_valid_no_self_intersection": true,
+    "corrected_head_tab_faces": 9,
+    "corrected_head_tab_edges": 18,
+    "corrected_head_tab_vertices": 12,
+    "corrected_head_tab_solids": 1,
+    "corrected_head_tab_volume_mm3": 1195.34,
+    "corrected_head_tab_bounding_box_unchanged": true,
+    "surface_open_cavity_effective_depth_mm": 3.2,
+    "insert_seated_recess_mm": 0.2,
+    "remaining_exterior_wall_mm": 0.8,
+    "surface_open_full_cavity_edge_envelope_radius_mm": 5.625,
+    "surface_open_full_cavity_edge_envelope_contained": true,
+    "head_owner_root_overlap_mm3": 164.5685,
+    "pair_gap_mm": 0.3,
+    "cavity_to_upper_head_clearance_mm": 1.3536,
+    "corrected_tab_to_ear_clearance_mm": 27.4965,
+    "insert_body_to_tab_interference_mm3": 0.0,
+    "insert_bottom_contact_mm": 0.0,
+    "insert_mating_side_insertion_sweep_to_tab_interference_mm3": 0.0,
+    "insert_mating_side_insertion_sweep_to_upper_head_clearance_mm": 1.3786,
+    "insert_mating_side_insertion_sweep_to_ear_clearance_mm": 43.4099,
+    "panel_ball_hex_25deg_to_upper_head_clearance_mm": 7.7887,
+    "panel_ball_hex_25deg_to_ear_clearance_mm": 40.2087,
+    "panel_ball_hex_25deg_to_panel_tab_clearance_mm": 1.4404,
+    "panel_ball_hex_25deg_to_corrected_head_tab_clearance_mm": 5.7613,
+    "calculated_m3x8_thread_engagement_mm": 2.7,
+    "calculated_unengaged_insert_depth_mm": 0.3
+  },
+  "rejected_variants": [
+    {
+      "object": "PROPOSED__RIGHT_A__HEAD_TAB__M3X3_SHORT_INSERT_RECESSED_V3",
+      "reason": "the 4.25 mm insert cavity begins 0.2 mm behind the mating face and is trapped behind the existing 3.4 mm bore; a 4.20 mm insert cannot enter"
+    }
+  ],
+  "review_holds": [
+    "No production union, mirror, fabrication export, slicing, or print release is authorized.",
+    "The prior right-A V3 approval is retained historically but V3 is rejected for insert installability.",
+    "Right-side integration requires explicit approval of corrected A and final B."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "review_id": "CAT_HEAD_RIGHT_AB_PRINT_ORIENTATION_REVIEW_V1",
+  "geometry_change_mm": 0.0,
+  "actual_oriented_xyz_mm": [
+    194.3847,
+    172.42,
+    164.737
+  ],
+  "expected_oriented_xyz_mm": [
+    194.385,
+    172.42,
+    164.737
+  ],
+  "dimension_check_tolerance_mm": 0.01,
+  "dimension_check": "PASS",
+  "production_export_created": false
+}

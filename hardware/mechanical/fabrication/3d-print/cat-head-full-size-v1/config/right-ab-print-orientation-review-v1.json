@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_AB_PRINT_ORIENTATION_REVIEW_V1",
+  "status": "isolated orientation proposal; numeric audit complete; user visual approval required before coupon or production export",
+  "scope": "freeze an exact print orientation for the approved right upper-head C001 A/B owner so the physical ASA insert coupon can reproduce the real layer direction",
+  "source": {
+    "freecad": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-owner-integration-review-v1/CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd",
+    "object": "PROPOSED__RIGHT_UPPER_HEAD_C001__A_B_INTEGRATED_V1",
+    "freecad_sha256": "e9974661a5a0a71a12bcb6ab6d0d66ceae354fd8744486ff08ce72e20cf0376c",
+    "source_approval": "user LGTM 2026-08-09"
+  },
+  "numeric_contract": {
+    "geometry_change_mm": 0.0,
+    "conservative_printer_envelope_mm": [240.0, 200.0, 210.0],
+    "required_xy_reserve_each_side_mm": 10.0,
+    "contact_plane_tolerance_mm": 0.2,
+    "support_threshold_deg": 45.0,
+    "selected_source_outward_bed_normal": [0.185925633, 0.551883638, 0.812930584],
+    "selected_optimized_yaw_deg": 138.5,
+    "selected_rotation_quaternion_wxyz": [0.108354397, -0.603910148, -0.736042023, 0.285996497]
+  },
+  "audit_results": {
+    "oriented_xyz_mm": [194.385, 172.420, 164.737],
+    "xy_margin_each_side_mm": [22.808, 13.790],
+    "true_bed_contact_area_mm2": 2253.51,
+    "estimated_support_facing_area_45deg_mm2": 1213.31,
+    "a_insert_axis_angle_from_layer_normal_deg": 62.385,
+    "b_insert_axis_angle_from_layer_normal_deg": 39.288,
+    "fits_conservative_envelope": true,
+    "meets_10mm_xy_reserve_each_side": true,
+    "candidate_count_checked": 11,
+    "selection_reason": "lowest support-facing/contact ratio among stable candidates that meet the full 10 mm per-side XY reserve"
+  },
+  "frozen_workstreams": [
+    "all head and eye geometry",
+    "A/B insert cavity dimensions and positions",
+    "ears",
+    "lower face and rear cassette",
+    "reinforcement",
+    "C006",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "holds": [
+    "No production STL, 3MF, G-code, or ASA shell release.",
+    "No exact-orientation insert coupon until this orientation is visually approved.",
+    "PrusaSlicer must independently confirm support, brim, collision, and 10 mm reserve before production release."
+  ]
+}

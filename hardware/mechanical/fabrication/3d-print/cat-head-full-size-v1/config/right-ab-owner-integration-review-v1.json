@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1",
+  "status": "approved right-A V4 and right-B V2 tabs integrated into copied right-side owners; digital validation and user visual approval pass; not mirrored or print-ready",
+  "physical_problem": "convert the four approved isolated right-side A/B tab solids into true owner unions without changing placement, holes, insert cavities, mating gaps, exterior shell, ear context, or frozen workstreams",
+  "source_reviews": {
+    "right_a": {
+      "freecad": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-surface-open-insert-correction-v1/CAT_HEAD_RIGHT_A_SURFACE_OPEN_INSERT_CORRECTION_V1.FCStd",
+      "sha256": "a362f5c51299067d792d4afb1dacda19aaa3067fd8e6dc6d80ef174668994b80",
+      "approval": "user LGTM 2026-08-09"
+    },
+    "right_b": {
+      "freecad": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-hole-access-review-v1/CAT_HEAD_RIGHT_B_HOLE_ACCESS_REVIEW_V1.FCStd",
+      "sha256": "77f9580b46ece419f51e11f21ef6f753443ee0963fe6b98d0bceab52fdd63936",
+      "approval": "user LGTM 2026-08-09"
+    }
+  },
+  "frozen_contract": {
+    "tab_reposition_mm": 0.0,
+    "tab_resize_mm": 0.0,
+    "bore_diameter_mm": 3.4,
+    "pair_gap_mm": 0.3,
+    "surface_open_cavity_diameter_mm": 4.25,
+    "surface_open_cavity_depth_mm": 3.2,
+    "insert_recess_mm": 0.2,
+    "remaining_exterior_wall_mm": 0.8,
+    "minimum_owner_root_overlap_mm3": 80.0,
+    "frozen_workstreams": [
+      "left side",
+      "right ear geometry",
+      "remaining right upper-head components",
+      "lower-face and rear-cassette ownership",
+      "reinforcement",
+      "eyes",
+      "C006",
+      "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+    ]
+  },
+  "copied_source_objects": {
+    "panel_owner": "PROPOSED__RIGHT_TRANSLUCENT_PANEL__TRIANGULATED_V1_SOLID",
+    "head_owner": "PROPOSED__RIGHT_UPPER_HEAD_C001_LEGACY_SMALL_FLANGE_REMOVED_V1",
+    "ear_context": "PROPOSED__RIGHT_EAR__VALIDATION_COMPOUND_V1",
+    "right_a_panel_tab": "PROPOSED__RIGHT_A__PANEL_TAB__M3_BORE_MINUS_4P5_V2",
+    "right_a_head_tab": "PROPOSED__RIGHT_A__HEAD_TAB__M3X3_SHORT_INSERT_SURFACE_OPEN_V4",
+    "right_b_panel_tab": "PROPOSED__RIGHT_B__PANEL_TAB__M3_BORE_PLUS_0P05_INTERIOR_V1",
+    "right_b_head_tab": "PROPOSED__RIGHT_B__HEAD_TAB__M3X3_SHORT_INSERT_SURFACE_OPEN_V2"
+  },
+  "integrated_objects": {
+    "panel": "PROPOSED__RIGHT_TRANSLUCENT_PANEL__A_B_INTEGRATED_V1",
+    "head_c001": "PROPOSED__RIGHT_UPPER_HEAD_C001__A_B_INTEGRATED_V1"
+  },
+  "validation_results": {
+    "right_a_panel_root_overlap_mm3": 81.4577,
+    "right_a_head_root_overlap_mm3": 164.5685,
+    "right_b_panel_root_overlap_mm3": 94.7244,
+    "right_b_head_root_overlap_mm3": 124.9343,
+    "right_a_pair_gap_mm": 0.3,
+    "right_b_pair_gap_mm": 0.3,
+    "panel_tab_a_to_b_minimum_clearance_mm": 64.9019,
+    "head_tab_a_to_b_minimum_clearance_mm": 67.0558,
+    "integrated_panel": {
+      "valid": true,
+      "closed": true,
+      "self_intersection": false,
+      "solids": 1,
+      "faces": 158,
+      "edges": 261,
+      "vertices": 103,
+      "volume_mm3": 16327.43
+    },
+    "integrated_head_c001": {
+      "valid": true,
+      "closed": true,
+      "self_intersection": false,
+      "solids": 1,
+      "faces": 1832,
+      "edges": 2958,
+      "vertices": 1092,
+      "volume_mm3": 77961.90
+    },
+    "integrated_panel_to_head_interference_mm3": 0.0,
+    "integrated_panel_to_head_minimum_clearance_mm": 0.0353,
+    "panel_to_head_clearance_is_inherited_unchanged": true,
+    "integrated_panel_to_ear_interference_mm3": 0.0,
+    "integrated_panel_to_ear_clearance_mm": 0.0761,
+    "integrated_head_to_ear_interference_mm3": 51.7854,
+    "baseline_head_to_ear_interference_mm3": 51.7854,
+    "head_to_ear_interference_increase_mm3": 0.0,
+    "right_a_insert_and_insertion_sweep_interference_mm3": 0.0,
+    "right_b_insert_and_insertion_sweep_interference_mm3": 0.0,
+    "right_a_insertion_sweep_to_ear_clearance_mm": 43.4099,
+    "right_b_insertion_sweep_to_ear_clearance_mm": 2.1898,
+    "right_a_driver_clearances_mm": {
+      "integrated_panel": 1.4404,
+      "integrated_head_c001": 5.7613,
+      "ear": 40.2087
+    },
+    "right_b_driver_clearances_mm": {
+      "integrated_panel": 1.7389,
+      "integrated_head_c001": 6.0598,
+      "ear": 4.9903
+    },
+    "right_a_washer_unintended_interference_mm3": 0.0,
+    "right_b_washer_to_original_tab_numerical_contact_mm3": 0.0047,
+    "right_b_washer_contact_is_inherited_unchanged": true
+  },
+  "review_output": {
+    "freecad": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-owner-integration-review-v1/CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd",
+    "freecad_sha256": "e9974661a5a0a71a12bcb6ab6d0d66ceae354fd8744486ff08ce72e20cf0376c",
+    "freecad_size_bytes": 1641311,
+    "fcstd_zip_validation": "PASS",
+    "context_image": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-owner-integration-review-v1/review/01-right-ab-integrated-owner-context.png",
+    "prior_dimensioned_and_access_evidence": [
+      "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-surface-open-insert-correction-v1/review/",
+      "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-hole-access-review-v1/review/",
+      "output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-full-head-context.png"
+    ]
+  },
+  "approval": "User visually approved the integrated right-side owner review with LGTM on 2026-08-09.",
+  "approval_condition": "satisfied: both integrated connectors remain attached to the correct owners, both A/B locations and gaps look unchanged, no flange is floating, and the exterior/ear context shows no new visible defect",
+  "review_holds": [
+    "No mirroring before explicit integrated-right-side visual approval.",
+    "No structural STL, slicing, G-code, or ASA shell print release.",
+    "The exact-orientation ASA insert coupon remains open until the final upper-head print orientation is frozen.",
+    "The inherited C001-to-ear overlap and sub-0.1 mm inherited owner clearances are recorded, not silently treated as new integration failures."
+  ]
+}

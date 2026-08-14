@@ -1,0 +1,353 @@
+{
+  "source_stl": "/tmp/right_ab_c001_hs04_orientation_audit.stl",
+  "envelope_mm": [
+    240.0,
+    200.0,
+    210.0
+  ],
+  "required_xy_reserve_each_side_mm": 10.0,
+  "candidate_count": 11,
+  "top_candidates": [
+    {
+      "source_outward_bed_normal": [
+        0.185925633,
+        0.551883638,
+        0.812930584
+      ],
+      "source_planar_area_mm2": 2253.51,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 2253.51,
+      "estimated_support_facing_area_45deg_mm2": 1213.31,
+      "optimized_yaw_deg": 138.5,
+      "oriented_xyz_mm": [
+        194.385,
+        172.42,
+        164.737
+      ],
+      "xy_margin_each_side_mm": [
+        22.808,
+        13.79
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.108354397,
+        -0.603910148,
+        -0.736042023,
+        0.285996497
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 62.385,
+      "b_insert_axis_angle_from_layer_normal_deg": 39.288,
+      "rank": 1
+    },
+    {
+      "source_outward_bed_normal": [
+        0.277209729,
+        0.467612982,
+        0.839340746
+      ],
+      "source_planar_area_mm2": 2827.7,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 2827.7,
+      "estimated_support_facing_area_45deg_mm2": 1681.35,
+      "optimized_yaw_deg": 160.5,
+      "oriented_xyz_mm": [
+        198.301,
+        177.825,
+        149.901
+      ],
+      "xy_margin_each_side_mm": [
+        20.85,
+        11.088
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.047997836,
+        -0.621674061,
+        -0.730199814,
+        0.279331058
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 59.376,
+      "b_insert_axis_angle_from_layer_normal_deg": 32.19,
+      "rank": 2
+    },
+    {
+      "source_outward_bed_normal": [
+        0.336936772,
+        -0.89335525,
+        0.29730466
+      ],
+      "source_planar_area_mm2": 1524.29,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 1524.29,
+      "estimated_support_facing_area_45deg_mm2": 1021.58,
+      "optimized_yaw_deg": 135.0,
+      "oriented_xyz_mm": [
+        187.523,
+        147.085,
+        188.881
+      ],
+      "xy_margin_each_side_mm": [
+        26.239,
+        26.458
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.226833954,
+        0.025797874,
+        0.804976285,
+        0.54762584
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 53.462,
+      "b_insert_axis_angle_from_layer_normal_deg": 62.722,
+      "rank": 3
+    },
+    {
+      "source_outward_bed_normal": [
+        0.20597668,
+        -0.553883851,
+        0.806713223
+      ],
+      "source_planar_area_mm2": 2501.43,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 2501.43,
+      "estimated_support_facing_area_45deg_mm2": 2058.56,
+      "optimized_yaw_deg": 52.0,
+      "oriented_xyz_mm": [
+        205.43,
+        165.632,
+        166.648
+      ],
+      "xy_margin_each_side_mm": [
+        17.285,
+        17.184
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.279412746,
+        0.655461311,
+        0.688278437,
+        0.136278674
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 22.296,
+      "b_insert_axis_angle_from_layer_normal_deg": 35.238,
+      "rank": 4
+    },
+    {
+      "source_outward_bed_normal": [
+        0.998906016,
+        -0.036057804,
+        0.029776497
+      ],
+      "source_planar_area_mm2": 3437.37,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 3437.37,
+      "estimated_support_facing_area_45deg_mm2": 3457.07,
+      "optimized_yaw_deg": 96.5,
+      "oriented_xyz_mm": [
+        203.498,
+        163.628,
+        155.848
+      ],
+      "xy_margin_each_side_mm": [
+        18.251,
+        18.186
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.463786364,
+        -0.517753959,
+        0.496808916,
+        0.519628584
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 83.899,
+      "b_insert_axis_angle_from_layer_normal_deg": 57.421,
+      "rank": 5
+    },
+    {
+      "source_outward_bed_normal": [
+        0.479801744,
+        -0.562714577,
+        0.673158705
+      ],
+      "source_planar_area_mm2": 2843.4,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 2843.4,
+      "estimated_support_facing_area_45deg_mm2": 3118.68,
+      "optimized_yaw_deg": 66.5,
+      "oriented_xyz_mm": [
+        209.327,
+        169.676,
+        152.39
+      ],
+      "xy_margin_each_side_mm": [
+        15.337,
+        15.162
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.338071376,
+        0.256668836,
+        0.877895474,
+        0.221649274
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 39.725,
+      "b_insert_axis_angle_from_layer_normal_deg": 32.572,
+      "rank": 6
+    },
+    {
+      "source_outward_bed_normal": [
+        0.0,
+        0.610664248,
+        0.791889608
+      ],
+      "source_planar_area_mm2": 2797.21,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 2797.21,
+      "estimated_support_facing_area_45deg_mm2": 3164.99,
+      "optimized_yaw_deg": 102.0,
+      "oriented_xyz_mm": [
+        192.408,
+        156.808,
+        187.48
+      ],
+      "xy_margin_each_side_mm": [
+        23.796,
+        21.596
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.203003556,
+        -0.595679164,
+        -0.735602617,
+        0.250688553
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 63.428,
+      "b_insert_axis_angle_from_layer_normal_deg": 48.801,
+      "rank": 7
+    },
+    {
+      "source_outward_bed_normal": [
+        -0.147420466,
+        -0.695050657,
+        0.703684449
+      ],
+      "source_planar_area_mm2": 1664.2,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 1504.34,
+      "estimated_support_facing_area_45deg_mm2": 2856.54,
+      "optimized_yaw_deg": 110.5,
+      "oriented_xyz_mm": [
+        198.148,
+        159.013,
+        192.495
+      ],
+      "xy_margin_each_side_mm": [
+        20.926,
+        20.493
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.219398931,
+        0.671975911,
+        0.632685184,
+        0.316262364
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 18.965,
+      "b_insert_axis_angle_from_layer_normal_deg": 56.485,
+      "rank": 8
+    },
+    {
+      "source_outward_bed_normal": [
+        0.870949507,
+        -0.464697301,
+        0.159697443
+      ],
+      "source_planar_area_mm2": 1225.05,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 1225.05,
+      "estimated_support_facing_area_45deg_mm2": 2378.57,
+      "optimized_yaw_deg": 83.5,
+      "oriented_xyz_mm": [
+        197.977,
+        169.472,
+        188.817
+      ],
+      "xy_margin_each_side_mm": [
+        21.012,
+        15.264
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.483587444,
+        -0.179930478,
+        0.739914656,
+        0.431618333
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 77.82,
+      "b_insert_axis_angle_from_layer_normal_deg": 53.196,
+      "rank": 9
+    },
+    {
+      "source_outward_bed_normal": [
+        0.155623913,
+        -0.092186414,
+        -0.983505428
+      ],
+      "source_planar_area_mm2": 80.9,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 117.27,
+      "estimated_support_facing_area_45deg_mm2": 14856.62,
+      "optimized_yaw_deg": 76.5,
+      "oriented_xyz_mm": [
+        200.031,
+        135.79,
+        173.818
+      ],
+      "xy_margin_each_side_mm": [
+        19.984,
+        32.105
+      ],
+      "meets_10mm_each_side": true,
+      "rotation_quaternion_wxyz": [
+        0.782071888,
+        -0.012024816,
+        0.090015039,
+        0.616535664
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 30.46,
+      "b_insert_axis_angle_from_layer_normal_deg": 40.435,
+      "rank": 10
+    },
+    {
+      "source_outward_bed_normal": [
+        0.840118647,
+        0.502100885,
+        0.20517163
+      ],
+      "source_planar_area_mm2": 2285.57,
+      "candidate_plane_lowest_gap_mm": 0.0,
+      "true_bed_contact_area_mm2": 2285.57,
+      "estimated_support_facing_area_45deg_mm2": 3484.8,
+      "optimized_yaw_deg": 55.0,
+      "oriented_xyz_mm": [
+        221.781,
+        182.025,
+        142.207
+      ],
+      "xy_margin_each_side_mm": [
+        9.11,
+        8.988
+      ],
+      "meets_10mm_each_side": false,
+      "rotation_quaternion_wxyz": [
+        0.55917865,
+        -0.660915256,
+        0.407156914,
+        0.291090012
+      ],
+      "a_insert_axis_angle_from_layer_normal_deg": 81.084,
+      "b_insert_axis_angle_from_layer_normal_deg": 53.898,
+      "rank": 11
+    }
+  ]
+}

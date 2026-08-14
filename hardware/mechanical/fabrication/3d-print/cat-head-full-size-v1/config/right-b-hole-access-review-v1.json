@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_RIGHT_B_HOLE_ACCESS_REVIEW_V1",
+  "status": "isolated right-B hole and surface-open short-insert V2 visually approved 2026-08-09 and consumed by the copied right-side owner-integration review; standard nyloc and trapped-pocket V1 rejected; not mirrored or print-ready",
+  "source_review": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1/CAT_HEAD_RIGHT_UPPER_HEAD_LEGACY_SMALL_FLANGE_REMOVAL_REVIEW_V1.FCStd",
+    "sha256": "9d18d60dc7db24c97fd7931fdda24c87bea546309d68eef325f62bae9ad4731e",
+    "approved_b_relief_sha256": "e27b49f52cf7f399bc5b3cb495e039809353abdd0724407588544cba7e0ea5cd",
+    "right_a_approval_commit": "d95c7be",
+    "frozen_v10_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+    "aluminum_v05_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79"
+  },
+  "selected_anchors": {
+    "approved_datum": {
+      "id": "REVIEW_ONLY__ANCHOR_CANDIDATE_B__REAR",
+      "center_mm": [91.929535, 217.525665, 201.177658]
+    },
+    "panel_mating_face": {
+      "object": "PROPOSED__RIGHT_B__PANEL_TAB__LOCAL_RELIEF_1P9_SWEEP_V1",
+      "subelement": "Face5",
+      "centroid_mm": [85.53, 214.77, 197.67],
+      "normal": [0.3212, 0.4005, -0.8582],
+      "area_mm2": 296.27
+    },
+    "head_mating_face": {
+      "object": "PROPOSED__RIGHT_B__HEAD_TAB__V2_26MM_SHAPE_ONLY",
+      "subelement": "Face6",
+      "centroid_mm": [86.28, 215.16, 197.79],
+      "normal": [-0.3212, -0.4005, 0.8582],
+      "area_mm2": 312.0
+    },
+    "verified_plane_gap_mm": 0.3
+  },
+  "local_frame": {
+    "tangent": [-0.48370078, 0.8484382, 0.21490952],
+    "interior": [-0.81416923, -0.34606928, -0.46622366],
+    "across": [-0.32118839, -0.40048546, 0.85816628]
+  },
+  "first_axis_candidate": {
+    "center_mm": [86.026808, 215.016663, 197.797537],
+    "clearance_diameter_mm": 3.4,
+    "direction": "positive approved B across axis",
+    "tangent_shift_mm": 0.0,
+    "interior_shift_mm": 0.0,
+    "derivation": "midpoint of the approved B panel-tab and head-tab source centers"
+  },
+  "hardware_first_attempt": {
+    "fastener": "M3 x 16 through-bolt",
+    "washers": "two 7 mm OD x 0.8 mm washers",
+    "retention": "M3 nyloc",
+    "fallback_policy": "do not replace with an insert or other fastener without a documented failed standard-hardware result and explicit user approval"
+  },
+  "final_hole_axis": {
+    "center_mm": [85.9860995385, 214.999359536, 197.774225817],
+    "clearance_diameter_mm": 3.4,
+    "direction": "positive approved B across axis",
+    "interior_shift_mm": 0.05,
+    "tangent_shift_mm": 0.0,
+    "reason": "the centered radius-5.2 edge envelope retained tiny numerical protrusions; the minimal +0.05 mm approved-interior shift geometrically contains both panel and head edge envelopes"
+  },
+  "short_insert_authorization": {
+    "date": "2026-08-09",
+    "user_verbatim": "yes",
+    "scope": "test the same compact M3 short-insert hardware concept as right A on the isolated right-B head flange after standard M3 through-bolt tool access failed",
+    "does_not_authorize": [
+      "right-side production integration",
+      "left-side mirroring",
+      "fabrication export",
+      "slicing or printing"
+    ]
+  },
+  "surface_open_short_insert_v2": {
+    "proposal_object": "PROPOSED__RIGHT_B__HEAD_TAB__M3X3_SHORT_INSERT_SURFACE_OPEN_V2",
+    "insert": "M3 x 3 mm short heat-set insert, assumed maximum body diameter 4.20 mm",
+    "printable_cavity_diameter_mm": 4.25,
+    "printable_cavity_depth_from_mating_face_mm": 3.2,
+    "insert_recess_below_mating_face_mm": 0.2,
+    "remaining_exterior_wall_mm": 0.8,
+    "screw": "M3 x 8 low-profile socket screw",
+    "panel_side_washer": "7 mm OD x 0.8 mm",
+    "calculated_thread_engagement_mm": 2.7,
+    "calculated_unengaged_insert_depth_mm": 0.3,
+    "panel_side_driver": "3.4 mm-diameter validation shaft at 25 degrees along positive approved B interior direction"
+  },
+  "acceptance_gates": {
+    "minimum_radial_edge_material_mm": 3.5,
+    "edge_envelope_radius_mm": 5.2,
+    "minimum_owner_root_overlap_mm3": 80.0,
+    "pair_gap_mm": 0.3,
+    "unintended_interference_mm3": 0.0,
+    "required_access": [
+      "panel-side screw head and washer",
+      "head-side washer and M3 nyloc",
+      "driver, wrench or socket, fingers, insertion and removal"
+    ],
+    "solid_requirements": "both drilled proposal copies must remain closed valid solids with no self-intersection",
+    "exterior_requirement": "no exterior protrusion or change to frozen owner surfaces"
+  },
+  "frozen_workstreams": [
+    "approved right-A geometry and hardware contract",
+    "approved right-B relief, anchor, head tab, and selected legacy-projection removal",
+    "right panel, upper-head, and ear topology references",
+    "all left-side geometry",
+    "lower-face and rear-cassette ownership",
+    "reinforcement, eyes, and C006",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "review_output": {
+    "freecad": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-hole-access-review-v1/CAT_HEAD_RIGHT_B_HOLE_ACCESS_REVIEW_V1.FCStd",
+    "freecad_sha256": "77f9580b46ece419f51e11f21ef6f753443ee0963fe6b98d0bceab52fdd63936",
+    "fcstd_size_bytes": 8090740,
+    "fcstd_zip_validation": "PASS",
+    "review_directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-hole-access-review-v1/review"
+  },
+  "validation_results": {
+    "drilled_panel_tab_closed_valid_no_self_intersection": true,
+    "drilled_head_tab_surface_open_v2_closed_valid_no_self_intersection": true,
+    "panel_owner_root_overlap_mm3": 94.72,
+    "head_owner_root_overlap_mm3": 124.93,
+    "pair_gap_mm": 0.3,
+    "surface_open_cavity_effective_depth_mm": 3.2,
+    "insert_seated_recess_mm": 0.2,
+    "remaining_exterior_wall_mm": 0.8,
+    "surface_open_full_cavity_edge_envelope_radius_mm": 5.625,
+    "surface_open_full_cavity_edge_envelope_contained": true,
+    "cavity_to_modified_upper_head_clearance_mm": 2.6099,
+    "surface_open_head_tab_volume_mm3": 1195.34,
+    "surface_open_head_tab_bounding_box_unchanged": true,
+    "insert_body_to_tab_interference_mm3": 0.0,
+    "insert_mating_side_insertion_sweep_to_tab_interference_mm3": 0.0,
+    "insert_mating_side_insertion_sweep_to_modified_head_clearance_mm": 2.6342,
+    "insert_mating_side_insertion_sweep_to_ear_clearance_mm": 2.1898,
+    "panel_washer_to_panel_clearance_mm": 0.4684,
+    "panel_washer_to_modified_head_clearance_mm": 4.6243,
+    "panel_low_profile_head_to_panel_clearance_mm": 0.7177,
+    "panel_low_profile_head_to_ear_clearance_mm": 9.6499,
+    "panel_ball_hex_25deg_to_panel_clearance_mm": 1.8243,
+    "panel_ball_hex_25deg_to_modified_head_clearance_mm": 8.3439,
+    "panel_ball_hex_25deg_to_ear_clearance_mm": 4.9903,
+    "panel_ball_hex_25deg_to_drilled_panel_tab_clearance_mm": 1.7389
+  },
+  "rejected_trials": [
+    {
+      "trial": "centered B bore axis",
+      "failure": "exact face-touch radius-5.2 edge envelopes produced panel/head numerical protrusions of 0.0051 and 0.0137 mm3; retained only as rejected evidence"
+    },
+    {
+      "trial": "standard M3 x 16 through-bolt with washers and M3 nyloc",
+      "failure": "hardware bodies fit, but the required 8 mm thin socket intersects the modified upper head by 1.3190 mm3 at engagement and 137.3681 mm3 along the approach"
+    },
+    {
+      "trial": "25-degree negative-interior panel driver path",
+      "failure": "intersects the translucent panel by 28.0016 mm3 and the ear by 7.1733 mm3"
+    },
+    {
+      "trial": "PROPOSED__RIGHT_B__HEAD_TAB__M3X3_SHORT_INSERT_RECESSED_V1",
+      "failure": "a 3.0 mm cavity beginning 0.2 mm behind the mating face leaves a 0.2 mm ring with only the 3.4 mm screw bore; a 4.20 mm insert cannot enter the trapped pocket"
+    }
+  ],
+  "right_a_followup_hold": {
+    "reason": "the matching right-A surface-open V4 correction is now isolated and digitally validated; both corrected A and final B still require explicit visual approval before integration",
+    "approval_state": "the earlier A axis/tool-path approval remains recorded, the trapped V3 pocket is rejected, and the corrected surface-open V4 cavity is pending user review"
+  },
+  "review_holds": [
+    "No production union, mirror, fabrication export, slicing, or print release is authorized.",
+    "The +0.05 mm interior B axis and surface-open V2 cavity require user visual approval.",
+    "Corrected right-A surface-open V4 and final right-B surface-open V2 both require user visual approval before right-side A/B integration.",
+    "User approval is required before right-side A/B integration."
+  ]
+}
