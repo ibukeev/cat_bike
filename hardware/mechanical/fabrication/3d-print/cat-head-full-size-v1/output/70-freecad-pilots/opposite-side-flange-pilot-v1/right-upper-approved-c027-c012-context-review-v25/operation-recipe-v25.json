@@ -1,0 +1,27 @@
+{
+  "application": "FreeCAD GUI 1.1.1 through the allowlisted structured FreeCAD MCP tools",
+  "sources": [
+    "right-upper-head-topology-repair-review-v3",
+    "right-upper-c027-eye-clearance-review-v19",
+    "right-upper-c012-eye-clearance-review-v24",
+    "right-eye-exact-owner-integration-review-v17"
+  ],
+  "steps": [
+    "Create CAT_HEAD_RIGHT_UPPER_APPROVED_C027_C012_CONTEXT_REVIEW_V25.",
+    "Insert exact V17 eye at zero transform.",
+    "Insert V3 upper components C001-C042 at zero transform, omitting the original C012 and original C027.",
+    "Insert the approved V19 C027 replacement and approved V24 upper-C012 replacement at zero transform.",
+    "Create REVIEW__RIGHT_UPPER_HEAD__APPROVED_C027_C012__V25 as a 42-solid review compound; do not fuse it.",
+    "Validate the compound topology and exact eye clearance of both approved replacements.",
+    "Run aggregate upper/eye interference and exact C001 interference checks.",
+    "Set the document to a fitted isometric full-context review and save the FCStd."
+  ],
+  "forbidden": [
+    "arbitrary Python execution",
+    "headless FreeCAD",
+    "C009 trim without a new structural contract",
+    "production owner union",
+    "left mirror",
+    "STL or G-code export"
+  ]
+}

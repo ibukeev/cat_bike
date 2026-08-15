@@ -1,0 +1,56 @@
+{
+  "review": "right-upper-approved-c027-c012-context-review-v25",
+  "date": "2026-08-15",
+  "status": "REVIEW_ONLY_COMPLETE_RIGHT_UPPER_CONTEXT__NOT_PRINT_SOURCE",
+  "purpose": "Substitute only the approved V19 C027 and V24 upper C012 into the complete frozen V3 right-upper component set and rerun exact eye-clearance checks.",
+  "manifest": {
+    "upper_component_count": 42,
+    "upper_components": "V3 C001-C042, with original C012 and C027 omitted",
+    "approved_replacements": ["V19 C027", "V24 upper C012"],
+    "eye_reference": "exact V17 right-eye owner",
+    "old_c012_present": false,
+    "old_c027_present": false
+  },
+  "right_upper_compound": {
+    "object": "REVIEW__RIGHT_UPPER_HEAD__APPROVED_C027_C012__V25",
+    "valid": true,
+    "closed": true,
+    "solid_count": 42,
+    "shell_count": 42,
+    "face_count": 2750,
+    "edge_count": 4304,
+    "vertex_count": 1590,
+    "volume_mm3": 150445.14,
+    "note": "Review compound only; not a production union."
+  },
+  "approved_replacement_clearance": {
+    "C012": {"eye_intersection": false, "eye_clearance_mm": 4.0},
+    "C027": {"eye_intersection": false, "eye_clearance_mm": 5.3208}
+  },
+  "remaining_upper_eye_interference": {
+    "aggregate_volume_mm3": 128.3273,
+    "bounds_mm": {
+      "x": [55.12, 103.74],
+      "y": [70.78, 96.88],
+      "z": [118.48, 178.66]
+    },
+    "confirmed_C001_volume_mm3": 100.599,
+    "remaining_legacy_candidates": ["C001", "C009", "C019"],
+    "note": "C012 and C027 are exact-clearance passes and do not contribute to the remaining aggregate. C019 was previously classified as a degenerate near-zero touch."
+  },
+  "frozen_workstreams": [
+    "exact V17 eye",
+    "C006",
+    "ears",
+    "lower-face and rear-cassette ownership",
+    "reinforcement ownership",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "gcode": false,
+    "asa_print_release": false
+  }
+}
