@@ -56,6 +56,15 @@ current review is always easy to find.
   `RIGHT_AB_UNDER_EAR_OPENING_PRINT_ORIENTATION_REVIEW_V2_CHECKPOINT_2026-08-14.md`.
 - The prior V1 optimizer-selected placement is rejected and retained only as
   traceable evidence.
+- Current HS-11 V13 isolated topology proposal — **awaiting visual approval; not a print source**. It changes only lower-face component 001: the 1486-face exterior exact-union region is retained, three internal regions totaling 10 faces are removed, and one Boolean-only corner is snapped `0.0459405 mm` to the exact frozen source corner. Blender passes one closed manifold component with zero intersections, `0.00654787 mm` maximum exterior deviation, and unchanged bounds. FreeCAD/OCCT passes one valid closed solid. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/CAT_HEAD_RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V13.FCStd`.
+- V13 Blender review, validation, contract, generator, and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/CAT_HEAD_RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V13.blend`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/validation-v13.json`,
+  `config/right-lower-face-topology-repair-review-v13.json`,
+  `source/generate_right_lower_face_topology_repair_review_v13.py`, and
+  `RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V13_CHECKPOINT_2026-08-14.md`.
+- V13 remains isolated: no V11 owner substitution, eye/flange/C046/C048 integration, mirror, STL, G-code, or print release has occurred.
 - Current HS-11 V12 topology diagnostic — **HOLD, not a review approval or
   print source**. The approved V11 geometry is frozen. Sixty unchanged
   lower-face components were isolated; the inherited primary owner component

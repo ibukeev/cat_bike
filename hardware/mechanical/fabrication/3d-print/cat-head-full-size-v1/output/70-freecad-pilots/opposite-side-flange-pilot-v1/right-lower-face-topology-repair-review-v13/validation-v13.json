@@ -1,0 +1,175 @@
+{
+  "status": "PASS_BLENDER_ISOLATED",
+  "scope": "component 001 only; no other component or interface changed",
+  "source": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_001.obj",
+  "source_sha256": "f5c58d135bc347d79bcbb9350cc67eb64e6fd90552f7d8353217fcd46c51ea26",
+  "source_topology": {
+    "vertices": 689,
+    "edges": 2151,
+    "faces": 1434,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "mapped_source_intersections": 41,
+  "mapped_legacy_face_pairs": [
+    [
+      51,
+      53
+    ],
+    [
+      49,
+      53
+    ],
+    [
+      51,
+      78
+    ],
+    [
+      53,
+      72
+    ],
+    [
+      49,
+      78
+    ],
+    [
+      53,
+      75
+    ],
+    [
+      50,
+      53
+    ],
+    [
+      23,
+      73
+    ],
+    [
+      73,
+      78
+    ],
+    [
+      72,
+      80
+    ],
+    [
+      20,
+      55
+    ],
+    [
+      20,
+      44
+    ],
+    [
+      20,
+      43
+    ],
+    [
+      16,
+      20
+    ],
+    [
+      20,
+      28
+    ],
+    [
+      48,
+      53
+    ],
+    [
+      48,
+      78
+    ],
+    [
+      50,
+      78
+    ],
+    [
+      43,
+      49
+    ],
+    [
+      77,
+      78
+    ],
+    [
+      54,
+      75
+    ]
+  ],
+  "exact_union_region_face_counts": [
+    1486,
+    6,
+    1,
+    3
+  ],
+  "kept_region_index": 0,
+  "removed_internal_region_face_count": 10,
+  "boolean_only_snap_candidate_vertex": 694,
+  "boolean_only_snap_source_vertex": 188,
+  "boolean_only_snap_distance_mm": 0.045940538583974705,
+  "candidate_topology": {
+    "vertices": 713,
+    "edges": 2229,
+    "faces": 1486,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "candidate_self_intersections": 0,
+  "maximum_candidate_to_source_surface_deviation_mm": 0.006547868251800537,
+  "maximum_bbox_deviation_mm": 0.0,
+  "source_bounds": {
+    "min": [
+      -1.3515000343322754,
+      -139.15171813964844,
+      10.605006217956543
+    ],
+    "max": [
+      126.93900299072266,
+      3.0248233997554053e-06,
+      269.3445129394531
+    ]
+  },
+  "candidate_bounds": {
+    "min": [
+      -1.3515000343322754,
+      -139.15171813964844,
+      10.605006217956543
+    ],
+    "max": [
+      126.93900299072266,
+      3.0248233997554053e-06,
+      269.3445129394531
+    ]
+  },
+  "production_union_performed": false,
+  "owner_integration_performed": false,
+  "mirror_performed": false,
+  "proposal_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/CAT_HEAD_RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V13.blend",
+  "proposal_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/right_lower_face_component_001_topology_repaired_v13.obj",
+  "proposal_obj_sha256": "f0424c49c7ee4166fc306066be24c07787e885dd9d56e598cc2e94f86131730d",
+  "freecad_validation": {
+    "status": "PASS_OCCT_SOLID",
+    "mesh_validator_note": "FreeCAD mesh validator reported self-intersections on the triangulated OBJ; Blender BVH found zero and OCCT conversion/checks independently passed. Treat the OCCT one-solid result as the FreeCAD topology authority.",
+    "solid_object": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13",
+    "valid": true,
+    "closed": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 1027,
+    "edge_count": 1747,
+    "vertex_count": 706,
+    "volume_mm3": 78628.23,
+    "occt_no_self_intersection": true,
+    "fcstd_valid_zip": true
+  },
+  "proposal_fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/CAT_HEAD_RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V13.FCStd",
+  "proposal_fcstd_sha256": "9ba404c8a7bed0ff9879eae95f06166093d308168679f3b44255261d785fe46c",
+  "freecad_review_context": [
+    "right upper head V11",
+    "right eye bucket V9/V11",
+    "C046 V2/V11",
+    "C048 V2/V11",
+    "both unchanged right flange pairs V11"
+  ]
+}

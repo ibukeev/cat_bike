@@ -1,0 +1,44 @@
+{
+  "schema_version": 13,
+  "status": "isolated component-001 topology proposal; no owner integration, mirror, STL, G-code, or print release",
+  "source_component_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_001.obj",
+  "source_component_sha256": "f5c58d135bc347d79bcbb9350cc67eb64e6fd90552f7d8353217fcd46c51ea26",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13",
+  "locked_contract": {
+    "source_vertex_count": 689,
+    "source_polygon_count": 491,
+    "source_component_count": 60,
+    "mapped_source_intersections": 41,
+    "mapped_legacy_face_pairs": [[51, 53], [49, 53], [51, 78], [53, 72], [49, 78], [53, 75], [50, 53], [23, 73], [73, 78], [72, 80], [20, 55], [20, 44], [20, 43], [16, 20], [20, 28], [48, 53], [48, 78], [50, 78], [43, 49], [77, 78], [54, 75]],
+    "expected_exact_union_region_face_counts": [1486, 6, 1, 3],
+    "expected_removed_internal_region_face_count": 10,
+    "expected_candidate_vertex_count": 713,
+    "expected_candidate_edge_count": 2229,
+    "expected_candidate_face_count": 1486,
+    "boolean_only_snap_candidate_vertex": 694,
+    "boolean_only_snap_source_vertex": 188,
+    "maximum_boolean_only_snap_distance_mm": 0.05,
+    "maximum_candidate_to_source_surface_deviation_mm": 0.01,
+    "maximum_bbox_deviation_mm": 0.001,
+    "required_boundary_edges": 0,
+    "required_nonmanifold_edges": 0,
+    "required_self_intersections": 0,
+    "required_valid": true,
+    "required_closed": true
+  },
+  "frozen": [
+    "V11 lower-face source coordinates and exterior silhouette",
+    "Accepted V10 outer-neck removal",
+    "Approved V2 C046/C048 geometry and clearances",
+    "V9 eye bucket and rear cap",
+    "Both right flange pairs and their 0.3000 mm gaps",
+    "Right upper-head shell and every other reinforcement",
+    "Rear-cassette ownership, C006, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "holds": [
+    "Delete only the three small internal exact-union regions separated by the seven non-manifold edges.",
+    "Do not move, smooth, remesh, decimate, offset, or reshape any source vertex.",
+    "Do not modify the remaining 59 lower-face components or any eye, flange, upper-head, rear-cassette, C006, or aluminum object.",
+    "No owner integration, mirror, STL, G-code, slicing, ASA recommendation, or print release before explicit visual approval."
+  ]
+}
