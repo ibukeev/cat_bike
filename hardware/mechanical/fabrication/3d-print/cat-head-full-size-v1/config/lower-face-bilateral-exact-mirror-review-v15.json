@@ -1,0 +1,98 @@
+{
+  "schema_version": 15,
+  "status": "bilateral exact-mirror review only; approved V14 right geometry frozen; no production Boolean, STL, G-code, or print release",
+  "source_v14_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/CAT_HEAD_RIGHT_LOWER_FACE_OWNER_INTEGRATION_REVIEW_V14.blend",
+  "source_v14_blend_sha256": "7bc9f9ce25a973101ebd9cff6936073b6d5f5541e9d100091656f1c9f2123948",
+  "source_v14_validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/validation-v14.json",
+  "source_v14_validation_sha256": "cc818aa96cf0474f67ce6d2f73ae49ff681c7a61ef15b12821df6cfefb4dd777",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15",
+  "locked_contract": {
+    "mirror_plane": "X=0 / YZ",
+    "mirror_coordinate_tolerance_mm": 1e-05,
+    "required_lower_face_component_count_each_side": 60,
+    "mating_gap_mm": 0.3,
+    "maximum_pair_gap_error_mm": 0.01,
+    "maximum_interference_mm3": 0.001,
+    "maximum_inherited_lower_face_center_seam_overlap_mm3": 12.0,
+    "approved_c046_eye_clearance_mm": 4.6063,
+    "approved_c048_eye_clearance_mm": 4.0317,
+    "maximum_clearance_difference_mm": 0.01,
+    "required_left_upper_head_solid_count": 41,
+    "left_upper_head_expected_bounds_mm": [
+      [
+        -126.94,
+        42.84,
+        109.76
+      ],
+      [
+        2.13,
+        269.34,
+        268.15
+      ]
+    ],
+    "left_upper_head_maximum_bounds_error_mm": 0.01,
+    "approved_owner_engagement_mm3": {
+      "outer_head_flange_to_upper_head": 122.516,
+      "outer_eye_flange_to_eye_bucket": 247.0317,
+      "second_head_flange_to_lower_face": 26.2422,
+      "second_eye_flange_to_eye_bucket": 211.3736
+    },
+    "maximum_owner_engagement_difference_mm3": 0.02,
+    "required_left_upper_head_obj_connected_components": 40,
+    "approved_left_upper_head_occt_metrics": {
+      "solid_count": 41,
+      "faces": 2820,
+      "edges": 4410,
+      "vertices": 1632,
+      "volume_mm3": 147360.12,
+      "valid_closed": true,
+      "self_intersections": 0
+    },
+    "minimum_direct_owner_root_engagement_mm3": 80.0,
+    "maximum_mirrored_volume_difference_mm3": 0.1
+  },
+  "holds": [
+    "Do not modify any approved V14 right-side vertex, topology, location, or object ownership.",
+    "Mirror only the approved lower-face-owned V14 features listed in exact_mirror_roles.",
+    "Reuse the approved HS-08 left upper-head owner and approved HS-10 V9 left eye as frozen context; do not fabricate either by mirroring the V14 right context.",
+    "The approved left upper-head container hash drifted after approval; accept only the named object because its 41-solid topology, 2820/4410/1632 element counts, 147360.12 mm3 volume, bounds, validity, and no-self-intersection result still match the saved checkpoint exactly.",
+    "Retain and report the inherited lower-face center-seam overlap; do not trim or repartition it in this mirror-only bucket.",
+    "Preserve rear-cassette ownership, C006, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2 unchanged and absent from this change bucket.",
+    "No production Boolean, STL, G-code, slicing, ASA recommendation, or print release."
+  ],
+  "source_v9_bilateral_eye_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/eye-bilateral-exact-mirror-review-v9/CAT_HEAD_EYE_BILATERAL_EXACT_MIRROR_REVIEW_V9.blend",
+  "source_v9_bilateral_eye_blend_sha256": "d43b445a8b9ff133ad1efaf8036ff072352d0c807146a21d94b88b1c13c50580",
+  "source_left_upper_head_fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-full-owner-c001-c003-integration-v1/CAT_HEAD_LEFT_FULL_OWNER_C001_C003_AB_BILATERAL_VALIDATION_V1.FCStd",
+  "source_left_upper_head_checkpoint_sha256": "12f25e3e260fbf579e33336ce90e7dfd49286b5aa9794d8a453ad674c3815f61",
+  "source_left_upper_head_current_container_sha256": "9a1da0c890c49bf93aff88fffe97a8bb38088ea00237227c3d597f0c2ce25fde",
+  "source_left_upper_head_object": "PROPOSED__LEFT_UPPER_HEAD_FULL_OWNER__C001_C003_AB_INTEGRATED_V1",
+  "source_left_upper_head_step": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/source-context/approved_left_upper_head_c001_c003_ab_v15.step",
+  "source_left_upper_head_step_sha256": "a4a5b93928a72466d9b3c54eb91a0b39f0470c0419b06fc73d08bbd6f450dd14",
+  "source_left_upper_head_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/source-context/approved_left_upper_head_c001_c003_ab_v15.obj",
+  "source_left_upper_head_obj_sha256": "8c243b979b83adbae727428796d6cbaf43966e585cb34a9218e7bdc1148957fa",
+  "right_objects": {
+    "lower_face": "PROPOSED__RIGHT_LOWER_FACE__V13_COMPONENT_001_INTEGRATED_V14",
+    "upper_head": "right_upper_head",
+    "eye_bucket": "FROZEN__RIGHT_EYE_BUCKET_V9_V6",
+    "c046": "RESTORED__R1_RET__R__C046__APPROVED_CLEARANCE_V2__V11",
+    "c048": "RESTORED__R1_RET__R__C048__APPROVED_CLEARANCE_V2__V11",
+    "outer_head_flange": "RETAINED__V11__OUTER_HEAD__UNCHANGED",
+    "outer_eye_flange": "RETAINED__V11__OUTER_EYE__UNCHANGED",
+    "second_head_flange": "RETAINED__V11__SECOND_HEAD__UNCHANGED",
+    "second_eye_flange": "RETAINED__V11__SECOND_EYE__UNCHANGED"
+  },
+  "left_context_objects": {
+    "upper_head": "APPROVED__LEFT_UPPER_HEAD_C001_C003_AB__V15_CONTEXT",
+    "eye_bucket_source_name": "PROPOSED__LEFT_EYE_BUCKET__EXACT_X0_MIRROR_V9",
+    "eye_bucket": "APPROVED__LEFT_EYE_BUCKET__V9_CONTEXT"
+  },
+  "exact_mirror_roles": [
+    "lower_face",
+    "c046",
+    "c048",
+    "outer_head_flange",
+    "outer_eye_flange",
+    "second_head_flange",
+    "second_eye_flange"
+  ]
+}

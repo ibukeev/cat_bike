@@ -1,0 +1,53 @@
+{
+  "status": "PASS_REVIEW_HANDOFF_WITH_AGGREGATE_MESH_HOLD",
+  "scope": "Interactive FreeCAD bilateral review assembly only; not a production Boolean or print source",
+  "freecad_version": "1.1.1",
+  "document": "CAT_HEAD_LOWER_FACE_BILATERAL_EXACT_MIRROR_REVIEW_V15",
+  "fcstd_zip": {
+    "valid": true,
+    "size_bytes": 235002
+  },
+  "document_object_count": 18,
+  "expected_object_count": 18,
+  "all_objects_up_to_date": true,
+  "representative_mesh_validation": {
+    "V15__RIGHT__OUTER_HEAD_FLANGE": {
+      "status": "VALID",
+      "points": 62,
+      "facets": 124
+    },
+    "V15__LEFT__OUTER_HEAD_FLANGE": {
+      "status": "VALID",
+      "points": 62,
+      "facets": 124
+    },
+    "V15__RIGHT__SECOND_EYE_FLANGE": {
+      "status": "VALID",
+      "points": 68,
+      "facets": 136
+    },
+    "V15__LEFT__SECOND_EYE_FLANGE": {
+      "status": "VALID",
+      "points": 68,
+      "facets": 136
+    }
+  },
+  "aggregate_lower_face_mesh_hold": {
+    "right_freecad_result": [
+      "self-intersections",
+      "not watertight (open boundary)"
+    ],
+    "left_freecad_result": [
+      "self-intersections",
+      "not watertight (open boundary)"
+    ],
+    "interpretation": "Each side is intentionally imported as one aggregate Mesh::Feature containing 60 disconnected closed review solids. The inherited center-seam contact is also retained. FreeCAD's aggregate mesh validator is therefore not used as a production-body gate.",
+    "independent_evidence": "validation-v15.json reports 60 components per side, zero boundary edges and zero non-manifold edges in Blender, and exact X=0 mirrored coordinates for all controlled roles.",
+    "release_effect": "No STL, G-code, production Boolean, or print release is permitted from V15. HS-18 and HS-20 remain open."
+  },
+  "connection": {
+    "connected": true,
+    "recovery_files": 0,
+    "crash_loop_risk": false
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "status": "PASS_BLENDER_BILATERAL_EXACT_MIRROR_REVIEW",
+  "scope": "approved V14 right interface; exact X=0 mirror of lower-face-owned roles; approved HS-08 left upper head and HS-10 V9 left eye reused",
+  "source_v14_blend_sha256": "7bc9f9ce25a973101ebd9cff6936073b6d5f5541e9d100091656f1c9f2123948",
+  "source_v14_validation_sha256": "cc818aa96cf0474f67ce6d2f73ae49ff681c7a61ef15b12821df6cfefb4dd777",
+  "source_v9_bilateral_eye_blend_sha256": "d43b445a8b9ff133ad1efaf8036ff072352d0c807146a21d94b88b1c13c50580",
+  "right_fingerprints_unchanged": true,
+  "exact_mirror_roles": [
+    "lower_face",
+    "c046",
+    "c048",
+    "outer_head_flange",
+    "outer_eye_flange",
+    "second_head_flange",
+    "second_eye_flange"
+  ],
+  "mirror_records": {
+    "lower_face": {
+      "right_name": "PROPOSED__RIGHT_LOWER_FACE__V13_COMPONENT_001_INTEGRATED_V14",
+      "left_name": "PROPOSED__LEFT_LOWER_FACE__EXACT_X0_MIRROR_V15",
+      "right_topology": {
+        "vertices": 1553,
+        "edges": 3546,
+        "faces": 2073,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 120185.2452
+      },
+      "left_topology": {
+        "vertices": 1553,
+        "edges": 3546,
+        "faces": 2073,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 120185.2068
+      },
+      "volume_difference_mm3": 0.0384,
+      "maximum_indexed_vertex_error_mm": 0.0,
+      "maximum_bounds_error_mm": 0.0,
+      "exact_vertex_mirror": true
+    },
+    "c046": {
+      "right_name": "RESTORED__R1_RET__R__C046__APPROVED_CLEARANCE_V2__V11",
+      "left_name": "PROPOSED__LEFT_C046__EXACT_X0_MIRROR_V15",
+      "right_topology": {
+        "vertices": 6,
+        "edges": 11,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 202.6929
+      },
+      "left_topology": {
+        "vertices": 6,
+        "edges": 11,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 202.6929
+      },
+      "volume_difference_mm3": 0.0,
+      "maximum_indexed_vertex_error_mm": 0.0,
+      "maximum_bounds_error_mm": 0.0,
+      "exact_vertex_mirror": true
+    },
+    "c048": {
+      "right_name": "RESTORED__R1_RET__R__C048__APPROVED_CLEARANCE_V2__V11",
+      "left_name": "PROPOSED__LEFT_C048__EXACT_X0_MIRROR_V15",
+      "right_topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 472.7519
+      },
+      "left_topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 472.7519
+      },
+      "volume_difference_mm3": 0.0,
+      "maximum_indexed_vertex_error_mm": 0.0,
+      "maximum_bounds_error_mm": 0.0,
+      "exact_vertex_mirror": true
+    },
+    "outer_head_flange": {
+      "right_name": "RETAINED__V11__OUTER_HEAD__UNCHANGED",
+      "left_name": "PROPOSED__LEFT_OUTER_HEAD_FLANGE__EXACT_X0_MIRROR_V15",
+      "right_topology": {
+        "vertices": 62,
+        "edges": 186,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 323.1773
+      },
+      "left_topology": {
+        "vertices": 62,
+        "edges": 186,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 323.1773
+      },
+      "volume_difference_mm3": 0.0,
+      "maximum_indexed_vertex_error_mm": 0.0,
+      "maximum_bounds_error_mm": 0.0,
+      "exact_vertex_mirror": true
+    },
+    "outer_eye_flange": {
+      "right_name": "RETAINED__V11__OUTER_EYE__UNCHANGED",
+      "left_name": "PROPOSED__LEFT_OUTER_EYE_FLANGE__EXACT_X0_MIRROR_V15",
+      "right_topology": {
+        "vertices": 76,
+        "edges": 228,
+        "faces": 152,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.6557
+      },
+      "left_topology": {
+        "vertices": 76,
+        "edges": 228,
+        "faces": 152,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 431.6557
+      },
+      "volume_difference_mm3": 0.0,
+      "maximum_indexed_vertex_error_mm": 0.0,
+      "maximum_bounds_error_mm": 0.0,
+      "exact_vertex_mirror": true
+    },
+    "second_head_flange": {
+      "right_name": "RETAINED__V11__SECOND_HEAD__UNCHANGED",
+      "left_name": "PROPOSED__LEFT_SECOND_HEAD_FLANGE__EXACT_X0_MIRROR_V15",
+      "right_topology": {
+        "vertices": 59,
+        "edges": 177,
+        "faces": 118,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 421.4876
+      },
+      "left_topology": {
+        "vertices": 59,
+        "edges": 177,
+        "faces": 118,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 421.4876
+      },
+      "volume_difference_mm3": 0.0,
+      "maximum_indexed_vertex_error_mm": 0.0,
+      "maximum_bounds_error_mm": 0.0,
+      "exact_vertex_mirror": true
+    },
+    "second_eye_flange": {
+      "right_name": "RETAINED__V11__SECOND_EYE__UNCHANGED",
+      "left_name": "PROPOSED__LEFT_SECOND_EYE_FLANGE__EXACT_X0_MIRROR_V15",
+      "right_topology": {
+        "vertices": 68,
+        "edges": 204,
+        "faces": 136,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 394.7601
+      },
+      "left_topology": {
+        "vertices": 68,
+        "edges": 204,
+        "faces": 136,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 394.7601
+      },
+      "volume_difference_mm3": 0.0,
+      "maximum_indexed_vertex_error_mm": 0.0,
+      "maximum_bounds_error_mm": 0.0,
+      "exact_vertex_mirror": true
+    }
+  },
+  "left_context_validation": {
+    "approved_v9_left_eye": {
+      "name": "APPROVED__LEFT_EYE_BUCKET__V9_CONTEXT",
+      "topology": {
+        "vertices": 481,
+        "edges": 1473,
+        "faces": 982,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 6649.6022
+      },
+      "exact_x0_mirror_of_frozen_right_eye": true,
+      "maximum_bounds_error_mm": 0.0,
+      "source_blend_sha256": "d43b445a8b9ff133ad1efaf8036ff072352d0c807146a21d94b88b1c13c50580"
+    },
+    "approved_left_upper_head": {
+      "name": "APPROVED__LEFT_UPPER_HEAD_C001_C003_AB__V15_CONTEXT",
+      "mesh_topology": {
+        "vertices": 2198,
+        "edges": 6500,
+        "faces": 4334,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "volume_mm3": 147360.2499
+      },
+      "obj_connected_components": 40,
+      "verified_source_occt_metrics": {
+        "solid_count": 41,
+        "faces": 2820,
+        "edges": 4410,
+        "vertices": 1632,
+        "volume_mm3": 147360.12,
+        "valid_closed": true,
+        "self_intersections": 0
+      },
+      "bounds_mm": [
+        [
+          -126.939003,
+          42.842999,
+          109.756355
+        ],
+        [
+          2.131618,
+          269.344513,
+          268.152008
+        ]
+      ],
+      "maximum_checkpoint_bounds_error_mm": 0.00451294,
+      "checkpoint_container_sha256": "12f25e3e260fbf579e33336ce90e7dfd49286b5aa9794d8a453ad674c3815f61",
+      "current_container_sha256": "9a1da0c890c49bf93aff88fffe97a8bb38088ea00237227c3d597f0c2ce25fde",
+      "container_hash_drift_explicitly_recorded": true,
+      "object_step_sha256": "a4a5b93928a72466d9b3c54eb91a0b39f0470c0419b06fc73d08bbd6f450dd14",
+      "object_obj_sha256": "8c243b979b83adbae727428796d6cbaf43966e585cb34a9218e7bdc1148957fa"
+    }
+  },
+  "lower_face_component_count_each_side": {
+    "right": 60,
+    "left": 60
+  },
+  "flange_pairs": {
+    "right": {
+      "outer": {
+        "minimum_clearance_mm": 0.3,
+        "interference_mm3": 0.0
+      },
+      "second": {
+        "minimum_clearance_mm": 0.3,
+        "interference_mm3": 0.0
+      }
+    },
+    "left": {
+      "outer": {
+        "minimum_clearance_mm": 0.3,
+        "interference_mm3": 0.0
+      },
+      "second": {
+        "minimum_clearance_mm": 0.3,
+        "interference_mm3": 0.0
+      }
+    }
+  },
+  "owner_engagement": {
+    "right": {
+      "outer_head_flange_to_upper_head": {
+        "owner_role": "upper_head",
+        "engagement_mm3": 122.516,
+        "approved_right_reference_mm3": 122.516,
+        "difference_from_approved_right_mm3": 0.0,
+        "validation_mode": "exact preserved or exact-mirrored approved-right engagement",
+        "pass": true
+      },
+      "outer_eye_flange_to_eye_bucket": {
+        "owner_role": "eye_bucket",
+        "engagement_mm3": 247.0317,
+        "approved_right_reference_mm3": 247.0317,
+        "difference_from_approved_right_mm3": 0.0,
+        "validation_mode": "exact preserved or exact-mirrored approved-right engagement",
+        "pass": true
+      },
+      "second_head_flange_to_lower_face": {
+        "owner_role": "lower_face",
+        "engagement_mm3": 26.2422,
+        "approved_right_reference_mm3": 26.2422,
+        "difference_from_approved_right_mm3": 0.0,
+        "validation_mode": "exact preserved or exact-mirrored approved-right engagement",
+        "pass": true
+      },
+      "second_eye_flange_to_eye_bucket": {
+        "owner_role": "eye_bucket",
+        "engagement_mm3": 211.3736,
+        "approved_right_reference_mm3": 211.3736,
+        "difference_from_approved_right_mm3": 0.0,
+        "validation_mode": "exact preserved or exact-mirrored approved-right engagement",
+        "pass": true
+      }
+    },
+    "left": {
+      "outer_head_flange_to_upper_head": {
+        "owner_role": "upper_head",
+        "engagement_mm3": 200.6612,
+        "approved_right_reference_mm3": 122.516,
+        "difference_from_approved_right_mm3": 78.1452,
+        "validation_mode": "minimum direct-root engagement against approved asymmetric left upper-head owner",
+        "pass": true
+      },
+      "outer_eye_flange_to_eye_bucket": {
+        "owner_role": "eye_bucket",
+        "engagement_mm3": 247.0317,
+        "approved_right_reference_mm3": 247.0317,
+        "difference_from_approved_right_mm3": 0.0,
+        "validation_mode": "exact preserved or exact-mirrored approved-right engagement",
+        "pass": true
+      },
+      "second_head_flange_to_lower_face": {
+        "owner_role": "lower_face",
+        "engagement_mm3": 26.2422,
+        "approved_right_reference_mm3": 26.2422,
+        "difference_from_approved_right_mm3": 0.0,
+        "validation_mode": "exact preserved or exact-mirrored approved-right engagement",
+        "pass": true
+      },
+      "second_eye_flange_to_eye_bucket": {
+        "owner_role": "eye_bucket",
+        "engagement_mm3": 211.3736,
+        "approved_right_reference_mm3": 211.3736,
+        "difference_from_approved_right_mm3": 0.0,
+        "validation_mode": "exact preserved or exact-mirrored approved-right engagement",
+        "pass": true
+      }
+    }
+  },
+  "eye_clearances": {
+    "right": {
+      "c046_eye_clearance_mm": 4.6063,
+      "c048_eye_clearance_mm": 4.0317
+    },
+    "left": {
+      "c046_eye_clearance_mm": 4.6063,
+      "c048_eye_clearance_mm": 4.0317
+    }
+  },
+  "cross_side_interference_mm3": {
+    "lower_face": 7.6095,
+    "c046": 0.0,
+    "c048": 0.0,
+    "outer_head_flange": 0.0,
+    "outer_eye_flange": 0.0,
+    "second_head_flange": 0.0,
+    "second_eye_flange": 0.0
+  },
+  "inherited_lower_face_center_seam_overlap_retained": true,
+  "rear_cassette_c006_aluminum_changed": false,
+  "production_boolean_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "locked_contract": {
+    "mirror_plane": "X=0 / YZ",
+    "mirror_coordinate_tolerance_mm": 1e-05,
+    "required_lower_face_component_count_each_side": 60,
+    "mating_gap_mm": 0.3,
+    "maximum_pair_gap_error_mm": 0.01,
+    "maximum_interference_mm3": 0.001,
+    "maximum_inherited_lower_face_center_seam_overlap_mm3": 12.0,
+    "approved_c046_eye_clearance_mm": 4.6063,
+    "approved_c048_eye_clearance_mm": 4.0317,
+    "maximum_clearance_difference_mm": 0.01,
+    "required_left_upper_head_solid_count": 41,
+    "left_upper_head_expected_bounds_mm": [
+      [
+        -126.94,
+        42.84,
+        109.76
+      ],
+      [
+        2.13,
+        269.34,
+        268.15
+      ]
+    ],
+    "left_upper_head_maximum_bounds_error_mm": 0.01,
+    "approved_owner_engagement_mm3": {
+      "outer_head_flange_to_upper_head": 122.516,
+      "outer_eye_flange_to_eye_bucket": 247.0317,
+      "second_head_flange_to_lower_face": 26.2422,
+      "second_eye_flange_to_eye_bucket": 211.3736
+    },
+    "maximum_owner_engagement_difference_mm3": 0.02,
+    "required_left_upper_head_obj_connected_components": 40,
+    "approved_left_upper_head_occt_metrics": {
+      "solid_count": 41,
+      "faces": 2820,
+      "edges": 4410,
+      "vertices": 1632,
+      "volume_mm3": 147360.12,
+      "valid_closed": true,
+      "self_intersections": 0
+    },
+    "minimum_direct_owner_root_engagement_mm3": 80.0,
+    "maximum_mirrored_volume_difference_mm3": 0.1
+  },
+  "holds": [
+    "Do not modify any approved V14 right-side vertex, topology, location, or object ownership.",
+    "Mirror only the approved lower-face-owned V14 features listed in exact_mirror_roles.",
+    "Reuse the approved HS-08 left upper-head owner and approved HS-10 V9 left eye as frozen context; do not fabricate either by mirroring the V14 right context.",
+    "The approved left upper-head container hash drifted after approval; accept only the named object because its 41-solid topology, 2820/4410/1632 element counts, 147360.12 mm3 volume, bounds, validity, and no-self-intersection result still match the saved checkpoint exactly.",
+    "Retain and report the inherited lower-face center-seam overlap; do not trim or repartition it in this mirror-only bucket.",
+    "Preserve rear-cassette ownership, C006, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2 unchanged and absent from this change bucket.",
+    "No production Boolean, STL, G-code, slicing, ASA recommendation, or print release."
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/CAT_HEAD_LOWER_FACE_BILATERAL_EXACT_MIRROR_REVIEW_V15.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/review/01-v15-bilateral-front-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/review/02-v15-bilateral-rear-interior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/review/03-v15-left-owner-isolated.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/review/04-v15-right-four-flange-owner-roots.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/review/05-v15-left-four-flange-owner-roots.png"
+    ],
+    "object_obj_sha256": {
+      "right": {
+        "lower_face": "2917f95ac93a159c69528998a29653a1b206c374d96b47bf3ff593501d4605fb",
+        "upper_head": "0ff8657fabd03705eff518c26ef0af82dca8a90f55349a2db1000460ee95077c",
+        "eye_bucket": "c5835386366df735363d343947e485cfc31183277dd2e68159d0a14428244c86",
+        "c046": "c375e7ede568616032aa014a396e67f5913c10ef461c3669d30eaeb590f8cfd6",
+        "c048": "c195adf5d26e52a68a86b78e410bb9fd6e8dab87d4a2cad4ce95bc5f47d46e4d",
+        "outer_head_flange": "31dc2ad98748327dd677c8208d9e58235c03e34ea85746a065c627282bd1061f",
+        "outer_eye_flange": "23d16d76e2bc9a22f6e1349aec12832a32c0209fb74e5c10336bc039525b003f",
+        "second_head_flange": "77e69e1f817cae8194202e7e7e1fe7640cc0140f0b5a5fccee7e587a0927913e",
+        "second_eye_flange": "f69e714d5f31950b65cd3cd3efc9ac34dcb4cbfcc879ce9e44435e367f9c5644"
+      },
+      "left": {
+        "lower_face": "bd7a2d98a1d10bb81584940ce98f25e5cc0bcd476479d0bc730ccc5e3a7c7aba",
+        "c046": "42f648b074131e6528586163bff752931efea206cbf4454eb22e56ab926ff97e",
+        "c048": "fc9e1abfabc4419eb36bc21a8790031820dfa558f2f6337e4a9058f7682885cb",
+        "outer_head_flange": "7b9b12dbc0a30de479a704675988151dad17dedb448fc8d0cc10ed3320b375a2",
+        "outer_eye_flange": "23adcc238c264c01038b1973065affbc75e9769f715bfb0a14aeb9b6690b6dfe",
+        "second_head_flange": "fcd759252de5f0c8d9ce6a895e09889819877ed83d61137fbb3deca996e8c6fe",
+        "second_eye_flange": "be1a1a1fcd435f49a7fe19bfbc1a818b9d724d6dc2a3035a66ac1215ab5fba01",
+        "eye_bucket": "bc13b5c5217a0026607b566d87aeff27ea80fe3a3be75d05f027ed8157bc4a7e",
+        "upper_head": "dfa41401b4d7d1b236af3491b2e1f24614f6f0d3be1ff9729a7a24ab1b0b8cf8"
+      }
+    }
+  }
+}

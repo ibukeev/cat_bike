@@ -537,13 +537,14 @@ remain held.
 
 The C001+C003 copied complete-left-owner integration was visually approved on
 2026-08-10 with `LGTM - they look similar`; HS-08 is closed. The current active
-review is the approved HS-11 V14 right lower-face owner integration:
-`output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/CAT_HEAD_RIGHT_LOWER_FACE_OWNER_INTEGRATION_REVIEW_V14.FCStd`.
-V13 component 001 was visually approved on 2026-08-14 and is the only geometry
-substituted into the copied V11 owner. The other 59 lower-face components and
-all V11 eye/flange/C046/C048 context remain exact. V14 received right-side
-visual approval on 2026-08-14. Exact left mirroring, bilateral validation,
-export, and print release have not occurred.
+review is HS-11 V15 bilateral exact-mirror validation:
+`output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/CAT_HEAD_LOWER_FACE_BILATERAL_EXACT_MIRROR_REVIEW_V15.FCStd`.
+V15 freezes the user-approved V14 right side, mirrors only the seven
+lower-face-owned roles exactly across `X = 0`, and reuses the approved HS-08
+left upper head and HS-10 V9 left eye. Blender bilateral validation passes;
+both flange gaps remain `0.3000 mm`, C046/C048 clearances remain
+`4.6063/4.0317 mm`, and indexed mirror error is `0.0 mm`. Visual approval is
+still required before HS-11 closes. Export and print release have not occurred.
 
 The requested reinforcement additions were reviewed as “much better” on
 2026-08-05. That acceptance applies only to the reinforcement direction; it is
