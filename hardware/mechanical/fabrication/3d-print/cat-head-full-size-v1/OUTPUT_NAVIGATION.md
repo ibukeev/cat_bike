@@ -537,14 +537,13 @@ remain held.
 
 The C001+C003 copied complete-left-owner integration was visually approved on
 2026-08-10 with `LGTM - they look similar`; HS-08 is closed. The current active
-review is the F-22 copied-owner flush-cut V2:
-`output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-flange-flush-owner-cut-review-v2/CAT_HEAD_RIGHT_PRIMARY_EAR_LEGACY_FLANGE_FLUSH_OWNER_CUT_REVIEW_V2.FCStd`.
-V1 is rejected because its deliberate `0.20 mm` root skin remained visible.
-V2 removes that additional `33.38 mm3` and `656.3880 mm3` total. The result
-is one valid closed solid with unchanged exterior bounds and unchanged
-`511.0390 mm3` replacement-pair engagement. The source owner and replacement
-pair remain frozen. Integration, left mirror, export, and print release have
-not occurred.
+review is the approved HS-11 V14 right lower-face owner integration:
+`output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/CAT_HEAD_RIGHT_LOWER_FACE_OWNER_INTEGRATION_REVIEW_V14.FCStd`.
+V13 component 001 was visually approved on 2026-08-14 and is the only geometry
+substituted into the copied V11 owner. The other 59 lower-face components and
+all V11 eye/flange/C046/C048 context remain exact. V14 received right-side
+visual approval on 2026-08-14. Exact left mirroring, bilateral validation,
+export, and print release have not occurred.
 
 The requested reinforcement additions were reviewed as “much better” on
 2026-08-05. That acceptance applies only to the reinforcement direction; it is

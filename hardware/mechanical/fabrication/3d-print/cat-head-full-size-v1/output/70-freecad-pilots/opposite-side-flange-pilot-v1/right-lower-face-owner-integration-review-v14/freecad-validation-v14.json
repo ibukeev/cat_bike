@@ -1,0 +1,49 @@
+{
+  "status": "PASS_FREECAD_RIGHT_OWNER_INTEGRATION_REVIEW",
+  "review_scope": "V14 right-side review assembly; no production-owner Boolean and no print release",
+  "fcstd": "CAT_HEAD_RIGHT_LOWER_FACE_OWNER_INTEGRATION_REVIEW_V14.FCStd",
+  "fcstd_zip_valid": true,
+  "fcstd_size_bytes": 641130,
+  "review_owner_mesh": {
+    "name": "PROPOSED__RIGHT_LOWER_FACE__V13_COMPONENT_001_INTEGRATED_V14",
+    "points": 1465,
+    "facets": 2301,
+    "bounding_box_mm": [128.29, 165.89, 269.34],
+    "purpose": "visual placement of all 60 loose solids in the common OBJ review frame",
+    "production_solid": false,
+    "raw_mesh_validator": "not watertight and reports self-intersections after OBJ vertex merging; retained as review-only evidence, not converted or released"
+  },
+  "approved_changed_component_occt": {
+    "source": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13_ref",
+    "visible_in_review": false,
+    "valid": true,
+    "closed": true,
+    "self_intersections": 0,
+    "solids": 1,
+    "shells": 1,
+    "faces": 1027,
+    "edges": 1747,
+    "vertices": 706,
+    "volume_mm3": 78628.23,
+    "note": "Inserted from the already validated V13 FCStd and hidden because it uses the source XYZ frame while the full review mesh/context use the shared OBJ display frame."
+  },
+  "frozen_context_imported": [
+    "right upper head",
+    "right eye bucket",
+    "C046",
+    "C048",
+    "outer head flange",
+    "outer eye flange",
+    "second head flange",
+    "second eye flange"
+  ],
+  "rejected_operation": {
+    "operation": "mesh-to-solid conversion of the joined 60-loose-solid review OBJ",
+    "reason": "OBJ vertex merging produced an invalid 131-shell result; it was deleted and is not present in the saved review"
+  },
+  "holds": [
+    "No production union of the 60 lower-face solids.",
+    "No left mirror.",
+    "No STL, G-code, slicing, ASA recommendation, or print release."
+  ]
+}

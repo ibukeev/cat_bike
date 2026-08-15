@@ -1,0 +1,1575 @@
+{
+  "status": "PASS_BLENDER_RIGHT_OWNER_INTEGRATION_REVIEW",
+  "scope": "right side only; approved V13 component 001 substituted into frozen V11 lower-face owner",
+  "source_v11_lower_face_fingerprint": "b216b1d6fc2614c6415785870681c5ab58e2ef6824c292b2bb518076aa57d2e0",
+  "approved_component_001": {
+    "source": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/right_lower_face_component_001_topology_repaired_v13.obj",
+    "sha256": "f0424c49c7ee4166fc306066be24c07787e885dd9d56e598cc2e94f86131730d",
+    "topology": {
+      "vertices": 713,
+      "edges": 2229,
+      "faces": 1486,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    "surface_deviation_mm": 0.006547868251800537,
+    "bbox_deviation_mm": 0.0,
+    "visual_approval": "user approved V13 on 2026-08-14"
+  },
+  "unchanged_components_002_through_060": [
+    {
+      "name": "V11_LOWER_COMPONENT_002",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_002.obj",
+      "source_obj_sha256": "316cb5c6ddfe15b450a3feb725158ce6765483dd5fd5282f14cf979d950d5106",
+      "fingerprint": "324fdb95d5880edde438e2795b2922b56e08ab2c753172eb2efdcec0db77decf",
+      "topology": {
+        "vertices": 102,
+        "edges": 176,
+        "faces": 72,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 3381.105
+      },
+      "bbox_min_mm": [
+        -0.3267,
+        0.0,
+        47.8035
+      ],
+      "bbox_max_mm": [
+        30.7785,
+        16.08259,
+        92.69256
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_003",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_003.obj",
+      "source_obj_sha256": "9bedc80bf1b2d2a91375740e7dbb1b840bddff6dea596c174559176075e7c9f7",
+      "fingerprint": "907342538a1fff952bd362b3bb2af8a47f3c4c39801b6be76c883c35cddf0566",
+      "topology": {
+        "vertices": 77,
+        "edges": 111,
+        "faces": 34,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 153.4826
+      },
+      "bbox_min_mm": [
+        4.93377,
+        4.35938,
+        64.03807
+      ],
+      "bbox_max_mm": [
+        15.49876,
+        13.80322,
+        73.17393
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_004",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_004.obj",
+      "source_obj_sha256": "ef021a0ba2f6a65b0b529a3c45aee7adfd30b91dcc0825a10809562f1223f8a8",
+      "fingerprint": "53fbdfa11c31336075dc634c5edeeca4ae4b7d87f4dd1c7eea93464ea91f5d52",
+      "topology": {
+        "vertices": 21,
+        "edges": 34,
+        "faces": 15,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 57.0315
+      },
+      "bbox_min_mm": [
+        41.04876,
+        19.38632,
+        77.49176
+      ],
+      "bbox_max_mm": [
+        51.05032,
+        24.78714,
+        83.48734
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_005",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_005.obj",
+      "source_obj_sha256": "5f81e15432d82426f0ddb08aeb25cfa60088b9727c857a46f3650ee1945fac66",
+      "fingerprint": "cdfd1ee0daca038dd168af97ee557f735ffe0e7cef1f47b0bb773151fd9c76bb",
+      "topology": {
+        "vertices": 13,
+        "edges": 19,
+        "faces": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 19.7741
+      },
+      "bbox_min_mm": [
+        41.36188,
+        20.01632,
+        78.64707
+      ],
+      "bbox_max_mm": [
+        51.02251,
+        24.80126,
+        83.58837
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_006",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_006.obj",
+      "source_obj_sha256": "70e2fe19915f65bca11e3955b2cf68089bfd9c66a93e97954a900cd37499775f",
+      "fingerprint": "1dde5203667dfd754ff2642b50f38b471618ab1ba87ad42b852cb3174251aeca",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 24.1692
+      },
+      "bbox_min_mm": [
+        42.723,
+        17.35357,
+        78.56773
+      ],
+      "bbox_max_mm": [
+        52.40304,
+        22.86942,
+        83.62232
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_007",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_007.obj",
+      "source_obj_sha256": "6f7401a55c486e7636207c8b4e9cfa47928b56829bf2c46c5e1884d0617e42b9",
+      "fingerprint": "12bece12cf2cea199cee06583bc5e293c40f98d16a2f5fc83f61919419f5d848",
+      "topology": {
+        "vertices": 65,
+        "edges": 97,
+        "faces": 32,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 215.8285
+      },
+      "bbox_min_mm": [
+        59.88083,
+        58.7314,
+        117.14426
+      ],
+      "bbox_max_mm": [
+        74.04919,
+        70.71507,
+        122.4879
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_008",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_008.obj",
+      "source_obj_sha256": "f07d97e10344c113d0a05fc96529d961c3bb3cee48991852c4a6588c8deb5b9d",
+      "fingerprint": "d8889e180729b436d22e7470e729a6664c60efe1ccd752009d36e922d73dee8a",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 97.1998
+      },
+      "bbox_min_mm": [
+        101.07532,
+        175.61551,
+        79.55789
+      ],
+      "bbox_max_mm": [
+        109.58791,
+        183.98038,
+        89.48343
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_009",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_009.obj",
+      "source_obj_sha256": "12628d8596979747f6eaf568c35daef1a5494f659948283cd46d9ee876888698",
+      "fingerprint": "e756f9b10cfd03c9e14d7d0dff6dee1006e344113bdf8f5d4b08298c3437cc25",
+      "topology": {
+        "vertices": 13,
+        "edges": 18,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 26.3998
+      },
+      "bbox_min_mm": [
+        101.12776,
+        175.83678,
+        81.11508
+      ],
+      "bbox_max_mm": [
+        107.141,
+        183.82378,
+        89.48343
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_010",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_010.obj",
+      "source_obj_sha256": "a1c75b3fb696092fcd2dee20fa78348b1e6e549151afae610095d1bcb2432d94",
+      "fingerprint": "bbcc1a1c89fa36ece274adce241a98a6288cea3d7243b9ee7a02622a5c443732",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 40.8001
+      },
+      "bbox_min_mm": [
+        101.12774,
+        174.89711,
+        81.11508
+      ],
+      "bbox_max_mm": [
+        107.45557,
+        183.82378,
+        90.16028
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_011",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_011.obj",
+      "source_obj_sha256": "d1314afff66df0a1563b9c0ea6de29d5beb2dc117feb08cb0037ee6b0773377c",
+      "fingerprint": "d5db47e47d6947fa80ceabecb1795f66676b50b27ee289366865a5b0008eeb6e",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 284.2874
+      },
+      "bbox_min_mm": [
+        16.88462,
+        0.12941,
+        80.04478
+      ],
+      "bbox_max_mm": [
+        30.31725,
+        14.42607,
+        94.26766
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_012",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_012.obj",
+      "source_obj_sha256": "69f242427e867b627eaf7e056d680bf07ec10a8bfbb712fdd9b21050e5090374",
+      "fingerprint": "e22883343ae1b4c944f5948686f1598364f3c0f4d001f8b85d080def4b10119d",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 980.7295
+      },
+      "bbox_min_mm": [
+        25.51579,
+        9.45934,
+        80.24689
+      ],
+      "bbox_max_mm": [
+        33.82111,
+        52.75176,
+        127.49937
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_013",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_013.obj",
+      "source_obj_sha256": "2500266b992706bc41fdde6b24f3e9ecf88ee19a09b0ce8a6452d6e6a6dc6ba8",
+      "fingerprint": "15c40b81274de32221b4e6f79a4aa44d61f5a0b7e8dec5f0a519dd3881d9f0b3",
+      "topology": {
+        "vertices": 10,
+        "edges": 19,
+        "faces": 11,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 2924.2287
+      },
+      "bbox_min_mm": [
+        18.34638,
+        0.5505,
+        81.68343
+      ],
+      "bbox_max_mm": [
+        43.9605,
+        64.52571,
+        165.8895
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_014",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_014.obj",
+      "source_obj_sha256": "23cc9ad8b8cdd45b9dfa910e4992edc85bb4094cb8d1cd1fc9995ed116295bc8",
+      "fingerprint": "ca9ec706d53db7cbdbdb03443651985d345af7c78b1359304a6c618d5bb0e792",
+      "topology": {
+        "vertices": 12,
+        "edges": 26,
+        "faces": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1005.7056
+      },
+      "bbox_min_mm": [
+        71.34093,
+        46.69265,
+        78.53187
+      ],
+      "bbox_max_mm": [
+        86.24638,
+        63.54125,
+        94.11572
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_015",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_015.obj",
+      "source_obj_sha256": "268e1f184a1ee9d68ca6b4405f25bd843e89e2b0c81e3b5e991872fa177e2a85",
+      "fingerprint": "a3809890a85b121b14bbe2de2c7b81534c4a4c7d8853a5e85839de6fed2174d1",
+      "topology": {
+        "vertices": 12,
+        "edges": 26,
+        "faces": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 560.6931
+      },
+      "bbox_min_mm": [
+        79.1268,
+        178.58829,
+        47.87517
+      ],
+      "bbox_max_mm": [
+        92.68268,
+        194.37158,
+        59.82267
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_016",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_016.obj",
+      "source_obj_sha256": "1453d46853d69a1115f1324b51130f3d22d0c9f9040b16c23889499064f7e310",
+      "fingerprint": "4f2598714b3ebf1794ef65ce5a637a8d6d5a327b5f95a0e8612a18a260f3710e",
+      "topology": {
+        "vertices": 65,
+        "edges": 99,
+        "faces": 36,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 509.9399
+      },
+      "bbox_min_mm": [
+        56.92775,
+        73.7558,
+        36.75946
+      ],
+      "bbox_max_mm": [
+        68.46962,
+        94.3386,
+        51.86232
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_017",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_017.obj",
+      "source_obj_sha256": "b065ec8e72f56a22825fc2a64bb33e089322b5dbac9498a4228059ad6f6fd53a",
+      "fingerprint": "ace06715492a74929c433581f9da8c9b64632b9fb4d35ba1a0d6a73d63f22fea",
+      "topology": {
+        "vertices": 9,
+        "edges": 19,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 257.514
+      },
+      "bbox_min_mm": [
+        28.69749,
+        222.28131,
+        62.62642
+      ],
+      "bbox_max_mm": [
+        36.65868,
+        237.55313,
+        77.08812
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_018",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_018.obj",
+      "source_obj_sha256": "637f518e1d4257ab41787b20e377d85122ff8ee036ceaed494795306d3e38ccd",
+      "fingerprint": "4e6f65bed3daeadf96d4dda86eb8fa3502790b8589c998361cb843866a9510e6",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 6334.0305
+      },
+      "bbox_min_mm": [
+        0.8,
+        39.98608,
+        1.71975
+      ],
+      "bbox_max_mm": [
+        6.8,
+        185.65219,
+        54.71741
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_019",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_019.obj",
+      "source_obj_sha256": "b9790801366f34d0c2ca0085fa7b8de71eed66454b799c3a24d1a899bece6b5f",
+      "fingerprint": "dbcda227a7c58506d68e8580320a4a671a99f03416307b5a42a80cc9f859cfa3",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 2997.5666
+      },
+      "bbox_min_mm": [
+        0.8,
+        227.40332,
+        67.62739
+      ],
+      "bbox_max_mm": [
+        6.8,
+        267.28232,
+        133.84189
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_020",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_020.obj",
+      "source_obj_sha256": "51f087b6f4ae034fb066204e3476dbb6935d5cab5668c1f063b6d4073fdc37af",
+      "fingerprint": "c96b8c57b90c49060fa01996b2d15756731e3fcb5577813131b460c7922c1f76",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1809.0131
+      },
+      "bbox_min_mm": [
+        0.8,
+        187.83315,
+        49.69547
+      ],
+      "bbox_max_mm": [
+        6.8,
+        230.5818,
+        71.54137
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_021",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_021.obj",
+      "source_obj_sha256": "4dba1099cf1e2bdb204a372ca11cb231669429171356621486523dbcb0e9936e",
+      "fingerprint": "d7084feaffff7268830b0e3361b3cc8fef176e1cf8d14e02bb4c4e8f479c8924",
+      "topology": {
+        "vertices": 39,
+        "edges": 58,
+        "faces": 21,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1372.9593
+      },
+      "bbox_min_mm": [
+        0.81057,
+        1.03103,
+        50.20811
+      ],
+      "bbox_max_mm": [
+        6.97836,
+        8.51945,
+        89.96063
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_022",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_022.obj",
+      "source_obj_sha256": "c9e89164fe2153aada717001b9d3c1903ae42225762616bec5fd3604612625f5",
+      "fingerprint": "0537546f3d936cc75f12f8e2826084dbf48f1c3f06134b375ccbea85fdd91f2b",
+      "topology": {
+        "vertices": 24,
+        "edges": 35,
+        "faces": 13,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 2637.9612
+      },
+      "bbox_min_mm": [
+        82.57966,
+        196.95651,
+        106.06226
+      ],
+      "bbox_max_mm": [
+        123.57262,
+        249.26071,
+        138.28015
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_023",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_023.obj",
+      "source_obj_sha256": "30fcec2386f7a0eec3199ef3e83bcae473177cce9cab4f39a6456b892a69b9c2",
+      "fingerprint": "e1103cc0f2fde62d9fe4af56a9288cc053c0d939535cb569509188e91ce579f3",
+      "topology": {
+        "vertices": 16,
+        "edges": 24,
+        "faces": 10,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1373.4026
+      },
+      "bbox_min_mm": [
+        96.74555,
+        74.54823,
+        111.99948
+      ],
+      "bbox_max_mm": [
+        119.57252,
+        110.06374,
+        120.08855
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_024",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_024.obj",
+      "source_obj_sha256": "adcf021498bc1bba2257bdb0a2b9f3236274206cd33f6cedc2a5dcb736ff5fc1",
+      "fingerprint": "bdeb60e3e9d73cbe390a07060125236a165256a344bc2e3209173b6fda84b11a",
+      "topology": {
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 0.8753
+      },
+      "bbox_min_mm": [
+        117.20145,
+        102.47162,
+        111.95808
+      ],
+      "bbox_max_mm": [
+        120.02966,
+        105.67982,
+        115.19504
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_025",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_025.obj",
+      "source_obj_sha256": "3be4f51ce93a118d68ba0074faa39a1a402d0739c0b6409fcdbde9138f7e5999",
+      "fingerprint": "ca513c505eca7f533588d8a46a501885379b0429556f2d98ad34da34c8c2b153",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1257.4398
+      },
+      "bbox_min_mm": [
+        56.96665,
+        244.00192,
+        127.5657
+      ],
+      "bbox_max_mm": [
+        87.21659,
+        266.98315,
+        139.64471
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_026",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_026.obj",
+      "source_obj_sha256": "cdd70970078c169bd3a643951dde8623ab19599d012ff718b8cb23a8b9e7dd64",
+      "fingerprint": "8f0d0fba408c3d01c519b67a40fd9971b2486509b371962dd9eac25abc8fce67",
+      "topology": {
+        "vertices": 7,
+        "edges": 12,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 125.9196
+      },
+      "bbox_min_mm": [
+        33.83561,
+        20.86957,
+        15.61797
+      ],
+      "bbox_max_mm": [
+        43.84298,
+        27.12741,
+        29.33956
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_027",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_027.obj",
+      "source_obj_sha256": "ccbb1af6b361d36e17be86ff808b489e805e708682ccaf294c0677c425c74106",
+      "fingerprint": "4ea8e85723e6e87b92f24b996d2fca61c131bbd932dd63151d3aa56255541282",
+      "topology": {
+        "vertices": 7,
+        "edges": 14,
+        "faces": 9,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 155.0378
+      },
+      "bbox_min_mm": [
+        59.34626,
+        27.99986,
+        67.81817
+      ],
+      "bbox_max_mm": [
+        67.54507,
+        35.23935,
+        79.32632
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_028",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_028.obj",
+      "source_obj_sha256": "1e4eaedf23d0ebc6dc87fbdb6a3f315b2b2874dfd37af22d2e17acdaf7136401",
+      "fingerprint": "3d3832d38b3556a3d3d6edd2b89f1cbb950fef757bfd2cdf8dc42879ee6fc1fc",
+      "topology": {
+        "vertices": 7,
+        "edges": 14,
+        "faces": 9,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 340.1028
+      },
+      "bbox_min_mm": [
+        53.43777,
+        108.75787,
+        27.09148
+      ],
+      "bbox_max_mm": [
+        63.58666,
+        126.1088,
+        34.52711
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_029",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_029.obj",
+      "source_obj_sha256": "9aaadb67d86140e05d0a6b3fef1632cb0eb166e107f9464907ad0dbea1af4747",
+      "fingerprint": "296c4dc170ebe989d012f5a547c97ac188f310248b6bc3d04fe2a624066750f6",
+      "topology": {
+        "vertices": 25,
+        "edges": 40,
+        "faces": 17,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 304.1475
+      },
+      "bbox_min_mm": [
+        80.99918,
+        147.65738,
+        52.08002
+      ],
+      "bbox_max_mm": [
+        90.61899,
+        161.03584,
+        63.91313
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_030",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_030.obj",
+      "source_obj_sha256": "c353ed91ba6eb24c3e4d85e9c3a058c1e060f0af4bfcbeb075ae51471ad81b71",
+      "fingerprint": "0a8e64beff5c6f17f7bd852521ca281cf61c1eeba38352f73073067e412dd5ea",
+      "topology": {
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 281.3777
+      },
+      "bbox_min_mm": [
+        28.42109,
+        19.83708,
+        3.3834
+      ],
+      "bbox_max_mm": [
+        38.96726,
+        41.21504,
+        24.08771
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_031",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_031.obj",
+      "source_obj_sha256": "a6eff5c34bca6f07bb8b1ce8d65abad4dd942712e7e84f7275b7248fdfd24a6b",
+      "fingerprint": "e929af19fbfea4cffba10c1ef97d1058fc228a7993b1af3546e2598412a573c4",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 89.885
+      },
+      "bbox_min_mm": [
+        30.47248,
+        21.46486,
+        4.41434
+      ],
+      "bbox_max_mm": [
+        39.82291,
+        38.2674,
+        20.76253
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_032",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_032.obj",
+      "source_obj_sha256": "8665e5eaf4dc9cd28dba18e35514cb5f0513048a2974f2e2b529c5f4c3f3db20",
+      "fingerprint": "5226036eec526d9d0919b39f4292acc85873b19132bd6ab22d8ae56b930b67a5",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 271.1142
+      },
+      "bbox_min_mm": [
+        37.25777,
+        22.34774,
+        20.00559
+      ],
+      "bbox_max_mm": [
+        62.09483,
+        79.66837,
+        38.54769
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_033",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_033.obj",
+      "source_obj_sha256": "fa7c2e871ead4786ece135191f03ba00f1bb4104b93e9b6ecd0b672172d9346b",
+      "fingerprint": "ad4c3c3f29f6ae30039d295d103a89b59765d7d3b65fce15cbcb63040c39b917",
+      "topology": {
+        "vertices": 14,
+        "edges": 21,
+        "faces": 9,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 737.8139
+      },
+      "bbox_min_mm": [
+        36.97323,
+        19.61239,
+        22.87927
+      ],
+      "bbox_max_mm": [
+        63.7975,
+        79.7319,
+        45.25896
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_034",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_034.obj",
+      "source_obj_sha256": "413452461757e06abf441a18b82db08958210a531deb22a88966ad54360f940a",
+      "fingerprint": "43c0df3b579d1f83c8357634b20f0f25e5017ff502779ac9bd9d92de93166b04",
+      "topology": {
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 238.755
+      },
+      "bbox_min_mm": [
+        31.82108,
+        25.16235,
+        74.10046
+      ],
+      "bbox_max_mm": [
+        60.12056,
+        49.31504,
+        121.2633
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_035",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_035.obj",
+      "source_obj_sha256": "c77b9cf63b5fa0145d11455c1db47b96986746bc1445e12347c1450d1170f965",
+      "fingerprint": "4933ad1b8eb77fd695c7478a371e0955a71f6bc173f2974beef8392b0c1ace4f",
+      "topology": {
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 685.3104
+      },
+      "bbox_min_mm": [
+        34.66878,
+        27.05046,
+        71.85879
+      ],
+      "bbox_max_mm": [
+        64.75037,
+        55.72034,
+        122.8437
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_036",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_036.obj",
+      "source_obj_sha256": "51e7e290b178565ce3f9fb2a731808c984561d9767d0a62672fb304899c43af3",
+      "fingerprint": "114290359f5c4c543ec6d6fae75d9b5aac894c094d410c7b01ff32a0cbc82bd0",
+      "topology": {
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 337.9889
+      },
+      "bbox_min_mm": [
+        59.20061,
+        27.34858,
+        73.03201
+      ],
+      "bbox_max_mm": [
+        79.68539,
+        54.58342,
+        86.30557
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_037",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_037.obj",
+      "source_obj_sha256": "420eed859d1574482170785c2f0f907b99051c5f6dd74b3ee1f4b4932a75be3e",
+      "fingerprint": "00e759974d08d1646c2a4c8276ee8d9ffe12164216fce3a357ccf7126e3412cf",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 111.0598
+      },
+      "bbox_min_mm": [
+        62.18875,
+        28.80667,
+        72.52851
+      ],
+      "bbox_max_mm": [
+        79.00607,
+        51.2865,
+        83.24533
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_038",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_038.obj",
+      "source_obj_sha256": "7cbdb909826da6c561175c4a3035a98dee92d2f2a266d822d6239c8b994ebb70",
+      "fingerprint": "5e6947973b418e281ace152c3bc13eadc66e6bd96d6d37856d72f911ef993936",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 110.7575
+      },
+      "bbox_min_mm": [
+        54.9724,
+        87.51718,
+        24.42543
+      ],
+      "bbox_max_mm": [
+        63.1727,
+        110.78173,
+        37.77632
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_039",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_039.obj",
+      "source_obj_sha256": "666af309568ae29604cc621b12da9fb9cf2caaa287eb20b9f6d8996a33a8ce5c",
+      "fingerprint": "84ab97db4dc3335c7d3be4926c894be1df6b46169fcb59484773a161218ee136",
+      "topology": {
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 297.7543
+      },
+      "bbox_min_mm": [
+        57.35824,
+        88.953,
+        26.23475
+      ],
+      "bbox_max_mm": [
+        65.28002,
+        115.84257,
+        45.05183
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_040",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_040.obj",
+      "source_obj_sha256": "741f91fd4f9ab4adb33cb7afe7f93e35c551b98c7fda49da29da3d4e4ed59cef",
+      "fingerprint": "a15a9345fedc55b741f118816ed0f451f26faf74a4e1ccd36f1f9debc52a8d5d",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 603.4951
+      },
+      "bbox_min_mm": [
+        55.1231,
+        119.29072,
+        24.15025
+      ],
+      "bbox_max_mm": [
+        88.78216,
+        154.47546,
+        58.56568
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_041",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_041.obj",
+      "source_obj_sha256": "997c279603c8203b14bc1380c530d6719beb73bedfee6188be278e9b1a9b2994",
+      "fingerprint": "23134977389bd60c30c9492f8e66516668e8a0193a6980b1f6e8c1b17fc20f37",
+      "topology": {
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 187.495
+      },
+      "bbox_min_mm": [
+        59.7394,
+        117.87825,
+        27.75404
+      ],
+      "bbox_max_mm": [
+        89.30238,
+        148.41417,
+        56.96508
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_042",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_042.obj",
+      "source_obj_sha256": "aa41701672cea89141dd13439033a2b53d81582209ae5f7957a39e50551dd02d",
+      "fingerprint": "bf7116fa27097838e8420ef31f56277fd4395804267a62f60f4364a700987d86",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 198.7411
+      },
+      "bbox_min_mm": [
+        61.35678,
+        54.30371,
+        43.78582
+      ],
+      "bbox_max_mm": [
+        79.9979,
+        79.68082,
+        81.76585
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_043",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_043.obj",
+      "source_obj_sha256": "577bc7571d0cc82f314976c690753434bcff233ddf2ae8fa349852b54a23aa58",
+      "fingerprint": "433fb956714cefde0f0047fe5001b3e370f72c9ac7b828160393b2ddf0caf97b",
+      "topology": {
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 523.3489
+      },
+      "bbox_min_mm": [
+        62.74939,
+        56.02158,
+        45.45097
+      ],
+      "bbox_max_mm": [
+        82.76638,
+        86.79461,
+        86.79626
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_044",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_044.obj",
+      "source_obj_sha256": "5e7dcb0cda469764c006e659892d15140d14bdda27eb8d809d77c43a9d3b8dd3",
+      "fingerprint": "08a36dc0a48f9bd9328a57453e50c08e32c848e79a35e730b808f7807cb98a9e",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 230.5933
+      },
+      "bbox_min_mm": [
+        34.36934,
+        48.42517,
+        84.64317
+      ],
+      "bbox_max_mm": [
+        77.50246,
+        53.55664,
+        121.93791
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_045",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_045.obj",
+      "source_obj_sha256": "cc457979ae7b9c95bcc8e3b4464f3ba6eed4a5e8f85e5e3ee1797e27fe5145ad",
+      "fingerprint": "179caf2899234d386c5c9d1b504a62311cca840ae1b84268fa6807dd510a321c",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 789.5228
+      },
+      "bbox_min_mm": [
+        30.25583,
+        185.02586,
+        48.46643
+      ],
+      "bbox_max_mm": [
+        85.52965,
+        230.19342,
+        69.17072
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_046",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_046.obj",
+      "source_obj_sha256": "3d02b0aa14bc128939ef594ab261978505b363028ed5829121e0ecf3f2141894",
+      "fingerprint": "cb192863405cd803d5674c49a2544041b943d8c2b5be86f392feb92e50171d77",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1007.2103
+      },
+      "bbox_min_mm": [
+        26.57898,
+        232.65079,
+        68.68715
+      ],
+      "bbox_max_mm": [
+        86.69388,
+        253.56444,
+        138.39835
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_047",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_047.obj",
+      "source_obj_sha256": "d4932e390d0467aa17d9e07ab07eb31b0e4122d9b3a1ebbb14e8467df07cbb9e",
+      "fingerprint": "98bfc4e3055685e663d459aa9cbbe9020dc8d7b6e91ebca5b05f5d43e9ef5bed",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 858.9981
+      },
+      "bbox_min_mm": [
+        27.27406,
+        229.8158,
+        68.86656
+      ],
+      "bbox_max_mm": [
+        58.07212,
+        267.48175,
+        133.64731
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_048",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_048.obj",
+      "source_obj_sha256": "4f4083e184aa171b85b09733813bca2e971dbd3fe02ccf0f515270c663beef9f",
+      "fingerprint": "e091931259d908c2c5ee3075cea13d229c7cc395ce40922f0b3823b9fe61adac",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 281.8736
+      },
+      "bbox_min_mm": [
+        34.02238,
+        189.23051,
+        50.0444
+      ],
+      "bbox_max_mm": [
+        85.46125,
+        230.32674,
+        68.41804
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_049",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_049.obj",
+      "source_obj_sha256": "4702bac25beb0125d117500e4ae860ebac5a7aa590db8e98bef58b7e7233c22b",
+      "fingerprint": "9727d60b7d562f43f744d84c3d94f466e64a2b061604596dd700c89a222f0e14",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 308.2266
+      },
+      "bbox_min_mm": [
+        32.17267,
+        231.03957,
+        69.98512
+      ],
+      "bbox_max_mm": [
+        59.83556,
+        265.99316,
+        129.96463
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_050",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_050.obj",
+      "source_obj_sha256": "2dac3990efe3b24fbfb8b7d0f5e9c07ee3b93fbd4c5a4a063db96ef98bb9b78f",
+      "fingerprint": "41f6e84d045c38385c93b563f0e97a0050115e276a0acd6f31b42fe9bc46af49",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 364.4448
+      },
+      "bbox_min_mm": [
+        33.65126,
+        229.1286,
+        68.59587
+      ],
+      "bbox_max_mm": [
+        87.85155,
+        249.87572,
+        133.01816
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_051",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_051.obj",
+      "source_obj_sha256": "f8b9ab9fb42ebfdb389826dbe6e347851c29646e162d019b1512bb2907bdd8d5",
+      "fingerprint": "cefc0cbecc23b0c24fea8093902d9c4e287d0f7c9bee77b89a4b6e21736fffaf",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 417.6641
+      },
+      "bbox_min_mm": [
+        78.74467,
+        55.40963,
+        88.01121
+      ],
+      "bbox_max_mm": [
+        101.39245,
+        75.83152,
+        117.79816
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_052",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_052.obj",
+      "source_obj_sha256": "07d8f6adde6873bba474d87b73757702abfaba9b63345c393c668bd459fc0bd1",
+      "fingerprint": "8449194fb6e252a960405ccb11fa12487addd61ad0927ad1aca4c1204529080c",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 140.8245
+      },
+      "bbox_min_mm": [
+        82.07623,
+        56.5258,
+        88.07926
+      ],
+      "bbox_max_mm": [
+        101.41859,
+        73.59869,
+        113.79059
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_053",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_053.obj",
+      "source_obj_sha256": "3f6359e42a3be37e5914a56f937fea19f659b4d3212f9b0dae1f3f0a1784b751",
+      "fingerprint": "46c3faf53627db7871432b8f3a185db65fb4b515bd4418151f5a3ebc6fdc2f1f",
+      "topology": {
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 344.6641
+      },
+      "bbox_min_mm": [
+        81.24016,
+        155.11687,
+        46.38081
+      ],
+      "bbox_max_mm": [
+        91.05964,
+        184.50726,
+        58.80824
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_054",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_054.obj",
+      "source_obj_sha256": "dd0469934304eede7182995f7e8a32e4ad363812e1b1edff66c29fc67b9b9bd9",
+      "fingerprint": "db5ef2fe94471f8746ca0aebd1a553bb4b3b8bf822643829681d235993fa30df",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 113.1752
+      },
+      "bbox_min_mm": [
+        86.79967,
+        158.47943,
+        50.4747
+      ],
+      "bbox_max_mm": [
+        93.04654,
+        183.8345,
+        62.01849
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_055",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_055.obj",
+      "source_obj_sha256": "d4cb94986eaaac7055a079261094b03a72fc6deaa442b83692946bcde52a8925",
+      "fingerprint": "d8ca467e5af162d97dd50ec6088ab3d23dea492f9ed3a8a6a40ede7a75950b55",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 1167.2271
+      },
+      "bbox_min_mm": [
+        82.10422,
+        187.16498,
+        50.61531
+      ],
+      "bbox_max_mm": [
+        89.0971,
+        250.26353,
+        135.36877
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_056",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_056.obj",
+      "source_obj_sha256": "c809cbc07738f8b035d6c70915b910351c3b9e7a9b40e0d05f785094be4773e0",
+      "fingerprint": "8e170651c15c9d8fa7046039913c27926551df86da2f919b137f8387fe58849b",
+      "topology": {
+        "vertices": 10,
+        "edges": 15,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 735.2787
+      },
+      "bbox_min_mm": [
+        84.2304,
+        187.80869,
+        51.8417
+      ],
+      "bbox_max_mm": [
+        121.41786,
+        202.6106,
+        111.00441
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_057",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_057.obj",
+      "source_obj_sha256": "5073ccd53cb208ac9813b2900d2198bb0c0a2cf4cf595ed680c68e7f744306b7",
+      "fingerprint": "76b6dfd6507d82bfe10d6ccfae7b2a2ea5cb9e084034355a9921737080b99b1e",
+      "topology": {
+        "vertices": 12,
+        "edges": 18,
+        "faces": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 246.2674
+      },
+      "bbox_min_mm": [
+        87.9814,
+        186.66443,
+        53.25879
+      ],
+      "bbox_max_mm": [
+        123.55511,
+        198.94354,
+        105.70377
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_058",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_058.obj",
+      "source_obj_sha256": "f3259284bfa8ab8065bf15ec9cf571522db5131cd12dd14f60879bd20846dfae",
+      "fingerprint": "b6c0cc6109e854b25e6d32ba888c2d8183d20b9f9c15658c17edb429bc87bef3",
+      "topology": {
+        "vertices": 4,
+        "edges": 6,
+        "faces": 4,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 0.0005
+      },
+      "bbox_min_mm": [
+        118.14533,
+        196.76411,
+        105.17883
+      ],
+      "bbox_max_mm": [
+        119.84143,
+        197.31812,
+        107.88596
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_059",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_059.obj",
+      "source_obj_sha256": "8f25e735551ad3bbc63466eac71a45042256f0a4f53af199f60fa2608bf8c58b",
+      "fingerprint": "9827039f556ebfb0f1304989df979c005244fc1dec95c7b20df5fbfcdc1f06a7",
+      "topology": {
+        "vertices": 6,
+        "edges": 9,
+        "faces": 5,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 425.1422
+      },
+      "bbox_min_mm": [
+        88.49267,
+        187.37914,
+        53.1809
+      ],
+      "bbox_max_mm": [
+        91.96122,
+        247.7043,
+        134.35779
+      ],
+      "unchanged": true
+    },
+    {
+      "name": "V11_LOWER_COMPONENT_060",
+      "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_060.obj",
+      "source_obj_sha256": "e85c5d9c48098883c2620328477700e9687fb0680b4fe239a6d972f67355f2ba",
+      "fingerprint": "a14e3947d444305d06f0dd834e7e5f06f8485c775872d3b68b53a799a892ac43",
+      "topology": {
+        "vertices": 6,
+        "edges": 11,
+        "faces": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 203.6598
+      },
+      "bbox_min_mm": [
+        78.3536,
+        243.05693,
+        128.19748
+      ],
+      "bbox_max_mm": [
+        89.04856,
+        252.58609,
+        140.32463
+      ],
+      "unchanged": true
+    }
+  ],
+  "integrated_lower_face": {
+    "component_count": 60,
+    "topology": {
+      "vertices": 1553,
+      "edges": 3546,
+      "faces": 2073,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 120185.2452
+    },
+    "fingerprint": "448a4f7fe5bd0ec1cebb702c9ee59e5448a6a08afecd28a16c6b60d7f8127e50",
+    "owner_boolean_performed": false
+  },
+  "frozen_context_fingerprints": {
+    "upper_head": "788e9546c73eb605b2a395c6ebb5e189d76b9f669b1a148d88932df7e5385cea",
+    "eye_bucket": "d022e6a390b798ad50dd52cdd5a7f24bf9ecd83dcd5fcb819f5d5281c2d514b0",
+    "c046": "94a80c14c8b0694d4133c4777387f0c37972ee2ae330e998388a49471fbfc987",
+    "c048": "da0fdbc5c79ec313aab2ceef066272b9ea2c4ec721267a097f070e75455c9e89",
+    "outer_head_flange": "7031c4eb248a0a49d370e8f3c6e777a4a8a1f821907b9ad4c3c5579e12250132",
+    "outer_eye_flange": "b8960db4b8ae67bc426db8411ec92336e6364919d260c8defc6841f13dbbee4d",
+    "second_head_flange": "87b2150d9b67e282994f2ccf6f6b0d7954ed3491608f7de489979b67f476f88e",
+    "second_eye_flange": "7206b381c3be8150a416a789875f225ca9b85862d54f847290cd0239271031ed"
+  },
+  "c046_eye_clearance_mm": 4.6063,
+  "c048_eye_clearance_mm": 4.0317,
+  "flange_pairs": {
+    "outer": {
+      "minimum_clearance_mm": 0.3,
+      "interference_mm3": 0.0,
+      "head_fingerprint": "7031c4eb248a0a49d370e8f3c6e777a4a8a1f821907b9ad4c3c5579e12250132",
+      "eye_fingerprint": "b8960db4b8ae67bc426db8411ec92336e6364919d260c8defc6841f13dbbee4d"
+    },
+    "second": {
+      "minimum_clearance_mm": 0.3,
+      "interference_mm3": 0.0,
+      "head_fingerprint": "87b2150d9b67e282994f2ccf6f6b0d7954ed3491608f7de489979b67f476f88e",
+      "eye_fingerprint": "7206b381c3be8150a416a789875f225ca9b85862d54f847290cd0239271031ed"
+    }
+  },
+  "eye_geometry_changed": false,
+  "flange_geometry_changed": false,
+  "flange_location_changed": false,
+  "c046_c048_changed": false,
+  "upper_head_changed": false,
+  "mirror_performed": false,
+  "no_stl_or_gcode_exported": true,
+  "locked_contract": {
+    "source_component_count": 60,
+    "unchanged_component_start": 2,
+    "unchanged_component_end": 60,
+    "maximum_v13_surface_deviation_mm": 0.01,
+    "maximum_v13_bbox_deviation_mm": 0.001,
+    "required_v13_boundary_edges": 0,
+    "required_v13_nonmanifold_edges": 0,
+    "required_v13_self_intersections": 0,
+    "approved_c046_eye_clearance_mm": 4.6063,
+    "approved_c048_eye_clearance_mm": 4.0317,
+    "maximum_clearance_difference_mm": 0.01,
+    "mating_gap_mm": 0.3,
+    "maximum_pair_gap_error_mm": 0.01,
+    "maximum_interference_mm3": 0.001
+  },
+  "holds": [
+    "Replace only V11 lower-face component 001 with the explicitly approved V13 artifact at its existing coordinates.",
+    "Preserve components 002 through 060 exactly from the frozen V12 inventory.",
+    "Do not move or modify upper head, eye bucket, C046, C048, or any of the four right flange objects.",
+    "Preserve rear-cassette ownership, C006, and CAT-HEAD-SHELL-ALUMINUM-V0.5-M2.",
+    "No left mirror, owner Boolean across separate structural objects, STL, G-code, slicing, ASA recommendation, or print release before explicit visual approval."
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/CAT_HEAD_RIGHT_LOWER_FACE_OWNER_INTEGRATION_REVIEW_V14.blend",
+    "owner_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/right_lower_face_v14_owner_review.obj",
+    "owner_obj_sha256": "acad02569f440b64e855c09c59a5714247ddfbd6a2319a066d55ddcc583547f8",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/review/01-v14-full-right-owner-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/review/02-v14-eye-flange-c046-c048-close-up.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/review/03-v14-lower-face-isolated.png"
+    ]
+  }
+}
