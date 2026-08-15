@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "status": "HOLD_VISUAL_REVIEW",
+  "reason": "The first-layer object/support/brim envelope passes the 10 mm MK4 edge-margin gate, but the 20 degree tilt requires user visual approval before G-code release.",
+  "source_project_sha256": "423584124419c803feff141521f7663c26b722ba686aa20acc7e15402f7343b1",
+  "review_project_sha256": "6d25a11556a28ee9152acde62cd05e2ed7d4236d383b5e2cda4a038ef79d7174",
+  "geometry_preservation": {
+    "mesh_vertices_and_triangles_unchanged": true,
+    "only_3mf_build_transform_changed": true,
+    "parts": 1,
+    "facets": 3418,
+    "manifold": true,
+    "volume_mm3": 77958.335938,
+    "scale": 1.0
+  },
+  "orientation": {
+    "relative_world_x_tilt_deg": -20.0,
+    "relative_yaw_deg": 0.0,
+    "post_center_y_shift_mm": 1.958,
+    "object_bbox_size_mm": [201.086257, 176.858457, 163.115662],
+    "object_margins_mm": {
+      "left": 24.456872,
+      "right": 24.456872,
+      "front": 18.528772,
+      "rear": 14.612772
+    }
+  },
+  "diagnostic_search": [
+    {
+      "tilt_deg": -12.0,
+      "first_layer_bbox_mm": [207.149, 195.359],
+      "front_margin_mm": 5.67187,
+      "rear_margin_mm": 8.96913,
+      "status": "REJECTED_XY_MARGIN"
+    },
+    {
+      "tilt_deg": -16.0,
+      "first_layer_bbox_mm": [205.297, 191.189],
+      "front_margin_mm": 7.4149,
+      "rear_margin_mm": 11.3961,
+      "status": "REJECTED_XY_MARGIN"
+    },
+    {
+      "tilt_deg": -18.0,
+      "first_layer_bbox_mm": [205.308, 190.847],
+      "front_margin_mm": 8.17896,
+      "rear_margin_mm": 10.97404,
+      "status": "REJECTED_XY_MARGIN"
+    }
+  ],
+  "final_slice": {
+    "prusa_slicer_version": "2.7.4",
+    "first_layer_m555": "M555 X20.7661 Y11.538 W205.824 H186.924",
+    "combined_object_brim_support_margins_mm": {
+      "left": 20.7661,
+      "right": 23.4099,
+      "front": 11.538,
+      "rear": 11.538,
+      "required_each_side": 10.0,
+      "pass": true
+    },
+    "estimated_print_time": "14h 36m 5s",
+    "filament_length_mm": 53909.71,
+    "filament_volume_cm3": 129.67,
+    "filament_mass_g": 138.74,
+    "gcode_filename": "CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_TILT_REVIEW_V2.gcode",
+    "gcode_sha256": "e7e3e0f9b3014f33866168bcdc2e3730723770ab3ad0d3b0708e1b1e18331062",
+    "gcode_size_bytes": 20983099,
+    "gcode_committed": false,
+    "gcode_release_approved": false
+  },
+  "release_gates": {
+    "one_connected_manifold_part": "PASS",
+    "scale_1": "PASS",
+    "cad_geometry_unchanged": "PASS",
+    "asa_profile_support_and_brim_preserved": "PASS",
+    "minimum_10mm_combined_xy_margin": "PASS",
+    "under_ear_bed_facing_visual_review": "PENDING",
+    "support_layout_visual_review": "PENDING",
+    "overall": "HOLD_VISUAL_REVIEW"
+  },
+  "next_action": "Open the review 3MF in PrusaSlicer and confirm that the under-ear opening remains the intended bed-facing region and that the support layout is acceptable. Do not print the local G-code until that visual review is approved."
+}

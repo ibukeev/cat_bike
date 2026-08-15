@@ -5,6 +5,18 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current print-orientation review: open
+  `output/50-slicer-projects/right-upper-head-c001-ab-asa-tilt-review-v2/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_TILT_REVIEW_V2.3mf`
+  in PrusaSlicer. This isolated derivative applies `-20 deg` world-X tilt and
+  `+1.958 mm` Y recenter without changing geometry or scale. Its real sliced
+  object/support/`8 mm` brim margins pass at
+  `20.7661/23.4099/11.538/11.538 mm` left/right/front/rear. Status remains
+  **HOLD_VISUAL_REVIEW** until the user confirms the under-ear bed-facing
+  orientation and support layout. The local G-code is not committed or
+  released.
+- V2 validation and resumable checkpoint:
+  `output/50-slicer-projects/right-upper-head-c001-ab-asa-tilt-review-v2/validation-v2.json`
+  and `RIGHT_UPPER_HEAD_C001_AB_ASA_TILT_REVIEW_V2_CHECKPOINT_2026-08-14.md`.
 - Open the ASA diagnostic project for the current right C001 A/B shell:
   `output/50-slicer-projects/right-upper-head-c001-ab-asa-diagnostic-v1/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_DIAGNOSTIC_V1.3mf`.
   It preserves the user's exact saved rotation and geometry, embeds the

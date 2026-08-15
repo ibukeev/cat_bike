@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "VISUAL_REVIEW_PENDING",
+  "source_project": "output/50-slicer-projects/right-upper-head-c001-ab-asa-diagnostic-v1/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_DIAGNOSTIC_V1.3mf",
+  "source_project_sha256": "423584124419c803feff141521f7663c26b722ba686aa20acc7e15402f7343b1",
+  "output_project": "output/50-slicer-projects/right-upper-head-c001-ab-asa-tilt-review-v2/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_TILT_REVIEW_V2.3mf",
+  "output_project_sha256": "6d25a11556a28ee9152acde62cd05e2ed7d4236d383b5e2cda4a038ef79d7174",
+  "frozen": {
+    "cad_geometry": true,
+    "scale": 1.0,
+    "asa_process": true,
+    "aluminum_interface": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  },
+  "orientation_change": {
+    "relative_world_x_tilt_deg": -20.0,
+    "relative_yaw_deg": 0.0,
+    "post_center_y_shift_mm": 1.958,
+    "final_transform_3mf": [
+      0.622046419,
+      -0.502887330333,
+      -0.600135472737,
+      -0.069302815,
+      -0.798829932463,
+      0.597551554171,
+      -0.779907284,
+      -0.330113726935,
+      -0.531760806403,
+      117.533548087,
+      103.110816519,
+      72.4984271569
+    ]
+  },
+  "printer": {
+    "model": "Original Prusa MK4",
+    "bed_mm": [250.0, 210.0, 220.0],
+    "nozzle_mm": 0.4
+  },
+  "process": {
+    "layer_height_mm": 0.2,
+    "filament_profile": "Prusament ASA @MK4",
+    "support_material": true,
+    "support_material_auto": true,
+    "support_material_style": "snug",
+    "support_threshold_deg": 45,
+    "brim_type": "outer_only",
+    "brim_width_mm": 8.0,
+    "brim_separation_mm": 0.1
+  },
+  "release_gates": {
+    "minimum_xy_margin_after_brim_and_support_mm": 10.0,
+    "numeric_xy_margin": "PASS",
+    "visual_orientation_review": "PENDING",
+    "gcode_is_release_approved": false,
+    "overall": "HOLD_VISUAL_REVIEW"
+  }
+}
