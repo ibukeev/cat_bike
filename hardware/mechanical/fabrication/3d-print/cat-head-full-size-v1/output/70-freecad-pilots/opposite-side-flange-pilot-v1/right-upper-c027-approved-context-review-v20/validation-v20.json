@@ -1,0 +1,89 @@
+{
+  "review": "right-upper-c027-approved-context-review-v20",
+  "date": "2026-08-15",
+  "status": "PASS_APPROVED_C027_SUBSTITUTION_CONTEXT_AUDIT_REMAINING_CONTACTS_HOLD",
+  "print_release": false,
+  "production_union": false,
+  "mirror_performed": false,
+  "approved_source": {
+    "review": "right-upper-c027-eye-clearance-review-v19",
+    "object": "PROPOSED__RIGHT_UPPER_C027_TRIMMED_EYE_CLEARANCE_V19_T2",
+    "user_visual_approval_date": "2026-08-15"
+  },
+  "context": {
+    "object": "PROPOSED__RIGHT_UPPER_HEAD_WITH_APPROVED_C027_CONTEXT_V20",
+    "type": "review_only_compound",
+    "component_count": 42,
+    "solid_count": 42,
+    "shell_count": 42,
+    "face_count": 2756,
+    "edge_count": 4305,
+    "vertex_count": 1585,
+    "volume_mm3": 150495.11,
+    "bounding_box_mm": {
+      "min": [-30.00, 42.84, 109.76],
+      "max": [126.94, 269.34, 268.15]
+    },
+    "geometry_valid": true,
+    "closed_components": true
+  },
+  "eye_vs_complete_upper": {
+    "intersects": true,
+    "aggregate_intersection_volume_mm3": 114.9193,
+    "intersection_bounds_mm": {
+      "min": [55.12, 70.78, 118.48],
+      "max": [103.74, 96.13, 178.66]
+    }
+  },
+  "component_results": {
+    "C001": {
+      "interference_mm3": 100.5990,
+      "bounds_min_mm": [55.12, 70.78, 118.48],
+      "bounds_max_mm": [103.74, 94.69, 178.66],
+      "status": "UNRESOLVED"
+    },
+    "C009": {
+      "interference_mm3": 27.7283,
+      "bounds_min_mm": [94.64, 89.73, 172.29],
+      "bounds_max_mm": [100.75, 96.88, 177.70],
+      "status": "UNRESOLVED"
+    },
+    "UPPER_C012": {
+      "interference_mm3": 0.0366,
+      "bounds_min_mm": [98.29, 95.46, 173.65],
+      "bounds_max_mm": [99.00, 96.40, 174.26],
+      "status": "UNRESOLVED_DISTINCT_FROM_LOWER_V11_COMPONENT_012"
+    },
+    "C019": {
+      "interference_mm3": 0.0,
+      "touching": true,
+      "bounds_min_mm": [94.59, 91.14, 176.83],
+      "bounds_max_mm": [94.61, 91.17, 176.83],
+      "status": "UNRESOLVED_NEAR_ZERO_SLIVER_TOUCH"
+    },
+    "C027_APPROVED": {
+      "interference_mm3": 0.0,
+      "minimum_clearance_mm": 5.3208,
+      "status": "PASS"
+    }
+  },
+  "preserved": [
+    "all non-C027 V3 upper-head component coordinates",
+    "approved V19 C027 geometry",
+    "exact V17 eye geometry and flange roots",
+    "C006 interface",
+    "lower-face and rear-cassette ownership",
+    "aluminum V0.5-M2 workstream",
+    "ear geometry"
+  ],
+  "fcstd": {
+    "path": "CAT_HEAD_RIGHT_UPPER_C027_APPROVED_CONTEXT_REVIEW_V20.FCStd",
+    "zip_valid": true,
+    "size_bytes": 2574757
+  },
+  "next_review": [
+    "Prepare structured anchor diagnostics for C001, C009, upper C012, and C019 without modifying them.",
+    "Do not confuse upper C012 with lower V11_LOWER_COMPONENT_012, which has a separate unexecuted numeric trim contract.",
+    "No mirror, production union, STL, G-code, or print release is authorized."
+  ]
+}

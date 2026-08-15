@@ -1,10 +1,15 @@
 {
   "review": "right-upper-c027-eye-clearance-review-v19",
   "date": "2026-08-15",
-  "status": "PASS_ISOLATED_ONE_SIDE_REVIEW_AWAITING_USER_APPROVAL",
+  "status": "PASS_ISOLATED_ONE_SIDE_VISUALLY_APPROVED_2026_08_15",
   "print_release": false,
   "production_union": false,
   "mirror_performed": false,
+  "user_visual_approval": {
+    "approved": true,
+    "date": "2026-08-15",
+    "superseded_for_full_context_by": "right-upper-c027-approved-context-review-v20"
+  },
   "source_owner": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C027_SOLID_V3",
   "proposal_object": "PROPOSED__RIGHT_UPPER_C027_TRIMMED_EYE_CLEARANCE_V19_T2",
   "frozen_eye_reference": "PROPOSED__RIGHT_EYE_BUCKET_WITH_BOTH_EXACT_FLANGE_ROOTS_V17",

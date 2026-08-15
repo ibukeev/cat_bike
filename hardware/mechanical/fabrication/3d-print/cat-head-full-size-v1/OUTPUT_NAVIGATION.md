@@ -5,13 +5,18 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current upper C027 eye-clearance V19 — **isolated right-side numeric pass;
-  awaiting user visual approval; not a print source**. Only C027 is trimmed at
-  its approved eye-side face pair. The final proposal has zero eye
-  interference, `5.3208 mm` clearance, one valid closed solid, and retains
-  positive C001/C032 root overlap. Open:
-  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c027-eye-clearance-review-v19/CAT_HEAD_RIGHT_UPPER_C027_EYE_CLEARANCE_REVIEW_V19.FCStd`.
-- V19 validation and resumable checkpoint:
+- Current upper context V20 — **approved C027 substituted into the complete
+  42-component right-upper context; audit only; not a print source**. C027
+  remains collision-free at `5.3208 mm` eye clearance. The remaining upper-eye
+  contacts are C001 (`100.5990 mm3`), C009 (`27.7283 mm3`), upper C012
+  (`0.0366 mm3`), and a near-zero C019 sliver. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c027-approved-context-review-v20/CAT_HEAD_RIGHT_UPPER_C027_APPROVED_CONTEXT_REVIEW_V20.FCStd`.
+- V20 validation and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c027-approved-context-review-v20/validation-v20.json` and
+  `RIGHT_UPPER_C027_APPROVED_CONTEXT_REVIEW_V20_CHECKPOINT_2026-08-15.md`.
+- V19 is the user-approved isolated C027 source proposal. It has zero eye
+  interference, `5.3208 mm` clearance, one valid closed solid, and positive
+  C001/C032 root overlap. Its validation and checkpoint remain at:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c027-eye-clearance-review-v19/validation-v19.json` and
   `RIGHT_UPPER_C027_EYE_CLEARANCE_REVIEW_V19_CHECKPOINT_2026-08-15.md`.
 - V18 remains the last complete right-side display context, but it is

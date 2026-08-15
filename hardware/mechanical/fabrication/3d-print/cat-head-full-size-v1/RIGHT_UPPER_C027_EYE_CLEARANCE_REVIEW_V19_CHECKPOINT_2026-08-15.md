@@ -1,8 +1,9 @@
 # Right Upper C027 Eye-Clearance Review V19 Checkpoint
 
-Status: isolated right-side proposal passes numeric CAD checks and is awaiting
-user visual approval. It is not a production union, mirror, STL, G-code, or
-print release.
+Status: isolated right-side proposal passes numeric CAD checks and was visually
+approved by the user on 2026-08-15. It is not a production union, mirror, STL,
+G-code, or print release. V20 supersedes this file for complete upper-head
+context review.
 
 ## Current review files
 
@@ -67,16 +68,12 @@ an arbitrary macro or headless script:
 6. Re-run the eye interference/clearance, OCCT validity, topology, and neighbor
    contact checks recorded in `validation-v19.json`.
 
-## Next physical/visual review
+## Visual approval and next review
 
-1. Open the FCStd listed above.
-2. Confirm the selected C027 end stops clear of the eye and is not unnecessarily
-   shortened.
-3. Toggle the hidden V3 upper components visible and confirm C027 remains
-   broadly rooted into C001/C032.
-4. If approved, replace only C027 in a complete right-upper owner candidate and
-   repeat the full collision audit. C009, C012, and C019 remain separate
-   unresolved buckets.
+1. The user visually approved the isolated C027 proposal on 2026-08-15.
+2. V20 substitutes only this approved C027 into a complete 42-component upper
+   context compound and repeats the full eye collision audit.
+3. C001, C009, upper-head C012, and C019 remain separate unresolved buckets.
 
 ## Ready next bucket: lower C012 numeric audit
 
