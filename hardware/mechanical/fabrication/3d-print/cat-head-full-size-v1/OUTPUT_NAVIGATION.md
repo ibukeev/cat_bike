@@ -5,6 +5,19 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current upper C027 eye-clearance V19 — **isolated right-side numeric pass;
+  awaiting user visual approval; not a print source**. Only C027 is trimmed at
+  its approved eye-side face pair. The final proposal has zero eye
+  interference, `5.3208 mm` clearance, one valid closed solid, and retains
+  positive C001/C032 root overlap. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c027-eye-clearance-review-v19/CAT_HEAD_RIGHT_UPPER_C027_EYE_CLEARANCE_REVIEW_V19.FCStd`.
+- V19 validation and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c027-eye-clearance-review-v19/validation-v19.json` and
+  `RIGHT_UPPER_C027_EYE_CLEARANCE_REVIEW_V19_CHECKPOINT_2026-08-15.md`.
+- V18 remains the last complete right-side display context, but it is
+  superseded as collision evidence: the subsequent complete upper-component
+  audit found eye contact at C001, C009, C012, C019, and C027.
+
 - Current HS-11 V18 complete right-side context — **exact displayed owners pass;
   awaiting user visual approval; not a print source**. V18 uses zero-transform
   references to the complete V3 upper head, approved V13 repaired lower owner,

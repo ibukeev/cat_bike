@@ -1,0 +1,72 @@
+{
+  "review": "right-upper-c027-eye-clearance-review-v19",
+  "date": "2026-08-15",
+  "status": "PASS_ISOLATED_ONE_SIDE_REVIEW_AWAITING_USER_APPROVAL",
+  "print_release": false,
+  "production_union": false,
+  "mirror_performed": false,
+  "source_owner": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C027_SOLID_V3",
+  "proposal_object": "PROPOSED__RIGHT_UPPER_C027_TRIMMED_EYE_CLEARANCE_V19_T2",
+  "frozen_eye_reference": "PROPOSED__RIGHT_EYE_BUCKET_WITH_BOTH_EXACT_FLANGE_ROOTS_V17",
+  "numeric_contract": {
+    "minimum_eye_clearance_mm": 4.0,
+    "final_measured_eye_clearance_mm": 5.3208,
+    "trim_plane_advance_from_initial_seed_mm": 6.0,
+    "effective_trim_plane_advance_mm": 15.0,
+    "trim_direction_unit": [-0.0718, 0.2910, 0.9540],
+    "result_cut_face": {
+      "face": "Face4",
+      "normal": [0.07, -0.29, -0.95],
+      "centroid_mm": [41.46, 67.41, 174.06],
+      "area_mm2": 16.80
+    }
+  },
+  "interference": {
+    "original_c027_vs_eye_mm3": 12.5907,
+    "rejected_trial_1_vs_eye_mm3": 1.0489,
+    "final_trial_2_vs_eye_mm3": 0.0
+  },
+  "proposal_topology": {
+    "valid_closed_solid": true,
+    "self_intersections": 0,
+    "solid_count": 1,
+    "face_count": 8,
+    "edge_count": 16,
+    "vertex_count": 10,
+    "volume_mm3": 646.0048239195407,
+    "bounding_box_mm": {
+      "min": [35.96, 64.80, 173.34],
+      "max": [44.21, 81.19, 211.46]
+    }
+  },
+  "retained_owner_contact": {
+    "c001_overlap_before_mm3": 60.0948,
+    "c001_overlap_after_mm3": 47.5120,
+    "c032_overlap_before_mm3": 184.0444,
+    "c032_overlap_after_mm3": 146.9368
+  },
+  "unchanged_neighbor_clearances_mm": {
+    "c004": 0.6568,
+    "c019": 2.8643,
+    "c020": 2.2570
+  },
+  "preserved": [
+    "V17 eye geometry and both exact flange roots",
+    "all non-C027 V3 upper-head components",
+    "upper-head exterior geometry",
+    "lower-face and rear-cassette ownership",
+    "C006 interface",
+    "aluminum V0.5-M2 interface",
+    "ear geometry"
+  ],
+  "fcstd": {
+    "path": "CAT_HEAD_RIGHT_UPPER_C027_EYE_CLEARANCE_REVIEW_V19.FCStd",
+    "zip_valid": true,
+    "size_bytes": 1620934
+  },
+  "next_review": [
+    "Confirm the isolated selected C027 end no longer intersects the eye.",
+    "Toggle the hidden V3 upper-head components visible and confirm C027 remains rooted at C001/C032.",
+    "Do not approve production integration from this file; this is one isolated right-side proposal."
+  ]
+}
