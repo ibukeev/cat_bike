@@ -12,7 +12,16 @@ estimate. An accepted isolated review is crossed off only when that gate's
 stated exit condition is satisfied; it does not imply that the geometry is
 already integrated or printable.
 
-**Next active work:** `HS-11`. V18 places the exact V17 right-eye owner into the complete right-side V3/V13/V14 context with both V5 head flanges and frozen C046/C048 evidence. All five exact displayed owners pass FreeCAD validity/self-intersection checks; both flange gaps remain `0.3000 mm`, and eye-to-C046/C048 clearances remain `4.6063/4.0317 mm`. V18 now awaits one-side visual approval before any exact left mirror or bilateral closure. The components 002–060 aggregate remains visual context only, not a printable owner. Print release remains held.
+**Next active work:** `HS-11`. The exact V17 eye and both V5 flange gaps
+remain accepted, but complete-upper collision closure is still open. The user
+approved the isolated C027 V19 correction; V20 substituted it into the complete
+42-component right-upper context and confirmed `5.3208 mm` eye clearance.
+V21 then localized the remaining contacts without changing source geometry:
+C001 `100.60 mm3`, C009 `27.73 mm3`, upper C012 `0.04 mm3`, and a
+degenerate zero-volume C019 touch. C001, C009, and upper C012 each require a
+user-selected source-owner anchor and an approved numeric correction contract.
+C019 is not a trim target from the present evidence. No exact left mirror or
+bilateral closure is authorized yet. Print release remains held.
 `HS-04` is closed by the complete right C001 A/B shell orientation rather than
 a separate coupon, per the user's explicit direction not to print coupons apart
 from the shell. The V2 ASA project preserves scale and geometry, uses a `-20
@@ -35,7 +44,7 @@ support layout, and brim on 2026-08-14. This does not release structural G-code.
 | HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
 | HS-09 | [x] | ~~Finish remaining primary ear interface~~ | User visually approved the clean bilateral V2 on 2026-08-11. V2 contains only the approved right head/ear final solids and their exact `X=0` mirrors; the stale left owner, four-hole lattice, pins, and proof shafts are absent. All four solids are valid, closed, self-intersection-free, and the mirrored topology, volume, area, and bounds match. | Preserve `CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd` unchanged through final full-head integration. |
 | HS-10 | [x] | ~~Build each eye bucket and rear cap as one serviceable module~~ | V9 was visually approved and promoted on 2026-08-13. Both bilateral bucket/cap pairs are valid, watertight, one-solid, self-intersection-free, topology/volume matched, STEP-round-trip verified, and retain the non-interfering `0.0239 mm` service gap. | Preserve `production/eye-modules-v9/` unchanged through HS-11 and later full-head validation. |
-| HS-11 | [ ] | Integrate and validate all eight eye flanges | V18 assembles the exact V17 right-eye owner with the complete V3 upper-head, V13 repaired lower owner, unchanged lower context, both exact V5 head flanges, and frozen C046/C048 evidence. Exact owners pass; gaps are `0.3000/0.3000 mm`; eye clearances are `4.6063/4.0317 mm`. The rejected V16 transfer is excluded. | User visually approves the complete V18 right-side context; then perform the exact left mirror and bilateral validation before closure. |
+| HS-11 | [ ] | Integrate and validate all eight eye flanges | Exact V17/V5 flange ownership remains accepted with `0.3000/0.3000 mm` gaps. The user-approved C027 V19 correction passes at `5.3208 mm` eye clearance in the complete V20 upper context. V21 preserves every source owner and localizes remaining positive-volume contacts at C001 `100.60 mm3`, C009 `27.73 mm3`, and upper C012 `0.04 mm3`; C019 is only a degenerate zero-volume touch. | Select and approve a source-owner anchor plus numeric correction contract separately for C001, C009, and upper C012; revalidate the complete right context, then perform the exact left mirror and bilateral validation. |
 | HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
 | HS-13 | [ ] | Integrate lower face and rear cassette around aluminum | Lossless V5 ownership direction is accepted; production owners and final cassette are not unified. | Lower faces are reduced as approved, transferred geometry belongs to one cassette, and V0.5-M2 rail/plate insertion and removal remain unobstructed. |
 | HS-14 | [ ] | Add final cassette M5 pads and service sockets | Legacy Gate 8 pads are invalid; the real rail and 21.00 mm serviceable socket still require qualification. | Actual rail measured; socket/cap coupon passes; cassette pads/sockets integrate with hardware and tool access. |
