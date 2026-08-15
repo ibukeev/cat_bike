@@ -1,0 +1,95 @@
+{
+  "review": "right-upper-eye-residual-collision-localization-review-v21",
+  "date": "2026-08-15",
+  "status": "PASS_DIAGNOSTIC_LOCALIZATION_SOURCE_GEOMETRY_UNCHANGED_ANCHORS_HOLD",
+  "print_release": false,
+  "production_union": false,
+  "mirror_performed": false,
+  "source_geometry_changed": false,
+  "approved_modification_anchors": false,
+  "context": {
+    "predecessor": "right-upper-c027-approved-context-review-v20",
+    "eye": "exact V17 eye owner",
+    "components": ["C001", "C009", "UPPER_C012", "C019"],
+    "approved_c027_retained_hidden": true
+  },
+  "diagnostics": {
+    "C001": {
+      "object": "DIAGNOSTIC__EYE_INTERSECTION__C001__V21",
+      "interference_mm3": 100.60,
+      "bounds_min_mm": [55.12, 70.78, 118.48],
+      "bounds_max_mm": [103.74, 94.69, 178.66],
+      "valid": true,
+      "watertight": true,
+      "solids": 2,
+      "shells": 2,
+      "faces": 72,
+      "edges": 183,
+      "vertices": 115,
+      "status": "POSITIVE_VOLUME_INTERFERENCE_REQUIRES_USER_SELECTED_SOURCE_ANCHOR_AND_NUMERIC_CONTRACT"
+    },
+    "C009": {
+      "object": "DIAGNOSTIC__EYE_INTERSECTION__C009__V21",
+      "interference_mm3": 27.73,
+      "bounds_min_mm": [94.64, 89.73, 172.29],
+      "bounds_max_mm": [100.75, 96.88, 177.70],
+      "valid": true,
+      "watertight": true,
+      "solids": 2,
+      "shells": 2,
+      "faces": 36,
+      "edges": 88,
+      "vertices": 56,
+      "status": "POSITIVE_VOLUME_INTERFERENCE_REQUIRES_USER_SELECTED_SOURCE_ANCHOR_AND_NUMERIC_CONTRACT"
+    },
+    "UPPER_C012": {
+      "object": "DIAGNOSTIC__EYE_INTERSECTION__UPPER_C012__V21",
+      "interference_mm3": 0.04,
+      "bounds_min_mm": [98.29, 95.46, 173.65],
+      "bounds_max_mm": [99.00, 96.40, 174.26],
+      "valid": true,
+      "watertight": true,
+      "solids": 1,
+      "shells": 1,
+      "faces": 6,
+      "edges": 10,
+      "vertices": 6,
+      "status": "POSITIVE_VOLUME_INTERFERENCE_REQUIRES_USER_SELECTED_SOURCE_ANCHOR_AND_NUMERIC_CONTRACT"
+    },
+    "C019": {
+      "object": "DIAGNOSTIC__EYE_INTERSECTION__C019__V21",
+      "interference_mm3_displayed": 0.00,
+      "bounds_min_mm": [94.59, 91.14, 176.83],
+      "bounds_max_mm": [94.61, 91.17, 176.83],
+      "valid": false,
+      "watertight": true,
+      "solids": 1,
+      "shells": 1,
+      "faces": 6,
+      "edges": 8,
+      "vertices": 4,
+      "status": "DEGENERATE_ZERO_VOLUME_TOUCH_DIAGNOSTIC_NO_TRIM_AUTHORIZED"
+    }
+  },
+  "preserved": [
+    "all source-owner coordinates and geometry",
+    "approved V19 C027 geometry",
+    "exact V17 eye geometry and flange roots",
+    "C006 interface",
+    "lower-face and rear-cassette ownership",
+    "aluminum V0.5-M2 workstream",
+    "ear geometry"
+  ],
+  "fcstd": {
+    "path": "CAT_HEAD_RIGHT_UPPER_EYE_RESIDUAL_COLLISION_LOCALIZATION_REVIEW_V21.FCStd",
+    "zip_valid": true,
+    "size_bytes": 1352146
+  },
+  "next_review": [
+    "Open V21 and toggle one source plus its matching diagnostic at a time.",
+    "Begin with C001, then C009; select the intended source face or edge before any correction contract.",
+    "Treat upper C012 separately from lower V11_LOWER_COMPONENT_012.",
+    "Do not modify C019 from this zero-volume diagnostic alone.",
+    "No production union, mirror, STL, G-code, or print release is authorized."
+  ]
+}

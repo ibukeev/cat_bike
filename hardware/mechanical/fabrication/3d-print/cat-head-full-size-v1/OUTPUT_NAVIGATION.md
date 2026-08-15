@@ -5,6 +5,16 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current upper/eye V21 — **review-only exact collision localization; source
+  owners unchanged; modification anchors not selected; not a print source**.
+  The exact Boolean-common diagnostics are separately toggleable for C001
+  (`100.60 mm3`), C009 (`27.73 mm3`), upper C012 (`0.04 mm3`), and C019.
+  C019 is only an invalid degenerate zero-volume touch and is not a trim
+  target. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-residual-collision-localization-review-v21/CAT_HEAD_RIGHT_UPPER_EYE_RESIDUAL_COLLISION_LOCALIZATION_REVIEW_V21.FCStd`.
+- V21 validation and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-residual-collision-localization-review-v21/validation-v21.json` and
+  `RIGHT_UPPER_EYE_RESIDUAL_COLLISION_LOCALIZATION_REVIEW_V21_CHECKPOINT_2026-08-15.md`.
 - Current upper context V20 — **approved C027 substituted into the complete
   42-component right-upper context; audit only; not a print source**. C027
   remains collision-free at `5.3208 mm` eye clearance. The remaining upper-eye
