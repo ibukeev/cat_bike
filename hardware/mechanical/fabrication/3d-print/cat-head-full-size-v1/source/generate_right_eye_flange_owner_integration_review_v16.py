@@ -111,8 +111,8 @@ def topology(obj: bpy.types.Object) -> dict[str, float | int]:
     return v14.v10.v9.v3.topology(obj)
 
 
-def nonadjacent_self_intersection_count(obj: bpy.types.Object) -> int:
-    """Count overlapping triangles that do not share a mesh vertex."""
+def nonadjacent_self_intersections(obj: bpy.types.Object) -> list[dict[str, object]]:
+    """Describe overlapping triangles that do not share a mesh vertex."""
     bm = bmesh.new()
     bm.from_mesh(obj.data)
     try:
@@ -123,6 +123,7 @@ def nonadjacent_self_intersection_count(obj: bpy.types.Object) -> int:
         bm.faces.index_update()
         tree = BVHTree.FromBMesh(bm, epsilon=0.0)
         pairs: set[tuple[int, int]] = set()
+        records: list[dict[str, object]] = []
         for first_index, second_index in tree.overlap(tree):
             if first_index == second_index:
                 continue
@@ -136,9 +137,44 @@ def nonadjacent_self_intersection_count(obj: bpy.types.Object) -> int:
             }:
                 continue
             pairs.add(pair)
-        return len(pairs)
+            points = [vertex.co.copy() for face in (first, second) for vertex in face.verts]
+            minimum = Vector((min(point.x for point in points), min(point.y for point in points), min(point.z for point in points)))
+            maximum = Vector((max(point.x for point in points), max(point.y for point in points), max(point.z for point in points)))
+            records.append(
+                {
+                    "triangles": list(pair),
+                    "first_centroid_mm": [round(value, 4) for value in first.calc_center_median()],
+                    "second_centroid_mm": [round(value, 4) for value in second.calc_center_median()],
+                    "pair_bbox_min_mm": [round(value, 4) for value in minimum],
+                    "pair_bbox_max_mm": [round(value, 4) for value in maximum],
+                }
+            )
+        return sorted(records, key=lambda record: record["triangles"])
     finally:
         bm.free()
+
+
+def weld_diagnostic(obj: bpy.types.Object, distance_mm: float) -> dict[str, object]:
+    """Test a coordinate-preserving coincident-vertex weld on a disposable copy."""
+    candidate = duplicate(obj, f"AUDIT__WELD_{distance_mm:.0e}_V16")
+    before = topology(candidate)
+    bm = bmesh.new()
+    bm.from_mesh(candidate.data)
+    try:
+        result = bmesh.ops.remove_doubles(bm, verts=list(bm.verts), dist=distance_mm)
+        bm.to_mesh(candidate.data)
+        candidate.data.update()
+    finally:
+        bm.free()
+    after = topology(candidate)
+    intersections = nonadjacent_self_intersections(candidate)
+    bpy.data.objects.remove(candidate, do_unlink=True)
+    return {
+        "distance_mm": distance_mm,
+        "removed_vertex_count": before["vertices"] - after["vertices"],
+        "topology": after,
+        "self_intersection_count": len(intersections),
+    }
 
 
 def export_obj(
@@ -244,6 +280,9 @@ def main() -> None:
 
     eye_owner = duplicate(source["eye_bucket"], "PROPOSED__RIGHT_EYE_BUCKET_WITH_BOTH_EYE_FLANGES__V16")
     eye_source_topology = topology(eye_owner)
+    eye_intersection_stages = {
+        "source_eye_bucket": nonadjacent_self_intersections(eye_owner),
+    }
     for role in ("outer", "second"):
         near = duplicate(source[f"{role}_eye_flange"], f"TMP__{role.upper()}_EYE_FLANGE_EPSILON_V16")
         inward = duplicate(source[f"{role}_eye_flange"], f"TMP__{role.upper()}_EYE_FLANGE_INWARD_V16")
@@ -253,7 +292,9 @@ def main() -> None:
         near.location += vector.normalized() * float(contract["boolean_epsilon_inset_mm"])
         inward.location += vector
         boolean_union(eye_owner, near, f"V16_{role}_epsilon_owner_union", "EXACT")
+        eye_intersection_stages[f"after_{role}_epsilon_union"] = nonadjacent_self_intersections(eye_owner)
         boolean_union(eye_owner, inward, f"V16_{role}_inward_owner_union", "EXACT")
+        eye_intersection_stages[f"after_{role}_inward_union"] = nonadjacent_self_intersections(eye_owner)
 
     eye_topology = topology(eye_owner)
     if eye_topology["boundary_edges"] != 0 or eye_topology["nonmanifold_edges"] != 0:
@@ -261,7 +302,12 @@ def main() -> None:
     eye_component_count = len(v14.v10.v9.components(eye_owner))
     if eye_component_count != 1:
         raise RuntimeError(f"V16 eye owner is not one connected component: {eye_component_count}; topology={eye_topology}")
-    eye_self_intersection_count = nonadjacent_self_intersection_count(eye_owner)
+    eye_self_intersections = nonadjacent_self_intersections(eye_owner)
+    eye_self_intersection_count = len(eye_self_intersections)
+    eye_weld_diagnostics = [
+        weld_diagnostic(eye_owner, distance)
+        for distance in (0.000001, 0.00001, 0.0001, 0.001)
+    ]
 
     c046_clearance = v14.v10.v9.v3.distance(source["c046"], source["eye_bucket"])
     c048_clearance = v14.v10.v9.v3.distance(source["c048"], source["eye_bucket"])
@@ -365,6 +411,12 @@ def main() -> None:
         "eye_integrated_topology": eye_topology,
         "eye_integrated_connected_components": eye_component_count,
         "eye_integrated_nonadjacent_self_intersections": eye_self_intersection_count,
+        "eye_integrated_self_intersection_records": eye_self_intersections,
+        "eye_self_intersection_stage_counts": {
+            stage: len(records) for stage, records in eye_intersection_stages.items()
+        },
+        "eye_self_intersection_stage_records": eye_intersection_stages,
+        "eye_weld_diagnostics": eye_weld_diagnostics,
         "c046_eye_clearance_mm": round(c046_clearance, 4),
         "c048_eye_clearance_mm": round(c048_clearance, 4),
         "freecad_completed_owner_objects": contract["freecad_completed_owner_objects"],

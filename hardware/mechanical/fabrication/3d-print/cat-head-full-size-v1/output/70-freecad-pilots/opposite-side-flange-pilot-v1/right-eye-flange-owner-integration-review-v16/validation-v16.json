@@ -31,6 +31,835 @@
   },
   "eye_integrated_connected_components": 1,
   "eye_integrated_nonadjacent_self_intersections": 6,
+  "eye_integrated_self_intersection_records": [
+    {
+      "triangles": [
+        614,
+        1949
+      ],
+      "first_centroid_mm": [
+        101.9935,
+        147.9581,
+        -84.4894
+      ],
+      "second_centroid_mm": [
+        101.982,
+        147.9845,
+        -84.5068
+      ],
+      "pair_bbox_min_mm": [
+        101.9764,
+        147.9308,
+        -84.5305
+      ],
+      "pair_bbox_max_mm": [
+        102.002,
+        148.0117,
+        -84.4663
+      ]
+    },
+    {
+      "triangles": [
+        732,
+        838
+      ],
+      "first_centroid_mm": [
+        69.3207,
+        172.7453,
+        -91.7347
+      ],
+      "second_centroid_mm": [
+        68.5616,
+        173.8666,
+        -90.2124
+      ],
+      "pair_bbox_min_mm": [
+        68.0006,
+        171.9636,
+        -91.9779
+      ],
+      "pair_bbox_max_mm": [
+        69.9406,
+        174.4955,
+        -87.777
+      ]
+    },
+    {
+      "triangles": [
+        789,
+        838
+      ],
+      "first_centroid_mm": [
+        69.2822,
+        173.2524,
+        -91.831
+      ],
+      "second_centroid_mm": [
+        68.5616,
+        173.8666,
+        -90.2124
+      ],
+      "pair_bbox_min_mm": [
+        68.0006,
+        172.7243,
+        -92.0844
+      ],
+      "pair_bbox_max_mm": [
+        69.9406,
+        174.4955,
+        -87.777
+      ]
+    },
+    {
+      "triangles": [
+        1167,
+        2023
+      ],
+      "first_centroid_mm": [
+        99.0015,
+        140.6147,
+        -86.5437
+      ],
+      "second_centroid_mm": [
+        99.4714,
+        140.6354,
+        -86.7037
+      ],
+      "pair_bbox_min_mm": [
+        98.9801,
+        140.4614,
+        -87.0461
+      ],
+      "pair_bbox_max_mm": [
+        100.3896,
+        140.7151,
+        -86.5273
+      ]
+    },
+    {
+      "triangles": [
+        1332,
+        1677
+      ],
+      "first_centroid_mm": [
+        59.9841,
+        121.1862,
+        -66.6309
+      ],
+      "second_centroid_mm": [
+        59.9848,
+        121.1862,
+        -66.631
+      ],
+      "pair_bbox_min_mm": [
+        59.9828,
+        121.1862,
+        -66.631
+      ],
+      "pair_bbox_max_mm": [
+        59.985,
+        121.1863,
+        -66.6309
+      ]
+    },
+    {
+      "triangles": [
+        1683,
+        2236
+      ],
+      "first_centroid_mm": [
+        60.0117,
+        121.9583,
+        -66.8118
+      ],
+      "second_centroid_mm": [
+        60.0126,
+        121.9614,
+        -66.813
+      ],
+      "pair_bbox_min_mm": [
+        59.9814,
+        121.177,
+        -67.1778
+      ],
+      "pair_bbox_max_mm": [
+        60.072,
+        123.5114,
+        -66.6276
+      ]
+    }
+  ],
+  "eye_self_intersection_stage_counts": {
+    "source_eye_bucket": 2,
+    "after_outer_epsilon_union": 3,
+    "after_outer_inward_union": 6,
+    "after_second_epsilon_union": 6,
+    "after_second_inward_union": 6
+  },
+  "eye_self_intersection_stage_records": {
+    "source_eye_bucket": [
+      {
+        "triangles": [
+          757,
+          861
+        ],
+        "first_centroid_mm": [
+          69.3207,
+          172.7453,
+          -91.7347
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          171.9636,
+          -91.9779
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          813,
+          861
+        ],
+        "first_centroid_mm": [
+          69.2822,
+          173.2524,
+          -91.831
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          172.7243,
+          -92.0844
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      }
+    ],
+    "after_outer_epsilon_union": [
+      {
+        "triangles": [
+          737,
+          841
+        ],
+        "first_centroid_mm": [
+          69.3207,
+          172.7453,
+          -91.7347
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          171.9636,
+          -91.9779
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          793,
+          841
+        ],
+        "first_centroid_mm": [
+          69.2822,
+          173.2524,
+          -91.831
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          172.7243,
+          -92.0844
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          1056,
+          1241
+        ],
+        "first_centroid_mm": [
+          98.8047,
+          154.1369,
+          -80.6756
+        ],
+        "second_centroid_mm": [
+          91.3578,
+          150.639,
+          -77.1247
+        ],
+        "pair_bbox_min_mm": [
+          76.4835,
+          143.7341,
+          -80.6945
+        ],
+        "pair_bbox_max_mm": [
+          98.8242,
+          154.2191,
+          -69.9922
+        ]
+      }
+    ],
+    "after_outer_inward_union": [
+      {
+        "triangles": [
+          497,
+          1356
+        ],
+        "first_centroid_mm": [
+          100.3857,
+          152.2422,
+          -89.6248
+        ],
+        "second_centroid_mm": [
+          100.3888,
+          152.2425,
+          -89.6261
+        ],
+        "pair_bbox_min_mm": [
+          100.3857,
+          152.2418,
+          -89.6287
+        ],
+        "pair_bbox_max_mm": [
+          100.3949,
+          152.243,
+          -89.6247
+        ]
+      },
+      {
+        "triangles": [
+          741,
+          845
+        ],
+        "first_centroid_mm": [
+          69.3207,
+          172.7453,
+          -91.7347
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          171.9636,
+          -91.9779
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          797,
+          845
+        ],
+        "first_centroid_mm": [
+          69.2822,
+          173.2524,
+          -91.831
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          172.7243,
+          -92.0844
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          1015,
+          1386
+        ],
+        "first_centroid_mm": [
+          101.982,
+          147.9845,
+          -84.5068
+        ],
+        "second_centroid_mm": [
+          101.9935,
+          147.9581,
+          -84.4894
+        ],
+        "pair_bbox_min_mm": [
+          101.9764,
+          147.9308,
+          -84.5305
+        ],
+        "pair_bbox_max_mm": [
+          102.002,
+          148.0117,
+          -84.4663
+        ]
+      },
+      {
+        "triangles": [
+          1206,
+          1410
+        ],
+        "first_centroid_mm": [
+          97.3984,
+          154.0994,
+          -80.1925
+        ],
+        "second_centroid_mm": [
+          90.4214,
+          150.6239,
+          -76.802
+        ],
+        "pair_bbox_min_mm": [
+          76.4835,
+          143.7341,
+          -80.2092
+        ],
+        "pair_bbox_max_mm": [
+          97.4147,
+          154.1575,
+          -69.9922
+        ]
+      },
+      {
+        "triangles": [
+          1410,
+          1411
+        ],
+        "first_centroid_mm": [
+          90.4214,
+          150.6239,
+          -76.802
+        ],
+        "second_centroid_mm": [
+          97.3904,
+          154.0679,
+          -80.2067
+        ],
+        "pair_bbox_min_mm": [
+          76.4835,
+          143.7341,
+          -80.2092
+        ],
+        "pair_bbox_max_mm": [
+          97.3905,
+          154.0764,
+          -69.9922
+        ]
+      }
+    ],
+    "after_second_epsilon_union": [
+      {
+        "triangles": [
+          610,
+          1812
+        ],
+        "first_centroid_mm": [
+          101.9935,
+          147.9581,
+          -84.4894
+        ],
+        "second_centroid_mm": [
+          101.982,
+          147.9845,
+          -84.5068
+        ],
+        "pair_bbox_min_mm": [
+          101.9764,
+          147.9308,
+          -84.5305
+        ],
+        "pair_bbox_max_mm": [
+          102.002,
+          148.0117,
+          -84.4663
+        ]
+      },
+      {
+        "triangles": [
+          728,
+          834
+        ],
+        "first_centroid_mm": [
+          69.3207,
+          172.7453,
+          -91.7347
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          171.9636,
+          -91.9779
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          785,
+          834
+        ],
+        "first_centroid_mm": [
+          69.2822,
+          173.2524,
+          -91.831
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          172.7243,
+          -92.0844
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          995,
+          1557
+        ],
+        "first_centroid_mm": [
+          100.3898,
+          140.5241,
+          -87.046
+        ],
+        "second_centroid_mm": [
+          100.3898,
+          140.5246,
+          -87.0459
+        ],
+        "pair_bbox_min_mm": [
+          100.3896,
+          140.523,
+          -87.0461
+        ],
+        "pair_bbox_max_mm": [
+          100.3898,
+          140.5249,
+          -87.0459
+        ]
+      },
+      {
+        "triangles": [
+          1079,
+          1160
+        ],
+        "first_centroid_mm": [
+          99.4714,
+          140.6354,
+          -86.7037
+        ],
+        "second_centroid_mm": [
+          99.0015,
+          140.6147,
+          -86.5437
+        ],
+        "pair_bbox_min_mm": [
+          98.9801,
+          140.4614,
+          -87.0461
+        ],
+        "pair_bbox_max_mm": [
+          100.3896,
+          140.7151,
+          -86.5273
+        ]
+      },
+      {
+        "triangles": [
+          1562,
+          1893
+        ],
+        "first_centroid_mm": [
+          99.6466,
+          152.3051,
+          -89.3432
+        ],
+        "second_centroid_mm": [
+          99.6435,
+          152.3047,
+          -89.342
+        ],
+        "pair_bbox_min_mm": [
+          98.1593,
+          152.2425,
+          -89.6287
+        ],
+        "pair_bbox_max_mm": [
+          100.3949,
+          152.4298,
+          -88.7757
+        ]
+      }
+    ],
+    "after_second_inward_union": [
+      {
+        "triangles": [
+          614,
+          1949
+        ],
+        "first_centroid_mm": [
+          101.9935,
+          147.9581,
+          -84.4894
+        ],
+        "second_centroid_mm": [
+          101.982,
+          147.9845,
+          -84.5068
+        ],
+        "pair_bbox_min_mm": [
+          101.9764,
+          147.9308,
+          -84.5305
+        ],
+        "pair_bbox_max_mm": [
+          102.002,
+          148.0117,
+          -84.4663
+        ]
+      },
+      {
+        "triangles": [
+          732,
+          838
+        ],
+        "first_centroid_mm": [
+          69.3207,
+          172.7453,
+          -91.7347
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          171.9636,
+          -91.9779
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          789,
+          838
+        ],
+        "first_centroid_mm": [
+          69.2822,
+          173.2524,
+          -91.831
+        ],
+        "second_centroid_mm": [
+          68.5616,
+          173.8666,
+          -90.2124
+        ],
+        "pair_bbox_min_mm": [
+          68.0006,
+          172.7243,
+          -92.0844
+        ],
+        "pair_bbox_max_mm": [
+          69.9406,
+          174.4955,
+          -87.777
+        ]
+      },
+      {
+        "triangles": [
+          1167,
+          2023
+        ],
+        "first_centroid_mm": [
+          99.0015,
+          140.6147,
+          -86.5437
+        ],
+        "second_centroid_mm": [
+          99.4714,
+          140.6354,
+          -86.7037
+        ],
+        "pair_bbox_min_mm": [
+          98.9801,
+          140.4614,
+          -87.0461
+        ],
+        "pair_bbox_max_mm": [
+          100.3896,
+          140.7151,
+          -86.5273
+        ]
+      },
+      {
+        "triangles": [
+          1332,
+          1677
+        ],
+        "first_centroid_mm": [
+          59.9841,
+          121.1862,
+          -66.6309
+        ],
+        "second_centroid_mm": [
+          59.9848,
+          121.1862,
+          -66.631
+        ],
+        "pair_bbox_min_mm": [
+          59.9828,
+          121.1862,
+          -66.631
+        ],
+        "pair_bbox_max_mm": [
+          59.985,
+          121.1863,
+          -66.6309
+        ]
+      },
+      {
+        "triangles": [
+          1683,
+          2236
+        ],
+        "first_centroid_mm": [
+          60.0117,
+          121.9583,
+          -66.8118
+        ],
+        "second_centroid_mm": [
+          60.0126,
+          121.9614,
+          -66.813
+        ],
+        "pair_bbox_min_mm": [
+          59.9814,
+          121.177,
+          -67.1778
+        ],
+        "pair_bbox_max_mm": [
+          60.072,
+          123.5114,
+          -66.6276
+        ]
+      }
+    ]
+  },
+  "eye_weld_diagnostics": [
+    {
+      "distance_mm": 1e-06,
+      "removed_vertex_count": 1,
+      "topology": {
+        "vertices": 1273,
+        "edges": 2835,
+        "faces": 1552,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 7264.8617
+      },
+      "self_intersection_count": 6
+    },
+    {
+      "distance_mm": 1e-05,
+      "removed_vertex_count": 3,
+      "topology": {
+        "vertices": 1271,
+        "edges": 2833,
+        "faces": 1552,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 7264.8617
+      },
+      "self_intersection_count": 6
+    },
+    {
+      "distance_mm": 0.0001,
+      "removed_vertex_count": 37,
+      "topology": {
+        "vertices": 1237,
+        "edges": 2766,
+        "faces": 1519,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 7264.8617
+      },
+      "self_intersection_count": 5
+    },
+    {
+      "distance_mm": 0.001,
+      "removed_vertex_count": 123,
+      "topology": {
+        "vertices": 1151,
+        "edges": 2622,
+        "faces": 1461,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_mm3": 7264.8576
+      },
+      "self_intersection_count": 5
+    }
+  ],
   "c046_eye_clearance_mm": 4.6063,
   "c048_eye_clearance_mm": 4.0317,
   "freecad_completed_owner_objects": [
@@ -87,7 +916,7 @@
   ],
   "generated_files": {
     "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/CAT_HEAD_RIGHT_EYE_FLANGE_OWNER_INTEGRATION_REVIEW_V16.blend",
-    "blend_sha256": "de3145abee8254ca31dd349be83ec3507a404307aafb8686b79a36ea419de22e",
+    "blend_sha256": "bb3cb9e4deab7a076c7e834dbae1b359b308c2fd2e4c59145b687ab36d4f05fa",
     "eye_owner_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/objects/right_eye_bucket_with_both_eye_flange_roots_v16.obj",
     "eye_owner_obj_sha256": "0df7a2f2bdfa3a75edbbcc096aa75b78ddb47797baeead742dfb0231d3f71472",
     "eye_owner_freecad_transfer_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/objects/right_eye_bucket_with_both_eye_flange_roots_freecad_transfer_v16.obj",
