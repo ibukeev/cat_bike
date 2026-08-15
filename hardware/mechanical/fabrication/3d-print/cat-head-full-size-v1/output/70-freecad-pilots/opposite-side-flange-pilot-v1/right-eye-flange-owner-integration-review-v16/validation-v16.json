@@ -1,5 +1,5 @@
 {
-  "status": "PASS_BLENDER_RIGHT_OWNER_INTEGRATION_PROOF",
+  "status": "HOLD_RIGHT_EYE_OWNER_SELF_INTERSECTIONS",
   "scope": "right side only; complete V3 upper head, repaired lower component001, unchanged lower components002-060, and both eye roots",
   "complete_upper_head_component_count": 42,
   "lower_face_component_count": 60,
@@ -30,13 +30,14 @@
     "volume_mm3": 7264.8617
   },
   "eye_integrated_connected_components": 1,
+  "eye_integrated_nonadjacent_self_intersections": 6,
   "c046_eye_clearance_mm": 4.6063,
   "c048_eye_clearance_mm": 4.0317,
   "freecad_completed_owner_objects": [
     "PROPOSED__RIGHT_UPPER_HEAD_WITH_OUTER_HEAD_FLANGE__V16",
     "PROPOSED__RIGHT_LOWER_FACE_COMPONENT001_WITH_SECOND_HEAD_C046_C048__V16"
   ],
-  "freecad_eye_boolean_status": "Blender exact-union proof passed; FreeCAD solid import and OCCT validation pending after GUI restart",
+  "freecad_eye_boolean_status": "HOLD: FreeCAD imported the triangulated transfer as a closed solid, but OCCT validation found two self-intersecting wires and two unorientable-shape errors; diagnostic auto-repair was rejected because it removed 102 facets and opened the mesh",
   "rear_cassette_c006_aluminum_changed": false,
   "mirror_performed": false,
   "no_stl_or_gcode_exported": true,
@@ -72,7 +73,7 @@
       "PROPOSED__RIGHT_UPPER_HEAD_WITH_OUTER_HEAD_FLANGE__V16",
       "PROPOSED__RIGHT_LOWER_FACE_COMPONENT001_WITH_SECOND_HEAD_C046_C048__V16"
     ],
-    "freecad_eye_boolean_status": "Blender exact-union proof passed; FreeCAD solid import and OCCT validation pending after GUI restart",
+    "freecad_eye_boolean_status": "HOLD: FreeCAD imported the triangulated transfer as a closed solid, but OCCT validation found two self-intersecting wires and two unorientable-shape errors; diagnostic auto-repair was rejected because it removed 102 facets and opened the mesh",
     "preserve_original_mating_leaf_geometry": true,
     "preserve_rear_cassette_c006_and_aluminum_v05_m2": true
   },
@@ -86,9 +87,11 @@
   ],
   "generated_files": {
     "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/CAT_HEAD_RIGHT_EYE_FLANGE_OWNER_INTEGRATION_REVIEW_V16.blend",
-    "blend_sha256": "0a48c4310372a4fdd371bf78d8da029375d14b8a267efc018bd3ba65117a8ab0",
+    "blend_sha256": "de3145abee8254ca31dd349be83ec3507a404307aafb8686b79a36ea419de22e",
     "eye_owner_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/objects/right_eye_bucket_with_both_eye_flange_roots_v16.obj",
     "eye_owner_obj_sha256": "0df7a2f2bdfa3a75edbbcc096aa75b78ddb47797baeead742dfb0231d3f71472",
+    "eye_owner_freecad_transfer_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/objects/right_eye_bucket_with_both_eye_flange_roots_freecad_transfer_v16.obj",
+    "eye_owner_freecad_transfer_obj_sha256": "4df70cc1bf0cb08e57529823c1cff09e5f17b231ad6b7a27e18beb1d6f8fe781",
     "lower_context_obj": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/objects/right_lower_face_components_002_060_context_v16.obj",
     "lower_context_obj_sha256": "3de96977cdba33108cb0ccab6df84cdd4dffde144ea55a3140daa46a5799d8bb",
     "renders": [

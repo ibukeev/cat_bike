@@ -47,7 +47,7 @@
       "PROPOSED__RIGHT_UPPER_HEAD_WITH_OUTER_HEAD_FLANGE__V16",
       "PROPOSED__RIGHT_LOWER_FACE_COMPONENT001_WITH_SECOND_HEAD_C046_C048__V16"
     ],
-    "freecad_eye_boolean_status": "Blender exact-union proof passed; FreeCAD solid import and OCCT validation pending after GUI restart",
+    "freecad_eye_boolean_status": "HOLD: FreeCAD imported the triangulated transfer as a closed solid, but OCCT validation found two self-intersecting wires and two unorientable-shape errors; diagnostic auto-repair was rejected because it removed 102 facets and opened the mesh",
     "preserve_original_mating_leaf_geometry": true,
     "preserve_rear_cassette_c006_and_aluminum_v05_m2": true
   },

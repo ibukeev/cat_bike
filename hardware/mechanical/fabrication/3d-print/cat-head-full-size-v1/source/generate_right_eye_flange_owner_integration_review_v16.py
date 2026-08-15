@@ -9,8 +9,10 @@ import json
 import sys
 from pathlib import Path
 
+import bmesh
 import bpy
 from mathutils import Vector
+from mathutils.bvhtree import BVHTree
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PACKAGE_ROOT = SCRIPT_DIR.parent
@@ -109,13 +111,49 @@ def topology(obj: bpy.types.Object) -> dict[str, float | int]:
     return v14.v10.v9.v3.topology(obj)
 
 
-def export_obj(obj: bpy.types.Object, path: Path) -> str:
+def nonadjacent_self_intersection_count(obj: bpy.types.Object) -> int:
+    """Count overlapping triangles that do not share a mesh vertex."""
+    bm = bmesh.new()
+    bm.from_mesh(obj.data)
+    try:
+        bmesh.ops.triangulate(bm, faces=list(bm.faces))
+        bm.verts.ensure_lookup_table()
+        bm.faces.ensure_lookup_table()
+        bm.verts.index_update()
+        bm.faces.index_update()
+        tree = BVHTree.FromBMesh(bm, epsilon=0.0)
+        pairs: set[tuple[int, int]] = set()
+        for first_index, second_index in tree.overlap(tree):
+            if first_index == second_index:
+                continue
+            pair = tuple(sorted((first_index, second_index)))
+            if pair in pairs:
+                continue
+            first = bm.faces[pair[0]]
+            second = bm.faces[pair[1]]
+            if {vertex.index for vertex in first.verts} & {
+                vertex.index for vertex in second.verts
+            }:
+                continue
+            pairs.add(pair)
+        return len(pairs)
+    finally:
+        bm.free()
+
+
+def export_obj(
+    obj: bpy.types.Object,
+    path: Path,
+    *,
+    triangulated: bool = False,
+) -> str:
     bpy.ops.object.select_all(action="DESELECT")
     obj.select_set(True)
     bpy.context.view_layer.objects.active = obj
     bpy.ops.wm.obj_export(
         filepath=str(path),
         export_selected_objects=True,
+        export_triangulated_mesh=triangulated,
         forward_axis="Y",
         up_axis="Z",
     )
@@ -223,6 +261,7 @@ def main() -> None:
     eye_component_count = len(v14.v10.v9.components(eye_owner))
     if eye_component_count != 1:
         raise RuntimeError(f"V16 eye owner is not one connected component: {eye_component_count}; topology={eye_topology}")
+    eye_self_intersection_count = nonadjacent_self_intersection_count(eye_owner)
 
     c046_clearance = v14.v10.v9.v3.distance(source["c046"], source["eye_bucket"])
     c048_clearance = v14.v10.v9.v3.distance(source["c048"], source["eye_bucket"])
@@ -284,18 +323,34 @@ def main() -> None:
     blend_path = output / "CAT_HEAD_RIGHT_EYE_FLANGE_OWNER_INTEGRATION_REVIEW_V16.blend"
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
     eye_obj = objects_dir / "right_eye_bucket_with_both_eye_flange_roots_v16.obj"
+    eye_freecad_transfer_obj = (
+        objects_dir
+        / "right_eye_bucket_with_both_eye_flange_roots_freecad_transfer_v16.obj"
+    )
     lower_context_obj = objects_dir / "right_lower_face_components_002_060_context_v16.obj"
     generated = {
         "blend": str(blend_path.relative_to(REPO_ROOT)),
         "blend_sha256": sha256(blend_path),
         "eye_owner_obj": str(eye_obj.relative_to(REPO_ROOT)),
         "eye_owner_obj_sha256": export_obj(eye_owner, eye_obj),
+        "eye_owner_freecad_transfer_obj": str(
+            eye_freecad_transfer_obj.relative_to(REPO_ROOT)
+        ),
+        "eye_owner_freecad_transfer_obj_sha256": export_obj(
+            eye_owner,
+            eye_freecad_transfer_obj,
+            triangulated=True,
+        ),
         "lower_context_obj": str(lower_context_obj.relative_to(REPO_ROOT)),
         "lower_context_obj_sha256": export_obj(lower_context, lower_context_obj),
         "renders": renders,
     }
     report = {
-        "status": "PASS_BLENDER_RIGHT_OWNER_INTEGRATION_PROOF",
+        "status": (
+            "PASS_BLENDER_RIGHT_OWNER_INTEGRATION_PROOF"
+            if eye_self_intersection_count == 0
+            else "HOLD_RIGHT_EYE_OWNER_SELF_INTERSECTIONS"
+        ),
         "scope": "right side only; complete V3 upper head, repaired lower component001, unchanged lower components002-060, and both eye roots",
         "complete_upper_head_component_count": int(contract["complete_upper_head_component_count"]),
         "lower_face_component_count": int(contract["lower_face_component_count"]),
@@ -309,6 +364,7 @@ def main() -> None:
         "eye_source_topology": eye_source_topology,
         "eye_integrated_topology": eye_topology,
         "eye_integrated_connected_components": eye_component_count,
+        "eye_integrated_nonadjacent_self_intersections": eye_self_intersection_count,
         "c046_eye_clearance_mm": round(c046_clearance, 4),
         "c048_eye_clearance_mm": round(c048_clearance, 4),
         "freecad_completed_owner_objects": contract["freecad_completed_owner_objects"],

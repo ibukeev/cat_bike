@@ -5,12 +5,15 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current HS-11 V16 right-side owner-integration repair — **Blender proof
-  passed; FreeCAD eye-solid import pending; not a print source**. V16 replaces
+- Current HS-11 V16 right-side owner-integration diagnostic — **HOLD after
+  Blender and FreeCAD self-intersection failure; not a print source**. V16 replaces
   rejected V15 with the complete 42-component V3 upper head, repaired V13
   lower-face component 001, unchanged lower components 002-060, V9 eye, and
   the four accepted flange leaves. The eye plus both eye-side flange roots is
-  one closed manifold component with zero boundary and nonmanifold edges.
+  one closed manifold component, but the new fail-closed gate finds `6`
+  non-adjacent triangle intersections. FreeCAD imports the triangulated transfer
+  as watertight and converts it to one closed `7264.86 mm3` solid, but OCCT
+  rejects two self-intersecting wires and two unorientable regions.
   Frozen/source gaps are `0.3000 mm`; a controlled `0.0100 mm` inward
   Boolean epsilon yields proposed integrated gaps of `0.2900 mm`. C046/C048
   eye clearances remain `4.6063/4.0317 mm`. Open:
