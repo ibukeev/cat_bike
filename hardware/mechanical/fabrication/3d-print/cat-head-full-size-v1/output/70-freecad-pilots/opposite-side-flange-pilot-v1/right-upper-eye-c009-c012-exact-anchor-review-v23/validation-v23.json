@@ -1,0 +1,156 @@
+{
+  "authorized_geometry_change": false,
+  "exact_eye_object": "PROPOSED__RIGHT_EYE_BUCKET_WITH_BOTH_EXACT_FLANGE_ROOTS_V17_ref_ref_ref_ref",
+  "next_review": [
+    "C009: inspect Face17 against Face13; trim remains held regardless of face approval.",
+    "Upper C012: inspect Face4 against fixed root Face18; approve or reject Face4.",
+    "No trim, mirror, production union, STL, G-code, or print release is authorized."
+  ],
+  "numeric_contract": {
+    "minimum_eye_clearance_mm": 4.0,
+    "preserve_aluminum_v05_m2": true,
+    "preserve_c006": true,
+    "preserve_ears": true,
+    "preserve_exact_eye": true,
+    "preserve_lower_and_rear_ownership": true,
+    "preserve_visible_exterior": true
+  },
+  "review_file": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c009-c012-exact-anchor-review-v23/CAT_HEAD_RIGHT_UPPER_EYE_C009_C012_EXACT_ANCHOR_REVIEW_V23.FCStd",
+  "source_review": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-residual-collision-localization-review-v21/CAT_HEAD_RIGHT_UPPER_EYE_RESIDUAL_COLLISION_LOCALIZATION_REVIEW_V21.FCStd",
+  "status": "REVIEW_ONLY__NO_GEOMETRY_CHANGE",
+  "targets": {
+    "C009": {
+      "decision": "HOLD__STRUCTURAL_ADEQUACY_UNRESOLVED__NO_TRIM_AUTHORIZED",
+      "diagnostic_bounds": {
+        "maximum_mm": [
+          100.749527412,
+          96.884518513,
+          177.698459583
+        ],
+        "minimum_mm": [
+          94.640865108,
+          89.728801144,
+          172.293112296
+        ]
+      },
+      "diagnostic_object": "DIAGNOSTIC__EYE_INTERSECTION__C009__V21",
+      "eye_cap": {
+        "area_mm2": 11.600007903,
+        "bounds": {
+          "maximum_mm": [
+            94.872314453,
+            94.991752625,
+            183.831771851
+          ],
+          "minimum_mm": [
+            92.08946991,
+            88.489944458,
+            179.927444458
+          ]
+        },
+        "centroid_mm": [
+          93.738182068,
+          91.736567179,
+          181.775263468
+        ],
+        "object": "REVIEW_ONLY__C009__EYE_CAP__FACE17__V23",
+        "role": "EYE_CAP",
+        "source_face": "Face17"
+      },
+      "minimum_travel_mm": 13.98,
+      "resulting_c001_engagement_mm3": 3.093939,
+      "resulting_clearance_mm": 4.000005,
+      "resulting_volume_mm3": 7.189814,
+      "root_cap": {
+        "area_mm2": 11.600004338,
+        "bounds": {
+          "maximum_mm": [
+            105.253425598,
+            97.69103241,
+            170.909011841
+          ],
+          "minimum_mm": [
+            99.875930786,
+            92.340187073,
+            169.481185913
+          ]
+        },
+        "centroid_mm": [
+          103.196065267,
+          95.34081014,
+          169.981760661
+        ],
+        "object": "REVIEW_ONLY__C009__ROOT_CAP__FACE13__V23",
+        "role": "ROOT_CAP",
+        "source_face": "Face13"
+      },
+      "source_object": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C009_SOLID_V3_ref_ref_ref_ref"
+    },
+    "UPPER_C012": {
+      "decision": "CANDIDATE_ONLY__USER_BREP_FACE_APPROVAL_REQUIRED",
+      "diagnostic_bounds": {
+        "maximum_mm": [
+          98.996592924,
+          96.403201528,
+          174.256031054
+        ],
+        "minimum_mm": [
+          98.287506104,
+          95.458731846,
+          173.64819478
+        ]
+      },
+      "diagnostic_object": "DIAGNOSTIC__EYE_INTERSECTION__UPPER_C012__V21",
+      "eye_cap": {
+        "area_mm2": 5.204259074,
+        "bounds": {
+          "maximum_mm": [
+            101.772926331,
+            96.268127441,
+            174.955047607
+          ],
+          "minimum_mm": [
+            98.287506104,
+            92.564323425,
+            174.026351929
+          ]
+        },
+        "centroid_mm": [
+          100.506726583,
+          94.666280111,
+          174.352966309
+        ],
+        "object": "REVIEW_ONLY__UPPER_C012__EYE_CAP__FACE4__V23",
+        "role": "EYE_CAP",
+        "source_face": "Face4"
+      },
+      "minimum_travel_mm": 5.21,
+      "resulting_clearance_mm": 4.00001,
+      "resulting_volume_mm3": 606.537827,
+      "root_cap": {
+        "area_mm2": 6.507790599,
+        "bounds": {
+          "maximum_mm": [
+            120.813247681,
+            112.727966309,
+            122.808547974
+          ],
+          "minimum_mm": [
+            116.662017822,
+            108.839294434,
+            121.709663391
+          ]
+        },
+        "centroid_mm": [
+          119.155954997,
+          110.994341532,
+          122.093856812
+        ],
+        "object": "REVIEW_ONLY__UPPER_C012__ROOT_CAP__FACE18__V23",
+        "role": "ROOT_CAP",
+        "source_face": "Face18"
+      },
+      "source_object": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C012_SOLID_V3_ref_ref_ref_ref"
+    }
+  }
+}

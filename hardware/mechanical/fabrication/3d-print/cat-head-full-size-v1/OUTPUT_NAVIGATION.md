@@ -5,6 +5,13 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current C009/upper-C012 exact-anchor V23 — **review only; no geometry
+  change; not a print source**. Exact BREP identities are C009 eye cap
+  `Face17` / root `Face13`, and upper-C012 eye cap `Face4` / root `Face18`.
+  C009 remains structurally held; upper-C012 `Face4` awaits user approval.
+  Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c009-c012-exact-anchor-review-v23/CAT_HEAD_RIGHT_UPPER_EYE_C009_C012_EXACT_ANCHOR_REVIEW_V23.FCStd`.
+- V23 validation and checkpoint: `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c009-c012-exact-anchor-review-v23/validation-v23.json` and `RIGHT_UPPER_EYE_C009_C012_EXACT_ANCHOR_REVIEW_V23_CHECKPOINT_2026-08-15.md`.
 - Current C001 exact-anchor V22 — **review only; no geometry change; not a
   print source**. The corrected exact candidates are top `Face382` and side
   `Face324`, `Face536`, and `Face554`. The previous `Face364/Face385` guesses
