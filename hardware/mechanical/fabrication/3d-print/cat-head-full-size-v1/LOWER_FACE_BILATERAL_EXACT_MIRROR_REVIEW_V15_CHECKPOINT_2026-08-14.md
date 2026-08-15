@@ -2,7 +2,7 @@
 
 ## Status
 
-V15 is ready for the user's bilateral visual review. It mirrors only the seven approved V14 lower-face-owned roles across `X = 0`, keeps the approved V14 right side frozen, and reuses the approved HS-08 left upper-head owner and HS-10 V9 left eye. Digital bilateral gates pass. HS-11 remains open until the user approves the full bilateral review. No production Boolean, STL, G-code, slicing, or print release was performed.
+**REJECTED 2026-08-14.** Although the isolated bilateral numerical checks passed, the user found that V15 reused an incomplete legacy `right_upper_head` object, showed empty sectors in the upper shell, and left C046/C048/flange context appearing disconnected rather than integrated into its real owners. V15 must not be used as a source, mirror baseline, or print input. It is retained only as traceable rejected evidence. V16 supersedes it with a right-side owner-integration repair built from the complete V3 upper-head component set.
 
 ## Review/output files
 
@@ -59,7 +59,7 @@ blender --background --python source/generate_lower_face_bilateral_exact_mirror_
 
 The interactive FCStd is assembled through the FreeCAD MCP by importing the 18 generated OBJ review objects, fitting the axonometric view, and saving the path listed above.
 
-## Next physical/visual review
+## Historical review instructions
 
 Open `CAT_HEAD_LOWER_FACE_BILATERAL_EXACT_MIRROR_REVIEW_V15.FCStd` and check only:
 
@@ -68,4 +68,4 @@ Open `CAT_HEAD_LOWER_FACE_BILATERAL_EXACT_MIRROR_REVIEW_V15.FCStd` and check onl
 3. Both eye buckets retain clearance from C046/C048 and nearby reinforcements.
 4. The left lower face follows the approved right V14 geometry as an exact bilateral counterpart without changing the approved asymmetric left upper head.
 
-If visually approved, close HS-11 and move to HS-12 central/front/side panel connections. Do not print structural ASA from V15.
+These instructions are historical only. V15 cannot close HS-11. Do not print structural ASA from V15.

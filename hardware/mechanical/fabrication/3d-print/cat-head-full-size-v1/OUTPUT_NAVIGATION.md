@@ -5,6 +5,27 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current HS-11 V16 right-side owner-integration repair — **Blender proof
+  passed; FreeCAD eye-solid import pending; not a print source**. V16 replaces
+  rejected V15 with the complete 42-component V3 upper head, repaired V13
+  lower-face component 001, unchanged lower components 002-060, V9 eye, and
+  the four accepted flange leaves. The eye plus both eye-side flange roots is
+  one closed manifold component with zero boundary and nonmanifold edges.
+  Frozen/source gaps are `0.3000 mm`; a controlled `0.0100 mm` inward
+  Boolean epsilon yields proposed integrated gaps of `0.2900 mm`. C046/C048
+  eye clearances remain `4.6063/4.0317 mm`. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/CAT_HEAD_RIGHT_EYE_FLANGE_OWNER_INTEGRATION_REVIEW_V16.blend`.
+- V16 validation, objects, renders, contract, generator, and checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/validation-v16.json`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/objects/`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/review/`,
+  `config/right-eye-flange-owner-integration-review-v16.json`,
+  `source/generate_right_eye_flange_owner_integration_review_v16.py`, and
+  `RIGHT_EYE_FLANGE_OWNER_INTEGRATION_REVIEW_V16_CHECKPOINT_2026-08-14.md`.
+- V15 is rejected because the displayed upper head was incomplete and the
+  flange/reinforcement context was not integrated into the real owners. Keep
+  it only as historical evidence; do not mirror or print from V15.
+
 - Approved print-orientation reference: open
   `output/50-slicer-projects/right-upper-head-c001-ab-asa-tilt-review-v2/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_TILT_REVIEW_V2.3mf`
   in PrusaSlicer. This isolated derivative applies `-20 deg` world-X tilt and
@@ -537,14 +558,13 @@ remain held.
 
 The C001+C003 copied complete-left-owner integration was visually approved on
 2026-08-10 with `LGTM - they look similar`; HS-08 is closed. The current active
-review is HS-11 V15 bilateral exact-mirror validation:
-`output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15/CAT_HEAD_LOWER_FACE_BILATERAL_EXACT_MIRROR_REVIEW_V15.FCStd`.
-V15 freezes the user-approved V14 right side, mirrors only the seven
-lower-face-owned roles exactly across `X = 0`, and reuses the approved HS-08
-left upper head and HS-10 V9 left eye. Blender bilateral validation passes;
-both flange gaps remain `0.3000 mm`, C046/C048 clearances remain
-`4.6063/4.0317 mm`, and indexed mirror error is `0.0 mm`. Visual approval is
-still required before HS-11 closes. Export and print release have not occurred.
+review is HS-11 V16 right-side owner integration. V15 is rejected because its
+legacy upper-head context was incomplete and displayed empty/floating sectors.
+V16 reconstructs the right context from complete and hash-locked owners. Its
+Blender eye-owner proof passes as one closed manifold component; FreeCAD
+already validated the upper- and lower-head owner fusions. Final FreeCAD import
+and OCCT validation of the integrated eye OBJ remain pending after the GUI
+Boolean crash. No left mirror, export, or print release has occurred.
 
 The requested reinforcement additions were reviewed as “much better” on
 2026-08-05. That acceptance applies only to the reinforcement direction; it is
