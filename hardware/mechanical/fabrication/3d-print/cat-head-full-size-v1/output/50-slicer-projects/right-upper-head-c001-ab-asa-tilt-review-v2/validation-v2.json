@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "status": "HOLD_VISUAL_REVIEW",
-  "reason": "The first-layer object/support/brim envelope passes the 10 mm MK4 edge-margin gate, but the 20 degree tilt requires user visual approval before G-code release.",
+  "status": "PASS_ORIENTATION__HOLD_FULL_SHELL_RELEASE",
+  "reason": "The first-layer object/support/brim envelope passes the 10 mm MK4 edge-margin gate and the user visually approved the orientation and support layout on 2026-08-14. Full-shell G-code release remains held by unresolved HS-11 through HS-20 integration gates.",
   "source_project_sha256": "423584124419c803feff141521f7663c26b722ba686aa20acc7e15402f7343b1",
   "review_project_sha256": "6d25a11556a28ee9152acde62cd05e2ed7d4236d383b5e2cda4a038ef79d7174",
   "geometry_preservation": {
@@ -75,9 +75,9 @@
     "cad_geometry_unchanged": "PASS",
     "asa_profile_support_and_brim_preserved": "PASS",
     "minimum_10mm_combined_xy_margin": "PASS",
-    "under_ear_bed_facing_visual_review": "PENDING",
-    "support_layout_visual_review": "PENDING",
-    "overall": "HOLD_VISUAL_REVIEW"
+    "under_ear_bed_facing_visual_review": "PASS_2026-08-14",
+    "support_layout_visual_review": "PASS_2026-08-14",
+    "overall": "PASS_ORIENTATION__HOLD_FULL_SHELL_RELEASE"
   },
-  "next_action": "Open the review 3MF in PrusaSlicer and confirm that the under-ear opening remains the intended bed-facing region and that the support layout is acceptable. Do not print the local G-code until that visual review is approved."
+  "next_action": "Preserve this exact orientation through the final production-shell export. Do not print the local G-code until HS-11 through HS-20 are closed and the final production body is verified against this approved slicer setup."
 }

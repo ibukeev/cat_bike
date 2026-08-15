@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "VISUAL_REVIEW_PENDING",
+  "status": "ORIENTATION_VISUALLY_APPROVED",
   "source_project": "output/50-slicer-projects/right-upper-head-c001-ab-asa-diagnostic-v1/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_DIAGNOSTIC_V1.3mf",
   "source_project_sha256": "423584124419c803feff141521f7663c26b722ba686aa20acc7e15402f7343b1",
   "output_project": "output/50-slicer-projects/right-upper-head-c001-ab-asa-tilt-review-v2/CAT_HEAD_RIGHT_UPPER_HEAD_C001_AB_ASA_TILT_REVIEW_V2.3mf",
@@ -49,8 +49,8 @@
   "release_gates": {
     "minimum_xy_margin_after_brim_and_support_mm": 10.0,
     "numeric_xy_margin": "PASS",
-    "visual_orientation_review": "PENDING",
+    "visual_orientation_review": "PASS_2026-08-14",
     "gcode_is_release_approved": false,
-    "overall": "HOLD_VISUAL_REVIEW"
+    "overall": "PASS_ORIENTATION__HOLD_FULL_SHELL_RELEASE"
   }
 }

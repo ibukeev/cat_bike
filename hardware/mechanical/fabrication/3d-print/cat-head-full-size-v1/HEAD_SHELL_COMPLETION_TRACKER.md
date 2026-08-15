@@ -7,7 +7,7 @@ the [physical-feedback closure matrix](FEEDBACK_CLOSURE_MATRIX_2026-08-08.md).
 
 **Current release state: HOLD — no structural ASA shell is print-released.**
 
-**Current position:** 8 of 20 gates complete. This is a gate count, not a time
+**Current position:** 9 of 20 gates complete. This is a gate count, not a time
 estimate. An accepted isolated review is crossed off only when that gate's
 stated exit condition is satisfied; it does not imply that the geometry is
 already integrated or printable.
@@ -22,13 +22,13 @@ seam/slot face pairs. FreeCAD fusion and both Blender self-union solvers were
 rejected by the locked topology gates, so a bounded repartition of only those
 mapped faces is next. Production-owner integration, bilateral mirror/validation,
 and print release remain held.
-`HS-04` now has an exact displayed V2 orientation visually approved by the user
-on 2026-08-14. The user explicitly confirmed that the under-ear opening is not
-bed-facing despite the historical artifact name. The placement measures
-`203.498 x 163.628 x 155.848 mm`, retains `18.251/18.186 mm` XY reserve per
-side. An editable two-object A/B coupon 3MF now exists. Both exact tabs pass
-manifold checks, but their initial orientation has zero planar bed contact. The
-user will set and save the intended orientation in PrusaSlicer before slicing.
+`HS-04` is closed by the complete right C001 A/B shell orientation rather than
+a separate coupon, per the user's explicit direction not to print coupons apart
+from the shell. The V2 ASA project preserves scale and geometry, uses a `-20
+deg` world-X tilt plus `1.958 mm` Y recenter, and passes the real combined
+object/support/8 mm brim margin gate at
+`20.7661/23.4099/11.538/11.538 mm`. The user visually approved the orientation,
+support layout, and brim on 2026-08-14. This does not release structural G-code.
 
 ## Progress table
 
@@ -37,7 +37,7 @@ user will set and save the intended orientation in PrusaSlicer before slicing.
 | HS-01 | [x] | ~~Freeze accepted shell and metal baselines~~ | V10 visual reference, exact ears/upper-head sources, lower-face/rear-cassette direction, C006, and `CAT-HEAD-SHELL-ALUMINUM-V0.5-M2` are preserved. | Keep fixture comparisons passing through every later integration. |
 | HS-02 | [x] | ~~Approve repairable right-side topology references~~ | Right translucent panel, upper head, and ear references were individually reviewed and accepted. | Use only these controlled references as integration owners. |
 | HS-03 | [x] | ~~Approve right A/B connector geometry and access~~ | Right-A surface-open V4 and Right-B surface-open V2 visually approved 2026-08-09; 3.4 mm bores, 0.3 mm pair gaps, short inserts, and driver paths digitally pass. | Preserve the exact approved objects and contracts in integration. |
-| HS-04 | [ ] | Produce exact-orientation ASA short-insert coupon | An editable 3MF contains exact Right-A V4 and Right-B V2 as separate manifold objects. The starting V2 orientation has 0.0/0.0 mm2 planar bed contact and is not print-approved. No scaling, supports, brim, or G-code are baked in. | User rotates both objects and saves the preferred 3MF; then validate bed contact, layer continuity, supports, brim/adhesion, collisions, and actual printer clearance before slicing. |
+| HS-04 | [x] | ~~Approve exact-orientation ASA right C001 A/B shell setup~~ | The user rejected a separate coupon print. The complete one-body right C001 A/B shell V2 preserves geometry and scale, passes real sliced 10 mm margins with ASA/snug supports/8 mm brim, and was visually approved 2026-08-14. | Preserve the exact transform and slicer setup through the final production-owner export; structural G-code remains held by HS-11 through HS-20. |
 | HS-05 | [ ] | Physically qualify the M3 short-insert joint | No heat-set, torque, pull-out, vibration, or repeated-assembly result yet. | Install the real insert in ASA; verify seating, M3 x 8 engagement, torque, pull-out, and no wall damage. |
 | HS-06 | [x] | ~~Integrate right A/B tabs into copied real owners~~ | `PROPOSED__RIGHT_TRANSLUCENT_PANEL__A_B_INTEGRATED_V1` and `PROPOSED__RIGHT_UPPER_HEAD_C001__A_B_INTEGRATED_V1` are valid closed one-solid unions; no tab is floating. | Preserve these exact integration results through HS-07 review. |
 | HS-07 | [x] | ~~Validate and visually approve integrated right A/B~~ | Topology, roots, gaps, insertion, drivers, exterior context, and ear collision digitally passed; user visually approved `CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd` on 2026-08-09. | Preserve the exact approved right integrated owners through bilateral validation. |
@@ -97,6 +97,7 @@ condition, saved evidence, and affected checkpoint must all be updated.
 - [Current right lower-face topology-repair V12 checkpoint](RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V12_CHECKPOINT_2026-08-14.md)
 - [Right A/B short-insert coupon V1 checkpoint](RIGHT_AB_SHORT_INSERT_COUPON_V1_CHECKPOINT_2026-08-14.md)
 - [Current right A/B under-ear-opening print-orientation V2 checkpoint](RIGHT_AB_UNDER_EAR_OPENING_PRINT_ORIENTATION_REVIEW_V2_CHECKPOINT_2026-08-14.md)
+- [Approved complete right C001 A/B ASA tilt V2 checkpoint](RIGHT_UPPER_HEAD_C001_AB_ASA_TILT_REVIEW_V2_CHECKPOINT_2026-08-14.md)
 - [Rejected right A/B print-orientation V1 checkpoint](RIGHT_AB_PRINT_ORIENTATION_REVIEW_V1_CHECKPOINT_2026-08-14.md)
 - [Rejected right-eye second-pair neck-removal V9 checkpoint](RIGHT_EYE_SECOND_PAIR_NECK_REMOVAL_REVIEW_V9_CHECKPOINT_2026-08-14.md)
 - [Superseded right-eye head-flange exterior-clip V6 checkpoint](RIGHT_EYE_HEAD_FLANGE_EXTERIOR_CLIP_REVIEW_V6_CHECKPOINT_2026-08-13.md)

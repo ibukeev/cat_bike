@@ -2,9 +2,11 @@
 
 ## Status
 
-`HOLD_VISUAL_REVIEW` — the isolated `-20 deg` world-X tilt candidate passes the
-numeric MK4 object/support/brim margin gate. It is not a print release until the
-user visually confirms the bed-facing under-ear region and support layout.
+`PASS_ORIENTATION__HOLD_FULL_SHELL_RELEASE` — the isolated `-20 deg` world-X
+tilt candidate passes the numeric MK4 object/support/brim margin gate. The user
+visually approved the orientation and support layout on 2026-08-14. This closes
+the orientation gate only; the local G-code is not a full-shell print release
+while HS-11 through HS-20 remain unresolved.
 
 No CAD geometry, scale, A/B feature, or aluminum interface changed.
 
@@ -61,7 +63,15 @@ The final generated `M555` footprint is
 - ASA: `53909.71 mm`, `129.67 cm3`, `138.74 g`.
 - Local G-code SHA-256:
   `e7e3e0f9b3014f33866168bcdc2e3730723770ab3ad0d3b0708e1b1e18331062`.
-- Local G-code is not committed and must not be printed before visual approval.
+- Local G-code is not committed and must not be printed before the HS-20 structural release.
+
+## Approval record
+
+- User response: `LGTM. go next`.
+- Approval date: `2026-08-14`.
+- Approved scope: exact V2 orientation, support layout, and brim placement.
+- Not approved by this response: unresolved owner integration, bilateral
+  production topology, complete-head validation, or structural ASA release.
 
 ## Exact regeneration
 
@@ -82,8 +92,8 @@ prusa-slicer --dont-arrange --export-gcode \
 
 ## Next physical review
 
-Open the V2 3MF in PrusaSlicer. Confirm from several angles that the under-ear
-opening remains the intended bed-facing region. Switch to Preview after slicing
-and inspect the first layer, all support contact regions, and the complete brim.
-Approve only if the orientation is physically acceptable; numeric bed margins
-already pass. No CAD edit or metal-interface review is required for this step.
+Preserve this exact V2 transform and slicer setup through the final production
+owner export. Resume `HS-11` at the bounded V12 right lower-face topology
+repartition. Do not print the local G-code until the final production body has
+passed HS-11 through HS-20. No CAD or aluminum-interface change was authorized
+by this orientation approval.
