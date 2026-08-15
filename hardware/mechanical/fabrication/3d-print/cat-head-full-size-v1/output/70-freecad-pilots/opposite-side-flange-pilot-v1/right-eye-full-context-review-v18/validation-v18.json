@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "review": "CAT_HEAD_RIGHT_EYE_FULL_CONTEXT_REVIEW_V18",
+  "date": "2026-08-15",
+  "status": "AWAITING_USER_VISUAL_APPROVAL_NOT_PRINT_SOURCE",
+  "scope": "Right-side zero-transform assembly review only; no Boolean integration, mirror, STL, G-code, aluminum edit, or print release",
+  "freecad_file_sha256": "8f5b3d65cdd635202d9986703e214e12d39d05c62eca4b96df9247866ba032c6",
+  "exact_objects": {
+    "upper_head_v3": {"valid": true, "self_intersections": 0, "faces": 2757, "solids": 42},
+    "lower_face_component_001_v13": {"valid": true, "self_intersections": 0, "faces": 1027, "solids": 1},
+    "right_eye_owner_v17": {"valid": true, "self_intersections": 0, "faces": 1178, "solids": 1},
+    "outer_head_flange_v5": {"valid": true, "self_intersections": 0, "faces": 145, "solids": 1},
+    "lower_head_flange_v5": {"valid": true, "self_intersections": 0, "faces": 126, "solids": 1}
+  },
+  "measured_clearances_mm": {
+    "eye_to_outer_head_flange": 0.3,
+    "eye_to_lower_head_flange": 0.3,
+    "eye_to_c046": 4.6063,
+    "eye_to_c048": 4.0317
+  },
+  "visual_context_only": {
+    "object": "FROZEN__RIGHT_LOWER_FACE__COMPONENTS_002_060",
+    "role": "unchanged placement and regression context; not a production owner",
+    "mesh_validation": {
+      "watertight": false,
+      "non_manifold_edges": true,
+      "self_intersections": true,
+      "auto_repair_attempted": false
+    }
+  },
+  "v16_diagnostic": {
+    "status": "REJECTED_NOT_INCLUDED",
+    "independent_read_only_audit_exact_triangle_crossing_pairs": 30,
+    "note": "The V16 aggregate count of six was BVH-candidate based, not an exact crossing count. V18 uses the independently validated exact V17 eye owner instead."
+  },
+  "gates": {
+    "right_side_only": true,
+    "zero_transform_assembly": true,
+    "exact_eye_and_head_flange_gaps_pass": true,
+    "c046_c048_clearance_at_least_4mm": true,
+    "aluminum_v05_m2_unchanged": true,
+    "user_visual_approval": false,
+    "mirror_authorized": false,
+    "print_release": false
+  }
+}

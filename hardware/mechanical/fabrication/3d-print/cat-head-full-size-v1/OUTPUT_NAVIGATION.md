@@ -5,8 +5,21 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current HS-11 V18 complete right-side context — **exact displayed owners pass;
+  awaiting user visual approval; not a print source**. V18 uses zero-transform
+  references to the complete V3 upper head, approved V13 repaired lower owner,
+  exact V17 eye, both exact V5 head flanges, unchanged lower-face context, and
+  frozen C046/C048 evidence. Both flange gaps are `0.3000 mm`; eye-to-C046/C048
+  clearances are `4.6063/4.0317 mm`. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-full-context-review-v18/CAT_HEAD_RIGHT_EYE_FULL_CONTEXT_REVIEW_V18.FCStd`.
+- V18 validation and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-full-context-review-v18/validation-v18.json` and
+  `RIGHT_EYE_FULL_CONTEXT_REVIEW_V18_CHECKPOINT_2026-08-15.md`.
+- The unchanged lower-face components 002–060 are visual context only in V18;
+  their aggregate mesh remains non-watertight/non-manifold and is not a
+  production or print owner.
 - Current HS-11 V17 exact right-eye owner — **exact-solid pass; awaiting full
-  right-side context review; not a print source**. V17 uses the unchanged V9
+  right-side context review; superseded by V18 for visual review; not a print source**. V17 uses the unchanged V9
   production eye STEP and exact V5 eye-side flange leaves. The completed owner
   is one valid closed `7269.56 mm3` solid with zero self-intersections; its STEP
   re-import preserves one solid, matching topology, and `7269.55 mm3` volume.
@@ -16,9 +29,11 @@ current review is always easy to find.
 - V17 exact STEP and checkpoint:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/right_eye_bucket_with_both_exact_flange_roots_v17.step` and
   `RIGHT_EYE_EXACT_OWNER_INTEGRATION_REVIEW_V17_CHECKPOINT_2026-08-14.md`.
-- V16 is retained only as a rejected triangulated diagnostic. Its six
-  non-adjacent triangle intersections, two OCCT self-intersecting wires, and two
-  unorientable regions do not occur in the authoritative exact V9 STEP.
+- V16 is retained only as a rejected triangulated diagnostic. A later
+  read-only exact triangle audit found 30 non-zero crossing pairs rather than
+  the validator's BVH-candidate count of six; OCCT also reports two
+  self-intersecting wires and two unorientable regions. These defects do not
+  occur in the authoritative exact V17 solid.
 - V16 validation, objects, renders, contract, generator, and checkpoint:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/validation-v16.json`,
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/objects/`,
