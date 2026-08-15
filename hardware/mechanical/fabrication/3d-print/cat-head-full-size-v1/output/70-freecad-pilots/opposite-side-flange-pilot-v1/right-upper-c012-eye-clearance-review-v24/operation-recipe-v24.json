@@ -1,0 +1,23 @@
+{
+  "application": "FreeCAD GUI 1.1.1 through the allowlisted structured FreeCAD MCP tools",
+  "source_review": "right-upper-eye-c009-c012-exact-anchor-review-v23",
+  "steps": [
+    "Insert the frozen V23 exact eye, upper C012 source, and C009 source at zero transform.",
+    "Create a 1000 x 1000 x 1000 mm Part box at the origin.",
+    "Rotate the box 17.46533164697076 degrees about X.",
+    "Rotate the box -18.52292070028468 degrees about Y.",
+    "Move the box to (-503.8414586627542, -455.92019564485656, -216.901322916094) mm.",
+    "Cut the box from FROZEN__UPPER_C012_SOURCE__V23_ref and name the result PROPOSED__UPPER_C012__TRIMMED_5P21MM__V24.",
+    "Insert frozen V3 C001, C008, C014, and C024 owner references at zero transform for engagement checks only.",
+    "Run check_geometry, verify_no_self_intersection, eye interference and clearance, C009 interference and clearance, and owner interference checks.",
+    "Save CAT_HEAD_RIGHT_UPPER_C012_EYE_CLEARANCE_REVIEW_V24.FCStd."
+  ],
+  "forbidden": [
+    "arbitrary Python execution",
+    "headless FreeCAD",
+    "C009 trim",
+    "production owner union",
+    "left mirror",
+    "STL or G-code export"
+  ]
+}

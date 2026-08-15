@@ -1,0 +1,61 @@
+{
+  "review": "right-upper-c012-eye-clearance-review-v24",
+  "date": "2026-08-15",
+  "status": "PROPOSED_ONE_SIDE__AWAITING_VISUAL_APPROVAL__NOT_PRINT_SOURCE",
+  "authorized_change": "Shorten only the V3 right-upper C012 eye-side end by the approved 5.21 mm contract; leave C009 and every frozen neighbor unchanged.",
+  "source": {
+    "review": "right-upper-eye-c009-c012-exact-anchor-review-v23",
+    "object": "FROZEN__UPPER_C012_SOURCE__V23_ref",
+    "moving_anchor": "Face4",
+    "fixed_root_anchor": "Face18"
+  },
+  "numeric_contract": {
+    "shortening_mm": 5.21,
+    "clearance_target_mm": 4.0,
+    "retain_halfspace": "n dot p <= 93.624912",
+    "plane_normal": [
+      -0.317684,
+      -0.284581,
+      0.904484
+    ],
+    "frozen_eye": "FROZEN__EXACT_EYE__V17__V23_ref"
+  },
+  "result": {
+    "object": "PROPOSED__UPPER_C012__TRIMMED_5P21MM__V24",
+    "valid": true,
+    "closed": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 22,
+    "edge_count": 41,
+    "vertex_count": 21,
+    "volume_mm3": 606.54,
+    "eye_intersection": false,
+    "eye_clearance_mm": 4.0,
+    "c009_intersection": false,
+    "c009_clearance_mm": 0.2049
+  },
+  "owner_engagement_mm3": {
+    "C001": 150.5311,
+    "C008": 0.0,
+    "C014": 0.0099,
+    "C024": 2.1533
+  },
+  "owner_engagement_note": "The exact OCC V3 C008 reference is zero-gap contact with no positive volume, both before and after the trim. This differs from the external tessellation audit's reported 41.554887 mm3. C001 provides the primary positive root engagement; C014 and C024 remain positive ties.",
+  "frozen_workstreams": [
+    "C009",
+    "exact V17 eye",
+    "visible exterior",
+    "C006",
+    "ears",
+    "lower-face and rear-cassette ownership",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+  ],
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "gcode": false,
+    "asa_print_release": false
+  }
+}

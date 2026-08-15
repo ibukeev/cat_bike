@@ -5,10 +5,12 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current right-upper C012 eye-clearance V24 — **one-side proposed change; awaiting visual approval; not a print source**. The authorized `5.21 mm` shortening produces one valid closed `606.54 mm3` solid, zero exact-eye intersection, `4.0000 mm` clearance, and `150.5311 mm3` C001 engagement. C009 is unchanged and held. Open: `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c012-eye-clearance-review-v24/CAT_HEAD_RIGHT_UPPER_C012_EYE_CLEARANCE_REVIEW_V24.FCStd`.
+- V24 validation/checkpoint: `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c012-eye-clearance-review-v24/validation-v24.json` and `RIGHT_UPPER_C012_EYE_CLEARANCE_REVIEW_V24_CHECKPOINT_2026-08-15.md`.
 - Current C009/upper-C012 exact-anchor V23 — **review only; no geometry
-  change; not a print source**. Exact BREP identities are C009 eye cap
+  change; superseded by V24 for upper C012; not a print source**. Exact BREP identities are C009 eye cap
   `Face17` / root `Face13`, and upper-C012 eye cap `Face4` / root `Face18`.
-  C009 remains structurally held; upper-C012 `Face4` awaits user approval.
+  C009 remains structurally held; upper-C012 `Face4` was approved and is the source anchor for V24.
   Open:
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c009-c012-exact-anchor-review-v23/CAT_HEAD_RIGHT_UPPER_EYE_C009_C012_EXACT_ANCHOR_REVIEW_V23.FCStd`.
 - V23 validation and checkpoint: `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c009-c012-exact-anchor-review-v23/validation-v23.json` and `RIGHT_UPPER_EYE_C009_C012_EXACT_ANCHOR_REVIEW_V23_CHECKPOINT_2026-08-15.md`.
