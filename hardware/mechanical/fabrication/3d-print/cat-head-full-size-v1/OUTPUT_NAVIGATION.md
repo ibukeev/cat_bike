@@ -5,6 +5,18 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current C001 exact-anchor V22 — **review only; no geometry change; not a
+  print source**. The corrected exact candidates are top `Face382` and side
+  `Face324`, `Face536`, and `Face554`. The previous `Face364/Face385` guesses
+  are explicitly rejected and were never cut. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c001-exact-anchor-review-v22/CAT_HEAD_RIGHT_UPPER_EYE_C001_EXACT_ANCHOR_REVIEW_V22.FCStd`.
+- V22 validation and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c001-exact-anchor-review-v22/validation-v22.json` and
+  `RIGHT_UPPER_EYE_C001_EXACT_ANCHOR_REVIEW_V22_CHECKPOINT_2026-08-15.md`.
+- C009 remains held: the audited `>=13.98 mm` trim reaches the clearance target
+  but removes approximately `96.85%` of the component. Upper C012 has a
+  plausible `>=5.21 mm` shortening contract but still lacks a user-approved
+  FreeCAD BREP face. Neither trim is authorized.
 - Current upper/eye V21 — **review-only exact collision localization; source
   owners unchanged; modification anchors not selected; not a print source**.
   The exact Boolean-common diagnostics are separately toggleable for C001
