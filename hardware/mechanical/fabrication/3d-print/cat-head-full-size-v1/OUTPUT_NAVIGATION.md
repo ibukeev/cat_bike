@@ -7,13 +7,21 @@ current review is always easy to find.
 
 - Start at
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/00-current/README.md`.
+- Current V34 right-upper C009 deletion review — **review-only, one-sided CAD;
+  not a print source**. It starts from the accepted pre-V33 V25 right-upper
+  component manifest, omits only the separate C009 component, and adds no
+  replacement or support geometry. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd`.
+- In V34, check only that C009 is completely absent, its removal leaves no
+  unintended exterior hole/residue/disconnection, and the repaired eye,
+  primary ear, and translucent under-ear A/B panel remain unobstructed. C001's
+  residual eye intersection is a separate held task and is not changed by V34.
+- V34 validation and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/validation-v34.json` and
+  `RIGHT_UPPER_C009_DELETION_REVIEW_V34_CHECKPOINT_2026-08-16.md`.
 - V33 is rejected: moving C009 left it floating in the translucent under-ear
   panel region. It is historical evidence only and must not be used as a print
   source.
-- The next controlled CAD bucket starts from the accepted pre-V33 upper-head
-  baseline and deletes C009 on the right side. It adds no replacement member,
-  does not reposition C009, and does not mirror or production-integrate before
-  full-context review.
 - The pilot root uses a non-moving Nautilus archive view. Seventy-six
   superseded/rejected directories are hidden from the main list and categorized
   under `90-archive/2026-08-16/`; all canonical paths remain unchanged.

@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "CAT-HEAD-RIGHT-UPPER-C009-DELETION-REVIEW-V34",
+  "date": "2026-08-16",
+  "physical_problem": "C009 floats through the translucent under-ear panel region in the rejected V33 position. Remove the separate C009 member entirely instead of repositioning it or adding replacement geometry.",
+  "approval_record": {
+    "user_instruction": "It is floating in the areas of translucent panel under the ear. Let's just delete it - no need to reposition.",
+    "approved_scope": "One-sided review only: omit exact C009 from accepted V25, add nothing, preserve every other right-upper component exactly, and show the result with the repaired eye, lower face, right primary ear, and translucent under-ear panel."
+  },
+  "inputs": {
+    "accepted_context_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/CAT_HEAD_RIGHT_UPPER_APPROVED_C027_C012_CONTEXT_REVIEW_V25.FCStd",
+      "sha256": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775"
+    },
+    "accepted_context_validation_json": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/validation-v25.json",
+      "sha256": "26bcaff8685fa8983dd961a1f3953ca5301afb0e6d83e09bc8739185053e8b6c"
+    },
+    "replacement_eye_step": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/right_eye_v17_full_topology_repaired_review_v4.step",
+      "sha256": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258"
+    },
+    "right_eye_full_context_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-full-context-review-v18/CAT_HEAD_RIGHT_EYE_FULL_CONTEXT_REVIEW_V18.FCStd",
+      "sha256": "8f5b3d65cdd635202d9986703e214e12d39d05c62eca4b96df9247866ba032c6"
+    },
+    "right_primary_ear_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/primary-ear-bilateral-exact-mirror-review-v2/CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd",
+      "sha256": "37ddff37e81a820de3f4bea46c4b476d09217399dd32a24cc8a2aec640a50425"
+    },
+    "right_ab_panel_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-owner-integration-review-v1/CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd",
+      "sha256": "e9974661a5a0a71a12bcb6ab6d0d66ceae354fd8744486ff08ce72e20cf0376c"
+    }
+  },
+  "implementation_dependency": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/audit_right_upper_c001_c009_existing_body_routes.py",
+    "sha256": "46e67be0d4e48b335f76fb18dd37a2e08bbc76835e8a30be718477c9810a81de"
+  },
+  "required_accepted_context_status": "REVIEW_ONLY_COMPLETE_RIGHT_UPPER_CONTEXT__NOT_PRINT_SOURCE",
+  "target": {
+    "component_id": "C009",
+    "operation": "omit_separate_component_from_review_manifest",
+    "replacement_geometry": "none",
+    "translation_mm": [0.0, 0.0, 0.0],
+    "rotation_deg": [0.0, 0.0, 0.0]
+  },
+  "context_objects": {
+    "lower_main": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13_ref",
+    "lower_components_mesh": "FROZEN__RIGHT_LOWER_FACE__COMPONENTS_002_060",
+    "right_primary_ear": "PROPOSED__RIGHT_EAR_PRIMARY_EAR_ROUND_PLUS_SLOT_CHANNELS_INTEGRATED_V3_ref",
+    "right_translucent_ab_panel": "PROPOSED__RIGHT_TRANSLUCENT_PANEL__A_B_INTEGRATED_V1"
+  },
+  "numeric_contract": {
+    "source_component_count": 42,
+    "retained_component_count": 41,
+    "positive_intersection_threshold_mm3": 0.000001,
+    "maximum_copy_volume_delta_mm3": 0.000001,
+    "maximum_copy_bound_delta_mm": 0.000001
+  },
+  "review_display": {
+    "retained_upper": "gray, 62 percent transparent",
+    "c001_owner": "green, 38 percent transparent",
+    "topology_repaired_eye": "cyan, 68 percent transparent",
+    "right_lower_face": "dark gray, 74 percent transparent",
+    "right_primary_ear": "warm gray, 55 percent transparent",
+    "translucent_ab_panel": "amber, 66 percent transparent",
+    "review_questions": [
+      "Is C009 completely absent, with no orange member, remnant, or replacement geometry?",
+      "Does omitting the separate C009 member leave no visible unintended exterior hole or disconnected residue?",
+      "Do the repaired eye, right primary ear, and translucent A/B under-ear panel remain unobstructed in full right-side context?"
+    ]
+  },
+  "allowed_operations": [
+    "copy exact accepted V25 components except C009 into a new review document",
+    "copy hash-pinned repaired eye and frozen full-context reference geometry",
+    "record deterministic source and retained manifests",
+    "write one review-only FCStd and validation JSON"
+  ],
+  "prohibited_operations": [
+    "move, resize, cut, heal, fuse, or overwrite any retained component",
+    "add replacement member, reinforcement, connector, flange, rib, rail, or residue",
+    "subtractive cut into any owner",
+    "mirror",
+    "production union",
+    "STEP or STL export",
+    "slicing or G-code",
+    "ASA print release"
+  ],
+  "release_holds": [
+    "one-sided visual review required",
+    "C001 and other residual eye-clearance work remains separate",
+    "bilateral validation not run",
+    "no production owner union",
+    "no STL, slice, G-code, or ASA release"
+  ],
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34",
+    "fcstd": "CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+    "validation": "validation-v34.json",
+    "checkpoint": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/RIGHT_UPPER_C009_DELETION_REVIEW_V34_CHECKPOINT_2026-08-16.md"
+  }
+}

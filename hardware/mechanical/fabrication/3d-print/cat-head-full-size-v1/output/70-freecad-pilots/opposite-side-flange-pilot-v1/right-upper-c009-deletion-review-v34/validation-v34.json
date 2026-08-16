@@ -1,0 +1,335 @@
+{
+  "checks": {
+    "accepted_v25_validation_passes": true,
+    "all_retained_component_copies_exact": true,
+    "c009_absent_from_review_component_map": true,
+    "full_context_copies_exact": true,
+    "input_hashes_match": true,
+    "no_mirror_union_or_export_performed": true,
+    "no_replacement_or_support_geometry_added": true,
+    "no_subtractive_cut_performed": true,
+    "repaired_eye_valid_closed_one_solid": true,
+    "retained_component_count_is_41": true,
+    "retained_component_volume_sum_matches_source_minus_c009": true,
+    "retained_compound_closed": true,
+    "retained_compound_face_count_is_source_minus_c009": true,
+    "retained_compound_has_41_solids": true,
+    "retained_compound_valid": true,
+    "retained_manifest_is_exactly_v25_minus_c009": true,
+    "source_manifest_is_c001_through_c042": true,
+    "target_is_exact_separate_c009": true
+  },
+  "context_copy_deltas": {
+    "eye": {
+      "bounds_mm": 0.0,
+      "volume_mm3": 0.0
+    },
+    "lower_main": {
+      "bounds_mm": 0.0,
+      "volume_mm3": 0.0
+    },
+    "right_primary_ear": {
+      "bounds_mm": 0.0,
+      "volume_mm3": 0.0
+    },
+    "translucent_ab_panel": {
+      "bounds_mm": 0.0,
+      "volume_mm3": 0.0
+    }
+  },
+  "contract_id": "CAT-HEAD-RIGHT-UPPER-C009-DELETION-REVIEW-V34",
+  "copy_failures": {},
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "generator": "freecad-right-upper-c009-deletion-review-v34",
+  "implementation_dependency_hash": "46e67be0d4e48b335f76fb18dd37a2e08bbc76835e8a30be718477c9810a81de",
+  "input_hashes": {
+    "accepted_context_fcstd": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775",
+    "accepted_context_validation_json": "26bcaff8685fa8983dd961a1f3953ca5301afb0e6d83e09bc8739185053e8b6c",
+    "replacement_eye_step": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258",
+    "right_ab_panel_fcstd": "e9974661a5a0a71a12bcb6ab6d0d66ceae354fd8744486ff08ce72e20cf0376c",
+    "right_eye_full_context_fcstd": "8f5b3d65cdd635202d9986703e214e12d39d05c62eca4b96df9247866ba032c6",
+    "right_primary_ear_fcstd": "37ddff37e81a820de3f4bea46c4b476d09217399dd32a24cc8a2aec640a50425"
+  },
+  "known_hold": "Residual eye intersections from retained members are not modified or approved by V34.",
+  "lower_context_mesh": {
+    "copy": {
+      "bounds": {
+        "maximum_mm": [
+          123.57261657714844,
+          267.48175048828125,
+          165.88949584960938
+        ],
+        "minimum_mm": [
+          -0.3266960084438324,
+          0.0,
+          1.7197530269622803
+        ]
+      },
+      "facet_count": 1455,
+      "point_count": 840
+    },
+    "source": {
+      "bounds": {
+        "maximum_mm": [
+          123.57261657714844,
+          267.48175048828125,
+          165.88949584960938
+        ],
+        "minimum_mm": [
+          -0.3266960084438324,
+          0.0,
+          1.7197530269622803
+        ]
+      },
+      "facet_count": 1455,
+      "point_count": 840
+    }
+  },
+  "operation": {
+    "added_support_geometry_count": 0,
+    "method": "manifest_omission_of_separate_component",
+    "replacement_geometry_count": 0,
+    "source_c009": {
+      "object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C009_SOLID_V3_ref_ref_ref_ref",
+      "object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C009_SOLID_V3_ref_ref_ref_ref",
+      "repaired_eye_intersection_volume_mm3": 27.728296869034583,
+      "shape": {
+        "bounds": {
+          "maximum_mm": [
+            105.25342559814453,
+            97.69103240966797,
+            183.83177185058594
+          ],
+          "minimum_mm": [
+            92.08946990966797,
+            88.48994445800781,
+            169.48118591308594
+          ]
+        },
+        "closed": true,
+        "face_count": 38,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 227.92119760049138
+      }
+    },
+    "subtractive_cut": false,
+    "target_component": "C009"
+  },
+  "outputs": {
+    "fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+    "fcstd_sha256": "2ff90641bf13ecebbd5ab7b5d388dd511b2577b0cc38df73030c7c77b83fad2b",
+    "validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/validation-v34.json"
+  },
+  "presentation_postprocess": {
+    "freecad_gui_version": "1.1.1",
+    "geometry_modified": false,
+    "operation": "show both review groups and save GUI visibility state"
+  },
+  "release_holds": [
+    "one-sided visual review required",
+    "C001 and other residual eye-clearance work remains separate",
+    "bilateral validation not run",
+    "no production owner union",
+    "no STL, slice, G-code, or ASA release"
+  ],
+  "retained_compound": {
+    "bounds": {
+      "maximum_mm": [
+        126.93900299072266,
+        269.3445129394531,
+        268.1520080566406
+      ],
+      "minimum_mm": [
+        -30.0,
+        42.842998504638665,
+        109.75635528564452
+      ]
+    },
+    "closed": true,
+    "face_count": 2712,
+    "solid_count": 41,
+    "valid": true,
+    "volume_mm3": 150217.2168609744
+  },
+  "retained_eye_intersections": {
+    "C001": {
+      "distance_mm": 0.0,
+      "intersection_volume_mm3": 100.59904449678196
+    }
+  },
+  "retained_manifest": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C010",
+    "C011",
+    "C012",
+    "C013",
+    "C014",
+    "C015",
+    "C016",
+    "C017",
+    "C018",
+    "C019",
+    "C020",
+    "C021",
+    "C022",
+    "C023",
+    "C024",
+    "C025",
+    "C026",
+    "C027",
+    "C028",
+    "C029",
+    "C030",
+    "C031",
+    "C032",
+    "C033",
+    "C034",
+    "C035",
+    "C036",
+    "C037",
+    "C038",
+    "C039",
+    "C040",
+    "C041",
+    "C042"
+  ],
+  "review_display": {
+    "c001_owner": "green, 38 percent transparent",
+    "retained_upper": "gray, 62 percent transparent",
+    "review_questions": [
+      "Is C009 completely absent, with no orange member, remnant, or replacement geometry?",
+      "Does omitting the separate C009 member leave no visible unintended exterior hole or disconnected residue?",
+      "Do the repaired eye, right primary ear, and translucent A/B under-ear panel remain unobstructed in full right-side context?"
+    ],
+    "right_lower_face": "dark gray, 74 percent transparent",
+    "right_primary_ear": "warm gray, 55 percent transparent",
+    "topology_repaired_eye": "cyan, 68 percent transparent",
+    "translucent_ab_panel": "amber, 66 percent transparent"
+  },
+  "review_objects": {
+    "added_geometry_count": 0,
+    "c009_shape_object_count": 0,
+    "component_objects": {
+      "C001": "RETAINED_RIGHT_UPPER_C001_V34",
+      "C002": "RETAINED_RIGHT_UPPER_C002_V34",
+      "C003": "RETAINED_RIGHT_UPPER_C003_V34",
+      "C004": "RETAINED_RIGHT_UPPER_C004_V34",
+      "C005": "RETAINED_RIGHT_UPPER_C005_V34",
+      "C006": "RETAINED_RIGHT_UPPER_C006_V34",
+      "C007": "RETAINED_RIGHT_UPPER_C007_V34",
+      "C008": "RETAINED_RIGHT_UPPER_C008_V34",
+      "C010": "RETAINED_RIGHT_UPPER_C010_V34",
+      "C011": "RETAINED_RIGHT_UPPER_C011_V34",
+      "C012": "RETAINED_RIGHT_UPPER_C012_V34",
+      "C013": "RETAINED_RIGHT_UPPER_C013_V34",
+      "C014": "RETAINED_RIGHT_UPPER_C014_V34",
+      "C015": "RETAINED_RIGHT_UPPER_C015_V34",
+      "C016": "RETAINED_RIGHT_UPPER_C016_V34",
+      "C017": "RETAINED_RIGHT_UPPER_C017_V34",
+      "C018": "RETAINED_RIGHT_UPPER_C018_V34",
+      "C019": "RETAINED_RIGHT_UPPER_C019_V34",
+      "C020": "RETAINED_RIGHT_UPPER_C020_V34",
+      "C021": "RETAINED_RIGHT_UPPER_C021_V34",
+      "C022": "RETAINED_RIGHT_UPPER_C022_V34",
+      "C023": "RETAINED_RIGHT_UPPER_C023_V34",
+      "C024": "RETAINED_RIGHT_UPPER_C024_V34",
+      "C025": "RETAINED_RIGHT_UPPER_C025_V34",
+      "C026": "RETAINED_RIGHT_UPPER_C026_V34",
+      "C027": "RETAINED_RIGHT_UPPER_C027_V34",
+      "C028": "RETAINED_RIGHT_UPPER_C028_V34",
+      "C029": "RETAINED_RIGHT_UPPER_C029_V34",
+      "C030": "RETAINED_RIGHT_UPPER_C030_V34",
+      "C031": "RETAINED_RIGHT_UPPER_C031_V34",
+      "C032": "RETAINED_RIGHT_UPPER_C032_V34",
+      "C033": "RETAINED_RIGHT_UPPER_C033_V34",
+      "C034": "RETAINED_RIGHT_UPPER_C034_V34",
+      "C035": "RETAINED_RIGHT_UPPER_C035_V34",
+      "C036": "RETAINED_RIGHT_UPPER_C036_V34",
+      "C037": "RETAINED_RIGHT_UPPER_C037_V34",
+      "C038": "RETAINED_RIGHT_UPPER_C038_V34",
+      "C039": "RETAINED_RIGHT_UPPER_C039_V34",
+      "C040": "RETAINED_RIGHT_UPPER_C040_V34",
+      "C041": "RETAINED_RIGHT_UPPER_C041_V34",
+      "C042": "RETAINED_RIGHT_UPPER_C042_V34"
+    },
+    "eye_object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34",
+    "full_context_shape_object_count": 5,
+    "lower_components_mesh_object": "FROZEN_RIGHT_LOWER_COMPONENTS_002_060_V34",
+    "lower_main_object": "FROZEN_RIGHT_LOWER_MAIN_V34",
+    "retained_upper_shape_object_count": 41,
+    "right_primary_ear_object": "FROZEN_RIGHT_PRIMARY_EAR_V34",
+    "total_shape_object_count": 46,
+    "translucent_ab_panel_object": "FROZEN_RIGHT_TRANSLUCENT_AB_PANEL_V34"
+  },
+  "schema_version": "1.0",
+  "source_manifest": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C009",
+    "C010",
+    "C011",
+    "C012",
+    "C013",
+    "C014",
+    "C015",
+    "C016",
+    "C017",
+    "C018",
+    "C019",
+    "C020",
+    "C021",
+    "C022",
+    "C023",
+    "C024",
+    "C025",
+    "C026",
+    "C027",
+    "C028",
+    "C029",
+    "C030",
+    "C031",
+    "C032",
+    "C033",
+    "C034",
+    "C035",
+    "C036",
+    "C037",
+    "C038",
+    "C039",
+    "C040",
+    "C041",
+    "C042"
+  ],
+  "status": "PASS__REVIEW_ONLY_ONE_SIDED_C009_DELETION",
+  "volume_ledger_mm3": {
+    "note": "Preservation gate compares exact per-component sums; OCCT compound volume can vary slightly with compound ordering.",
+    "removed_c009": 227.92119760049138,
+    "retained_copied_component_sum": 150217.21686335685,
+    "retained_review_compound": 150217.2168609744,
+    "retained_source_component_sum": 150217.21686335685,
+    "source_v25_compound": 150445.13806011603
+  }
+}
