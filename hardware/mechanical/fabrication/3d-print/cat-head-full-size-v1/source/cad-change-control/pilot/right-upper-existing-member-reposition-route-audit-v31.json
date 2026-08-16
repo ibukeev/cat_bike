@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "right-upper-existing-member-reposition-route-audit-v31",
+  "status": "APPROVED_FOR_READ_ONLY_JSON_VALIDATION",
+  "approval": {
+    "user_instruction": "just keep going",
+    "date": "2026-08-16"
+  },
+  "physical_problem": "Test whether the exact existing V26 tapered rail and C009 can be rigidly translated into clean owner-connected positions without new bridge, plank, root, flange, or exterior geometry.",
+  "allowed_operations": [
+    "open_hash_pinned_inputs_read_only",
+    "copy_exact_existing_shapes_in_memory",
+    "translate_shape_copies_without_rotation",
+    "measure_distance_and_boolean_common",
+    "write_deterministic_validation_json"
+  ],
+  "prohibited_operations": [
+    "modify_frozen_inputs",
+    "save_or_export_geometry",
+    "rotate_or_deform_existing_shapes",
+    "reuse_rejected_v27_geometry",
+    "add_visible_bridge_or_root_geometry",
+    "trim_or_delete_c009",
+    "mirror",
+    "production_union",
+    "export_step_or_stl",
+    "slice_or_generate_gcode",
+    "print_release"
+  ],
+  "inputs": {
+    "accepted_context_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/CAT_HEAD_RIGHT_UPPER_APPROVED_C027_C012_CONTEXT_REVIEW_V25.FCStd",
+      "sha256": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775"
+    },
+    "v26_diagnostic_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-eye-clearance-review-v26/CAT_HEAD_RIGHT_UPPER_C001_EYE_CLEARANCE_REVIEW_V26.FCStd",
+      "sha256": "2ff7be047b3b2a3ddf52cfaacad932f7fa8a002c4180c373552d685762dd7dae"
+    },
+    "replacement_eye_step": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/right_eye_v17_full_topology_repaired_review_v4.step",
+      "sha256": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258"
+    },
+    "v30_validation_json": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-c009-non-additive-route-audit-v30/validation-v30.json",
+      "sha256": "c0e73d7db9b2726ad8021c181691e1a29f9fa259e73defdc4c11ba529d49408a"
+    }
+  },
+  "implementation_dependency": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/audit_right_upper_c001_c009_existing_body_routes.py",
+    "sha256": "46e67be0d4e48b335f76fb18dd37a2e08bbc76835e8a30be718477c9810a81de"
+  },
+  "v26_rail_identification": {
+    "rail_volume_target_mm3": 174.42,
+    "rail_volume_tolerance_mm3": 1.0,
+    "diagnostic_offset_mm": [
+      2.193,
+      -5.7405,
+      1.935
+    ],
+    "rail_eye_clearance_target_mm": 4.2616,
+    "rail_main_gap_target_mm": 4.4614,
+    "distance_match_tolerance_mm": 0.15
+  },
+  "numeric_contract": {
+    "minimum_eye_clearance_mm": 4.0,
+    "minimum_owner_overlap_mm3": 0.1,
+    "positive_intersection_threshold_mm3": 0.000001,
+    "owner_contact_distance_tolerance_mm": 0.000001,
+    "maximum_translation_mm": 20.0,
+    "direction_sample_lengths_mm": [
+      1.0,
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0,
+      15.0,
+      20.0
+    ],
+    "refinement_seed_count": 4,
+    "refinement_steps_mm": [
+      1.0,
+      0.5,
+      0.25,
+      0.1,
+      0.05,
+      0.02
+    ],
+    "refinement_cycles_per_step": 1,
+    "report_candidate_count": 20
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-existing-member-reposition-route-audit-v31",
+    "validation": "validation-v31.json"
+  },
+  "release_holds": {
+    "geometry_change_authorized": false,
+    "mirror_authorized": false,
+    "production_union_authorized": false,
+    "step_or_stl_export_authorized": false,
+    "slicing_authorized": false,
+    "gcode_authorized": false,
+    "asa_print_release_authorized": false
+  }
+}

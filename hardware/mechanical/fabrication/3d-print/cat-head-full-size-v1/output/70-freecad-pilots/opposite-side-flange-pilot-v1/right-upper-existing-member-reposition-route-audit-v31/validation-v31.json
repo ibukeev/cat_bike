@@ -1,0 +1,1334 @@
+{
+  "c009": {
+    "best_distance_candidates": [
+      {
+        "eye_distance_mm": 4.476341051148727,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.461014847142879,
+        "translation_mm": [
+          1.825092,
+          10.446536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.468051232621144,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.464247063798293,
+        "translation_mm": [
+          1.825092,
+          10.466536,
+          8.270829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.474794269314859,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.47384794611402,
+        "translation_mm": [
+          1.805092,
+          10.466536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.4840339553666215,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.476541921242296,
+        "translation_mm": [
+          1.825092,
+          10.466536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.493273641418379,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.479265033190831,
+        "translation_mm": [
+          1.845092,
+          10.466536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.463309409047672,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.48479710099492,
+        "translation_mm": [
+          1.825092,
+          10.516536,
+          8.240829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.500016678112116,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.488855226259972,
+        "translation_mm": [
+          1.825092,
+          10.466536,
+          8.310829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.491726859584518,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.492080773364833,
+        "translation_mm": [
+          1.825092,
+          10.486536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.480167000781959,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.50874999972244,
+        "translation_mm": [
+          1.775092,
+          10.516536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.503266215911371,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.515411046468435,
+        "translation_mm": [
+          1.825092,
+          10.516536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.526365431040807,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.522253693634099,
+        "translation_mm": [
+          1.875092,
+          10.516536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.461817123273484,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.532607921424496,
+        "translation_mm": [
+          1.825092,
+          10.616536,
+          8.190829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.543223022775082,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.546140360080468,
+        "translation_mm": [
+          1.825092,
+          10.516536,
+          8.340829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.5224984764561444,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.554353151478717,
+        "translation_mm": [
+          1.825092,
+          10.566536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.495532306742052,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.580302815291013,
+        "translation_mm": [
+          1.725092,
+          10.616536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.541730737000901,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.593367609058507,
+        "translation_mm": [
+          1.825092,
+          10.616536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.587929167259736,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.607154785442876,
+        "translation_mm": [
+          1.925092,
+          10.616536,
+          8.290829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.438108005406142,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.64065601263374,
+        "translation_mm": [
+          1.825092,
+          10.866536,
+          8.040829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.62164435072831,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.654589292798264,
+        "translation_mm": [
+          1.825092,
+          10.616536,
+          8.390829
+        ]
+      },
+      {
+        "eye_distance_mm": 4.5801952580903995,
+        "meets_distance_prefilter": true,
+        "owner_distance_mm": 0.0,
+        "translation_length_mm": 13.671611103121716,
+        "translation_mm": [
+          1.825092,
+          10.716536,
+          8.290829
+        ]
+      }
+    ],
+    "best_owner_overlap_candidates": [
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.476341051148727,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.12784185252473,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.13756840966796,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              98.93648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049135
+        },
+        "translation_length_mm": 13.461014847142879,
+        "translation_mm": [
+          1.825092,
+          10.446536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.468051232621144,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.162159405951149,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.15756840966797,
+              192.10260085058593
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              98.95648045800782,
+              177.75201491308593
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049147
+        },
+        "translation_length_mm": 13.464247063798293,
+        "translation_mm": [
+          1.825092,
+          10.466536,
+          8.270829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.474794269314859,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.011979584226199,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.05851759814453,
+              108.15756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.89456190966797,
+              98.95648045800782,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049133
+        },
+        "translation_length_mm": 13.47384794611402,
+        "translation_mm": [
+          1.805092,
+          10.466536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.4840339553666215,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.107755197062804,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.15756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              98.95648045800782,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049138
+        },
+        "translation_length_mm": 13.476541921242296,
+        "translation_mm": [
+          1.825092,
+          10.466536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.493273641418379,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.203905201097418,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.09851759814453,
+              108.15756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.93456190966796,
+              98.95648045800782,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049127
+        },
+        "translation_length_mm": 13.479265033190831,
+        "translation_mm": [
+          1.845092,
+          10.466536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.463309409047672,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.187304768701514,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.20756840966797,
+              192.07260085058593
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.00648045800781,
+              177.72201491308593
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049138
+        },
+        "translation_length_mm": 13.48479710099492,
+        "translation_mm": [
+          1.825092,
+          10.516536,
+          8.240829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.500016678112116,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.052056849203245,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.15756840966797,
+              192.14260085058595
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              98.95648045800782,
+              177.79201491308595
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049138
+        },
+        "translation_length_mm": 13.488855226259972,
+        "translation_mm": [
+          1.825092,
+          10.466536,
+          8.310829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.491726859584518,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.08757806854572,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.17756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              98.97648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049147
+        },
+        "translation_length_mm": 13.492080773364833,
+        "translation_mm": [
+          1.825092,
+          10.486536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.480167000781959,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 4.818009955937986,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.02851759814453,
+              108.20756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.86456190966797,
+              99.00648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049133
+        },
+        "translation_length_mm": 13.50874999972244,
+        "translation_mm": [
+          1.775092,
+          10.516536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.503266215911371,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.057142906978337,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.20756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.00648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049133
+        },
+        "translation_length_mm": 13.515411046468435,
+        "translation_mm": [
+          1.825092,
+          10.516536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.526365431040807,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.298633952646791,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.12851759814453,
+              108.20756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.96456190966796,
+              99.00648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049138
+        },
+        "translation_length_mm": 13.522253693634099,
+        "translation_mm": [
+          1.875092,
+          10.516536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.461817123273484,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.192738671159502,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.30756840966797,
+              192.02260085058595
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.10648045800781,
+              177.67201491308595
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.9211976004914
+        },
+        "translation_length_mm": 13.532607921424496,
+        "translation_mm": [
+          1.825092,
+          10.616536,
+          8.190829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.543223022775082,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 4.918886398489134,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.20756840966797,
+              192.17260085058592
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.00648045800781,
+              177.82201491308592
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.9211976004914
+        },
+        "translation_length_mm": 13.546140360080468,
+        "translation_mm": [
+          1.825092,
+          10.516536,
+          8.340829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.5224984764561444,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.005966361633137,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.25756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.05648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.9211976004914
+        },
+        "translation_length_mm": 13.554353151478717,
+        "translation_mm": [
+          1.825092,
+          10.566536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.495532306742052,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 4.476829197811931,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              106.97851759814453,
+              108.30756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.81456190966797,
+              99.10648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.9211976004914
+        },
+        "translation_length_mm": 13.580302815291013,
+        "translation_mm": [
+          1.725092,
+          10.616536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.541730737000901,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 4.95422676236156,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.30756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.10648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.9211976004915
+        },
+        "translation_length_mm": 13.593367609058507,
+        "translation_mm": [
+          1.825092,
+          10.616536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.587929167259736,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.441201902546522,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.17851759814454,
+              108.30756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              94.01456190966798,
+              99.10648045800781,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049135
+        },
+        "translation_length_mm": 13.607154785442876,
+        "translation_mm": [
+          1.925092,
+          10.616536,
+          8.290829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.438108005406142,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 5.136318991730679,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.55756840966797,
+              191.87260085058594
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.35648045800781,
+              177.52201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.9211976004915
+        },
+        "translation_length_mm": 13.64065601263374,
+        "translation_mm": [
+          1.825092,
+          10.866536,
+          8.040829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.62164435072831,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 4.683286040932417,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.30756840966797,
+              192.22260085058593
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.10648045800781,
+              177.87201491308593
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049135
+        },
+        "translation_length_mm": 13.654589292798264,
+        "translation_mm": [
+          1.825092,
+          10.616536,
+          8.390829
+        ]
+      },
+      {
+        "clear_of_other_components": true,
+        "eye_distance_mm": 4.5801952580903995,
+        "meets_distance_prefilter": true,
+        "other_component_collisions": {},
+        "owner_distance_mm": 0.0,
+        "owner_overlap_mm3": 4.849063207377127,
+        "translated_shape": {
+          "bounds": {
+            "maximum_mm": [
+              107.07851759814453,
+              108.40756840966797,
+              192.12260085058594
+            ],
+            "minimum_mm": [
+              93.91456190966797,
+              99.20648045800782,
+              177.77201491308594
+            ]
+          },
+          "closed": true,
+          "face_count": 38,
+          "solid_count": 1,
+          "valid": true,
+          "volume_mm3": 227.92119760049138
+        },
+        "translation_length_mm": 13.671611103121716,
+        "translation_mm": [
+          1.825092,
+          10.716536,
+          8.290829
+        ]
+      }
+    ],
+    "bounded_distance_search": {
+      "eye": {
+        "padding_mm": 4.0,
+        "proxy_face_count": 488,
+        "source_face_count": 1178,
+        "travel_envelope_mm": 20.0
+      },
+      "owner": {
+        "padding_mm": 1e-06,
+        "proxy_face_count": 31,
+        "source_face_count": 1859,
+        "travel_envelope_mm": 20.0
+      },
+      "uses_exact_local_face_proxies": true
+    },
+    "candidate_direction_count": 20,
+    "clean_route_count": 104,
+    "distance_prefilter_count": 133,
+    "distance_probe_count": 305,
+    "initial_position": {
+      "eye_distance_mm": 0.0,
+      "meets_distance_prefilter": false,
+      "owner_distance_mm": 0.0,
+      "translation_length_mm": 0.0,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "member": "C009",
+    "owner_overlap_candidate_count": 128,
+    "preferred_clean_route": {
+      "clear_of_other_components": true,
+      "eye_distance_mm": 4.476341051148727,
+      "meets_distance_prefilter": true,
+      "other_component_collisions": {},
+      "owner_distance_mm": 0.0,
+      "owner_overlap_mm3": 5.12784185252473,
+      "translated_shape": {
+        "bounds": {
+          "maximum_mm": [
+            107.07851759814453,
+            108.13756840966796,
+            192.12260085058594
+          ],
+          "minimum_mm": [
+            93.91456190966797,
+            98.93648045800781,
+            177.77201491308594
+          ]
+        },
+        "closed": true,
+        "face_count": 38,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 227.92119760049135
+      },
+      "translation_length_mm": 13.461014847142879,
+      "translation_mm": [
+        1.825092,
+        10.446536,
+        8.290829
+      ]
+    },
+    "source": {
+      "bounds": {
+        "maximum_mm": [
+          105.25342559814453,
+          97.69103240966797,
+          183.83177185058594
+        ],
+        "minimum_mm": [
+          92.08946990966797,
+          88.48994445800781,
+          169.48118591308594
+        ]
+      },
+      "closed": true,
+      "face_count": 38,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 227.92119760049138
+    }
+  },
+  "contract_id": "right-upper-existing-member-reposition-route-audit-v31",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "generator": "freecad-right-upper-existing-member-reposition-route-audit-v31",
+  "implementation_dependency_hash": "46e67be0d4e48b335f76fb18dd37a2e08bbc76835e8a30be718477c9810a81de",
+  "input_hashes": {
+    "accepted_context_fcstd": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775",
+    "replacement_eye_step": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258",
+    "v26_diagnostic_fcstd": "2ff7be047b3b2a3ddf52cfaacad932f7fa8a002c4180c373552d685762dd7dae",
+    "v30_validation_json": "c0e73d7db9b2726ad8021c181691e1a29f9fa259e73defdc4c11ba529d49408a"
+  },
+  "interpretation": {
+    "geometry_artifact_created": false,
+    "geometry_change_authorized": false,
+    "rotation_or_deformation_used": false,
+    "routes_are_independent": true,
+    "simultaneous_route_compatibility_audited": false,
+    "v27_geometry_used": false
+  },
+  "outputs": {
+    "geometry_artifact_created": false,
+    "mirrored": false,
+    "production_union_created": false,
+    "sliced": false,
+    "step_or_stl_exported": false,
+    "upper_geometry_modified": false,
+    "validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-existing-member-reposition-route-audit-v31/validation-v31.json"
+  },
+  "release_holds": {
+    "asa_print_release_authorized": false,
+    "gcode_authorized": false,
+    "geometry_change_authorized": false,
+    "mirror_authorized": false,
+    "production_union_authorized": false,
+    "slicing_authorized": false,
+    "step_or_stl_export_authorized": false
+  },
+  "schema_version": "1.0",
+  "status": "PARTIAL__ONE_EXISTING_MEMBER_HAS_A_TRANSLATION_ROUTE",
+  "v26_rail_match": {
+    "bounds": {
+      "maximum_mm": [
+        104.31798065512947,
+        85.23978461291662,
+        180.26877927305785
+      ],
+      "minimum_mm": [
+        45.54596896876361,
+        57.355283180336045,
+        167.28935485839844
+      ]
+    },
+    "eye_distance_mm": 4.261593514807524,
+    "main_distance_mm": 4.277955764720697,
+    "match_score_mm": 0.1834507204717788,
+    "object_label": "PROPOSED__C001__STAGE1__TOP_CLEARANCE__V26",
+    "object_name": "PROPOSED__C001__STAGE1__TOP_CLEARANCE__V26",
+    "solid_index": 3,
+    "source_bounds": {
+      "maximum_mm": [
+        102.12498065512948,
+        90.98028461291662,
+        178.33377927305784
+      ],
+      "minimum_mm": [
+        43.35296896876361,
+        63.09578318033604,
+        165.35435485839844
+      ]
+    },
+    "transient_diagnostic_offset_mm": [
+      2.193,
+      -5.7405,
+      1.935
+    ],
+    "volume_mm3": 174.41726929718266
+  },
+  "v26_tapered_rail": {
+    "best_distance_candidates": [
+      {
+        "eye_distance_mm": 4.000469310503188,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.655724965625664,
+        "translation_length_mm": 3.564220656965138,
+        "translation_mm": [
+          -3.361762,
+          -0.195907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.012573702594095,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.6616710586588623,
+        "translation_length_mm": 3.570823772119957,
+        "translation_mm": [
+          -3.361762,
+          -0.195907,
+          1.187838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.004429898399644,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.662463700624946,
+        "translation_length_mm": 3.5453629449658606,
+        "translation_mm": [
+          -3.341762,
+          -0.195907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.030843432961509,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.670590198208666,
+        "translation_length_mm": 3.580915063435183,
+        "translation_mm": [
+          -3.361762,
+          -0.195907,
+          1.217838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.010392538995979,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.6725718031238714,
+        "translation_length_mm": 3.517100040024025,
+        "translation_mm": [
+          -3.311762,
+          -0.195907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.015928924214585,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.6735920702666003,
+        "translation_length_mm": 3.5653758808205622,
+        "translation_mm": [
+          -3.361762,
+          -0.215907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.061590163937329,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.6855330393766095,
+        "translation_length_mm": 3.5982268538180024,
+        "translation_mm": [
+          -3.361762,
+          -0.195907,
+          1.267838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.020388009498716,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.6894186406220917,
+        "translation_length_mm": 3.4700600126708183,
+        "translation_mm": [
+          -3.261762,
+          -0.195907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.039168957668256,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.700392727228005,
+        "translation_length_mm": 3.567318263280836,
+        "translation_mm": [
+          -3.361762,
+          -0.245907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.050802505968217,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.7401219124289593,
+        "translation_length_mm": 3.3294575971976275,
+        "translation_mm": [
+          -3.111762,
+          -0.195907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.078034748920334,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.7450604888303283,
+        "translation_length_mm": 3.571113312615129,
+        "translation_mm": [
+          -3.361762,
+          -0.295907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.202266827508186,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.821946405628312,
+        "translation_length_mm": 3.425157936728904,
+        "translation_mm": [
+          -3.111762,
+          -0.195907,
+          1.417838
+        ]
+      },
+      {
+        "eye_distance_mm": 3.9965203675401875,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.6489862306263943,
+        "translation_length_mm": 3.583090756809964,
+        "translation_mm": [
+          -3.381762,
+          -0.195907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.102888326372137,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.8263569685333576,
+        "translation_length_mm": 3.0970803818333486,
+        "translation_mm": [
+          -2.861762,
+          -0.195907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.156660887448626,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.914751382858384,
+        "translation_length_mm": 2.8676690693901556,
+        "translation_mm": [
+          -2.611762,
+          -0.195907,
+          1.167838
+        ]
+      },
+      {
+        "eye_distance_mm": 4.001027584681797,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.936755743237503,
+        "translation_length_mm": 1.804734941989543,
+        "translation_mm": [
+          -1.705881,
+          -0.077954,
+          0.583919
+        ]
+      },
+      {
+        "eye_distance_mm": 4.003138123657452,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.9399965052600803,
+        "translation_length_mm": 1.7416501008529237,
+        "translation_mm": [
+          -1.506738,
+          -0.451914,
+          -0.747569
+        ]
+      },
+      {
+        "eye_distance_mm": 4.004502743564001,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.9407891472261642,
+        "translation_length_mm": 1.7331411696111196,
+        "translation_mm": [
+          -1.486738,
+          -0.451914,
+          -0.767569
+        ]
+      },
+      {
+        "eye_distance_mm": 4.009451697933388,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.9467352402593625,
+        "translation_length_mm": 1.724376859564347,
+        "translation_mm": [
+          -1.486738,
+          -0.451914,
+          -0.747569
+        ]
+      },
+      {
+        "eye_distance_mm": 4.01305563703621,
+        "meets_distance_prefilter": false,
+        "owner_distance_mm": 3.9473966536912544,
+        "translation_length_mm": 1.8246154693079855,
+        "translation_mm": [
+          -1.725881,
+          -0.097954,
+          0.583919
+        ]
+      }
+    ],
+    "best_owner_overlap_candidates": [],
+    "bounded_distance_search": {
+      "eye": {
+        "padding_mm": 4.0,
+        "proxy_face_count": 572,
+        "source_face_count": 1178,
+        "travel_envelope_mm": 20.0
+      },
+      "owner": {
+        "padding_mm": 1e-06,
+        "proxy_face_count": 27,
+        "source_face_count": 1859,
+        "travel_envelope_mm": 20.0
+      },
+      "uses_exact_local_face_proxies": true
+    },
+    "candidate_direction_count": 20,
+    "clean_route_count": 0,
+    "distance_prefilter_count": 0,
+    "distance_probe_count": 305,
+    "initial_position": {
+      "eye_distance_mm": 4.261593514807524,
+      "meets_distance_prefilter": false,
+      "owner_distance_mm": 4.277955764720697,
+      "translation_length_mm": 0.0,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "member": "V26_TAPERED_RAIL",
+    "owner_overlap_candidate_count": 0,
+    "preferred_clean_route": null,
+    "source": {
+      "bounds": {
+        "maximum_mm": [
+          104.31798065512947,
+          85.23978461291662,
+          180.26877927305785
+        ],
+        "minimum_mm": [
+          45.54596896876361,
+          57.355283180336045,
+          167.28935485839844
+        ]
+      },
+      "closed": true,
+      "face_count": 16,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 174.4172692971826
+    }
+  }
+}

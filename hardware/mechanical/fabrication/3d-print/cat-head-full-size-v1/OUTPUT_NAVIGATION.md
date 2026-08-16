@@ -5,6 +5,16 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current V31 existing-member reposition route audit — **JSON-only partial
+  result; no geometry artifact and not a print source**. The exact V26 tapered
+  rail has zero clean rigid-translation routes and that route is rejected.
+  Existing C009 has 104 clean right-upper-context candidates; the preferred
+  shortest translation is `[1.825092, 10.446536, 8.290829] mm`, retaining
+  `5.1278 mm3` C001 engagement and `4.4763 mm` repaired-eye clearance with
+  zero other upper-component collisions. Full-head context is not yet audited.
+  Read:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-existing-member-reposition-route-audit-v31/validation-v31.json` and
+  `RIGHT_UPPER_EXISTING_MEMBER_REPOSITION_ROUTE_AUDIT_V31_CHECKPOINT_2026-08-16.md`.
 - Current V30 C001/C009 non-additive route audit — **JSON-only negative
   result; no geometry artifact and not a print source**. The global repaired-eye
   `4.0 mm` offset failed safely in OCC at both `0.01 mm` and `0.05 mm`
