@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "right-eye-v17-v9-skin-topology-repair-step-review-v2",
+  "mode": "review_only_exact_step_roundtrip",
+  "source": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-review-v1/CAT_HEAD_RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_REVIEW_V1.FCStd",
+    "sha256": "3e272318f2065b83329583338fe17182c05fc40c2c47d72d39cc558ecd3701d1",
+    "object_name": "PROPOSED_RIGHT_EYE_V17_V9_SKIN_REPAIRED"
+  },
+  "frozen_v17_step": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/right_eye_bucket_with_both_exact_flange_roots_v17.step",
+    "sha256": "1b1e2430c369fb563602a056340c1d5f88f6a857f9cecf2014bac191443646de"
+  },
+  "permitted_operations": [
+    "read_hash_pinned_review_fcstd",
+    "export_new_step",
+    "import_new_step",
+    "measure_roundtrip",
+    "save_new_review_fcstd",
+    "write_validation_json"
+  ],
+  "gates": {
+    "required_solid_count": 1,
+    "required_face_count": 1179,
+    "maximum_bounds_delta_mm": 0.000001,
+    "maximum_absolute_volume_delta_mm3": 0.0001,
+    "maximum_vertex_roundtrip_error_mm": 0.000001
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2",
+    "step": "right_eye_v17_v9_skin_topology_repaired_review_v2.step",
+    "fcstd": "CAT_HEAD_RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_STEP_REVIEW_V2.FCStd",
+    "validation": "validation-v2.json"
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "gcode": false,
+    "asa_print": false
+  }
+}

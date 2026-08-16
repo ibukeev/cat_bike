@@ -168,6 +168,10 @@ def main(argv: list[str] | None = None) -> int:
         raise FileExistsError(f"refusing to overwrite existing report: {report_path}")
 
     exact_shape = load_step(root / target["path"])
+    print(
+        f"AUDIT target loaded: {len(exact_shape.Faces)} faces, {len(exact_shape.Solids)} solids",
+        flush=True,
+    )
     document = App.openDocument(str(root / lineage["path"]))
     try:
         source_objects: list[tuple[str, Any]] = []
@@ -176,14 +180,25 @@ def main(argv: list[str] | None = None) -> int:
             if source is None or source.Shape.isNull():
                 raise ValueError(f"source owner missing: {definition['object_name']!r}")
             source_objects.append((definition["owner"], source))
+        print(f"AUDIT lineage loaded: {len(source_objects)} source owners", flush=True)
 
         global_messages = check_messages(exact_shape)
         global_diagnostics = parse_bop_diagnostics(global_messages)
+        print(
+            f"AUDIT global OCCT check complete: {len(global_diagnostics)} diagnostics",
+            flush=True,
+        )
         faulty_pairs = []
         bbox_candidate_count = 0
         touching_candidate_count = 0
         for first_index, first, second_index, second in overlapping_face_pairs(exact_shape.Faces):
             bbox_candidate_count += 1
+            if bbox_candidate_count % 1000 == 0:
+                print(
+                    f"AUDIT pair progress: {bbox_candidate_count} bbox candidates, "
+                    f"{touching_candidate_count} touching, {len(faulty_pairs)} diagnostic",
+                    flush=True,
+                )
             distance = float(first.distToShape(second)[0])
             if distance > 1e-7:
                 continue

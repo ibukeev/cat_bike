@@ -5,6 +5,18 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current V17/V9 repaired exact STEP V2 — **review-only exact round-trip and
+  audit; not mirrored, integrated, or print-released**. The repaired owner is
+  one valid closed `1179`-face solid; bounds are unchanged, STEP vertex error is
+  `8.75e-12 mm`, and both former V9 defect pairs are gone. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2/CAT_HEAD_RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_STEP_REVIEW_V2.FCStd`.
+- V2 exact STEP, validation, and checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2/right_eye_v17_v9_skin_topology_repaired_review_v2.step`,
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2/validation-v2.json`, and
+  `RIGHT_EYE_V17_V9_REPAIRED_STEP_AUDIT_V2_CHECKPOINT_2026-08-16.md`.
+- The exact audit leaves only the already protected outer-root crossing
+  `Face72 / Face489`. That isolated repair is next. Mirror, production union,
+  STL, slicing, G-code, and ASA release remain held.
 - Current V17/V9 skin topology repair proposal — **review-only bounded
   one-side repair; all local gates pass; not a STEP/STL or print source**. The
   complete proposed eye owner and the green replacement patch are visible;

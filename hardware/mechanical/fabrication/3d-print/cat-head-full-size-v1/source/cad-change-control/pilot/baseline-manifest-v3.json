@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "project": "cat-head-full-size-v1",
+  "artifacts": [
+    {
+      "id": "right_eye_v17_v9_repaired_review_v2",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2/right_eye_v17_v9_skin_topology_repaired_review_v2.step",
+      "sha256": "18b8b11ea2b09b4bf306060ccf2c86d9e09feaca72f158cde9b6f187d720fc98",
+      "format": "step",
+      "status": "proposed_not_approved",
+      "role": "one-sided exact right-eye V17 with approved local V9 skin diagonal repair",
+      "expected_shape": {"valid": true, "closed": true, "solid_count": 1}
+    },
+    {
+      "id": "right_eye_v17_v9_repaired_review_v2_fcstd",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2/CAT_HEAD_RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_STEP_REVIEW_V2.FCStd",
+      "sha256": "39ae92d158e23c0c81dbe33a492c7005da5898bd8f4ff9b570f4dd40b870c6de",
+      "format": "fcstd",
+      "status": "evidence_only",
+      "role": "hash-pinned V2 STEP round-trip review document"
+    },
+    {
+      "id": "right_eye_v17",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/right_eye_bucket_with_both_exact_flange_roots_v17.step",
+      "sha256": "1b1e2430c369fb563602a056340c1d5f88f6a857f9cecf2014bac191443646de",
+      "format": "step",
+      "status": "frozen_accepted",
+      "role": "protected pre-repair exact right-eye owner",
+      "expected_shape": {"valid": true, "closed": true, "solid_count": 1}
+    },
+    {
+      "id": "right_eye_v17_lineage_fcstd",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/CAT_HEAD_RIGHT_EYE_EXACT_OWNER_INTEGRATION_REVIEW_V17.FCStd",
+      "sha256": "861c11381ac4a47b4acce10c50706126605cb4e85417a96f2467dd22a9e8228a",
+      "format": "fcstd",
+      "status": "evidence_only",
+      "role": "frozen V17 source-owner lineage for defect classification"
+    }
+  ]
+}
