@@ -1,0 +1,147 @@
+{
+  "checks": {
+    "all_unmodified_faces_retained": true,
+    "anchors_match": true,
+    "bounds_unchanged": true,
+    "candidate_closed": true,
+    "candidate_solid_count": true,
+    "candidate_valid": true,
+    "local_bop_diagnostics": true,
+    "local_surface_deviation": true,
+    "protected_faces_retained": true,
+    "replacement_patch_facet_count": true,
+    "source_patch_facet_count": true,
+    "source_sha256_matches": true,
+    "vertex_motion": true,
+    "volume_unchanged": true
+  },
+  "contract_id": "right-eye-v17-v9-skin-topology-repair-proposal-v1",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "generator": "freecad-v17-v9-local-diagonal-flip-review-v1",
+  "measurements": {
+    "anchor_errors_mm": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0,
+      "P": 0.0
+    },
+    "bounds_delta_mm": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "candidate_face_count": 1179,
+    "candidate_volume_mm3": 7269.553009399428,
+    "expected_retained_source_face_count": 1176,
+    "global_occt_check_messages": [
+      "OCCT check raised: BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+    ],
+    "local_bop_diagnostic_count": 0,
+    "local_bop_diagnostics": [],
+    "local_face_indices_audited": [
+      263,
+      400,
+      401,
+      405,
+      581,
+      582,
+      586,
+      726
+    ],
+    "local_surface_deviation_mm": 1.6409307694583468e-06,
+    "maximum_vertex_motion_mm": 1.0424415072005392e-12,
+    "protected_face_retention": {
+      "Face489": true,
+      "Face72": true
+    },
+    "replacement_patch_facet_count": 3,
+    "retained_source_face_count": 1176,
+    "source_patch_facet_count": 3,
+    "volume_delta_mm3": -1.3917406249674968e-06
+  },
+  "operation": {
+    "automatic_healing_used": false,
+    "boundary_edges": {
+      "AB": 1286,
+      "BD": 991,
+      "CA": 1287,
+      "DP": 983,
+      "PC": 1278
+    },
+    "broad_boolean_used": false,
+    "new_diagonals": [
+      "A-D",
+      "A-P"
+    ],
+    "removed_source_faces": [
+      582,
+      587
+    ],
+    "replacement_triangles": [
+      [
+        "B",
+        "A",
+        "D"
+      ],
+      [
+        "A",
+        "C",
+        "P"
+      ],
+      [
+        "A",
+        "P",
+        "D"
+      ]
+    ],
+    "type": "local_planar_diagonal_flip",
+    "vertex_motion_used": false
+  },
+  "output": {
+    "fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-review-v1/CAT_HEAD_RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_REVIEW_V1.FCStd",
+    "fcstd_sha256": "3e272318f2065b83329583338fe17182c05fc40c2c47d72d39cc558ecd3701d1",
+    "step_exported": false,
+    "stl_exported": false,
+    "validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-review-v1/validation-v1.json"
+  },
+  "release_holds": {
+    "asa_print": false,
+    "gcode": false,
+    "mirror": false,
+    "production_union": false,
+    "stl": false
+  },
+  "schema_version": "1.0",
+  "source": {
+    "bounds": {
+      "maximum_mm": [
+        104.17845153808109,
+        102.79824066164943,
+        179.13093566894
+      ],
+      "minimum_mm": [
+        27.489534378041142,
+        49.32897567748239,
+        118.47733306883288
+      ]
+    },
+    "face_count": 1178,
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/right_eye_bucket_with_both_exact_flange_roots_v17.step",
+    "sha256": "1b1e2430c369fb563602a056340c1d5f88f6a857f9cecf2014bac191443646de",
+    "volume_mm3": 7269.553010791169
+  },
+  "status": "PASS__REVIEW_ONLY_PROPOSAL"
+}

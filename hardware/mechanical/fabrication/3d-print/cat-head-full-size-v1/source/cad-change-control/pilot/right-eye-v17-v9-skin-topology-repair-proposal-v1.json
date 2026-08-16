@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "right-eye-v17-v9-skin-topology-repair-proposal-v1",
+  "mode": "isolated_review_proposal",
+  "approval_record": {
+    "approved_by": "user",
+    "approved_on": "2026-08-15",
+    "approval_text": "LGTM",
+    "scope": "Exact one-sided V17/V9 local topology repair only"
+  },
+  "source": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/right_eye_bucket_with_both_exact_flange_roots_v17.step",
+    "sha256": "1b1e2430c369fb563602a056340c1d5f88f6a857f9cecf2014bac191443646de",
+    "status": "frozen_accepted"
+  },
+  "operation": {
+    "type": "local_planar_diagonal_flip",
+    "remove_source_faces": [582, 587],
+    "host_face": 587,
+    "sliver_face": 582,
+    "diagnostic_partner_faces": [263, 400],
+    "penetrating_edge": 1278,
+    "penetrating_edge_owner_faces": [581, 582],
+    "protected_source_faces": [72, 489],
+    "boundary_order": ["A", "B", "D", "P", "C"],
+    "replacement_triangles": [
+      ["B", "A", "D"],
+      ["A", "C", "P"],
+      ["A", "P", "D"]
+    ],
+    "points_mm": {
+      "A": [69.45553762207, 87.777007897949, 174.49552180175],
+      "B": [69.683687036133, 87.805671533203, 174.21144892578],
+      "C": [68.000558679199, 91.415801843262, 173.69416071777],
+      "D": [68.228708093262, 91.444465478516, 173.41008784179],
+      "P": [68.118020837402, 91.430557092285, 173.5479052246]
+    }
+  },
+  "gates": {
+    "maximum_anchor_error_mm": 0.000001,
+    "maximum_vertex_motion_mm": 0.000001,
+    "maximum_bounds_delta_mm": 0.001,
+    "maximum_absolute_volume_delta_mm3": 0.001,
+    "maximum_local_surface_deviation_mm": 0.001,
+    "required_solid_count": 1,
+    "require_valid": true,
+    "require_closed": true,
+    "required_local_bop_diagnostic_count": 0,
+    "required_source_patch_facet_count": 3,
+    "required_replacement_patch_facet_count": 3
+  },
+  "forbidden_operations": [
+    "vertex_motion",
+    "automatic_healing",
+    "facet_deletion",
+    "broad_boolean",
+    "whole_owner_remesh",
+    "mirror",
+    "production_union",
+    "stl_export",
+    "slicing",
+    "gcode",
+    "asa_print_release"
+  ],
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-review-v1",
+    "fcstd": "CAT_HEAD_RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_REVIEW_V1.FCStd",
+    "validation": "validation-v1.json",
+    "checkpoint": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_REVIEW_V1_CHECKPOINT_2026-08-15.md"
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "gcode": false,
+    "asa_print": false
+  }
+}

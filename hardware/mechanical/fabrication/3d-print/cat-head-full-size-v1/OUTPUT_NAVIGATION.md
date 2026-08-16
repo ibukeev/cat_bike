@@ -5,6 +5,19 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current V17/V9 skin topology repair proposal — **review-only bounded
+  one-side repair; all local gates pass; not a STEP/STL or print source**. The
+  complete proposed eye owner and the green replacement patch are visible;
+  the unchanged frozen V17 owner and removed old patch are hidden for optional
+  before/after comparison. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-review-v1/CAT_HEAD_RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_REVIEW_V1.FCStd`.
+- Topology-repair validation/checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-review-v1/validation-v1.json` and
+  `RIGHT_EYE_V17_V9_SKIN_TOPOLOGY_REPAIR_REVIEW_V1_CHECKPOINT_2026-08-15.md`.
+- This bounded repair has zero anchor motion, unchanged exterior bounds,
+  `1176/1176` untouched faces retained, and zero local non-adjacent crossing
+  diagnostics. The separate protected outer-root defect remains; mirror,
+  production union, STEP/STL, slicing, G-code, and ASA release remain held.
 - Current V17/V9 skin repair exact-anchor review — **review only; zero geometry
   changes; not a repair or print source**. Green is host `Face587`, magenta is
   penetrating `Edge1278`, orange/yellow are diagnostic partner faces
