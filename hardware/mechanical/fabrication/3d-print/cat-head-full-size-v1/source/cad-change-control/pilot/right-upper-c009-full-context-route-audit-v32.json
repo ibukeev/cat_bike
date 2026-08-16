@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "right-upper-c009-full-context-route-audit-v32",
+  "status": "APPROVED_FOR_READ_ONLY_JSON_VALIDATION",
+  "approval": {
+    "user_instruction": "just keep going",
+    "date": "2026-08-16"
+  },
+  "physical_problem": "Verify that the accepted rigid translation of existing upper-head member C009 clears the frozen right-side eye, lower face, ear, rear cap, rear cassette, and aluminum rail context while retaining positive C001 engagement.",
+  "allowed_operations": [
+    "open_hash_pinned_inputs_read_only",
+    "copy_exact_existing_c009_in_memory",
+    "apply_the_exact_v31_translation_without_rotation",
+    "measure_distance_boolean_common_and_conservative_bounds",
+    "write_deterministic_validation_json"
+  ],
+  "prohibited_operations": [
+    "modify_frozen_inputs",
+    "save_or_export_geometry",
+    "rotate_deform_trim_or_delete_c009",
+    "add_bridge_plank_root_flange_or_exterior_geometry",
+    "mirror",
+    "production_union",
+    "export_step_or_stl",
+    "slice_or_generate_gcode",
+    "print_release"
+  ],
+  "inputs": {
+    "v31_validation_json": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-existing-member-reposition-route-audit-v31/validation-v31.json",
+      "sha256": "acb76da7731be52ec05713bfa4ffbea27905ca4574b7ab73a93c86d22bdd0725"
+    },
+    "accepted_context_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/CAT_HEAD_RIGHT_UPPER_APPROVED_C027_C012_CONTEXT_REVIEW_V25.FCStd",
+      "sha256": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775"
+    },
+    "replacement_eye_step": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/right_eye_v17_full_topology_repaired_review_v4.step",
+      "sha256": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258"
+    },
+    "v18_context_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-full-context-review-v18/CAT_HEAD_RIGHT_EYE_FULL_CONTEXT_REVIEW_V18.FCStd",
+      "sha256": "8f5b3d65cdd635202d9986703e214e12d39d05c62eca4b96df9247866ba032c6"
+    },
+    "ear_context_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/primary-ear-bilateral-exact-mirror-review-v2/CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd",
+      "sha256": "37ddff37e81a820de3f4bea46c4b476d09217399dd32a24cc8a2aec640a50425"
+    },
+    "rear_cap_step": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/production/eye-modules-v9/right/right_eye_rear_cap_production_owner_v9.step",
+      "sha256": "fe647e10d1888211563bfe313adb27321a963c1a7beaf339e066f75b21ff444c"
+    },
+    "lower_inventory_json": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/component-inventory-v12.json",
+      "sha256": "d05ba81679d4cf7e189770cde1dd1510c416e852adc901638359f4a229a391df"
+    },
+    "rear_cassette_glb": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5.glb",
+      "sha256": "89df330525e00b878a8e0d5d1bb64a97b6ca22c1105246a1dbfe9f5d81b9a1d7"
+    },
+    "rear_cassette_validation_json": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5-validation.json",
+      "sha256": "2f5f8b456687f6c2a85aa9c671434bcdef09d012da78d16d1443b8cb7af62a07"
+    },
+    "aluminum_interface_json": {
+      "path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+      "sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79"
+    }
+  },
+  "implementation_dependency": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/audit_right_upper_c001_c009_existing_body_routes.py",
+    "sha256": "46e67be0d4e48b335f76fb18dd37a2e08bbc76835e8a30be718477c9810a81de"
+  },
+  "candidate": {
+    "source_member": "C009",
+    "translation_mm": [1.825092, 10.446536, 8.290829]
+  },
+  "v18_exact_context_labels": {
+    "right_lower_component_001": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13_ref",
+    "outer_head_flange": "PROPOSED__RIGHT_OUTER_HEAD__PLAIN_FLANGE_4P8MM_V5__EXACT_ref_ref",
+    "lower_head_flange": "PROPOSED__RIGHT_LOWER_HEAD__PLAIN_FLANGE_4P8MM_V5__EXACT_ref_ref",
+    "approved_c046": "AUDIT__C046__APPROVED_CLEARANCE_V2__SOLID",
+    "approved_c048": "AUDIT__C048__APPROVED_CLEARANCE_V2__SOLID"
+  },
+  "ear_label": "PROPOSED__RIGHT_EAR_PRIMARY_EAR_ROUND_PLUS_SLOT_CHANNELS_INTEGRATED_V3_ref",
+  "rear_cassette_node_names": [
+    "V5_CASSETTE__moved_from_left_lower_face",
+    "V5_CASSETTE__moved_from_right_lower_face",
+    "V5_CASSETTE__unchanged_rear_base"
+  ],
+  "numeric_contract": {
+    "minimum_eye_clearance_mm": 4.0,
+    "minimum_owner_overlap_mm3": 0.1,
+    "positive_intersection_threshold_mm3": 0.000001
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-full-context-route-audit-v32",
+    "validation": "validation-v32.json"
+  },
+  "release_holds": {
+    "geometry_change_authorized": false,
+    "mirror_authorized": false,
+    "production_union_authorized": false,
+    "step_or_stl_export_authorized": false,
+    "slicing_authorized": false,
+    "gcode_authorized": false,
+    "asa_print_release_authorized": false
+  }
+}

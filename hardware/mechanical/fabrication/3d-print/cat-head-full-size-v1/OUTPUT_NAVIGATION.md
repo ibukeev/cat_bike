@@ -4,6 +4,14 @@ The generated `output/` directory is organized by workstream so the single
 current review is always easy to find.
 
 ## Open this first
+- Current V32 C009 full-context route audit — **JSON-only pass; no geometry
+  artifact and not a print source**. The exact existing C009 member moved by
+  `[1.825092, 10.446536, 8.290829] mm` remains one valid closed solid, retains
+  `5.1278 mm3` C001 engagement, clears the repaired eye by `4.4763 mm`, and has
+  zero intersection with every declared frozen exact neighbor. Conservative
+  lower-face, rear-cassette, and right-aluminum checks also pass. Read:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-full-context-route-audit-v32/validation-v32.json` and
+  `RIGHT_UPPER_C009_FULL_CONTEXT_ROUTE_AUDIT_V32_CHECKPOINT_2026-08-16.md`.
 
 - Current V31 existing-member reposition route audit — **JSON-only partial
   result; no geometry artifact and not a print source**. The exact V26 tapered

@@ -32,11 +32,13 @@ route: the exact V26 tapered rail has zero clean translation candidates.
 C009 has 104 clean right-upper-context candidates; the preferred shortest
 translation is `[1.825092, 10.446536, 8.290829] mm` with `4.4763 mm`
 repaired-eye clearance, `5.1278 mm3` C001 engagement, and zero other
-upper-component collisions. It has not yet been checked against the full head,
-so no geometry was changed or authorized. Next is a read-only full-context
-audit of that C009 candidate. The separate non-visible C001 correction remains
-unresolved. No exact left mirror or bilateral closure is authorized yet.
-Print release remains held.
+upper-component collisions. V32 now passes the declared frozen full context:
+all exact neighbors have zero intersection, the nearest lower-face AABB is
+`57.6835 mm` away, and conservative right-rail clearance is `26.9254 mm`.
+No geometry was changed. The C009 translation is now authorized only for a
+review-only one-sided preview. The separate non-visible C001 correction remains
+unresolved. No exact left mirror or bilateral closure is authorized yet. Print
+release remains held.
 `HS-04` is closed by the complete right C001 A/B shell orientation rather than
 a separate coupon, per the user's explicit direction not to print coupons apart
 from the shell. The V2 ASA project preserves scale and geometry, uses a `-20
@@ -59,7 +61,7 @@ support layout, and brim on 2026-08-14. This does not release structural G-code.
 | HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
 | HS-09 | [x] | ~~Finish remaining primary ear interface~~ | User visually approved the clean bilateral V2 on 2026-08-11. V2 contains only the approved right head/ear final solids and their exact `X=0` mirrors; the stale left owner, four-hole lattice, pins, and proof shafts are absent. All four solids are valid, closed, self-intersection-free, and the mirrored topology, volume, area, and bounds match. | Preserve `CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd` unchanged through final full-head integration. |
 | HS-10 | [x] | ~~Build each eye bucket and rear cap as one serviceable module~~ | V9 was visually approved and promoted on 2026-08-13. Both bilateral bucket/cap pairs are valid, watertight, one-solid, self-intersection-free, topology/volume matched, STEP-round-trip verified, and retain the non-interfering `0.0239 mm` service gap. | Preserve `production/eye-modules-v9/` unchanged through HS-11 and later full-head validation. |
-| HS-11 | [ ] | Integrate and validate all eight eye flanges | Exact repaired-eye/V5 ownership remains accepted with `0.3000/0.3000 mm` gaps. V28 confirms only C001 (`100.5990 mm3`) and C009 (`27.7283 mm3`) have positive contact in the accepted V25 upper context; C012/C027 have zero overlap. V29 proves no clean direct continuation exists from the V26 tapered rail into C001, and C009 attaches only to C001. V30's global non-additive eye-offset route failed safely before any cut. V31 rejects rigid repositioning of the exact V26 rail but finds 104 clean right-upper-context translations for C009; the preferred candidate moves `[1.825092, 10.446536, 8.290829] mm`, retains `5.1278 mm3` C001 engagement, and clears the repaired eye by `4.4763 mm`. V27 is visually rejected and excluded. | Audit the preferred C009 translation against full-head context before creating any review geometry. Resolve C001 with a separate non-visible strategy. Then rerun the 42-component right context, exact-mirror, and validate bilaterally. |
+| HS-11 | [ ] | Integrate and validate all eight eye flanges | Exact repaired-eye/V5 ownership remains accepted with `0.3000/0.3000 mm` gaps. V28 confirms only C001 (`100.5990 mm3`) and C009 (`27.7283 mm3`) have positive contact in the accepted V25 upper context; C012/C027 have zero overlap. V29 proves no clean direct continuation exists from the V26 tapered rail into C001, and C009 attaches only to C001. V30's global non-additive eye-offset route failed safely before any cut. V31 rejects rigid repositioning of the exact V26 rail but finds 104 clean right-upper-context translations for C009. V32 passes the preferred vector `[1.825092, 10.446536, 8.290829] mm` against the declared full frozen context while retaining `5.1278 mm3` C001 engagement and `4.4763 mm` eye clearance. V27 is visually rejected and excluded. | Create the one-sided review-only moved-C009 preview. Resolve C001 with a separate non-visible strategy. Then rerun the 42-component right context, exact-mirror, and validate bilaterally. |
 | HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
 | HS-13 | [ ] | Integrate lower face and rear cassette around aluminum | Lossless V5 ownership direction is accepted; production owners and final cassette are not unified. | Lower faces are reduced as approved, transferred geometry belongs to one cassette, and V0.5-M2 rail/plate insertion and removal remain unobstructed. |
 | HS-14 | [ ] | Add final cassette M5 pads and service sockets | Legacy Gate 8 pads are invalid; the real rail and 21.00 mm serviceable socket still require qualification. | Actual rail measured; socket/cap coupon passes; cassette pads/sockets integrate with hardware and tool access. |
@@ -81,6 +83,7 @@ condition, saved evidence, and affected checkpoint must all be updated.
 ## Source-of-truth links
 
 - [Output navigation](OUTPUT_NAVIGATION.md)
+- [C009 full-context route audit V32 checkpoint](RIGHT_UPPER_C009_FULL_CONTEXT_ROUTE_AUDIT_V32_CHECKPOINT_2026-08-16.md)
 - [Existing-member reposition route audit V31 checkpoint](RIGHT_UPPER_EXISTING_MEMBER_REPOSITION_ROUTE_AUDIT_V31_CHECKPOINT_2026-08-16.md)
 - [C001/C009 non-additive route audit V30 checkpoint](RIGHT_UPPER_C001_C009_NON_ADDITIVE_ROUTE_AUDIT_V30_CHECKPOINT_2026-08-16.md)
 - [Print-readiness dashboard](PRINT_READINESS_DASHBOARD_2026-08-08.md)
