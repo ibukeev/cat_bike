@@ -1,0 +1,133 @@
+{
+  "c001_non_additive_route": {
+    "geometry_artifact_created": false,
+    "offset_attempts": [
+      {
+        "error": "OCCError: NCollection_DataMap::Find",
+        "succeeded": false,
+        "tolerance_mm": 0.01
+      },
+      {
+        "error": "OCCError: NCollection_DataMap::Find",
+        "succeeded": false,
+        "tolerance_mm": 0.05
+      }
+    ],
+    "source": {
+      "bounds": {
+        "maximum_mm": [
+          126.93900299072266,
+          269.3445129394531,
+          268.1520080566406
+        ],
+        "minimum_mm": [
+          -30.0,
+          63.05550003051758,
+          109.75635528564452
+        ]
+      },
+      "closed": true,
+      "face_count": 1859,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 75969.39034165138
+    },
+    "status": "FAIL__NO_VALID_CLEARANCE_OFFSET"
+  },
+  "c009_deletion_route": {
+    "deletion_authorized": false,
+    "eye_contact": {
+      "distance_mm": 0.0,
+      "intersection_volume_mm3": 27.728296869034583,
+      "positive": true
+    },
+    "geometric_deletion_would_not_modify_other_shapes": true,
+    "near_or_positive_upper_neighbors": {
+      "C001": {
+        "distance_mm": 0.0,
+        "intersection_volume_mm3": 6.592171799623312,
+        "positive": true
+      },
+      "C012": {
+        "distance_mm": 0.20487156849710741,
+        "intersection_volume_mm3": 0.0,
+        "positive": false
+      },
+      "C019": {
+        "distance_mm": 0.2991201836921902,
+        "intersection_volume_mm3": 0.0,
+        "positive": false
+      }
+    },
+    "positive_upper_neighbors": [
+      "C001"
+    ],
+    "single_owner_attachment_only": true,
+    "source": {
+      "bounds": {
+        "maximum_mm": [
+          105.25342559814453,
+          97.69103240966797,
+          183.83177185058594
+        ],
+        "minimum_mm": [
+          92.08946990966797,
+          88.48994445800781,
+          169.48118591308594
+        ]
+      },
+      "closed": true,
+      "face_count": 38,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 227.92119760049138
+    },
+    "status": "HOLD__STRUCTURAL_FUNCTION_UNRESOLVED",
+    "structural_function_proven_redundant": false
+  },
+  "contract_id": "right-upper-c001-c009-non-additive-route-audit-v30",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "generator": "freecad-right-upper-c001-c009-non-additive-route-audit-v30",
+  "input_hashes": {
+    "accepted_context_fcstd": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775",
+    "prior_v29_validation": "d0a89a0763ee9a8a012967e548b4b5f96ec3a46b5b2ce069802b70678d5c9d7b",
+    "replacement_eye_step": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258"
+  },
+  "interpretation": {
+    "c001_route_is_measurement_only": true,
+    "c009_deletion_authorized": false,
+    "production_geometry_modified": false,
+    "v27_geometry_used": false,
+    "visible_add_on_geometry_created": false
+  },
+  "outputs": {
+    "geometry_artifact_created": false,
+    "mirrored": false,
+    "production_union_created": false,
+    "sliced": false,
+    "stl_exported": false,
+    "upper_geometry_modified": false,
+    "validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-c009-non-additive-route-audit-v30/validation-v30.json"
+  },
+  "release_holds": {
+    "asa_print_release_authorized": false,
+    "c009_deletion_authorized": false,
+    "gcode_authorized": false,
+    "geometry_change_authorized": false,
+    "mirror_authorized": false,
+    "production_union_authorized": false,
+    "slicing_authorized": false,
+    "step_or_stl_export_authorized": false
+  },
+  "schema_version": "1.0",
+  "status": "FAIL__NO_COMPLETE_NON_ADDITIVE_ROUTE"
+}

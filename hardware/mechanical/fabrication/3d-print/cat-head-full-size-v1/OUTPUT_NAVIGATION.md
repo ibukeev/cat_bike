@@ -5,6 +5,14 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current V30 C001/C009 non-additive route audit — **JSON-only negative
+  result; no geometry artifact and not a print source**. The global repaired-eye
+  `4.0 mm` offset failed safely in OCC at both `0.01 mm` and `0.05 mm`
+  tolerances, so no cut was attempted. C009 remains a valid closed solid,
+  intersects the repaired eye by `27.7283 mm3`, and attaches only to C001;
+  deletion remains held. Read:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-c009-non-additive-route-audit-v30/validation-v30.json` and
+  `RIGHT_UPPER_C001_C009_NON_ADDITIVE_ROUTE_AUDIT_V30_CHECKPOINT_2026-08-16.md`.
 - Current V29 C001/C009 existing-body route audit — **JSON-only negative
   result; no geometry artifact and not a print source**. It proves there is no
   clean direct continuation of the existing V26 tapered rail into C001 within

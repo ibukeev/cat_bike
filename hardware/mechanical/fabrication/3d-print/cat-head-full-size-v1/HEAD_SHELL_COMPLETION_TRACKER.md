@@ -25,9 +25,11 @@ cap trim remains held because it would remove about `96.85%` of the component.
 V29 has now also closed the direct-extension route: no planar face of the
 existing V26 tapered rail can reach C001 within `30 mm` while retaining both
 `4.0 mm` eye clearance and `0.1 mm3` root overlap. C009 is confirmed to attach
-only to C001 and still intersects the repaired eye by `27.7283 mm3`. The next
-route is non-additive C001 local correction plus an owner-preserving C009
-absorption/removal audit, not another visible bridge.
+only to C001 and still intersects the repaired eye by `27.7283 mm3`. V30 then
+failed closed before any cut: OCC could not construct the global repaired-eye
+`4.0 mm` offset at either tested tolerance. No geometry was changed. The next
+controlled route is a translation-only audit of the exact existing V26 tapered
+rail and C009, not another visible bridge or unreviewed Boolean correction.
 No exact left mirror or bilateral closure is authorized yet. Print release
 remains held.
 `HS-04` is closed by the complete right C001 A/B shell orientation rather than
@@ -52,7 +54,7 @@ support layout, and brim on 2026-08-14. This does not release structural G-code.
 | HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
 | HS-09 | [x] | ~~Finish remaining primary ear interface~~ | User visually approved the clean bilateral V2 on 2026-08-11. V2 contains only the approved right head/ear final solids and their exact `X=0` mirrors; the stale left owner, four-hole lattice, pins, and proof shafts are absent. All four solids are valid, closed, self-intersection-free, and the mirrored topology, volume, area, and bounds match. | Preserve `CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd` unchanged through final full-head integration. |
 | HS-10 | [x] | ~~Build each eye bucket and rear cap as one serviceable module~~ | V9 was visually approved and promoted on 2026-08-13. Both bilateral bucket/cap pairs are valid, watertight, one-solid, self-intersection-free, topology/volume matched, STEP-round-trip verified, and retain the non-interfering `0.0239 mm` service gap. | Preserve `production/eye-modules-v9/` unchanged through HS-11 and later full-head validation. |
-| HS-11 | [ ] | Integrate and validate all eight eye flanges | Exact repaired-eye/V5 ownership remains accepted with `0.3000/0.3000 mm` gaps. V28 confirms only C001 (`100.5990 mm3`) and C009 (`27.7283 mm3`) have positive contact in the accepted V25 upper context; C012/C027 have zero overlap. V29 proves no clean direct continuation exists from the V26 tapered rail into C001, and C009 attaches only to C001. V27 is visually rejected and excluded. | Audit a non-additive C001 local correction and owner-preserving C009 absorption/removal; no visible add-on bridge. Then rerun the 42-component right context, exact-mirror, and validate bilaterally. |
+| HS-11 | [ ] | Integrate and validate all eight eye flanges | Exact repaired-eye/V5 ownership remains accepted with `0.3000/0.3000 mm` gaps. V28 confirms only C001 (`100.5990 mm3`) and C009 (`27.7283 mm3`) have positive contact in the accepted V25 upper context; C012/C027 have zero overlap. V29 proves no clean direct continuation exists from the V26 tapered rail into C001, and C009 attaches only to C001. V30's global non-additive eye-offset route failed safely before any cut. V27 is visually rejected and excluded. | Audit translation-only reposition routes for the exact existing V26 tapered rail and C009; require `4.0 mm` eye clearance, positive owner engagement, and zero non-owner collision. Then rerun the 42-component right context, exact-mirror, and validate bilaterally. |
 | HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
 | HS-13 | [ ] | Integrate lower face and rear cassette around aluminum | Lossless V5 ownership direction is accepted; production owners and final cassette are not unified. | Lower faces are reduced as approved, transferred geometry belongs to one cassette, and V0.5-M2 rail/plate insertion and removal remain unobstructed. |
 | HS-14 | [ ] | Add final cassette M5 pads and service sockets | Legacy Gate 8 pads are invalid; the real rail and 21.00 mm serviceable socket still require qualification. | Actual rail measured; socket/cap coupon passes; cassette pads/sockets integrate with hardware and tool access. |
@@ -74,6 +76,7 @@ condition, saved evidence, and affected checkpoint must all be updated.
 ## Source-of-truth links
 
 - [Output navigation](OUTPUT_NAVIGATION.md)
+- [C001/C009 non-additive route audit V30 checkpoint](RIGHT_UPPER_C001_C009_NON_ADDITIVE_ROUTE_AUDIT_V30_CHECKPOINT_2026-08-16.md)
 - [Print-readiness dashboard](PRINT_READINESS_DASHBOARD_2026-08-08.md)
 - [Physical-feedback closure matrix](FEEDBACK_CLOSURE_MATRIX_2026-08-08.md)
 - [Right-A surface-open insert checkpoint](RIGHT_A_SURFACE_OPEN_INSERT_CORRECTION_V1_CHECKPOINT_2026-08-09.md)
