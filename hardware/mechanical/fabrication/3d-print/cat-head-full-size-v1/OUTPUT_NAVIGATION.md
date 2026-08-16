@@ -5,8 +5,9 @@ current review is always easy to find.
 
 ## Open this first
 
-- Current V17 exact-eye defect visualization — **review only; zero geometry
-  changes; not a repair or print source**. Toggle `DEFECT_REGION__V9_SKIN` to
+- Current V17 exact-eye defect visualization — **defect localization visually
+  approved 2026-08-15; zero geometry changes; not a repair or print source**.
+  Toggle `DEFECT_REGION__V9_SKIN` to
   inspect the red/orange/yellow V9 skin faces, then toggle
   `DEFECT_REGION__OUTER_INWARD_ROOT` to inspect the purple/cyan outer-root
   faces. The grey translucent eye is the unchanged frozen V17 owner, and the

@@ -6,6 +6,11 @@ Review-only visualization generated and independently validated. This work
 does not alter, heal, cut, move, fuse, mirror, or replace any production
 geometry. It is not an STL, G-code, ASA print release, or repair approval.
 
+User visual review on 2026-08-15: **approved for defect localization only**.
+The approval confirms that the displayed V9-skin and outer-inward-root regions
+look correct. It does not approve repair anchors, repair geometry, production
+integration, mirroring, export, slicing, or ASA printing.
+
 ## Current review and output files
 
 - FreeCAD review file:
@@ -94,14 +99,9 @@ env PYTHONPATH=/tmp/freecad-1.1.3-extract/squashfs-root/usr/lib \
 
 ## Next physical/visual review
 
-1. Open `CAT_HEAD_RIGHT_EYE_V17_DEFECT_VISUALIZATION_V1.FCStd`.
-2. Toggle `DEFECT_REGION__V9_SKIN`: confirm the red/orange/yellow overlays are
-   confined to the small V9 eye-skin defect region.
-3. Toggle `DEFECT_REGION__OUTER_INWARD_ROOT`: confirm the purple/cyan overlays
-   are confined to the outer inward-root defect region.
-4. Confirm no overlay or proposed work exists at the clean second-eye root.
-5. Review only localization. Do not approve repair geometry from this file.
-
-After that visual confirmation, the next controlled step is a separate numeric
-repair contract for each localized region followed by a new candidate generated
-from frozen V17 sources. V17 itself must remain untouched.
+The localization review is complete. The next controlled step is to prepare
+two separate numeric repair contracts, one for the V9-skin region and one for
+the outer-inward-root region. Each contract must identify exact repair anchors,
+preserve the clean second-eye root, and define pass/fail topology, exterior,
+mating-gap, engagement, and clearance gates before any candidate is generated.
+V17 itself must remain untouched.
