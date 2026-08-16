@@ -139,6 +139,11 @@ def main(argv: list[str] | None = None) -> int:
                 errors.append(f"{artifact_id}: shape is invalid")
             if gates["require_closed"] and not metrics["closed"]:
                 errors.append(f"{artifact_id}: shape is open")
+            if gates["require_clean_occt_check"] and metrics["occt_check_messages"]:
+                errors.append(
+                    f"{artifact_id}: OCCT deep check reported "
+                    f"{len(metrics['occt_check_messages'])} issue(s)"
+                )
             if metrics["solid_count"] != gates["required_solid_count"]:
                 errors.append(
                     f"{artifact_id}: expected {gates['required_solid_count']} solids, "

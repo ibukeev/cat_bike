@@ -30,26 +30,29 @@ python3 hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/ca
   --verify-files
 ```
 
-Run the BREP health audit through the checked-in script using a FreeCAD
-installation whose `FreeCADCmd` supports documented script mode:
+Run the BREP health audit through the checked-in script using the verified
+FreeCAD 1.1.3 AppImage runtime extracted under `/tmp`:
 
 ```bash
 mkdir -p reports/generated/cat-head-cad-validation/v1
-FreeCADCmd hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_freecad_shapes.py \
-  --pass=--manifest \
-  --pass=hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/pilot/baseline-manifest-v1.json \
-  --pass=--contract \
-  --pass=hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/pilot/read-only-v17-eye-audit-v1.json \
-  --pass=--report \
-  --pass=reports/generated/cat-head-cad-validation/v1/v17-eye-brep-report.json
+CAT_HEAD_FREECAD_APPDIR=/path/to/FreeCAD-1.1.3-AppDir
+env PYTHONPATH="$CAT_HEAD_FREECAD_APPDIR/usr/lib" \
+  "$CAT_HEAD_FREECAD_APPDIR/AppRun" python \
+  hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_freecad_shapes.py \
+  --manifest hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/pilot/baseline-manifest-v1.json \
+  --contract hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/pilot/read-only-v17-eye-audit-v1.json \
+  --report reports/generated/cat-head-cad-validation/v1/v17-eye-brep-report-v2.json
 ```
 
-The locally installed FreeCAD 1.1.1 Snap currently exits `freecad.cmd`
-without entering Script mode, while its GUI launcher fails during Qt/PySide
-initialization. Until that package is replaced or fixed, the standard-Python
-contract/hash gate remains usable but the OCCT report must stay marked
-`NOT_RUN_RUNTIME_BLOCKED`. Do not substitute a GUI macro, inline Python, or an
-automatic mesh repair.
+The portable runtime is the official x86_64 FreeCAD 1.1.3 AppImage with
+SHA-256 `3a853eb69ee595f779f2255dbf80a765926981d8ff68903cefee4dfb03a8f5ef`.
+Do not launch the GUI with `--manifest`; the GUI treats that validator option
+as its own and fails before the audit starts. Do not substitute a GUI macro,
+inline Python, or automatic mesh repair.
+
+The V17 pilot currently fails the mandatory deep OCCT check with 38 BOP
+self-intersection diagnostics. Being closed, `isValid()`, and a single solid
+is not sufficient for a pass.
 
 The pilot deliberately includes accepted, proposed, rejected, and diagnostic
 artifacts. Their statuses prevent a rejected review from becoming a production

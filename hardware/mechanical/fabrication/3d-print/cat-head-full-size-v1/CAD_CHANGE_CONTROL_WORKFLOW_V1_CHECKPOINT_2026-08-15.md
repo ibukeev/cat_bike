@@ -68,21 +68,29 @@ evidence. The validator refuses to promote either status to a target.
 The following completed successfully:
 
 - Python syntax compilation for both validators and the regression test.
-- Five automated regression tests:
+- Six automated regression tests:
   - valid read-only contract passes;
   - rejected target fails closed;
   - double-counted clearance policy fails closed;
   - output outside the validation tree fails closed;
   - hash mismatch fails closed.
+  - disabling the mandatory deep OCCT check fails closed.
 - Pilot manifest and contract validation: **PASS**.
 - All five declared artifact hashes: **VERIFIED**.
 - Geometry mutation: **NONE**.
 
-The FreeCAD/OCCT V17 BREP health report is
-`NOT_RUN_RUNTIME_BLOCKED`. The installed FreeCAD 1.1.1 Snap
-`freecad.cmd` exits without entering Script mode, and its GUI launcher fails
-during Qt/PySide initialization. No macro, inline Python, automatic healing, or
-alternate geometry rewrite was used to manufacture a pass.
+The official FreeCAD 1.1.3 x86_64 AppImage was downloaded and its SHA-256
+verified as
+`3a853eb69ee595f779f2255dbf80a765926981d8ff68903cefee4dfb03a8f5ef`.
+The bundled Python/OCCT audit now runs without GUI automation.
+
+The first runtime report exposed a fail-open validator defect: V17 was closed,
+`isValid()`, and one solid, but `shape.check(True)` raised BOP self-intersection
+errors. That report's `PASS` status is superseded. The corrected replacement
+report is `v17-eye-brep-report-v2.json`; it exits nonzero with **FAIL** and
+records 38 BOP self-intersection diagnostics. The inspected V17 metrics are
+1,178 faces, 2,342 edges, 1,156 vertices, one shell, one solid, and
+7,269.553010791169 mm³ volume. No geometry was changed or healed.
 
 ## Exact regeneration commands
 
@@ -102,16 +110,22 @@ python3 hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/ca
   --verify-files
 ```
 
-After installing or repairing a FreeCAD distribution whose `FreeCADCmd`
-supports documented script mode, run the BREP command recorded in
-`source/cad-change-control/README.md`.
+CAT_HEAD_FREECAD_APPDIR=/path/to/FreeCAD-1.1.3-AppDir
+env PYTHONPATH="$CAT_HEAD_FREECAD_APPDIR/usr/lib" \
+  "$CAT_HEAD_FREECAD_APPDIR/AppRun" python \
+  hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_freecad_shapes.py \
+  --manifest hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/pilot/baseline-manifest-v1.json \
+  --contract hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/pilot/read-only-v17-eye-audit-v1.json \
+  --report reports/generated/cat-head-cad-validation/v1/v17-eye-brep-report-v2.json
 
 ## Next review and release state
 
-The next CAD task must start by creating a new contract for exactly one owner
-and one physical objective. It must produce an isolated right-side proposal,
-machine-readable validation results, and the six fixed review views before the
-user is asked to approve anything.
+The next CAD task is a contract-bound localization of the V17 right-eye
+self-intersections. Do not resume C001 work, mirror, unite production owners,
+or export print geometry until V17 passes the mandatory OCCT deep check. Any
+subsequent repair must target only the right-eye owner, preserve its exterior
+and approved mating positions, and produce the six fixed review views before
+the user is asked to approve it.
 
 There is no physical-review action from this workflow-only checkpoint. Existing
 physical-fit gates, production owner unification, STL export, slicing, G-code,

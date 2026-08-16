@@ -162,9 +162,11 @@ def validate_contract(
     if not isinstance(shape_gates, dict):
         errors.append("shape_gates must be an object")
     else:
-        for key in ("require_valid", "require_closed"):
+        for key in ("require_valid", "require_closed", "require_clean_occt_check"):
             if not isinstance(shape_gates.get(key), bool):
                 errors.append(f"shape_gates.{key} must be boolean")
+        if shape_gates.get("require_clean_occt_check") is not True:
+            errors.append("shape_gates.require_clean_occt_check must be true")
         count = shape_gates.get("required_solid_count")
         if not isinstance(count, int) or count < 0:
             errors.append("shape_gates.required_solid_count must be non-negative")

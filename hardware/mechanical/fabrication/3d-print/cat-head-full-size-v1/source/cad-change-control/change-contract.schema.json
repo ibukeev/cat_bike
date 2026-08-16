@@ -43,10 +43,16 @@
     "shape_gates": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["require_valid", "require_closed", "required_solid_count"],
+      "required": [
+        "require_valid",
+        "require_closed",
+        "require_clean_occt_check",
+        "required_solid_count"
+      ],
       "properties": {
         "require_valid": {"type": "boolean"},
         "require_closed": {"type": "boolean"},
+        "require_clean_occt_check": {"const": true},
         "required_solid_count": {"type": "integer", "minimum": 0}
       }
     },

@@ -40,6 +40,7 @@ def contract():
         "shape_gates": {
             "require_valid": True,
             "require_closed": True,
+            "require_clean_occt_check": True,
             "required_solid_count": 1,
         },
         "clearance_gates": [],
@@ -63,6 +64,12 @@ class CadChangeControlTests(unittest.TestCase):
         artifacts = {"target": artifact(status="rejected_visual")}
         errors = MODULE.validate_contract(contract(), artifacts)
         self.assertTrue(any("blocked status" in error for error in errors))
+
+    def test_occt_deep_check_cannot_be_disabled(self):
+        value = contract()
+        value["shape_gates"]["require_clean_occt_check"] = False
+        errors = MODULE.validate_contract(value, {"target": artifact()})
+        self.assertTrue(any("require_clean_occt_check must be true" in error for error in errors))
 
     def test_clearance_policy_cannot_be_double_counted(self):
         value = contract()

@@ -10,6 +10,7 @@
   "shape_gates": {
     "require_valid": true,
     "require_closed": true,
+    "require_clean_occt_check": true,
     "required_solid_count": 1
   },
   "clearance_gates": [],
