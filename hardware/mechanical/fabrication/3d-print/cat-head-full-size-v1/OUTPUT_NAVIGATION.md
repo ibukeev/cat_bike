@@ -3,8 +3,28 @@
 The generated `output/` directory is organized by workstream so the single
 current review is always easy to find.
 
-## Open this first
-- Current V33 C009 reposition preview — **review-only one-sided CAD; not a
+## Current working set — 2026-08-16
+
+- Start at
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/00-current/README.md`.
+- V33 is rejected: moving C009 left it floating in the translucent under-ear
+  panel region. It is historical evidence only and must not be used as a print
+  source.
+- The next controlled CAD bucket starts from the accepted pre-V33 upper-head
+  baseline and deletes C009 on the right side. It adds no replacement member,
+  does not reposition C009, and does not mirror or production-integrate before
+  full-context review.
+- The pilot root uses a non-moving Nautilus archive view. Seventy-six
+  superseded/rejected directories are hidden from the main list and categorized
+  under `90-archive/2026-08-16/`; all canonical paths remain unchanged.
+
+## Historical chronological ledger
+
+The older entries below retain their original labels for traceability. Any
+entry calling itself “Current” is superseded by the working-set declaration
+above.
+
+- Rejected V33 C009 reposition preview — **review-only one-sided CAD; not a
   print source**. It moves only the exact existing C009 by
   `[1.825092, 10.446536, 8.290829] mm`, adds no support geometry, retains
   `5.1278 mm3` C001 engagement, clears the topology-repaired eye by

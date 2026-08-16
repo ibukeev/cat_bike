@@ -1,0 +1,803 @@
+{
+  "schema": "cat-head-review-archive-manifest-v1",
+  "archive_date": "2026-08-16",
+  "policy": "Non-moving archive view. No files moved or deleted and no CAD geometry modified. Canonical paths, hashes, configs, checkpoints, and dirty work remain unchanged.",
+  "pilot_root": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1",
+  "archive_root": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16",
+  "preserved_top_level_directories": [
+    "bilateral-ab-mirror-review-v1",
+    "eye-bilateral-exact-mirror-review-v9",
+    "left-owner-reference-v1",
+    "left-upper-head-c001-topology-repair-v2",
+    "left-upper-head-c003-topology-repair-v1",
+    "left-upper-head-deterministic-topology-repair-v1",
+    "left-upper-head-full-owner-c001-c003-integration-v1",
+    "primary-ear-bilateral-exact-mirror-review-v2",
+    "primary-ear-bilateral-through-channel-review-v1",
+    "reference",
+    "right-a-surface-open-insert-correction-v1",
+    "right-ab-owner-integration-review-v1",
+    "right-ab-under-ear-opening-print-orientation-review-v2",
+    "right-b-hole-access-review-v1",
+    "right-ear-deterministic-topology-repair-v1",
+    "right-eye-exact-owner-integration-review-v17",
+    "right-eye-full-context-review-v18",
+    "right-eye-one-body-serviceable-module-review-v1",
+    "right-eye-production-owner-review-v8",
+    "right-eye-topology-repaired-full-context-review-v5",
+    "right-eye-upper-rim-structural-root-review-v1",
+    "right-eye-v17-full-topology-repair-step-review-v4",
+    "right-lower-face-owner-integration-review-v14",
+    "right-lower-face-topology-repair-review-v12",
+    "right-lower-face-topology-repair-review-v13",
+    "right-panel-topology-repair-v1",
+    "right-primary-ear-integrated-through-channel-review-v3",
+    "right-upper-approved-c027-c012-context-review-v25",
+    "right-upper-c001-eye-clearance-review-v26",
+    "right-upper-c012-eye-clearance-review-v24",
+    "right-upper-c027-eye-clearance-review-v19",
+    "right-upper-head-deterministic-topology-repair-v3"
+  ],
+  "archive_entries": [
+    {
+      "name": "CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/20-panel-ab-history/CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1",
+      "category": "20-panel-ab-history",
+      "tracked": false,
+      "file_count": 9,
+      "total_bytes": 134357,
+      "content_inventory_sha256": "6fd9b242adcc1c4e4cc63df8f221398be705d2cd9be56f007c6aef22e45c9975"
+    },
+    {
+      "name": "CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1 (2)",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1 (2)",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/20-panel-ab-history/CAT_HEAD_RIGHT_PANEL_OPPOSITE_SIDE_FLANGE_PILOT_V1 (2)",
+      "category": "20-panel-ab-history",
+      "tracked": false,
+      "file_count": 9,
+      "total_bytes": 134357,
+      "content_inventory_sha256": "6fd9b242adcc1c4e4cc63df8f221398be705d2cd9be56f007c6aef22e45c9975"
+    },
+    {
+      "name": "left-upper-head-c001-topology-repair-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c001-topology-repair-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/left-upper-head-c001-topology-repair-v1",
+      "category": "30-upper-head-history",
+      "tracked": false,
+      "file_count": 4,
+      "total_bytes": 1067104,
+      "content_inventory_sha256": "8244804d2498928bb16592e9ba6b8ed7aacbe3f068afae1cfbc1c9b26e34a682"
+    },
+    {
+      "name": "left-upper-head-c001-topology-repair-v3",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c001-topology-repair-v3",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/left-upper-head-c001-topology-repair-v3",
+      "category": "30-upper-head-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 629402,
+      "content_inventory_sha256": "c16178eaa5851b90d4b86c74860145f48539ed3ee0b02cab416ce76a3b57bfed"
+    },
+    {
+      "name": "left-upper-head-c001-topology-repair-v4",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c001-topology-repair-v4",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/left-upper-head-c001-topology-repair-v4",
+      "category": "30-upper-head-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 634440,
+      "content_inventory_sha256": "3fed6cf6c8b01025e97deae0ed713e9c5ebfea3c7c8a77577366d2662e169055"
+    },
+    {
+      "name": "left-upper-head-full-owner-c001-integration-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-full-owner-c001-integration-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/left-upper-head-full-owner-c001-integration-v1",
+      "category": "30-upper-head-history",
+      "tracked": false,
+      "file_count": 49,
+      "total_bytes": 8843060,
+      "content_inventory_sha256": "c979fa894d4c9083d93f6dcad5d5ad9da9312d55fc8823749cbbb649d2422d33"
+    },
+    {
+      "name": "lower-face-bilateral-exact-mirror-review-v15",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/lower-face-bilateral-exact-mirror-review-v15",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/40-lower-face-history/lower-face-bilateral-exact-mirror-review-v15",
+      "category": "40-lower-face-history",
+      "tracked": true,
+      "file_count": 47,
+      "total_bytes": 15237531,
+      "content_inventory_sha256": "82bee235c422c552fa04b308d07e3e96da2b44693e90da241854634b13459066"
+    },
+    {
+      "name": "review",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/review",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/10-legacy-and-duplicate-history/review",
+      "category": "10-legacy-and-duplicate-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 47958,
+      "content_inventory_sha256": "67708936930e2cf9880b692ca478cc834dc6230e327ac07d3d8d9bdaf6d1b1e9"
+    },
+    {
+      "name": "right-a-m3-hole-axis-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-m3-hole-axis-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/20-panel-ab-history/right-a-m3-hole-axis-review-v1",
+      "category": "20-panel-ab-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 7330751,
+      "content_inventory_sha256": "faf50a61ac82462738f849aecb86911f5c4d80d4415f4d45f516b0f9655d9e32"
+    },
+    {
+      "name": "right-a-panel-tab-clearance-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-panel-tab-clearance-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/20-panel-ab-history/right-a-panel-tab-clearance-review-v1",
+      "category": "20-panel-ab-history",
+      "tracked": false,
+      "file_count": 8,
+      "total_bytes": 7271540,
+      "content_inventory_sha256": "89f61d766551e920b6a84a2745d3d8f95e7de78e4a2bfd9c730937b16166efca"
+    },
+    {
+      "name": "right-a-tool-access-audit-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-a-tool-access-audit-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/20-panel-ab-history/right-a-tool-access-audit-v1",
+      "category": "20-panel-ab-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 10085228,
+      "content_inventory_sha256": "fd6ee2d3745a33a691dc4b38bf23bd86fac5cd9660ae336416caaebd8c578ae4"
+    },
+    {
+      "name": "right-ab-print-orientation-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-print-orientation-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/20-panel-ab-history/right-ab-print-orientation-review-v1",
+      "category": "20-panel-ab-history",
+      "tracked": true,
+      "file_count": 8,
+      "total_bytes": 5858756,
+      "content_inventory_sha256": "b0bd921f0d018634e737cb23c508938b901e4c25e04858d010d5344d072452ea"
+    },
+    {
+      "name": "right-b-panel-tab-clearance-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-b-panel-tab-clearance-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/20-panel-ab-history/right-b-panel-tab-clearance-review-v1",
+      "category": "20-panel-ab-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 9973226,
+      "content_inventory_sha256": "0a443103a329a1e70efb876bae6c33df13bfba97b525381a85d39f1167f988f7"
+    },
+    {
+      "name": "right-eye-additive-wall-continuation-review-v5",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-additive-wall-continuation-review-v5",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-additive-wall-continuation-review-v5",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 6,
+      "total_bytes": 1858622,
+      "content_inventory_sha256": "a9c9ab1f2db808f7d4dc6bee500337233c0d75516e6ff8b82749603a80706b2e"
+    },
+    {
+      "name": "right-eye-all-four-flange-local-skin-clip-review-v7",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-flange-local-skin-clip-review-v7",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-all-four-flange-local-skin-clip-review-v7",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 16,
+      "total_bytes": 8920394,
+      "content_inventory_sha256": "960972a96e4d21d8ca1aae6380410b8f16b72618c1b7c7ee3aca5e826715bcb0"
+    },
+    {
+      "name": "right-eye-all-four-plain-flange-thickness-review-v5",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-all-four-plain-flange-thickness-review-v5",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 15,
+      "total_bytes": 8038159,
+      "content_inventory_sha256": "a29b6e0fc4d06be948813a9e5b04f271614d2152c89600f3be5ffe306dea9034"
+    },
+    {
+      "name": "right-eye-bucket-cap-anchor-audit-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-bucket-cap-anchor-audit-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-bucket-cap-anchor-audit-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 4,
+      "total_bytes": 778361,
+      "content_inventory_sha256": "3cd4f72df2790c12338fc6583907b374785acae948b17ba74a7e8a87cbc72b82"
+    },
+    {
+      "name": "right-eye-c048-clearance-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-c048-clearance-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-c048-clearance-review-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 14,
+      "total_bytes": 8430996,
+      "content_inventory_sha256": "ccdb7e73c3f3118ceb5b2be3cc114a9496416f6b760b9b467eac9036121038e9"
+    },
+    {
+      "name": "right-eye-continuous-wall-proposal-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-continuous-wall-proposal-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-continuous-wall-proposal-v2",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 20,
+      "total_bytes": 2890977,
+      "content_inventory_sha256": "43bb869c52ca21cd566fb7399394396e0ee02433b33ec3265a20868f391472c3"
+    },
+    {
+      "name": "right-eye-delete-strips-extend-walls-review-v6",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-delete-strips-extend-walls-review-v6",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-delete-strips-extend-walls-review-v6",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 7,
+      "total_bytes": 1056548,
+      "content_inventory_sha256": "09557bb981475136098bb7f1c6429997ebaf7ee5fea70d8e796bf2c81ba93254"
+    },
+    {
+      "name": "right-eye-flange-owner-alignment-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-alignment-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-flange-owner-alignment-review-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 16,
+      "total_bytes": 10613455,
+      "content_inventory_sha256": "8b9f068cb8bbaf2295f518a7b50db932476d8403ecde97efa3ac22929d5d2133"
+    },
+    {
+      "name": "right-eye-flange-owner-integration-review-v16",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-flange-owner-integration-review-v16",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 13,
+      "total_bytes": 9062322,
+      "content_inventory_sha256": "531c9e6fc5ee3a036ec8cd0bf655422a0fdfb21520d8d3cfa194c5b62be21ccd"
+    },
+    {
+      "name": "right-eye-flange-reinforcement-owner-integration-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-reinforcement-owner-integration-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-flange-reinforcement-owner-integration-review-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 126,
+      "total_bytes": 12715343,
+      "content_inventory_sha256": "d8fd9f0fda23c7cbaa4bf52233e18dcac846c237337024d2b4f694d36d9870ad"
+    },
+    {
+      "name": "right-eye-head-flange-exterior-clip-review-v6",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-head-flange-exterior-clip-review-v6",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-head-flange-exterior-clip-review-v6",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 18,
+      "total_bytes": 10868377,
+      "content_inventory_sha256": "646b84776074a8ec4eb42e1ad1d0ebeb3e7660438045008a91561d7587de6f12"
+    },
+    {
+      "name": "right-eye-internal-root-embed-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-internal-root-embed-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-internal-root-embed-review-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 18,
+      "total_bytes": 8903153,
+      "content_inventory_sha256": "5d481f9576aff6a66ae0d1f266e94159747b4b7fe36c0f2b0f0fe5f505c83c46"
+    },
+    {
+      "name": "right-eye-neck-removal-clearance-regression-fix-review-v11",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-neck-removal-clearance-regression-fix-review-v11",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-neck-removal-clearance-regression-fix-review-v11",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 18,
+      "total_bytes": 8997873,
+      "content_inventory_sha256": "bfa0c1f63e412cd6a6cfea113e20e716264a6df1d063bcac41e844c2486ac381"
+    },
+    {
+      "name": "right-eye-outer-neck-removal-upper-head-owner-review-v10",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-neck-removal-upper-head-owner-review-v10",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-outer-neck-removal-upper-head-owner-review-v10",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 13,
+      "total_bytes": 6710255,
+      "content_inventory_sha256": "9b10dbea2e6f874b536008618cb6a8ad97a2814caa80a91ec70953a7f27cd4d0"
+    },
+    {
+      "name": "right-eye-outer-pair-face879-depth-extension-review-v3",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-face879-depth-extension-review-v3",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-outer-pair-face879-depth-extension-review-v3",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 15,
+      "total_bytes": 8706497,
+      "content_inventory_sha256": "c190c6fd43a9c459760ee88e573053c377854a5783b0d48d98983f42047274b9"
+    },
+    {
+      "name": "right-eye-outer-pair-radial-thickness-review-v4",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-outer-pair-radial-thickness-review-v4",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-outer-pair-radial-thickness-review-v4",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 12,
+      "total_bytes": 6889159,
+      "content_inventory_sha256": "104d58507dddc641523bf42bc440ca688359cfd21632094fb11d10739bb00677"
+    },
+    {
+      "name": "right-eye-rectangular-root-review-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-rectangular-root-review-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-rectangular-root-review-v2",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 19,
+      "total_bytes": 9950167,
+      "content_inventory_sha256": "d440e160c73fe76f45f0ed301347ea53799e8424a74e969ab4d52dbd29421e97"
+    },
+    {
+      "name": "right-eye-reinforcement-clearance-review-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-reinforcement-clearance-review-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-reinforcement-clearance-review-v2",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 15,
+      "total_bytes": 7894951,
+      "content_inventory_sha256": "7c511e69dcc123735817d52eb1611ba614c1b4c6b25982ccbe3d8696e2171b65"
+    },
+    {
+      "name": "right-eye-remove-cap-posts-review-v7",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-remove-cap-posts-review-v7",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-remove-cap-posts-review-v7",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 3,
+      "total_bytes": 3568504,
+      "content_inventory_sha256": "2b97b57f061fb3a6ac819c30f0e3dbbb06340bb97bc7d2231a2435df6ed01628"
+    },
+    {
+      "name": "right-eye-second-pair-neck-removal-review-v9",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-second-pair-neck-removal-review-v9",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-second-pair-neck-removal-review-v9",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 23,
+      "total_bytes": 9382804,
+      "content_inventory_sha256": "448b04ebab980f03a223450d783e1900ec92c2878ec35119f1f37ed9ed7be8c0"
+    },
+    {
+      "name": "right-eye-six-source-rebuild-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-six-source-rebuild-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-six-source-rebuild-review-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 3,
+      "total_bytes": 2786431,
+      "content_inventory_sha256": "89887d3a7211afefe5922800df34bd6789ac721e249caa5947a5d559cfeed42c"
+    },
+    {
+      "name": "right-eye-upper-head-only-dual-pair-review-v8",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-head-only-dual-pair-review-v8",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-upper-head-only-dual-pair-review-v8",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 18,
+      "total_bytes": 10275542,
+      "content_inventory_sha256": "0e37cf64d61324346aa08766740a20a0b92464077a4cc61e7f25e0b552ebe880"
+    },
+    {
+      "name": "right-eye-upper-perimeter-connector-pair-clean-review-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-perimeter-connector-pair-clean-review-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-upper-perimeter-connector-pair-clean-review-v2",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 2,
+      "total_bytes": 682528,
+      "content_inventory_sha256": "9d30b2f706e429b2bff5040a49152a543a356a4c701470d0f04a619611aa8acd"
+    },
+    {
+      "name": "right-eye-upper-perimeter-connector-pair-relocation-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-perimeter-connector-pair-relocation-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-upper-perimeter-connector-pair-relocation-review-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 3,
+      "total_bytes": 1041393,
+      "content_inventory_sha256": "ade1aa1573f3286e944b2c5fcf62af20ee11245cbb30eb05a056eab193105610"
+    },
+    {
+      "name": "right-eye-upper-rim-source-integrity-audit-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-upper-rim-source-integrity-audit-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-upper-rim-source-integrity-audit-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 483020,
+      "content_inventory_sha256": "6287eaa852c7c633d9b230060439eab13436bd2532195fd288b659c6178b3733"
+    },
+    {
+      "name": "right-eye-v17-defect-visualization-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-defect-visualization-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-v17-defect-visualization-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 547205,
+      "content_inventory_sha256": "a44daa33df76bcf80a06705d9de9ac710daee82408f12504c1fc2a1b15187ec7"
+    },
+    {
+      "name": "right-eye-v17-outer-root-topology-repair-review-v3",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-outer-root-topology-repair-review-v3",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-v17-outer-root-topology-repair-review-v3",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 2,
+      "total_bytes": 761420,
+      "content_inventory_sha256": "10565eba7177032141f9990bc32d0483868a95a3e73a565a16e46bd434df7b82"
+    },
+    {
+      "name": "right-eye-v17-v9-skin-repair-anchor-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-repair-anchor-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-v17-v9-skin-repair-anchor-review-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 555891,
+      "content_inventory_sha256": "b49106cd6a27726b7acb98874aa6e32583fd421d76b206229754e482ad9b0266"
+    },
+    {
+      "name": "right-eye-v17-v9-skin-topology-repair-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-v17-v9-skin-topology-repair-review-v1",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 2,
+      "total_bytes": 759804,
+      "content_inventory_sha256": "7f7256bc9daa2c2b2a3e02dde5d945c7e5a784589c5330e40848cc0feb3cc073"
+    },
+    {
+      "name": "right-eye-v17-v9-skin-topology-repair-step-review-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-eye-v17-v9-skin-topology-repair-step-review-v2",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 3,
+      "total_bytes": 1864516,
+      "content_inventory_sha256": "70edd0077695163df2cfe167319628caa6ab1e2890a29020f51c2cda131e7260"
+    },
+    {
+      "name": "right-primary-ear-clean-owner-compact-pair-review-v4",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-clean-owner-compact-pair-review-v4",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-clean-owner-compact-pair-review-v4",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 9,
+      "total_bytes": 1655842,
+      "content_inventory_sha256": "9a4bdadb530d7cda1b2ee60a1e2ec65ed2eff83de563258fbb8667d1bdfacd14"
+    },
+    {
+      "name": "right-primary-ear-clean-owner-dual-bolt-flange-pair-recovery-review-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-clean-owner-dual-bolt-flange-pair-recovery-review-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-clean-owner-dual-bolt-flange-pair-recovery-review-v2",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 783275,
+      "content_inventory_sha256": "924408bb24f87447aaaba1f00dc534e73005b6341957a0855779230af9416c6b"
+    },
+    {
+      "name": "right-primary-ear-dual-bolt-flange-proposal-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-dual-bolt-flange-proposal-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-dual-bolt-flange-proposal-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 1625201,
+      "content_inventory_sha256": "d7e9a9e261c386cc6d05d84caaad671333df9e6a2445e9ca4f50c781ee8f7c11"
+    },
+    {
+      "name": "right-primary-ear-face2-compact-pair-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-face2-compact-pair-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-face2-compact-pair-review-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 1,
+      "total_bytes": 711952,
+      "content_inventory_sha256": "83f5a30157606e3e2607a7fae01f0878f0643bfb3fe0298f18afd939487a34df"
+    },
+    {
+      "name": "right-primary-ear-face2-compact-pair-review-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-face2-compact-pair-review-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-face2-compact-pair-review-v2",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 695202,
+      "content_inventory_sha256": "a0818d7ae43a7330c03429ba6ce67a658e6b0d7c145412cdf10ca49416e05410"
+    },
+    {
+      "name": "right-primary-ear-face2-compact-pair-review-v3",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-face2-compact-pair-review-v3",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-face2-compact-pair-review-v3",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 7,
+      "total_bytes": 1446125,
+      "content_inventory_sha256": "c7227ae0cfc926d00db5d15616957272b0313f80acb671067c308f198b499e78"
+    },
+    {
+      "name": "right-primary-ear-face2-extension-proposal-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-face2-extension-proposal-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-face2-extension-proposal-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 712147,
+      "content_inventory_sha256": "79b78be433e3769a8c4bce298473221a1edaeba618e2af13b0f095e6654146e8"
+    },
+    {
+      "name": "right-primary-ear-flange-inboard-lateral-review-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-flange-inboard-lateral-review-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-flange-inboard-lateral-review-v2",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 2027209,
+      "content_inventory_sha256": "63bf01b32f5ef70882e2716b710894e7ece40fbe214d28e0c61f7371b18cd7a9"
+    },
+    {
+      "name": "right-primary-ear-flange-inboard-lateral-review-v3",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-flange-inboard-lateral-review-v3",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-flange-inboard-lateral-review-v3",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 1,
+      "total_bytes": 1010943,
+      "content_inventory_sha256": "2247df8a6d9edf89eae1897675e40bb6d89d5aeeea91cc73cecbf9048be83000"
+    },
+    {
+      "name": "right-primary-ear-flange-inboard-lateral-review-v4",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-flange-inboard-lateral-review-v4",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-flange-inboard-lateral-review-v4",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 2027451,
+      "content_inventory_sha256": "0c6d352ac913740bda79dcf15d797d6745220ca4b46394be9a861c9122bb32d0"
+    },
+    {
+      "name": "right-primary-ear-flange-inboard-setback-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-flange-inboard-setback-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-flange-inboard-setback-review-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 2033156,
+      "content_inventory_sha256": "01617029370b8c98b177ba9b9272ab4150e6708b0de0a90da4849d5353897bf1"
+    },
+    {
+      "name": "right-primary-ear-hole-slot-anchor-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-hole-slot-anchor-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-hole-slot-anchor-review-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 1,
+      "total_bytes": 1093187,
+      "content_inventory_sha256": "947c768ac96fb753979771e5059ebbb9496413583b61f28c2df3ed2f2d4e5aa7"
+    },
+    {
+      "name": "right-primary-ear-legacy-flange-flush-owner-cut-review-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-flange-flush-owner-cut-review-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-legacy-flange-flush-owner-cut-review-v2",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 1013892,
+      "content_inventory_sha256": "41b165a196faed4280c4d9b6556cd98e4bc1b7e7271bed770959636ec08eea23"
+    },
+    {
+      "name": "right-primary-ear-legacy-flange-owner-cut-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-flange-owner-cut-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-legacy-flange-owner-cut-review-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 997422,
+      "content_inventory_sha256": "9f58e848b47466d0f1a7342fb7541785dbc86a308bc9b7435a4b3c5a28986f68"
+    },
+    {
+      "name": "right-primary-ear-legacy-four-feature-removal-envelope-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-four-feature-removal-envelope-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-legacy-four-feature-removal-envelope-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 4,
+      "total_bytes": 1761139,
+      "content_inventory_sha256": "1e14c919d3eecb0829cbfacea7c9659ce681fbbaa8ee1796e0a17c89a51e6402"
+    },
+    {
+      "name": "right-primary-ear-legacy-style-compact-two-hole-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-style-compact-two-hole-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-legacy-style-compact-two-hole-review-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 1400834,
+      "content_inventory_sha256": "bbd767c7ab9c8c21d000a0496b3596bcadca7dcbab5467d75b47e2b214426a6c"
+    },
+    {
+      "name": "right-primary-ear-original-dual-bolt-flange-pair-recovery-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-original-dual-bolt-flange-pair-recovery-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-original-dual-bolt-flange-pair-recovery-review-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 1566403,
+      "content_inventory_sha256": "18093efba855a00ec46f1cabb65de979ea99d45451e23ae5b5960b494f9fa7fb"
+    },
+    {
+      "name": "right-primary-ear-owner-source-audit-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-owner-source-audit-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/60-ear-history/right-primary-ear-owner-source-audit-v1",
+      "category": "60-ear-history",
+      "tracked": false,
+      "file_count": 2,
+      "total_bytes": 1544674,
+      "content_inventory_sha256": "7fd552980550a1384a638f3670c5bc64ea27f6025a25fbf55b1e9758500e8c91"
+    },
+    {
+      "name": "right-upper-c001-c009-existing-body-route-audit-v29",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-c009-existing-body-route-audit-v29",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-c001-c009-existing-body-route-audit-v29",
+      "category": "30-upper-head-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 26919,
+      "content_inventory_sha256": "4fd9836d4c286cf7f7d47950f97a10a8058fdfb265041155a55edfb9e88a89d1"
+    },
+    {
+      "name": "right-upper-c001-c009-non-additive-route-audit-v30",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-c009-non-additive-route-audit-v30",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-c001-c009-non-additive-route-audit-v30",
+      "category": "30-upper-head-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 3876,
+      "content_inventory_sha256": "a9a70661168b79570b713206656e6b22cb9c9a8f1c706b50f3857a8df3f666d5"
+    },
+    {
+      "name": "right-upper-c001-preserved-rail-root-review-v27",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-preserved-rail-root-review-v27",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-c001-preserved-rail-root-review-v27",
+      "category": "30-upper-head-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 3451794,
+      "content_inventory_sha256": "84d6654a5a2872ddc71a51980f9524b370b43d777c6dde380bcf8f069fda17d2"
+    },
+    {
+      "name": "right-upper-c009-full-context-route-audit-v32",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-full-context-route-audit-v32",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-c009-full-context-route-audit-v32",
+      "category": "30-upper-head-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 17680,
+      "content_inventory_sha256": "ba789db1fbbc271b0638f271c4f689a397d669f7a9235d6764200cfbb2505a26"
+    },
+    {
+      "name": "right-upper-c009-reposition-preview-v33",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-reposition-preview-v33",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-c009-reposition-preview-v33",
+      "category": "30-upper-head-history",
+      "tracked": true,
+      "file_count": 2,
+      "total_bytes": 1556253,
+      "content_inventory_sha256": "f032f66f26368a81a78db124f2cedcda6e6568652c3d720d096b093633ca1c7b"
+    },
+    {
+      "name": "right-upper-c027-approved-context-review-v20",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c027-approved-context-review-v20",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-c027-approved-context-review-v20",
+      "category": "30-upper-head-history",
+      "tracked": true,
+      "file_count": 2,
+      "total_bytes": 2577626,
+      "content_inventory_sha256": "924429b4ee19cf9f961f66f369c7840e9f39b6fcf620fe2d16882def8bb6e311"
+    },
+    {
+      "name": "right-upper-existing-member-reposition-route-audit-v31",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-existing-member-reposition-route-audit-v31",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-existing-member-reposition-route-audit-v31",
+      "category": "30-upper-head-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 37182,
+      "content_inventory_sha256": "90cc5be415260038bc8c1478826bcb50e4a052c4fa5619e2b38ee5f90b68a129"
+    },
+    {
+      "name": "right-upper-eye-c001-anchor-localization-review-v22",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c001-anchor-localization-review-v22",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-upper-eye-c001-anchor-localization-review-v22",
+      "category": "50-eye-history",
+      "tracked": false,
+      "file_count": 1,
+      "total_bytes": 1447416,
+      "content_inventory_sha256": "fa40c1c20a3a170dbad7996eef65d443e5a4798c20889a9554f1b1930e39a6a8"
+    },
+    {
+      "name": "right-upper-eye-c001-exact-anchor-review-v22",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c001-exact-anchor-review-v22",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-upper-eye-c001-exact-anchor-review-v22",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 3,
+      "total_bytes": 2576538,
+      "content_inventory_sha256": "6bb4087a92bee7957d20e01d970929ab1a4f68c59000995d3e7443629ffae62a"
+    },
+    {
+      "name": "right-upper-eye-c009-c012-exact-anchor-review-v23",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-c009-c012-exact-anchor-review-v23",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-upper-eye-c009-c012-exact-anchor-review-v23",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 42,
+      "total_bytes": 4784346,
+      "content_inventory_sha256": "743525f6d64093ec7adbc56d06254275e70dbd43ceba1fc636b3fa35935809a0"
+    },
+    {
+      "name": "right-upper-eye-residual-collision-localization-review-v21",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-eye-residual-collision-localization-review-v21",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-upper-eye-residual-collision-localization-review-v21",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 2,
+      "total_bytes": 1355413,
+      "content_inventory_sha256": "127f53dafe6d997c4863aa4a4aca9aad2ed881de3d3a6a50017ff4b72e3a4173"
+    },
+    {
+      "name": "right-upper-head-component-validation-v2",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-component-validation-v2",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-head-component-validation-v2",
+      "category": "30-upper-head-history",
+      "tracked": false,
+      "file_count": 45,
+      "total_bytes": 797648,
+      "content_inventory_sha256": "0edd5e9e76d201a84bd241658509356b43f0bddaccf09e569e3b27ad4cd4bd34"
+    },
+    {
+      "name": "right-upper-head-legacy-small-flange-removal-review-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-legacy-small-flange-removal-review-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-head-legacy-small-flange-removal-review-v1",
+      "category": "30-upper-head-history",
+      "tracked": false,
+      "file_count": 8,
+      "total_bytes": 15648469,
+      "content_inventory_sha256": "72e58004b3616a0cde6c34194799210d3cc9a8f3694bd39827d21556dab2ef41"
+    },
+    {
+      "name": "right-upper-head-topology-repair-v1",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-head-topology-repair-v1",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/30-upper-head-history/right-upper-head-topology-repair-v1",
+      "category": "30-upper-head-history",
+      "tracked": false,
+      "file_count": 3,
+      "total_bytes": 622811,
+      "content_inventory_sha256": "08cecedc29cf4263a55ccb0c1bcfc92df0b20adfc084adf2d3be4c57a9128314"
+    },
+    {
+      "name": "right-upper-repaired-eye-approved-context-audit-v28",
+      "canonical_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-repaired-eye-approved-context-audit-v28",
+      "archive_link_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/90-archive/2026-08-16/50-eye-history/right-upper-repaired-eye-approved-context-audit-v28",
+      "category": "50-eye-history",
+      "tracked": true,
+      "file_count": 1,
+      "total_bytes": 23452,
+      "content_inventory_sha256": "15307b7648ef78fc64612f88714a883f1024df145d7e164ada0b5e70d9a36a11"
+    }
+  ]
+}
