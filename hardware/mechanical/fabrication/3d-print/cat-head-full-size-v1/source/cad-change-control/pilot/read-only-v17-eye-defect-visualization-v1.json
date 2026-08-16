@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "read-only-v17-eye-defect-visualization-v1",
+  "mode": "read_only_validation",
+  "target_owner": "right_eye_v17",
+  "protected_owners": ["right_eye_v17_lineage_fcstd"],
+  "permitted_operations": ["inspect", "measure"],
+  "geometry_changes_allowed": false,
+  "artifacts_to_inspect": ["right_eye_v17", "right_eye_v17_lineage_fcstd"],
+  "shape_gates": {
+    "require_valid": true,
+    "require_closed": true,
+    "require_clean_occt_check": true,
+    "required_solid_count": 1
+  },
+  "clearance_gates": [],
+  "review_visualization": {
+    "source_artifact_id": "right_eye_v17",
+    "source_face_pairs": [
+      {
+        "region": "V9_SKIN_DEFECT_REGION",
+        "faces": [587, 263]
+      },
+      {
+        "region": "V9_SKIN_DEFECT_REGION",
+        "faces": [587, 400]
+      },
+      {
+        "region": "OUTER_INWARD_ROOT_DEFECT_REGION",
+        "faces": [72, 489]
+      }
+    ],
+    "clean_region": "SECOND_EYE_ROOT__CLEAN_DO_NOT_MODIFY",
+    "output_fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-defect-visualization-v1/CAT_HEAD_RIGHT_EYE_V17_DEFECT_VISUALIZATION_V1.FCStd"
+  },
+  "output_directory": "reports/generated/cat-head-cad-validation/v17-defect-visualization-v1",
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "gcode": false,
+    "asa_print": false
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "clean_region": "SECOND_EYE_ROOT__CLEAN_DO_NOT_MODIFY",
+  "contract_id": "read-only-v17-eye-defect-visualization-v1",
+  "face_objects": [
+    {
+      "area_mm2": 1.461893912,
+      "bounds": {
+        "maximum_mm": [
+          69.683687036,
+          91.444465479,
+          174.495521802
+        ],
+        "minimum_mm": [
+          68.000558679,
+          87.777007898,
+          173.410087842
+        ]
+      },
+      "centroid_mm": [
+        68.842122858,
+        89.610736688,
+        173.952804822
+      ],
+      "object": "REVIEW_ONLY__V17__FACE587__V9_SKIN_SHARED_FACE",
+      "region": "V9_SKIN_DEFECT_REGION",
+      "role": "V9_SKIN_SHARED_FACE",
+      "source_face": "Face587"
+    },
+    {
+      "area_mm2": 0.778854839,
+      "bounds": {
+        "maximum_mm": [
+          69.940576379,
+          91.977928003,
+          173.547905225
+        ],
+        "minimum_mm": [
+          68.118020837,
+          91.430557092,
+          171.963569897
+        ]
+      },
+      "centroid_mm": [
+        69.320670272,
+        91.734674931,
+        172.74525223
+      ],
+      "object": "REVIEW_ONLY__V17__FACE263__V9_SKIN_PAIR_A",
+      "region": "V9_SKIN_DEFECT_REGION",
+      "role": "V9_SKIN_PAIR_A",
+      "source_face": "Face263"
+    },
+    {
+      "area_mm2": 0.692918971,
+      "bounds": {
+        "maximum_mm": [
+          69.940576379,
+          92.084411462,
+          173.547905225
+        ],
+        "minimum_mm": [
+          68.118020837,
+          91.430557092,
+          172.724281567
+        ]
+      },
+      "centroid_mm": [
+        69.282167261,
+        91.830965519,
+        173.252393343
+      ],
+      "object": "REVIEW_ONLY__V17__FACE400__V9_SKIN_PAIR_B",
+      "region": "V9_SKIN_DEFECT_REGION",
+      "role": "V9_SKIN_PAIR_B",
+      "source_face": "Face400"
+    },
+    {
+      "area_mm2": 0.933118105,
+      "bounds": {
+        "maximum_mm": [
+          97.382521268,
+          82.510913574,
+          146.91505603
+        ],
+        "minimum_mm": [
+          96.126372009,
+          78.251423679,
+          142.144472419
+        ]
+      },
+      "centroid_mm": [
+        96.570969843,
+        81.040863233,
+        145.164473416
+      ],
+      "object": "REVIEW_ONLY__V17__FACE72__OUTER_INWARD_ROOT_PAIR_A",
+      "region": "OUTER_INWARD_ROOT_DEFECT_REGION",
+      "role": "OUTER_INWARD_ROOT_PAIR_A",
+      "source_face": "Face72"
+    },
+    {
+      "area_mm2": 0.520806701,
+      "bounds": {
+        "maximum_mm": [
+          100.623312622,
+          84.216418945,
+          146.632829468
+        ],
+        "minimum_mm": [
+          96.135855347,
+          82.503360474,
+          146.180040161
+        ]
+      },
+      "centroid_mm": [
+        99.118910461,
+        83.638568604,
+        146.402467529
+      ],
+      "object": "REVIEW_ONLY__V17__FACE489__OUTER_INWARD_ROOT_PAIR_B",
+      "region": "OUTER_INWARD_ROOT_DEFECT_REGION",
+      "role": "OUTER_INWARD_ROOT_PAIR_B",
+      "source_face": "Face489"
+    }
+  ],
+  "face_pairs": [
+    [
+      587,
+      263
+    ],
+    [
+      587,
+      400
+    ],
+    [
+      72,
+      489
+    ]
+  ],
+  "geometry_changes": 0,
+  "lineage": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/CAT_HEAD_RIGHT_EYE_EXACT_OWNER_INTEGRATION_REVIEW_V17.FCStd",
+    "sha256_after": "861c11381ac4a47b4acce10c50706126605cb4e85417a96f2467dd22a9e8228a",
+    "sha256_before": "861c11381ac4a47b4acce10c50706126605cb4e85417a96f2467dd22a9e8228a"
+  },
+  "next_review": "Open the FCStd, toggle each defect group, and visually confirm the localized V9 skin and outer-inward-root regions. Do not approve a repair from this file.",
+  "production_geometry_authorized": false,
+  "release_holds": {
+    "asa_print": false,
+    "gcode": false,
+    "mirror": false,
+    "production_union": false,
+    "stl": false
+  },
+  "review_file": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-defect-visualization-v1/CAT_HEAD_RIGHT_EYE_V17_DEFECT_VISUALIZATION_V1.FCStd",
+  "review_file_sha256": "da2199da57e77d3ffe2d33845e65623c1dcc6b31455ef7a43b4cc5675776bbf6",
+  "source": {
+    "closed": true,
+    "face_count": 1178,
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/right_eye_bucket_with_both_exact_flange_roots_v17.step",
+    "sha256_after": "1b1e2430c369fb563602a056340c1d5f88f6a857f9cecf2014bac191443646de",
+    "sha256_before": "1b1e2430c369fb563602a056340c1d5f88f6a857f9cecf2014bac191443646de",
+    "solid_count": 1,
+    "valid": true
+  },
+  "status": "PASS__REVIEW_ONLY_VISUALIZATION_GENERATED"
+}
