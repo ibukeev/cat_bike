@@ -1,0 +1,3679 @@
+{
+  "boolean_errors": {},
+  "checks": {
+    "all_59_lower_obj_components_are_resolved": true,
+    "all_59_lower_obj_hashes_match": true,
+    "all_boolean_operations_completed": true,
+    "all_nonsewn_obj_components_have_strict_aabb_separation": true,
+    "lower_manifest_is_60_components": true,
+    "no_geometry_artifact_created": true,
+    "top_level_input_hashes_match": true,
+    "upper_c009_is_absent": true,
+    "upper_manifest_is_41_components": true,
+    "zero_positive_lower_intersections": false,
+    "zero_positive_upper_intersections": false
+  },
+  "contract_id": "CAT-HEAD-RIGHT-EYE-ALL-SHELL-COMPONENTS-CONFLICT-AUDIT-V35",
+  "eye": {
+    "bounds": {
+      "maximum_mm": [
+        104.17845153808109,
+        102.79824066164943,
+        179.13093566894
+      ],
+      "minimum_mm": [
+        27.489534378041142,
+        49.32897567748239,
+        118.47733306883288
+      ]
+    },
+    "closed": true,
+    "face_count": 1178,
+    "solid_count": 1,
+    "valid": true,
+    "volume_mm3": 7269.553014006874
+  },
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "generator": "freecad-right-eye-all-shell-components-conflict-audit-v35",
+  "input_hashes": {
+    "eye_step": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258",
+    "lower_c001_fcstd": "9ba404c8a7bed0ff9879eae95f06166093d308168679f3b44255261d785fe46c",
+    "lower_validation": "cc818aa96cf0474f67ce6d2f73ae49ff681c7a61ef15b12821df6cfefb4dd777",
+    "upper_fcstd": "2ff90641bf13ecebbd5ab7b5d388dd511b2577b0cc38df73030c7c77b83fad2b",
+    "upper_validation": "c2e49a2c6f448a5690ba600cb3c27ca1e210d36d165236031fdc5c732ce56d4b"
+  },
+  "lower_component_results": {
+    "C001": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            126.93900299072266,
+            269.3445129394531,
+            139.15171813964844
+          ],
+          "minimum_mm": [
+            -1.3515000343322754,
+            10.605006217956543,
+            -3.0000001096652795e-06
+          ]
+        },
+        "closed": true,
+        "face_count": 1027,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 78628.2309008664
+      },
+      "distance_mm": 0.0,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": {
+        "maximum_mm": [
+          103.46662234877714,
+          73.15720608303842,
+          126.39450073242188
+        ],
+        "minimum_mm": [
+          32.57683262485107,
+          49.62148916399999,
+          118.47733306883288
+        ]
+      },
+      "intersection_volume_mm3": 7.09087500661776,
+      "positive_intersection": true,
+      "source_kind": "hash-pinned V13 FCStd OCCT solid",
+      "source_object_label": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13",
+      "source_object_name": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13"
+    },
+    "C002": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            30.778499603271484,
+            16.082592010498047,
+            92.69255828857422
+          ],
+          "minimum_mm": [
+            -0.3266960084438324,
+            0.0,
+            47.80350112915039
+          ]
+        },
+        "closed": true,
+        "face_count": 208,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 3390.0021162938474
+      },
+      "distance_mm": 56.076437845811114,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_002",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_002.obj",
+      "source_sha256": "316cb5c6ddfe15b450a3feb725158ce6765483dd5fd5282f14cf979d950d5106"
+    },
+    "C003": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            15.498762130737305,
+            13.803221702575684,
+            73.17393493652344
+          ],
+          "minimum_mm": [
+            4.933773040771484,
+            4.359385013580322,
+            64.03807067871094
+          ]
+        },
+        "closed": true,
+        "face_count": 154,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 153.46490192252804
+      },
+      "distance_mm": 66.40041617489977,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_003",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_003.obj",
+      "source_sha256": "9bedc80bf1b2d2a91375740e7dbb1b840bddff6dea596c174559176075e7c9f7"
+    },
+    "C004": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            51.050323486328125,
+            24.787141799926758,
+            83.48733520507812
+          ],
+          "minimum_mm": [
+            41.04875564575195,
+            19.38631820678711,
+            77.49176025390625
+          ]
+        },
+        "closed": true,
+        "face_count": 38,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 57.03149526451435
+      },
+      "distance_mm": 50.676069457624415,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_004",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_004.obj",
+      "source_sha256": "ef021a0ba2f6a65b0b529a3c45aee7adfd30b91dcc0825a10809562f1223f8a8"
+    },
+    "C005": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            51.02250671386719,
+            24.801258087158203,
+            83.58837127685547
+          ],
+          "minimum_mm": [
+            41.36187744140625,
+            20.016321182250977,
+            78.6470718383789
+          ]
+        },
+        "closed": true,
+        "face_count": 22,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 19.774111846987797
+      },
+      "distance_mm": 50.5949969591052,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_005",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_005.obj",
+      "source_sha256": "5f81e15432d82426f0ddb08aeb25cfa60088b9727c857a46f3650ee1945fac66"
+    },
+    "C006": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            52.403038024902344,
+            22.869415283203125,
+            83.62232208251953
+          ],
+          "minimum_mm": [
+            42.72300338745117,
+            17.353572845458984,
+            78.56773376464844
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 24.169150751222208
+      },
+      "distance_mm": 51.80272189998464,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_006",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_006.obj",
+      "source_sha256": "70e2fe19915f65bca11e3955b2cf68089bfd9c66a93e97954a900cd37499775f"
+    },
+    "C007": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            74.0491943359375,
+            70.7150650024414,
+            122.48789978027344
+          ],
+          "minimum_mm": [
+            59.880828857421875,
+            58.73139572143555,
+            117.14425659179688
+          ]
+        },
+        "closed": true,
+        "face_count": 130,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 215.8284956969995
+      },
+      "distance_mm": 0.2999859958155651,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_007",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_007.obj",
+      "source_sha256": "6f7401a55c486e7636207c8b4e9cfa47928b56829bf2c46c5e1884d0617e42b9"
+    },
+    "C008": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            109.58790588378906,
+            183.98037719726562,
+            89.48342895507812
+          ],
+          "minimum_mm": [
+            101.0753173828125,
+            175.61550903320312,
+            79.55789184570312
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 97.19978432959041
+      },
+      "distance_mm": 105.61187657184587,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_008",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_008.obj",
+      "source_sha256": "f07d97e10344c113d0a05fc96529d961c3bb3cee48991852c4a6588c8deb5b9d"
+    },
+    "C009": {
+      "axis_gaps_mm": [
+        0.0,
+        73.03853933835057,
+        28.99390306883288
+      ],
+      "component_manifest": {
+        "bounds": {
+          "maximum_mm": [
+            107.141,
+            183.82378,
+            89.48343
+          ],
+          "minimum_mm": [
+            101.12776,
+            175.83678,
+            81.11508
+          ]
+        },
+        "topology": {
+          "boundary_edges": 0,
+          "edges": 18,
+          "faces": 7,
+          "nonmanifold_edges": 0,
+          "vertices": 13,
+          "volume_mm3": 26.3998
+        }
+      },
+      "distance_lower_bound_mm": 78.58291572501406,
+      "distance_mm": null,
+      "evaluation_method": "strict_aabb_separation_lower_bound",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "occt_reconstruction_note": "RuntimeError: OBJ reconstruction is not a closed shell: /home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_009.obj null=False closed=False",
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ with strict AABB separation proof",
+      "source_object_name": "V11_LOWER_COMPONENT_009",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_009.obj",
+      "source_sha256": "12628d8596979747f6eaf568c35daef1a5494f659948283cd46d9ee876888698"
+    },
+    "C010": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            107.45557403564453,
+            183.8237762451172,
+            90.1602783203125
+          ],
+          "minimum_mm": [
+            101.12773895263672,
+            174.89710998535156,
+            81.11508178710938
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 40.80006362123463
+      },
+      "distance_mm": 104.46454582691355,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_010",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_010.obj",
+      "source_sha256": "a1c75b3fb696092fcd2dee20fa78348b1e6e549151afae610095d1bcb2432d94"
+    },
+    "C011": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            30.317251205444336,
+            14.42606544494629,
+            94.26766204833984
+          ],
+          "minimum_mm": [
+            16.88462257385254,
+            0.12940800189971924,
+            80.0447769165039
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 284.2873881363739
+      },
+      "distance_mm": 54.330112557974225,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_011",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_011.obj",
+      "source_sha256": "d1314afff66df0a1563b9c0ea6de29d5beb2dc117feb08cb0037ee6b0773377c"
+    },
+    "C012": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            33.821109771728516,
+            52.75176239013672,
+            127.4993667602539
+          ],
+          "minimum_mm": [
+            25.515792846679688,
+            9.459338188171387,
+            80.24689483642578
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 980.7294983474814
+      },
+      "distance_mm": 0.0,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": {
+        "maximum_mm": [
+          33.507938279679955,
+          52.312821987071814,
+          126.05663517296843
+        ],
+        "minimum_mm": [
+          31.38887053375147,
+          49.32897567748239,
+          123.99495371160071
+        ]
+      },
+      "intersection_volume_mm3": 1.0457586741648095,
+      "positive_intersection": true,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_012",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_012.obj",
+      "source_sha256": "69f242427e867b627eaf7e056d680bf07ec10a8bfbb712fdd9b21050e5090374"
+    },
+    "C013": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            43.96049880981445,
+            64.52571105957031,
+            165.88949584960938
+          ],
+          "minimum_mm": [
+            18.346378326416016,
+            0.5504999756813049,
+            81.68343353271484
+          ]
+        },
+        "closed": true,
+        "face_count": 16,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 2920.9922879949063
+      },
+      "distance_mm": 0.0,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": {
+        "maximum_mm": [
+          39.969063285883514,
+          60.90054831734361,
+          154.74077502476294
+        ],
+        "minimum_mm": [
+          32.49624912081591,
+          49.32897567748239,
+          124.60487315864101
+        ]
+      },
+      "intersection_volume_mm3": 7.72605094181775,
+      "positive_intersection": true,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_013",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_013.obj",
+      "source_sha256": "2500266b992706bc41fdde6b24f3e9ecf88ee19a09b0ce8a6452d6e6a6dc6ba8"
+    },
+    "C014": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            86.24638366699219,
+            63.5412483215332,
+            94.11572265625
+          ],
+          "minimum_mm": [
+            71.34093475341797,
+            46.69265365600586,
+            78.53186798095703
+          ]
+        },
+        "closed": true,
+        "face_count": 20,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1038.5194380038463
+      },
+      "distance_mm": 28.07828452568217,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_014",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_014.obj",
+      "source_sha256": "23cc9ad8b8cdd45b9dfa910e4992edc85bb4094cb8d1cd1fc9995ed116295bc8"
+    },
+    "C015": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            92.68267822265625,
+            194.37158203125,
+            59.82266616821289
+          ],
+          "minimum_mm": [
+            79.12680053710938,
+            178.58828735351562,
+            47.87517166137695
+          ]
+        },
+        "closed": true,
+        "face_count": 20,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 637.9314222918255
+      },
+      "distance_mm": 127.1276903527721,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_015",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_015.obj",
+      "source_sha256": "268e1f184a1ee9d68ca6b4405f25bd843e89e2b0c81e3b5e991872fa177e2a85"
+    },
+    "C016": {
+      "axis_gaps_mm": [
+        0.0,
+        0.0,
+        66.61501306883288
+      ],
+      "component_manifest": {
+        "bounds": {
+          "maximum_mm": [
+            68.46962,
+            94.3386,
+            51.86232
+          ],
+          "minimum_mm": [
+            56.92775,
+            73.7558,
+            36.75946
+          ]
+        },
+        "topology": {
+          "boundary_edges": 0,
+          "edges": 99,
+          "faces": 36,
+          "nonmanifold_edges": 0,
+          "vertices": 65,
+          "volume_mm3": 509.9399
+        }
+      },
+      "distance_lower_bound_mm": 66.61501306883288,
+      "distance_mm": null,
+      "evaluation_method": "strict_aabb_separation_lower_bound",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "occt_reconstruction_note": "RuntimeError: OBJ reconstruction is not a closed shell: /home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_016.obj null=False closed=False",
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ with strict AABB separation proof",
+      "source_object_name": "V11_LOWER_COMPONENT_016",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_016.obj",
+      "source_sha256": "1453d46853d69a1115f1324b51130f3d22d0c9f9040b16c23889499064f7e310"
+    },
+    "C017": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            36.65867614746094,
+            237.55313110351562,
+            77.08811950683594
+          ],
+          "minimum_mm": [
+            28.697490692138672,
+            222.28131103515625,
+            62.62641525268555
+          ]
+        },
+        "closed": true,
+        "face_count": 14,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 303.36825776776095
+      },
+      "distance_mm": 160.5614301508678,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_017",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_017.obj",
+      "source_sha256": "b065ec8e72f56a22825fc2a64bb33e089322b5dbac9498a4228059ad6f6fd53a"
+    },
+    "C018": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            6.800000190734863,
+            185.65219116210938,
+            54.71741485595703
+          ],
+          "minimum_mm": [
+            0.8000000119209281,
+            39.986083984375,
+            1.7197530269622803
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 6334.030312362274
+      },
+      "distance_mm": 103.28740415172281,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_018",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_018.obj",
+      "source_sha256": "637f518e1d4257ab41787b20e377d85122ff8ee036ceaed494795306d3e38ccd"
+    },
+    "C019": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            6.800000190734863,
+            267.2823181152344,
+            133.84188842773438
+          ],
+          "minimum_mm": [
+            0.800000011920929,
+            227.4033203125,
+            67.62738800048828
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 2997.5666039852676
+      },
+      "distance_mm": 171.07339270578095,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_019",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_019.obj",
+      "source_sha256": "b9790801366f34d0c2ca0085fa7b8de71eed66454b799c3a24d1a899bece6b5f"
+    },
+    "C020": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            6.800000190734863,
+            230.58180236816406,
+            71.54137420654297
+          ],
+          "minimum_mm": [
+            0.800000011920929,
+            187.83314514160156,
+            49.695465087890625
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1809.0130334840308
+      },
+      "distance_mm": 142.97580235413005,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_020",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_020.obj",
+      "source_sha256": "51f087b6f4ae034fb066204e3476dbb6935d5cab5668c1f063b6d4073fdc37af"
+    },
+    "C021": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            6.978364944458008,
+            8.519447326660156,
+            89.96063232421875
+          ],
+          "minimum_mm": [
+            0.8105670213699341,
+            1.0310330390930176,
+            50.208106994628906
+          ]
+        },
+        "closed": true,
+        "face_count": 74,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1372.9792186441034
+      },
+      "distance_mm": 59.467600984994846,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_021",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_021.obj",
+      "source_sha256": "4dba1099cf1e2bdb204a372ca11cb231669429171356621486523dbcb0e9936e"
+    },
+    "C022": {
+      "axis_gaps_mm": [
+        0.0,
+        94.15826933835058,
+        0.0
+      ],
+      "component_manifest": {
+        "bounds": {
+          "maximum_mm": [
+            123.57262,
+            249.26071,
+            138.28015
+          ],
+          "minimum_mm": [
+            82.57966,
+            196.95651,
+            106.06226
+          ]
+        },
+        "topology": {
+          "boundary_edges": 0,
+          "edges": 35,
+          "faces": 13,
+          "nonmanifold_edges": 0,
+          "vertices": 24,
+          "volume_mm3": 2637.9612
+        }
+      },
+      "distance_lower_bound_mm": 94.15826933835058,
+      "distance_mm": null,
+      "evaluation_method": "strict_aabb_separation_lower_bound",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "occt_reconstruction_note": "RuntimeError: OBJ reconstruction is not a closed shell: /home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_022.obj null=False closed=False",
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ with strict AABB separation proof",
+      "source_object_name": "V11_LOWER_COMPONENT_022",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_022.obj",
+      "source_sha256": "c9e89164fe2153aada717001b9d3c1903ae42225762616bec5fd3604612625f5"
+    },
+    "C023": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            119.57251739501953,
+            110.06373596191406,
+            120.08854675292969
+          ],
+          "minimum_mm": [
+            96.74555206298828,
+            74.54823303222656,
+            111.99948120117188
+          ]
+        },
+        "closed": true,
+        "face_count": 28,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1373.4025030476027
+      },
+      "distance_mm": 1.710137573353753,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_023",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_023.obj",
+      "source_sha256": "30fcec2386f7a0eec3199ef3e83bcae473177cce9cab4f39a6456b892a69b9c2"
+    },
+    "C024": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            120.0296630859375,
+            105.67982482910156,
+            115.19503784179688
+          ],
+          "minimum_mm": [
+            117.20145416259766,
+            102.47161865234375,
+            111.95808410644531
+          ]
+        },
+        "closed": true,
+        "face_count": 4,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 0.875320146374128
+      },
+      "distance_mm": 33.07396567603809,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_024",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_024.obj",
+      "source_sha256": "adcf021498bc1bba2257bdb0a2b9f3236274206cd33f6cedc2a5dcb736ff5fc1"
+    },
+    "C025": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            87.21659088134766,
+            266.983154296875,
+            139.64471435546875
+          ],
+          "minimum_mm": [
+            56.96664810180664,
+            244.00192260742188,
+            127.5656967163086
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1257.4399910960253
+      },
+      "distance_mm": 148.10737786555873,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_025",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_025.obj",
+      "source_sha256": "3be4f51ce93a118d68ba0074faa39a1a402d0739c0b6409fcdbde9138f7e5999"
+    },
+    "C026": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            43.84297561645508,
+            27.127410888671875,
+            29.339561462402344
+          ],
+          "minimum_mm": [
+            33.83561325073242,
+            20.86957359313965,
+            15.617968559265137
+          ]
+        },
+        "closed": true,
+        "face_count": 10,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 171.6696019595724
+      },
+      "distance_mm": 98.65927500724838,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_026",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_026.obj",
+      "source_sha256": "cdd70970078c169bd3a643951dde8623ab19599d012ff718b8cb23a8b9e7dd64"
+    },
+    "C027": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            67.5450668334961,
+            35.23935317993164,
+            79.32632446289062
+          ],
+          "minimum_mm": [
+            59.34626007080078,
+            27.99985694885254,
+            67.81816864013672
+          ]
+        },
+        "closed": true,
+        "face_count": 10,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 155.03776213570188
+      },
+      "distance_mm": 51.65803824490364,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_027",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_027.obj",
+      "source_sha256": "ccbb1af6b361d36e17be86ff808b489e805e708682ccaf294c0677c425c74106"
+    },
+    "C028": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            63.58666229248047,
+            126.10879516601562,
+            34.5271110534668
+          ],
+          "minimum_mm": [
+            53.437767028808594,
+            108.75786590576172,
+            27.09148406982422
+          ]
+        },
+        "closed": true,
+        "face_count": 10,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 340.10278010910963
+      },
+      "distance_mm": 95.3276079499792,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_028",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_028.obj",
+      "source_sha256": "1e4eaedf23d0ebc6dc87fbdb6a3f315b2b2874dfd37af22d2e17acdaf7136401"
+    },
+    "C029": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            90.61898803710938,
+            161.0358428955078,
+            63.91313171386719
+          ],
+          "minimum_mm": [
+            80.99917602539062,
+            147.65737915039062,
+            52.080020904541016
+          ]
+        },
+        "closed": true,
+        "face_count": 46,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 304.14748635245843
+      },
+      "distance_mm": 98.51141347610749,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_029",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_029.obj",
+      "source_sha256": "9aaadb67d86140e05d0a6b3fef1632cb0eb166e107f9464907ad0dbea1af4747"
+    },
+    "C030": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            38.967262268066406,
+            41.21504211425781,
+            24.087709426879883
+          ],
+          "minimum_mm": [
+            28.421092987060547,
+            19.837081909179688,
+            3.3834009170532227
+          ]
+        },
+        "closed": true,
+        "face_count": 16,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 281.37765201775653
+      },
+      "distance_mm": 103.88255551123233,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_030",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_030.obj",
+      "source_sha256": "c353ed91ba6eb24c3e4d85e9c3a058c1e060f0af4bfcbeb075ae51471ad81b71"
+    },
+    "C031": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            39.822914123535156,
+            38.26740264892578,
+            20.76252555847168
+          ],
+          "minimum_mm": [
+            30.47247886657715,
+            21.464855194091797,
+            4.414337158203125
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 89.88499116205679
+      },
+      "distance_mm": 107.12312343721301,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_031",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_031.obj",
+      "source_sha256": "a6eff5c34bca6f07bb8b1ce8d65abad4dd942712e7e84f7275b7248fdfd24a6b"
+    },
+    "C032": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            62.09483337402344,
+            79.66837310791016,
+            38.547691345214844
+          ],
+          "minimum_mm": [
+            37.257774353027344,
+            22.347736358642578,
+            20.005586624145508
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 271.1142243764484
+      },
+      "distance_mm": 82.78712078849584,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_032",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_032.obj",
+      "source_sha256": "8665e5eaf4dc9cd28dba18e35514cb5f0513048a2974f2e2b529c5f4c3f3db20"
+    },
+    "C033": {
+      "axis_gaps_mm": [
+        0.0,
+        0.0,
+        73.21837306883288
+      ],
+      "component_manifest": {
+        "bounds": {
+          "maximum_mm": [
+            63.7975,
+            79.7319,
+            45.25896
+          ],
+          "minimum_mm": [
+            36.97323,
+            19.61239,
+            22.87927
+          ]
+        },
+        "topology": {
+          "boundary_edges": 0,
+          "edges": 21,
+          "faces": 9,
+          "nonmanifold_edges": 0,
+          "vertices": 14,
+          "volume_mm3": 737.8139
+        }
+      },
+      "distance_lower_bound_mm": 73.21837306883288,
+      "distance_mm": null,
+      "evaluation_method": "strict_aabb_separation_lower_bound",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "occt_reconstruction_note": "RuntimeError: OBJ reconstruction is not a closed shell: /home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_033.obj null=False closed=False",
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ with strict AABB separation proof",
+      "source_object_name": "V11_LOWER_COMPONENT_033",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_033.obj",
+      "source_sha256": "fa7c2e871ead4786ece135191f03ba00f1bb4104b93e9b6ecd0b672172d9346b"
+    },
+    "C034": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            60.12055969238281,
+            49.31504440307617,
+            121.26329803466797
+          ],
+          "minimum_mm": [
+            31.821077346801758,
+            25.162353515625,
+            74.1004638671875
+          ]
+        },
+        "closed": true,
+        "face_count": 16,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 238.7549717768904
+      },
+      "distance_mm": 4.644299166379091,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_034",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_034.obj",
+      "source_sha256": "413452461757e06abf441a18b82db08958210a531deb22a88966ad54360f940a"
+    },
+    "C035": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            64.7503662109375,
+            55.7203369140625,
+            122.84370422363281
+          ],
+          "minimum_mm": [
+            34.66877746582031,
+            27.050464630126953,
+            71.8587875366211
+          ]
+        },
+        "closed": true,
+        "face_count": 20,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 685.3102818058017
+      },
+      "distance_mm": 2.9548049939956753,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_035",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_035.obj",
+      "source_sha256": "c77b9cf63b5fa0145d11455c1db47b96986746bc1445e12347c1450d1170f965"
+    },
+    "C036": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            79.68539428710938,
+            54.58341979980469,
+            86.30557250976562
+          ],
+          "minimum_mm": [
+            59.20060729980469,
+            27.348583221435547,
+            73.03201293945312
+          ]
+        },
+        "closed": true,
+        "face_count": 20,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 337.98888086435375
+      },
+      "distance_mm": 37.293483452613046,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_036",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_036.obj",
+      "source_sha256": "51e7e290b178565ce3f9fb2a731808c984561d9767d0a62672fb304899c43af3"
+    },
+    "C037": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            79.00607299804688,
+            51.286502838134766,
+            83.24533081054688
+          ],
+          "minimum_mm": [
+            62.18874740600586,
+            28.806673049926758,
+            72.52851104736328
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 111.05984720177807
+      },
+      "distance_mm": 40.045620028571065,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_037",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_037.obj",
+      "source_sha256": "420eed859d1574482170785c2f0f907b99051c5f6dd74b3ee1f4b4932a75be3e"
+    },
+    "C038": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            63.172698974609375,
+            110.78173065185547,
+            37.77631759643555
+          ],
+          "minimum_mm": [
+            54.9724006652832,
+            87.51718139648438,
+            24.425432205200195
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 110.75751841044078
+      },
+      "distance_mm": 84.76545762801436,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_038",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_038.obj",
+      "source_sha256": "7cbdb909826da6c561175c4a3035a98dee92d2f2a266d822d6239c8b994ebb70"
+    },
+    "C039": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            65.28002166748047,
+            115.84256744384766,
+            45.05182647705078
+          ],
+          "minimum_mm": [
+            57.35824203491211,
+            88.95299530029297,
+            26.2347469329834
+          ]
+        },
+        "closed": true,
+        "face_count": 16,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 297.7542521663345
+      },
+      "distance_mm": 77.73943771949781,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_039",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_039.obj",
+      "source_sha256": "666af309568ae29604cc621b12da9fb9cf2caaa287eb20b9f6d8996a33a8ce5c"
+    },
+    "C040": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            88.78215789794922,
+            154.4754638671875,
+            58.56568145751953
+          ],
+          "minimum_mm": [
+            55.12309646606445,
+            119.29071807861328,
+            24.150245666503906
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 603.4950603458225
+      },
+      "distance_mm": 99.78571936744774,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_040",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_040.obj",
+      "source_sha256": "741f91fd4f9ab4adb33cb7afe7f93e35c551b98c7fda49da29da3d4e4ed59cef"
+    },
+    "C041": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            89.30238342285156,
+            148.41416931152344,
+            56.96508026123047
+          ],
+          "minimum_mm": [
+            59.73939514160156,
+            117.87825012207031,
+            27.75403594970703
+          ]
+        },
+        "closed": true,
+        "face_count": 20,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 187.49500843589283
+      },
+      "distance_mm": 96.46452747913509,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_041",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_041.obj",
+      "source_sha256": "997c279603c8203b14bc1380c530d6719beb73bedfee6188be278e9b1a9b2994"
+    },
+    "C042": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            79.9979019165039,
+            79.68081665039062,
+            81.76585388183594
+          ],
+          "minimum_mm": [
+            61.35678482055664,
+            54.303707122802734,
+            43.785823822021484
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 198.74106929441018
+      },
+      "distance_mm": 40.414444178659956,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_042",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_042.obj",
+      "source_sha256": "aa41701672cea89141dd13439033a2b53d81582209ae5f7957a39e50551dd02d"
+    },
+    "C043": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            82.7663803100586,
+            86.79460906982422,
+            86.79625701904297
+          ],
+          "minimum_mm": [
+            62.749393463134766,
+            56.021583557128906,
+            45.45096969604492
+          ]
+        },
+        "closed": true,
+        "face_count": 16,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 523.3489299243043
+      },
+      "distance_mm": 34.6773353209149,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_043",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_043.obj",
+      "source_sha256": "577bc7571d0cc82f314976c690753434bcff233ddf2ae8fa349852b54a23aa58"
+    },
+    "C044": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            77.5024642944336,
+            53.556644439697266,
+            121.93791198730469
+          ],
+          "minimum_mm": [
+            34.36933898925781,
+            48.4251708984375,
+            84.6431655883789
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 230.59337619469082
+      },
+      "distance_mm": 4.386224940312058,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_044",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_044.obj",
+      "source_sha256": "5e7dcb0cda469764c006e659892d15140d14bdda27eb8d809d77c43a9d3b8dd3"
+    },
+    "C045": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            85.52964782714844,
+            230.19342041015625,
+            69.17071533203125
+          ],
+          "minimum_mm": [
+            30.255834579467773,
+            185.02586364746094,
+            48.466434478759766
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 789.522745486724
+      },
+      "distance_mm": 130.7824003767643,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_045",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_045.obj",
+      "source_sha256": "cc457979ae7b9c95bcc8e3b4464f3ba6eed4a5e8f85e5e3ee1797e27fe5145ad"
+    },
+    "C046": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            86.69387817382812,
+            253.56443786621094,
+            138.39834594726562
+          ],
+          "minimum_mm": [
+            26.578975677490234,
+            232.65078735351562,
+            68.68714904785156
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1007.2106643576153
+      },
+      "distance_mm": 152.67551559845288,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_046",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_046.obj",
+      "source_sha256": "3d02b0aa14bc128939ef594ab261978505b363028ed5829121e0ecf3f2141894"
+    },
+    "C047": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            58.07212448120117,
+            267.48175048828125,
+            133.64730834960938
+          ],
+          "minimum_mm": [
+            27.274063110351562,
+            229.8157958984375,
+            68.86656188964844
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 858.9974693667127
+      },
+      "distance_mm": 167.0450510421307,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_047",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_047.obj",
+      "source_sha256": "d4932e390d0467aa17d9e07ab07eb31b0e4122d9b3a1ebbb14e8467df07cbb9e"
+    },
+    "C048": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            85.46125030517578,
+            230.3267364501953,
+            68.41803741455078
+          ],
+          "minimum_mm": [
+            34.02238082885742,
+            189.2305145263672,
+            50.044403076171875
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 281.8735782472283
+      },
+      "distance_mm": 134.22851851828935,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_048",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_048.obj",
+      "source_sha256": "4f4083e184aa171b85b09733813bca2e971dbd3fe02ccf0f515270c663beef9f"
+    },
+    "C049": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            59.83556365966797,
+            265.9931640625,
+            129.96463012695312
+          ],
+          "minimum_mm": [
+            32.17266845703125,
+            231.03956604003906,
+            69.98511505126953
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 308.2265800309077
+      },
+      "distance_mm": 167.32051918931833,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_049",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_049.obj",
+      "source_sha256": "4702bac25beb0125d117500e4ae860ebac5a7aa590db8e98bef58b7e7233c22b"
+    },
+    "C050": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            87.85155487060547,
+            249.87571716308594,
+            133.01815795898438
+          ],
+          "minimum_mm": [
+            33.65126419067383,
+            229.12860107421875,
+            68.59587097167969
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 364.44476310951836
+      },
+      "distance_mm": 149.53991214345535,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_050",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_050.obj",
+      "source_sha256": "2dac3990efe3b24fbfb8b7d0f5e9c07ee3b93fbd4c5a4a063db96ef98bb9b78f"
+    },
+    "C051": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            101.39244842529297,
+            75.8315200805664,
+            117.79815673828125
+          ],
+          "minimum_mm": [
+            78.74466705322266,
+            55.409629821777344,
+            88.0112075805664
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 417.6642239965303
+      },
+      "distance_mm": 1.4320340083632006,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_051",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_051.obj",
+      "source_sha256": "f8b9ab9fb42ebfdb389826dbe6e347851c29646e162d019b1512bb2907bdd8d5"
+    },
+    "C052": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            101.41858673095703,
+            73.59868621826172,
+            113.79058837890625
+          ],
+          "minimum_mm": [
+            82.07622528076172,
+            56.52579879760742,
+            88.07926177978516
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 140.8246197660223
+      },
+      "distance_mm": 5.15317671940254,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_052",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_052.obj",
+      "source_sha256": "07d8f6adde6873bba474d87b73757702abfaba9b63345c393c668bd459fc0bd1"
+    },
+    "C053": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            91.05963897705078,
+            184.50726318359375,
+            58.80823516845703
+          ],
+          "minimum_mm": [
+            81.24015808105469,
+            155.1168670654297,
+            46.38080596923828
+          ]
+        },
+        "closed": true,
+        "face_count": 12,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 344.66405347321165
+      },
+      "distance_mm": 103.45618141325694,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_053",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_053.obj",
+      "source_sha256": "3f6359e42a3be37e5914a56f937fea19f659b4d3212f9b0dae1f3f0a1784b751"
+    },
+    "C054": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            93.04653930664062,
+            183.83450317382812,
+            62.018489837646484
+          ],
+          "minimum_mm": [
+            86.79967498779297,
+            158.47943115234375,
+            50.474700927734375
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 113.17516964999848
+      },
+      "distance_mm": 104.0617625445024,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_054",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_054.obj",
+      "source_sha256": "dd0469934304eede7182995f7e8a32e4ad363812e1b1edff66c29fc67b9b9bd9"
+    },
+    "C055": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            89.09709930419922,
+            250.26353454589844,
+            135.3687744140625
+          ],
+          "minimum_mm": [
+            82.10421752929688,
+            187.16497802734375,
+            50.61531448364258
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1167.2270753089233
+      },
+      "distance_mm": 132.69487596877096,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_055",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_055.obj",
+      "source_sha256": "d4cb94986eaaac7055a079261094b03a72fc6deaa442b83692946bcde52a8925"
+    },
+    "C056": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            121.41786193847656,
+            202.610595703125,
+            111.00440979003906
+          ],
+          "minimum_mm": [
+            84.23040008544922,
+            187.80868530273438,
+            51.841697692871094
+          ]
+        },
+        "closed": true,
+        "face_count": 16,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 735.2790645772841
+      },
+      "distance_mm": 116.88490256429363,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_056",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_056.obj",
+      "source_sha256": "c809cbc07738f8b035d6c70915b910351c3b9e7a9b40e0d05f785094be4773e0"
+    },
+    "C057": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            123.55511474609375,
+            198.94354248046875,
+            105.70376586914062
+          ],
+          "minimum_mm": [
+            87.98139953613281,
+            186.6644287109375,
+            53.258785247802734
+          ]
+        },
+        "closed": true,
+        "face_count": 20,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 246.26739024632437
+      },
+      "distance_mm": 116.75907661182748,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_057",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_057.obj",
+      "source_sha256": "5073ccd53cb208ac9813b2900d2198bb0c0a2cf4cf595ed680c68e7f744306b7"
+    },
+    "C058": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            119.8414306640625,
+            197.318115234375,
+            107.8859634399414
+          ],
+          "minimum_mm": [
+            118.14533233642578,
+            196.7641143798828,
+            105.17882537841797
+          ]
+        },
+        "closed": true,
+        "face_count": 4,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 0.0005330601438298644
+      },
+      "distance_mm": 116.60267698143063,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_058",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_058.obj",
+      "source_sha256": "f3259284bfa8ab8065bf15ec9cf571522db5131cd12dd14f60879bd20846dfae"
+    },
+    "C059": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            91.96121978759766,
+            247.7042999267578,
+            134.3577880859375
+          ],
+          "minimum_mm": [
+            88.49266815185547,
+            187.37913513183594,
+            53.1808967590332
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 425.1421125680476
+      },
+      "distance_mm": 130.91276993435457,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_059",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_059.obj",
+      "source_sha256": "8f25e735551ad3bbc63466eac71a45042256f0a4f53af199f60fa2608bf8c58b"
+    },
+    "C060": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            89.0485610961914,
+            252.58609008789062,
+            140.3246307373047
+          ],
+          "minimum_mm": [
+            78.35359954833984,
+            243.0569305419922,
+            128.19747924804688
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 203.98730015165157
+      },
+      "distance_mm": 148.17543232301264,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ reconstructed in memory as OCCT solid",
+      "source_object_name": "V11_LOWER_COMPONENT_060",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_060.obj",
+      "source_sha256": "e85c5d9c48098883c2620328477700e9687fb0680b4fe239a6d972f67355f2ba"
+    }
+  },
+  "lower_obj_reconstruction_records": {
+    "C002": {
+      "mesh_facet_count": 208,
+      "mesh_point_count": 102,
+      "occt_face_count": 208,
+      "occt_volume_mm3": 3390.0021162938474
+    },
+    "C003": {
+      "mesh_facet_count": 154,
+      "mesh_point_count": 77,
+      "occt_face_count": 154,
+      "occt_volume_mm3": 153.46490192252804
+    },
+    "C004": {
+      "mesh_facet_count": 38,
+      "mesh_point_count": 21,
+      "occt_face_count": 38,
+      "occt_volume_mm3": 57.03149526451435
+    },
+    "C005": {
+      "mesh_facet_count": 22,
+      "mesh_point_count": 13,
+      "occt_face_count": 22,
+      "occt_volume_mm3": 19.774111846987797
+    },
+    "C006": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 24.169150751222208
+    },
+    "C007": {
+      "mesh_facet_count": 130,
+      "mesh_point_count": 65,
+      "occt_face_count": 130,
+      "occt_volume_mm3": 215.8284956969995
+    },
+    "C008": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 97.19978432959041
+    },
+    "C010": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 40.80006362123463
+    },
+    "C011": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 284.2873881363739
+    },
+    "C012": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 980.7294983474814
+    },
+    "C013": {
+      "mesh_facet_count": 16,
+      "mesh_point_count": 10,
+      "occt_face_count": 16,
+      "occt_volume_mm3": 2920.9922879949063
+    },
+    "C014": {
+      "mesh_facet_count": 20,
+      "mesh_point_count": 12,
+      "occt_face_count": 20,
+      "occt_volume_mm3": 1038.5194380038463
+    },
+    "C015": {
+      "mesh_facet_count": 20,
+      "mesh_point_count": 12,
+      "occt_face_count": 20,
+      "occt_volume_mm3": 637.9314222918255
+    },
+    "C017": {
+      "mesh_facet_count": 14,
+      "mesh_point_count": 9,
+      "occt_face_count": 14,
+      "occt_volume_mm3": 303.36825776776095
+    },
+    "C018": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 6334.030312362274
+    },
+    "C019": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 2997.5666039852676
+    },
+    "C020": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 1809.0130334840308
+    },
+    "C021": {
+      "mesh_facet_count": 74,
+      "mesh_point_count": 39,
+      "occt_face_count": 74,
+      "occt_volume_mm3": 1372.9792186441034
+    },
+    "C023": {
+      "mesh_facet_count": 28,
+      "mesh_point_count": 16,
+      "occt_face_count": 28,
+      "occt_volume_mm3": 1373.4025030476027
+    },
+    "C024": {
+      "mesh_facet_count": 4,
+      "mesh_point_count": 4,
+      "occt_face_count": 4,
+      "occt_volume_mm3": 0.875320146374128
+    },
+    "C025": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 1257.4399910960253
+    },
+    "C026": {
+      "mesh_facet_count": 10,
+      "mesh_point_count": 7,
+      "occt_face_count": 10,
+      "occt_volume_mm3": 171.6696019595724
+    },
+    "C027": {
+      "mesh_facet_count": 10,
+      "mesh_point_count": 7,
+      "occt_face_count": 10,
+      "occt_volume_mm3": 155.03776213570188
+    },
+    "C028": {
+      "mesh_facet_count": 10,
+      "mesh_point_count": 7,
+      "occt_face_count": 10,
+      "occt_volume_mm3": 340.10278010910963
+    },
+    "C029": {
+      "mesh_facet_count": 46,
+      "mesh_point_count": 25,
+      "occt_face_count": 46,
+      "occt_volume_mm3": 304.14748635245843
+    },
+    "C030": {
+      "mesh_facet_count": 16,
+      "mesh_point_count": 10,
+      "occt_face_count": 16,
+      "occt_volume_mm3": 281.37765201775653
+    },
+    "C031": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 89.88499116205679
+    },
+    "C032": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 271.1142243764484
+    },
+    "C034": {
+      "mesh_facet_count": 16,
+      "mesh_point_count": 10,
+      "occt_face_count": 16,
+      "occt_volume_mm3": 238.7549717768904
+    },
+    "C035": {
+      "mesh_facet_count": 20,
+      "mesh_point_count": 12,
+      "occt_face_count": 20,
+      "occt_volume_mm3": 685.3102818058017
+    },
+    "C036": {
+      "mesh_facet_count": 20,
+      "mesh_point_count": 12,
+      "occt_face_count": 20,
+      "occt_volume_mm3": 337.98888086435375
+    },
+    "C037": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 111.05984720177807
+    },
+    "C038": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 110.75751841044078
+    },
+    "C039": {
+      "mesh_facet_count": 16,
+      "mesh_point_count": 10,
+      "occt_face_count": 16,
+      "occt_volume_mm3": 297.7542521663345
+    },
+    "C040": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 603.4950603458225
+    },
+    "C041": {
+      "mesh_facet_count": 20,
+      "mesh_point_count": 12,
+      "occt_face_count": 20,
+      "occt_volume_mm3": 187.49500843589283
+    },
+    "C042": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 198.74106929441018
+    },
+    "C043": {
+      "mesh_facet_count": 16,
+      "mesh_point_count": 10,
+      "occt_face_count": 16,
+      "occt_volume_mm3": 523.3489299243043
+    },
+    "C044": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 230.59337619469082
+    },
+    "C045": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 789.522745486724
+    },
+    "C046": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 1007.2106643576153
+    },
+    "C047": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 858.9974693667127
+    },
+    "C048": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 281.8735782472283
+    },
+    "C049": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 308.2265800309077
+    },
+    "C050": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 364.44476310951836
+    },
+    "C051": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 417.6642239965303
+    },
+    "C052": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 140.8246197660223
+    },
+    "C053": {
+      "mesh_facet_count": 12,
+      "mesh_point_count": 8,
+      "occt_face_count": 12,
+      "occt_volume_mm3": 344.66405347321165
+    },
+    "C054": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 113.17516964999848
+    },
+    "C055": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 1167.2270753089233
+    },
+    "C056": {
+      "mesh_facet_count": 16,
+      "mesh_point_count": 10,
+      "occt_face_count": 16,
+      "occt_volume_mm3": 735.2790645772841
+    },
+    "C057": {
+      "mesh_facet_count": 20,
+      "mesh_point_count": 12,
+      "occt_face_count": 20,
+      "occt_volume_mm3": 246.26739024632437
+    },
+    "C058": {
+      "mesh_facet_count": 4,
+      "mesh_point_count": 4,
+      "occt_face_count": 4,
+      "occt_volume_mm3": 0.0005330601438298644
+    },
+    "C059": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 425.1421125680476
+    },
+    "C060": {
+      "mesh_facet_count": 8,
+      "mesh_point_count": 6,
+      "occt_face_count": 8,
+      "occt_volume_mm3": 203.98730015165157
+    }
+  },
+  "nonsewn_lower_obj_aabb_clearance_proofs": {
+    "C009": {
+      "axis_gaps_mm": [
+        0.0,
+        73.03853933835057,
+        28.99390306883288
+      ],
+      "component_manifest": {
+        "bounds": {
+          "maximum_mm": [
+            107.141,
+            183.82378,
+            89.48343
+          ],
+          "minimum_mm": [
+            101.12776,
+            175.83678,
+            81.11508
+          ]
+        },
+        "topology": {
+          "boundary_edges": 0,
+          "edges": 18,
+          "faces": 7,
+          "nonmanifold_edges": 0,
+          "vertices": 13,
+          "volume_mm3": 26.3998
+        }
+      },
+      "distance_lower_bound_mm": 78.58291572501406,
+      "distance_mm": null,
+      "evaluation_method": "strict_aabb_separation_lower_bound",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "occt_reconstruction_note": "RuntimeError: OBJ reconstruction is not a closed shell: /home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_009.obj null=False closed=False",
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ with strict AABB separation proof",
+      "source_object_name": "V11_LOWER_COMPONENT_009",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_009.obj",
+      "source_sha256": "12628d8596979747f6eaf568c35daef1a5494f659948283cd46d9ee876888698"
+    },
+    "C016": {
+      "axis_gaps_mm": [
+        0.0,
+        0.0,
+        66.61501306883288
+      ],
+      "component_manifest": {
+        "bounds": {
+          "maximum_mm": [
+            68.46962,
+            94.3386,
+            51.86232
+          ],
+          "minimum_mm": [
+            56.92775,
+            73.7558,
+            36.75946
+          ]
+        },
+        "topology": {
+          "boundary_edges": 0,
+          "edges": 99,
+          "faces": 36,
+          "nonmanifold_edges": 0,
+          "vertices": 65,
+          "volume_mm3": 509.9399
+        }
+      },
+      "distance_lower_bound_mm": 66.61501306883288,
+      "distance_mm": null,
+      "evaluation_method": "strict_aabb_separation_lower_bound",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "occt_reconstruction_note": "RuntimeError: OBJ reconstruction is not a closed shell: /home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_016.obj null=False closed=False",
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ with strict AABB separation proof",
+      "source_object_name": "V11_LOWER_COMPONENT_016",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_016.obj",
+      "source_sha256": "1453d46853d69a1115f1324b51130f3d22d0c9f9040b16c23889499064f7e310"
+    },
+    "C022": {
+      "axis_gaps_mm": [
+        0.0,
+        94.15826933835058,
+        0.0
+      ],
+      "component_manifest": {
+        "bounds": {
+          "maximum_mm": [
+            123.57262,
+            249.26071,
+            138.28015
+          ],
+          "minimum_mm": [
+            82.57966,
+            196.95651,
+            106.06226
+          ]
+        },
+        "topology": {
+          "boundary_edges": 0,
+          "edges": 35,
+          "faces": 13,
+          "nonmanifold_edges": 0,
+          "vertices": 24,
+          "volume_mm3": 2637.9612
+        }
+      },
+      "distance_lower_bound_mm": 94.15826933835058,
+      "distance_mm": null,
+      "evaluation_method": "strict_aabb_separation_lower_bound",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "occt_reconstruction_note": "RuntimeError: OBJ reconstruction is not a closed shell: /home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_022.obj null=False closed=False",
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ with strict AABB separation proof",
+      "source_object_name": "V11_LOWER_COMPONENT_022",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_022.obj",
+      "source_sha256": "c9e89164fe2153aada717001b9d3c1903ae42225762616bec5fd3604612625f5"
+    },
+    "C033": {
+      "axis_gaps_mm": [
+        0.0,
+        0.0,
+        73.21837306883288
+      ],
+      "component_manifest": {
+        "bounds": {
+          "maximum_mm": [
+            63.7975,
+            79.7319,
+            45.25896
+          ],
+          "minimum_mm": [
+            36.97323,
+            19.61239,
+            22.87927
+          ]
+        },
+        "topology": {
+          "boundary_edges": 0,
+          "edges": 21,
+          "faces": 9,
+          "nonmanifold_edges": 0,
+          "vertices": 14,
+          "volume_mm3": 737.8139
+        }
+      },
+      "distance_lower_bound_mm": 73.21837306883288,
+      "distance_mm": null,
+      "evaluation_method": "strict_aabb_separation_lower_bound",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "occt_reconstruction_note": "RuntimeError: OBJ reconstruction is not a closed shell: /home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_033.obj null=False closed=False",
+      "positive_intersection": false,
+      "source_kind": "hash-pinned V14 OBJ with strict AABB separation proof",
+      "source_object_name": "V11_LOWER_COMPONENT_033",
+      "source_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_033.obj",
+      "source_sha256": "fa7c2e871ead4786ece135191f03ba00f1bb4104b93e9b6ecd0b672172d9346b"
+    }
+  },
+  "numeric_contract": {
+    "acceptance": "Zero positive eye-versus-shell intersections above threshold; zero unresolved Boolean or reconstruction errors; every source hash verified; any non-sewn OBJ must have a strictly positive AABB separation lower bound proving collision is impossible.",
+    "mesh_to_occt_tolerance_mm": 1e-06,
+    "positive_intersection_threshold_mm3": 1e-06,
+    "required_lower_component_ids": "C001 through C060",
+    "required_upper_component_ids": "C001 through C042 excluding C009"
+  },
+  "outputs": {
+    "cad_document_created_or_modified": false,
+    "geometry_artifact_created": false,
+    "geometry_modified": false,
+    "mirrored": false,
+    "production_union_created": false,
+    "sliced": false,
+    "stl_exported": false,
+    "validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-shell-components-conflict-audit-v35/validation-v35.json"
+  },
+  "positive_intersection_count": 4,
+  "positive_lower_components": [
+    "C001",
+    "C012",
+    "C013"
+  ],
+  "positive_upper_components": [
+    "C001"
+  ],
+  "release_holds": [
+    "V35 is read-only collision evidence, not geometry approval",
+    "Every positive contact must be dispositioned and revalidated",
+    "Containment/exterior-protrusion, insertion path, bilateral, service, topology, slicer, and physical tests remain separate",
+    "No final ASA print release"
+  ],
+  "schema_version": "1.0",
+  "status": "FAIL__EYE_INTERSECTS_FROZEN_SHELL__NO_PRINT_RELEASE",
+  "total_positive_intersection_volume_mm3": 116.46172911938395,
+  "upper_component_results": {
+    "C001": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            126.93900299072266,
+            269.3445129394531,
+            268.1520080566406
+          ],
+          "minimum_mm": [
+            -30.0,
+            63.05550003051758,
+            109.75635528564452
+          ]
+        },
+        "closed": true,
+        "face_count": 1859,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 75969.39034165144
+      },
+      "distance_mm": 0.0,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": {
+        "maximum_mm": [
+          103.73682954555261,
+          94.68942819003995,
+          178.65699833571034
+        ],
+        "minimum_mm": [
+          55.12208224919352,
+          70.78373610991255,
+          118.47733306883288
+        ]
+      },
+      "intersection_volume_mm3": 100.59904449678362,
+      "positive_intersection": true,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C001__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C001_V34"
+    },
+    "C002": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            71.43737030029297,
+            151.3447265625,
+            212.66758728027344
+          ],
+          "minimum_mm": [
+            35.8066291809082,
+            105.2105941772461,
+            170.14976501464844
+          ]
+        },
+        "closed": true,
+        "face_count": 177,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 24722.725809962278
+      },
+      "distance_mm": 16.82071242867802,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C002__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C002_V34"
+    },
+    "C003": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            123.45652770996094,
+            160.2225341796875,
+            124.2865982055664
+          ],
+          "minimum_mm": [
+            119.11318969726562,
+            149.7776641845703,
+            119.01981353759766
+          ]
+        },
+        "closed": true,
+        "face_count": 139,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 79.41804244406237
+      },
+      "distance_mm": 68.24876578369138,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C003__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C003_V34"
+    },
+    "C004": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            48.497066497802734,
+            89.07881164550781,
+            216.6722869873047
+          ],
+          "minimum_mm": [
+            36.7574577331543,
+            79.49799346923828,
+            205.46530151367188
+          ]
+        },
+        "closed": true,
+        "face_count": 40,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 363.520707312277
+      },
+      "distance_mm": 36.31514956772469,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C004__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C004_V34"
+    },
+    "C005": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            9.222989082336426,
+            192.04415893554688,
+            265.7010498046875
+          ],
+          "minimum_mm": [
+            -1.4775915145874023,
+            180.7490692138672,
+            256.7641906738281
+          ]
+        },
+        "closed": true,
+        "face_count": 15,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 259.77304519571294
+      },
+      "distance_mm": 136.965308013636,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C005__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C005_V34"
+    },
+    "C006": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            75.90563201904297,
+            249.18516540527344,
+            212.44601440429688
+          ],
+          "minimum_mm": [
+            64.25968933105469,
+            241.38156127929688,
+            198.20504760742188
+          ]
+        },
+        "closed": true,
+        "face_count": 15,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 324.9883488050836
+      },
+      "distance_mm": 144.0505821142378,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C006__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C006_V34"
+    },
+    "C007": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            125.00123596191406,
+            249.1077880859375,
+            140.97439575195312
+          ],
+          "minimum_mm": [
+            84.66181945800781,
+            195.57754516601562,
+            110.0214614868164
+          ]
+        },
+        "closed": true,
+        "face_count": 34,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 2647.3092989250745
+      },
+      "distance_mm": 112.7726039298669,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C007__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C007_V34"
+    },
+    "C008": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            122.51583099365234,
+            117.12479400634766,
+            127.63970947265625
+          ],
+          "minimum_mm": [
+            115.07359313964844,
+            105.95421600341797,
+            117.08519744873047
+          ]
+        },
+        "closed": true,
+        "face_count": 19,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 197.3743203829809
+      },
+      "distance_mm": 30.54608006874682,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C008__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C008_V34"
+    },
+    "C010": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            122.63642883300781,
+            166.1315460205078,
+            187.02474975585938
+          ],
+          "minimum_mm": [
+            115.46953582763672,
+            157.4049835205078,
+            176.99679565429688
+          ]
+        },
+        "closed": true,
+        "face_count": 21,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 134.92831859712248
+      },
+      "distance_mm": 59.4392087090386,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C010__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C010_V34"
+    },
+    "C011": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            7.892384052276611,
+            143.4830322265625,
+            263.5096740722656
+          ],
+          "minimum_mm": [
+            0.792330801486969,
+            90.10750579833984,
+            209.82688903808594
+          ]
+        },
+        "closed": true,
+        "face_count": 27,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 2830.2625764243367
+      },
+      "distance_mm": 56.49566148768735,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C011__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C011_V34"
+    },
+    "C012": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            121.93273162841797,
+            112.72796630859375,
+            170.7237068522267
+          ],
+          "minimum_mm": [
+            99.941019287695,
+            92.39849387545974,
+            121.70966339111328
+          ]
+        },
+        "closed": true,
+        "face_count": 22,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 606.5389591603521
+      },
+      "distance_mm": 3.999955758212551,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C012__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C012_V34"
+    },
+    "C013": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            126.7354736328125,
+            159.8231201171875,
+            121.67919158935547
+          ],
+          "minimum_mm": [
+            124.75738525390625,
+            149.59182739257812,
+            117.80858612060547
+          ]
+        },
+        "closed": true,
+        "face_count": 21,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 26.32215856838985
+      },
+      "distance_mm": 69.96214466310899,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C013__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C013_V34"
+    },
+    "C014": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            120.76880645751953,
+            109.85922241210938,
+            125.10718536376953
+          ],
+          "minimum_mm": [
+            97.3553466796875,
+            74.52473449707031,
+            117.6665267944336
+          ]
+        },
+        "closed": true,
+        "face_count": 22,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1483.2716169528974
+      },
+      "distance_mm": 0.14231097284064756,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C014__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C014_V34"
+    },
+    "C015": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            8.382979393005371,
+            144.10379028320312,
+            262.2369079589844
+          ],
+          "minimum_mm": [
+            -1.7581180334091204,
+            134.43145751953125,
+            254.99554443359375
+          ]
+        },
+        "closed": true,
+        "face_count": 9,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 107.91155180060923
+      },
+      "distance_mm": 110.62975685074821,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C015__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C015_V34"
+    },
+    "C016": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            38.43785858154297,
+            255.51046752929688,
+            215.76052856445312
+          ],
+          "minimum_mm": [
+            27.54237937927246,
+            246.53628540039062,
+            204.8726348876953
+          ]
+        },
+        "closed": true,
+        "face_count": 10,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 278.4161900882888
+      },
+      "distance_mm": 162.16283849715657,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C016__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C016_V34"
+    },
+    "C017": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            62.90990447998047,
+            147.4311981201172,
+            252.43438720703125
+          ],
+          "minimum_mm": [
+            51.525814056396484,
+            136.19456481933594,
+            240.07212829589844
+          ]
+        },
+        "closed": true,
+        "face_count": 10,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 267.907006140642
+      },
+      "distance_mm": 80.7577809309423,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C017__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C017_V34"
+    },
+    "C018": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            120.80785369873047,
+            105.98320007324219,
+            171.8891143798828
+          ],
+          "minimum_mm": [
+            99.12217712402344,
+            88.61701965332031,
+            121.69927215576172
+          ]
+        },
+        "closed": true,
+        "face_count": 17,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 236.8901438810333
+      },
+      "distance_mm": 0.6471936102871572,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C018__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C018_V34"
+    },
+    "C019": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            96.82984924316406,
+            91.16621398925781,
+            208.18125915527344
+          ],
+          "minimum_mm": [
+            43.04035568237305,
+            77.23881530761719,
+            176.82603454589844
+          ]
+        },
+        "closed": true,
+        "face_count": 19,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 262.5434202190768
+      },
+      "distance_mm": 0.0,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 4.22075409047481e-08,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C019__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C019_V34"
+    },
+    "C020": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            64.25602722167969,
+            143.81137084960938,
+            248.6524200439453
+          ],
+          "minimum_mm": [
+            41.684383392333984,
+            80.9884033203125,
+            206.724609375
+          ]
+        },
+        "closed": true,
+        "face_count": 22,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 833.4202296905747
+      },
+      "distance_mm": 39.532272659980315,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C020__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C020_V34"
+    },
+    "C021": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            89.83847045898438,
+            250.60946655273438,
+            202.88784790039062
+          ],
+          "minimum_mm": [
+            73.56221771240234,
+            242.810546875,
+            141.0174560546875
+          ]
+        },
+        "closed": true,
+        "face_count": 19,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 274.3125032008793
+      },
+      "distance_mm": 142.9989890253978,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C021__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C021_V34"
+    },
+    "C022": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            42.460472106933594,
+            142.96383666992188,
+            262.582763671875
+          ],
+          "minimum_mm": [
+            1.8480937480926514,
+            81.84324645996092,
+            209.08506774902344
+          ]
+        },
+        "closed": true,
+        "face_count": 14,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 967.9780582259567
+      },
+      "distance_mm": 41.876571502403955,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C022__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C022_V34"
+    },
+    "C023": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            71.78121185302734,
+            247.31600952148438,
+            265.12481689453125
+          ],
+          "minimum_mm": [
+            -1.7234668731689453,
+            186.10971069335938,
+            204.0854034423828
+          ]
+        },
+        "closed": true,
+        "face_count": 14,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1230.74980846892
+      },
+      "distance_mm": 139.02549255379765,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C023__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C023_V34"
+    },
+    "C024": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            122.68601989746094,
+            158.3087615966797,
+            183.33106994628906
+          ],
+          "minimum_mm": [
+            117.78590393066406,
+            109.61192321777344,
+            123.16670989990234
+          ]
+        },
+        "closed": true,
+        "face_count": 22,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 325.7219827925878
+      },
+      "distance_mm": 34.21500132017267,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C024__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C024_V34"
+    },
+    "C025": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            125.96356201171875,
+            199.9953155517578,
+            182.7810516357422
+          ],
+          "minimum_mm": [
+            117.99002838134766,
+            165.32034301757812,
+            115.15295410156249
+          ]
+        },
+        "closed": true,
+        "face_count": 16,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 326.269693003096
+      },
+      "distance_mm": 65.53549480692185,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C025__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C025_V34"
+    },
+    "C026": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            88.2836685180664,
+            252.98770141601562,
+            204.2668914794922
+          ],
+          "minimum_mm": [
+            68.6848373413086,
+            243.87879943847656,
+            138.21490478515625
+          ]
+        },
+        "closed": true,
+        "face_count": 15,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 768.742488201487
+      },
+      "distance_mm": 144.87786327732834,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C026__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C026_V34"
+    },
+    "C027": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            44.209158618345214,
+            81.18762969970703,
+            211.46197509765625
+          ],
+          "minimum_mm": [
+            35.9580192565918,
+            64.79872053350759,
+            173.34303631612272
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 646.0048239195407
+      },
+      "distance_mm": 5.320764344690322,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C027__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C027_V34"
+    },
+    "C028": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            5.911230564117439,
+            257.84393310546875,
+            265.7572021484375
+          ],
+          "minimum_mm": [
+            -28.468322753906257,
+            182.03529357910156,
+            205.05067443847656
+          ]
+        },
+        "closed": true,
+        "face_count": 10,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 3906.5472832210016
+      },
+      "distance_mm": 138.37542073732152,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C028__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C028_V34"
+    },
+    "C029": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            6.613045692443848,
+            182.90533447265625,
+            266.8433532714844
+          ],
+          "minimum_mm": [
+            -1.0880789756774902,
+            142.34768676757812,
+            256.1380310058594
+          ]
+        },
+        "closed": true,
+        "face_count": 6,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1686.4509313192743
+      },
+      "distance_mm": 113.7694863438854,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C029__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C029_V34"
+    },
+    "C030": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            60.627010345458984,
+            167.48495483398438,
+            257.63775634765625
+          ],
+          "minimum_mm": [
+            49.271297454833984,
+            143.97061157226562,
+            244.61622619628906
+          ]
+        },
+        "closed": true,
+        "face_count": 6,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 908.7389487785985
+      },
+      "distance_mm": 88.80487835816538,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C030__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C030_V34"
+    },
+    "C031": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            87.23406219482422,
+            267.1650695800781,
+            142.25930786132812
+          ],
+          "minimum_mm": [
+            57.12397003173828,
+            245.6405029296875,
+            132.08465576171875
+          ]
+        },
+        "closed": true,
+        "face_count": 10,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1257.4418287858641
+      },
+      "distance_mm": 147.99834450883745,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C031__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C031_V34"
+    },
+    "C032": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            43.96049880981445,
+            78.56495666503906,
+            211.77450561523438
+          ],
+          "minimum_mm": [
+            18.851289749145508,
+            42.842998504638665,
+            141.6056365966797
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1260.128471650347
+      },
+      "distance_mm": 0.46082262348483527,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C032__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C032_V34"
+    },
+    "C033": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            57.908321380615234,
+            142.96002197265625,
+            263.3077392578125
+          ],
+          "minimum_mm": [
+            2.0004758834838867,
+            136.80101013183594,
+            244.48155212402344
+          ]
+        },
+        "closed": true,
+        "face_count": 6,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 646.9375980196721
+      },
+      "distance_mm": 86.55309674194594,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C033__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C033_V34"
+    },
+    "C034": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            56.088512420654304,
+            145.7706298828125,
+            263.77545166015625
+          ],
+          "minimum_mm": [
+            4.560638427734368,
+            140.86175537109375,
+            248.4024200439453
+          ]
+        },
+        "closed": true,
+        "face_count": 8,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 227.79077368047615
+      },
+      "distance_mm": 91.57301912650667,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C034__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C034_V34"
+    },
+    "C035": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            59.65167236328125,
+            141.05120849609375,
+            249.15875244140625
+          ],
+          "minimum_mm": [
+            38.546974182128906,
+            82.27900695800781,
+            211.7642364501953
+          ]
+        },
+        "closed": true,
+        "face_count": 7,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 299.3568932562154
+      },
+      "distance_mm": 45.24755414416054,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C035__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C035_V34"
+    },
+    "C036": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            27.45969009399414,
+            254.57046508789062,
+            264.2056884765625
+          ],
+          "minimum_mm": [
+            -0.5806927680969243,
+            187.09950256347656,
+            210.39158630371094
+          ]
+        },
+        "closed": true,
+        "face_count": 5,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 377.8838360716668
+      },
+      "distance_mm": 144.44345356571938,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C036__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C036_V34"
+    },
+    "C037": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            52.52290725708008,
+            186.96717834472656,
+            266.4512634277344
+          ],
+          "minimum_mm": [
+            2.8905255794525146,
+            168.84616088867188,
+            251.867431640625
+          ]
+        },
+        "closed": true,
+        "face_count": 6,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 589.5510628115934
+      },
+      "distance_mm": 110.2391525145587,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C037__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C037_V34"
+    },
+    "C038": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            32.80095291137695,
+            254.9310302734375,
+            265.13690185546875
+          ],
+          "minimum_mm": [
+            1.7114531993865962,
+            182.506591796875,
+            208.13702392578125
+          ]
+        },
+        "closed": true,
+        "face_count": 7,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1042.6399630332307
+      },
+      "distance_mm": 139.20722479836905,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C038__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C038_V34"
+    },
+    "C039": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            49.860923767089844,
+            182.52476501464844,
+            266.6824035644531
+          ],
+          "minimum_mm": [
+            4.689523696899414,
+            167.07823181152344,
+            254.9491424560547
+          ]
+        },
+        "closed": true,
+        "face_count": 7,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 206.02320591729045
+      },
+      "distance_mm": 111.91106618249287,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C039__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C039_V34"
+    },
+    "C040": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            70.85818481445312,
+            256.7423095703125,
+            212.79364013671875
+          ],
+          "minimum_mm": [
+            31.839374542236328,
+            240.86851501464844,
+            205.99713134765625
+          ]
+        },
+        "closed": true,
+        "face_count": 6,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 446.64316998098303
+      },
+      "distance_mm": 144.37121572913972,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C040__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C040_V34"
+    },
+    "C041": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            69.10425567626953,
+            257.4542236328125,
+            210.0699462890625
+          ],
+          "minimum_mm": [
+            34.60659408569336,
+            244.81051635742188,
+            205.27658081054688
+          ]
+        },
+        "closed": true,
+        "face_count": 7,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 151.81586630600484
+      },
+      "distance_mm": 148.23053642210655,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C041__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C041_V34"
+    },
+    "C042": {
+      "component": {
+        "bounds": {
+          "maximum_mm": [
+            91.13245391845703,
+            139.6789093017578,
+            238.91958618164062
+          ],
+          "minimum_mm": [
+            41.35002517700195,
+            85.79447174072266,
+            177.8885498046875
+          ]
+        },
+        "closed": true,
+        "face_count": 7,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 21036.57558650993
+      },
+      "distance_mm": 6.786592512061905,
+      "evaluation_method": "exact_occt_common_and_dist_to_shape",
+      "intersection_bounds": null,
+      "intersection_volume_mm3": 0.0,
+      "positive_intersection": false,
+      "source_object_label": "RETAINED__RIGHT_UPPER_C042__V25__V34",
+      "source_object_name": "RETAINED_RIGHT_UPPER_C042_V34"
+    }
+  },
+  "verified_lower_component_hashes": {
+    "C002": "316cb5c6ddfe15b450a3feb725158ce6765483dd5fd5282f14cf979d950d5106",
+    "C003": "9bedc80bf1b2d2a91375740e7dbb1b840bddff6dea596c174559176075e7c9f7",
+    "C004": "ef021a0ba2f6a65b0b529a3c45aee7adfd30b91dcc0825a10809562f1223f8a8",
+    "C005": "5f81e15432d82426f0ddb08aeb25cfa60088b9727c857a46f3650ee1945fac66",
+    "C006": "70e2fe19915f65bca11e3955b2cf68089bfd9c66a93e97954a900cd37499775f",
+    "C007": "6f7401a55c486e7636207c8b4e9cfa47928b56829bf2c46c5e1884d0617e42b9",
+    "C008": "f07d97e10344c113d0a05fc96529d961c3bb3cee48991852c4a6588c8deb5b9d",
+    "C009": "12628d8596979747f6eaf568c35daef1a5494f659948283cd46d9ee876888698",
+    "C010": "a1c75b3fb696092fcd2dee20fa78348b1e6e549151afae610095d1bcb2432d94",
+    "C011": "d1314afff66df0a1563b9c0ea6de29d5beb2dc117feb08cb0037ee6b0773377c",
+    "C012": "69f242427e867b627eaf7e056d680bf07ec10a8bfbb712fdd9b21050e5090374",
+    "C013": "2500266b992706bc41fdde6b24f3e9ecf88ee19a09b0ce8a6452d6e6a6dc6ba8",
+    "C014": "23cc9ad8b8cdd45b9dfa910e4992edc85bb4094cb8d1cd1fc9995ed116295bc8",
+    "C015": "268e1f184a1ee9d68ca6b4405f25bd843e89e2b0c81e3b5e991872fa177e2a85",
+    "C016": "1453d46853d69a1115f1324b51130f3d22d0c9f9040b16c23889499064f7e310",
+    "C017": "b065ec8e72f56a22825fc2a64bb33e089322b5dbac9498a4228059ad6f6fd53a",
+    "C018": "637f518e1d4257ab41787b20e377d85122ff8ee036ceaed494795306d3e38ccd",
+    "C019": "b9790801366f34d0c2ca0085fa7b8de71eed66454b799c3a24d1a899bece6b5f",
+    "C020": "51f087b6f4ae034fb066204e3476dbb6935d5cab5668c1f063b6d4073fdc37af",
+    "C021": "4dba1099cf1e2bdb204a372ca11cb231669429171356621486523dbcb0e9936e",
+    "C022": "c9e89164fe2153aada717001b9d3c1903ae42225762616bec5fd3604612625f5",
+    "C023": "30fcec2386f7a0eec3199ef3e83bcae473177cce9cab4f39a6456b892a69b9c2",
+    "C024": "adcf021498bc1bba2257bdb0a2b9f3236274206cd33f6cedc2a5dcb736ff5fc1",
+    "C025": "3be4f51ce93a118d68ba0074faa39a1a402d0739c0b6409fcdbde9138f7e5999",
+    "C026": "cdd70970078c169bd3a643951dde8623ab19599d012ff718b8cb23a8b9e7dd64",
+    "C027": "ccbb1af6b361d36e17be86ff808b489e805e708682ccaf294c0677c425c74106",
+    "C028": "1e4eaedf23d0ebc6dc87fbdb6a3f315b2b2874dfd37af22d2e17acdaf7136401",
+    "C029": "9aaadb67d86140e05d0a6b3fef1632cb0eb166e107f9464907ad0dbea1af4747",
+    "C030": "c353ed91ba6eb24c3e4d85e9c3a058c1e060f0af4bfcbeb075ae51471ad81b71",
+    "C031": "a6eff5c34bca6f07bb8b1ce8d65abad4dd942712e7e84f7275b7248fdfd24a6b",
+    "C032": "8665e5eaf4dc9cd28dba18e35514cb5f0513048a2974f2e2b529c5f4c3f3db20",
+    "C033": "fa7c2e871ead4786ece135191f03ba00f1bb4104b93e9b6ecd0b672172d9346b",
+    "C034": "413452461757e06abf441a18b82db08958210a531deb22a88966ad54360f940a",
+    "C035": "c77b9cf63b5fa0145d11455c1db47b96986746bc1445e12347c1450d1170f965",
+    "C036": "51e7e290b178565ce3f9fb2a731808c984561d9767d0a62672fb304899c43af3",
+    "C037": "420eed859d1574482170785c2f0f907b99051c5f6dd74b3ee1f4b4932a75be3e",
+    "C038": "7cbdb909826da6c561175c4a3035a98dee92d2f2a266d822d6239c8b994ebb70",
+    "C039": "666af309568ae29604cc621b12da9fb9cf2caaa287eb20b9f6d8996a33a8ce5c",
+    "C040": "741f91fd4f9ab4adb33cb7afe7f93e35c551b98c7fda49da29da3d4e4ed59cef",
+    "C041": "997c279603c8203b14bc1380c530d6719beb73bedfee6188be278e9b1a9b2994",
+    "C042": "aa41701672cea89141dd13439033a2b53d81582209ae5f7957a39e50551dd02d",
+    "C043": "577bc7571d0cc82f314976c690753434bcff233ddf2ae8fa349852b54a23aa58",
+    "C044": "5e7dcb0cda469764c006e659892d15140d14bdda27eb8d809d77c43a9d3b8dd3",
+    "C045": "cc457979ae7b9c95bcc8e3b4464f3ba6eed4a5e8f85e5e3ee1797e27fe5145ad",
+    "C046": "3d02b0aa14bc128939ef594ab261978505b363028ed5829121e0ecf3f2141894",
+    "C047": "d4932e390d0467aa17d9e07ab07eb31b0e4122d9b3a1ebbb14e8467df07cbb9e",
+    "C048": "4f4083e184aa171b85b09733813bca2e971dbd3fe02ccf0f515270c663beef9f",
+    "C049": "4702bac25beb0125d117500e4ae860ebac5a7aa590db8e98bef58b7e7233c22b",
+    "C050": "2dac3990efe3b24fbfb8b7d0f5e9c07ee3b93fbd4c5a4a063db96ef98bb9b78f",
+    "C051": "f8b9ab9fb42ebfdb389826dbe6e347851c29646e162d019b1512bb2907bdd8d5",
+    "C052": "07d8f6adde6873bba474d87b73757702abfaba9b63345c393c668bd459fc0bd1",
+    "C053": "3f6359e42a3be37e5914a56f937fea19f659b4d3212f9b0dae1f3f0a1784b751",
+    "C054": "dd0469934304eede7182995f7e8a32e4ad363812e1b1edff66c29fc67b9b9bd9",
+    "C055": "d4cb94986eaaac7055a079261094b03a72fc6deaa442b83692946bcde52a8925",
+    "C056": "c809cbc07738f8b035d6c70915b910351c3b9e7a9b40e0d05f785094be4773e0",
+    "C057": "5073ccd53cb208ac9813b2900d2198bb0c0a2cf4cf595ed680c68e7f744306b7",
+    "C058": "f3259284bfa8ab8065bf15ec9cf571522db5131cd12dd14f60879bd20846dfae",
+    "C059": "8f25e735551ad3bbc63466eac71a45042256f0a4f53af199f60fa2608bf8c58b",
+    "C060": "e85c5d9c48098883c2620328477700e9687fb0680b4fe239a6d972f67355f2ba"
+  }
+}

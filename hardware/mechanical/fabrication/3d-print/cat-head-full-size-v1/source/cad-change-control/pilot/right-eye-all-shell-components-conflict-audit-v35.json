@@ -1,0 +1,59 @@
+{
+  "contract_id": "CAT-HEAD-RIGHT-EYE-ALL-SHELL-COMPONENTS-CONFLICT-AUDIT-V35",
+  "status": "APPROVED_FOR_READ_ONLY_VALIDATION_ONLY",
+  "scope": "Exhaustively measure the frozen repaired right eye against every retained V34 right-upper component and every V14 right-lower component. Use exact OCCT common operations for solid components and strict AABB separation proofs only when a frozen OBJ cannot be sewn as an OCCT solid. Create deterministic JSON evidence only.",
+  "frozen_inputs": {
+    "right_upper_v34": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+      "fcstd_sha256": "2ff90641bf13ecebbd5ab7b5d388dd511b2577b0cc38df73030c7c77b83fad2b",
+      "validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/validation-v34.json",
+      "validation_sha256": "c2e49a2c6f448a5690ba600cb3c27ca1e210d36d165236031fdc5c732ce56d4b",
+      "expected_component_count": 41,
+      "excluded_component": "C009"
+    },
+    "repaired_eye_v4": {
+      "step_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/right_eye_v17_full_topology_repaired_review_v4.step",
+      "step_sha256": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258"
+    },
+    "right_lower_v14": {
+      "validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/validation-v14.json",
+      "validation_sha256": "cc818aa96cf0474f67ce6d2f73ae49ff681c7a61ef15b12821df6cfefb4dd777",
+      "expected_component_count": 60
+    },
+    "right_lower_component_001_v13": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/CAT_HEAD_RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V13.FCStd",
+      "fcstd_sha256": "9ba404c8a7bed0ff9879eae95f06166093d308168679f3b44255261d785fe46c",
+      "object_name": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13"
+    }
+  },
+  "numeric_contract": {
+    "positive_intersection_threshold_mm3": 0.000001,
+    "mesh_to_occt_tolerance_mm": 0.000001,
+    "required_upper_component_ids": "C001 through C042 excluding C009",
+    "required_lower_component_ids": "C001 through C060",
+    "acceptance": "Zero positive eye-versus-shell intersections above threshold; zero unresolved Boolean or reconstruction errors; every source hash verified; any non-sewn OBJ must have a strictly positive AABB separation lower bound proving collision is impossible."
+  },
+  "allowed_actions": [
+    "Open hash-pinned FCStd and STEP sources read-only",
+    "Reconstruct hash-pinned lower OBJ tessellations as in-memory OCCT solids without healing or coordinate changes",
+    "Run exact OCCT common and distance operations",
+    "Use a strict AABB separation lower bound as a no-collision proof for a non-sewn frozen OBJ",
+    "Write deterministic validation JSON and a Markdown checkpoint"
+  ],
+  "prohibited_actions": [
+    "Move, rotate, scale, trim, cut, fuse, heal, mirror, remesh, or otherwise change geometry",
+    "Create or modify a FreeCAD document",
+    "Export STL, 3MF, G-code, or production geometry",
+    "Approve printing or release structural ASA G-code"
+  ],
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-shell-components-conflict-audit-v35",
+    "validation": "validation-v35.json"
+  },
+  "release_holds": [
+    "V35 is read-only collision evidence, not geometry approval",
+    "Every positive contact must be dispositioned and revalidated",
+    "Containment/exterior-protrusion, insertion path, bilateral, service, topology, slicer, and physical tests remain separate",
+    "No final ASA print release"
+  ]
+}

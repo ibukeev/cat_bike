@@ -7,6 +7,17 @@ current review is always easy to find.
 
 - Start at
   `output/70-freecad-pilots/opposite-side-flange-pilot-v1/00-current/README.md`.
+- Current authoritative eye/shell result is V35 — **complete read-only
+  collision audit; FAIL; no print release**. It checks the repaired right eye
+  against all 41 retained right-upper and all 60 right-lower components. Four
+  intersections remain: upper C001 (`100.5990 mm3`), lower C001
+  (`7.0909 mm3`), lower C012 (`1.0458 mm3`), and lower C013 (`7.7261 mm3`).
+  Read:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-shell-components-conflict-audit-v35/validation-v35.json` and
+  `RIGHT_EYE_ALL_SHELL_COMPONENTS_CONFLICT_AUDIT_V35_CHECKPOINT_2026-08-16.md`.
+- V35 changes no geometry. V34 remains the current visual CAD context, but its
+  C009 deletion pass must not be interpreted as global eye clearance or print
+  readiness.
 - Current V34 right-upper C009 deletion review — **review-only, one-sided CAD;
   not a print source**. It starts from the accepted pre-V33 V25 right-upper
   component manifest, omits only the separate C009 component, and adds no
