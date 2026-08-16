@@ -1,6 +1,11 @@
 # Right Upper C001 Preserved Rail Root Review V27 Checkpoint
 
-Status: **one-side review candidate only; not approved for mirroring, production integration, STL export, slicing, G-code, or ASA printing**.
+Status: **REJECTED by user visual review; do not resume, mirror, integrate, export, slice, or print**.
+
+The user rejected the V27 construction on 2026-08-16 because its added root
+planks/junction appear as unexplained garbage in front of the eye. The exact
+measurements below remain diagnostic evidence only. V27 is not an accepted
+source and must not be reused in later owner work.
 
 ## Current review file
 
@@ -70,14 +75,9 @@ FreeCAD hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70
 
 Use only structured FreeCAD operations. The saved candidate and all frozen context objects are sufficient for review and continuation.
 
-## Next user review
+## Rejected visual result
 
-Review the full right upper-head/eye context and the isolated interior root. Confirm only:
-
-1. the original tapered rail remains present;
-2. the rail is visibly connected to C001 by rectangular reinforcement planks;
-3. no root material protrudes through the exterior;
-4. no round stick, horn, loose block, or floating residue is visible;
-5. the eye opening and service region remain unobstructed.
-
-After explicit approval, the next controlled operation is one-side owner integration and exact revalidation. Bilateral mirroring remains a later gate.
+Do not present V27 for another approval cycle. The next candidate must use the
+existing C001 body/rail topology with a minimum local correction and must not
+add visible bridge geometry in front of the eye. Bilateral mirroring remains a
+later gate.

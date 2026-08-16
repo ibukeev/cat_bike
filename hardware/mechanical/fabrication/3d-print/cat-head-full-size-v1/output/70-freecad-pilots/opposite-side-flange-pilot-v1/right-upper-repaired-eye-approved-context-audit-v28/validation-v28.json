@@ -1,0 +1,504 @@
+{
+  "boolean_errors": {},
+  "checks": {
+    "all_booleans_completed": true,
+    "approved_c012_clearance_preserved": false,
+    "approved_c027_clearance_preserved": true,
+    "component_intersection_volumes_preserved": true,
+    "input_hashes_match": true,
+    "no_unexpected_positive_contacts": true,
+    "rejected_v27_geometry_absent": true,
+    "replacement_bounds_preserved": true,
+    "replacement_closed": true,
+    "replacement_face_count_matches": true,
+    "replacement_solid_count_matches": true,
+    "replacement_valid": true,
+    "replacement_vertices_preserved": true,
+    "replacement_volume_preserved": true,
+    "source_object_count_matches": true,
+    "upper_component_count_matches": true
+  },
+  "component_measurements": {
+    "C001": {
+      "intersection_delta_mm3": -1.5575096767861396e-11,
+      "old_eye_distance_mm": 0.0,
+      "old_eye_intersection_volume_mm3": 100.59904449679928,
+      "repaired_eye_distance_mm": 0.0,
+      "repaired_eye_intersection_volume_mm3": 100.5990444967837,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C002": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 16.82071242867802,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 16.82071242867802,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C002_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C002_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C003": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 68.24876578369138,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 68.24876578369138,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C003_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C003_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C004": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 36.31514956772469,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 36.31514956772469,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C004_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C004_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C005": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 136.965308013636,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 136.965308013636,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C005_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C005_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C006": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 144.0505821142378,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 144.0505821142378,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C006_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C006_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C007": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 112.7726039298669,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 112.7726039298669,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C007_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C007_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C008": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 30.54608006874682,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 30.54608006874682,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C008_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C008_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C009": {
+      "intersection_delta_mm3": -7.105427357601002e-14,
+      "old_eye_distance_mm": 0.0,
+      "old_eye_intersection_volume_mm3": 27.728296869034672,
+      "repaired_eye_distance_mm": 0.0,
+      "repaired_eye_intersection_volume_mm3": 27.7282968690346,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C009_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C009_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C010": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 59.4392087090386,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 59.4392087090386,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C010_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C010_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C011": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 56.49566148768735,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 56.49566148768735,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C011_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C011_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C012": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 3.999955758212551,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 3.999955758212551,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__UPPER_C012__TRIMMED_5P21MM__V24_ref",
+      "source_object_name": "PROPOSED__UPPER_C012__TRIMMED_5P21MM__V24_ref"
+    },
+    "C013": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 69.96214466310899,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 69.96214466310899,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C013_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C013_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C014": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 0.14231097284064756,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 0.14231097284064756,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C014_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C014_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C015": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 110.62975685074821,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 110.62975685074821,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C015_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C015_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C016": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 162.16283849715657,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 162.16283849715657,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C016_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C016_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C017": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 80.7577809309423,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 80.7577809309423,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C017_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C017_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C018": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 0.6471936102871572,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 0.6471936102871572,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C018_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C018_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C019": {
+      "intersection_delta_mm3": -3.533715576826534e-20,
+      "old_eye_distance_mm": 0.0,
+      "old_eye_intersection_volume_mm3": 4.22075409047798e-08,
+      "repaired_eye_distance_mm": 0.0,
+      "repaired_eye_intersection_volume_mm3": 4.220754090474446e-08,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C019_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C019_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C020": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 39.532272659980315,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 39.532272659980315,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C020_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C020_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C021": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 142.9989890253978,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 142.9989890253978,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C021_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C021_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C022": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 41.876571502403955,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 41.876571502403955,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C022_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C022_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C023": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 139.02549255379765,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 139.02549255379765,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C023_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C023_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C024": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 34.21500132017267,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 34.21500132017267,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C024_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C024_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C025": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 65.53549480692185,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 65.53549480692185,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C025_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C025_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C026": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 144.87786327732834,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 144.87786327732834,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C026_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C026_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C027": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 5.320764344690322,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 5.320764344690322,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_C027_TRIMMED_EYE_CLEARANCE_V19_T2_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_C027_TRIMMED_EYE_CLEARANCE_V19_T2_ref_ref"
+    },
+    "C028": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 138.37542073732152,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 138.37542073732152,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C028_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C028_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C029": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 113.7694863438854,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 113.7694863438854,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C029_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C029_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C030": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 88.80487835816538,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 88.80487835816538,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C030_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C030_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C031": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 147.99834450883745,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 147.99834450883745,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C031_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C031_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C032": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 0.46082262348483527,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 0.46082262348483527,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C032_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C032_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C033": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 86.55309674194594,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 86.55309674194594,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C033_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C033_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C034": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 91.57301912650667,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 91.57301912650667,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C034_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C034_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C035": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 45.24755414416054,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 45.24755414416054,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C035_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C035_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C036": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 144.44345356571938,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 144.44345356571938,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C036_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C036_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C037": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 110.2391525145587,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 110.2391525145587,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C037_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C037_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C038": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 139.20722479836905,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 139.20722479836905,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C038_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C038_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C039": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 111.91106618249287,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 111.91106618249287,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C039_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C039_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C040": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 144.37121572913972,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 144.37121572913972,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C040_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C040_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C041": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 148.23053642210655,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 148.23053642210655,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C041_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C041_SOLID_V3_ref_ref_ref_ref"
+    },
+    "C042": {
+      "intersection_delta_mm3": 0.0,
+      "old_eye_distance_mm": 6.786592512061905,
+      "old_eye_intersection_volume_mm3": 0.0,
+      "repaired_eye_distance_mm": 6.786592512061905,
+      "repaired_eye_intersection_volume_mm3": 0.0,
+      "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C042_SOLID_V3_ref_ref_ref_ref",
+      "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C042_SOLID_V3_ref_ref_ref_ref"
+    }
+  },
+  "contract_id": "right-upper-repaired-eye-approved-context-audit-v28",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "generator": "freecad-right-upper-repaired-eye-approved-context-audit-v28",
+  "input_hashes": {
+    "frozen_context_fcstd": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775",
+    "frozen_context_validation": "26bcaff8685fa8983dd961a1f3953ca5301afb0e6d83e09bc8739185053e8b6c",
+    "replacement_eye_step": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258",
+    "replacement_eye_validation": "8f0f6e29774e8e6278b2fe6e05876844707876779db825102b69273750284bb1"
+  },
+  "known_contact_allowlist": [
+    "C001",
+    "C009",
+    "C019"
+  ],
+  "outputs": {
+    "geometry_artifact_created": false,
+    "mirrored": false,
+    "new_structural_geometry_created": false,
+    "production_union_created": false,
+    "rejected_v27_geometry_used": false,
+    "sliced": false,
+    "stl_exported": false,
+    "upper_geometry_modified": false,
+    "validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-repaired-eye-approved-context-audit-v28/validation-v28.json"
+  },
+  "positive_contact_components": [
+    "C001",
+    "C009"
+  ],
+  "release_holds": {
+    "asa_print_release_authorized": false,
+    "gcode_authorized": false,
+    "mirror_authorized": false,
+    "production_union_authorized": false,
+    "slicing_authorized": false,
+    "step_or_stl_export_authorized": false
+  },
+  "replacement_eye": {
+    "bounds": {
+      "maximum_mm": [
+        104.17845153808109,
+        102.79824066164943,
+        179.13093566894
+      ],
+      "minimum_mm": [
+        27.489534378041142,
+        49.32897567748239,
+        118.47733306883288
+      ]
+    },
+    "closed": true,
+    "face_count": 1178,
+    "solid_count": 1,
+    "valid": true,
+    "volume_mm3": 7269.553014006874
+  },
+  "replacement_preservation": {
+    "bounds_delta_mm": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "maximum_bidirectional_vertex_delta_mm": 4.075424617684871e-06,
+    "volume_delta_mm3": -0.006628559213822882
+  },
+  "required_clear_component_checks": {
+    "C012": false,
+    "C027": true
+  },
+  "schema_version": "1.0",
+  "source_eye": {
+    "bounds": {
+      "maximum_mm": [
+        104.17845153808109,
+        102.79824066164943,
+        179.13093566894
+      ],
+      "minimum_mm": [
+        27.489534378041142,
+        49.32897567748239,
+        118.47733306883288
+      ]
+    },
+    "closed": true,
+    "face_count": 1178,
+    "solid_count": 1,
+    "valid": true,
+    "volume_mm3": 7269.559642566088
+  },
+  "status": "FAIL__OUTPUT_QUARANTINED",
+  "unexpected_positive_contacts": []
+}

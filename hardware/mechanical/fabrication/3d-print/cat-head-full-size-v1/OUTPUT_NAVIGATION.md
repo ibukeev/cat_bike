@@ -5,6 +5,15 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current V28 repaired-eye/accepted-upper audit — **JSON-only, fail-closed
+  precision audit; no geometry artifact and not a print source**. It substitutes
+  the repaired V4 eye into the accepted V25 42-component context and proves
+  that only C001 (`100.5990 mm3`) and C009 (`27.7283 mm3`) retain positive
+  material contact. C027 remains clear at `5.3208 mm`; C012 has zero overlap
+  and measures `3.999956 mm`, missing V28's strict nominal/tolerance gate by
+  `0.000024 mm`. V27 is absent and remains rejected. Read:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-repaired-eye-approved-context-audit-v28/validation-v28.json` and
+  `RIGHT_UPPER_REPAIRED_EYE_APPROVED_CONTEXT_AUDIT_V28_CHECKPOINT_2026-08-16.md`.
 - Current topology-repaired right-eye full-context V5 — **review-only
   one-sided assembly; not mirrored, production-unioned, or print-released**.
   The repaired V4 eye replaces only the frozen V18 eye at zero transform. All
@@ -78,6 +87,10 @@ current review is always easy to find.
   `RIGHT_EYE_V17_DEFECT_VISUALIZATION_V1_CHECKPOINT_2026-08-15.md`.
 - Current right-upper approved C027/C012 context V25 — **complete 42-solid review context; residual legacy C001/C009/C019 eye contacts remain; not a print source**. The old C012 and C027 are absent; approved V24 C012 has `4.0000 mm` eye clearance and approved V19 C027 has `5.3208 mm`. Open: `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/CAT_HEAD_RIGHT_UPPER_APPROVED_C027_C012_CONTEXT_REVIEW_V25.FCStd`.
 - V25 validation/checkpoint: `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/validation-v25.json` and `RIGHT_UPPER_APPROVED_C027_C012_CONTEXT_REVIEW_V25_CHECKPOINT_2026-08-15.md`.
+- Rejected V27 C001 preserved-rail root — **do not reopen or reuse**. The user
+  rejected its added rectangular Y-root/planks because they create unexplained
+  material in front of the eye. Retain only as negative evidence:
+  `RIGHT_UPPER_C001_PRESERVED_RAIL_ROOT_REVIEW_V27_CHECKPOINT_2026-08-15.md`.
 - Current right-upper C012 eye-clearance V24 — **one-side proposed change; awaiting visual approval; not a print source**. The authorized `5.21 mm` shortening produces one valid closed `606.54 mm3` solid, zero exact-eye intersection, `4.0000 mm` clearance, and `150.5311 mm3` C001 engagement. C009 is unchanged and held. Open: `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c012-eye-clearance-review-v24/CAT_HEAD_RIGHT_UPPER_C012_EYE_CLEARANCE_REVIEW_V24.FCStd`.
 - V24 validation/checkpoint: `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c012-eye-clearance-review-v24/validation-v24.json` and `RIGHT_UPPER_C012_EYE_CLEARANCE_REVIEW_V24_CHECKPOINT_2026-08-15.md`.
 - Current C009/upper-C012 exact-anchor V23 — **review only; no geometry

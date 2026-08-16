@@ -12,20 +12,16 @@ estimate. An accepted isolated review is crossed off only when that gate's
 stated exit condition is satisfied; it does not imply that the geometry is
 already integrated or printable.
 
-**Next active work:** `HS-11`. The exact V17 eye and both V5 flange gaps
-remain accepted, but complete-upper collision closure is still open. The user
-approved the isolated C027 V19 correction; V20 substituted it into the complete
-42-component right-upper context and confirmed `5.3208 mm` eye clearance.
-V21 then localized the remaining contacts without changing source geometry:
-C001 `100.60 mm3`, C009 `27.73 mm3`, upper C012 `0.04 mm3`, and a
-degenerate zero-volume C019 touch. V22 corrected the C001 anchor
-identification: the prior `Face364/Face385` guesses are rejected and no cut was
-made; the exact review candidates are top `Face382` and side
-`Face324/Face536/Face554`, awaiting user approval. C009 is held because the
-audited trim would remove about `96.85%` of it. Upper C012 has a viable numeric
-shortening concept. V23 identifies its exact BREP eye cap as `Face4` and fixed
-root as `Face18`, still awaiting user approval. V23 also maps C009 to `Face17`
-and `Face13`, but its trim remains structurally held. C019 is not a trim target.
+**Next active work:** `HS-11`. The topology-repaired V4 eye and both V5 flange
+gaps remain accepted, but complete-upper collision closure is still open. V28
+substituted the repaired eye into the accepted V25 42-component context without
+creating geometry and narrowed positive contacts to C001 `100.5990 mm3` and
+C009 `27.7283 mm3`. Approved C027 remains clear at `5.3208 mm`; approved C012
+has zero overlap and measures `3.999956 mm` (a fail-closed `0.000044 mm`
+nominal precision delta, not a material collision). C019 is below the positive
+contact threshold. The user rejected V27's added Y-root/planks because they
+appear in front of the eye; that construction must not be reused. C009's prior
+cap trim remains held because it would remove about `96.85%` of the component.
 No exact left mirror or bilateral closure is authorized yet. Print release
 remains held.
 `HS-04` is closed by the complete right C001 A/B shell orientation rather than
@@ -50,7 +46,7 @@ support layout, and brim on 2026-08-14. This does not release structural G-code.
 | HS-08 | [x] | ~~Mirror approved A/B solution to the left~~ | Exact `X = 0` connectors, repaired C001/C003, and the copied complete-left owner were digitally validated and visually approved in bilateral context on 2026-08-10. All 41 components are valid and closed; C002/C004-C041 and every other workstream remain frozen. | Preserve this exact result through later owner integration and final full-head validation. |
 | HS-09 | [x] | ~~Finish remaining primary ear interface~~ | User visually approved the clean bilateral V2 on 2026-08-11. V2 contains only the approved right head/ear final solids and their exact `X=0` mirrors; the stale left owner, four-hole lattice, pins, and proof shafts are absent. All four solids are valid, closed, self-intersection-free, and the mirrored topology, volume, area, and bounds match. | Preserve `CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd` unchanged through final full-head integration. |
 | HS-10 | [x] | ~~Build each eye bucket and rear cap as one serviceable module~~ | V9 was visually approved and promoted on 2026-08-13. Both bilateral bucket/cap pairs are valid, watertight, one-solid, self-intersection-free, topology/volume matched, STEP-round-trip verified, and retain the non-interfering `0.0239 mm` service gap. | Preserve `production/eye-modules-v9/` unchanged through HS-11 and later full-head validation. |
-| HS-11 | [ ] | Integrate and validate all eight eye flanges | Exact V17/V5 flange ownership remains accepted with `0.3000/0.3000 mm` gaps. The user-approved C027 V19 correction passes at `5.3208 mm` eye clearance in the complete V20 upper context. V22 identifies corrected C001 candidates `Face382` plus `Face324/536/554`. V23 identifies C009 `Face17/Face13` and upper-C012 `Face4/Face18` as exact BREP caps. C009 remains held because its audited trim removes about `96.85%`. | Approve/reject the C001 candidate faces and upper-C012 `Face4`; design a structurally acceptable C009 solution; then revalidate the complete right context, exact left mirror, and bilateral assembly. |
+| HS-11 | [ ] | Integrate and validate all eight eye flanges | Exact repaired-eye/V5 ownership remains accepted with `0.3000/0.3000 mm` gaps. V28 confirms only C001 (`100.5990 mm3`) and C009 (`27.7283 mm3`) have positive contact in the accepted V25 upper context; C012/C027 have zero overlap. V27 is visually rejected and excluded. | Produce a minimum local C001/C009 correction with no visible add-on geometry, preserve owner connectivity and exterior, rerun the 42-component right context, then exact-mirror and validate bilaterally. |
 | HS-12 | [ ] | Correct unresolved central/front/side panel connections | Back-skirt, central third point, front nose skirt, and side-panel ownership/collisions remain open (`F-15`–`F-18`). | Exact owner faces selected; each one-side correction approved, integrated, mirrored, and checked. |
 | HS-13 | [ ] | Integrate lower face and rear cassette around aluminum | Lossless V5 ownership direction is accepted; production owners and final cassette are not unified. | Lower faces are reduced as approved, transferred geometry belongs to one cassette, and V0.5-M2 rail/plate insertion and removal remain unobstructed. |
 | HS-14 | [ ] | Add final cassette M5 pads and service sockets | Legacy Gate 8 pads are invalid; the real rail and 21.00 mm serviceable socket still require qualification. | Actual rail measured; socket/cap coupon passes; cassette pads/sockets integrate with hardware and tool access. |
@@ -109,6 +105,8 @@ condition, saved evidence, and affected checkpoint must all be updated.
 - [Current right-eye full-context V18 checkpoint](RIGHT_EYE_FULL_CONTEXT_REVIEW_V18_CHECKPOINT_2026-08-15.md)
 - [Current C001 exact-anchor V22 checkpoint](RIGHT_UPPER_EYE_C001_EXACT_ANCHOR_REVIEW_V22_CHECKPOINT_2026-08-15.md)
 - [Current C009/upper-C012 exact-anchor V23 checkpoint](RIGHT_UPPER_EYE_C009_C012_EXACT_ANCHOR_REVIEW_V23_CHECKPOINT_2026-08-15.md)
+- [Rejected C001 preserved-rail root V27 checkpoint](RIGHT_UPPER_C001_PRESERVED_RAIL_ROOT_REVIEW_V27_CHECKPOINT_2026-08-15.md)
+- [Repaired-eye accepted-upper JSON audit V28 checkpoint](RIGHT_UPPER_REPAIRED_EYE_APPROVED_CONTEXT_AUDIT_V28_CHECKPOINT_2026-08-16.md)
 - [Right A/B short-insert coupon V1 checkpoint](RIGHT_AB_SHORT_INSERT_COUPON_V1_CHECKPOINT_2026-08-14.md)
 - [Current right A/B under-ear-opening print-orientation V2 checkpoint](RIGHT_AB_UNDER_EAR_OPENING_PRINT_ORIENTATION_REVIEW_V2_CHECKPOINT_2026-08-14.md)
 - [Approved complete right C001 A/B ASA tilt V2 checkpoint](RIGHT_UPPER_HEAD_C001_AB_ASA_TILT_REVIEW_V2_CHECKPOINT_2026-08-14.md)

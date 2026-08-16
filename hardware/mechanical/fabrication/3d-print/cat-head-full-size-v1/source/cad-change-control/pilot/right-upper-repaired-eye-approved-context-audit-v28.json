@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "right-upper-repaired-eye-approved-context-audit-v28",
+  "status": "APPROVED_FOR_READ_ONLY_JSON_VALIDATION",
+  "approval": {
+    "user_instruction": "go",
+    "date": "2026-08-16"
+  },
+  "physical_problem": "Determine the exact remaining right-upper component contacts after substituting the topology-repaired V4 eye into the last accepted 42-component V25 upper-head context.",
+  "allowed_operations": [
+    "open_hash_pinned_inputs_read_only",
+    "evaluate_repaired_eye_at_zero_transform",
+    "measure_component_distance_and_boolean_common",
+    "write_deterministic_validation_json"
+  ],
+  "prohibited_operations": [
+    "modify_frozen_inputs",
+    "trim_or_move_upper_components",
+    "add_structural_geometry",
+    "write_any_geometry_artifact",
+    "use_rejected_v27_candidate",
+    "mirror",
+    "production_union",
+    "export_step_or_stl",
+    "slice_or_generate_gcode",
+    "print_release"
+  ],
+  "frozen_context": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/CAT_HEAD_RIGHT_UPPER_APPROVED_C027_C012_CONTEXT_REVIEW_V25.FCStd",
+    "sha256": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775",
+    "validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/validation-v25.json",
+    "validation_sha256": "26bcaff8685fa8983dd961a1f3953ca5301afb0e6d83e09bc8739185053e8b6c",
+    "eye_object_name": "PROPOSED__RIGHT_EYE_BUCKET_WITH_BOTH_EXACT_FLANGE_ROOTS_V17_ref_ref_ref_ref",
+    "required_object_count": 44,
+    "required_upper_component_count": 42
+  },
+  "replacement_eye": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/right_eye_v17_full_topology_repaired_review_v4.step",
+    "sha256": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258",
+    "validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/validation-v4.json",
+    "validation_sha256": "8f0f6e29774e8e6278b2fe6e05876844707876779db825102b69273750284bb1",
+    "object_name": "REVIEW__RIGHT_EYE__FULL_TOPOLOGY_REPAIRED_V4__V28",
+    "label": "REVIEW__RIGHT_EYE__FULL_TOPOLOGY_REPAIRED_V4__V28"
+  },
+  "gates": {
+    "required_replacement_solid_count": 1,
+    "required_replacement_face_count": 1178,
+    "maximum_bounds_delta_mm": 0.00001,
+    "maximum_absolute_volume_delta_mm3": 0.01,
+    "maximum_bidirectional_vertex_delta_mm": 0.00001,
+    "maximum_component_intersection_delta_mm3": 0.01,
+    "positive_intersection_threshold_mm3": 0.000001,
+    "known_residual_contact_components": ["C001", "C009", "C019"],
+    "required_clear_components": {
+      "C012": 4.0,
+      "C027": 5.32
+    },
+    "clearance_tolerance_mm": 0.00002
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-repaired-eye-approved-context-audit-v28",
+    "validation": "validation-v28.json"
+  },
+  "release_holds": {
+    "mirror_authorized": false,
+    "production_union_authorized": false,
+    "step_or_stl_export_authorized": false,
+    "slicing_authorized": false,
+    "gcode_authorized": false,
+    "asa_print_release_authorized": false
+  }
+}
