@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "right-eye-v17-full-topology-repair-step-review-v4",
+  "mode": "isolated_step_roundtrip_review",
+  "approval_record": {
+    "approved_by": "user",
+    "approved_on": "2026-08-16",
+    "approval_text": "go",
+    "scope": "Continue validation of the topology-only one-sided eye-owner repair"
+  },
+  "source": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-outer-root-topology-repair-review-v3/CAT_HEAD_RIGHT_EYE_V17_OUTER_ROOT_TOPOLOGY_REPAIR_REVIEW_V3.FCStd",
+    "sha256": "d486156de9fbf36683d87566d6315de599fcfa76a58dfbdf0ad223d43e4b7792",
+    "object_name": "PROPOSED_OUTER_ROOT_REPAIRED_V3",
+    "status": "validated_review_input"
+  },
+  "frozen_input_step": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2/right_eye_v17_v9_skin_topology_repaired_review_v2.step",
+    "sha256": "18b8b11ea2b09b4bf306060ccf2c86d9e09feaca72f158cde9b6f187d720fc98"
+  },
+  "gates": {
+    "required_solid_count": 1,
+    "required_face_count": 1178,
+    "maximum_bounds_delta_mm": 0.000001,
+    "maximum_absolute_volume_delta_mm3": 0.000001,
+    "maximum_vertex_roundtrip_error_mm": 0.000001
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4",
+    "step": "right_eye_v17_full_topology_repaired_review_v4.step",
+    "fcstd": "CAT_HEAD_RIGHT_EYE_V17_FULL_TOPOLOGY_REPAIR_STEP_REVIEW_V4.FCStd",
+    "validation": "validation-v4.json",
+    "checkpoint": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/RIGHT_EYE_V17_FULL_TOPOLOGY_REPAIR_STEP_REVIEW_V4_CHECKPOINT_2026-08-16.md"
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "gcode": false,
+    "asa_print": false
+  }
+}

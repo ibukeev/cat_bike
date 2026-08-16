@@ -3,6 +3,23 @@
   "project": "cat-head-full-size-v1",
   "artifacts": [
     {
+      "id": "right_eye_v17_full_topology_repaired_review_v4",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/right_eye_v17_full_topology_repaired_review_v4.step",
+      "sha256": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258",
+      "format": "step",
+      "status": "proposed_not_approved",
+      "role": "one-sided exact right-eye V17 with local V9 skin and outer-root topology repairs",
+      "expected_shape": {"valid": true, "closed": true, "solid_count": 1}
+    },
+    {
+      "id": "right_eye_v17_full_topology_repaired_review_v4_fcstd",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/CAT_HEAD_RIGHT_EYE_V17_FULL_TOPOLOGY_REPAIR_STEP_REVIEW_V4.FCStd",
+      "sha256": "5132998db827fe45e9a4106ad646a4abc0348ce588afba10ed89d0c2e2f2ddf6",
+      "format": "fcstd",
+      "status": "evidence_only",
+      "role": "hash-pinned V4 full-topology STEP round-trip review document"
+    },
+    {
       "id": "right_eye_v17_v9_repaired_review_v2",
       "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-topology-repair-step-review-v2/right_eye_v17_v9_skin_topology_repaired_review_v2.step",
       "sha256": "18b8b11ea2b09b4bf306060ccf2c86d9e09feaca72f158cde9b6f187d720fc98",
