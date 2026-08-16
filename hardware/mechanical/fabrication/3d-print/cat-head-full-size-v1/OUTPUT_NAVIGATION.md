@@ -4,6 +4,17 @@ The generated `output/` directory is organized by workstream so the single
 current review is always easy to find.
 
 ## Open this first
+- Current V33 C009 reposition preview — **review-only one-sided CAD; not a
+  print source**. It moves only the exact existing C009 by
+  `[1.825092, 10.446536, 8.290829] mm`, adds no support geometry, retains
+  `5.1278 mm3` C001 engagement, clears the topology-repaired eye by
+  `4.4763 mm`, and has zero collision with the other 40 upper components.
+  Orange is moved C009, green is frozen C001, cyan is the frozen repaired eye,
+  and gray is frozen context. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-reposition-preview-v33/CAT_HEAD_RIGHT_UPPER_C009_REPOSITION_PREVIEW_V33.FCStd`.
+- V33 validation and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-reposition-preview-v33/validation-v33.json` and
+  `RIGHT_UPPER_C009_REPOSITION_PREVIEW_V33_CHECKPOINT_2026-08-16.md`.
 - Current V32 C009 full-context route audit — **JSON-only pass; no geometry
   artifact and not a print source**. The exact existing C009 member moved by
   `[1.825092, 10.446536, 8.290829] mm` remains one valid closed solid, retains

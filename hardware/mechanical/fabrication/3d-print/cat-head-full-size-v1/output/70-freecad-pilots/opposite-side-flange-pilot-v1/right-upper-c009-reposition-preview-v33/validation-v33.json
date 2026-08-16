@@ -1,0 +1,418 @@
+{
+  "candidate": {
+    "c001_owner_overlap_mm3": 5.12784185252473,
+    "moved_shape": {
+      "bounds": {
+        "maximum_mm": [
+          107.07851759814453,
+          108.13756840966796,
+          192.12260085058594
+        ],
+        "minimum_mm": [
+          93.91456190966797,
+          98.93648045800781,
+          177.77201491308594
+        ]
+      },
+      "closed": true,
+      "face_count": 38,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 227.92119760049135
+    },
+    "operation": "rigid_translation_only",
+    "repaired_eye_clearance_mm": 4.476341051148727,
+    "rotation_deg": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_member": "C009",
+    "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C009_SOLID_V3_ref_ref_ref_ref",
+    "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C009_SOLID_V3_ref_ref_ref_ref",
+    "source_shape": {
+      "bounds": {
+        "maximum_mm": [
+          105.25342559814453,
+          97.69103240966797,
+          183.83177185058594
+        ],
+        "minimum_mm": [
+          92.08946990966797,
+          88.48994445800781,
+          169.48118591308594
+        ]
+      },
+      "closed": true,
+      "face_count": 38,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 227.92119760049138
+    },
+    "translation_mm": [
+      1.825092,
+      10.446536,
+      8.290829
+    ]
+  },
+  "checks": {
+    "c001_engagement_passes": true,
+    "c009_face_count_preserved": true,
+    "c009_volume_preserved": true,
+    "eye_clearance_passes": true,
+    "input_hashes_match": true,
+    "moved_c009_closed": true,
+    "moved_c009_one_solid": true,
+    "moved_c009_valid": true,
+    "replacement_eye_closed": true,
+    "replacement_eye_one_solid": true,
+    "replacement_eye_valid": true,
+    "upper_component_manifest_is_c001_through_c042": true,
+    "v32_eye_clearance_reproduced": true,
+    "v32_full_context_status_passes": true,
+    "v32_owner_overlap_reproduced": true,
+    "zero_other_upper_component_collisions": true
+  },
+  "collision_failures": {},
+  "contract_id": "CAT-HEAD-RIGHT-UPPER-C009-REPOSITION-PREVIEW-V33",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "generator": "freecad-right-upper-c009-reposition-preview-v33",
+  "implementation_dependency_hash": "46e67be0d4e48b335f76fb18dd37a2e08bbc76835e8a30be718477c9810a81de",
+  "input_hashes": {
+    "accepted_context_fcstd": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775",
+    "accepted_context_validation_json": "26bcaff8685fa8983dd961a1f3953ca5301afb0e6d83e09bc8739185053e8b6c",
+    "replacement_eye_step": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258",
+    "v32_validation_json": "eb95f2c742266b5bc2910d3b6f6dfe98d5a6e2d2758e420b2d77d5eec2ac4f65"
+  },
+  "other_upper_component_checks": {
+    "C002": {
+      "clear": true,
+      "distance_mm": 22.980096029595504,
+      "intersection_volume_mm3": 0.0
+    },
+    "C003": {
+      "clear": true,
+      "distance_mm": 70.64701661887344,
+      "intersection_volume_mm3": 0.0
+    },
+    "C004": {
+      "clear": true,
+      "distance_mm": 53.917641963671585,
+      "intersection_volume_mm3": 0.0
+    },
+    "C005": {
+      "clear": true,
+      "distance_mm": 135.66967580996064,
+      "intersection_volume_mm3": 0.0
+    },
+    "C006": {
+      "clear": true,
+      "distance_mm": 138.77026772611813,
+      "intersection_volume_mm3": 0.0
+    },
+    "C007": {
+      "clear": true,
+      "distance_mm": 108.83415607230042,
+      "intersection_volume_mm3": 0.0
+    },
+    "C008": {
+      "clear": true,
+      "distance_mm": 52.53997092075183,
+      "intersection_volume_mm3": 0.0
+    },
+    "C010": {
+      "clear": true,
+      "distance_mm": 53.1897771662136,
+      "intersection_volume_mm3": 0.0
+    },
+    "C011": {
+      "clear": true,
+      "distance_mm": 89.95142197858941,
+      "intersection_volume_mm3": 0.0
+    },
+    "C012": {
+      "clear": true,
+      "distance_mm": 9.797987098388887,
+      "intersection_volume_mm3": 0.0
+    },
+    "C013": {
+      "clear": true,
+      "distance_mm": 73.67348494074251,
+      "intersection_volume_mm3": 0.0
+    },
+    "C014": {
+      "clear": true,
+      "distance_mm": 53.964843593506394,
+      "intersection_volume_mm3": 0.0
+    },
+    "C015": {
+      "clear": true,
+      "distance_mm": 115.27906482737598,
+      "intersection_volume_mm3": 0.0
+    },
+    "C016": {
+      "clear": true,
+      "distance_mm": 155.90077031664063,
+      "intersection_volume_mm3": 0.0
+    },
+    "C017": {
+      "clear": true,
+      "distance_mm": 70.73283177065268,
+      "intersection_volume_mm3": 0.0
+    },
+    "C018": {
+      "clear": true,
+      "distance_mm": 14.046003560836683,
+      "intersection_volume_mm3": 0.0
+    },
+    "C019": {
+      "clear": true,
+      "distance_mm": 13.413018786387475,
+      "intersection_volume_mm3": 0.0
+    },
+    "C020": {
+      "clear": true,
+      "distance_mm": 54.61921159614264,
+      "intersection_volume_mm3": 0.0
+    },
+    "C021": {
+      "clear": true,
+      "distance_mm": 138.1063766257658,
+      "intersection_volume_mm3": 0.0
+    },
+    "C022": {
+      "clear": true,
+      "distance_mm": 59.58333576963933,
+      "intersection_volume_mm3": 0.0
+    },
+    "C023": {
+      "clear": true,
+      "distance_mm": 132.73799479169259,
+      "intersection_volume_mm3": 0.0
+    },
+    "C024": {
+      "clear": true,
+      "distance_mm": 39.46892149692001,
+      "intersection_volume_mm3": 0.0
+    },
+    "C025": {
+      "clear": true,
+      "distance_mm": 59.580225122726986,
+      "intersection_volume_mm3": 0.0
+    },
+    "C026": {
+      "clear": true,
+      "distance_mm": 140.0981805495463,
+      "intersection_volume_mm3": 0.0
+    },
+    "C027": {
+      "clear": true,
+      "distance_mm": 59.648653379929506,
+      "intersection_volume_mm3": 0.0
+    },
+    "C028": {
+      "clear": true,
+      "distance_mm": 137.33256001031395,
+      "intersection_volume_mm3": 0.0
+    },
+    "C029": {
+      "clear": true,
+      "distance_mm": 118.14706599837896,
+      "intersection_volume_mm3": 0.0
+    },
+    "C030": {
+      "clear": true,
+      "distance_mm": 78.01020822392935,
+      "intersection_volume_mm3": 0.0
+    },
+    "C031": {
+      "clear": true,
+      "distance_mm": 143.5536523994332,
+      "intersection_volume_mm3": 0.0
+    },
+    "C032": {
+      "clear": true,
+      "distance_mm": 60.848653925690165,
+      "intersection_volume_mm3": 0.0
+    },
+    "C033": {
+      "clear": true,
+      "distance_mm": 77.27985102576571,
+      "intersection_volume_mm3": 0.0
+    },
+    "C034": {
+      "clear": true,
+      "distance_mm": 82.20944886238253,
+      "intersection_volume_mm3": 0.0
+    },
+    "C035": {
+      "clear": true,
+      "distance_mm": 59.713874374590205,
+      "intersection_volume_mm3": 0.0
+    },
+    "C036": {
+      "clear": true,
+      "distance_mm": 143.9366448006776,
+      "intersection_volume_mm3": 0.0
+    },
+    "C037": {
+      "clear": true,
+      "distance_mm": 100.00296694055514,
+      "intersection_volume_mm3": 0.0
+    },
+    "C038": {
+      "clear": true,
+      "distance_mm": 138.01284985021482,
+      "intersection_volume_mm3": 0.0
+    },
+    "C039": {
+      "clear": true,
+      "distance_mm": 102.1317455141244,
+      "intersection_volume_mm3": 0.0
+    },
+    "C040": {
+      "clear": true,
+      "distance_mm": 138.82829055881987,
+      "intersection_volume_mm3": 0.0
+    },
+    "C041": {
+      "clear": true,
+      "distance_mm": 142.78462456760664,
+      "intersection_volume_mm3": 0.0
+    },
+    "C042": {
+      "clear": true,
+      "distance_mm": 6.941751825694141,
+      "intersection_volume_mm3": 0.0
+    }
+  },
+  "outputs": {
+    "fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-reposition-preview-v33/CAT_HEAD_RIGHT_UPPER_C009_REPOSITION_PREVIEW_V33.FCStd",
+    "fcstd_sha256": "63665f07d8f1a4a67d487249c3ad83090e7fa0867094cc0b391cbed48c7ff887",
+    "validation": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-reposition-preview-v33/validation-v33.json"
+  },
+  "owner": {
+    "component_id": "C001",
+    "shape": {
+      "bounds": {
+        "maximum_mm": [
+          126.93900299072266,
+          269.3445129394531,
+          268.1520080566406
+        ],
+        "minimum_mm": [
+          -30.0,
+          63.05550003051758,
+          109.75635528564452
+        ]
+      },
+      "closed": true,
+      "face_count": 1859,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 75969.39034165138
+    },
+    "source_object_label": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref_ref_ref_ref",
+    "source_object_name": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref_ref_ref_ref"
+  },
+  "release_holds": [
+    "one-sided visual review required",
+    "separate C001/rail correction unresolved",
+    "bilateral validation not run",
+    "no production owner union",
+    "no STL, slice, G-code, or ASA release"
+  ],
+  "replacement_eye": {
+    "bounds": {
+      "maximum_mm": [
+        104.17845153808109,
+        102.79824066164943,
+        179.13093566894
+      ],
+      "minimum_mm": [
+        27.489534378041142,
+        49.32897567748239,
+        118.47733306883288
+      ]
+    },
+    "closed": true,
+    "face_count": 1178,
+    "solid_count": 1,
+    "valid": true,
+    "volume_mm3": 7269.553014006874
+  },
+  "review_display": {
+    "c001_owner": "green, 35 percent transparent",
+    "frozen_context": "gray, 65 percent transparent",
+    "moved_existing_c009": "orange, opaque",
+    "review_questions": [
+      "Is the orange moved C009 visually unobtrusive inside the accepted shell context?",
+      "Does the orange member visibly retain a plausible root into the green C001 owner?"
+    ],
+    "topology_repaired_eye": "cyan, 72 percent transparent"
+  },
+  "review_objects": {
+    "added_support_geometry_count": 0,
+    "candidate_group": "PROPOSED_MOVED_C009_V33",
+    "component_objects": {
+      "C001": "FROZEN_RIGHT_UPPER_C001_V33",
+      "C002": "FROZEN_RIGHT_UPPER_C002_V33",
+      "C003": "FROZEN_RIGHT_UPPER_C003_V33",
+      "C004": "FROZEN_RIGHT_UPPER_C004_V33",
+      "C005": "FROZEN_RIGHT_UPPER_C005_V33",
+      "C006": "FROZEN_RIGHT_UPPER_C006_V33",
+      "C007": "FROZEN_RIGHT_UPPER_C007_V33",
+      "C008": "FROZEN_RIGHT_UPPER_C008_V33",
+      "C009": "PROPOSED_RIGHT_UPPER_C009_MOVED_V33",
+      "C010": "FROZEN_RIGHT_UPPER_C010_V33",
+      "C011": "FROZEN_RIGHT_UPPER_C011_V33",
+      "C012": "FROZEN_RIGHT_UPPER_C012_V33",
+      "C013": "FROZEN_RIGHT_UPPER_C013_V33",
+      "C014": "FROZEN_RIGHT_UPPER_C014_V33",
+      "C015": "FROZEN_RIGHT_UPPER_C015_V33",
+      "C016": "FROZEN_RIGHT_UPPER_C016_V33",
+      "C017": "FROZEN_RIGHT_UPPER_C017_V33",
+      "C018": "FROZEN_RIGHT_UPPER_C018_V33",
+      "C019": "FROZEN_RIGHT_UPPER_C019_V33",
+      "C020": "FROZEN_RIGHT_UPPER_C020_V33",
+      "C021": "FROZEN_RIGHT_UPPER_C021_V33",
+      "C022": "FROZEN_RIGHT_UPPER_C022_V33",
+      "C023": "FROZEN_RIGHT_UPPER_C023_V33",
+      "C024": "FROZEN_RIGHT_UPPER_C024_V33",
+      "C025": "FROZEN_RIGHT_UPPER_C025_V33",
+      "C026": "FROZEN_RIGHT_UPPER_C026_V33",
+      "C027": "FROZEN_RIGHT_UPPER_C027_V33",
+      "C028": "FROZEN_RIGHT_UPPER_C028_V33",
+      "C029": "FROZEN_RIGHT_UPPER_C029_V33",
+      "C030": "FROZEN_RIGHT_UPPER_C030_V33",
+      "C031": "FROZEN_RIGHT_UPPER_C031_V33",
+      "C032": "FROZEN_RIGHT_UPPER_C032_V33",
+      "C033": "FROZEN_RIGHT_UPPER_C033_V33",
+      "C034": "FROZEN_RIGHT_UPPER_C034_V33",
+      "C035": "FROZEN_RIGHT_UPPER_C035_V33",
+      "C036": "FROZEN_RIGHT_UPPER_C036_V33",
+      "C037": "FROZEN_RIGHT_UPPER_C037_V33",
+      "C038": "FROZEN_RIGHT_UPPER_C038_V33",
+      "C039": "FROZEN_RIGHT_UPPER_C039_V33",
+      "C040": "FROZEN_RIGHT_UPPER_C040_V33",
+      "C041": "FROZEN_RIGHT_UPPER_C041_V33",
+      "C042": "FROZEN_RIGHT_UPPER_C042_V33"
+    },
+    "eye_group": "REPAIRED_EYE_V33",
+    "eye_object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V33",
+    "frozen_context_group": "FROZEN_CONTEXT_V33",
+    "owner_group": "OWNER_C001_V33",
+    "shape_object_count": 43
+  },
+  "schema_version": "1.0",
+  "status": "PASS__REVIEW_ONLY_ONE_SIDED_PREVIEW"
+}
