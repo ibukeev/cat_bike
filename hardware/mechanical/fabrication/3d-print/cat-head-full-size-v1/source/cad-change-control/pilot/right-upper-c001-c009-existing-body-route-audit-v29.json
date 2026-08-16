@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "right-upper-c001-c009-existing-body-route-audit-v29",
+  "status": "APPROVED_FOR_READ_ONLY_JSON_VALIDATION",
+  "approval": {
+    "user_instruction": "just keep going",
+    "date": "2026-08-16"
+  },
+  "physical_problem": "Find a minimum correction route for the remaining C001 and C009 eye contacts without reusing the rejected V27 add-on roots or creating visible sticks, horns, blocks, or floating geometry.",
+  "allowed_operations": [
+    "open_hash_pinned_inputs_read_only",
+    "decompose_existing_shapes_in_memory",
+    "construct_transient_measurement_sweeps",
+    "measure_distance_and_boolean_common",
+    "write_deterministic_validation_json"
+  ],
+  "prohibited_operations": [
+    "modify_frozen_inputs",
+    "save_or_export_geometry",
+    "reuse_rejected_v27_geometry",
+    "add_visible_bridge_or_root_geometry",
+    "trim_or_delete_c009",
+    "mirror",
+    "production_union",
+    "export_step_or_stl",
+    "slice_or_generate_gcode",
+    "print_release"
+  ],
+  "accepted_context": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-approved-c027-c012-context-review-v25/CAT_HEAD_RIGHT_UPPER_APPROVED_C027_C012_CONTEXT_REVIEW_V25.FCStd",
+    "sha256": "ef3f1668f9c55e8c3744b1bac98c7f599a98251929aaed46c549db3b1214a775",
+    "required_object_count": 44,
+    "required_upper_component_count": 42
+  },
+  "v26_diagnostic": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-eye-clearance-review-v26/CAT_HEAD_RIGHT_UPPER_C001_EYE_CLEARANCE_REVIEW_V26.FCStd",
+    "sha256": "2ff7be047b3b2a3ddf52cfaacad932f7fa8a002c4180c373552d685762dd7dae",
+    "rail_volume_target_mm3": 174.42,
+    "rail_volume_tolerance_mm3": 1.0,
+    "diagnostic_offset_mm": [2.193, -5.7405, 1.935],
+    "rail_eye_clearance_target_mm": 4.2616,
+    "rail_main_gap_target_mm": 4.4614,
+    "distance_match_tolerance_mm": 0.15
+  },
+  "replacement_eye": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/right_eye_v17_full_topology_repaired_review_v4.step",
+    "sha256": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258"
+  },
+  "numeric_contract": {
+    "minimum_eye_clearance_mm": 4.0,
+    "minimum_root_overlap_mm3": 0.1,
+    "positive_intersection_threshold_mm3": 0.000001,
+    "maximum_search_length_mm": 30.0,
+    "contact_search_strategy": "maximum_envelope_then_binary_minimum_overlap",
+    "binary_refinement_iterations": 14
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-c009-existing-body-route-audit-v29",
+    "validation": "validation-v29.json"
+  },
+  "release_holds": {
+    "geometry_change_authorized": false,
+    "mirror_authorized": false,
+    "production_union_authorized": false,
+    "step_or_stl_export_authorized": false,
+    "slicing_authorized": false,
+    "gcode_authorized": false,
+    "asa_print_release_authorized": false
+  }
+}

@@ -5,6 +5,14 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current V29 C001/C009 existing-body route audit — **JSON-only negative
+  result; no geometry artifact and not a print source**. It proves there is no
+  clean direct continuation of the existing V26 tapered rail into C001 within
+  the controlled `30 mm` envelope while preserving `4.0 mm` eye clearance and
+  `0.1 mm3` owner overlap. C009 intersects the repaired eye by `27.7283 mm3`
+  and attaches only to C001. V27 remains rejected and absent. Read:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-c009-existing-body-route-audit-v29/validation-v29.json` and
+  `RIGHT_UPPER_C001_C009_EXISTING_BODY_ROUTE_AUDIT_V29_CHECKPOINT_2026-08-16.md`.
 - Current V28 repaired-eye/accepted-upper audit — **JSON-only, fail-closed
   precision audit; no geometry artifact and not a print source**. It substitutes
   the repaired V4 eye into the accepted V25 42-component context and proves
