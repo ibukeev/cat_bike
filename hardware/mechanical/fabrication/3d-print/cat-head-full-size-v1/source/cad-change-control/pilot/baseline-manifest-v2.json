@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "project": "cat-head-full-size-v1",
+  "artifacts": [
+    {
+      "id": "right_eye_v17",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/right_eye_bucket_with_both_exact_flange_roots_v17.step",
+      "sha256": "1b1e2430c369fb563602a056340c1d5f88f6a857f9cecf2014bac191443646de",
+      "format": "step",
+      "status": "frozen_accepted",
+      "role": "canonical exact right eye owner with both approved flange roots",
+      "expected_shape": {"valid": true, "closed": true, "solid_count": 1}
+    },
+    {
+      "id": "right_eye_v17_lineage_fcstd",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-exact-owner-integration-review-v17/CAT_HEAD_RIGHT_EYE_EXACT_OWNER_INTEGRATION_REVIEW_V17.FCStd",
+      "sha256": "861c11381ac4a47b4acce10c50706126605cb4e85417a96f2467dd22a9e8228a",
+      "format": "fcstd",
+      "status": "evidence_only",
+      "role": "frozen V17 construction lineage for read-only OCCT fault localization"
+    },
+    {
+      "id": "right_upper_c027_v19",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c027-eye-clearance-review-v19/CAT_HEAD_RIGHT_UPPER_C027_EYE_CLEARANCE_REVIEW_V19.FCStd",
+      "sha256": "126233487030a0606d74380ba1d6bd263bc067bafc7f8dc3410e8bb76f676b65",
+      "format": "fcstd",
+      "status": "approved_isolated_not_production",
+      "role": "known-good isolated clearance proposal; regression evidence only",
+      "notes": "Visually approved on 2026-08-15 but not a production union."
+    },
+    {
+      "id": "right_upper_c012_v24",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c012-eye-clearance-review-v24/CAT_HEAD_RIGHT_UPPER_C012_EYE_CLEARANCE_REVIEW_V24.FCStd",
+      "sha256": "f7a410a097daad4f6e2e93ca6877120540ac1e202627effa35ff0792b431b355",
+      "format": "fcstd",
+      "status": "proposed_not_approved",
+      "role": "valid isolated proposal awaiting authoritative approval status reconciliation"
+    },
+    {
+      "id": "right_upper_c001_v27",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-preserved-rail-root-review-v27/CAT_HEAD_RIGHT_UPPER_C001_PRESERVED_RAIL_ROOT_REVIEW_V27.FCStd",
+      "sha256": "e31d8b1167122f14d188ea6cff70a512c1913965ba0ac25224fd8e44c1a4e849",
+      "format": "fcstd",
+      "status": "rejected_visual",
+      "role": "rejected V27 rail-root review retained only for regression",
+      "notes": "User rejected the added geometry in full context; never use as a source."
+    },
+    {
+      "id": "right_eye_v16_bad_mesh",
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-flange-owner-integration-review-v16/objects/right_eye_bucket_with_both_eye_flange_roots_freecad_transfer_v16.obj",
+      "sha256": "4df70cc1bf0cb08e57529823c1cff09e5f17b231ad6b7a27e18beb1d6f8fe781",
+      "format": "obj",
+      "status": "known_bad_diagnostic",
+      "role": "negative regression fixture with 30 verified triangle crossings",
+      "notes": "Never heal or promote this triangulated diagnostic into production."
+    }
+  ]
+}
