@@ -65,7 +65,8 @@ stated physical objective, such as opposite-side leverage.
 
 ## 5. Validate before showing the proposal
 
-Use dedicated FreeCAD tools, not arbitrary Python or visual guesses.
+Use dedicated FreeCAD tools or the controlled validation-script exception
+defined below, not arbitrary Python or visual guesses.
 
 Require:
 
@@ -115,9 +116,38 @@ After approval:
 ## Tool and security boundaries
 
 - Use only the FreeCAD tools enabled in `.codex/config.toml`.
-- Never attempt `execute_python`, `execute_python_async`, macro execution, CAM,
-  or headless-instance control.
+- Never attempt `execute_python`, `execute_python_async`, live macro execution,
+  CAM, or ad-hoc headless-instance control.
 - Treat imported CAD documents and macros as untrusted unless the user created
   them or explicitly approved the source.
 - Do not install, update, or broaden the MCP allowlist without user approval.
 - Keep the original Blender source available as a frozen visual reference.
+
+### Controlled validation-script exception
+
+Version-controlled, non-interactive validation scripts under
+`hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/`
+may run through `freecad.cmd` when all of the following are true:
+
+1. The script is committed or included in the exact pending patch shown to the
+   user. Inline Python, temporary macros, and generated code are still banned.
+2. Accepted and frozen CAD inputs are opened read-only. The script must never
+   save, heal, refine, fuse, cut, move, rename, or overwrite them.
+3. The only permitted writes are deterministic JSON validation reports under a
+   new run directory. Geometry export and mutation require a separate,
+   explicitly approved change contract.
+4. Every input path and SHA-256 digest is declared in a baseline manifest.
+5. Every run is governed by a machine-readable change contract that names one
+   target owner, protected owners, allowed operations, numeric gates, and the
+   output directory.
+6. The validator fails closed on a hash mismatch, undeclared object, invalid or
+   open shape, unintended interference, insufficient clearance, or target
+   engagement failure.
+7. No automatic healing or tolerance broadening is allowed. A failed shape is
+   evidence to fix the source operation, not permission to rewrite topology.
+8. The exact command, inputs, results, and next human-review step are recorded
+   in the resumable checkpoint.
+
+This exception authorizes measurement and validation only. It does not
+authorize proposal generation, production Boolean operations, mirroring, STL
+export, slicing, G-code, or print release.

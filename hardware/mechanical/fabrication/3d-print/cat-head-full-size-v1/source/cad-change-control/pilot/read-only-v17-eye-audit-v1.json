@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "read-only-v17-eye-audit-v1",
+  "mode": "read_only_validation",
+  "target_owner": "right_eye_v17",
+  "protected_owners": [],
+  "permitted_operations": ["inspect", "measure"],
+  "geometry_changes_allowed": false,
+  "artifacts_to_inspect": ["right_eye_v17"],
+  "shape_gates": {
+    "require_valid": true,
+    "require_closed": true,
+    "required_solid_count": 1
+  },
+  "clearance_gates": [],
+  "output_directory": "reports/generated/cat-head-cad-validation/v1",
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "gcode": false,
+    "asa_print": false
+  }
+}

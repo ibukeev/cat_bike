@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cat-head-baseline-manifest-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project", "artifacts"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project": {"const": "cat-head-full-size-v1"},
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "path", "sha256", "format", "status", "role"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]+$"},
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "format": {"enum": ["step", "fcstd", "obj", "json"]},
+          "status": {
+            "enum": [
+              "frozen_accepted",
+              "approved_isolated_not_production",
+              "proposed_not_approved",
+              "rejected_visual",
+              "known_bad_diagnostic",
+              "evidence_only"
+            ]
+          },
+          "role": {"type": "string", "minLength": 1},
+          "object_names": {
+            "type": "array",
+            "items": {"type": "string", "minLength": 1},
+            "uniqueItems": true
+          },
+          "expected_shape": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "valid": {"type": "boolean"},
+              "closed": {"type": "boolean"},
+              "solid_count": {"type": "integer", "minimum": 0}
+            }
+          },
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cat-head-change-contract-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_id",
+    "mode",
+    "target_owner",
+    "protected_owners",
+    "permitted_operations",
+    "geometry_changes_allowed",
+    "artifacts_to_inspect",
+    "shape_gates",
+    "clearance_gates",
+    "output_directory",
+    "release_holds"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "contract_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]+$"},
+    "mode": {"enum": ["read_only_validation", "isolated_proposal"]},
+    "target_owner": {"type": "string", "minLength": 1},
+    "protected_owners": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "permitted_operations": {
+      "type": "array",
+      "items": {"enum": ["inspect", "measure"]},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "geometry_changes_allowed": {"const": false},
+    "artifacts_to_inspect": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "shape_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["require_valid", "require_closed", "required_solid_count"],
+      "properties": {
+        "require_valid": {"type": "boolean"},
+        "require_closed": {"type": "boolean"},
+        "required_solid_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "clearance_gates": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "mode", "first", "second", "minimum_distance_mm"],
+            "properties": {
+              "id": {"type": "string"},
+              "mode": {"const": "actual_geometry"},
+              "first": {"type": "string"},
+              "second": {"type": "string"},
+              "minimum_distance_mm": {"type": "number", "minimum": 0}
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "mode", "first", "second", "maximum_intersection_mm3"],
+            "properties": {
+              "id": {"type": "string"},
+              "mode": {"const": "inflated_keepout"},
+              "first": {"type": "string"},
+              "second": {"type": "string"},
+              "maximum_intersection_mm3": {"const": 0}
+            }
+          }
+        ]
+      }
+    },
+    "output_directory": {"type": "string", "minLength": 1},
+    "release_holds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mirror", "production_union", "stl", "gcode", "asa_print"],
+      "properties": {
+        "mirror": {"const": false},
+        "production_union": {"const": false},
+        "stl": {"const": false},
+        "gcode": {"const": false},
+        "asa_print": {"const": false}
+      }
+    }
+  }
+}
