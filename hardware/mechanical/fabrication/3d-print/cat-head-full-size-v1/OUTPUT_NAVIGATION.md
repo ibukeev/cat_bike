@@ -5,6 +5,18 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current topology-repaired right-eye full-context V5 — **review-only
+  one-sided assembly; not mirrored, production-unioned, or print-released**.
+  The repaired V4 eye replaces only the frozen V18 eye at zero transform. All
+  four approved assembly relationships have exactly `0.0 mm` clearance change:
+  outer/lower mating gaps remain approximately `0.300 mm`, C046 remains
+  `4.6063 mm`, and C048 remains `4.0317 mm`. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-topology-repaired-full-context-review-v5/CAT_HEAD_RIGHT_EYE_TOPOLOGY_REPAIRED_FULL_CONTEXT_REVIEW_V5.FCStd`.
+- V5 validation and resumable checkpoint:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-topology-repaired-full-context-review-v5/validation-v5.json` and
+  `RIGHT_EYE_TOPOLOGY_REPAIRED_FULL_CONTEXT_REVIEW_V5_CHECKPOINT_2026-08-16.md`.
+- No new geometry or user face selection is required for this topology bucket.
+  Mirror, production union, STL, slicing, G-code, and ASA release remain held.
 - Current V17 full topology-repaired exact STEP V4 — **review-only one-sided
   owner; not mirrored, integrated, or print-released**. The repaired owner is
   one valid closed `1178`-face solid. STEP round-trip bounds are unchanged,
