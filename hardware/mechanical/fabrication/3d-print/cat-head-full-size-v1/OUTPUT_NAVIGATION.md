@@ -5,6 +5,15 @@ current review is always easy to find.
 
 ## Open this first
 
+- Current V17/V9 skin repair exact-anchor review — **review only; zero geometry
+  changes; not a repair or print source**. Green is host `Face587`, magenta is
+  penetrating `Edge1278`, orange/yellow are diagnostic partner faces
+  `Face263/Face400`, and the hidden cyan group contains the true edge-owner
+  faces `Face581/Face582`. Open:
+  `output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-v9-skin-repair-anchor-review-v1/CAT_HEAD_RIGHT_EYE_V17_V9_SKIN_REPAIR_ANCHOR_REVIEW_V1.FCStd`.
+- V17/V9 anchor validation/checkpoint:
+  `../../../../../reports/generated/cat-head-cad-validation/v17-v9-skin-repair-anchor-review-v1/validation-v1.json` and
+  `RIGHT_EYE_V17_V9_SKIN_REPAIR_ANCHOR_REVIEW_V1_CHECKPOINT_2026-08-15.md`.
 - Current V17 exact-eye defect visualization — **defect localization visually
   approved 2026-08-15; zero geometry changes; not a repair or print source**.
   Toggle `DEFECT_REGION__V9_SKIN` to
