@@ -1,0 +1,77 @@
+{
+  "contract_id": "CAT-HEAD-RIGHT-EYE-SHELL-CONFLICT-CORRECTION-REVIEW-V40",
+  "status": "APPROVED_FOR_ONE_SIDED_REVIEW_ONLY",
+  "scope": "Create one right-side review candidate that leaves the repaired eye fixed, retains the already-reviewed main V26 upper C001 body while omitting its detached rail/sliver solids, adds a 0.30 mm eye-side relief to lower C001, and shortens lower C012/C013 only at their eye-side ends. Re-run exact eye collision checks against all 101 right-shell components.",
+  "frozen_inputs": {
+    "right_upper_v34": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+      "fcstd_sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584",
+      "geometry_verification": "The FCStd was GUI-resaved after V34 generation. Its 41-object manifest, 2712 total faces, 41 total solids, 150217.21686335682 mm3 summed volume, aggregate bounds, and unchanged repaired-eye validity/closure/1178-face/7269.553014006863 mm3 metrics were rechecked against validation-v34 before repinning.",
+      "validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/validation-v34.json",
+      "validation_sha256": "c2e49a2c6f448a5690ba600cb3c27ca1e210d36d165236031fdc5c732ce56d4b"
+    },
+    "right_upper_c001_v26": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c001-eye-clearance-review-v26/CAT_HEAD_RIGHT_UPPER_C001_EYE_CLEARANCE_REVIEW_V26.FCStd",
+      "fcstd_sha256": "2ff7be047b3b2a3ddf52cfaacad932f7fa8a002c4180c373552d685762dd7dae",
+      "candidate_object_name": "PROPOSED__RIGHT_UPPER_C001__LOCAL_EYE_CLEARANCE_ENVELOPE__V26"
+    },
+    "repaired_eye_v4": {
+      "step_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-v17-full-topology-repair-step-review-v4/right_eye_v17_full_topology_repaired_review_v4.step",
+      "step_sha256": "1ae9408d908edc9cf7e8d5ac2dd0c5bdd8a36f0f184d2bab3e05dafa1ef41258"
+    },
+    "right_lower_v14": {
+      "validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/validation-v14.json",
+      "validation_sha256": "cc818aa96cf0474f67ce6d2f73ae49ff681c7a61ef15b12821df6cfefb4dd777"
+    },
+    "right_lower_component_001_v13": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/CAT_HEAD_RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V13.FCStd",
+      "fcstd_sha256": "9ba404c8a7bed0ff9879eae95f06166093d308168679f3b44255261d785fe46c",
+      "object_name": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13"
+    },
+    "v35_audit": {
+      "validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-shell-components-conflict-audit-v35/validation-v35.json",
+      "validation_sha256": "bdc523254a8688e2c858fb4c9024edf0c62b2ac5de09689ddc9c4023a6b173c6",
+      "required_positive_upper": ["C001"],
+      "required_positive_lower": ["C001", "C012", "C013"]
+    }
+  },
+  "numeric_contract": {
+    "positive_intersection_threshold_mm3": 0.000001,
+    "mesh_to_occt_tolerance_mm": 0.000001,
+    "lower_c001_relief_gap_mm": 0.3,
+    "lower_c001_relief_direction": [0.0723083508, -0.4850092939, -0.8715144791],
+    "member_trim_axis": [0.043395594, 0.667635441, 0.743222594],
+    "lower_c012_shortening_mm": 5.452,
+    "lower_c013_shortening_mm": 45.09,
+    "minimum_c012_c013_eye_clearance_mm": 4.0,
+    "minimum_positive_owner_engagement_mm3": 0.000001,
+    "required_upper_component_count": 41,
+    "required_lower_component_count": 60
+  },
+  "allowed_actions": [
+    "Copy frozen exact geometry into a new one-sided review document",
+    "Retain only the largest valid closed solid from the already-reviewed V26 upper C001 candidate",
+    "Subtract the fixed eye and a 0.30 mm shifted eye tool from lower C001",
+    "Shorten lower C012 and C013 at their eye-side ends using the numeric half-space contract",
+    "Run exact OCCT collision, validity, closure, component-count, bounds, and engagement checks",
+    "Write one FCStd review file, deterministic validation JSON, and checkpoint"
+  ],
+  "prohibited_actions": [
+    "Move or reshape the repaired eye",
+    "Add, bridge, reconnect, or reposition any plank, rail, rib, flange, or support",
+    "Change ears, translucent panels, rear cassette, C006, or aluminum V0.5-M2",
+    "Mirror or integrate the proposal into production owners",
+    "Export STL, 3MF, G-code, slice, or authorize ASA printing"
+  ],
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-shell-conflict-correction-review-v40",
+    "fcstd": "CAT_HEAD_RIGHT_EYE_SHELL_CONFLICT_CORRECTION_REVIEW_V40.FCStd",
+    "validation": "validation-v40.json"
+  },
+  "release_holds": [
+    "V40 is one-sided review geometry only",
+    "Exterior containment requires visual approval because the current shell assembly is not a closed containment solid",
+    "No mirror, owner integration, production union, STL, slicing, or ASA print release",
+    "Eye-lens retaining-frame geometry remains a separate required gate before final eye-socket printing"
+  ]
+}
