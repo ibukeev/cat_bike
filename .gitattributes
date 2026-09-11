@@ -8,3 +8,10 @@ hardware/mechanical/**/*.3[mM][fF] filter=lfs diff=lfs merge=lfs -text
 hardware/mechanical/**/*.[gG][lL][bB] filter=lfs diff=lfs merge=lfs -text
 hardware/mechanical/**/*.[oO][bB][jJ] filter=lfs diff=lfs merge=lfs -text
 hardware/mechanical/**/*.[gG][cC][oO][dD][eE] filter=lfs diff=lfs merge=lfs -text
+
+# These four compact text templates were already stored directly in Git.
+# Keep their bytes and normal text diffs without requiring LFS pointers.
+hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/assembly/accepted-panels-3d.obj !filter !diff !merge -text
+hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/v1-shape-approved-cardboard-prototype/panel-candidates/candidate-panels-3d.obj !filter !diff !merge -text
+hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/v1-shape-approved-cardboard-prototype/panel-candidates/candidate-panels-combined.obj !filter !diff !merge -text
+hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/v1-shape-approved-cardboard-prototype/panel-candidates/eye-insert-panels.obj !filter !diff !merge -text
