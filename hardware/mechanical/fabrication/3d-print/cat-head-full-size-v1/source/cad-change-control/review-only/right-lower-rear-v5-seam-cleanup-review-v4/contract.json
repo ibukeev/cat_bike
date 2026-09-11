@@ -1,0 +1,88 @@
+{
+  "schema_version": "cat-head-right-lower-rear-v5-seam-cleanup-review-v4",
+  "contract_id": "right-lower-rear-v5-seam-cleanup-review-v4",
+  "tooling_revision": 1,
+  "authority": "REVIEW_ONLY_NON_AUTHORITATIVE_NOT_A_PRINT_SOURCE",
+  "user_decision": "Approve the V3 axis-straight lower/rear ownership. Remove the reinforcement-plank residual from both the front and rear sets, and remove the duplicate green transfer overlay that does not belong in the review.",
+  "inputs": {
+    "v3_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/contract.json",
+      "sha256": "a7a7ddaf041dd9174268d55c338667c81260ee46acca1bc37f84bc0657e75855"
+    },
+    "v3_generator": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/generate_freecad_review.py",
+      "sha256": "4227eab0cbf5dbbf606b3dcfce0fba5f273028ddcdd9eb87a0e69d5f216d18f4"
+    },
+    "v3_review": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/RIGHT_LOWER_REAR_V5_AXIS_STRAIGHT_SECTOR_REVIEW_ONLY_V3.FCStd",
+      "sha256": "9489e2f5a114467bc1212680ea15e083178780207bb4d2c2218a4dda6f7b4255"
+    },
+    "v3_validation": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/validation.json",
+      "sha256": "c297b1997fdf300aee713670b20fb96f1a141ecc2a24ced37bfa7df44abe0dca"
+    },
+    "inspection_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-seam-cleanup-review-v4/inspection-contract.json",
+      "sha256": "0708a7c411e70445cd65870dcae8e2e903568ddce99b7236c0c527b7f1dd7aa6"
+    },
+    "inspection_tool": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-seam-cleanup-review-v4/inspect_cleanup_targets.py",
+      "sha256": "7ecb347ef17e5ddd0841f4b0a81e768cdf2f0d332d1f2a4113528e0481ba7ea1"
+    }
+  },
+  "cleanup": {
+    "front_owner_to_remove": {
+      "component_index": 57,
+      "record_name": "component_057",
+      "record_owner": "retained",
+      "v3_internal_name": "RET_043",
+      "selected_subelement": "Edge6",
+      "expected_volume_mm3": 246.26739024632437
+    },
+    "rear_owner_to_remove": {
+      "component_index": 56,
+      "record_name": "component_056__cassette",
+      "record_owner": "cassette_split",
+      "expected_volume_mm3": 734.3247465664255
+    },
+    "pair_evidence": {
+      "minimum_distance_mm": 0.6928645810490278,
+      "long_axis_relationship": "parallel continuations across the approved split gap"
+    },
+    "review_overlay_to_omit": {
+      "internal_name": "PROPOSED_FACE30_SECTOR_TRANSFER",
+      "label": "PROPOSED — FACE30 SECTOR MOVED FROM REAR TO FRONT",
+      "policy": "omit duplicate display object only; preserve its material already incorporated into V3 component 001 front"
+    }
+  },
+  "numeric_gates": {
+    "volume_epsilon_mm3": 0.00001,
+    "minimum_pair_axis_absolute_dot": 0.999999,
+    "pair_distance_tolerance_mm": 0.000001,
+    "require_exactly_one_front_record_removed": true,
+    "require_exactly_one_rear_record_removed": true,
+    "require_all_kept_shape_objects_reused": true,
+    "require_component_001_shapes_reused": true,
+    "require_no_added_geometry": true,
+    "require_duplicate_transfer_overlay_absent": true
+  },
+  "preserved": [
+    "V3 component 001 axis-straight front/rear partition and 0.30 mm gap",
+    "the approved Face30 sector already incorporated in V3 component 001 front",
+    "all V3 records except retained component 057 and rear component 056",
+    "all V3 mesh-only retained owners",
+    "manual HEAD_BOTTOM_FLANGE fusion in component 007",
+    "released V3 right-eye reference objects"
+  ],
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/right-lower-rear-v5-seam-cleanup-review-v4",
+    "fcstd": "RIGHT_LOWER_REAR_V5_SEAM_CLEANUP_REVIEW_ONLY_V4.FCStd",
+    "validation": "validation.json"
+  },
+  "prohibited": [
+    "canonical or V3 save/mutation",
+    "ledge or fastener construction in this cleanup review",
+    "production fusion or bilateral mirroring",
+    "STL, STEP, 3MF, G-code, slicing, or print release"
+  ]
+}

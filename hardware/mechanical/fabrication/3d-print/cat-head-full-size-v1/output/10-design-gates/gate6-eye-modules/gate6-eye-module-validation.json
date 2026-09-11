@@ -1,0 +1,666 @@
+{
+  "gate": "Gate 6 isolated eye lightbox modules",
+  "status": "review_required",
+  "modules": [
+    {
+      "side": "right",
+      "shell": "right_lower_face",
+      "visible_aperture_vertices_mm": [
+        [
+          34.9453,
+          50.7759,
+          126.7901
+        ],
+        [
+          45.0804,
+          66.1511,
+          166.4082
+        ],
+        [
+          101.4953,
+          88.6294,
+          177.3997
+        ],
+        [
+          76.4835,
+          69.9922,
+          143.7341
+        ]
+      ],
+      "rear_cap_boss_centers_mm": [
+        [
+          89.1,
+          76.665,
+          151.658
+        ],
+        [
+          66.305,
+          63.709,
+          134.355
+        ]
+      ],
+      "led_pixels": 4,
+      "led_diffuser_gap_mm": 11.0,
+      "rear_cap_m2_5_fastener_count": 2,
+      "head_mount": {
+        "mount_edges": [
+          {
+            "role": "outer_side",
+            "vertex_indices": [
+              2,
+              3
+            ]
+          },
+          {
+            "role": "lower",
+            "vertex_indices": [
+              3,
+              0
+            ]
+          }
+        ],
+        "mount_anchor_points_mm": [
+          [
+            103.2458,
+            80.409,
+            148.1295
+          ],
+          [
+            68.7053,
+            60.951,
+            122.4885
+          ]
+        ],
+        "head_mount_flange_count": 2,
+        "internal_m2_5_fastener_count": 2,
+        "tab_length_mm": 12.0,
+        "tab_depth_mm": 8.0,
+        "tab_thickness_mm": 2.4,
+        "tab_face_gap_mm": 0.3,
+        "front_recess_mm": 0.6,
+        "shell_overlap_mm": 3.0,
+        "head_tab_shell_triangle_intersections": [
+          9,
+          6
+        ],
+        "module_tab_bucket_triangle_intersections": [
+          7,
+          7
+        ],
+        "head_tab_attachment_bridge_lengths_mm": [
+          21.4169,
+          0.0
+        ],
+        "fastener_axes": [
+          [
+            -0.9315,
+            -0.35531,
+            0.07787
+          ],
+          [
+            0.03723,
+            0.2291,
+            0.97269
+          ]
+        ],
+        "fastener_axes_parallel_to_eye_plane": true,
+        "exterior_fastener_holes": 0
+      }
+    },
+    {
+      "side": "left",
+      "shell": "left_lower_face",
+      "visible_aperture_vertices_mm": [
+        [
+          -33.9214,
+          50.3257,
+          126.4506
+        ],
+        [
+          -78.5034,
+          71.1482,
+          145.2936
+        ],
+        [
+          -102.2172,
+          88.9905,
+          177.7843
+        ],
+        [
+          -44.967,
+          66.0917,
+          166.3391
+        ]
+      ],
+      "rear_cap_boss_centers_mm": [
+        [
+          -67.365,
+          64.384,
+          135.4
+        ],
+        [
+          -90.664,
+          77.568,
+          152.892
+        ]
+      ],
+      "led_pixels": 4,
+      "led_diffuser_gap_mm": 11.0,
+      "rear_cap_m2_5_fastener_count": 2,
+      "head_mount": {
+        "mount_edges": [
+          {
+            "role": "outer_side",
+            "vertex_indices": [
+              1,
+              2
+            ]
+          },
+          {
+            "role": "lower",
+            "vertex_indices": [
+              0,
+              1
+            ]
+          }
+        ],
+        "mount_anchor_points_mm": [
+          [
+            -103.2458,
+            80.409,
+            148.1295
+          ],
+          [
+            -68.7053,
+            60.951,
+            122.4885
+          ]
+        ],
+        "head_mount_flange_count": 2,
+        "internal_m2_5_fastener_count": 2,
+        "tab_length_mm": 12.0,
+        "tab_depth_mm": 8.0,
+        "tab_thickness_mm": 2.4,
+        "tab_face_gap_mm": 0.3,
+        "front_recess_mm": 0.6,
+        "shell_overlap_mm": 3.0,
+        "head_tab_shell_triangle_intersections": [
+          6,
+          4
+        ],
+        "module_tab_bucket_triangle_intersections": [
+          7,
+          6
+        ],
+        "head_tab_attachment_bridge_lengths_mm": [
+          20.9853,
+          0.0
+        ],
+        "fastener_axes": [
+          [
+            0.95057,
+            -0.30418,
+            0.06242
+          ],
+          [
+            -0.01572,
+            0.29323,
+            0.95591
+          ]
+        ],
+        "fastener_axes_parallel_to_eye_plane": true,
+        "exterior_fastener_holes": 0
+      }
+    }
+  ],
+  "full_size_eye_part_metrics": {
+    "right_eye_bucket": {
+      "vertices": 362,
+      "faces": 201,
+      "connected_components": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 6629.737,
+      "dimensions_mm_sorted": [
+        52.567,
+        60.413,
+        76.348
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.303342,
+        "oriented_dimensions_mm_sorted": [
+          53.548,
+          63.702,
+          71.115
+        ],
+        "rotation_xyz_degrees": [
+          15,
+          0,
+          15
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "right_eye_diffuser": {
+      "vertices": 8,
+      "faces": 6,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 2768.67,
+      "dimensions_mm_sorted": [
+        40.205,
+        52.237,
+        68.826
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.256603,
+        "oriented_dimensions_mm_sorted": [
+          51.321,
+          53.598,
+          60.145
+        ],
+        "rotation_xyz_degrees": [
+          60,
+          75,
+          60
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "right_eye_led_rear_cap": {
+      "vertices": 280,
+      "faces": 160,
+      "connected_components": 7,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 4410.917,
+      "dimensions_mm_sorted": [
+        52.366,
+        57.657,
+        76.081
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.295817,
+        "oriented_dimensions_mm_sorted": [
+          56.126,
+          61.362,
+          70.996
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          45,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_eye_bucket": {
+      "vertices": 350,
+      "faces": 199,
+      "connected_components": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 6564.883,
+      "dimensions_mm_sorted": [
+        53.199,
+        60.809,
+        77.331
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.306738,
+        "oriented_dimensions_mm_sorted": [
+          54.686,
+          64.415,
+          71.371
+        ],
+        "rotation_xyz_degrees": [
+          105,
+          15,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_eye_diffuser": {
+      "vertices": 8,
+      "faces": 6,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 2828.927,
+      "dimensions_mm_sorted": [
+        41.018,
+        53.06,
+        70.5
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.263248,
+        "oriented_dimensions_mm_sorted": [
+          52.65,
+          54.793,
+          61.166
+        ],
+        "rotation_xyz_degrees": [
+          60,
+          105,
+          60
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_eye_led_rear_cap": {
+      "vertices": 282,
+      "faces": 160,
+      "connected_components": 7,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 4480.504,
+      "dimensions_mm_sorted": [
+        53.067,
+        59.297,
+        77.312
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.304207,
+        "oriented_dimensions_mm_sorted": [
+          60.207,
+          63.884,
+          71.77
+        ],
+        "rotation_xyz_degrees": [
+          45,
+          105,
+          45
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    }
+  },
+  "revised_shell_metrics": {
+    "right_upper_head": {
+      "vertices": 906,
+      "faces": 664,
+      "connected_components": 34,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 72191.206,
+      "dimensions_mm_sorted": [
+        156.939,
+        158.396,
+        206.289
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.822995,
+        "oriented_dimensions_mm_sorted": [
+          161.391,
+          167.139,
+          197.519
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          105,
+          15
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_upper_head": {
+      "vertices": 901,
+      "faces": 655,
+      "connected_components": 33,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 67277.589,
+      "dimensions_mm_sorted": [
+        128.492,
+        158.396,
+        206.289
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.78793,
+        "oriented_dimensions_mm_sorted": [
+          157.586,
+          158.396,
+          187.904
+        ],
+        "rotation_xyz_degrees": [
+          90,
+          120,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "right_lower_face": {
+      "vertices": 1096,
+      "faces": 806,
+      "connected_components": 44,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 78964.432,
+      "dimensions_mm_sorted": [
+        128.29,
+        153.822,
+        269.345
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.968375,
+        "oriented_dimensions_mm_sorted": [
+          192.202,
+          203.359,
+          231.551
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          120,
+          105
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_lower_face": {
+      "vertices": 1111,
+      "faces": 830,
+      "connected_components": 47,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 80969.573,
+      "dimensions_mm_sorted": [
+        153.685,
+        158.406,
+        269.345
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.969185,
+        "oriented_dimensions_mm_sorted": [
+          192.202,
+          203.529,
+          229.302
+        ],
+        "rotation_xyz_degrees": [
+          30,
+          0,
+          30
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "rear_base": {
+      "vertices": 213,
+      "faces": 124,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 92695.556,
+      "dimensions_mm_sorted": [
+        28.504,
+        81.357,
+        120.0
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.460929,
+        "oriented_dimensions_mm_sorted": [
+          80.535,
+          96.795,
+          96.795
+        ],
+        "rotation_xyz_degrees": [
+          60,
+          45,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "right_ear": {
+      "vertices": 120,
+      "faces": 84,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 16953.802,
+      "dimensions_mm_sorted": [
+        85.713,
+        96.118,
+        142.743
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.475164,
+        "oriented_dimensions_mm_sorted": [
+          85.471,
+          99.218,
+          114.039
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          75,
+          165
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_ear": {
+      "vertices": 122,
+      "faces": 84,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 16986.511,
+      "dimensions_mm_sorted": [
+        85.713,
+        96.118,
+        142.743
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.475164,
+        "oriented_dimensions_mm_sorted": [
+          85.471,
+          99.218,
+          114.039
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          105,
+          165
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    }
+  },
+  "hardware": {
+    "head_mount": "4 total M2.5 through-bolts, 8 washers, and 4 loose nyloc nuts",
+    "rear_caps": "4 total M2.5 through-bolts, 8 washers, and 4 loose nyloc nuts",
+    "leds": "8 addressable 5 V RGB pixels total; 4 independently controlled pixels per eye"
+  },
+  "small_model_scale": 0.30303,
+  "acceptance": {
+    "two_independent_eye_lightboxes": true,
+    "three_printed_parts_per_eye": true,
+    "corrected_eye_apertures_preserved": true,
+    "four_addressable_led_references_per_eye": true,
+    "minimum_led_diffuser_gap_preserved": true,
+    "two_internal_head_mount_flanges_per_eye": true,
+    "head_mounts_recessed_at_outer_side_and_lower_edges": true,
+    "all_head_mount_tabs_intersect_their_printed_owners": true,
+    "head_mount_axes_parallel_to_eye_planes": true,
+    "no_exterior_eye_fastener_holes": true,
+    "two_removable_rear_cap_fasteners_per_eye": true,
+    "all_eye_parts_closed_manifold": true,
+    "all_gate6_shells_closed_manifold": true,
+    "all_full_size_eye_parts_fit_printer": true,
+    "small_model_visual_exports_created": true
+  },
+  "review_notes": [
+    "Each eye is a separate light-tight module so its four addressable pixels can use a different color from the head glow panels.",
+    "The corrected annotated eye silhouette remains the visible aperture; an opaque bezel fills the unused area of the original oversized eye opening.",
+    "Two recessed internal flange screws retain each eye module at the outer-side and lower eye edges without creating exterior holes.",
+    "The rear cap is removable with two internal M2.5 through-bolts and carries a flat adhesive LED-strip area plus four diffuser-retaining posts.",
+    "The 100 mm-head-scale exports are visual and assembly-fit models only; use the full-size module or coupon to test LEDs, hardware, diffusion, heat, and light leakage."
+  ]
+}

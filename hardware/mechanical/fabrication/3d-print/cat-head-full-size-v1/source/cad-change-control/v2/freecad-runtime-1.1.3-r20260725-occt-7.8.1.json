@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "runtime_id": "freecad-1-1-3-r20260725-occt-7-8-1-linux-x86-64",
+  "state": "user_approved_v2_runtime",
+  "freecad": {
+    "release": "1.1.3",
+    "program_version": "1.1R20260725 (Git shallow)",
+    "version_record": [
+      "1",
+      "1",
+      "3",
+      "20260725 (Git shallow)",
+      "Unknown",
+      "2026/07/25 04:52:02",
+      "grafted,grafted",
+      "145529fe741292ff0b3977a01195bf0247425794"
+    ],
+    "source_appimage_sha256": "3a853eb69ee595f779f2255dbf80a765926981d8ff68903cefee4dfb03a8f5ef"
+  },
+  "occt": {
+    "version": "7.8.1"
+  },
+  "python": {
+    "version": "3.11.14"
+  },
+  "platform": {
+    "machine": "x86_64"
+  },
+  "probe": {
+    "script_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/probe_freecad_runtime_v2.py",
+    "script_sha256": "47990f80a3973c4f8150f391ef02f301b773654444658191a39360adf4f114f0"
+  },
+  "artifacts": [
+    {
+      "path": "AppRun",
+      "sha256": "66ea3745e20852699e2bbc692b45d21f60d936d292497964a0f6d44a5600259c"
+    },
+    {
+      "path": "usr/lib/FreeCAD.so",
+      "sha256": "1d6c8ab324b343ca10587d9a2bd6018b8bb3c1e3fcb882dd219625808f6cbe57"
+    },
+    {
+      "path": "usr/lib/Part.so",
+      "sha256": "6041e6c34c3f668433f5d26a24994731a6e00c89a6676de4b4abab857dba5b18"
+    },
+    {
+      "path": "usr/lib/libTKernel.so.7.8.1",
+      "sha256": "fa2d7c9d199e3814141fdc00b2efeabc29188b75950348155b73bbef8b2b8303"
+    },
+    {
+      "path": "usr/lib/libTKBRep.so.7.8.1",
+      "sha256": "51d1bd2c9dfecde8f44872aa7dd7a351bd10f4c9ec38a0f7755b9436a9b124be"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-16",
+    "note": "Pinned for the V2 tooling correction after the 1.1R20260414 canonical document was round-tripped by FreeCAD 1.1R20260725 with OCCT 7.8.1."
+  }
+}

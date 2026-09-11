@@ -1,0 +1,682 @@
+{
+  "status": "user-marked crossed flange removed and relocated to the checked adjacent forward seam on both translucent pieces; retain the unmarked flange set and one aligned M3 through-bolt path per pair; placement and hardware-interface review only; no STL, G-code, or print release",
+  "feedback_scope": [
+    "F-10",
+    "F-11",
+    "F-12"
+  ],
+  "config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/ear-root-marked-relocation-m3-through-bolt-review-v10.json",
+  "v3_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/ear-root-insertion-fit-review-v3.json",
+  "physical_fit_feedback": "hardware/mechanical/CAT_HEAD_MOUNT_AND_SHELL_PHYSICAL_FIT_REVIEW_2026-07-28.md",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "accepted_v3_fit_body_changed": false,
+  "exact_gate8_source_mesh_count": 31,
+  "exact_gate8_source_meshes_unchanged": true,
+  "placement_pair": {
+    "pattern": "two equal parallel rectangular tabs per connector set, entirely internal, with one common M3 through-bolt axis",
+    "tab_length_mm": 22.0,
+    "tab_interior_depth_mm": 12.0,
+    "tab_thickness_mm": 4.0,
+    "mating_gap_mm": 0.3,
+    "minimum_owner_overlap_volume_mm3": 80.0,
+    "minimum_same_side_location_separation_mm": 45.0,
+    "moving_flange_path_margin_mm": 0.4,
+    "shared_tab_interior_offset_mm": 1.0,
+    "moving_tab_interior_relief_mm": 0.5,
+    "m3_clearance_diameter_mm": 3.4,
+    "hole_cut_extension_mm": 2.0,
+    "minimum_hole_edge_material_mm": 3.5
+  },
+  "connector_sets_per_translucent_piece": 2,
+  "translucent_piece_count": 2,
+  "connector_set_count": 4,
+  "right_connector_set_count": 2,
+  "left_connector_set_count": 2,
+  "orange_flange_count": 4,
+  "green_flange_count": 4,
+  "rectangular_tab_count": 8,
+  "separate_root_geometry_count": 0,
+  "fastener": {
+    "nominal": "M3",
+    "fastener_count_total": 4,
+    "fastener_count_per_connector_set": 1,
+    "recommended_bolt": "M3 x 16 through-bolt",
+    "retention": "two 7 mm OD washers and one M3 nyloc nut per bolt",
+    "assembly_access": "inside head only",
+    "manual_fit_allowance": "If physical fit-up requires adjustment, enlarge only the orange moving-tab hole, keep the 7 mm washer, and preserve at least 3 mm edge material after drilling."
+  },
+  "aligned_m3_fastener_path_count": 4,
+  "drilled_tab_hole_count": 8,
+  "specified_m3_fastener_count": 4,
+  "modeled_hardware_count": 0,
+  "bore_reports": [
+    {
+      "side": "right",
+      "location_id": "A",
+      "nominal": "M3",
+      "clearance_diameter_mm": 3.4,
+      "undersized_gauge_diameter_mm": 3.1999999999999997,
+      "orange_gauge_intersection_pairs": 0,
+      "green_gauge_intersection_pairs": 0,
+      "common_center_mm": [
+        95.64082,
+        198.15312,
+        193.52599
+      ],
+      "common_axis": [
+        -0.321188,
+        -0.400485,
+        0.858166
+      ],
+      "minimum_hole_edge_material_mm": 4.05,
+      "open_and_aligned": true
+    },
+    {
+      "side": "left",
+      "location_id": "A",
+      "nominal": "M3",
+      "clearance_diameter_mm": 3.4,
+      "undersized_gauge_diameter_mm": 3.1999999999999997,
+      "orange_gauge_intersection_pairs": 0,
+      "green_gauge_intersection_pairs": 0,
+      "common_center_mm": [
+        -95.64082,
+        198.15312,
+        193.52599
+      ],
+      "common_axis": [
+        0.321188,
+        -0.400485,
+        0.858166
+      ],
+      "minimum_hole_edge_material_mm": 4.05,
+      "open_and_aligned": true
+    },
+    {
+      "side": "right",
+      "location_id": "B",
+      "nominal": "M3",
+      "clearance_diameter_mm": 3.4,
+      "undersized_gauge_diameter_mm": 3.1999999999999997,
+      "orange_gauge_intersection_pairs": 0,
+      "green_gauge_intersection_pairs": 0,
+      "common_center_mm": [
+        66.07977,
+        223.08839,
+        216.75833
+      ],
+      "common_axis": [
+        0.833471,
+        -0.425715,
+        -0.352268
+      ],
+      "minimum_hole_edge_material_mm": 4.05,
+      "open_and_aligned": true
+    },
+    {
+      "side": "left",
+      "location_id": "B",
+      "nominal": "M3",
+      "clearance_diameter_mm": 3.4,
+      "undersized_gauge_diameter_mm": 3.1999999999999997,
+      "orange_gauge_intersection_pairs": 0,
+      "green_gauge_intersection_pairs": 0,
+      "common_center_mm": [
+        -66.07977,
+        223.08839,
+        216.75833
+      ],
+      "common_axis": [
+        -0.833471,
+        -0.425715,
+        -0.352268
+      ],
+      "minimum_hole_edge_material_mm": 4.05,
+      "open_and_aligned": true
+    }
+  ],
+  "all_m3_bores_open_and_aligned": true,
+  "minimum_actual_hole_edge_material_mm": 4.05,
+  "compound_bridge_count": 0,
+  "convex_hull_transition_count": 0,
+  "loose_clamp_count": 0,
+  "trapezoid_or_broad_base_count": 0,
+  "pair_reports": [
+    {
+      "side": "right",
+      "location_id": "A",
+      "role": "unmarked retained connector set",
+      "center": [
+        95.64082,
+        198.15312,
+        193.52599
+      ],
+      "dimensions_mm": [
+        22.0,
+        12.0,
+        4.0
+      ],
+      "shared_offset_mm": 1.0,
+      "moving_tab_interior_relief_mm": 0.5,
+      "m3_clearance_diameter_mm": 3.4,
+      "fastener_center_mm": [
+        95.64082,
+        198.15312,
+        193.52599
+      ],
+      "fastener_axis": [
+        -0.321188,
+        -0.400485,
+        0.858166
+      ],
+      "minimum_hole_edge_material_mm": 4.05,
+      "measured_gap_mm": 0.3,
+      "orange_owner_intersection_pairs": 18,
+      "green_owner_intersection_pairs": 31
+    },
+    {
+      "side": "left",
+      "location_id": "A",
+      "role": "unmarked retained connector set",
+      "center": [
+        -95.64082,
+        198.15312,
+        193.52599
+      ],
+      "dimensions_mm": [
+        22.0,
+        12.0,
+        4.0
+      ],
+      "shared_offset_mm": 1.0,
+      "moving_tab_interior_relief_mm": 0.5,
+      "m3_clearance_diameter_mm": 3.4,
+      "fastener_center_mm": [
+        -95.64082,
+        198.15312,
+        193.52599
+      ],
+      "fastener_axis": [
+        0.321188,
+        -0.400485,
+        0.858166
+      ],
+      "minimum_hole_edge_material_mm": 4.05,
+      "measured_gap_mm": 0.3,
+      "orange_owner_intersection_pairs": 20,
+      "green_owner_intersection_pairs": 23
+    },
+    {
+      "side": "right",
+      "location_id": "B",
+      "role": "crossed connector relocated to user-marked checked forward seam",
+      "center": [
+        66.07977,
+        223.08839,
+        216.75833
+      ],
+      "dimensions_mm": [
+        22.0,
+        12.0,
+        4.0
+      ],
+      "shared_offset_mm": 1.0,
+      "moving_tab_interior_relief_mm": 0.5,
+      "m3_clearance_diameter_mm": 3.4,
+      "fastener_center_mm": [
+        66.07977,
+        223.08839,
+        216.75833
+      ],
+      "fastener_axis": [
+        0.833471,
+        -0.425715,
+        -0.352268
+      ],
+      "minimum_hole_edge_material_mm": 4.05,
+      "measured_gap_mm": 0.3,
+      "orange_owner_intersection_pairs": 23,
+      "green_owner_intersection_pairs": 37
+    },
+    {
+      "side": "left",
+      "location_id": "B",
+      "role": "crossed connector relocated to user-marked checked forward seam",
+      "center": [
+        -66.07977,
+        223.08839,
+        216.75833
+      ],
+      "dimensions_mm": [
+        22.0,
+        12.0,
+        4.0
+      ],
+      "shared_offset_mm": 1.0,
+      "moving_tab_interior_relief_mm": 0.5,
+      "m3_clearance_diameter_mm": 3.4,
+      "fastener_center_mm": [
+        -66.07977,
+        223.08839,
+        216.75833
+      ],
+      "fastener_axis": [
+        -0.833471,
+        -0.425715,
+        -0.352268
+      ],
+      "minimum_hole_edge_material_mm": 4.05,
+      "measured_gap_mm": 0.3,
+      "orange_owner_intersection_pairs": 23,
+      "green_owner_intersection_pairs": 39
+    }
+  ],
+  "same_side_location_separation_mm": {
+    "right": 45.115,
+    "left": 45.115
+  },
+  "minimum_required_same_side_separation_mm": 45.0,
+  "mirror_center_errors_mm": {
+    "A": 0.0,
+    "B": 0.0
+  },
+  "shared_frame_checks": {
+    "right_A": {
+      "tangent_dot_interior": 1e-08,
+      "tangent_dot_across": 3e-08,
+      "interior_dot_across": -1e-08,
+      "axis_lengths": {
+        "tangent": 0.99999996,
+        "interior": 0.99999999,
+        "across": 0.99999997
+      }
+    },
+    "left_A": {
+      "tangent_dot_interior": 1e-08,
+      "tangent_dot_across": 3e-08,
+      "interior_dot_across": -1e-08,
+      "axis_lengths": {
+        "tangent": 0.99999996,
+        "interior": 0.99999999,
+        "across": 0.99999997
+      }
+    },
+    "right_B": {
+      "tangent_dot_interior": -1e-08,
+      "tangent_dot_across": -1e-08,
+      "interior_dot_across": 1e-08,
+      "axis_lengths": {
+        "tangent": 1.00000006,
+        "interior": 1.0,
+        "across": 1.00000004
+      }
+    },
+    "left_B": {
+      "tangent_dot_interior": -1e-08,
+      "tangent_dot_across": -1e-08,
+      "interior_dot_across": 1e-08,
+      "axis_lengths": {
+        "tangent": 1.00000006,
+        "interior": 1.0,
+        "across": 1.00000004
+      }
+    }
+  },
+  "minimum_required_owner_overlap_volume_mm3": 80.0,
+  "owner_overlap_volumes_mm3": {
+    "right_A_orange_owner_overlap": 81.0001,
+    "right_A_green_owner_overlap": 106.7681,
+    "left_A_orange_owner_overlap": 80.1945,
+    "left_A_green_owner_overlap": 106.7495,
+    "right_B_orange_owner_overlap": 92.4415,
+    "right_B_green_owner_overlap": 108.9017,
+    "left_B_orange_owner_overlap": 82.9953,
+    "left_B_green_owner_overlap": 112.4173
+  },
+  "minimum_actual_owner_overlap_volume_mm3": 80.1945,
+  "review_only_boolean_cutaway_proof_count": 16,
+  "review_only_boolean_cutaway_proof_volumes_mm3": {
+    "right_A_orange_exposed": 939.0999,
+    "right_A_orange_owner_overlap": 81.0001,
+    "right_A_green_exposed": 913.3316,
+    "right_A_green_owner_overlap": 106.7681,
+    "left_A_orange_exposed": 940.0167,
+    "left_A_orange_owner_overlap": 80.1945,
+    "left_A_green_exposed": 913.3497,
+    "left_A_green_owner_overlap": 106.7495,
+    "right_B_orange_exposed": 943.3255,
+    "right_B_orange_owner_overlap": 92.4415,
+    "right_B_green_exposed": 858.6795,
+    "right_B_green_owner_overlap": 108.9017,
+    "left_B_orange_exposed": 937.2436,
+    "left_B_orange_owner_overlap": 82.9953,
+    "left_B_green_exposed": 858.1693,
+    "left_B_green_owner_overlap": 112.4173
+  },
+  "owner_proof_partition_diagnostics": {
+    "right_A_orange": {
+      "tab_volume_mm3": 1020.0995,
+      "exposed_volume_mm3": 939.0999,
+      "owner_overlap_volume_mm3": 81.0001,
+      "partition_error_mm3": 0.0005,
+      "partition_tolerance_mm3": 25.5025,
+      "partition_within_tolerance": true,
+      "owner_overlap_not_greater_than_tab": true
+    },
+    "right_A_green": {
+      "tab_volume_mm3": 1020.0997,
+      "exposed_volume_mm3": 913.3316,
+      "owner_overlap_volume_mm3": 106.7681,
+      "partition_error_mm3": 0.0001,
+      "partition_tolerance_mm3": 25.5025,
+      "partition_within_tolerance": true,
+      "owner_overlap_not_greater_than_tab": true
+    },
+    "left_A_orange": {
+      "tab_volume_mm3": 1020.0999,
+      "exposed_volume_mm3": 940.0167,
+      "owner_overlap_volume_mm3": 80.1945,
+      "partition_error_mm3": 0.1113,
+      "partition_tolerance_mm3": 25.5025,
+      "partition_within_tolerance": true,
+      "owner_overlap_not_greater_than_tab": true
+    },
+    "left_A_green": {
+      "tab_volume_mm3": 1020.0992,
+      "exposed_volume_mm3": 913.3497,
+      "owner_overlap_volume_mm3": 106.7495,
+      "partition_error_mm3": 0.0,
+      "partition_tolerance_mm3": 25.5025,
+      "partition_within_tolerance": true,
+      "owner_overlap_not_greater_than_tab": true
+    },
+    "right_B_orange": {
+      "tab_volume_mm3": 1020.2874,
+      "exposed_volume_mm3": 943.3255,
+      "owner_overlap_volume_mm3": 92.4415,
+      "partition_error_mm3": 15.4796,
+      "partition_tolerance_mm3": 25.5072,
+      "partition_within_tolerance": true,
+      "owner_overlap_not_greater_than_tab": true
+    },
+    "right_B_green": {
+      "tab_volume_mm3": 1020.4999,
+      "exposed_volume_mm3": 858.6795,
+      "owner_overlap_volume_mm3": 108.9017,
+      "partition_error_mm3": 52.9187,
+      "partition_tolerance_mm3": 25.5125,
+      "partition_within_tolerance": false,
+      "owner_overlap_not_greater_than_tab": true
+    },
+    "left_B_orange": {
+      "tab_volume_mm3": 1020.5408,
+      "exposed_volume_mm3": 937.2436,
+      "owner_overlap_volume_mm3": 82.9953,
+      "partition_error_mm3": 0.3019,
+      "partition_tolerance_mm3": 25.5135,
+      "partition_within_tolerance": true,
+      "owner_overlap_not_greater_than_tab": true
+    },
+    "left_B_green": {
+      "tab_volume_mm3": 1020.4498,
+      "exposed_volume_mm3": 858.1693,
+      "owner_overlap_volume_mm3": 112.4173,
+      "partition_error_mm3": 49.8632,
+      "partition_tolerance_mm3": 25.5112,
+      "partition_within_tolerance": false,
+      "owner_overlap_not_greater_than_tab": true
+    }
+  },
+  "all_owner_overlap_bounds_valid": true,
+  "owner_overlap_mirror_checks": {
+    "A_orange": {
+      "right_volume_mm3": 81.0001,
+      "left_volume_mm3": 80.1945,
+      "absolute_error_mm3": 0.8056,
+      "tolerance_mm3": 12.15,
+      "within_tolerance": true
+    },
+    "A_green": {
+      "right_volume_mm3": 106.7681,
+      "left_volume_mm3": 106.7495,
+      "absolute_error_mm3": 0.0186,
+      "tolerance_mm3": 16.0152,
+      "within_tolerance": true
+    },
+    "B_orange": {
+      "right_volume_mm3": 92.4415,
+      "left_volume_mm3": 82.9953,
+      "absolute_error_mm3": 9.4462,
+      "tolerance_mm3": 13.8662,
+      "within_tolerance": true
+    },
+    "B_green": {
+      "right_volume_mm3": 108.9017,
+      "left_volume_mm3": 112.4173,
+      "absolute_error_mm3": 3.5156,
+      "tolerance_mm3": 16.8626,
+      "within_tolerance": true
+    }
+  },
+  "all_owner_overlap_mirror_checks_valid": true,
+  "review_only_proofs_change_connector_geometry": false,
+  "exterior_silhouette_comparison": {
+    "front": {
+      "resolution_px": [
+        1100,
+        1100
+      ],
+      "different_channel_count": 0,
+      "maximum_channel_delta": 0.0,
+      "identical": true,
+      "baseline_render": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-front-baseline.png",
+      "candidate_render": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-front-candidate.png"
+    },
+    "right": {
+      "resolution_px": [
+        1100,
+        1100
+      ],
+      "different_channel_count": 0,
+      "maximum_channel_delta": 0.0,
+      "identical": true,
+      "baseline_render": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-right-baseline.png",
+      "candidate_render": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-right-candidate.png"
+    },
+    "left": {
+      "resolution_px": [
+        1100,
+        1100
+      ],
+      "different_channel_count": 0,
+      "maximum_channel_delta": 0.0,
+      "identical": true,
+      "baseline_render": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-left-baseline.png",
+      "candidate_render": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-left-candidate.png"
+    },
+    "top": {
+      "resolution_px": [
+        1100,
+        1100
+      ],
+      "different_channel_count": 0,
+      "maximum_channel_delta": 0.0,
+      "identical": true,
+      "baseline_render": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-top-baseline.png",
+      "candidate_render": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-top-candidate.png"
+    }
+  },
+  "moving_composite_topology": {
+    "right": {
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces": 105,
+      "volume_mm3": 15985.3177
+    },
+    "left": {
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "faces": 105,
+      "volume_mm3": 15990.458
+    }
+  },
+  "seated_moving_composite_hits": {
+    "right": {},
+    "left": {}
+  },
+  "green_unintended_shell_hits": {
+    "right": {},
+    "left": {}
+  },
+  "path_validation": {
+    "right": {
+      "side": "right",
+      "sample_count": 41,
+      "hardware_present_during_motion": false,
+      "accepted_v3_deep_body_margin_mm": 0.4,
+      "accepted_v3_deep_body_path_clear": true,
+      "maximum_deep_body_margin_triangle_intersection_pairs": 0,
+      "moving_flange_margin_mm": 0.4,
+      "actual_conflicts": [],
+      "moving_flange_margin_conflicts": [
+        {
+          "phase": "translate_outward_up",
+          "step": 0,
+          "rotation_degrees": 0.0,
+          "translation_mm": 0.0,
+          "per_tab_hits": {
+            "EAR10_RIGHT_A_INSERT_FLANGE__orange": {
+              "right_upper_head": 16,
+              "EAR10_RIGHT_A_HEAD_FLANGE__green": 20
+            },
+            "EAR10_RIGHT_B_INSERT_FLANGE__orange": {
+              "right_upper_head": 14,
+              "EAR10_RIGHT_B_HEAD_FLANGE__green": 13
+            }
+          }
+        }
+      ],
+      "maximum_actual_triangle_intersection_pairs": 0,
+      "maximum_moving_flange_margin_triangle_intersection_pairs": 63,
+      "all_actual_geometry_path_clear": true,
+      "conservative_flange_margin_path_clear": false
+    },
+    "left": {
+      "side": "left",
+      "sample_count": 41,
+      "hardware_present_during_motion": false,
+      "accepted_v3_deep_body_margin_mm": 0.4,
+      "accepted_v3_deep_body_path_clear": true,
+      "maximum_deep_body_margin_triangle_intersection_pairs": 0,
+      "moving_flange_margin_mm": 0.4,
+      "actual_conflicts": [],
+      "moving_flange_margin_conflicts": [
+        {
+          "phase": "translate_outward_up",
+          "step": 0,
+          "rotation_degrees": 0.0,
+          "translation_mm": 0.0,
+          "per_tab_hits": {
+            "EAR10_LEFT_A_ORANGE_FLANGE__orange": {
+              "left_upper_head": 16,
+              "EAR10_LEFT_A_GREEN_FLANGE__green": 7
+            },
+            "EAR10_LEFT_B_ORANGE_FLANGE__orange": {
+              "left_upper_head": 18,
+              "EAR10_LEFT_B_GREEN_FLANGE__green": 8
+            }
+          }
+        }
+      ],
+      "maximum_actual_triangle_intersection_pairs": 0,
+      "maximum_moving_flange_margin_triangle_intersection_pairs": 49,
+      "all_actual_geometry_path_clear": true,
+      "conservative_flange_margin_path_clear": false
+    }
+  },
+  "all_actual_geometry_paths_clear": true,
+  "all_conservative_flange_margin_paths_clear": false,
+  "redundant_quad_face_proof_preserved": {
+    "left": {
+      "panel": "QUAD035",
+      "retained_face_index": 44,
+      "omitted_face_index": 45,
+      "omitted_unique_vertex": 60,
+      "barycentric_in_retained_triangle": [
+        0.238257,
+        0.549221,
+        0.212523
+      ],
+      "plane_error_mm": 9.3e-05,
+      "fully_contained_and_coplanar": true,
+      "safe_to_add_as_overlapping_face": false
+    },
+    "right": {
+      "panel": "QUAD021",
+      "retained_face_index": 28,
+      "omitted_face_index": 29,
+      "omitted_unique_vertex": 63,
+      "barycentric_in_retained_triangle": [
+        0.238257,
+        0.549221,
+        0.212523
+      ],
+      "plane_error_mm": 9.3e-05,
+      "fully_contained_and_coplanar": true,
+      "safe_to_add_as_overlapping_face": false
+    }
+  },
+  "review_sequence": [
+    "Review the retained set and the crossed-to-checked relocated set on each yellow translucent piece.",
+    "Review all eight drilled rectangular tabs and the owner-root cutaways.",
+    "Confirm every orange/green pair has one common 3.4 mm M3 through-bolt path."
+  ],
+  "green_source_shell_integration_validated": false,
+  "no_stl_or_gcode_exported": true,
+  "not_print_released": true,
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-full-head-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-user-marked-relocation-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-user-marked-relocation-context.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-translucent-piece-two-orange-roots.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-two-connector-sets-isolated.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-translucent-piece-two-orange-roots.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-two-connector-sets-isolated.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-a-m3-hole-alignment.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-a-orange-owner-root.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-a-green-owner-root.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-a-m3-hole-alignment.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-a-orange-owner-root.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-a-green-owner-root.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-b-m3-hole-alignment.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-b-orange-owner-root.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-right-b-green-owner-root.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-b-m3-hole-alignment.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-b-orange-owner-root.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-left-b-green-owner-root.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-front-baseline.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-front-candidate.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-right-baseline.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-right-candidate.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-left-baseline.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-left-candidate.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-top-baseline.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/renders/ear-root-marked-relocation-m3-through-bolt-exterior-top-candidate.png"
+    ]
+  },
+  "review_holds": [
+    "V10 must retain the unmarked connector and replace the crossed connector at the user-marked checked adjacent forward seam on each translucent piece: four sets and eight rectangular tabs total.",
+    "Every tab is a plain 22 x 12 x 4 mm rectangle with a 0.3 mm mating gap. The shared tabs begin 1 mm inside the seam plane and moving orange tabs receive a further 0.5 mm interior relief. No wedge, trapezoid, broad base, bridge, clamp, boss, or loose connector is allowed.",
+    "Every owner-root Boolean overlap volume must be at least 80 mm3; surface-only or narrow line contact fails generation.",
+    "All proposed geometry must remain inside the original exterior occupancy mask from front, left, right, and top.",
+    "Each connector set has exactly one common 3.4 mm M3 clearance axis through both tabs: four aligned fastener paths and eight drilled tab holes total.",
+    "The retained and relocated centers on each side must be at least 45 mm apart in 3D, and every drilled tab must retain at least 3.5 mm of material from the bore to its nearest tab edge in the local tangent/interior plane.",
+    "Use four internal M3 x 16 through-bolts with two 7 mm OD washers and one M3 nyloc nut per bolt. Hardware is specified but not modeled as connector geometry.",
+    "Accepted V3 fit geometry, exact ears, source upper heads, eyes, lower-face/rear-cassette ownership, reinforcement direction, C006, and aluminum V0.5 remain unchanged.",
+    "No STL, G-code, slicer project, fabrication output, or print release is produced."
+  ]
+}

@@ -1,0 +1,36 @@
+# Gate 2 section colors
+newmtl right_upper_head
+Kd 0.8510 0.4667 0.2706
+Ns 80
+
+newmtl left_upper_head
+Kd 0.9490 0.6510 0.3529
+Ns 80
+
+newmtl right_lower_face
+Kd 0.3098 0.4863 0.6745
+Ns 80
+
+newmtl left_lower_face
+Kd 0.4745 0.6627 0.8627
+Ns 80
+
+newmtl rear_base
+Kd 0.3725 0.4353 0.3216
+Ns 80
+
+newmtl right_ear
+Kd 0.5412 0.4353 0.7216
+Ns 80
+
+newmtl left_ear
+Kd 0.7098 0.6039 0.8392
+Ns 80
+
+newmtl removable_glow
+Kd 0.5020 0.0000 0.5020
+Ns 80
+
+newmtl mouth_opening
+Kd 1.0000 0.0000 0.0000
+Ns 80

@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "signature_algorithm": "sha256-canonical-json-decimal-v1",
+  "purpose": "Fail-closed registry preventing visually rejected cat-head designs from re-entering candidate generation under a new iteration or tooling revision.",
+  "rejected_designs": [
+    {
+      "registry_id": "right-eye-parametric-fit-v1-v3-equivalent",
+      "status": "VISUALLY_REJECTED__DO_NOT_REPAIR_OR_REUSE",
+      "source_iterations": [
+        "right-eye-parametric-fit-prototype-v1",
+        "right-eye-parametric-fit-prototype-v3"
+      ],
+      "geometry_equivalence": "V3 imported and called the hash-pinned V1 build_candidate_shape implementation with a geometry-parameter object normalized to exact V1 equality.",
+      "candidate_sha256": {
+        "right-eye-parametric-fit-prototype-v3": "36744819dd9f4a4c71ea7c434ba3acc5386a7f4891a789e46aabf671b09a9b55"
+      },
+      "design_signature_sha256": "a30a3a819cf5e889dad9e8bac2c71c54a0b0746b69124d30fb214d4b5acd8860",
+      "signature_payload": {
+        "construction_algorithm_id": "right-eye-parametric-fit-v1-build-candidate-shape@6b2a23d7c88088d6d44ad39d992414746776cfbfe8f5c61315c89129b20b1a0a",
+        "geometry": {
+          "shell_opening_boundary_mm": [
+            [33.3465, 50.1135, 126.3945],
+            [43.9605, 63.0555, 165.8895],
+            [102.4275, 89.0295, 177.6765],
+            [104.064, 71.7885, 118.5825]
+          ],
+          "bezel": {
+            "shell_opening_clearance_mm": 0.3,
+            "thickness_mm": 1.5,
+            "collar_outer_offset_mm": 4.2,
+            "collar_inner_offset_mm": 0.3,
+            "collar_start_depth_mm": 0.3,
+            "collar_end_depth_mm": 3.6
+          },
+          "diffuser_interface": {
+            "diffuser_thickness_mm": 1.5,
+            "overlap_mm": 1.2,
+            "pocket_clearance_mm": 0.3,
+            "gasket_allowance_mm": 0.3,
+            "start_depth_mm": 1.8,
+            "end_depth_mm": 3.3,
+            "seat_start_depth_mm": 3.3,
+            "seat_end_depth_mm": 4.5
+          },
+          "chamber": {
+            "wall_thickness_mm": 2.4,
+            "depth_mm": 14.0,
+            "bezel_axial_overlap_mm": 3.3,
+            "internal_fillet_mm": 1.0,
+            "taper_start_depth_mm": 4.2,
+            "taper_end_depth_mm": 6.2,
+            "rear_inner_offset_mm": -0.5
+          },
+          "rear_cap_connector": {
+            "outer_diameter_mm": 6.0,
+            "bore_diameter_mm": 2.8,
+            "engagement_depth_mm": 4.0,
+            "seat_front_depth_mm": 13.0,
+            "web_width_mm": 6.0,
+            "web_wall_overlap_mm": 1.5,
+            "web_end_overlap_mm": 1.0,
+            "boss_centers_mm": {
+              "upper": [72.2476, 78.1286, 175.5293],
+              "lower": [66.305, 63.709, 134.355]
+            }
+          },
+          "head_mount": {
+            "root_length_mm": 14.0,
+            "root_depth_mm": 10.0,
+            "root_front_depth_mm": 0.3,
+            "root_thickness_mm": 4.8,
+            "bore_diameter_mm": 2.8,
+            "mating_gap_mm": 0.3,
+            "centroid_directed_web_width_mm": 10.0,
+            "web_front_depth_mm": 2.2,
+            "web_rear_depth_mm": 8.4,
+            "landing_inset_mm": 4.0,
+            "web_end_overlap_mm": 2.0
+          }
+        },
+        "aperture_lcs": {
+          "origin_mm": [64.501125, 68.88715, 153.583025],
+          "u": [0.231983963, 0.35192547, 0.906825178],
+          "v": [0.922209813, 0.216932857, -0.320108101],
+          "inward_n": [-0.309374371, 0.910543024, -0.274224178],
+          "visible_aperture_mm": [
+            [34.9453, 50.7759, 126.7901],
+            [45.0804, 66.1511, 166.4082],
+            [101.4953, 88.6294, 177.3997],
+            [76.4835, 69.9922, 143.7341]
+          ]
+        },
+        "mount_datums": {
+          "upper": {
+            "eye_bore_center_mm": [100.44318, 85.00159, 147.11774],
+            "bore_axis": [-0.931499, -0.355313, 0.077868]
+          },
+          "lower": {
+            "eye_bore_center_mm": [66.77454, 66.06956, 122.28207],
+            "bore_axis": [0.037231, 0.229102, 0.97269]
+          }
+        }
+      },
+      "confirmed_failures": [
+        "Oversized eye-mount supports block nut and bolt access behind the mating flanges.",
+        "The supports block rear-cap and back-plate installation and service.",
+        "Mounting structures are visible through the eye aperture.",
+        "Mounting-flange fragments protrude through the exterior shell.",
+        "A main eye-module corner intersects and exits the exterior shell.",
+        "F-19 contacts with upper C001, lower C001, C012, and C013 were not validated before review."
+      ],
+      "registered_at": "2026-08-17"
+    },
+    {
+      "registry_id": "right-eye-serviceable-fit-prototype-v4-nearest-vertex",
+      "status": "GENERATOR_IMPLEMENTATION_FAILURE__NEAREST_VERTEX_DISTANCE",
+      "source_iterations": [
+        "right-eye-serviceable-fit-prototype-v4"
+      ],
+      "geometry_equivalence": "The V4 generator measured each rear-cap root to the nearest inner-perimeter vertex instead of the nearest point on a polygon edge. Its complete signed construction payload is rejected so this exact nearest-vertex design cannot re-enter generation.",
+      "candidate_sha256": {
+        "right-eye-serviceable-fit-prototype-v4": "eee6226fd934460b6b0690d1d2026a29e8a3c28512e7f620ba477ff32d10948f"
+      },
+      "design_signature_sha256": "c52deaccc27b8a8ef681a184175a50bfeba0296fb8afda4e41d1a42292d24b2d",
+      "signature_payload": {
+        "construction_algorithm_id": "right-eye-serviceable-local-leaf-perimeter-union-A@1",
+        "geometry": {
+          "shell_opening_boundary_mm": [
+            [33.3465, 50.1135, 126.3945],
+            [43.9605, 63.0555, 165.8895],
+            [102.4275, 89.0295, 177.6765],
+            [104.064, 71.7885, 118.5825]
+          ],
+          "bezel": {
+            "shell_opening_clearance_mm": 0.3,
+            "front_depth_mm": 0.0,
+            "thickness_mm": 1.5,
+            "collar_outer_offset_mm": 4.2,
+            "collar_inner_offset_mm": 0.3,
+            "collar_start_depth_mm": 0.3,
+            "collar_end_depth_mm": 3.6
+          },
+          "diffuser_interface": {
+            "diffuser_thickness_mm": 1.5,
+            "overlap_mm": 1.2,
+            "pocket_clearance_mm": 0.3,
+            "gasket_allowance_mm": 0.3,
+            "start_depth_mm": 1.8,
+            "end_depth_mm": 3.3,
+            "seat_start_depth_mm": 3.3,
+            "seat_end_depth_mm": 4.5,
+            "led_emitter_reference_depth_mm": 13.35,
+            "led_to_diffuser_gap_mm": 10.05
+          },
+          "chamber": {
+            "wall_thickness_mm": 2.4,
+            "depth_mm": 14.0,
+            "front_start_depth_mm": 0.3,
+            "bezel_axial_overlap_mm": 3.3,
+            "taper_start_depth_mm": 4.2,
+            "taper_end_depth_mm": 6.2,
+            "rear_inner_offset_mm": -0.5
+          },
+          "rear_cap_connector": {
+            "outer_diameter_mm": 6.0,
+            "bore_diameter_mm": 2.8,
+            "engagement_depth_mm": 4.0,
+            "mating_gap_mm": 0.3,
+            "seat_front_depth_mm": 13.0,
+            "reference_seating_translation_mm": 0.0,
+            "local_root_width_mm": 6.0,
+            "maximum_local_root_span_mm": 2.0,
+            "boss_centers_mm": {
+              "upper": [72.2476, 78.1286, 175.5293],
+              "lower": [66.305, 63.709, 134.355]
+            },
+            "boss_axis": "aperture_lcs.inward_n"
+          },
+          "head_mount": {
+            "construction": "Two compact eye-side V5 leaves with local edge-ligament collars and the V17 1.50 mm owner-root sweep; no root plate, centroid web, landing inset, wedge, trapezoid, broad base, long bridge, or aperture-crossing web.",
+            "leaf_length_mm": 12.0,
+            "leaf_depth_mm": 8.0,
+            "legacy_leaf_thickness_mm": 2.4,
+            "leaf_thickness_mm": 4.8,
+            "bore_diameter_mm": 2.8,
+            "mating_gap_mm": 0.3,
+            "bore_depth_from_aperture_plane_mm": 4.8,
+            "bore_center_to_mating_face_mm": 1.2,
+            "owner_root_extension_mm": 1.5,
+            "edge_ligament_collar_outer_diameter_mm": 9.8,
+            "bore_to_edge_material_mm": 3.5,
+            "bore_cutter_length_mm": 20.0
+          }
+        },
+        "aperture_lcs": {
+          "origin_mm": [64.501125, 68.88715, 153.583025],
+          "u": [0.231983963, 0.35192547, 0.906825178],
+          "v": [0.922209813, 0.216932857, -0.320108101],
+          "inward_n": [-0.309374371, 0.910543024, -0.274224178],
+          "visible_aperture_mm": [
+            [34.9453, 50.7759, 126.7901],
+            [45.0804, 66.1511, 166.4082],
+            [101.4953, 88.6294, 177.3997],
+            [76.4835, 69.9922, 143.7341]
+          ],
+          "aperture_rounding_tolerance_mm": 0.00005
+        },
+        "mount_datums": {
+          "upper": {
+            "lineage_role": "V5 outer-eye / V17 integrated upper root",
+            "mount_edge_indices": [2, 3],
+            "eye_bore_center_mm": [100.44318, 85.00159, 147.11774],
+            "head_bore_center_mm": [102.95823, 85.96094, 146.90749],
+            "bore_axis": [-0.931499, -0.355313, 0.077868],
+            "owner_root_extension_vector_mm": [-1.419, 0.062, -0.483]
+          },
+          "lower": {
+            "lineage_role": "V5 lower-eye / V17 integrated lower root",
+            "mount_edge_indices": [3, 0],
+            "eye_bore_center_mm": [66.77454, 66.06956, 122.28207],
+            "head_bore_center_mm": [66.67402, 65.45099, 119.65581],
+            "bore_axis": [0.037231, 0.229102, 0.97269],
+            "owner_root_extension_vector_mm": [0.218, -1.398, 0.498]
+          }
+        }
+      },
+      "confirmed_failures": [
+        "Primary generator implementation failure: rear-cap roots used nearest-vertex distance instead of nearest-point-on-polygon-edge distance.",
+        "Correct upper center-to-edge distance is approximately 4.107305 mm and unsupported span is approximately 1.107305 mm.",
+        "Correct lower center-to-edge distance is approximately 5.244819 mm and unsupported span is 2.2448192933 mm, exceeding the signed V4 allowance of 2.0000000000 mm."
+      ],
+      "registered_at": "2026-08-17T15:19:33-07:00"
+    },
+    {
+      "registry_id": "right-eye-serviceable-fit-prototype-v5-shell-edge-derived-mount-axis",
+      "status": "TOOLING_FAILURE__SHELL_EDGE_DERIVED_MOUNT_AXIS",
+      "source_iterations": [
+        "right-eye-serviceable-fit-prototype-v5"
+      ],
+      "geometry_equivalence": "The V5 construction derived each connector/cylinder axis from a selected shell edge rather than using the preserved signed bore_axis directly. Its complete signed construction payload is rejected so the shell-edge-derived mount-axis construction cannot recur.",
+      "candidate_sha256": {
+        "right-eye-serviceable-fit-prototype-v5": "dbf85f94b6130107d22506b38a81c8ea782dcca2245a1bdea9654998e893ec74"
+      },
+      "design_signature_sha256": "709e96116e4269ac3bb87cbce4bcf055fb0b82a18c692d5a23973797d4a97fb1",
+      "signature_payload": {"construction_algorithm_id":"right-eye-serviceable-edge-projected-local-tongue-B@1","geometry":{"shell_opening_boundary_mm":[[33.3465,50.1135,126.3945],[43.9605,63.0555,165.8895],[102.4275,89.0295,177.6765],[104.064,71.7885,118.5825]],"bezel":{"shell_opening_clearance_mm":0.3,"front_depth_mm":0.0,"thickness_mm":1.5,"collar_outer_offset_mm":4.2,"collar_inner_offset_mm":0.3,"collar_start_depth_mm":0.3,"collar_end_depth_mm":3.6},"diffuser_interface":{"diffuser_thickness_mm":1.5,"overlap_mm":1.2,"pocket_clearance_mm":0.3,"gasket_allowance_mm":0.3,"start_depth_mm":1.8,"end_depth_mm":3.3,"seat_start_depth_mm":3.3,"seat_end_depth_mm":4.5,"led_emitter_reference_depth_mm":13.35,"led_to_diffuser_gap_mm":10.05},"chamber":{"wall_thickness_mm":2.4,"depth_mm":14.0,"front_start_depth_mm":0.3,"bezel_axial_overlap_mm":3.3,"taper_start_depth_mm":4.2,"taper_end_depth_mm":6.2,"rear_inner_offset_mm":-0.5},"rear_cap_connector":{"outer_diameter_mm":6.0,"bore_diameter_mm":2.8,"engagement_depth_mm":4.0,"mating_gap_mm":0.3,"seat_front_depth_mm":13.0,"reference_seating_translation_mm":0.0,"projection_algorithm":"nearest-point-on-closed-polygon-edge-v1","local_root_width_mm":6.0,"root_axial_depth_mm":4.0,"wall_overlap_mm":1.0,"maximum_local_root_span_mm":2.3,"boss_centers_mm":{"upper":[72.2476,78.1286,175.5293],"lower":[66.305,63.709,134.355]},"boss_axis":"aperture_lcs.inward_n","edge_projection_preflight":{"numeric_tolerance_mm":0.000001,"segment_interior_epsilon":0.000001,"upper":{"center_to_edge_mm":4.1073050279178975,"unsupported_span_mm":1.1073050279178975,"edge_index":1,"segment_parameter":0.5005739489824771,"projection_uv_mm":[21.404127470488195,4.194968125476045]},"lower":{"center_to_edge_mm":5.244819284073767,"unsupported_span_mm":2.244819284073767,"edge_index":3,"segment_parameter":0.2950857631999356,"projection_uv_mm":[-14.878791027020034,3.258064683250945]}}},"head_mount":{"construction":"Two compact eye-side V5 leaves with local edge-ligament collars and the V17 1.50 mm owner-root sweep; no root plate, centroid web, landing inset, wedge, trapezoid, broad base, long bridge, or aperture-crossing web.","leaf_length_mm":12.0,"leaf_depth_mm":8.0,"legacy_leaf_thickness_mm":2.4,"leaf_thickness_mm":4.8,"bore_diameter_mm":2.8,"mating_gap_mm":0.3,"bore_depth_from_aperture_plane_mm":4.8,"bore_center_to_mating_face_mm":1.2,"owner_root_extension_mm":1.5,"edge_ligament_collar_outer_diameter_mm":9.8,"bore_to_edge_material_mm":3.5,"bore_cutter_length_mm":20.0}},"aperture_lcs":{"origin_mm":[64.501125,68.88715,153.583025],"u":[0.231983963,0.35192547,0.906825178],"v":[0.922209813,0.216932857,-0.320108101],"inward_n":[-0.309374371,0.910543024,-0.274224178],"visible_aperture_mm":[[34.9453,50.7759,126.7901],[45.0804,66.1511,166.4082],[101.4953,88.6294,177.3997],[76.4835,69.9922,143.7341]],"aperture_rounding_tolerance_mm":0.00005},"mount_datums":{"upper":{"lineage_role":"V5 outer-eye / V17 integrated upper root","mount_edge_indices":[2,3],"eye_bore_center_mm":[100.44318,85.00159,147.11774],"head_bore_center_mm":[102.95823,85.96094,146.90749],"bore_axis":[-0.931499,-0.355313,0.077868],"owner_root_extension_vector_mm":[-1.419,0.062,-0.483]},"lower":{"lineage_role":"V5 lower-eye / V17 integrated lower root","mount_edge_indices":[3,0],"eye_bore_center_mm":[66.77454,66.06956,122.28207],"head_bore_center_mm":[66.67402,65.45099,119.65581],"bore_axis":[0.037231,0.229102,0.97269],"owner_root_extension_vector_mm":[0.218,-1.398,0.498]}}},
+      "confirmed_failures": [
+        "Upper shell-edge-derived axis dot preserved signed bore axis was 0.9983913113958235 versus the required minimum 0.999999; angular difference was 3.2503629614 degrees.",
+        "Lower shell-edge-derived axis dot preserved signed bore axis was 0.9975717541699577 versus the required minimum 0.999999; angular difference was 3.9936672450 degrees.",
+        "The failed candidate is quarantined and must not be opened, repaired, validated, or reused."
+      ],
+      "evidence_sha256": {
+        "runner_log": "36ff61f1de9c8ce9803259dce12c81b4416eca3228d564e8feeba5237db93929",
+        "runner_result": "f46d11eecd13b731f5afe0544e93ef9c6aa0c41a9072f6ff4f2192ea14a7ba7e"
+      },
+      "registered_at": "2026-08-17T15:58:54-07:00"
+    },
+    {
+      "registry_id": "right-eye-serviceable-fit-prototype-v6-attempt-002-physical-rejection",
+      "status": "PHYSICAL_DESIGN_REJECTED__CONTINUOUS_CHAMBER_AND_CONNECTOR_BLOCKING",
+      "source_iterations": [
+        "right-eye-serviceable-fit-prototype-v6-attempt-002"
+      ],
+      "geometry_equivalence": "Reject the complete signed physical V6 C construction: continuous rear chamber, perimeter/cap seat, local connector roots, and long mount-support behavior. Tooling infrastructure is not rejected and may be reused only when a new generator constructs a distinct physical signature without reading the quarantined candidate.",
+      "candidate_sha256": {
+        "right-eye-serviceable-fit-prototype-v6-attempt-002": "6cbe4e33419ff631d71d0932b157e2162bc4d8a79387c80ea66fa9ed4a62fcf9"
+      },
+      "design_signature_sha256": "4a59901cbf4e2f5ebda9b5bb920c15935ccb03126a92564e4967b474612cc6a6",
+      "signature_payload": {"construction_algorithm_id":"right-eye-serviceable-signed-bore-frame-local-tongue-C@1","geometry":{"shell_opening_boundary_mm":[[33.3465,50.1135,126.3945],[43.9605,63.0555,165.8895],[102.4275,89.0295,177.6765],[104.064,71.7885,118.5825]],"bezel":{"shell_opening_clearance_mm":0.3,"front_depth_mm":0.0,"thickness_mm":1.5,"collar_outer_offset_mm":4.2,"collar_inner_offset_mm":0.3,"collar_start_depth_mm":0.3,"collar_end_depth_mm":3.6},"diffuser_interface":{"diffuser_thickness_mm":1.5,"overlap_mm":1.2,"pocket_clearance_mm":0.3,"gasket_allowance_mm":0.3,"start_depth_mm":1.8,"end_depth_mm":3.3,"seat_start_depth_mm":3.3,"seat_end_depth_mm":4.5,"led_emitter_reference_depth_mm":13.35,"led_to_diffuser_gap_mm":10.05},"chamber":{"wall_thickness_mm":2.4,"depth_mm":14.0,"front_start_depth_mm":0.3,"bezel_axial_overlap_mm":3.3,"taper_start_depth_mm":4.2,"taper_end_depth_mm":6.2,"rear_inner_offset_mm":-0.5},"rear_cap_connector":{"outer_diameter_mm":6.0,"bore_diameter_mm":2.8,"engagement_depth_mm":4.0,"mating_gap_mm":0.3,"seat_front_depth_mm":13.0,"reference_seating_translation_mm":0.0,"projection_algorithm":"nearest-point-on-closed-polygon-edge-v1","local_root_width_mm":6.0,"root_axial_depth_mm":4.0,"wall_overlap_mm":1.0,"maximum_local_root_span_mm":2.3,"boss_centers_mm":{"upper":[72.2476,78.1286,175.5293],"lower":[66.305,63.709,134.355]},"boss_axis":"aperture_lcs.inward_n","edge_projection_preflight":{"numeric_tolerance_mm":0.000001,"segment_interior_epsilon":0.000001,"upper":{"center_to_edge_mm":4.1073050279178975,"unsupported_span_mm":1.1073050279178975,"edge_index":1,"segment_parameter":0.5005739489824771,"projection_uv_mm":[21.404127470488195,4.194968125476045]},"lower":{"center_to_edge_mm":5.244819284073767,"unsupported_span_mm":2.244819284073767,"edge_index":3,"segment_parameter":0.2950857631999356,"projection_uv_mm":[-14.878791027020034,3.258064683250945]}}},"head_mount":{"construction":"Two compact eye-side leaves constructed directly on each preserved signed bore axis, with aperture-normal-projected depth, right-handed local tangent, local edge-ligament collars, and the V17 1.50 mm owner-root sweep; shell edges are used only for rear-root projection and unsupported-span measurement; no root plate, centroid web, landing inset, wedge, trapezoid, broad base, long bridge, or aperture-crossing web.","leaf_length_mm":12.0,"leaf_depth_mm":8.0,"legacy_leaf_thickness_mm":2.4,"leaf_thickness_mm":4.8,"bore_diameter_mm":2.8,"mating_gap_mm":0.3,"bore_depth_from_aperture_plane_mm":4.8,"bore_center_to_mating_face_mm":1.2,"owner_root_extension_mm":1.5,"edge_ligament_collar_outer_diameter_mm":9.8,"bore_to_edge_material_mm":3.5,"bore_cutter_length_mm":20.0}},"aperture_lcs":{"origin_mm":[64.501125,68.88715,153.583025],"u":[0.231983963,0.35192547,0.906825178],"v":[0.922209813,0.216932857,-0.320108101],"inward_n":[-0.309374371,0.910543024,-0.274224178],"visible_aperture_mm":[[34.9453,50.7759,126.7901],[45.0804,66.1511,166.4082],[101.4953,88.6294,177.3997],[76.4835,69.9922,143.7341]],"aperture_rounding_tolerance_mm":0.00005},"mount_datums":{"upper":{"lineage_role":"V5 outer-eye / V17 integrated upper root","mount_edge_indices":[2,3],"eye_bore_center_mm":[100.44318,85.00159,147.11774],"head_bore_center_mm":[102.95823,85.96094,146.90749],"bore_axis":[-0.931499,-0.355313,0.077868],"owner_root_extension_vector_mm":[-1.419,0.062,-0.483]},"lower":{"lineage_role":"V5 lower-eye / V17 integrated lower root","mount_edge_indices":[3,0],"eye_bore_center_mm":[66.77454,66.06956,122.28207],"head_bore_center_mm":[66.67402,65.45099,119.65581],"bore_axis":[0.037231,0.229102,0.97269],"owner_root_extension_vector_mm":[0.218,-1.398,0.498]}}},
+      "confirmed_failures": [
+        "Lower C001 shell intersection 11.386708444969232 mm3, lower C012 3.2758613526333487 mm3, lower C013 9.474926556515594 mm3.",
+        "Non-bezel exterior occupancy 60.3500620133147 mm3 and protected view-frustum occupancy 3493.21626882719 mm3.",
+        "Eye service-motion collision 7.351786845305187 mm3 and rear-cap service-motion collision 0.009906224897407407 mm3.",
+        "Upper and lower hardware/tool obstruction 37.9549883 mm3 and 15.0198828 mm3; direct mount-root engagement was zero at both mounts.",
+        "The V6 attempt-002 candidate remains immutable rejected evidence and cannot be opened as a geometry source, repaired, regenerated, or promoted."
+      ],
+      "evidence_sha256": {
+        "previsual_validation_validator_revision_001": "e140d2c0a6e40e57c7306e0bbc3859887a8daa49af95316e173f40b48758f92f"
+      },
+      "replacement_architecture": "Front-inserted shallow optical cassette plus independent rear-serviceable cartridge; no continuous chamber, cap seat, connector boss, flange-back obstruction, exterior escape, or hidden view-frustum structure.",
+      "registered_at": "2026-08-17T20:18:00-07:00"
+    }
+  ]
+}

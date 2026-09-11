@@ -1,0 +1,52 @@
+{
+  "schema_version": "cat-head-under-mouth-sector-patch-v1",
+  "authority": "RECOVERY_ONLY__COPY_EXACT_REFERENCE_SHAPE__NO_OTHER_GEOMETRY_CHANGES",
+  "base_source": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1.FCStd",
+    "sha256": "592b54693003154c610cc4df37183b5681e28603ca222dc7f2f8af15b8930d0c"
+  },
+  "reference": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1_RECOVERED_UNDER_MOUTH_SECTOR.FCStd",
+    "sha256": "84e4e8f75c51b66983652986855bbecd07d0141b298e1eefa75f608c66c08aa5",
+    "object_name": "RECOVERED_UNDER_MOUTH_OPAQUE_SECTOR"
+  },
+  "original_sector_source": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V5_FIN_REMOVED.FCStd",
+    "sha256": "3ec9bc94999a65a5c8ae497acf0a1c40e1388deaa4f3d9c498bfb912c3c983ab",
+    "object_name": "LEFT_LOWER_008_component_008"
+  },
+  "patch": {
+    "object_name": "PATCH_UNDER_MOUTH_OPAQUE_SECTOR",
+    "label": "PATCH_UNDER_MOUTH_OPAQUE_SECTOR",
+    "type_id": "Part::Feature"
+  },
+  "local_context": {
+    "left_opaque_owner_group": "OPAQUE_LEFT_LOWER_OWNERS",
+    "expected_nearest_neighbor": "LEFT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR",
+    "right_mirror_object": "RIGHT_LOWER_008_component_008",
+    "right_mirror_neighbor": "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR"
+  },
+  "tolerances": {
+    "shape_scalar_abs_mm": 1e-06,
+    "placement_matrix_abs": 1e-12,
+    "positive_volume_overlap_mm3": 1e-07,
+    "mirror_metric_abs_mm": 1e-06
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/lower-front-parallel-feedback/01-under-mouth-sector",
+    "fcstd": "UNDER_MOUTH_SECTOR_PATCH_REVIEW_V1.FCStd",
+    "manifest": "manifest.json",
+    "front": "front.png",
+    "rear": "rear.png"
+  },
+  "review_visible_groups": [
+    "OPAQUE_RIGHT_LOWER_OWNERS",
+    "OPAQUE_LEFT_LOWER_OWNERS",
+    "OPAQUE_RIGHT_UPPER_OWNERS",
+    "OPAQUE_LEFT_UPPER_OWNERS",
+    "SEPARATE_THREE_STATION_LOWER_REAR_LEDGES",
+    "EXISTING_TRANSLUCENT_INSERT_COMPONENTS",
+    "PROPOSED_TRANSLUCENT_MOUTH_COMPONENTS",
+    "PROPOSED_MOUTH_M2P5_FLANGE_COMPONENTS"
+  ]
+}

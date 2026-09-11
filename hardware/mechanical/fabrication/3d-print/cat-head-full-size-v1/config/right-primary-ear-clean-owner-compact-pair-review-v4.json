@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "digital_pass_awaiting_visual_approval",
+  "side": "right_only",
+  "source_audit": "right-primary-ear-owner-source-audit-v1",
+  "owners": {
+    "upper_head": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref_ref",
+    "ear": "PROPOSED__RIGHT_EAR_C001__LEGACY_FLANGE_FLUSH_REMOVED_V2_ref"
+  },
+  "unchanged_flange_contract": {
+    "width_mm": 21.5,
+    "depth_mm": 10.4,
+    "thickness_mm": 4.0,
+    "owner_embed_mm": 1.2,
+    "pair_gap_mm": 0.35,
+    "bolt_center_spacing_mm": 9.5,
+    "head_apertures": "two 3.4 mm round",
+    "ear_apertures": "one 3.4 mm round plus one 3.4 x 5.0 mm slot"
+  },
+  "critical_gates": {
+    "legacy_four_hole_material_in_upper_head_mm3": 0.0,
+    "legacy_four_hole_material_in_ear_mm3": 0.0,
+    "head_owner_overlap_mm3": 599.9179,
+    "ear_owner_overlap_mm3": 89.3229,
+    "pair_gap_mm": 0.35,
+    "wrong_owner_intersections": 0,
+    "flange_axis_alignment": "pass"
+  },
+  "explicitly_absent": [
+    "owner integration",
+    "owner bore cuts",
+    "through-bolt clearance proof through integrated owners",
+    "left mirror",
+    "STL and print release"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "boundary_edges": 0,
+  "connected_components": 16,
+  "edges": 4684785,
+  "faces": 3123190,
+  "input_stl": "/home/bsk/Projects/BM_personal_LED-projects /cat_bike/reports/generated/cat-head-cad-mesh-union/left-lower-final-review-025-v1/left-lower-final-review-voxel-union-025mm.stl",
+  "nonmanifold_edges": 0,
+  "vertices": 1561591,
+  "watertight_single_component": false,
+  "wire_edges": 0
+}

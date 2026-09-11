@@ -1,0 +1,399 @@
+{
+  "schema_version": "2.0",
+  "project": "cat-head-full-size-v1",
+  "iteration_id": "right-eye-split-service-cassette-prototype-v1",
+  "state": "approved_for_one_candidate",
+  "baseline_id": "v34-lower-c001-relief-v1",
+  "user_approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-18T16:25:00-07:00",
+    "exact_instruction": "Approve architecture option 1 and proceed autonomously until human input. REVIEW_ONLY split-eye/relief/0.58-mm lower cover-lip concept LGTM. Preserve the exact aperture and signed upper/lower mount datums; use a front optical cassette and independent compact rear cartridge; provide no continuous rear chamber, connector flange, exterior fragment, aperture/frustum obstruction, or bolt/washer/nut/tool/back-plate blockage. Use the validated lower-C001 relief as the serial baseline. Preserve the approved 0.58 mm reach, 3.0 mm tangent, and 0.022 mm outward cover lip and trim only its exact 0.005365934705057956 mm3 hidden lower-C001 overlap. Never reuse rejected V1/V3/V4/V5/V6 geometry."
+  },
+  "target_object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34",
+  "allowed_mutations": [
+    {
+      "kind": "replace_geometry",
+      "object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34",
+      "parameters": {
+        "design_control": {
+          "design_id": "right-eye-split-service-cassette-D",
+          "tooling_revision": 6,
+          "approval": true,
+          "design_signature": {
+            "algorithm": "sha256-canonical-json-decimal-v1",
+            "signed_fields": [
+              "construction_algorithm_id",
+              "geometry",
+              "aperture_lcs",
+              "mount_datums"
+            ],
+            "sha256": "baf9644555ae0bd78146f525083ff7bcccc400f4dd5d3a36895778e4b4d9f676"
+          },
+          "rejected_signature_registry": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/rejected-design-signatures.json",
+            "sha256": "754dca4cea3dc27ed349ba8f75fe433b71595affb059d5834bb7a7e3a4658606"
+          },
+          "rejected_v6_design_signature_sha256": "4a59901cbf4e2f5ebda9b5bb920c15935ccb03126a92564e4967b474612cc6a6",
+          "rejected_v6_candidate_sha256": "6cbe4e33419ff631d71d0932b157e2162bc4d8a79387c80ea66fa9ed4a62fcf9",
+          "rejected_v6_status": "PHYSICAL_DESIGN_REJECTED__CONTINUOUS_CHAMBER_AND_CONNECTOR_BLOCKING",
+          "forbidden_geometry_sources": [
+            "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v1/candidate.FCStd",
+            "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v3/candidate.FCStd",
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v4/candidate.FCStd",
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/candidate.FCStd",
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v6/candidate.FCStd",
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v6-attempt-002/candidate.FCStd"
+          ]
+        },
+        "construction_algorithm_id": "right-eye-front-cassette-independent-rear-cartridge-D@5",
+        "geometry": {
+          "shell_opening_boundary_mm": [
+            [33.3465, 50.1135, 126.3945],
+            [43.9605, 63.0555, 165.8895],
+            [102.4275, 89.0295, 177.6765],
+            [104.064, 71.7885, 118.5825]
+          ],
+          "front_optical_cassette": {
+            "shell_opening_clearance_mm": 0.3,
+            "bezel_front_depth_mm": 0.0,
+            "bezel_rear_depth_mm": 1.2,
+            "front_outer_vertex_insets_mm": [0.65, 0.65, 0.65, 0.65],
+            "rear_outer_vertex_insets_mm": [2.0, 3.0, 3.0, 2.0],
+            "rear_inner_offset_mm": 0.75,
+            "minimum_printed_wall_mm": 0.7
+          },
+          "shell_clearance_trim": {
+            "algorithm": "locally-inset-aperture-lcs-ring-v1",
+            "contact_owner_keys": [
+              "upper_C001",
+              "lower_C001",
+              "lower_C012",
+              "lower_C013"
+            ],
+            "minimum_verified_clearance_mm": 0.3,
+            "source": "hash-pinned V34 101-component shell matrix",
+            "scope": "new eye target only; no frozen source mutation"
+          },
+          "lower_c001_cover_lip": {
+            "construction": "Build the approved visible lower-V0 cover from the review footprint and remove only its exact hidden overlap with validated relieved lower_C001; no shell or aperture owner is modified.",
+            "reference_outer_vertex_insets_mm": [0.3, 0.3, 0.3, 0.3],
+            "reference_edge_vertex_indices": [0, 3],
+            "outward_reach_mm": 0.58,
+            "tangent_length_mm": 3.0,
+            "inward_attachment_overlap_mm": 0.6,
+            "outward_axial_cover_mm": 0.022,
+            "minimum_printed_wall_mm": 0.7,
+            "trim_owner": "lower_C001",
+            "expected_hidden_attachment_trim_mm3": 0.005365934705057956,
+            "pinned_exterior_patch_area_mm2": 0.47532604762257014,
+            "maximum_uncovered_patch_area_mm2": 0.000001,
+            "maximum_positive_shell_intersection_mm3": 0.000001
+          },
+          "rear_cartridge_interface": {
+            "construction": "Independent removable annular optical/LED cartridge reference; no target-owned continuous chamber, rear cap seat, connector boss, bridge, or flange.",
+            "cartridge_inner_offset_mm": 0.4,
+            "cartridge_outer_base_offset_mm": 3.0,
+            "cartridge_outer_vertex_insets_mm": [1.2, 1.8, 1.8, 1.2],
+            "radial_clearance_mm": 0.35,
+            "seated_front_depth_mm": 3.5,
+            "seated_rear_depth_mm": 4.7,
+            "reference_seating_translation_mm": 0.0,
+            "service_direction": "positive aperture_lcs.inward_n",
+            "rear_connector_boss_count": 0
+          },
+          "head_mount": {
+            "construction": "Two localized stepped annular mounts constructed directly on the preserved signed bore axes. The lower shell-side pilot face alone is recessed 0.010 mm along its unchanged signed axis at the lower-C007-facing mating region; the bore center, axis, bearing, aperture, cassette, and ligament datums remain fixed. Each pad has exactly one narrow protected ligament to the locally inset cassette ring; no root plate, broad leaf, chamber bridge, connector flange, or rear flange exists.",
+            "bore_diameter_mm": 2.8,
+            "mating_gap_mm": 0.3,
+            "bore_center_to_mating_face_mm": 1.2,
+            "total_thickness_mm": 2.8,
+            "leaf_thickness_mm": 0.7,
+            "shell_side_pilot_length_mm": 2.0,
+            "shell_side_pilot_radius_mm": 2.2,
+            "eye_side_bearing_length_mm": 0.8,
+            "bore_to_edge_material_mm": 3.5,
+            "bore_cutter_length_mm": 20.0,
+            "lower_c007_shell_face_retreat_mm": 0.01,
+            "lower_c007_clearance_owner": "lower_C007",
+            "ligament_ring_depth_mm": 0.3,
+            "ligament_mount_axial_offset_mm": -1.2,
+            "ligament_width_mm": 2.4,
+            "ligament_thickness_mm": 0.7,
+            "ligament_overlap_mm": 0.25
+          }
+        },
+        "aperture_lcs": {
+          "origin_mm": [64.501125, 68.88715, 153.583025],
+          "u": [0.231983963, 0.35192547, 0.906825178],
+          "v": [0.922209813, 0.216932857, -0.320108101],
+          "inward_n": [-0.309374371, 0.910543024, -0.274224178],
+          "visible_aperture_mm": [
+            [34.9453, 50.7759, 126.7901],
+            [45.0804, 66.1511, 166.4082],
+            [101.4953, 88.6294, 177.3997],
+            [76.4835, 69.9922, 143.7341]
+          ],
+          "aperture_rounding_tolerance_mm": 0.00005
+        },
+        "mount_datums": {
+          "upper": {
+            "lineage_role": "V5 outer-eye / V17 integrated upper root",
+            "mount_edge_indices": [2, 3],
+            "eye_bore_center_mm": [100.44318, 85.00159, 147.11774],
+            "head_bore_center_mm": [102.95823, 85.96094, 146.90749],
+            "bore_axis": [-0.931499, -0.355313, 0.077868],
+            "owner_root_extension_vector_mm": [-1.419, 0.062, -0.483]
+          },
+          "lower": {
+            "lineage_role": "V5 lower-eye / V17 integrated lower root",
+            "mount_edge_indices": [3, 0],
+            "eye_bore_center_mm": [66.77454, 66.06956, 122.28207],
+            "head_bore_center_mm": [66.67402, 65.45099, 119.65581],
+            "bore_axis": [0.037231, 0.229102, 0.97269],
+            "owner_root_extension_vector_mm": [0.218, -1.398, 0.498]
+          }
+        },
+        "defect_resolution_map": [
+          {
+            "defect_id": "V3-01-FASTENER-ACCESS",
+            "failure": "Oversized supports block nut and bolt access behind the mating flanges.",
+            "v6_construction": "Two isolated signed-axis annular mounts replace every leaf, root plate, web, tongue, chamber bridge, and rear flange.",
+            "validation_gate": "G09 requires zero obstruction of both bolt, washer, nyloc, and straight tool corridors."
+          },
+          {
+            "defect_id": "V3-02-REAR-CAP-SERVICE",
+            "failure": "Eye supports block rear-cap and back-plate installation and service.",
+            "v6_construction": "The rear cartridge is an independent reference with positive cassette clearance; the target owns no rear chamber, cap seat, connector boss, or bridge.",
+            "validation_gate": "G08 independently sweeps the front cassette and rear cartridge through their complete service motions."
+          },
+          {
+            "defect_id": "V3-03-APERTURE-VISIBILITY",
+            "failure": "Mounting structures are visible through the eye aperture.",
+            "v6_construction": "Only the tapered 1.20 mm deep optical cassette ring exists behind the bezel; both mounts and their two narrow ligaments remain localized at the preserved signed datums.",
+            "validation_gate": "G06 requires zero non-bezel target volume inside the straight-on and plus-or-minus 30 degree protected aperture frustum."
+          },
+          {
+            "defect_id": "V3-04-FLANGE-EXTERIOR-PROTRUSION",
+            "failure": "Mounting-flange fragments protrude through the exterior shell.",
+            "v6_construction": "Mount material is limited to compact stepped annuli on the exact signed bore axes plus one narrow protected ligament per pad, with no exterior flange.",
+            "validation_gate": "G04 and G05 require zero unauthorized envelope/exterior occupancy; G03 checks every shell component."
+          },
+          {
+            "defect_id": "V3-05-EYE-CORNER-EXTERIOR-ESCAPE",
+            "failure": "A main eye-module corner intersects and exits the exterior shell.",
+            "v6_construction": "The shallow cassette is constructed directly from locally inset front/rear aperture-LCS loops and is never post-cut by shell geometry.",
+            "validation_gate": "G03 requires zero positive shell intersection and at least 0.30 mm non-mating clearance; G05 requires zero non-bezel exterior occupancy."
+          },
+          {
+            "defect_id": "V3-06-KNOWN-F19-SHELL-CONTACTS",
+            "failure": "Upper C001, lower C001, lower C012, and lower C013 contacts were not validated before review.",
+            "v6_construction": "The direct cassette boundary and explicit ligaments are checked against every shell owner; no frozen object is mutated and no shell topology defines a mount axis.",
+            "validation_gate": "G03 explicitly evaluates the complete 101-component shell matrix and reports all known F-19 owners at or below 0.000001 mm3."
+          }
+        ],
+        "fit_references": {
+          "exact_diffuser": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate6-eye-modules/eyes/right_eye_diffuser.stl",
+            "sha256": "b9d4bcd2ca8e500b96de18bf47530a369bb21ec2ded95c8bcb24fa882e15c1b0"
+          }
+        },
+        "lineage_references": {
+          "approved_v5_mount_layout": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/validation-v5.json",
+            "sha256": "08e8f57ec4b2ea76dc3b3baa740dc1a21a8764be77e66df4d94a0d1434653290"
+          },
+          "approved_v17_mount_lineage": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/RIGHT_EYE_EXACT_OWNER_INTEGRATION_REVIEW_V17_CHECKPOINT_2026-08-14.md",
+            "sha256": "a870381573e7a6c96acabf3b653d31911b0400c324b0f1333666efc9ebd9d8bc"
+          }
+        },
+        "validation_contract": {
+          "validator_role": "Independent fail-closed target-fit, preservation, shell clearance, containment, hardware access, view-frustum, service-motion, and interface verification before human visual review.",
+          "mesh_to_occt_tolerance_mm": 0.000001,
+          "limits": {
+            "maximum_unintended_positive_intersection_mm3": 0.000001,
+            "minimum_direct_owner_root_engagement_mm3": 1.0,
+            "minimum_bore_to_edge_material_mm": 3.5,
+            "required_head_mount_mating_gap_mm": 0.3,
+            "maximum_dimensional_deviation_mm": 0.01,
+            "minimum_non_mating_shell_clearance_mm": 0.3,
+            "minimum_upper_c001_clearance_outside_authorized_mount_mm": 0.3,
+            "minimum_chamber_wall_mm": 2.0,
+            "minimum_signed_mount_axis_dot": 0.999999,
+            "maximum_frame_orthogonality_error": 0.000000000001,
+            "maximum_bore_center_axis_offset_mm": 0.00001
+          },
+          "serial_relief_reference": {
+            "baseline_manifest_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34-lower-c001-relief-v1.json",
+            "baseline_manifest_sha256": "f7225c42be8714a979962859991a7799e275a7d35fe4c774c6d7292019687ce3",
+            "candidate_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/serial-baselines/lower-c001-aperture-vertex0-relief-v1/CAT_HEAD_V34_LOWER_C001_RELIEF_V1.FCStd",
+            "candidate_sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca",
+            "preservation_report_path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/preservation-report.json",
+            "preservation_report_sha256": "592e4bd165fa52d37e2089771071120f8bf9becaf682f3a5f647b72fd8452ddf",
+            "physical_validation_report_path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/relief-validation-validator-revision-001.json",
+            "physical_validation_report_sha256": "6769ee32671e1660d953ae4ec9ecf7238befbfb569a8304bf9c639c2058e142f",
+            "required_validation_status": "RELIEF_VALIDATION_PASS__READY_FOR_HUMAN_VISUAL_REVIEW",
+            "target_object": "FROZEN_RIGHT_LOWER_MAIN_V34"
+          },
+          "shell_matrix_sources": {
+            "upper_component_manifest": {
+              "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/validation-v34.json",
+              "sha256": "c2e49a2c6f448a5690ba600cb3c27ca1e210d36d165236031fdc5c732ce56d4b"
+            },
+            "lower_component_manifest": {
+              "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/validation-v14.json",
+              "sha256": "cc818aa96cf0474f67ce6d2f73ae49ff681c7a61ef15b12821df6cfefb4dd777"
+            },
+            "lower_c001": {
+              "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/serial-baselines/lower-c001-aperture-vertex0-relief-v1/CAT_HEAD_V34_LOWER_C001_RELIEF_V1.FCStd",
+              "sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca",
+              "object_name": "FROZEN_RIGHT_LOWER_MAIN_V34"
+            }
+          },
+          "aperture_view_frustum": {
+            "straight_on_required": true,
+            "half_angle_deg": 30.0,
+            "depth_mm": 14.0,
+            "maximum_hidden_structure_volume_mm3": 0.000001
+          },
+          "motion": {
+            "eye_sweep_distance_mm": 45.0,
+            "eye_sweep_samples": 41,
+            "eye_insertion_direction": "negative aperture_lcs.inward_n to seated zero translation",
+            "eye_removal_is_exact_reverse": true,
+            "rear_cap_sweep_distance_mm": 25.0,
+            "rear_cap_sweep_samples": 31,
+            "rear_cap_removal_direction": "positive aperture_lcs.inward_n",
+            "maximum_unintended_collision_mm3": 0.000001
+          },
+          "hardware_envelopes": {
+            "bolt_nominal": "M2.5",
+            "bolt_diameter_mm": 2.5,
+            "bolt_min_length_mm": 8.0,
+            "bolt_max_length_mm": 10.0,
+            "washer_count_per_mount": 2,
+            "washer_outer_diameter_mm": 7.0,
+            "washer_thickness_mm": 0.8,
+            "nyloc_outer_diameter_mm": 7.0,
+            "nyloc_length_mm": 5.0,
+            "tool_approach_diameter_mm": 8.0,
+            "tool_approach_length_mm": 20.0,
+            "prohibited_intersections": [
+              "rear cartridge",
+              "any shell component",
+              "opposite mounting structure",
+              "back-plate access corridor"
+            ]
+          }
+        },
+        "tooling_dependencies": {
+          "shared_validator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_iteration_v2.py",
+            "sha256": "bb5df3fd5974118b0007c7c3768edbc7a6066dd276ea873d5417aa59b3bc5c64"
+          },
+          "shared_runner": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/run_iteration_v2.py",
+            "sha256": "67f3c56ea377a90097a61df9618b8978c00d73b830c9e71e1867a639cdaae1c5"
+          },
+          "shared_preservation_module": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/fcstd_preservation_v2.py",
+            "sha256": "41a2df91f10dee979b18680fb3f9d4cc3806b287b46c74066f1c96614f1d715c"
+          },
+          "shared_preservation_comparator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/compare_fcstd_preservation_v2.py",
+            "sha256": "260e71cb5b95777f7dd11101217c0a06cb58736645e8967b9f8aa85c9695f6e4"
+          },
+          "independent_previsual_validator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_right_eye_split_service_cassette_previsual_v1.py",
+            "sha256": "d7ad39bea689e8df54484eaf97c9077df73d3c8c8eb03c18696859ea15133ccf"
+          },
+          "deterministic_test": {
+            "path": "tests/automated/test_right_eye_split_service_cassette_tooling_v1.py",
+            "sha256": "a38836b45873a157c2e314b2baa9affe439f620166e6c05fc0fbafddf727960d"
+          }
+        },
+        "review_artifacts": {
+          "exterior_aperture_corners": [
+            "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/exterior-aperture-corner-1.png",
+            "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/exterior-aperture-corner-2.png",
+            "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/exterior-aperture-corner-3.png",
+            "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/exterior-aperture-corner-4.png"
+          ],
+          "interior_flange_backs_and_hardware": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/interior-both-flange-backs-hardware.png",
+          "rear_cap_installation_removal": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/rear-cartridge-installation-removal.png",
+          "section_through_chamber_and_mounts": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/section-cassette-both-mounts.png",
+          "presentation_policy": "Opaque baseline/candidate fixed views plus four exterior corners, both flange backs with hardware/tool envelopes, independent cartridge seated/removed, and a cassette/mount section. Red is reserved for failed overlap evidence; failed candidates are never presented."
+        }
+      }
+    }
+  ],
+  "protected_objects": {
+    "mode": "all_except_target",
+    "invariants": [
+      "existence",
+      "internal_name",
+      "label",
+      "type",
+      "shape",
+      "placement",
+      "visibility",
+      "group_membership"
+    ]
+  },
+  "budget": {
+    "fresh_chat_required": true,
+    "resume_previous_chat": false,
+    "max_generation_seconds": 300,
+    "max_candidates": 1,
+    "max_repair_attempts": 0,
+    "automatic_retry": false
+  },
+  "runtime": {
+    "manifest_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+    "manifest_sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+  },
+  "generator": {
+    "script_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_right_eye_split_service_cassette_prototype_v1.py",
+    "script_sha256": "611aa4b63a0cd81420a01507168095c9a0a4d967d306688d78fe69b5383815fc",
+    "arguments": [
+      "--baseline",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34-lower-c001-relief-v1.json",
+      "--contract",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/right-eye-split-service-cassette-prototype-v1.json"
+    ],
+    "writes_only_output_directory": true
+  },
+  "review_gate": {
+    "required_views": ["front", "rear", "left", "right", "top", "bottom"],
+    "human_visual_approval_required": true,
+    "visual_approval_status": "pending",
+    "independent_verification_required": true,
+    "generator_may_write_validation": false,
+    "run_occt_before_visual_approval": false
+  },
+  "output": {
+    "directory": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1",
+    "candidate_fcstd": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/candidate.FCStd",
+    "no_op_snapshot_fcstd": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/no-op-snapshot.FCStd",
+    "review_files": {
+      "front": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/front.png",
+      "rear": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/rear.png",
+      "left": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/left.png",
+      "right": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/right.png",
+      "top": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/top.png",
+      "bottom": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/review/bottom.png"
+    }
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "three_mf": false,
+    "slicing": false,
+    "gcode": false,
+    "print": false,
+    "commit": false,
+    "promotion": false
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS_OCCT_BOP_CHECK",
+  "candidate_fcstd": "reports/generated/cat-head-cad-iterations/small-v1-merged-mouth-pane-rev113/CAT_HEAD_MEDIUM_ILYA_MERGED_MOUTH_REV113.FCStd",
+  "candidate_sha256": "3b054f9019717d7a73e16915b4bbde809f6fbf550a10f16507219ae54f72a7b1",
+  "object": "PRINT__MERGED_MOUTH_TRANSLUCENT_PANE_REV113",
+  "errors": []
+}

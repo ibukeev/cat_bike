@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "review_id": "right-eye-translucent-lens-insert-v1",
+  "authority": "REVIEW_ONLY__NON_AUTHORITATIVE",
+  "architecture": "accepted static conformal front carrier plus separate rear-seated translucent lens; no rear cartridge, hooks, or screws",
+  "front_interface": {
+    "generator": "../right-eye-static-conformal-adhesive-front-carrier-review-r2/generate_review.py",
+    "generator_sha256": "537c8c3e5ea4d6c18459b6c0dc524b8bfef910f60bb21cc81ccf6e95d2fe8143",
+    "adjudication": "../right-eye-static-conformal-adhesive-front-carrier-review-r2/adjudication-local-wall-manufacturing-deviation.json",
+    "adjudication_sha256": "a901e0feb87f8f333d6685fad1e13e1ba5fd0c9cbf2c3935243de78c3690f5b6",
+    "review_validation": "../../../../output/70-freecad-pilots/review-only/right-eye-static-conformal-adhesive-front-carrier-review-r2/validation-review-only.json",
+    "review_validation_sha256": "8910b660ff8aae5c545a76319f820f89df27f19e42434b99a50b6a9bd38ced59"
+  },
+  "lens": {
+    "material": "natural translucent PETG",
+    "thickness_mm": 0.9,
+    "allowed_thickness_mm": [0.8, 1.0],
+    "front_depth_mm": 1.2,
+    "outer_offset_from_visible_aperture_mm": 1.05,
+    "front_carrier_rear_inner_offset_mm": 0.75,
+    "minimum_continuous_seat_overlap_mm": 0.30,
+    "minimum_continuous_seat_area_mm2": 5.0,
+    "installation_direction": "from rear",
+    "retention": "three tiny clear neutral-cure silicone dabs on the continuous rear seat",
+    "silicone_dab_count": 3,
+    "cyanoacrylate_permitted": false,
+    "screws_permitted": false
+  },
+  "validation": {
+    "maximum_positive_intersection_mm3": 0.000001,
+    "maximum_aperture_point_error_mm": 0.000001,
+    "minimum_structural_wall_mm": 0.70,
+    "require_all_101_shell_owners": true,
+    "require_front_contact": true,
+    "require_zero_shell_penetration": true,
+    "require_zero_front_penetration": true
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-translucent-lens-insert-v1",
+    "fcstd": "RIGHT_EYE_FRONT_CARRIER_AND_TRANSLUCENT_LENS_REVIEW_ONLY_V1.FCStd",
+    "validation": "validation-review-only.json",
+    "views": ["front.png", "rear.png", "exploded.png", "lens-seat.png", "side.png"]
+  },
+  "release_holds": {
+    "stl": false,
+    "three_mf": false,
+    "gcode": false,
+    "print": false,
+    "canonical_mutation": false
+  }
+}

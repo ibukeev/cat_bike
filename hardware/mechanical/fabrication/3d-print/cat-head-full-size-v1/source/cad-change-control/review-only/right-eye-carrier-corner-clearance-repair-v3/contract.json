@@ -1,0 +1,103 @@
+{
+  "schema_version": "cat-head-right-eye-carrier-corner-clearance-repair-v3",
+  "contract_id": "right-eye-carrier-corner-clearance-repair-v3",
+  "tooling_revision": 3,
+  "authority": "REVIEW_ONLY__V2_WITHDRAWN__NOT_A_PRINT_SOURCE",
+  "date": "2026-08-20",
+  "user_evidence": {
+    "finding": "The V2 full-depth repair visibly reaches the lower shell corner and is not physically installable with usable clearance.",
+    "screenshot_path": "/tmp/codex-clipboard-GR0ASK.png",
+    "screenshot_sha256": "a5e5a60c29efe4c5e22a16912ac477019539e9fba8f0a73a801c3d0fb2d88383",
+    "withdrawn_v2_reason": "V2 checked zero positive-volume intersection but permitted a 14-edge zero-distance contact patch against the lower main shell owner."
+  },
+  "inputs": {
+    "withdrawn_v2_contract": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-full-depth-seam-repair-v2/contract.json",
+      "sha256": "1ff62caab36370c039a5530ac734eac5ac5e609ecfd8fe0050b47fad56a78d73"
+    },
+    "withdrawn_v2_generator": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-full-depth-seam-repair-v2/generate_review.py",
+      "sha256": "c49e6f6cb87b06f5f997e424dabfe922d8be0e82d684432884414f319c8d6a9d"
+    },
+    "corner_measurement_script": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-corner-clearance-repair-v3/measure_v2_corner_contact.py",
+      "sha256": "1a19bda51ab4197ed4d1529c9885ae71cdf5f94c52576f47696b98733e04c5c8"
+    }
+  },
+  "frozen_geometry": {
+    "source_carrier_and_user_manual_flange": "exactly additive-preserved",
+    "lens": "unchanged",
+    "rear_plate": "unchanged",
+    "leds_wire_and_hardware": "unchanged",
+    "head_shell": "read-only context",
+    "structural_backing": "exact V2 shape retained",
+    "left_side": "absent until explicit right-side approval"
+  },
+  "measured_contact": {
+    "shell_owner": "FROZEN_RIGHT_LOWER_MAIN_V34",
+    "positive_common_mm3": 0.0,
+    "v2_added_distance_mm": 0.0,
+    "source_carrier_distance_mm": 0.35665372063694045,
+    "structural_backing_distance_mm": 0.5628441175178516,
+    "section_edge_count": 14,
+    "section_bbox_minimum_world_mm": [
+      33.616827841961644,
+      50.10706152387267,
+      125.15017980822562
+    ],
+    "section_bbox_maximum_world_mm": [
+      34.97628050201239,
+      52.03217039868513,
+      126.15882478700713
+    ]
+  },
+  "repair_dimensions_mm": {
+    "local_clearance_box_padding": 1.50,
+    "minimum_new_material_to_any_shell_clearance": 0.50,
+    "clearance_measurement_tolerance": 0.001,
+    "mesh_linear_deflection": 0.08,
+    "mesh_angular_deflection": 0.35
+  },
+  "repair_operation": {
+    "target": "V2 new full-depth outer spine only",
+    "operation": "subtract one measured-contact AABB expanded 1.50 mm on all sides; 0.75 and 1.10 mm tooling preflights measured 0.2501749889 and 0.3867824984 mm, and 1.50 mm moves the outer spine beyond the exact inner-backing clearance ceiling of 0.5628441175 mm",
+    "preserved_bypass": "retain the exact V2 inner structural backing as the continuous load path behind the corner notch",
+    "prohibited": [
+      "cutting or moving the source carrier",
+      "changing the user manual flange",
+      "changing the lens or rear plate",
+      "adding exterior material",
+      "STL, 3MF, G-code, mirror, or production overwrite"
+    ]
+  },
+  "gates": {
+    "zero_removed_volume_from_source_carrier_mm3": 0.000001,
+    "minimum_spine_to_front_filler_overlap_mm3": 40.0,
+    "minimum_spine_to_opening_connector_overlap_mm3": 40.0,
+    "minimum_spine_to_bezel_overlap_mm3": 40.0,
+    "minimum_spine_to_lens_surround_overlap_mm3": 40.0,
+    "minimum_spine_to_backing_overlap_mm3": 40.0,
+    "minimum_backing_to_wall_overlap_mm3": 80.0,
+    "minimum_backing_to_transition_overlap_mm3": 20.0,
+    "minimum_global_full_depth_span_mm": 4.20,
+    "zero_protected_intersection_mm3": 0.000001,
+    "require_no_section_edges_between_new_material_and_shell": true,
+    "require_new_material_clearance_to_every_shell_owner": true,
+    "require_valid_closed_one_solid_candidate": true,
+    "require_one_closed_manifold_mesh_component": true,
+    "require_corner_closeup_with_clearance_box": true,
+    "no_stl_3mf_gcode_mirror_or_final_overwrite_before_lgtm": true
+  },
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/right-eye-carrier-corner-clearance-repair-v3",
+    "fcstd": "RIGHT_EYE_CARRIER_CORNER_CLEARANCE_REPAIR_REVIEW_ONLY_V3.FCStd",
+    "validation": "validation.json",
+    "views": [
+      "assembled-context.png",
+      "corner-shell-clearance-closeup.png",
+      "repair-only-corner-closeup.png",
+      "left-seam.png",
+      "right-seam.png"
+    ]
+  }
+}

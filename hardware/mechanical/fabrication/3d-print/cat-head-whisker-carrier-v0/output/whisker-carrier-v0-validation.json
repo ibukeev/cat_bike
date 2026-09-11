@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "pixel_centers_mm": [
+    [
+      -24.75,
+      7.0
+    ],
+    [
+      -8.25,
+      7.0
+    ],
+    [
+      8.25,
+      7.0
+    ],
+    [
+      24.75,
+      7.0
+    ],
+    [
+      -24.75,
+      -7.0
+    ],
+    [
+      -8.25,
+      -7.0
+    ],
+    [
+      8.25,
+      -7.0
+    ],
+    [
+      24.75,
+      -7.0
+    ]
+  ],
+  "parts": {
+    "whisker-carrier-base.stl": {
+      "vertices": 278,
+      "edges": 434,
+      "faces": 146,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 8263.01,
+      "dimensions_mm": [
+        86.0,
+        36.0,
+        3.0
+      ]
+    },
+    "whisker-carrier-top-2p15.stl": {
+      "vertices": 2024,
+      "edges": 3087,
+      "faces": 1057,
+      "nonmanifold_edges": 0,
+      "volume_mm3": 12992.01,
+      "dimensions_mm": [
+        74.0,
+        36.0,
+        12.0
+      ]
+    }
+  },
+  "checks": {
+    "part_count_is_two": true,
+    "all_parts_closed_manifold": true,
+    "all_parts_have_positive_volume": true,
+    "eight_unique_pixel_centers": true,
+    "pitch_matches_four_pixel_length": true,
+    "current_matches_eight_pixels": true,
+    "guide_collars_clear_adjacent_pixels": true,
+    "pass": true
+  }
+}

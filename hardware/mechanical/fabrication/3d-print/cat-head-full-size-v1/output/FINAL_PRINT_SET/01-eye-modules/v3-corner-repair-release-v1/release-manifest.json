@@ -1,0 +1,563 @@
+{
+  "authority": "PRINT_RELEASE__USER_APPROVED__STL_AND_FCSTD_ONLY",
+  "contract_sha256": "5243cbf9436e6a1f69fdd04b98eca72268cb28f59cca1e1f9c781532dfdb332e",
+  "exporter_sha256": "a3054ebb332fccd0f019cacf2636cc809c12578e591a870246aa60671dad750a",
+  "fcstd": {
+    "left": {
+      "objects": {
+        "carrier": "LEFT_EYE_CARRIER_V3_CORNER_REPAIR_PRINT",
+        "lens": "LEFT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT",
+        "rear_plate": "LEFT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT"
+      },
+      "path": "left/LEFT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd",
+      "reopened": {
+        "carrier": {
+          "bounds_mm": [
+            -103.70903541108439,
+            49.82680664068036,
+            119.1471641026206,
+            -32.5827159564931,
+            97.456280459535,
+            177.16672769092378
+          ],
+          "closed": true,
+          "deep_check_messages": [],
+          "solid_count": 1,
+          "topology": {
+            "edges": 394,
+            "faces": 124,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 269,
+            "wires": 137
+          },
+          "valid": true,
+          "volume_mm3": 5575.014164388369
+        },
+        "lens": {
+          "bounds_mm": [
+            -97.16396240651159,
+            52.25659976841489,
+            126.76881712891122,
+            -34.946163401419504,
+            88.4289023198403,
+            174.52348979045385
+          ],
+          "closed": true,
+          "deep_check_messages": [],
+          "solid_count": 1,
+          "topology": {
+            "edges": 72,
+            "faces": 30,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 48,
+            "wires": 42
+          },
+          "valid": true,
+          "volume_mm3": 1473.3233138375408
+        },
+        "rear_plate": {
+          "bounds_mm": [
+            -88.29996329777802,
+            65.34799924991947,
+            127.00655466041772,
+            -34.14629835480113,
+            97.14501187243307,
+            167.89108314340658
+          ],
+          "closed": true,
+          "deep_check_messages": [],
+          "solid_count": 1,
+          "topology": {
+            "edges": 81,
+            "faces": 29,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 54,
+            "wires": 35
+          },
+          "valid": true,
+          "volume_mm3": 1514.964062580624
+        }
+      },
+      "sha256": "f0502cef3b82b4095ea19dff735795948e31c7177e13fa32356ca470c6fd7bd9"
+    },
+    "right": {
+      "objects": {
+        "carrier": "RIGHT_EYE_CARRIER_V3_CORNER_REPAIR_PRINT",
+        "lens": "RIGHT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT",
+        "rear_plate": "RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT"
+      },
+      "path": "right/RIGHT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd",
+      "reopened": {
+        "carrier": {
+          "bounds_mm": [
+            32.582715956493104,
+            49.82680664068036,
+            119.1471641026206,
+            103.70903541108439,
+            97.456280459535,
+            177.16672769092378
+          ],
+          "closed": true,
+          "deep_check_messages": [],
+          "solid_count": 1,
+          "topology": {
+            "edges": 394,
+            "faces": 124,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 269,
+            "wires": 137
+          },
+          "valid": true,
+          "volume_mm3": 5575.014164388363
+        },
+        "lens": {
+          "bounds_mm": [
+            34.946163401419504,
+            52.25659976841489,
+            126.76881712891122,
+            97.16396240651159,
+            88.4289023198403,
+            174.52348979045385
+          ],
+          "closed": true,
+          "deep_check_messages": [],
+          "solid_count": 1,
+          "topology": {
+            "edges": 72,
+            "faces": 30,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 48,
+            "wires": 42
+          },
+          "valid": true,
+          "volume_mm3": 1473.3233138375408
+        },
+        "rear_plate": {
+          "bounds_mm": [
+            34.14629835480114,
+            65.34799924991947,
+            127.00655466041772,
+            88.29996329777802,
+            97.14501187243307,
+            167.89108314340658
+          ],
+          "closed": true,
+          "deep_check_messages": [],
+          "solid_count": 1,
+          "topology": {
+            "edges": 81,
+            "faces": 29,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 54,
+            "wires": 35
+          },
+          "valid": true,
+          "volume_mm3": 1514.9640625806235
+        }
+      },
+      "sha256": "2acf712847bfbec14d7655ea046c7ac1156dfe7db678723af787470de3b6dbd2"
+    }
+  },
+  "gcode_created": false,
+  "preflight_checks": {
+    "all_six_breps_are_valid_closed_deep_clean_single_solids": true,
+    "all_six_generated_meshes_are_clean_closed_manifold_single_components": true,
+    "all_three_left_parts_are_exact_x0_mirrors": true,
+    "approved_v3_reconstruction_passes_all_original_gates": true,
+    "approved_v3_validation_has_zero_failed_checks": true,
+    "output_directory_is_fresh": true,
+    "release_contains_no_3mf_or_gcode_names": true
+  },
+  "preflight_report_path": "/tmp/bilateral-eye-v3-corner-repair-print-release-preflight-20260819.json",
+  "preflight_report_sha256": "645728372dbae06a8a5fb1fcbe850b9af8b5a6743f3131542ee01aafb78d28a2",
+  "schema_version": "cat-head-bilateral-eye-v3-print-release-manifest-v1",
+  "source_pins": {
+    "inputs.approved_v3_checkpoint": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-corner-clearance-repair-v3/RIGHT_EYE_CARRIER_CORNER_CLEARANCE_REPAIR_V3_CHECKPOINT_2026-08-19.md",
+      "sha256": "aa83bc5cfc3c92458ce6c7785dd93c90b5196f4e7b65e380004fc81557d4f888"
+    },
+    "inputs.approved_v3_contract": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-corner-clearance-repair-v3/contract.json",
+      "sha256": "ce445a115941fd4ecb39633515a1eb5b126c7cadbd29a3ad3ca8c007e177b315"
+    },
+    "inputs.approved_v3_generator": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-corner-clearance-repair-v3/generate_review.py",
+      "sha256": "a0a5e8c8ee55f889673ee7d412c37cd578fe28c52bbacdab572a9dce7bd35a29"
+    },
+    "inputs.approved_v3_review_fcstd": {
+      "path": "output/70-freecad-pilots/review-only/right-eye-carrier-corner-clearance-repair-v3/RIGHT_EYE_CARRIER_CORNER_CLEARANCE_REPAIR_REVIEW_ONLY_V3.FCStd",
+      "sha256": "22dca83ac335ad9277ec89bd248f65c3646af4c6d5945b1e28367dfcee7ba94f"
+    },
+    "inputs.approved_v3_validation": {
+      "path": "output/70-freecad-pilots/review-only/right-eye-carrier-corner-clearance-repair-v3/validation.json",
+      "sha256": "52170ecd6b2b0e8d3d299cb254eb997956c229c2462db645b24d44eb5d88108f"
+    },
+    "inputs.approved_x0_mirror_contract": {
+      "path": "config/eye-bilateral-exact-mirror-review-v9.json",
+      "sha256": "bf683d9ae9f1392d88f370de59c1aef75ac0373380e26c2566e9bd72f2316a13"
+    },
+    "inputs.mesh_topology_checker": {
+      "path": "source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+      "sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e"
+    },
+    "tooling.exporter": {
+      "path": "source/cad-change-control/print-release/bilateral-eye-carrier-corner-clearance-v3-release-v1/export_release.py",
+      "sha256": "a3054ebb332fccd0f019cacf2636cc809c12578e591a870246aa60671dad750a"
+    },
+    "tooling.focused_test": {
+      "path": "tests/automated/test_bilateral_eye_carrier_corner_clearance_v3_print_release_v1.py",
+      "sha256": "7e71efd9dabf12ce027d42ab1d85ac86ccfc518a365871865283e2660b572c95"
+    }
+  },
+  "status": "PRINT_RELEASE_PASS__RIGHT_AND_LEFT_FCSTD_AND_STL_READY",
+  "stl": {
+    "left": {
+      "carrier": {
+        "generated": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              -32.58271408081055,
+              97.45628356933594,
+              177.16673278808594
+            ],
+            "minimum": [
+              -103.70903778076172,
+              49.826805114746094,
+              119.14716339111328
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 1942,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 5575.318327588166,
+          "vertices": 957
+        },
+        "path": "left/LEFT_EYE_CARRIER_V3_CORNER_REPAIR_WITH_MIRRORED_MANUAL_FLANGE_PRINT_V1.stl",
+        "reloaded": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              -32.58271408081055,
+              97.45628356933594,
+              177.16673278808594
+            ],
+            "minimum": [
+              -103.70903778076172,
+              49.826805114746094,
+              119.14716339111328
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 1942,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 5575.318327587979,
+          "vertices": 957
+        },
+        "sha256": "8861aa33570dac2a41368756ed744e86a4e19a360c8fddb78f1b0e2d614ab597"
+      },
+      "lens": {
+        "generated": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              -34.946163177490234,
+              88.42890167236328,
+              174.5234832763672
+            ],
+            "minimum": [
+              -97.1639633178711,
+              52.25659942626953,
+              126.76881408691406
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 668,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1473.446417558822,
+          "vertices": 328
+        },
+        "path": "left/LEFT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT_V1.stl",
+        "reloaded": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              -34.946163177490234,
+              88.42890167236328,
+              174.5234832763672
+            ],
+            "minimum": [
+              -97.1639633178711,
+              52.25659942626953,
+              126.76881408691406
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 668,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1473.4464175588514,
+          "vertices": 328
+        },
+        "sha256": "0b0b94d329b6740b2b6d57ff127bc1c6c7761de4b5543a033aa81fb9e17e948c"
+      },
+      "rear_plate": {
+        "generated": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              -34.146297454833984,
+              97.14501190185547,
+              167.89108276367188
+            ],
+            "minimum": [
+              -88.29996490478516,
+              65.3479995727539,
+              127.00655364990234
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 536,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1515.1176524379607,
+          "vertices": 264
+        },
+        "path": "left/LEFT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT_V1.stl",
+        "reloaded": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              -34.146297454833984,
+              97.14501190185547,
+              167.89108276367188
+            ],
+            "minimum": [
+              -88.29996490478516,
+              65.3479995727539,
+              127.00655364990234
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 536,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1515.1176524379255,
+          "vertices": 264
+        },
+        "sha256": "8b4a512535b934577cced304303b3257af3e80d903cad1720b2b4672fd4840c1"
+      }
+    },
+    "right": {
+      "carrier": {
+        "generated": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              103.70903778076172,
+              97.45628356933594,
+              177.16673278808594
+            ],
+            "minimum": [
+              32.58271408081055,
+              49.826805114746094,
+              119.14716339111328
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 1942,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 5575.318332115473,
+          "vertices": 957
+        },
+        "path": "right/RIGHT_EYE_CARRIER_V3_CORNER_REPAIR_WITH_MANUAL_FLANGE_PRINT_V1.stl",
+        "reloaded": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              103.70903778076172,
+              97.45628356933594,
+              177.16673278808594
+            ],
+            "minimum": [
+              32.58271408081055,
+              49.826805114746094,
+              119.14716339111328
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 1942,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 5575.318332115349,
+          "vertices": 957
+        },
+        "sha256": "0c55c550b5dc53962a984bf3b1fab1c167311d305b3ec1eaf1f33a3878c5fb20"
+      },
+      "lens": {
+        "generated": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              97.1639633178711,
+              88.42890167236328,
+              174.5234832763672
+            ],
+            "minimum": [
+              34.946163177490234,
+              52.25659942626953,
+              126.76881408691406
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 668,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1473.4464175588255,
+          "vertices": 328
+        },
+        "path": "right/RIGHT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT_V1.stl",
+        "reloaded": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              97.1639633178711,
+              88.42890167236328,
+              174.5234832763672
+            ],
+            "minimum": [
+              34.946163177490234,
+              52.25659942626953,
+              126.76881408691406
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 668,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1473.446417558851,
+          "vertices": 328
+        },
+        "sha256": "a7a2f90ab5c6a065260e7a761f1a766d353cd0daba84aefcd26650573bbcd7d1"
+      },
+      "rear_plate": {
+        "generated": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              88.29996490478516,
+              97.14501190185547,
+              167.89108276367188
+            ],
+            "minimum": [
+              34.146297454833984,
+              65.3479995727539,
+              127.00655364990234
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 536,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1515.1176524379323,
+          "vertices": 264
+        },
+        "path": "right/RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT_V1.stl",
+        "reloaded": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              88.29996490478516,
+              97.14501190185547,
+              167.89108276367188
+            ],
+            "minimum": [
+              34.146297454833984,
+              65.3479995727539,
+              127.00655364990234
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 536,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1515.117652437926,
+          "vertices": 264
+        },
+        "sha256": "5fae236a190b781cf25fb635988c318b9b8423e8b638ce7247e52478c710b6a5"
+      }
+    }
+  },
+  "three_mf_created": false,
+  "user_will_slice": true
+}

@@ -1,0 +1,444 @@
+{
+  "schema_version": "2.0",
+  "project": "cat-head-full-size-v1",
+  "iteration_id": "right-eye-serviceable-fit-prototype-v5",
+  "state": "approved_for_one_candidate",
+  "baseline_id": "right-upper-c009-deletion-review-v34",
+  "user_approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-17T15:19:33-07:00",
+    "exact_instruction": "APPROVE a new tooling and execution lineage:\n\n  right-eye-serviceable-fit-prototype-v5\n\n  Numeric design decision:\n  - Maximum unsupported rear-cap root span: 2.30 mm.\n  - Boss OD remains exactly 6.0 mm.\n  - Root width remains exactly 6.0 mm.\n  - Root axial depth remains exactly 4.0 mm.\n  - Root must overlap the chamber wall locally by 1.0 mm.\n  - Preserve both exact V9 boss centers and axes.\n  - No broad web, root plate, centroid bridge, aperture-crossing support, datum\n    movement, or reuse of quarantined V4 geometry.\n\n  Reclassify V4 as:\n  GENERATOR_IMPLEMENTATION_FAILURE__NEAREST_VERTEX_DISTANCE\n  with a secondary signed-contract conflict at the lower root:\n  2.2448192933 mm actual unsupported span versus 2.0000000000 mm allowed.\n\n  V5 requirements:\n\n  1. Start only from canonical V34. Never open or reuse the quarantined V4 FCStd.\n  2. Implement independent nearest-point-on-polygon-edge projection. Do not use\n     nearest vertices.\n  3. Define unsupported span as:\n     max(0, boss-center-to-inner-perimeter distance - boss radius).\n  4. Before FreeCAD import or output creation, deterministically confirm:\n     - upper center-to-edge: approximately 4.107305 mm;\n     - upper unsupported span: approximately 1.107305 mm;\n     - lower center-to-edge: approximately 5.244819 mm;\n     - lower unsupported span: approximately 2.244819 mm;\n     - both are <= 2.30 mm;\n     - both projections land inside their respective edge segments, not at vertices.\n  5. Construct each root as one compact 6 mm-wide local tongue from the boss into\n     the nearest chamber wall, with 1.0 mm wall overlap.\n  6. Register the failed V4 signature so the nearest-vertex construction cannot recur.\n  7. Update the independent previsual validator to reconstruct the roots using\n     its own edge-projection implementation.\n  8. Add regressions that fail if a vertex is used or if either unsupported span\n     exceeds 2.30 mm.\n  9. If all tooling tests and immutable preflight pass, authorize exactly one V5\n     candidate generation, one preservation comparison, and one previsual\n     validation.\n  10. Show review images only if all 12 previsual gates pass.\n\n  On failure, stop and report all determinable gates. No automatic V6, repair,\n  retry, tolerance change, mirroring, integration, export, slicing, or printing."
+  },
+  "target_object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34",
+  "allowed_mutations": [
+    {
+      "kind": "replace_geometry",
+      "object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34",
+      "parameters": {
+        "design_control": {
+          "design_id": "right-eye-serviceable-fit-B",
+          "tooling_revision": 1,
+          "approval": true,
+          "design_signature": {
+            "algorithm": "sha256-canonical-json-decimal-v1",
+            "signed_fields": [
+              "construction_algorithm_id",
+              "geometry",
+              "aperture_lcs",
+              "mount_datums"
+            ],
+            "sha256": "709e96116e4269ac3bb87cbce4bcf055fb0b82a18c692d5a23973797d4a97fb1"
+          },
+          "rejected_signature_registry": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/rejected-design-signatures.json",
+            "sha256": "2e4f266473606a7176b262e359e61a382ec409ec3366a1fd75074c821d806066"
+          },
+          "v3_candidate_sha256": "36744819dd9f4a4c71ea7c434ba3acc5386a7f4891a789e46aabf671b09a9b55",
+          "v3_status": "VISUALLY_REJECTED__DO_NOT_REPAIR_OR_REUSE",
+          "v4_candidate_sha256": "eee6226fd934460b6b0690d1d2026a29e8a3c28512e7f620ba477ff32d10948f",
+          "v4_design_signature_sha256": "c52deaccc27b8a8ef681a184175a50bfeba0296fb8afda4e41d1a42292d24b2d",
+          "v4_status": "GENERATOR_IMPLEMENTATION_FAILURE__NEAREST_VERTEX_DISTANCE",
+          "v4_secondary_signed_contract_conflict": {
+            "role": "lower",
+            "unsupported_span_definition": "max(0, boss-center-to-inner-perimeter distance - boss radius)",
+            "actual_unsupported_span_mm": 2.2448192933,
+            "allowed_unsupported_span_mm": 2.0
+          },
+          "forbidden_geometry_sources": [
+            "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v1/candidate.FCStd",
+            "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v3/candidate.FCStd",
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v4/candidate.FCStd",
+            "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_right_eye_parametric_fit_prototype_v1.py"
+          ]
+        },
+        "construction_algorithm_id": "right-eye-serviceable-edge-projected-local-tongue-B@1",
+        "geometry": {
+          "shell_opening_boundary_mm": [
+            [33.3465, 50.1135, 126.3945],
+            [43.9605, 63.0555, 165.8895],
+            [102.4275, 89.0295, 177.6765],
+            [104.064, 71.7885, 118.5825]
+          ],
+          "bezel": {
+            "shell_opening_clearance_mm": 0.3,
+            "front_depth_mm": 0.0,
+            "thickness_mm": 1.5,
+            "collar_outer_offset_mm": 4.2,
+            "collar_inner_offset_mm": 0.3,
+            "collar_start_depth_mm": 0.3,
+            "collar_end_depth_mm": 3.6
+          },
+          "diffuser_interface": {
+            "diffuser_thickness_mm": 1.5,
+            "overlap_mm": 1.2,
+            "pocket_clearance_mm": 0.3,
+            "gasket_allowance_mm": 0.3,
+            "start_depth_mm": 1.8,
+            "end_depth_mm": 3.3,
+            "seat_start_depth_mm": 3.3,
+            "seat_end_depth_mm": 4.5,
+            "led_emitter_reference_depth_mm": 13.35,
+            "led_to_diffuser_gap_mm": 10.05
+          },
+          "chamber": {
+            "wall_thickness_mm": 2.4,
+            "depth_mm": 14.0,
+            "front_start_depth_mm": 0.3,
+            "bezel_axial_overlap_mm": 3.3,
+            "taper_start_depth_mm": 4.2,
+            "taper_end_depth_mm": 6.2,
+            "rear_inner_offset_mm": -0.5
+          },
+          "rear_cap_connector": {
+            "outer_diameter_mm": 6.0,
+            "bore_diameter_mm": 2.8,
+            "engagement_depth_mm": 4.0,
+            "mating_gap_mm": 0.3,
+            "seat_front_depth_mm": 13.0,
+            "reference_seating_translation_mm": 0.0,
+            "projection_algorithm": "nearest-point-on-closed-polygon-edge-v1",
+            "local_root_width_mm": 6.0,
+            "root_axial_depth_mm": 4.0,
+            "wall_overlap_mm": 1.0,
+            "maximum_local_root_span_mm": 2.3,
+            "boss_centers_mm": {
+              "upper": [72.2476, 78.1286, 175.5293],
+              "lower": [66.305, 63.709, 134.355]
+            },
+            "boss_axis": "aperture_lcs.inward_n",
+            "edge_projection_preflight": {
+              "numeric_tolerance_mm": 0.000001,
+              "segment_interior_epsilon": 0.000001,
+              "upper": {
+                "center_to_edge_mm": 4.1073050279178975,
+                "unsupported_span_mm": 1.1073050279178975,
+                "edge_index": 1,
+                "segment_parameter": 0.5005739489824771,
+                "projection_uv_mm": [21.404127470488195, 4.194968125476045]
+              },
+              "lower": {
+                "center_to_edge_mm": 5.244819284073767,
+                "unsupported_span_mm": 2.244819284073767,
+                "edge_index": 3,
+                "segment_parameter": 0.2950857631999356,
+                "projection_uv_mm": [-14.878791027020034, 3.258064683250945]
+              }
+            }
+          },
+          "head_mount": {
+            "construction": "Two compact eye-side V5 leaves with local edge-ligament collars and the V17 1.50 mm owner-root sweep; no root plate, centroid web, landing inset, wedge, trapezoid, broad base, long bridge, or aperture-crossing web.",
+            "leaf_length_mm": 12.0,
+            "leaf_depth_mm": 8.0,
+            "legacy_leaf_thickness_mm": 2.4,
+            "leaf_thickness_mm": 4.8,
+            "bore_diameter_mm": 2.8,
+            "mating_gap_mm": 0.3,
+            "bore_depth_from_aperture_plane_mm": 4.8,
+            "bore_center_to_mating_face_mm": 1.2,
+            "owner_root_extension_mm": 1.5,
+            "edge_ligament_collar_outer_diameter_mm": 9.8,
+            "bore_to_edge_material_mm": 3.5,
+            "bore_cutter_length_mm": 20.0
+          }
+        },
+        "aperture_lcs": {
+          "origin_mm": [64.501125, 68.88715, 153.583025],
+          "u": [0.231983963, 0.35192547, 0.906825178],
+          "v": [0.922209813, 0.216932857, -0.320108101],
+          "inward_n": [-0.309374371, 0.910543024, -0.274224178],
+          "visible_aperture_mm": [
+            [34.9453, 50.7759, 126.7901],
+            [45.0804, 66.1511, 166.4082],
+            [101.4953, 88.6294, 177.3997],
+            [76.4835, 69.9922, 143.7341]
+          ],
+          "aperture_rounding_tolerance_mm": 0.00005
+        },
+        "mount_datums": {
+          "upper": {
+            "lineage_role": "V5 outer-eye / V17 integrated upper root",
+            "mount_edge_indices": [2, 3],
+            "eye_bore_center_mm": [100.44318, 85.00159, 147.11774],
+            "head_bore_center_mm": [102.95823, 85.96094, 146.90749],
+            "bore_axis": [-0.931499, -0.355313, 0.077868],
+            "owner_root_extension_vector_mm": [-1.419, 0.062, -0.483]
+          },
+          "lower": {
+            "lineage_role": "V5 lower-eye / V17 integrated lower root",
+            "mount_edge_indices": [3, 0],
+            "eye_bore_center_mm": [66.77454, 66.06956, 122.28207],
+            "head_bore_center_mm": [66.67402, 65.45099, 119.65581],
+            "bore_axis": [0.037231, 0.229102, 0.97269],
+            "owner_root_extension_vector_mm": [0.218, -1.398, 0.498]
+          }
+        },
+        "historical_requirements": [
+          "F-19",
+          "F-20",
+          "F-21",
+          "F-23",
+          "F-24",
+          "F-25",
+          "F-28",
+          "A-23",
+          "A-24",
+          "A-25",
+          "A-26",
+          "A-27",
+          "A-28",
+          "A-29",
+          "A-30",
+          "A-31",
+          "A-32",
+          "A-33"
+        ],
+        "defect_resolution_map": [
+          {
+            "defect_id": "V3-01-FASTENER-ACCESS",
+            "failure": "Oversized supports block nut and bolt access behind the mating flanges.",
+            "v5_construction": "Replace the 14 mm root plates and 10 mm centroid webs with compact 12 x 8 x 4.8 mm V5-derived local leaves and a 9.8 mm local ligament collar only.",
+            "validation_gate": "G09 and G10 independently test the bolt, two washers, nyloc, and straight tool envelope at both fixed bore datums."
+          },
+          {
+            "defect_id": "V3-02-REAR-CAP-SERVICE",
+            "failure": "Eye supports block rear-cap and back-plate installation and service.",
+            "v5_construction": "No mount web crosses the chamber or cap path; each unchanged V9 cap boss uses one independently edge-projected 6 x 4 mm compact local tongue with 1.0 mm chamber-wall overlap and no more than 2.30 mm unsupported span.",
+            "validation_gate": "G08 sweeps the exact hash-pinned rear cap through seating and removal; G10 checks cap against every hardware/tool envelope."
+          },
+          {
+            "defect_id": "V3-03-APERTURE-VISIBILITY",
+            "failure": "Mounting structures are visible through the eye aperture.",
+            "v5_construction": "All mounts, chamber walls, and cap retention remain behind the protected bezel and local chamber perimeter.",
+            "validation_gate": "G06 requires zero mount/chamber/cap volume in the straight-on and plus-or-minus 30 degree aperture viewing frustum."
+          },
+          {
+            "defect_id": "V3-04-FLANGE-EXTERIOR-PROTRUSION",
+            "failure": "Mounting-flange fragments protrude through the exterior shell.",
+            "v5_construction": "Mount reinforcement is limited to the compact leaf, local ligament collar, and 1.50 mm V17 owner-root sweep.",
+            "validation_gate": "G04 and G05 measure material outside the permitted envelope and non-bezel exterior occupancy; G03 checks all shell intersections."
+          },
+          {
+            "defect_id": "V3-05-EYE-CORNER-EXTERIOR-ESCAPE",
+            "failure": "A main eye-module corner intersects and exits the exterior shell.",
+            "v5_construction": "The chamber is rebuilt only from the protected aperture/LCS perimeter loops and named axial stations.",
+            "validation_gate": "G03 runs the 101-component matrix and G04 rejects any eye material outside the explicit aperture/interior envelope."
+          },
+          {
+            "defect_id": "V3-06-KNOWN-F19-SHELL-CONTACTS",
+            "failure": "Upper C001, lower C001, lower C012, and lower C013 contacts were not validated before review.",
+            "v5_construction": "No shell component is used as a Boolean cutter or geometry source.",
+            "validation_gate": "G03 explicitly requires all 101 components and individually reports upper C001, lower C001, lower C012, and lower C013 at or below 0.000001 mm3."
+          }
+        ],
+        "fit_references": {
+          "exact_v9_cap": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/production/eye-modules-v9/right/right_eye_rear_cap_production_owner_v9.step",
+            "sha256": "fe647e10d1888211563bfe313adb27321a963c1a7beaf339e066f75b21ff444c"
+          },
+          "exact_diffuser": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate6-eye-modules/eyes/right_eye_diffuser.stl",
+            "sha256": "b9d4bcd2ca8e500b96de18bf47530a369bb21ec2ded95c8bcb24fa882e15c1b0"
+          }
+        },
+        "lineage_references": {
+          "approved_v5_mount_layout": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/validation-v5.json",
+            "sha256": "08e8f57ec4b2ea76dc3b3baa740dc1a21a8764be77e66df4d94a0d1434653290"
+          },
+          "approved_v17_mount_lineage": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/RIGHT_EYE_EXACT_OWNER_INTEGRATION_REVIEW_V17_CHECKPOINT_2026-08-14.md",
+            "sha256": "a870381573e7a6c96acabf3b653d31911b0400c324b0f1333666efc9ebd9d8bc"
+          }
+        },
+        "validation_contract": {
+          "validator_role": "Independent cheap fail-closed target-fit, preservation, containment, access, service-motion, and known-defect regression before any human visual review. It is not deep release validation.",
+          "mesh_to_occt_tolerance_mm": 0.000001,
+          "limits": {
+            "maximum_unintended_positive_intersection_mm3": 0.000001,
+            "minimum_direct_owner_root_engagement_mm3": 80.0,
+            "minimum_bore_to_edge_material_mm": 3.5,
+            "required_head_mount_mating_gap_mm": 0.3,
+            "maximum_dimensional_deviation_mm": 0.01,
+            "minimum_non_mating_shell_clearance_mm": 0.5,
+            "minimum_upper_c001_clearance_outside_authorized_mount_mm": 4.0,
+            "minimum_chamber_wall_mm": 2.4
+          },
+          "authorized_mating_interfaces": {
+            "aperture_bezel": {
+              "mask_geometry": "Exact reconstructed protected bezel and collar only.",
+              "purpose": "Exclude the preserved aperture-to-bezel interface from non-mating shell clearance measurement."
+            },
+            "head_mounts": {
+              "center_definition": "Midpoint of each approved eye/head bore-center pair.",
+              "axis_definition": "The corresponding approved V5/V17 bore axis.",
+              "radial_mask_mm": 6.0,
+              "axial_half_length_mm": 8.0,
+              "roles": ["upper", "lower"],
+              "purpose": "Bound only the local fastener-bearing mating interfaces; material outside these masks remains subject to the 0.50 mm shell and 4.00 mm upper-C001 clearance gates."
+            }
+          },
+          "shell_matrix_sources": {
+            "upper_component_manifest": {
+              "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/validation-v34.json",
+              "sha256": "c2e49a2c6f448a5690ba600cb3c27ca1e210d36d165236031fdc5c732ce56d4b"
+            },
+            "lower_component_manifest": {
+              "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-owner-integration-review-v14/validation-v14.json",
+              "sha256": "cc818aa96cf0474f67ce6d2f73ae49ff681c7a61ef15b12821df6cfefb4dd777"
+            },
+            "lower_c001": {
+              "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v13/CAT_HEAD_RIGHT_LOWER_FACE_TOPOLOGY_REPAIR_REVIEW_V13.FCStd",
+              "sha256": "9ba404c8a7bed0ff9879eae95f06166093d308168679f3b44255261d785fe46c",
+              "object_name": "PROPOSED__HS11_COMPONENT001_REPAIRED_SOLID_V13"
+            }
+          },
+          "aperture_view_frustum": {
+            "straight_on_required": true,
+            "half_angle_deg": 30.0,
+            "depth_mm": 14.0,
+            "maximum_mount_chamber_cap_volume_mm3": 0.000001
+          },
+          "motion": {
+            "eye_sweep_distance_mm": 45.0,
+            "eye_sweep_samples": 41,
+            "eye_insertion_direction": "negative aperture_lcs.inward_n to seated zero translation",
+            "eye_removal_is_exact_reverse": true,
+            "rear_cap_sweep_distance_mm": 25.0,
+            "rear_cap_sweep_samples": 31,
+            "rear_cap_removal_direction": "positive aperture_lcs.inward_n",
+            "maximum_unintended_collision_mm3": 0.000001
+          },
+          "hardware_envelopes": {
+            "bolt_nominal": "M2.5",
+            "bolt_diameter_mm": 2.5,
+            "bolt_min_length_mm": 8.0,
+            "bolt_max_length_mm": 10.0,
+            "washer_count_per_mount": 2,
+            "washer_outer_diameter_mm": 7.0,
+            "washer_thickness_mm": 0.8,
+            "nyloc_outer_diameter_mm": 7.0,
+            "nyloc_length_mm": 5.0,
+            "tool_approach_diameter_mm": 8.0,
+            "tool_approach_length_mm": 20.0,
+            "prohibited_intersections": [
+              "rear cap or back plate",
+              "any shell component",
+              "chamber",
+              "opposite mounting structure"
+            ]
+          }
+        },
+        "tooling_dependencies": {
+          "shared_validator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_iteration_v2.py",
+            "sha256": "bb5df3fd5974118b0007c7c3768edbc7a6066dd276ea873d5417aa59b3bc5c64"
+          },
+          "shared_runner": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/run_iteration_v2.py",
+            "sha256": "67f3c56ea377a90097a61df9618b8978c00d73b830c9e71e1867a639cdaae1c5"
+          },
+          "shared_preservation_module": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/fcstd_preservation_v2.py",
+            "sha256": "41a2df91f10dee979b18680fb3f9d4cc3806b287b46c74066f1c96614f1d715c"
+          },
+          "shared_preservation_comparator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/compare_fcstd_preservation_v2.py",
+            "sha256": "260e71cb5b95777f7dd11101217c0a06cb58736645e8967b9f8aa85c9695f6e4"
+          },
+          "independent_previsual_validator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_right_eye_serviceable_fit_previsual_v5.py",
+            "sha256": "6f2c4d79afae8082b5f54fd319c28a7d010579ce70f1ebdb8b2bcbd131c6f327"
+          }
+        },
+        "review_artifacts": {
+          "exterior_aperture_corners": [
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/exterior-aperture-corner-1.png",
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/exterior-aperture-corner-2.png",
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/exterior-aperture-corner-3.png",
+            "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/exterior-aperture-corner-4.png"
+          ],
+          "interior_flange_backs_and_hardware": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/interior-both-flange-backs-hardware.png",
+          "rear_cap_installation_removal": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/rear-cap-installation-removal.png",
+          "section_through_chamber_and_mounts": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/section-chamber-both-mounts.png",
+          "presentation_policy": "Every whole-head view is opaque and baseline/candidate side-by-side. Bolt, both washers, nyloc, and tool envelopes use separate non-red colors. Red is reserved for failed overlap evidence, and a failed candidate is never presented for approval."
+        }
+      }
+    }
+  ],
+  "protected_objects": {
+    "mode": "all_except_target",
+    "invariants": [
+      "existence",
+      "internal_name",
+      "label",
+      "type",
+      "shape",
+      "placement",
+      "visibility",
+      "group_membership"
+    ]
+  },
+  "budget": {
+    "fresh_chat_required": true,
+    "resume_previous_chat": false,
+    "max_generation_seconds": 300,
+    "max_candidates": 1,
+    "max_repair_attempts": 0,
+    "automatic_retry": false
+  },
+  "runtime": {
+    "manifest_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+    "manifest_sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+  },
+  "generator": {
+    "script_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_right_eye_serviceable_fit_prototype_v5.py",
+    "script_sha256": "103a4594022dfde68e9d373318120bb9615b978ca512a962a1d53f8d4b0dec7b",
+    "arguments": [
+      "--baseline",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34.json",
+      "--contract",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/right-eye-serviceable-fit-prototype-v5.json"
+    ],
+    "writes_only_output_directory": true
+  },
+  "review_gate": {
+    "required_views": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "top",
+      "bottom"
+    ],
+    "human_visual_approval_required": true,
+    "visual_approval_status": "pending",
+    "independent_verification_required": true,
+    "generator_may_write_validation": false,
+    "run_occt_before_visual_approval": false
+  },
+  "output": {
+    "directory": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5",
+    "candidate_fcstd": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/candidate.FCStd",
+    "no_op_snapshot_fcstd": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/no-op-snapshot.FCStd",
+    "review_files": {
+      "front": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/front.png",
+      "rear": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/rear.png",
+      "left": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/left.png",
+      "right": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/right.png",
+      "top": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/top.png",
+      "bottom": "reports/generated/cat-head-cad-iterations/right-eye-serviceable-fit-prototype-v5/review/bottom.png"
+    }
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "three_mf": false,
+    "slicing": false,
+    "gcode": false,
+    "print": false,
+    "commit": false,
+    "promotion": false
+  }
+}

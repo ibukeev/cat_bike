@@ -1,0 +1,42 @@
+{
+  "schema_version": "cat-head-right-lower-rear-v5-seam-cleanup-inspection-v4",
+  "contract_id": "right-lower-rear-v5-seam-cleanup-inspection-v4",
+  "authority": "READ_ONLY_DIAGNOSTIC_NO_GEOMETRY_OUTPUT",
+  "user_request": "Remove the visible reinforcement-plank residuals from both the retained front and rear cassette pieces, and remove the unexplained green review piece while preserving the approved V3 straight sector ownership.",
+  "inputs": {
+    "v3_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/contract.json",
+      "sha256": "a7a7ddaf041dd9174268d55c338667c81260ee46acca1bc37f84bc0657e75855"
+    },
+    "v3_generator": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/generate_freecad_review.py",
+      "sha256": "4227eab0cbf5dbbf606b3dcfce0fba5f273028ddcdd9eb87a0e69d5f216d18f4"
+    },
+    "v3_review": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/RIGHT_LOWER_REAR_V5_AXIS_STRAIGHT_SECTOR_REVIEW_ONLY_V3.FCStd",
+      "sha256": "9489e2f5a114467bc1212680ea15e083178780207bb4d2c2218a4dda6f7b4255"
+    },
+    "v3_validation": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/validation.json",
+      "sha256": "c297b1997fdf300aee713670b20fb96f1a141ecc2a24ced37bfa7df44abe0dca"
+    }
+  },
+  "selected_front_residual": {
+    "review_internal_name": "RET_043",
+    "review_label": "RETAINED — component_057",
+    "canonical_component_index": 57,
+    "selected_subelement": "Edge6"
+  },
+  "candidate_adjacent_components": [55, 56, 57, 58, 59, 60],
+  "review_overlay_to_remove": {
+    "internal_name": "PROPOSED_FACE30_SECTOR_TRANSFER",
+    "label": "PROPOSED — FACE30 SECTOR MOVED FROM REAR TO FRONT",
+    "policy": "remove duplicate review overlay only; preserve the transferred material already fused into V3 component 001 front"
+  },
+  "prohibited": [
+    "source or V3 save",
+    "geometry mutation",
+    "FCStd, STEP, STL, 3MF, render, or G-code output",
+    "production integration or print release"
+  ]
+}

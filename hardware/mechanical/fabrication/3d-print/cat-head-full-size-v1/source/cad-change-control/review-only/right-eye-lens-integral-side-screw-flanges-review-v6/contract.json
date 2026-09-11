@@ -1,0 +1,128 @@
+{
+  "schema_version": "cat-head-right-eye-lens-integral-side-screw-flanges-review-v6",
+  "review_id": "right-eye-lens-integral-side-screw-flanges-review-v6",
+  "authority": "REVIEW_ONLY__NON_AUTHORITATIVE__NOT_A_PRINT_SOURCE",
+  "date": "2026-08-19",
+  "user_instruction": "Put the mounting flanges on the translucent lens itself. Drive screws sideways through the opaque eye-socket box walls into those lens flanges so no screw is visible from the outside/front.",
+  "basis": {
+    "approved_geometry": "right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4",
+    "approved_visual_decision": "LGTM / AWESOME",
+    "rejected_interpretation": "right-eye-m2-lens-retention-flanges-review-v5 placed front-normal holes and carrier-owned tabs; it is evidence only and is not a geometry basis"
+  },
+  "architecture": {
+    "carrier": "approved V4 opaque aperture-contained carrier with four radial side-wall clearance holes only",
+    "lens": "separate 0.90 mm translucent lens with four integral rearward flanges, one behind each box wall",
+    "fastening": "four M2 x 4 mm pan-head screws inserted from inside the head, sideways through the opaque carrier walls into lens-flange pilot holes",
+    "visibility": "all heads and shafts remain behind the eye-front plane and outside the visible aperture prism",
+    "installation": "before mounting the carrier in the head, angle the thin PETG lens into its continuous seat from the front, guide its four rear flanges into the box cavity, then install four side screws from inside before fitting the removable LED rear plate",
+    "led_service": "the removable rear LED plate, four pixel references, and 4 mm wire exit remain unchanged from V4"
+  },
+  "inputs": {
+    "v4_generator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4/generate_review.py",
+      "sha256": "643643d087ee875c1d5c50e750a443bf1d3826f4b75104e3c7608e028a938b8a"
+    },
+    "v4_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4/contract.json",
+      "sha256": "b804e3d69e601adfdf04542959fa192286f96f98bb4204586f75c76585027170"
+    },
+    "v4_feasibility_report": {
+      "path": "reports/generated/cat-head-cad-tooling/right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4/feasibility.json",
+      "sha256": "d5adcd341bd3a59c77fe4bfd4a2d498b24cb8f4f740a89b579e22603508410fa"
+    },
+    "v4_review_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4/RIGHT_EYE_PARALLEL_LEFT_EDGE_ORTHOGONAL_WALL_LED_CASSETTE_REVIEW_ONLY_V4.FCStd",
+      "sha256": "27c98f34c8fec985ff2e50613016083b760daca31d9da33fef64691b1db241ca"
+    },
+    "v4_review_validation": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4/validation-review-only.json",
+      "sha256": "c2883aef821b0ddd76f2b726691aa924ad29ab186ccbcf938cdb0f4dae6c7923"
+    }
+  },
+  "dimensions_mm": {
+    "opening_fit_gap": 0.60,
+    "selected_edge_parallel_normal_offset": 2.20,
+    "selected_edge_relief_endpoint_length": 3.00,
+    "selected_edge_relief_outward": 2.20,
+    "selected_edge_relief_inward": 0.60,
+    "front_rim_width": 1.20,
+    "lens_outer_offset": 0.20,
+    "straight_box_outer_inset": 0.50,
+    "box_wall_thickness": 1.20,
+    "lens_thickness": 0.90,
+    "carrier_front_depth": 0.80,
+    "bezel_rear_depth": 1.20,
+    "lens_front_depth": 1.20,
+    "lens_rear_depth": 2.10,
+    "box_wall_front_depth": 2.10,
+    "box_wall_rear_depth": 13.00,
+    "lens_integral_flange_count": 4,
+    "lens_integral_flange_width": 4.50,
+    "lens_integral_flange_radial_depth": 3.00,
+    "lens_integral_flange_wall_clearance": 0.20,
+    "lens_integral_flange_rear_length": 4.25,
+    "lens_integral_flange_front_overlap": 0.20,
+    "lens_integral_flange_pilot_rear_offset": 2.25,
+    "lens_integral_flange_pilot_diameter": 1.60,
+    "carrier_side_clearance_hole_diameter": 2.20,
+    "carrier_side_head_recess_diameter": 4.40,
+    "carrier_side_head_recess_depth": 0.40,
+    "screw_nominal_diameter": 2.00,
+    "screw_length": 4.00,
+    "screw_head_diameter": 3.80,
+    "screw_head_height": 1.00
+  },
+  "gates": {
+    "inherit_all_v4_gates": true,
+    "required_lens_integral_flange_count": 4,
+    "required_carrier_side_hole_count": 4,
+    "minimum_flange_material_around_pilot_mm": 1.00,
+    "minimum_flange_attachment_common_mm3": 0.01,
+    "maximum_carrier_hole_residual_mm3": 0.000001,
+    "maximum_carrier_head_recess_residual_mm3": 0.000001,
+    "maximum_lens_pilot_residual_mm3": 0.000001,
+    "maximum_side_axis_alignment_error_mm": 0.000001,
+    "maximum_screw_axis_front_normal_dot": 0.000000001,
+    "maximum_reference_screw_carrier_collision_mm3": 0.000001,
+    "maximum_reference_screw_shell_collision_mm3": 0.000001,
+    "maximum_reference_screw_led_collision_mm3": 0.000001,
+    "maximum_reference_screw_rear_plate_collision_mm3": 0.000001,
+    "maximum_visible_aperture_head_collision_mm3": 0.000001,
+    "maximum_lens_flange_insertion_collision_mm3": 0.000001,
+    "maximum_aperture_coordinate_shift_mm": 0.000000001,
+    "minimum_wall_behind_head_recess_mm": 0.75,
+    "require_carrier_one_valid_closed_solid": true,
+    "require_lens_one_valid_closed_solid": true,
+    "require_four_hidden_side_screws": true,
+    "require_no_front_visible_fasteners": true
+  },
+  "hardware": {
+    "quantity": 4,
+    "fastener": "M2 x 4 mm pan-head screw",
+    "carrier_hole": "2.2 mm radial clearance hole with a 4.4 x 0.40 mm hidden head recess",
+    "lens_flange_hole": "1.6 mm radial pilot hole for gentle thread-forming engagement",
+    "assembly_note": "Hand-tighten only. The screw head bears on the inside face of the opaque box wall; it must not be visible through the eye opening.",
+    "material_note": "Use PETG for the translucent lens/flanges; PLA is not recommended for repeated screw installation."
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-lens-integral-side-screw-flanges-review-v6",
+    "fcstd": "RIGHT_EYE_LENS_INTEGRAL_SIDE_SCREW_FLANGES_REVIEW_ONLY_V6.FCStd",
+    "validation": "review-validation.json",
+    "views": [
+      "front.png",
+      "rear.png",
+      "side.png",
+      "inside-cartridge.png",
+      "lens-side-fasteners.png"
+    ]
+  },
+  "holds": [
+    "REVIEW_ONLY",
+    "NO_STL",
+    "NO_3MF",
+    "NO_GCODE",
+    "NO_PRODUCTION_PROMOTION",
+    "NO_CANONICAL_HEAD_MUTATION",
+    "NO_PRINTING_UNTIL_USER_VISUAL_LGTM"
+  ]
+}

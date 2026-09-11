@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "validation_id": "c002-rounded-terminal-profile-prototype-v2-release-validation-003",
+  "mode": "read_only_independent_release_validation",
+  "state": "prepared_awaiting_explicit_execution_authorization",
+  "candidate_disposition_before_validation": "VALIDATOR_HOLD__CANDIDATE_UNCHANGED",
+  "visual_approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-17",
+    "candidate_sha256": "4348b7d96300829de66bd193e5736d0380ac3a89971b751393612ce9746b380a",
+    "scope": [
+      "C002 23 mm mouth",
+      "C002 21 mm internal profile",
+      "rounded terminal transition and blind stop",
+      "visually localized change with no obvious collateral damage"
+    ]
+  },
+  "validator": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_c002_rounded_terminal_release_v2_003.py",
+    "sha256": "d190c7aac68a7aeaa8a60ac30bb7b423e6068360a5f90a4625eff0975fc9ce6d",
+    "independence": "Imports only the hash-pinned validation-002 validation core, replaces only its M4 expected-removal-set evaluator, reconstructs Route 2 independently in memory, opens the candidate read-only only after --execute-authorized, and never saves an FCStd document."
+  },
+  "tooling_dependencies": {
+    "validation_001_utility_dependency": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_c002_rounded_terminal_release_v2.py",
+      "sha256": "d6e0d4f7d1938254511dd8807a35f8d3d72e3f6e2433bdc2600f43563a226ed6",
+      "usage": "Hash-pinned immutable input/runtime/Route2 helper functions only; its validation-001 validate(), main(), and smooth-cylinder M4 predicate are not imported or called."
+    },
+    "validation_002_validator_core": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_c002_rounded_terminal_release_v2_002.py",
+      "sha256": "73b8ed70b59b9346ff3e09e44366dd23d2b7a3e32fdd9ee2f8d9926b43996cc9",
+      "usage": "Hash-pinned immutable full release gate sequence. Validation-003 temporarily supplies only the corrected M4 expected-removal-set evaluator and restores the original module function after the call."
+    }
+  },
+  "inputs": {
+    "candidate": {
+      "path": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/candidate.FCStd",
+      "sha256": "4348b7d96300829de66bd193e5736d0380ac3a89971b751393612ce9746b380a"
+    },
+    "no_op_snapshot": {
+      "path": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/no-op-snapshot.FCStd",
+      "sha256": "c74b7391f27d6196e9291a9d23dd321e6794f807d6d8ac424dee32bbed94159b"
+    },
+    "preservation_report": {
+      "path": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/preservation-report.json",
+      "sha256": "42c30db743713bab6e0c213b2a9c1947c52ba8aa8e55a61dac14421b2d6cec1a"
+    },
+    "runner_result": {
+      "path": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/runner-result.json",
+      "sha256": "221a0a6b0bb2a4a478e6dad1825ff654fb375cfb2584990c524bcc978d169d79"
+    },
+    "iteration_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/c002-rounded-terminal-profile-prototype-v2.json",
+      "sha256": "4f2d31b222c789669d0fc775ab915ea39efad41050d410f0adc2c2da729a767b"
+    },
+    "c002_generator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_c002_rounded_terminal_profile_prototype_v2.py",
+      "sha256": "f821d8620ef2c307dcdef238db642a69150bce0fbdd49b652f1f1021c7db1847"
+    },
+    "baseline_manifest": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34.json",
+      "sha256": "a4144cc60dd38a9b42768e167b85c54d2ce21a875d3915fe5fa95f3e2c434824"
+    },
+    "baseline_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+      "sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584"
+    },
+    "route2_evidence": {
+      "path": "reports/generated/cat-head-cad-audits/c002-rounded-corner-socket-feasibility-audit-001/rounded-socket-evidence.json",
+      "sha256": "da8f8e51e7aaf27ba93e364bd7ade179c7926411fd899d87a1e950a2342ba022"
+    },
+    "interface": {
+      "path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+      "sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79",
+      "revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+    },
+    "runtime_manifest": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+      "sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+    },
+    "validation_001_report": {
+      "path": "reports/generated/cat-head-cad-validations/c002-rounded-terminal-profile-prototype-v2-release-validation-001/validation.json",
+      "sha256": "48bc1143dc8a275fe4e8e463323d98c37f929b25219342cd6fdde7230850c537"
+    },
+    "validation_001_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/c002-rounded-terminal-profile-prototype-v2-release-validation.json",
+      "sha256": "76e626782e1baf8dbc84e3e08a640365905d63ceabd730f6299c24e0db15e539"
+    },
+    "validation_002_report": {
+      "path": "reports/generated/cat-head-cad-validations/c002-rounded-terminal-profile-prototype-v2-release-validation-002/validation.json",
+      "sha256": "7aa3141b2480f44875e972ee8c35f906e8d1641a392c5a3c804c2ecd182dd6df"
+    },
+    "validation_002_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/c002-rounded-terminal-profile-prototype-v2-release-validation-002.json",
+      "sha256": "e692dd632c0909ba136980fb61cd1abe6ed4503d579c3998329cfb0d1d04e95b"
+    }
+  },
+  "validation_001_disposition": {
+    "classification": "VALIDATOR_HOLD__CANDIDATE_UNCHANGED",
+    "candidate_rejected": false,
+    "candidate_modified": false,
+    "reported_added_inside_smooth_gauge_mm3": 0.0,
+    "reported_removed_inside_smooth_gauge_mm3": 0.2028220048194887,
+    "fault": "The predicate treated the complete smooth 4.50 mm gauge as immutable material/void space even though the retained M4 tunnel is faceted and the approved cavity widening intersects the smooth-gauge-only corner slivers."
+  },
+  "validation_002_disposition": {
+    "classification": "VALIDATOR_HOLD__CANDIDATE_UNCHANGED",
+    "candidate_rejected": false,
+    "candidate_modified": false,
+    "failed_gate": "M4_SMOOTH_GAUGE_REMOVAL_EQUALS_AUTHORIZED_PROFILE_ENLARGEMENT",
+    "fault": "The expected-removal set subtracted a theoretical ideal old 20.50 mm void from target_void instead of asking the actual V34 snapshot which material exists.",
+    "reported_values_mm3": {
+      "actual_removed_inside_smooth_gauge_mm3": 0.2028220048194887,
+      "baseline_material_in_authorized_enlargement_and_gauge_mm3": 0.20267826297045136,
+      "actual_minus_expected_mm3": 0.00014256209251204647,
+      "expected_minus_actual_mm3": 0.0
+    }
+  },
+  "m4_expected_removal_set": {
+    "definition": "snapshot ∩ target_void ∩ smooth_gauge",
+    "rejected_definition": "snapshot ∩ (target_void - ideal_old_20_50_void) ∩ smooth_gauge",
+    "material_authority": "actual immutable V34 no-op snapshot",
+    "tolerance_change": false
+  },
+  "m4_inspection": {
+    "geometry_kind": "existing faceted clearance tunnel",
+    "axial_half_length_mm": 60.0,
+    "bearing_inspection_radius_mm": 3.25,
+    "bearing_radial_collar_beyond_nominal_gauge_mm": 1.0,
+    "facet_support_search_band_mm": 0.35,
+    "facet_edge_axis_dot_search_min": 0.95,
+    "facet_face_u_span_search_min_mm": 0.05,
+    "facet_plane_merge_angular_error_deg_max": 0.000001,
+    "facet_plane_merge_offset_error_mm_max": 0.000001,
+    "minimum_faceted_tunnel_planes": 8,
+    "bearing_inner_edge_match_error_mm_max": 0.01,
+    "search_values_are_feature_identification_windows_not_acceptance_tolerances": true
+  },
+  "tolerances": {
+    "shape_symmetric_difference_volume_mm3_max": 0.000001,
+    "change_outside_authorized_socket_envelope_mm3_max": 0.000001,
+    "protected_common_volume_mm3": 0.000001,
+    "distance_numeric_epsilon_mm": 0.000001,
+    "m4_original_void_refill_volume_mm3_max": 0.000001,
+    "m4_removed_outside_authorized_cavity_volume_mm3_max": 0.000001,
+    "m4_intentional_overlap_symmetric_difference_volume_mm3_max": 0.000001,
+    "m4_historical_observation_volume_mm3_max": 0.000001,
+    "m4_bearing_symmetric_difference_volume_mm3_max": 0.000001,
+    "m4_candidate_baseline_position_mm_max": 0.000001,
+    "m4_candidate_baseline_diameter_mm_max": 0.000001,
+    "m4_candidate_baseline_axis_angular_error_deg_max": 0.000001,
+    "socket_frame_preservation_angular_error_deg_max": 0.000001,
+    "profile_across_flats_mm": 0.01,
+    "socket_roll_angular_error_deg_max": 0.1,
+    "tolerance_policy": "No validation-001 tolerance was broadened. New preservation comparisons use the same 0.000001 mm/mm3/deg exactness scale; frozen M2 absolute checks use the interface's existing 0.01 mm and 0.1 degree limits."
+  },
+  "output": {
+    "directory": "reports/generated/cat-head-cad-validations/c002-rounded-terminal-profile-prototype-v2-release-validation-003",
+    "report": "reports/generated/cat-head-cad-validations/c002-rounded-terminal-profile-prototype-v2-release-validation-003/validation.json",
+    "writes_permitted_only_after_execute_authorized": [
+      "validation.json"
+    ]
+  },
+  "release_holds": {
+    "complete_rail_socket_angle_and_rear_insertion_path": true,
+    "F_01": true,
+    "A_05": true,
+    "A_38": true,
+    "A_39": true,
+    "R1_side_service_opening": true,
+    "rear_cassette_aperture": true,
+    "cap_receiver": true,
+    "mirror": true,
+    "integration": true,
+    "export": true,
+    "printing": true
+  },
+  "execution_policy": {
+    "explicit_authorization_required": true,
+    "authorization_cli_flag": "--execute-authorized",
+    "preflight_cli_flag": "--preflight-only",
+    "immediate_single_execution_authorized": true,
+    "authorization_record": "User explicitly authorized one immediate validation-003 execution after tests and non-executing preflight pass.",
+    "maximum_passes": 1,
+    "automatic_retry": false,
+    "fourth_validator": false,
+    "repair": false,
+    "regeneration": false,
+    "candidate_save": false,
+    "candidate_modification": false,
+    "generator_invocation": false,
+    "tolerance_change": false,
+    "preflight_opens_candidate": false,
+    "preflight_creates_output": false
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "cat-head-lower-front-bilateral-modular-closure-review-v1",
+  "contract_id": "lower-front-bilateral-modular-closure-review-v1",
+  "authority": "REVIEW_ONLY_NON_AUTHORITATIVE_NOT_A_PRINT_SOURCE",
+  "decision": {
+    "objective": "Finish a modular bilateral lower-front review with clean opaque seams, separately editable translucent inserts and lower attachments, and a closed translucent mouth.",
+    "source_policy": "Use the accepted V4 front-owner cleanup, the approved V5 ledge as a separate proposal, canonical V34 upper context, and the existing Gate8 insert assets without mutating any source.",
+    "modularity": [
+      "Each opaque owner remains a separate Part::Feature.",
+      "Every mirrored owner remains a separate Part::Feature.",
+      "Each closed connected translucent STL component remains separately selectable.",
+      "The two mouth facets, center seam seal, each panel flange, each head flange, and each fastener reference remain separate objects.",
+      "No production fusion, shell replacement, canonical overwrite, STL export, slicing, or print release."
+    ],
+    "opaque_ownership_resolution": {
+      "bilateral_seam": "Clip the right lower review owners at world X=0, then mirror those clean owners to create the left side.",
+      "lower_upper_seam": "Canonical V34 upper owners retain ownership; subtract only their positive-common volumes from lower review-owner copies.",
+      "aggregate_display_policy": "Exclude the duplicate aggregate RETAINED_RIGHT_UPPER_V34 display object; retain the individually named C-owner objects.",
+      "source_mutation": false
+    },
+    "translucent_ownership_resolution": {
+      "policy": "In review copies only, classify each exact opaque-head intersection solid by its center against the pinned Gate8 attachment-radius zones; subtract only rejected intersection solids and leave allowed-only components unchanged.",
+      "source_stl_mutation": false,
+      "component_fusion": false,
+      "clearance_classification": "zero positive common outside declared attachment zones"
+    }
+  },
+  "inputs": {
+    "v5_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-long-ledge-interface-review-v5/contract.json",
+      "sha256": "93afff7ea5109fd42f75bac6a0725084384b768d98935bbc1d5f6ca088c610df"
+    },
+    "v5_generator": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-long-ledge-interface-review-v5/generate_freecad_review.py",
+      "sha256": "4b80ec1dece99c453473f6ac84cafe2933294c053669b0020b4673c4ac50a56a"
+    },
+    "canonical_v34": {
+      "path": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+      "sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584"
+    },
+    "gate1_generator": {
+      "path": "source/generate_gate1_master.py",
+      "sha256": "61955cf554acc147765390ea53e457c465a86c302b8fbaf6760927a21f54301e"
+    },
+    "mouth_extractor": {
+      "path": "source/cad-change-control/review-only/lower-front-bilateral-modular-closure-review-v1/extract_mouth_panel.py",
+      "sha256": "2dfdbb58174790cd4c1964f5a6a2c53128e22e1946a1b94b177be2b7d8f83a3f"
+    },
+    "self_generator": {
+      "path": "source/cad-change-control/review-only/lower-front-bilateral-modular-closure-review-v1/generate_freecad_review.py",
+      "sha256": "f782d4a58c6637c332b4c388c47062343a10b3bb6aad8639560c35eacb4d8dca"
+    },
+    "review_renderer": {
+      "path": "source/cad-change-control/review-only/lower-front-bilateral-modular-closure-review-v1/render_review.py",
+      "sha256": "760c028629631c2403796014c3bb7d4ae36b9bb49dbc022d2ea72443f9cfcbf7"
+    },
+    "focused_test": {
+      "path_from_repo_root": "tests/automated/test_lower_front_bilateral_modular_closure_review_v1.py",
+      "sha256": "5b5dd58421fcaeba81a9a671671397914aabb9addc4b085b5c7e98aee864813c"
+    },
+    "accepted_surface_obj": {
+      "path_from_repo_root": "hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/assembly/accepted-panels-3d.obj",
+      "sha256": "1e5460a10656c9293db1f706f840a89e5db6dd254542a0854c39a8f2ab3b2d36"
+    },
+    "panel_metadata_csv": {
+      "path_from_repo_root": "hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/data/cardboard_panels.csv",
+      "sha256": "bc318069f1fad806f8be54e47f055f59e493d04cb27d26ef9e953592ede36221"
+    },
+    "gate1_roles": {
+      "path": "config/gate1-panel-roles.json",
+      "sha256": "5c0cca81954847b432da08badee3d5552ee855e2118e10ff81374ef911ffab37"
+    },
+    "gate8_mount_validation": {
+      "path": "output/10-design-gates/gate8-full-size-structural-iteration/_stage7-glow/gate7-glow-panel-validation.json",
+      "sha256": "d81257f6f63fdebf6b705bf6b8fc27bb439c8a1815faa2c1e40f2c13d48e86e2"
+    },
+    "insert_central_6": {
+      "path": "output/10-design-gates/gate8-full-size-structural-iteration/glow-inserts/glow_insert_central_6_panel_cluster.stl",
+      "sha256": "6fb4d76d18556b2038b36ec108a45a472c139f4be052884168198d029c8e7c37",
+      "group_name": "central_6_panel_cluster"
+    },
+    "insert_right_lower": {
+      "path": "output/10-design-gates/gate8-full-size-structural-iteration/glow-inserts/glow_insert_panel_QUAD003.stl",
+      "sha256": "62aed7543715f4db21e090987985fbcb38bd4043f43d94b643946cbef76d5439",
+      "group_name": "panel_QUAD003"
+    },
+    "insert_left_lower": {
+      "path": "output/10-design-gates/gate8-full-size-structural-iteration/glow-inserts/glow_insert_panel_QUAD005.stl",
+      "sha256": "7fa581585122c412425b9458ddb5d3fd33152830bc1e39f2a90f41db4a6e24c7",
+      "group_name": "panel_QUAD005"
+    },
+    "insert_right_rear": {
+      "path": "output/10-design-gates/gate8-full-size-structural-iteration/glow-inserts/glow_insert_panel_QUAD017.stl",
+      "sha256": "a2f076582a7a359fe99f6e73a39a955b407a555101d26d7eba2c25ce70bc7b98",
+      "group_name": "panel_QUAD017"
+    },
+    "insert_left_rear": {
+      "path": "output/10-design-gates/gate8-full-size-structural-iteration/glow-inserts/glow_insert_panel_QUAD031.stl",
+      "sha256": "b681a1633dee570a31c30b1fff895f3339f82f02bd5e9a5bdb619be6b83fcad4",
+      "group_name": "panel_QUAD031"
+    }
+  },
+  "mouth": {
+    "source_panel_ids": ["TRI005", "TRI006"],
+    "target_height_mm": 330.0,
+    "deep_body": {
+      "perimeter_clearance_mm": 0.65,
+      "surface_setback_mm": 0.6,
+      "thickness_mm": 1.5
+    },
+    "visible_cap": {
+      "perimeter_clearance_mm": 0.35,
+      "surface_setback_mm": 0.15,
+      "thickness_mm": 0.55
+    },
+    "center_seam": {
+      "width_mm": 1.2,
+      "surface_setback_mm": 0.5,
+      "thickness_mm": 0.9,
+      "end_trim_mm": 0.6
+    },
+    "mount_pair": {
+      "fastener": "M2.5 through bolt, two washers, loose nyloc",
+      "edge_length_mm": 10.0,
+      "tab_face_thickness_mm": 2.4,
+      "panel_root_extension_mm": 1.0,
+      "tab_depth_mm": 7.0,
+      "face_gap_mm": 0.3,
+      "surface_setback_mm": 0.6,
+      "bore_diameter_mm": 2.8,
+      "bore_depth_position_mm": 4.2,
+      "washer_od_mm": 6.0,
+      "washer_thickness_mm": 0.5,
+      "minimum_panel_root_overlap_mm3": 10.0,
+      "minimum_head_root_overlap_mm3": 10.0
+    },
+    "expected_measurement": {
+      "scale": 1.5,
+      "shared_edge_world_mm": [
+        [-1.3515, 20.3535, 24.0585],
+        [0.189, 0.0, 47.8035]
+      ],
+      "tri005_area_mm2": 659.8800426520909,
+      "tri006_area_mm2": 617.5265301479773
+    }
+  },
+  "numeric_gates": {
+    "volume_epsilon_mm3": 0.000001,
+    "distance_epsilon_mm": 0.00001,
+    "mesh_conversion_tolerance_mm": 0.01,
+    "maximum_unclassified_translucent_head_common_mm3": 0.000001,
+    "mount_attribution_radius_mm": 18.0,
+    "maximum_right_left_opaque_common_mm3": 0.000001,
+    "maximum_lower_upper_opaque_common_mm3": 0.000001,
+    "mouth_minimum_head_clearance_mm": 0.04,
+    "mouth_maximum_head_common_mm3": 0.000001,
+    "minimum_declared_lower_translucent_mount_groups": 2,
+    "minimum_retained_lower_mount_common_mm3": 0.01
+  },
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/lower-front-bilateral-modular-closure-review-v1",
+    "fcstd": "LOWER_FRONT_BILATERAL_MODULAR_CLOSURE_REVIEW_ONLY_V1.FCStd",
+    "validation": "validation.json",
+    "views": [
+      "01-front-assembled.png",
+      "02-rear-assembled.png",
+      "03-lower-translucent-mounts.png",
+      "04-mouth-exploded.png",
+      "05-left-right-upper-seams.png"
+    ]
+  }
+}

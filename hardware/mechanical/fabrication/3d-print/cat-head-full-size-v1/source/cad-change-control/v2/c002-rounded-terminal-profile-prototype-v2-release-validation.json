@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "validation_id": "c002-rounded-terminal-profile-prototype-v2-release-validation-001",
+  "mode": "read_only_independent_release_validation",
+  "state": "approved_for_exactly_one_validation_pass",
+  "visual_approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-17",
+    "candidate_sha256": "4348b7d96300829de66bd193e5736d0380ac3a89971b751393612ce9746b380a",
+    "scope": [
+      "C002 23 mm mouth",
+      "C002 21 mm internal profile",
+      "rounded terminal transition and blind stop",
+      "visually localized change with no obvious collateral damage"
+    ]
+  },
+  "validator": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_c002_rounded_terminal_release_v2.py",
+    "sha256": "d6e0d4f7d1938254511dd8807a35f8d3d72e3f6e2433bdc2600f43563a226ed6",
+    "independence": "Does not import or invoke either C002 generator. Reconstructs the approved Route 2 result independently in memory and measures the saved candidate."
+  },
+  "inputs": {
+    "candidate": {
+      "path": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/candidate.FCStd",
+      "sha256": "4348b7d96300829de66bd193e5736d0380ac3a89971b751393612ce9746b380a"
+    },
+    "no_op_snapshot": {
+      "path": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/no-op-snapshot.FCStd",
+      "sha256": "c74b7391f27d6196e9291a9d23dd321e6794f807d6d8ac424dee32bbed94159b"
+    },
+    "preservation_report": {
+      "path": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/preservation-report.json",
+      "sha256": "42c30db743713bab6e0c213b2a9c1947c52ba8aa8e55a61dac14421b2d6cec1a"
+    },
+    "runner_result": {
+      "path": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/runner-result.json",
+      "sha256": "221a0a6b0bb2a4a478e6dad1825ff654fb375cfb2584990c524bcc978d169d79"
+    },
+    "iteration_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/c002-rounded-terminal-profile-prototype-v2.json",
+      "sha256": "4f2d31b222c789669d0fc775ab915ea39efad41050d410f0adc2c2da729a767b"
+    },
+    "baseline_manifest": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34.json",
+      "sha256": "a4144cc60dd38a9b42768e167b85c54d2ce21a875d3915fe5fa95f3e2c434824"
+    },
+    "baseline_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+      "sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584"
+    },
+    "route2_evidence": {
+      "path": "reports/generated/cat-head-cad-audits/c002-rounded-corner-socket-feasibility-audit-001/rounded-socket-evidence.json",
+      "sha256": "da8f8e51e7aaf27ba93e364bd7ade179c7926411fd899d87a1e950a2342ba022"
+    },
+    "interface": {
+      "path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+      "sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79",
+      "revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+    },
+    "runtime_manifest": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+      "sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+    }
+  },
+  "tolerances": {
+    "shape_symmetric_difference_volume_mm3_max": 0.000001,
+    "change_outside_authorized_socket_envelope_mm3_max": 0.000001,
+    "protected_common_volume_mm3": 0.000001,
+    "distance_numeric_epsilon_mm": 0.000001,
+    "m4_changed_volume_mm3_max": 0.000001,
+    "socket_frame_preservation_angular_error_deg_max": 0.000001,
+    "profile_across_flats_mm": 0.01,
+    "socket_roll_angular_error_deg_max": 0.1
+  },
+  "output": {
+    "directory": "reports/generated/cat-head-cad-validations/c002-rounded-terminal-profile-prototype-v2-release-validation-001",
+    "report": "reports/generated/cat-head-cad-validations/c002-rounded-terminal-profile-prototype-v2-release-validation-001/validation.json",
+    "writes_permitted": [
+      "validation.json"
+    ]
+  },
+  "release_holds": {
+    "complete_rail_socket_angle_and_rear_insertion_path": true,
+    "F_01": true,
+    "A_05": true,
+    "A_38": true,
+    "A_39": true,
+    "R1_side_service_opening": true,
+    "rear_cassette_aperture": true,
+    "cap_receiver": true,
+    "mirror": true,
+    "integration": true,
+    "export": true,
+    "printing": true
+  },
+  "execution_policy": {
+    "maximum_passes": 1,
+    "automatic_retry": false,
+    "repair": false,
+    "regeneration": false,
+    "candidate_save": false,
+    "candidate_modification": false,
+    "alternative_radius": false
+  }
+}

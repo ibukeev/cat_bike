@@ -1,0 +1,187 @@
+{
+  "schema_version": "cat-head-right-eye-rear-plate-hook-two-screw-retention-review-v7",
+  "review_id": "right-eye-rear-plate-hook-two-screw-retention-review-v7",
+  "tooling_revision": 2,
+  "authority": "REVIEW_ONLY__NON_AUTHORITATIVE__NOT_A_PRINT_SOURCE",
+  "date": "2026-08-19",
+  "user_instruction": "Keep the approved V6 eye, then secure its removable LED rear plate using the simplest serviceable arrangement: two hooks on one edge and two rear-accessible screws on the opposite edge.",
+  "approved_decision": {
+    "mechanism": "two plate-owned hooks captured by two carrier-owned ledges, plus two M2 x 6 screws into carrier-owned pilot bosses",
+    "hook_anchor": "the structured box-inner edge nearest the existing 4 mm wire-exit center",
+    "screw_anchor": "the structured box-inner edge opposite the hook edge",
+    "service_direction": "from inside the assembled head; remove two screws, pivot the screw edge rearward, then disengage the wire-side hooks",
+    "reason": "few loose parts, no nuts, no front-visible hardware, and the wired plate remains supported during service"
+  },
+  "basis": {
+    "approved_geometry": "right-eye-lens-integral-side-screw-flanges-review-v6",
+    "approved_visual_decision": "AWESOME",
+    "frozen": [
+      "V6 visible aperture and fitted lower panel",
+      "V6 orthogonal eye-box walls",
+      "V6 translucent lens and four integral side-screw flanges",
+      "V6 four hidden M2 x 4 lens screws",
+      "V6 four LED reference positions",
+      "V6 4 mm wire exit and route",
+      "relieved right head shell and aluminum interface"
+    ],
+    "changed": [
+      "removable rear plate local hook notches and two clearance holes",
+      "two integral rear-plate hook tongues",
+      "carrier rear locating/light-blocking rim",
+      "two carrier hook ledges",
+      "two carrier M2 pilot bosses"
+    ]
+  },
+  "inputs": {
+    "v6_generator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-lens-integral-side-screw-flanges-review-v6/generate_review.py",
+      "sha256": "c022bb980d440e613d131b2855fdbb8b3daef4e2d98d1a280583fe1e745d07ed"
+    },
+    "v6_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-lens-integral-side-screw-flanges-review-v6/contract.json",
+      "sha256": "0f8b727e5547f61b0f9ba05aa9b92084e4ab62b0695b9f5905cdf463063d4284"
+    },
+    "v6_feasibility_report": {
+      "path": "reports/generated/cat-head-cad-tooling/right-eye-lens-integral-side-screw-flanges-review-v6/feasibility.json",
+      "sha256": "7b0383b223aace45295cb2358f5869ad6f03ea9a811ccd111c73a8c7b352636b"
+    },
+    "v6_review_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-lens-integral-side-screw-flanges-review-v6/RIGHT_EYE_LENS_INTEGRAL_SIDE_SCREW_FLANGES_REVIEW_ONLY_V6.FCStd",
+      "sha256": "af557961d6909a5ec179114c1d9980c0125a481b54893f406a21be279d29d130"
+    },
+    "v6_review_validation": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-lens-integral-side-screw-flanges-review-v6/review-validation.json",
+      "sha256": "58521b45b9f040864638a1dcb255d8fc53b3a48cc5ceea34ec7e64e51267145e"
+    }
+  },
+  "dimensions_mm": {
+    "rear_plate_front_depth": 13.20,
+    "rear_plate_thickness": 1.50,
+    "rear_plate_radial_clearance": 0.25,
+    "locating_rim_front_depth": 12.55,
+    "locating_rim_rear_depth": 13.15,
+    "locating_rim_outer_overlap_into_wall": 0.15,
+    "locating_rim_inner_inset_from_plate_edge": 0.55,
+    "rear_plate_to_locating_rim_gap": 0.05,
+    "hook_count": 2,
+    "hook_tangent_fractions": [0.25, 0.75],
+    "hook_notch_width": 5.00,
+    "hook_notch_radial_depth": 1.65,
+    "hook_toe_width": 4.00,
+    "hook_toe_radial_start": 0.35,
+    "hook_toe_radial_end": 2.45,
+    "hook_toe_front_depth": 12.15,
+    "hook_toe_rear_depth": 12.45,
+    "hook_neck_radial_start": 1.65,
+    "hook_neck_radial_end": 2.45,
+    "hook_neck_front_depth": 12.15,
+    "hook_neck_rear_depth": 13.45,
+    "carrier_hook_ledge_width": 4.50,
+    "carrier_hook_ledge_radial_start": -0.20,
+    "carrier_hook_ledge_radial_end": 1.45,
+    "carrier_hook_ledge_front_depth": 12.50,
+    "carrier_hook_ledge_rear_depth": 13.45,
+    "hook_axial_clearance": 0.05,
+    "hook_radial_engagement": 1.10,
+    "rear_screw_count": 2,
+    "rear_screw_tangent_fractions": [0.30, 0.70],
+    "rear_screw_nominal_diameter": 2.00,
+    "rear_screw_length": 6.00,
+    "rear_screw_head_diameter": 3.80,
+    "rear_screw_head_height": 1.00,
+    "rear_plate_clearance_hole_diameter": 2.20,
+    "carrier_boss_pilot_diameter": 1.60,
+    "carrier_boss_tangent_width": 5.00,
+    "carrier_boss_radial_start": -0.15,
+    "carrier_boss_radial_end": 4.70,
+    "carrier_boss_center_radial_offset": 2.35,
+    "carrier_boss_front_depth": 8.60,
+    "carrier_boss_rear_depth": 13.05,
+    "rear_driver_corridor_diameter": 5.00,
+    "rear_driver_corridor_length": 12.00,
+    "pivot_review_angles_deg": [0.0, 2.0, 4.0],
+    "hook_disengagement_slide_mm": 1.20,
+    "hook_disengagement_slide_samples_mm": [0.0, 0.30, 0.60, 0.90, 1.20]
+  },
+  "gates": {
+    "inherit_all_v6_gates": true,
+    "required_hook_count": 2,
+    "required_rear_screw_count": 2,
+    "minimum_hook_radial_engagement_mm": 1.00,
+    "hook_axial_clearance_tolerance_mm": 0.01,
+    "minimum_hook_pullout_capture_mm3": 0.001,
+    "maximum_seated_rear_plate_carrier_collision_mm3": 0.000001,
+    "maximum_seated_hook_ledge_collision_mm3": 0.000001,
+    "maximum_locating_rim_gap_error_mm": 0.01,
+    "minimum_boss_material_around_pilot_mm": 1.20,
+    "minimum_boss_root_common_mm3": 0.05,
+    "minimum_ledge_root_common_mm3": 0.01,
+    "minimum_locating_rim_root_common_mm3": 0.10,
+    "maximum_plate_clearance_hole_residual_mm3": 0.000001,
+    "maximum_boss_pilot_residual_mm3": 0.000001,
+    "maximum_rear_screw_axis_alignment_error_mm": 0.000001,
+    "maximum_unintended_rear_screw_carrier_collision_mm3": 0.000001,
+    "maximum_rear_screw_plate_collision_mm3": 0.000001,
+    "maximum_rear_screw_shell_collision_mm3": 0.000001,
+    "maximum_rear_screw_led_collision_mm3": 0.000001,
+    "maximum_rear_screw_wire_collision_mm3": 0.000001,
+    "maximum_rear_screw_lens_collision_mm3": 0.000001,
+    "maximum_rear_screw_side_hardware_collision_mm3": 0.000001,
+    "maximum_driver_corridor_shell_collision_mm3": 0.000001,
+    "maximum_driver_corridor_eye_collision_mm3": 0.000001,
+    "maximum_new_retention_shell_collision_mm3": 0.000001,
+    "maximum_new_retention_led_collision_mm3": 0.000001,
+    "maximum_new_retention_wire_collision_mm3": 0.000001,
+    "maximum_new_retention_lens_collision_mm3": 0.000001,
+    "maximum_pivot_unintended_collision_mm3": 0.000001,
+    "maximum_pivot_full_carrier_collision_mm3": 0.000001,
+    "minimum_pivot_screw_edge_rearward_motion_mm": 1.00,
+    "maximum_hook_disengagement_slide_collision_mm3": 0.000001,
+    "minimum_final_hook_disengagement_clearance_mm": 0.05,
+    "maximum_v6_lens_symmetric_difference_mm3": 0.000001,
+    "maximum_v6_aperture_coordinate_shift_mm": 0.000000001,
+    "require_carrier_one_valid_closed_solid": true,
+    "require_rear_plate_one_valid_closed_solid": true,
+    "require_hook_edge_nearest_wire_exit": true,
+    "require_screw_edge_opposite_hook_edge": true,
+    "require_rear_access_only": true
+  },
+  "hardware": {
+    "quantity": 2,
+    "fastener": "M2 x 6 mm pan-head screw",
+    "plate_hole": "2.2 mm clearance",
+    "carrier_boss_hole": "1.6 mm pilot for gentle thread-forming engagement",
+    "tool": "PH0 screwdriver with a modeled 5.0 mm straight approach corridor",
+    "material": "opaque PETG carrier and rear plate; hand-tighten only",
+    "assembly": [
+      "Route the LED cable through the existing 4 mm port and strain-relieve it.",
+      "Place the two wire-side hook toes under their carrier ledges.",
+      "Pivot the opposite plate edge forward onto the continuous locating/light-blocking rim.",
+      "Install two M2 x 6 screws from the rear/inside of the head.",
+      "For service, remove only the two screws, pivot the screw edge rearward, and disengage the hooks."
+    ]
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-rear-plate-hook-two-screw-retention-review-v7",
+    "fcstd": "RIGHT_EYE_REAR_PLATE_HOOK_TWO_SCREW_RETENTION_REVIEW_ONLY_V7.FCStd",
+    "validation": "review-validation.json",
+    "views": [
+      "front.png",
+      "rear.png",
+      "side.png",
+      "inside-leds.png",
+      "lens-side-fasteners.png",
+      "rear-plate-seated.png",
+      "rear-plate-retention-exploded.png"
+    ]
+  },
+  "holds": [
+    "REVIEW_ONLY",
+    "NO_STL",
+    "NO_3MF",
+    "NO_GCODE",
+    "NO_CANONICAL_HEAD_MUTATION",
+    "NO_MIRROR",
+    "NO_PRINT_RELEASE_UNTIL_USER_VISUAL_LGTM"
+  ]
+}

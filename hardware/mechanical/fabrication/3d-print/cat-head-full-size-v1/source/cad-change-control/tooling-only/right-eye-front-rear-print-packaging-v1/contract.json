@@ -1,0 +1,150 @@
+{
+  "schema_version": "cat-head-right-eye-print-packaging-tooling-v1",
+  "package_id": "right-eye-front-lens-print-packaging-v1",
+  "authority": "TOOLING_ONLY__NO_EXPORT_NO_SLICE_NO_PRINT_RELEASE",
+  "source_release": {
+    "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/print-source/right-eye-front-lens-print-source-v1/RIGHT_EYE_FRONT_LENS_PRINT_SOURCE_V1.FCStd",
+    "fcstd_sha256": "2f74fb55ac69e6129d8a157d69b8e44884ffd076463b9c71ae834d2895fbcf2f",
+    "validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/print-source/right-eye-front-lens-print-source-v1/validation.json",
+    "validation_sha256": "d88fd8a79c530170dead881ea4f9fa5c46a4cdbae1cbe7ef3c9dfa24fff862b2",
+    "required_validation_status_prefix": "PASS",
+    "printing_authorized": true,
+    "parts": [
+      {
+        "id": "front_carrier",
+        "object_name": "PRINT_RELEASE__RIGHT_EYE_FRONT_CARRIER",
+        "stl_name": "CAT_HEAD_RIGHT_EYE_FRONT_CARRIER_PRINT_V1.stl",
+        "project_name": "CAT_HEAD_RIGHT_EYE_FRONT_CARRIER_PRINT_V1.3mf",
+        "profile": "profiles/front-carrier-conditioned-petg.ini",
+        "bed_face": "largest continuous rear mating-seat plane",
+        "bed_face_outward_normal": [-0.3093743710330279, 0.9105430240972069, -0.27422417802927535],
+        "visible_face": "up",
+        "material": "conditioned opaque PETG"
+      },
+      {
+        "id": "translucent_eye_glass",
+        "object_name": "PRINT_RELEASE__RIGHT_EYE_TRANSLUCENT_LENS",
+        "stl_name": "CAT_HEAD_RIGHT_EYE_TRANSLUCENT_LENS_PRINT_V1.stl",
+        "project_name": "CAT_HEAD_RIGHT_EYE_TRANSLUCENT_LENS_PRINT_V1.3mf",
+        "profile": "profiles/translucent-eye-glass-petg.ini",
+        "bed_face": "one full broad face, flat",
+        "bed_face_outward_normal": [0.3093743710330279, -0.9105430240972069, 0.27422417802927535],
+        "visible_face": "opposite broad face up",
+        "material": "natural or translucent PETG"
+      }
+    ]
+  },
+  "printer": {
+    "model": "enclosed Original Prusa MK4S",
+    "nozzle_diameter_mm": 0.4,
+    "conservative_build_envelope_mm": [240.0, 200.0, 210.0],
+    "required_xy_edge_reserve_each_side_mm": 10.0,
+    "prusaslicer_version": "2.7.4"
+  },
+  "geometry_gates": {
+    "required_solid_count_each": 1,
+    "require_valid": true,
+    "require_closed": true,
+    "require_clean_occt_check": true,
+    "minimum_wall_mm": 0.7,
+    "eye_glass_thickness_mm": 0.9,
+    "eye_glass_thickness_measurement_tolerance_mm": 0.01,
+    "require_exact_aperture": true,
+    "require_continuous_rear_eye_glass_seat": true
+  },
+  "mesh_gates": {
+    "linear_deflection_mm": 0.05,
+    "angular_deflection_deg": 10.0,
+    "required_connected_components_each": 1,
+    "maximum_boundary_edges": 0,
+    "maximum_nonmanifold_edges": 0,
+    "maximum_degenerate_facets": 0,
+    "maximum_duplicate_facets": 0,
+    "require_positive_volume": true,
+    "require_outward_normals": true,
+    "require_no_self_intersections": true,
+    "allow_automatic_repair": false,
+    "front_carrier_manufacturing_conditioning": {
+      "required": true,
+      "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+      "module_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+      "module_sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e",
+      "maximum_weld_distance_mm": 0.00002,
+      "maximum_weld_displacement_mm": 0.00002,
+      "hidden_seam_groove_width_mm": 0.025,
+      "automatic_repair": false,
+      "smoothing": false,
+      "hole_filling": false,
+      "remeshing": false,
+      "scaling": false
+    },
+    "translucent_eye_glass_manufacturing_conditioning": "none; raw lens mesh must pass",
+    "scale": 1.0
+  },
+  "materials": {
+    "front_carrier_default": "conditioned opaque PETG",
+    "front_carrier_reason": "better heat resistance and vibration toughness than PLA for a bike-mounted illuminated assembly",
+    "conditioning_policy": "Dry the opaque PETG to its filament maker's published guidance and keep it dry during the print; do not invent a universal temperature that could damage an unknown spool.",
+    "pla_policy": "prototype and indoor fit-check only; not the outdoor or vehicle-mounted default",
+    "eye_glass_default": "0.90 mm natural or translucent PETG, printed flat as six 0.15 mm layers"
+  },
+  "assembly": {
+    "eye_glass_seat": "continuous rear seat in the front carrier",
+    "primary_retention": "three tiny, evenly spaced dabs of clear neutral-cure silicone only",
+    "retention_dab_count": 3,
+    "adhesive_warning": "Do not use cyanoacrylate (CA); blooming can permanently haze the translucent eye glass.",
+    "fastener_warning": "Lens screws are prohibited; do not add unnecessary screws or drill the lens."
+  },
+  "slicer_defaults": {
+    "front_carrier": {
+      "layer_height_mm": 0.2,
+      "perimeters": 4,
+      "top_solid_layers": 5,
+      "bottom_solid_layers": 5,
+      "infill_percent": 25,
+      "infill_pattern": "gyroid",
+      "support_policy": "off by default; if the preview proves support is required, use snug build-plate-only support and keep it off aperture, lens seat, hooks, covered interfaces, and electronics cavities",
+      "outer_brim_mm": 4.0
+    },
+    "eye_glass": {
+      "layer_height_mm": 0.15,
+      "first_layer_height_mm": 0.15,
+      "exact_total_layers": 6,
+      "perimeters": 3,
+      "top_solid_layers": 6,
+      "bottom_solid_layers": 6,
+      "infill_percent": 100,
+      "infill_pattern": "rectilinear",
+      "support_policy": "none",
+      "outer_brim_mm": 2.0,
+      "ironing": false
+    }
+  },
+  "outputs": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-slicer-projects/right-eye-front-lens-print-packaging-v1",
+    "manifest": "packaging-validation-v1.json",
+    "gcode_policy": "No G-code is produced by this tooling. Slice only after visual 3MF review and an explicit print-release gate."
+  },
+  "missing_inputs": {
+    "hard_blockers": [],
+    "conservative_defaults_not_blocking_first_print": [
+      "Generic PETG on enclosed MK4S with 0.4 mm nozzle",
+      "conditioned opaque PETG front carrier",
+      "0.90 mm natural/translucent PETG eye lens",
+      "rear-seat-down carrier and flat eye-lens orientations",
+      "no supports unless the final slicer preview proves a need",
+      "three tiny clear neutral-cure silicone retention dabs"
+    ],
+    "physical_followup_not_blocking_mechanical_first_print": [
+      "actual LED hotspot and brightness test through the selected PETG",
+      "filament-specific temperature and flow calibration",
+      "silicone compatibility test on a scrap lens coupon"
+    ]
+  },
+  "release_holds": [
+    "No candidate is opened or mutated by contract-only preflight.",
+    "No STL or 3MF unless release-ready preflight passes against the pinned print source.",
+    "No generic or automatic mesh repair, scaling, G-code generation, or unreviewed geometry substitution.",
+    "The front carrier must use only the pinned deterministic micron-weld-and-zero-area manufacturing conditioning."
+  ]
+}

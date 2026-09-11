@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="354mm"
+ height="179mm"
+ viewBox="-177 -89.5
+ 354 179">
+ <title>V0.4-M2 compound lower-cut wrap template</title>
+ <style>
+  .outline{fill:#eaf1f5;stroke:#000;stroke-width:.25}
+  .adapter{fill:none;stroke:#8a2be2;stroke-width:.28}
+  .shell{fill:none;stroke:#126ec2;stroke-width:.28}
+  .shoe{fill:none;stroke:#e46c0a;stroke-width:.28}
+  .center{fill:none;stroke:#777;stroke-width:.18;stroke-dasharray:2 2}
+  .dim{fill:none;stroke:#c41e3a;stroke-width:.18}
+  .note{font:3px monospace;fill:#111}
+  .warn{font:3px monospace;fill:#c41e3a}
+ </style>
+ <g transform="scale(1,-1)"><polyline class="dim" points="-37.6348,-38 -39.4084,-19 -30.3652,0 -28.5916,19 -37.6348,38"/><line class="center" x1="-34" y1="-38" x2="-34" y2="38"/><line class="center" x1="-46" y1="-38" x2="-22" y2="-38"/><line class="center" x1="-46" y1="-19" x2="-22" y2="-19"/><line class="center" x1="-46" y1="0" x2="-22" y2="0"/><line class="center" x1="-46" y1="19" x2="-22" y2="19"/><line class="center" x1="-46" y1="38" x2="-22" y2="38"/><text class="note" x="-47" y="-47" transform="scale(1,-1)">LEFT RAIL</text><text class="note" x="-47" y="48" transform="scale(1,-1)">seam / inner-low</text><polyline class="dim" points="28.5916,-38 30.3652,-19 39.4084,0 37.6348,19 28.5916,38"/><line class="center" x1="34" y1="-38" x2="34" y2="38"/><line class="center" x1="22" y1="-38" x2="46" y2="-38"/><line class="center" x1="22" y1="-19" x2="46" y2="-19"/><line class="center" x1="22" y1="0" x2="46" y2="0"/><line class="center" x1="22" y1="19" x2="46" y2="19"/><line class="center" x1="22" y1="38" x2="46" y2="38"/><text class="note" x="21" y="-47" transform="scale(1,-1)">RIGHT RAIL</text><text class="note" x="21" y="48" transform="scale(1,-1)">seam / inner-low</text><text class="note" x="-150" y="-58" transform="scale(1,-1)">1:1 COMPOUND LOWER-CUT WRAP | four 19 mm faces | dashed vertical = bearing centerline</text><text class="note" x="-150" y="-53" transform="scale(1,-1)">Face order from seam: inner-low, outer-low, outer-high, inner-high, back to seam</text><text class="warn" x="-150" y="58" transform="scale(1,-1)">Fit plug first; wrap/mark matched rail+plug; leave proud and hand-fit to full angle-base contact</text><line class="dim" x1="-25" y1="-67" x2="25" y2="-67"/><text class="note" x="-25" y="72" transform="scale(1,-1)">50 mm PRINT-CALIBRATION LINE</text></g>
+</svg>

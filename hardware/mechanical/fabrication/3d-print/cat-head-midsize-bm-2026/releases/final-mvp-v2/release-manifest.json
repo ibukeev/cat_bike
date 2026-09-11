@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "release_id": "CAT_HEAD_SMALL_V1_FINAL_MVP_V2_USER_CUTTER_HOLES",
+  "release_name": "Cat Head Small V1 Final MVP V2 — User Cutter Holes",
+  "release_date": "2026-08-27",
+  "status": "FINAL_MVP_V2_CUTTER_HOLES_VALIDATED__SLICER_FIT_PENDING",
+  "supersedes_for_new_slicer_tests": "CAT_HEAD_SMALL_V1_FINAL_MVP_V1",
+  "approval": {
+    "approved_by": "user",
+    "approval_statement": "Use cutters and cut holes in the head using them. Afterwards create a final head body for export in STL etc for printing.",
+    "approved_source_file": "CAT_HEAD_MEDIUM_Ilya_FINAL_EDITS.FCStd",
+    "approved_operation": "Subtract the cumulative four-solid Cutters/Pad003 body exactly once from the approved Rev108 head.",
+    "approval_scope": [
+      "four_user_cutter_holes",
+      "new_final_part_design_head_body",
+      "integrated_head_stl",
+      "four_unchanged_translucent_pane_stls",
+      "editable_freecad_output"
+    ]
+  },
+  "canonical_geometry": {
+    "source_iteration": "Rev108 user-edited final MVP",
+    "output_iteration": "Rev112",
+    "tooling_revision": 1,
+    "immutable_artifacts_are_referenced_not_duplicated": true,
+    "source": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-small-v1/review/editable-base-v1/eye-mouth-stops-print-package-rev108-review-2026-08-27/CAT_HEAD_MEDIUM_Ilya_FINAL_EDITS.FCStd",
+      "sha256": "8114b71e27ff0e90a68d21bfc0b77f894bcfb8800760dd74a7e9a8a6cccfeb24"
+    },
+    "artifacts": {
+      "editable_freecad": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/CAT_HEAD_MEDIUM_ILYA_FINAL_CUT_HOLES_REV112.FCStd",
+        "sha256": "4a0ae787902be81ecccfadedd46603064b4729de4b71231e17e63add87477e85"
+      },
+      "final_head_stl": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/CAT_HEAD_MEDIUM_ILYA_FINAL_HEAD_CUT_HOLES_REV112.stl",
+        "sha256": "eae4d27e8f18762e0deb6fe7bf95d62fb9a99a93ed8decc2eb8aad9af85891c6"
+      },
+      "right_eye_pane_stl": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/CAT_HEAD_MEDIUM_RIGHT_EYE_TRANSLUCENT_PANE_REV112.stl",
+        "sha256": "739f584563eb2797eaa72fd9d4d9ebbfa7df3ffe62080475511f21bf4b410ee5"
+      },
+      "left_eye_pane_stl": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/CAT_HEAD_MEDIUM_LEFT_EYE_TRANSLUCENT_PANE_REV112.stl",
+        "sha256": "62380023c9379d2c1a1f984fa453a3187870f04ce150f745d9861e0060141d84"
+      },
+      "mouth_TRI005_pane_stl": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/CAT_HEAD_MEDIUM_MOUTH_TRI005_TRANSLUCENT_PANE_REV112.stl",
+        "sha256": "3279a271f8d3d86f94466e256732d4541b9ead051dfe10b8596ab8f877ac3356"
+      },
+      "mouth_TRI006_pane_stl": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/CAT_HEAD_MEDIUM_MOUTH_TRI006_TRANSLUCENT_PANE_REV112.stl",
+        "sha256": "b9c7a36e377b50da2704a41aca8d81b018764a718b4c00a9361283a0e82061df"
+      },
+      "generation_report": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/generation-report.json",
+        "sha256": "249f40c16c61f74cad011389c3a6929ca4b86a39b9448b1d0ccc6ee28f727716"
+      },
+      "validation_report": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/validation-report.json",
+        "sha256": "7442b92525ea709b706de98681d581cdba7428e09869a0303bd2b54a9d6ca9c9"
+      },
+      "occt_bop_check_report": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/occt-bop-check-report.json",
+        "sha256": "18911b21a8dc4b98e93509d838e87ce567e520d2a7692e072296b12104f40b45"
+      },
+      "front_evidence_png": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/rev112-front-final-head-cut-holes.png",
+        "sha256": "cd0c6d4bf6eae5f98bf8a01c4c66bbc4f198e06db718d931b88fe99f1659ac4f"
+      },
+      "isometric_evidence_png": {
+        "path": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/rev112-isometric-final-head-and-panes.png",
+        "sha256": "83f719a824d33d52bf6f4ecc4fe271fa0d7437ddd2426484182c7f526074eb3b"
+      }
+    }
+  },
+  "approved_design_contract": {
+    "boolean_method": "TARGET_MINUS_CUMULATIVE_CUTTER_BODY_ONCE",
+    "user_cutter_count": 4,
+    "individual_pad_length_mm": -10.0,
+    "final_head_body_type": "PartDesign::Body",
+    "final_head_solid_count": 1,
+    "integrated_stop_count": 12,
+    "pane_count": 4,
+    "pane_thickness_mm": 2.0,
+    "panes_changed_from_rev108": false,
+    "rear_zip_tie_slot_count": 2,
+    "rear_zip_tie_slot_nominal_mm": [12.0, 5.0],
+    "slicer_project_changed": false
+  },
+  "validation_summary": {
+    "source_sha256_unchanged": true,
+    "individual_cutter_source_overlaps_mm3": [
+      1405.8654821155703,
+      1400.500520861807,
+      1600.3535521786196,
+      1600.3535521786123
+    ],
+    "total_removed_volume_mm3": 6007.073107457836,
+    "cutter_compound_residual_mm3": 0.0,
+    "material_added_outside_rev108_mm3": 0.0,
+    "right_zip_tie_slot_corridor_residual_mm3": 0.0,
+    "left_zip_tie_slot_corridor_residual_mm3": 0.0,
+    "head_valid_closed_solid": true,
+    "head_solid_count": 1,
+    "head_volume_mm3": 348673.5134495925,
+    "head_occt_bop_errors": 0,
+    "head_mesh_manifold": true,
+    "head_mesh_connected_parts": 1,
+    "head_stl_facets": 43518,
+    "pane_stl_hashes_identical_to_rev108": true,
+    "pane_meshes_manifold": true,
+    "each_pane_mesh_connected_parts": 1,
+    "contract_tests_passed": 8
+  },
+  "release_scope": {
+    "final_mvp_v2_geometry": true,
+    "ready_for_user_slicer_fit_test": true,
+    "printer_profile_approved": false,
+    "material_profile_approved": false,
+    "slicer_orientation_approved": false,
+    "physical_pane_fit_approved": false,
+    "gcode_released": false,
+    "fabrication_or_riding_release": false
+  },
+  "slicer_test_handoff": {
+    "state": "READY_FOR_USER_TEST",
+    "preserved_unmodified_project_path": "hardware/mechanical/fabrication/3d-print/cat-head-small-v1/review/editable-base-v1/eye-mouth-stops-print-package-rev108-review-2026-08-27/Final MVP.3mf",
+    "included_in_final_mvp_v2_release": false,
+    "reason": "The existing 3MF is user-owned in-progress slicer work and was not modified. Import the Rev112 head STL into a new or copied slicer project.",
+    "next_gate": "Record slicer fit, orientation, support, and physical pane/zip-tie results without changing the Rev112 geometry."
+  },
+  "unrelated_workstreams": {
+    "full_size_shell": "unchanged",
+    "aluminum_interface_CAT_HEAD_SHELL_ALUMINUM_V0_5": "unchanged_and_not_fabrication_released"
+  }
+}

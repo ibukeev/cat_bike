@@ -1,0 +1,101 @@
+{
+  "schema_version": "cat-head-right-eye-carrier-structural-root-repair-v1",
+  "contract_id": "right-eye-carrier-structural-root-repair-v1",
+  "tooling_revision": 2,
+  "authority": "REVIEW_ONLY__PHYSICAL_FAILURE_REPAIR__NOT_YET_A_PRINT_SOURCE",
+  "date": "2026-08-20",
+  "user_evidence": {
+    "finding": "The printed right carrier separated at the front-frame and box-wall roots.",
+    "printed_gcode_path": "/home/bsk/3d printing/CatBike/RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_V1_0.4n_0.2mm_ASA_MK4IS_49m.gcode",
+    "printed_gcode_sha256": "9e8dc42f9e22f96e396be05cc4d4635f113db1e32a1a6a4cdaa5d9f286edc586",
+    "gcode_objects": [
+      "RIGHT_EYE_CARRIER_WITH_MANUAL_BOTTOM_FLANGE_V1.stl",
+      "RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_V1.stl"
+    ],
+    "material": "ASA",
+    "layer_height_mm": 0.2,
+    "perimeters": 3,
+    "infill": "15% grid"
+  },
+  "inputs": {
+    "approved_v7_generator": {
+      "path": "source/cad-change-control/review-only/right-eye-rear-plate-hook-two-screw-retention-review-v7/generate_review.py",
+      "sha256": "467ea327c52b68cbd698c15ffc67d371a412036a36326341a0efbdf9d61a6258"
+    },
+    "approved_v7_contract": {
+      "path": "source/cad-change-control/review-only/right-eye-rear-plate-hook-two-screw-retention-review-v7/contract.json",
+      "sha256": "74761fb6d96adf71919c6594a965021452336439342e43d389b68402a1ea9887"
+    },
+    "approved_v7_review": {
+      "path": "output/70-freecad-pilots/review-only/right-eye-rear-plate-hook-two-screw-retention-review-v7/RIGHT_EYE_REAR_PLATE_HOOK_TWO_SCREW_RETENTION_REVIEW_ONLY_V7.FCStd",
+      "sha256": "f18476d66a6bfc5ffb65a664b9c1070df7f7b111d9a358444ab74be0a65b8a4c"
+    },
+    "failed_final_right_fcstd": {
+      "path": "output/FINAL_PRINT_SET/01-eye-modules/right/source/RIGHT_EYE_MANUAL_PRINT_MODULES_V1.FCStd",
+      "sha256": "8d5027656960e9f1131118138b071d467a071cd67ae91d7b1a22fbe79c7be4d4"
+    },
+    "failed_carrier_stl": {
+      "path": "output/FINAL_PRINT_SET/01-eye-modules/right/source/RIGHT_EYE_CARRIER_WITH_MANUAL_BOTTOM_FLANGE_V1.stl",
+      "sha256": "ef767bb90949d1dd59223d2b5fd33eb5dd6955421b6799710b65ae3e304a0172"
+    },
+    "rear_plate_stl": {
+      "path": "output/FINAL_PRINT_SET/01-eye-modules/right/source/RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_V1.stl",
+      "sha256": "17c234f8b03a2cd9fea78e3bd421618fcdddccbc88d0a3b583f89ea0b6fa6d38"
+    },
+    "mesh_topology_checker": {
+      "path": "source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+      "sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e"
+    }
+  },
+  "source_objects": {
+    "carrier": "RIGHT_EYE_CARRIER_WITH_MANUAL_BOTTOM_FLANGE",
+    "lens": "RIGHT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES",
+    "rear_plate": "RIGHT_EYE_REMOVABLE_LED_REAR_PLATE"
+  },
+  "repair_scope": {
+    "right_side_first": true,
+    "preserve_failed_carrier_as_additive_base": true,
+    "preserve_manual_bottom_flange_exactly": true,
+    "preserve_visible_aperture_exactly": true,
+    "preserve_lens_and_four_integral_lens_flange_geometry_exactly": true,
+    "preserve_rear_plate_and_retention_geometry_exactly": true,
+    "preserve_led_and_wire_interfaces_exactly": true,
+    "allowed_change": "add hidden continuous structural material at the front-frame, transition-shelf, and perpendicular-wall roots, then subtract only the exact pinned shell and existing side-screw occupied volumes from that new material",
+    "new_material_exclusion_policy": "sequential exact-owner subtraction; never cut the failed carrier, manual flange, lens, or rear plate",
+    "left_side": "mirror only after the repaired right carrier passes physical and visual review"
+  },
+  "repair_dimensions_mm": {
+    "front_frame_spine_front_depth": 1.70,
+    "front_frame_spine_rear_depth": 3.70,
+    "structural_backing_outer_offset_from_aperture": 0.80,
+    "structural_backing_front_depth": 2.10,
+    "structural_backing_rear_depth": 3.70,
+    "mesh_linear_deflection": 0.08,
+    "mesh_angular_deflection": 0.35
+  },
+  "future_release_gates": {
+    "carrier_valid_closed_one_solid": true,
+    "carrier_mesh_one_manifold_component": true,
+    "zero_removed_volume_from_failed_carrier_mm3": 0.000001,
+    "zero_lens_intersection_mm3": 0.000001,
+    "zero_rear_plate_intersection_mm3": 0.000001,
+    "zero_new_shell_intersection_mm3": 0.000001,
+    "minimum_wall_root_positive_overlap_mm3": 80.0,
+    "minimum_front_frame_root_positive_overlap_mm3": 40.0,
+    "minimum_spine_to_backing_positive_overlap_mm3": 40.0,
+    "minimum_backing_to_transition_positive_overlap_mm3": 20.0,
+    "minimum_continuous_structural_root_depth_mm": 1.6,
+    "require_fixed_view_human_review": true,
+    "no_stl_3mf_or_final_set_overwrite_before_review": true
+  },
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/right-eye-carrier-structural-root-repair-v1",
+    "fcstd": "RIGHT_EYE_CARRIER_STRUCTURAL_ROOT_REPAIR_REVIEW_ONLY_V1.FCStd",
+    "validation": "validation.json",
+    "views": [
+      "assembled-context.png",
+      "structural-root-highlight.png",
+      "rear-service-context.png"
+    ]
+  }
+}

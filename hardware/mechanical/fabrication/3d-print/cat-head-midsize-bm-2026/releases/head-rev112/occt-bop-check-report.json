@@ -1,0 +1,7 @@
+{
+  "status": "PASS_OCCT_BOP_CHECK",
+  "candidate_fcstd": "reports/generated/cat-head-cad-iterations/small-v1-final-user-cutter-holes-rev112/CAT_HEAD_MEDIUM_ILYA_FINAL_CUT_HOLES_REV112.FCStd",
+  "candidate_sha256": "4a0ae787902be81ecccfadedd46603064b4729de4b71231e17e63add87477e85",
+  "object": "PRINT__CAT_HEAD_FINAL_CUT_HOLES_REV112",
+  "errors": []
+}

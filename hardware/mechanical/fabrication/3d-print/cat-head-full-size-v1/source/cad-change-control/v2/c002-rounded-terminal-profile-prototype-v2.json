@@ -1,0 +1,261 @@
+{
+  "schema_version": "2.0",
+  "project": "cat-head-full-size-v1",
+  "iteration_id": "c002-rounded-terminal-profile-prototype-v2",
+  "state": "approved_for_one_candidate",
+  "baseline_id": "right-upper-c009-deletion-review-v34",
+  "user_approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-17",
+    "exact_instruction": "Replace only the C002 internal socket profile with the Route 2 rounded-terminal 21 mm profile. Localized additive C002 corner infill is explicitly authorized as part of this single profile replacement. Do not modify any other object. Once that tooling preflight passes, authorize V2 immediately. No additional aluminum design audit is needed."
+  },
+  "target_object": "RETAINED_RIGHT_UPPER_C002_V34",
+  "allowed_mutations": [
+    {
+      "kind": "replace_geometry",
+      "object": "RETAINED_RIGHT_UPPER_C002_V34",
+      "parameters": {
+        "purpose": "One coherent C002 internal-profile replacement: restore only the terminal portion of the existing 20.50 mm square void, then subtract the final parametric Route 2 void. No other object or exterior surface may change.",
+        "route_2_evidence": {
+          "path": "reports/generated/cat-head-cad-audits/c002-rounded-corner-socket-feasibility-audit-001/rounded-socket-evidence.json",
+          "sha256": "da8f8e51e7aaf27ba93e364bd7ade179c7926411fd899d87a1e950a2342ba022"
+        },
+        "interface_reference": {
+          "path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+          "sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79",
+          "revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2"
+        },
+        "v1_disposition": {
+          "iteration_id": "c002-rounded-terminal-profile-prototype-v1",
+          "output_directory": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v1",
+          "candidate_fcstd": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v1/candidate.FCStd",
+          "candidate_sha256": "0a86e1253e9d652ecdd317ac01fbe25fe70b3b91a09003dcd481b2ccf9f1fb3b",
+          "runner_result": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v1/runner-result.json",
+          "runner_result_sha256": "30873de57d47da0a81b3ef251e6360fb5f88e2e75828346af0201a76923eba7e",
+          "status": "NO_OP_SNAPSHOT__QUARANTINED",
+          "geometry_construction_started": false,
+          "role": "forensic no-op snapshot only; never a geometry input, repair source, or retry candidate"
+        },
+        "tooling_dependencies": {
+          "ownership": "Use the eye workflow's shared V2 runtime and preservation implementation; no C002-specific preservation implementation is permitted.",
+          "shared_validator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_iteration_v2.py",
+            "sha256": "bb5df3fd5974118b0007c7c3768edbc7a6066dd276ea873d5417aa59b3bc5c64"
+          },
+          "shared_runner": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/run_iteration_v2.py",
+            "sha256": "67f3c56ea377a90097a61df9618b8978c00d73b830c9e71e1867a639cdaae1c5"
+          },
+          "shared_preservation_module": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/fcstd_preservation_v2.py",
+            "sha256": "41a2df91f10dee979b18680fb3f9d4cc3806b287b46c74066f1c96614f1d715c"
+          },
+          "shared_preservation_comparator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/compare_fcstd_preservation_v2.py",
+            "sha256": "260e71cb5b95777f7dd11101217c0a06cb58736645e8967b9f8aa85c9695f6e4"
+          },
+          "route_2_geometry_implementation": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_c002_rounded_terminal_profile_prototype_v1.py",
+            "sha256": "c3cd3fb631d48bdab44a72e99f99e9f9d44e531e0bc1ef8918008f6bb5416b70",
+            "role": "hash-pinned construction and review functions only; the V1 main function and its raw face-index lookups are never invoked"
+          }
+        },
+        "rail_frame": {
+          "origin_head_mm": [
+            54.70050568,
+            117.27189672,
+            194.91259776
+          ],
+          "t_axis": [
+            0.09294010420450324,
+            -0.948741063729077,
+            0.3020803386926656
+          ],
+          "u_axis": [
+            0.9956717014309767,
+            0.08855940487145032,
+            -0.028197425030638226
+          ],
+          "v_axis": [
+            0.0,
+            0.3033935164156183,
+            0.9528653494576063
+          ],
+          "handedness": "u_cross_v_equals_t",
+          "roll_reference": "head_x_projected"
+        },
+        "anchors": {
+          "mouth_plane_t_mm": -29.2,
+          "stop_plane_t_mm": 0.0,
+          "primary_termination_face": "RETAINED_RIGHT_UPPER_C002_V34.Face10",
+          "face10_expected_area_mm2": 1056.25,
+          "face10_expected_normal": "plus_t",
+          "face10_offset_along_minus_t_mm": 6.0,
+          "primary_termination_definition": "rail-frame origin and approved t/u/v axes, with the supporting plane of mapped-or-signature-resolved Face10 offset 6.0000 mm along -t",
+          "corroborating_witness_face": "RETAINED_RIGHT_UPPER_C002_V34.Face164",
+          "face164_expected_area_mm2": 420.25,
+          "face164_expected_centroid_head_mm": [54.70050568, 117.27189672, 194.91259776],
+          "face164_expected_normal": "minus_t",
+          "face164_role": "corroborating current-cavity witness only; never a raw face-list index or primary termination datum",
+          "area_verification": "compare at the approved 0.01 mm2 evidence precision with the unchanged 0.000001 mm2 comparison tolerance; diagnostics retain the raw current-runtime area",
+          "m4_station_t_mm": -19.2
+        },
+        "profile": {
+          "current_straight_across_flats_mm": 20.5,
+          "straight_across_flats_mm": 21.0,
+          "mouth_across_flats_mm": 23.0,
+          "lead_in_depth_mm": 1.0,
+          "lead_in_flat_angle_deg": 45.0,
+          "mouth_t_mm": -29.2,
+          "lead_in_transition_t_mm": -28.2,
+          "stop_t_mm": 0.0,
+          "exact_clear_depth_mm": 29.2,
+          "structural_length_attribution_mm": 30.0,
+          "end_overlap_mm": 0.8,
+          "back_face_offset_along_minus_t_mm": 6.0,
+          "terminal_radius_function": "r(t)=0 for t<=-z; r(t)=R*(t+z)/z for -z<=t<=0",
+          "terminal_stop_radius_mm": 4.86800508953476,
+          "rounded_transition_length_mm": 1.5946280340465242,
+          "transition_start_t_mm": -1.5946280340465242,
+          "worst_insertion_path_radius_mm": 3.341628722883999,
+          "additive_infill_start_t_mm": -1.315026813390122,
+          "additive_infill_axial_length_mm": 1.315026813390122,
+          "finished_minimum_cavity_to_root_ligament_mm": 2.4
+        },
+        "protected_root": {
+          "owner": "RETAINED_RIGHT_UPPER_C042_V34",
+          "definition": "exact baseline RETAINED_RIGHT_UPPER_C002_V34 intersection RETAINED_RIGHT_UPPER_C042_V34",
+          "exact_common_volume_mm3": 638.7931971571395,
+          "preservation": "shape-identical by construction; restoration stays inside the old cavity and the target void remains disjoint by the approved 2.4 mm Route 2 screen"
+        },
+        "m4_tunnel": {
+          "preservation": "retain the existing void exactly; do not recut, move, resize, or refill it",
+          "nominal_clearance_diameter_mm": 4.5,
+          "station_t_mm": -19.2,
+          "axis": "u_axis"
+        },
+        "physical_prototype_rail": {
+          "outside_across_flats_mm": 19.05,
+          "minimum_outside_corner_radius_mm": 1.2198772807567804,
+          "assumption": "physical tube outside corner radius is at least the stated minimum"
+        },
+        "rail_review_stations_t_mm": {
+          "mouth": -29.2,
+          "terminal_transition_start": -1.5946280340465242,
+          "seated_rail_end": -0.5,
+          "stop_plane": 0.0,
+          "seated_stop_clearance_mm": 0.5
+        },
+        "required_invariants": [
+          "preserve exact C002 intersection C042 common and 638.7931971571395 mm3 volume",
+          "preserve C042 completely",
+          "preserve the M4 tunnel exactly",
+          "preserve rail axis and roll",
+          "preserve target placement and exterior shell with zero exterior deviation",
+          "preserve every non-target object's existence, internal name, label, type, shape, placement, visibility, and group membership",
+          "finished minimum cavity-to-root ligament is at least 2.4 mm"
+        ],
+        "prohibited": [
+          "3.0 mm ligament variant",
+          "4.0 mm ligament variant",
+          "R1 service opening",
+          "rejected historical 19-face wall set",
+          "eye modification",
+          "C001 modification",
+          "aluminum modification",
+          "cap or receiver geometry",
+          "mirror",
+          "production union",
+          "STL or 3MF export",
+          "slicing, G-code, printing, promotion, commit, or V34 modification"
+        ],
+        "temporary_review_geometry_policy": "The baseline void, target void, terminal infill, protected common, section solids, and rail gauges are in-memory render references only and must not be added to the saved FCStd.",
+        "review_artifacts": {
+          "longitudinal_socket_section": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/longitudinal-socket-section.png",
+          "blind_end_rounded_corner_close_up": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/blind-end-rounded-corner-close-up.png",
+          "c002_c042_protected_root_overlay": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/c002-c042-protected-root-overlay.png",
+          "baseline_candidate_profile_overlay": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/baseline-versus-candidate-profile-overlay.png",
+          "rail_position_mouth": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/rail-position-mouth.png",
+          "rail_position_transition": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/rail-position-terminal-transition.png",
+          "rail_position_seated_stop": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/rail-position-seated-stop.png"
+        }
+      }
+    }
+  ],
+  "protected_objects": {
+    "mode": "all_except_target",
+    "invariants": [
+      "existence",
+      "internal_name",
+      "label",
+      "type",
+      "shape",
+      "placement",
+      "visibility",
+      "group_membership"
+    ]
+  },
+  "budget": {
+    "fresh_chat_required": true,
+    "resume_previous_chat": false,
+    "max_generation_seconds": 300,
+    "max_candidates": 1,
+    "max_repair_attempts": 0,
+    "automatic_retry": false
+  },
+  "runtime": {
+    "manifest_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+    "manifest_sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+  },
+  "generator": {
+    "script_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_c002_rounded_terminal_profile_prototype_v2.py",
+    "script_sha256": "f821d8620ef2c307dcdef238db642a69150bce0fbdd49b652f1f1021c7db1847",
+    "arguments": [
+      "--baseline",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34.json",
+      "--contract",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/c002-rounded-terminal-profile-prototype-v2.json"
+    ],
+    "writes_only_output_directory": true
+  },
+  "review_gate": {
+    "required_views": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "top",
+      "bottom"
+    ],
+    "human_visual_approval_required": true,
+    "visual_approval_status": "pending",
+    "independent_verification_required": true,
+    "generator_may_write_validation": false,
+    "run_occt_before_visual_approval": false
+  },
+  "output": {
+    "directory": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2",
+    "candidate_fcstd": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/candidate.FCStd",
+    "no_op_snapshot_fcstd": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/no-op-snapshot.FCStd",
+    "review_files": {
+      "front": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/front.png",
+      "rear": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/rear.png",
+      "left": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/left.png",
+      "right": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/right.png",
+      "top": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/top.png",
+      "bottom": "reports/generated/cat-head-cad-iterations/c002-rounded-terminal-profile-prototype-v2/review/bottom.png"
+    }
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "three_mf": false,
+    "slicing": false,
+    "gcode": false,
+    "print": false,
+    "commit": false,
+    "promotion": false
+  }
+}

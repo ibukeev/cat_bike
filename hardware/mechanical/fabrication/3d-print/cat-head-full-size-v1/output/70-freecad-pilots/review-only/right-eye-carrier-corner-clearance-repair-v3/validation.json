@@ -1,0 +1,276 @@
+{
+  "authority": "REVIEW_ONLY__V2_WITHDRAWN__NOT_A_PRINT_SOURCE",
+  "checks": {
+    "backing_has_large_positive_transition_root": true,
+    "backing_has_large_positive_wall_root": true,
+    "bezel_has_large_positive_spine_root": true,
+    "candidate_adds_no_deep_occt_defects": true,
+    "candidate_is_one_valid_closed_solid": true,
+    "candidate_mesh_is_one_closed_manifold_component": true,
+    "candidate_volume_balance_is_exact": true,
+    "clearance_notch_removes_positive_v2_spine_material": true,
+    "corner_owner_has_no_contact_section": true,
+    "exact_v2_structural_backing_is_retained": true,
+    "front_filler_has_large_positive_spine_root": true,
+    "global_full_depth_span_is_preserved": true,
+    "lens_surround_has_large_positive_spine_root": true,
+    "new_material_has_no_shell_section_edges": true,
+    "new_material_has_required_clearance_to_every_shell_owner": true,
+    "new_material_has_zero_positive_shell_overlap": true,
+    "opening_connector_has_large_positive_spine_root": true,
+    "reinforcement_is_one_valid_closed_solid": true,
+    "repair_clears_lens_rear_hardware_leds_and_wire": true,
+    "source_carrier_and_manual_flange_are_additively_preserved": true,
+    "spine_has_large_positive_backing_root": true,
+    "spine_is_one_valid_closed_solid": true
+  },
+  "elapsed_seconds": 33.19153708103113,
+  "failed_checks": [],
+  "feasibility_report_sha256": "f2fda661a0371820b8970e386f7b26ca3f213444218246e1bb07289cd67a2e70",
+  "io_trace": {
+    "candidate_exists": false,
+    "document_save_called": false,
+    "final_assertions_performed": true,
+    "geometry_export_created": false,
+    "metadata_assignment_performed": true,
+    "production_output_created": false,
+    "recompute_performed": true,
+    "review_saved": true,
+    "save_as_called": false,
+    "target_assignment_performed": true
+  },
+  "measurements": {
+    "added_structural_material_mm3": 531.7867119287467,
+    "added_to_leds_common_mm3": 0.0,
+    "added_to_lens_common_mm3": 0.0,
+    "added_to_rear_plate_common_mm3": 0.0,
+    "added_to_rear_screws_common_mm3": 0.0,
+    "added_to_side_screws_common_mm3": 0.0,
+    "added_to_wire_common_mm3": 0.0,
+    "candidate_carrier": {
+      "area_mm2": 10378.692294225335,
+      "bbox_maximum_mm": [
+        103.70903541108439,
+        97.456280459535,
+        177.16672769092378
+      ],
+      "bbox_minimum_mm": [
+        32.582715956493104,
+        49.82680664068036,
+        119.1471641026206
+      ],
+      "closed": true,
+      "deep_check_messages": [],
+      "face_count": 124,
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 5575.014164388362
+    },
+    "clearance_box_maximum_world_mm": [
+      36.47628050201239,
+      53.53217039868513,
+      127.65882478700713
+    ],
+    "clearance_box_minimum_world_mm": [
+      32.116827841961644,
+      48.60706152387267,
+      123.65017980822562
+    ],
+    "corner_cleared_spine": {
+      "area_mm2": 1975.4444992383565,
+      "bbox_maximum_mm": [
+        100.08594842079545,
+        91.16797233405991,
+        176.54395763335296
+      ],
+      "bbox_minimum_mm": [
+        33.014146542166024,
+        50.43627382869739,
+        124.6181169233996
+      ],
+      "closed": true,
+      "deep_check_messages": [],
+      "face_count": 14,
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 792.2160914226625
+    },
+    "corner_owner_new_material_clearance_mm": 0.5628441175178516,
+    "corner_owner_section_edge_count": 0,
+    "corner_owner_section_vertex_count": 0,
+    "global_full_depth_spine_span_mm": 4.200000017484356,
+    "manual_flange_missing_mm3": 0.0,
+    "mesh": {
+      "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+      "boundary_edges": 0,
+      "bounds_mm": {
+        "maximum": [
+          103.70903778076172,
+          97.45628356933594,
+          177.16673278808594
+        ],
+        "minimum": [
+          32.58271408081055,
+          49.826805114746094,
+          119.14716339111328
+        ]
+      },
+      "connected_components": 1,
+      "degenerate_facets": 0,
+      "duplicate_facets": 0,
+      "facets": 1942,
+      "nonmanifold_edges": 0,
+      "outward_normals": true,
+      "self_intersection_count": 0,
+      "signed_volume_mm3": 5575.318332115473,
+      "vertices": 957
+    },
+    "minimum_new_material_to_any_shell_clearance_mm": 0.5628441175178516,
+    "replacement_chain_roots": {
+      "backing_to_transition_mm3": 27.027802073044768,
+      "backing_to_walls_mm3": 319.96119527609505,
+      "spine_to_backing_mm3": 180.60258687447262,
+      "spine_to_bezel_mm3": 58.95666393814595,
+      "spine_to_front_filler_mm3": 103.71263446972283,
+      "spine_to_lens_surround_mm3": 132.46014817716522,
+      "spine_to_opening_connector_mm3": 125.4632670382928
+    },
+    "shell_clearance_records_within_2p5_mm": [
+      {
+        "distance_mm": 0.5628441175178516,
+        "owner": "FROZEN_RIGHT_LOWER_MAIN_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      },
+      {
+        "distance_mm": 0.6016068161937289,
+        "owner": "RETAINED_RIGHT_UPPER_C001_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      },
+      {
+        "distance_mm": 1.859250167487906,
+        "owner": "RETAINED_RIGHT_UPPER_C032_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      },
+      {
+        "distance_mm": 2.577233919843696,
+        "owner": "RETAINED_RIGHT_UPPER_C019_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      },
+      {
+        "distance_mm": 3.4256156363489687,
+        "owner": "RETAINED_RIGHT_UPPER_C018_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      },
+      {
+        "distance_mm": 7.905397346213851,
+        "owner": "RETAINED_RIGHT_UPPER_C012_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      },
+      {
+        "distance_mm": 10.519021121398415,
+        "owner": "RETAINED_RIGHT_UPPER_C027_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      },
+      {
+        "distance_mm": 14.333415715528849,
+        "owner": "RETAINED_RIGHT_UPPER_C042_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      },
+      {
+        "distance_mm": 29.98438499162669,
+        "owner": "RETAINED_RIGHT_UPPER_C014_V34",
+        "positive_common_mm3": 0.0,
+        "section_edge_count": 0,
+        "section_vertex_count": 0
+      }
+    ],
+    "source_carrier": {
+      "area_mm2": 10178.04048080892,
+      "bbox_maximum_mm": [
+        103.70903541108439,
+        97.456280459535,
+        177.16672769092378
+      ],
+      "bbox_minimum_mm": [
+        32.582715956493104,
+        49.82680664068036,
+        119.1471641026206
+      ],
+      "closed": true,
+      "deep_check_messages": [],
+      "face_count": 104,
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 5043.227452134762
+    },
+    "source_removed_mm3": 0.0,
+    "structural_bypass": {
+      "area_mm2": 2632.1516104681677,
+      "bbox_maximum_mm": [
+        100.08594842079545,
+        91.16797233405991,
+        176.54395763335296
+      ],
+      "bbox_minimum_mm": [
+        33.014146542166024,
+        50.43627382869739,
+        124.6181169233996
+      ],
+      "closed": true,
+      "deep_check_messages": [],
+      "face_count": 37,
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 1308.5601990547514
+    },
+    "v2_spine_material_removed_by_clearance_notch_mm3": 12.209215069951282,
+    "v2_structural_backing_missing_mm3": 0.0,
+    "volume_balance_error_mm3": 3.248532038924168e-07
+  },
+  "pins": {
+    "contract_sha256": "ce445a115941fd4ecb39633515a1eb5b126c7cadbd29a3ad3ca8c007e177b315",
+    "generator_sha256": "a0a5e8c8ee55f889673ee7d412c37cd578fe28c52bbacdab572a9dce7bd35a29",
+    "inputs": {
+      "corner_measurement_script": {
+        "path": "source/cad-change-control/review-only/right-eye-carrier-corner-clearance-repair-v3/measure_v2_corner_contact.py",
+        "sha256": "1a19bda51ab4197ed4d1529c9885ae71cdf5f94c52576f47696b98733e04c5c8"
+      },
+      "withdrawn_v2_contract": {
+        "path": "source/cad-change-control/review-only/right-eye-carrier-full-depth-seam-repair-v2/contract.json",
+        "sha256": "1ff62caab36370c039a5530ac734eac5ac5e609ecfd8fe0050b47fad56a78d73"
+      },
+      "withdrawn_v2_generator": {
+        "path": "source/cad-change-control/review-only/right-eye-carrier-full-depth-seam-repair-v2/generate_review.py",
+        "sha256": "c49e6f6cb87b06f5f997e424dabfe922d8be0e82d684432884414f319c8d6a9d"
+      }
+    }
+  },
+  "review_fcstd": "output/70-freecad-pilots/review-only/right-eye-carrier-corner-clearance-repair-v3/RIGHT_EYE_CARRIER_CORNER_CLEARANCE_REPAIR_REVIEW_ONLY_V3.FCStd",
+  "review_fcstd_sha256": "22dca83ac335ad9277ec89bd248f65c3646af4c6d5945b1e28367dfcee7ba94f",
+  "schema_version": "cat-head-right-eye-carrier-corner-clearance-repair-validation-v3",
+  "status": "REVIEW_ONLY_READY__AWAITING_CORNER_CLEARANCE_LGTM"
+}

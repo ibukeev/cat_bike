@@ -1,0 +1,151 @@
+{
+  "schema_version": "cat-head-lower-right-connector-integration-print-release-v1",
+  "contract_id": "lower-right-connector-integration-v1",
+  "tooling_revision": 2,
+  "authority": "PRINT_RELEASE__USER_APPROVED__FCSTD_AND_STL_ONLY",
+  "date": "2026-08-21",
+  "user_approval": {
+    "connector_decision": "Right side is ready",
+    "release_instruction": "integrate on the right side and make it ready for printing (lower right)",
+    "autonomy_instruction": "OK, try to finish yourself - I'm going to sleep",
+    "right_side_only": true,
+    "fcstd_export_authorized": true,
+    "stl_export_authorized": true,
+    "slicing_and_gcode": "withheld; no printer profile or slicing instruction was provided"
+  },
+  "inputs": {
+    "manual_baseline": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1.FCStd",
+      "sha256": "b9d882c32288d9e237a0a3321214ac2947623066275bab584e146b98ab9180b2"
+    },
+    "validated_closed_component_001_source": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V4.FCStd",
+      "sha256": "9d66ebfa314ce8f5522a7026811e441f21f3e68ff910f0532404a14c9279649c"
+    },
+    "approved_connector_v2": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-parallel-feedback/03-translucent-connectors/STAGGERED_TRANSLUCENT_CONNECTOR_TABS_REVIEW_V2.FCStd",
+      "sha256": "663b42fc093d2956a067ab66203c77fe6b3ea8b7a0c6610e8d2f97d79bcf7684"
+    },
+    "connector_manifest": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-parallel-feedback/03-translucent-connectors/manifest.json",
+      "sha256": "02bf49b41b7bfb327ebe59c36e58d5e07e8834561627d6c881af95bc5d8b562f",
+      "note": "The manifest records the user approval and geometry contract but its output hash predates the user's final Save; this release pins the final closed-file hash above."
+    },
+    "approved_ledge_v2": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-sequential-rerun-v1/02-ledge-extensions/BILATERAL_USER_LEDGE_EXTENSIONS_REVIEW_V2.FCStd",
+      "sha256": "acdd325ce8e72b86cf81c7e7d137100af149d471ed65f122df530e30650fea37"
+    },
+    "approved_ledge_checkpoint": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-sequential-rerun-v1/02-ledge-extensions/BILATERAL_USER_LEDGE_EXTENSIONS_REVIEW_V2_CHECKPOINT_2026-08-20.md",
+      "sha256": "493bd978656b8d6f249951cf2ae2aa943f53b248d644ee4f9fe9bb26bf15f096"
+    },
+    "modular_part_boundary_contract": {
+      "path": "source/cad-change-control/review-only/lower-front-bilateral-modular-closure-review-v1/contract.json",
+      "sha256": "f97287e41394038da444092301bb92693f68c5739d30677f893fe3a876748248"
+    },
+    "durable_handoff": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-context-handoff-v1/CODEX_CONTEXT_HANDOFF_2026-08-20_V1.md",
+      "sha256": "6ca5a1ff7d67402df72e3aa6b187f4a30a1a46684f689669b1b9914ff2a3f3c2"
+    },
+    "mesh_topology_checker": {
+      "path": "source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+      "sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e"
+    },
+    "runtime_manifest": {
+      "path": "source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+      "sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+    }
+  },
+  "part_policy": {
+    "source_modularity": "Each opaque owner and each connected translucent component remains a separate printable part.",
+    "release_scope": "Only the six right-side parts changed by the approved ledge and connector work are regenerated.",
+    "component_001_conditioning": "Use the validated V4 version of the same user-approved FIN REMOVED boundary to restore one zero-volume closure face lost during a later GUI save.",
+    "connector_conditioning": "Before owner fusion, subtract the exact opposite owner from each tab. This removes only cross-owner collision volume, does not offset or redesign the tab, preserves positive intended-owner overlap, preserves every D4 bore, and preserves the approved 0.300 mm tab-pair gap.",
+    "unrelated_parts": "All other lower-right modular owners remain unchanged and are not re-exported."
+  },
+  "objects": {
+    "opaque_component_001_owner": "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR",
+    "opaque_component_002_owner": "RIGHT_LOWER_002_component_002",
+    "right_ledge_base": "RIGHT_V5_LONG_LEDGE_CLEAN_BASE",
+    "right_ledge_extension": "Body",
+    "below_mouth_opaque_tab": "RIGHT_BELOW_MOUTH_APPROVED_OPAQUE_TAB_D4",
+    "below_mouth_translucent_tab": "RIGHT_BELOW_MOUTH_APPROVED_TRANSLUCENT_TAB_D4",
+    "nose_top_opaque_tab": "RIGHT_NOSE_TOP_INWARD_EDGE_PARALLEL_OPAQUE_TAB_D4",
+    "nose_top_translucent_tab": "RIGHT_NOSE_TOP_INWARD_EDGE_PARALLEL_TRANSLUCENT_TAB_D4",
+    "outer_panel_opaque_tab": "RIGHT_OUTER_PANEL_EDGE_PARALLEL_OPAQUE_TAB_D4",
+    "outer_panel_translucent_tab": "RIGHT_OUTER_PANEL_EDGE_PARALLEL_TRANSLUCENT_TAB_D4",
+    "below_mouth_translucent_owner": "PANEL_QUAD003_COMPONENT_01",
+    "nose_top_translucent_owner": "CENTRAL_6_PANEL_CLUSTER_COMPONENT_03",
+    "outer_panel_translucent_owner": "PANEL_QUAD017_COMPONENT_02"
+  },
+  "numeric_gates": {
+    "volume_epsilon_mm3": 0.000001,
+    "component_001_maximum_symmetric_difference_mm3": 0.000001,
+    "minimum_intended_owner_overlap_mm3": 10.0,
+    "minimum_tab_pair_clearance_mm": 0.299,
+    "maximum_tab_pair_clearance_mm": 0.301,
+    "maximum_tab_pair_intersection_mm3": 0.000001,
+    "maximum_added_fused_pair_intersection_mm3": 0.000001,
+    "required_bore_radius_mm": 2.0,
+    "bore_radius_tolerance_mm": 0.00001
+  },
+  "mesh": {
+    "linear_deflection_mm": 0.08,
+    "angular_deflection_rad": 0.35,
+    "required_connected_components": 1,
+    "maximum_boundary_edges": 0,
+    "maximum_nonmanifold_edges": 0,
+    "maximum_degenerate_facets": 0,
+    "maximum_duplicate_facets": 0,
+    "maximum_self_intersections": 0,
+    "require_outward_normals": true,
+    "automatic_repair_allowed": false,
+    "deterministic_conditioning": {
+      "policy": "Condition only a named raw-failing mesh, using deterministic vertex welding plus removal of facets that collapse to zero area. No smoothing, hole filling, remeshing, scaling, decimation, coordinate search, or arbitrary repair is permitted.",
+      "parts": {
+        "opaque_component_001": {
+          "weld_distance_mm": 0.00002,
+          "maximum_weld_displacement_mm": 0.00002,
+          "expected_weld_group_count": 2,
+          "expected_removed_degenerate_facets": 5,
+          "expected_removed_duplicate_facets": 0
+        },
+        "translucent_quad017_component_02": {
+          "weld_distance_mm": 0.00012,
+          "maximum_weld_displacement_mm": 0.00006,
+          "expected_weld_group_count": 1,
+          "expected_removed_degenerate_facets": 2,
+          "expected_removed_duplicate_facets": 0
+        }
+      }
+    }
+  },
+  "gates": {
+    "all_input_hashes_match": true,
+    "all_six_parts_valid_closed_one_solid": true,
+    "all_six_generated_meshes_clean_closed_manifold": true,
+    "only_named_raw_failures_receive_bounded_deterministic_conditioning": true,
+    "component_001_repair_adds_only_the_missing_closure_face": true,
+    "all_three_tab_pairs_keep_approved_clearance_and_zero_intersection": true,
+    "conditioning_adds_no_cross-owner_collision": true,
+    "all_six_d4_tab_bores_remain": true,
+    "output_directory_must_be_new": true,
+    "gcode_and_3mf_prohibited": true
+  },
+  "outputs": {
+    "directory": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v1",
+    "fcstd": "LOWER_RIGHT_CONNECTOR_INTEGRATION_PRINT_PARTS_V1.FCStd",
+    "manifest": "release-manifest.json",
+    "checksums": "SHA256SUMS.txt",
+    "readme": "README.md",
+    "stl_directory": "stl",
+    "parts": {
+      "opaque_component_001": "RIGHT_LOWER_OPAQUE_COMPONENT_001_WITH_BELOW_MOUTH_OUTER_TABS_PRINT_V1.stl",
+      "opaque_component_002": "RIGHT_LOWER_OPAQUE_COMPONENT_002_WITH_NOSE_TOP_TAB_PRINT_V1.stl",
+      "opaque_right_ledge": "RIGHT_LOWER_LEDGE_WITH_USER_EXTENSION_PRINT_V1.stl",
+      "translucent_quad003_component_01": "RIGHT_TRANSLUCENT_QUAD003_COMPONENT_01_WITH_BELOW_MOUTH_TAB_PRINT_V1.stl",
+      "translucent_central_component_03": "RIGHT_TRANSLUCENT_CENTRAL_CLUSTER_COMPONENT_03_WITH_NOSE_TOP_TAB_PRINT_V1.stl",
+      "translucent_quad017_component_02": "RIGHT_TRANSLUCENT_QUAD017_COMPONENT_02_WITH_OUTER_TAB_PRINT_V1.stl"
+    }
+  }
+}

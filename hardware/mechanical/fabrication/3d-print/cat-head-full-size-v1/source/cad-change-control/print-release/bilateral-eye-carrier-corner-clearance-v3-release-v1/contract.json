@@ -1,0 +1,112 @@
+{
+  "schema_version": "cat-head-bilateral-eye-corner-clearance-print-release-v1",
+  "contract_id": "bilateral-eye-carrier-corner-clearance-v3-release-v1",
+  "tooling_revision": 1,
+  "authority": "PRINT_RELEASE__USER_APPROVED__STL_AND_FCSTD_ONLY",
+  "date": "2026-08-19",
+  "user_approval": {
+    "right_review_decision": "LGTM",
+    "release_instruction": "create right and left eye final printable parts (Freecad, STL) -> I'll slice and print them",
+    "mirror_authorized": true,
+    "stl_export_authorized": true,
+    "freecad_release_authorized": true,
+    "slicing_and_gcode": "withheld; user will slice"
+  },
+  "inputs": {
+    "approved_v3_contract": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-corner-clearance-repair-v3/contract.json",
+      "sha256": "ce445a115941fd4ecb39633515a1eb5b126c7cadbd29a3ad3ca8c007e177b315"
+    },
+    "approved_v3_generator": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-corner-clearance-repair-v3/generate_review.py",
+      "sha256": "a0a5e8c8ee55f889673ee7d412c37cd578fe28c52bbacdab572a9dce7bd35a29"
+    },
+    "approved_v3_checkpoint": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-corner-clearance-repair-v3/RIGHT_EYE_CARRIER_CORNER_CLEARANCE_REPAIR_V3_CHECKPOINT_2026-08-19.md",
+      "sha256": "aa83bc5cfc3c92458ce6c7785dd93c90b5196f4e7b65e380004fc81557d4f888"
+    },
+    "approved_v3_review_fcstd": {
+      "path": "output/70-freecad-pilots/review-only/right-eye-carrier-corner-clearance-repair-v3/RIGHT_EYE_CARRIER_CORNER_CLEARANCE_REPAIR_REVIEW_ONLY_V3.FCStd",
+      "sha256": "22dca83ac335ad9277ec89bd248f65c3646af4c6d5945b1e28367dfcee7ba94f"
+    },
+    "approved_v3_validation": {
+      "path": "output/70-freecad-pilots/review-only/right-eye-carrier-corner-clearance-repair-v3/validation.json",
+      "sha256": "52170ecd6b2b0e8d3d299cb254eb997956c229c2462db645b24d44eb5d88108f"
+    },
+    "approved_x0_mirror_contract": {
+      "path": "config/eye-bilateral-exact-mirror-review-v9.json",
+      "sha256": "bf683d9ae9f1392d88f370de59c1aef75ac0373380e26c2566e9bd72f2316a13"
+    },
+    "mesh_topology_checker": {
+      "path": "source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+      "sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e"
+    }
+  },
+  "tooling": {
+    "exporter": {
+      "path": "source/cad-change-control/print-release/bilateral-eye-carrier-corner-clearance-v3-release-v1/export_release.py",
+      "sha256": "a3054ebb332fccd0f019cacf2636cc809c12578e591a870246aa60671dad750a"
+    },
+    "focused_test": {
+      "root": "repository",
+      "path": "tests/automated/test_bilateral_eye_carrier_corner_clearance_v3_print_release_v1.py",
+      "sha256": "7e71efd9dabf12ce027d42ab1d85ac86ccfc518a365871865283e2660b572c95"
+    }
+  },
+  "source_parts": {
+    "carrier": "approved V3 repaired carrier including the user manual bottom flange",
+    "lens": "approved V7 translucent lens with four integral hidden side flanges, unchanged",
+    "rear_plate": "approved V7 removable LED rear plate, unchanged"
+  },
+  "mirror": {
+    "plane": "YZ",
+    "equation": "X=0",
+    "coordinate_rule": "(-x,y,z)",
+    "required_volume_tolerance_mm3": 0.00001,
+    "required_bounds_tolerance_mm": 0.000001,
+    "require_identical_topology_counts": true
+  },
+  "mesh": {
+    "linear_deflection_mm": 0.08,
+    "angular_deflection_rad": 0.35,
+    "required_connected_components": 1,
+    "maximum_boundary_edges": 0,
+    "maximum_nonmanifold_edges": 0,
+    "maximum_degenerate_facets": 0,
+    "maximum_duplicate_facets": 0,
+    "maximum_self_intersections": 0,
+    "require_outward_normals": true,
+    "automatic_repair_allowed": false
+  },
+  "gates": {
+    "approved_v3_validation_must_have_zero_failed_checks": true,
+    "all_six_parts_must_be_valid_closed_one_solid": true,
+    "all_six_parts_must_be_deep_occt_clean": true,
+    "all_six_stls_must_reload_and_pass_mesh_gates": true,
+    "right_v3_repair_must_recompute_with_all_checks_passing": true,
+    "left_parts_must_be_exact_x0_mirrors": true,
+    "old_failed_v1_files_must_not_be_overwritten": true,
+    "output_directory_must_be_new": true,
+    "gcode_and_3mf_prohibited": true
+  },
+  "outputs": {
+    "directory": "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1",
+    "manifest": "release-manifest.json",
+    "checksums": "SHA256SUMS.txt",
+    "readme": "README.md",
+    "right": {
+      "directory": "right",
+      "fcstd": "RIGHT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd",
+      "carrier_stl": "RIGHT_EYE_CARRIER_V3_CORNER_REPAIR_WITH_MANUAL_FLANGE_PRINT_V1.stl",
+      "lens_stl": "RIGHT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT_V1.stl",
+      "rear_plate_stl": "RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT_V1.stl"
+    },
+    "left": {
+      "directory": "left",
+      "fcstd": "LEFT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd",
+      "carrier_stl": "LEFT_EYE_CARRIER_V3_CORNER_REPAIR_WITH_MIRRORED_MANUAL_FLANGE_PRINT_V1.stl",
+      "lens_stl": "LEFT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT_V1.stl",
+      "rear_plate_stl": "LEFT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT_V1.stl"
+    }
+  }
+}

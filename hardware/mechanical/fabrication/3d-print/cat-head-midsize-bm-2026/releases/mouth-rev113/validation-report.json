@@ -1,0 +1,711 @@
+{
+  "status": "PASS_REV113_MERGED_MOUTH_CAD_AND_MESH_REVIEW_VALIDATION",
+  "review_state": "ISOLATED_MOUTH_MERGE_CANDIDATE__NOT_FINAL_RELEASE",
+  "iteration_id": "small-v1-merged-mouth-pane-rev113",
+  "contract_sha256": "845edfe340744cae74309fbe05f1373741f2b2bd6a9976d9c608841f53933130",
+  "generation_report_sha256": "311e482f0a018e7a7618293bedb3e81dac9609f4a60aa5c9468b108edadde636",
+  "candidate_fcstd": "reports/generated/cat-head-cad-iterations/small-v1-merged-mouth-pane-rev113/CAT_HEAD_MEDIUM_ILYA_MERGED_MOUTH_REV113.FCStd",
+  "candidate_sha256": "3b054f9019717d7a73e16915b4bbde809f6fbf550a10f16507219ae54f72a7b1",
+  "source_sha256_before": "4a0ae787902be81ecccfadedd46603064b4729de4b71231e17e63add87477e85",
+  "source_sha256_after": "4a0ae787902be81ecccfadedd46603064b4729de4b71231e17e63add87477e85",
+  "final_body": {
+    "shape_type": "Compound",
+    "is_null": false,
+    "is_valid": true,
+    "is_closed": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 39723,
+    "edge_count": 61468,
+    "vertex_count": 21741,
+    "volume_mm3": 348673.5134495925,
+    "surface_area_mm2": 172567.0405917534,
+    "center_of_mass_mm": [
+      0.024829690511079198,
+      85.81837934349274,
+      85.05073378884252
+    ],
+    "bbox": {
+      "min_mm": [
+        -87.46649932861328,
+        -1.6653345369377348e-16,
+        -3.552713678800501e-15
+      ],
+      "max_mm": [
+        87.46649932861328,
+        141.77713012695312,
+        190.0
+      ],
+      "size_mm": [
+        174.93299865722656,
+        141.77713012695312,
+        190.0
+      ]
+    },
+    "brep_sha256": "5dff25512af1c7bcbe1b507befddf8673110d61bb4837a7485b5c2002580ddaa"
+  },
+  "print_parts": {
+    "head": {
+      "shape_type": "Compound",
+      "is_null": false,
+      "is_valid": true,
+      "is_closed": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 39723,
+      "edge_count": 61468,
+      "vertex_count": 21741,
+      "volume_mm3": 348673.5134495925,
+      "surface_area_mm2": 172567.0405917534,
+      "center_of_mass_mm": [
+        0.024829690511079198,
+        85.81837934349274,
+        85.05073378884252
+      ],
+      "bbox": {
+        "min_mm": [
+          -87.46649932861328,
+          -1.6653345369377348e-16,
+          -3.552713678800501e-15
+        ],
+        "max_mm": [
+          87.46649932861328,
+          141.77713012695312,
+          190.0
+        ],
+        "size_mm": [
+          174.93299865722656,
+          141.77713012695312,
+          190.0
+        ]
+      },
+      "brep_sha256": "01ba1e1d8c49e1583b3d55f5a1c8a44908ac94595f25d1ea37ca505a6b5f4740"
+    },
+    "right_eye": {
+      "shape_type": "Solid",
+      "is_null": false,
+      "is_valid": true,
+      "is_closed": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 6,
+      "edge_count": 12,
+      "vertex_count": 8,
+      "volume_mm3": 1059.8903332456443,
+      "surface_area_mm2": 1283.3195262455397,
+      "center_of_mass_mm": [
+        36.36954638623102,
+        40.57045189603534,
+        88.6612403136499
+      ],
+      "bbox": {
+        "min_mm": [
+          19.92926983500779,
+          29.529258879823868,
+          72.94744039157804
+        ],
+        "max_mm": [
+          57.741686812327714,
+          52.48321192163139,
+          101.70498748099945
+        ],
+        "size_mm": [
+          37.81241697731993,
+          22.95395304180752,
+          28.757547089421408
+        ]
+      },
+      "brep_sha256": "5530bceb588b22e5313439d7b58d28625c5129f8932d03cfa25f2e6082dcf0ba"
+    },
+    "left_eye": {
+      "shape_type": "Solid",
+      "is_null": false,
+      "is_valid": true,
+      "is_closed": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 6,
+      "edge_count": 12,
+      "vertex_count": 8,
+      "volume_mm3": 1059.8903332456446,
+      "surface_area_mm2": 1283.3195262455397,
+      "center_of_mass_mm": [
+        -36.36954638623103,
+        40.57045189603534,
+        88.66124031364991
+      ],
+      "bbox": {
+        "min_mm": [
+          -57.741686812327714,
+          29.529258879823868,
+          72.94744039157804
+        ],
+        "max_mm": [
+          -19.929269835007787,
+          52.48321192163139,
+          101.70498748099945
+        ],
+        "size_mm": [
+          37.81241697731993,
+          22.95395304180752,
+          28.757547089421408
+        ]
+      },
+      "brep_sha256": "4ee9d3e0b8a5d34b270b3768e764b3467434ea8ba52a544ee1b925100942ad1c"
+    },
+    "merged_mouth": {
+      "shape_type": "Compound",
+      "is_null": false,
+      "is_valid": true,
+      "is_closed": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 12,
+      "edge_count": 22,
+      "vertex_count": 12,
+      "volume_mm3": 792.5075282477266,
+      "surface_area_mm2": 998.331043559542,
+      "center_of_mass_mm": [
+        0.032694114521922224,
+        7.8067907606738975,
+        18.46808538271162
+      ],
+      "bbox": {
+        "min_mm": [
+          -22.704068132268727,
+          0.3559369391856742,
+          12.062686189247712
+        ],
+        "max_mm": [
+          22.693496267955844,
+          13.011069998980279,
+          28.332656873717973
+        ],
+        "size_mm": [
+          45.39756440022457,
+          12.655133059794604,
+          16.26997068447026
+        ]
+      },
+      "brep_sha256": "1eb7a060e4858ba9ffaeb05aa3c9768a0aa4903dabd002a17abf79523c1eac84"
+    }
+  },
+  "frozen_geometry": {
+    "head": {
+      "saved": {
+        "shape_type": "Compound",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 39723,
+        "edge_count": 61468,
+        "vertex_count": 21741,
+        "volume_mm3": 348673.5134495925,
+        "surface_area_mm2": 172567.0405917534,
+        "center_of_mass_mm": [
+          0.024829690511079198,
+          85.81837934349274,
+          85.05073378884252
+        ],
+        "bbox": {
+          "min_mm": [
+            -87.46649932861328,
+            -1.6653345369377348e-16,
+            -3.552713678800501e-15
+          ],
+          "max_mm": [
+            87.46649932861328,
+            141.77713012695312,
+            190.0
+          ],
+          "size_mm": [
+            174.93299865722656,
+            141.77713012695312,
+            190.0
+          ]
+        },
+        "brep_sha256": "01ba1e1d8c49e1583b3d55f5a1c8a44908ac94595f25d1ea37ca505a6b5f4740"
+      },
+      "source": {
+        "shape_type": "Compound",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 39723,
+        "edge_count": 61468,
+        "vertex_count": 21741,
+        "volume_mm3": 348673.5134495925,
+        "surface_area_mm2": 172567.04059175338,
+        "center_of_mass_mm": [
+          0.024829690511079198,
+          85.81837934349274,
+          85.05073378884252
+        ],
+        "bbox": {
+          "min_mm": [
+            -87.46649932861328,
+            -1.6653345369377348e-16,
+            -3.552713678800501e-15
+          ],
+          "max_mm": [
+            87.46649932861328,
+            141.77713012695312,
+            190.0
+          ],
+          "size_mm": [
+            174.93299865722656,
+            141.77713012695312,
+            190.0
+          ]
+        },
+        "brep_sha256": "9b2b2353d0e5bc63263bdd9655c9ee13d1695cdd28e8830737d07663ea611919"
+      },
+      "symmetric_difference_mm3": {
+        "first_minus_second_mm3": 0.0,
+        "second_minus_first_mm3": 0.0
+      }
+    },
+    "right_eye": {
+      "saved": {
+        "shape_type": "Solid",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 6,
+        "edge_count": 12,
+        "vertex_count": 8,
+        "volume_mm3": 1059.8903332456443,
+        "surface_area_mm2": 1283.3195262455397,
+        "center_of_mass_mm": [
+          36.36954638623102,
+          40.57045189603534,
+          88.6612403136499
+        ],
+        "bbox": {
+          "min_mm": [
+            19.92926983500779,
+            29.529258879823868,
+            72.94744039157804
+          ],
+          "max_mm": [
+            57.741686812327714,
+            52.48321192163139,
+            101.70498748099945
+          ],
+          "size_mm": [
+            37.81241697731993,
+            22.95395304180752,
+            28.757547089421408
+          ]
+        },
+        "brep_sha256": "5530bceb588b22e5313439d7b58d28625c5129f8932d03cfa25f2e6082dcf0ba"
+      },
+      "source": {
+        "shape_type": "Solid",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 6,
+        "edge_count": 12,
+        "vertex_count": 8,
+        "volume_mm3": 1059.8903332456443,
+        "surface_area_mm2": 1283.3195262455397,
+        "center_of_mass_mm": [
+          36.36954638623102,
+          40.57045189603534,
+          88.6612403136499
+        ],
+        "bbox": {
+          "min_mm": [
+            19.92926983500779,
+            29.529258879823868,
+            72.94744039157804
+          ],
+          "max_mm": [
+            57.741686812327714,
+            52.48321192163139,
+            101.70498748099945
+          ],
+          "size_mm": [
+            37.81241697731993,
+            22.95395304180752,
+            28.757547089421408
+          ]
+        },
+        "brep_sha256": "4cf446e46601b806cfd338a58c98a02e9737e80184c28fd468db4ba0f58bcdb0"
+      },
+      "symmetric_difference_mm3": {
+        "first_minus_second_mm3": 0.0,
+        "second_minus_first_mm3": 0.0
+      }
+    },
+    "left_eye": {
+      "saved": {
+        "shape_type": "Solid",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 6,
+        "edge_count": 12,
+        "vertex_count": 8,
+        "volume_mm3": 1059.8903332456446,
+        "surface_area_mm2": 1283.3195262455397,
+        "center_of_mass_mm": [
+          -36.36954638623103,
+          40.57045189603534,
+          88.66124031364991
+        ],
+        "bbox": {
+          "min_mm": [
+            -57.741686812327714,
+            29.529258879823868,
+            72.94744039157804
+          ],
+          "max_mm": [
+            -19.929269835007787,
+            52.48321192163139,
+            101.70498748099945
+          ],
+          "size_mm": [
+            37.81241697731993,
+            22.95395304180752,
+            28.757547089421408
+          ]
+        },
+        "brep_sha256": "4ee9d3e0b8a5d34b270b3768e764b3467434ea8ba52a544ee1b925100942ad1c"
+      },
+      "source": {
+        "shape_type": "Solid",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 6,
+        "edge_count": 12,
+        "vertex_count": 8,
+        "volume_mm3": 1059.8903332456446,
+        "surface_area_mm2": 1283.3195262455397,
+        "center_of_mass_mm": [
+          -36.36954638623103,
+          40.57045189603534,
+          88.66124031364991
+        ],
+        "bbox": {
+          "min_mm": [
+            -57.741686812327714,
+            29.529258879823868,
+            72.94744039157804
+          ],
+          "max_mm": [
+            -19.929269835007787,
+            52.48321192163139,
+            101.70498748099945
+          ],
+          "size_mm": [
+            37.81241697731993,
+            22.95395304180752,
+            28.757547089421408
+          ]
+        },
+        "brep_sha256": "80ddea35759f74141baddb2974730ae03fc12fc35272025e2410e9b902f0e564"
+      },
+      "symmetric_difference_mm3": {
+        "first_minus_second_mm3": 0.0,
+        "second_minus_first_mm3": 0.0
+      }
+    }
+  },
+  "original_mouth_halves": {
+    "mouth_tri005": {
+      "saved": {
+        "shape_type": "Compound",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 5,
+        "edge_count": 9,
+        "vertex_count": 6,
+        "volume_mm3": 395.38997861472603,
+        "surface_area_mm2": 532.1920955492926,
+        "center_of_mass_mm": [
+          7.576771548591622,
+          7.8464870342273505,
+          18.36336272414153
+        ],
+        "bbox": {
+          "min_mm": [
+            -0.4654433615926322,
+            0.3559369391856742,
+            12.062686189247712
+          ],
+          "max_mm": [
+            22.693496267955844,
+            13.011069998980279,
+            28.332656873717973
+          ],
+          "size_mm": [
+            23.158939629548478,
+            12.655133059794604,
+            16.26997068447026
+          ]
+        },
+        "brep_sha256": "4e81e0a2894e4d73d4fc89d44310969b0aa40ca5e4a882af57f9c2542a8d8272"
+      },
+      "source": {
+        "shape_type": "Compound",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 5,
+        "edge_count": 9,
+        "vertex_count": 6,
+        "volume_mm3": 395.38997861472603,
+        "surface_area_mm2": 532.1920955492926,
+        "center_of_mass_mm": [
+          7.576771548591622,
+          7.8464870342273505,
+          18.36336272414153
+        ],
+        "bbox": {
+          "min_mm": [
+            -0.4654433615926322,
+            0.3559369391856742,
+            12.062686189247712
+          ],
+          "max_mm": [
+            22.693496267955844,
+            13.011069998980279,
+            28.332656873717973
+          ],
+          "size_mm": [
+            23.158939629548478,
+            12.655133059794604,
+            16.26997068447026
+          ]
+        },
+        "brep_sha256": "b816f5182a0f8d20251a8c8aec31ab993cb37265e86bcc5765bf111bbe3df7b7"
+      },
+      "symmetric_difference_mm3": {
+        "first_minus_second_mm3": 0.0,
+        "second_minus_first_mm3": 0.0
+      }
+    },
+    "mouth_tri006": {
+      "saved": {
+        "shape_type": "Compound",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 5,
+        "edge_count": 9,
+        "vertex_count": 6,
+        "volume_mm3": 368.16347180870594,
+        "surface_area_mm2": 502.0202615702606,
+        "center_of_mass_mm": [
+          -8.039443932605398,
+          7.846420873081303,
+          18.361475264955843
+        ],
+        "bbox": {
+          "min_mm": [
+            -22.704068132268727,
+            0.3818154667382174,
+            12.06604782486125
+          ],
+          "max_mm": [
+            -0.22006383030951682,
+            12.990877807843614,
+            28.31634291529319
+          ],
+          "size_mm": [
+            22.48400430195921,
+            12.609062341105396,
+            16.25029509043194
+          ]
+        },
+        "brep_sha256": "6afef399b876cfd4e884a256c69772d8e3d90df1e9c0b49a391158eb130c397e"
+      },
+      "source": {
+        "shape_type": "Compound",
+        "is_null": false,
+        "is_valid": true,
+        "is_closed": true,
+        "solid_count": 1,
+        "shell_count": 1,
+        "face_count": 5,
+        "edge_count": 9,
+        "vertex_count": 6,
+        "volume_mm3": 368.16347180870594,
+        "surface_area_mm2": 502.0202615702606,
+        "center_of_mass_mm": [
+          -8.039443932605398,
+          7.846420873081305,
+          18.361475264955843
+        ],
+        "bbox": {
+          "min_mm": [
+            -22.704068132268727,
+            0.3818154667382174,
+            12.06604782486125
+          ],
+          "max_mm": [
+            -0.22006383030951682,
+            12.990877807843614,
+            28.31634291529319
+          ],
+          "size_mm": [
+            22.48400430195921,
+            12.609062341105396,
+            16.25029509043194
+          ]
+        },
+        "brep_sha256": "e37859f0b9fe494b3a185bc8f6fa626725f5a28c3228e259dca7e82d7f56a1d9"
+      },
+      "symmetric_difference_mm3": {
+        "first_minus_second_mm3": 0.0,
+        "second_minus_first_mm3": 0.0
+      }
+    }
+  },
+  "bridge": {
+    "shape_type": "Solid",
+    "is_null": false,
+    "is_valid": true,
+    "is_closed": true,
+    "solid_count": 1,
+    "shell_count": 1,
+    "face_count": 6,
+    "edge_count": 12,
+    "vertex_count": 8,
+    "volume_mm3": 28.95407782429441,
+    "surface_area_mm2": 101.05763265043225,
+    "center_of_mass_mm": [
+      -0.3467428353193439,
+      6.760794106687832,
+      21.253746224851426
+    ],
+    "bbox": {
+      "min_mm": [
+        -1.3272519552937734,
+        0.3559369391856742,
+        14.05205632171478
+      ],
+      "max_mm": [
+        0.6267743252231495,
+        13.011069998980279,
+        28.332656873717973
+      ],
+      "size_mm": [
+        1.9540262805169228,
+        12.655133059794604,
+        14.280600552003193
+      ]
+    },
+    "brep_sha256": "139c3847534b82cccd074413c53b844f3914968d0d9a7a9bac41d6ae4ab2a35f"
+  },
+  "original_halves_preservation": {
+    "mouth_tri005_minus_merged_mm3": 0.0,
+    "mouth_tri006_minus_merged_mm3": 0.0
+  },
+  "addition_outside_originals_mm3": 28.954077824294416,
+  "addition_vs_bridge_volume_residual_mm3": 7.105427357601002e-15,
+  "merged_head_overlap_mm3": 0.0,
+  "zip_tie_corridor_residuals_mm3": {
+    "right": 0.0,
+    "left": 0.0
+  },
+  "occt_bop_check": {
+    "report": "reports/generated/cat-head-cad-iterations/small-v1-merged-mouth-pane-rev113/occt-bop-check-report.json",
+    "report_sha256": "0d167e49c784ac39012fa4e9cfdf78946dbdb78befa54eea9b56f38aee3c0d1c",
+    "status": "PASS_OCCT_BOP_CHECK",
+    "errors": []
+  },
+  "prusa_slicer_mesh_validation": {
+    "head_stl": {
+      "path": "reports/generated/cat-head-cad-iterations/small-v1-merged-mouth-pane-rev113/CAT_HEAD_MEDIUM_ILYA_FINAL_HEAD_REV113.stl",
+      "sha256": "eae4d27e8f18762e0deb6fe7bf95d62fb9a99a93ed8decc2eb8aad9af85891c6",
+      "manifold": "yes",
+      "number_of_parts": 1,
+      "number_of_facets": 43518,
+      "volume_mm3": 348689.59375,
+      "size_mm": [
+        174.932999,
+        141.77713,
+        190.0
+      ]
+    },
+    "right_eye_stl": {
+      "path": "reports/generated/cat-head-cad-iterations/small-v1-merged-mouth-pane-rev113/CAT_HEAD_MEDIUM_RIGHT_EYE_TRANSLUCENT_PANE_REV113.stl",
+      "sha256": "739f584563eb2797eaa72fd9d4d9ebbfa7df3ffe62080475511f21bf4b410ee5",
+      "manifold": "yes",
+      "number_of_parts": 1,
+      "number_of_facets": 12,
+      "volume_mm3": 1059.890625,
+      "size_mm": [
+        37.81242,
+        22.953955,
+        28.757553
+      ]
+    },
+    "left_eye_stl": {
+      "path": "reports/generated/cat-head-cad-iterations/small-v1-merged-mouth-pane-rev113/CAT_HEAD_MEDIUM_LEFT_EYE_TRANSLUCENT_PANE_REV113.stl",
+      "sha256": "62380023c9379d2c1a1f984fa453a3187870f04ce150f745d9861e0060141d84",
+      "manifold": "yes",
+      "number_of_parts": 1,
+      "number_of_facets": 12,
+      "volume_mm3": 1059.890625,
+      "size_mm": [
+        37.81242,
+        22.953955,
+        28.757553
+      ]
+    },
+    "merged_mouth_stl": {
+      "path": "reports/generated/cat-head-cad-iterations/small-v1-merged-mouth-pane-rev113/CAT_HEAD_MEDIUM_MERGED_MOUTH_TRANSLUCENT_PANE_REV113.stl",
+      "sha256": "9e9ec394be8bd70982ce7c015f4b3f006f0eb111b62577c02deb767228eca9fe",
+      "manifold": "yes",
+      "number_of_parts": 1,
+      "number_of_facets": 24,
+      "volume_mm3": 792.507507,
+      "size_mm": [
+        45.397564,
+        12.655133,
+        16.269972
+      ]
+    },
+    "bridge_review_stl": {
+      "path": "reports/generated/cat-head-cad-iterations/small-v1-merged-mouth-pane-rev113/REVIEW_ONLY__MOUTH_CENTER_SEAM_BRIDGE_REV113.stl",
+      "sha256": "9533e6166acc691b581d8af745c49e71f9d3f3fc58eac00b2d59eb8ee5b52c50",
+      "manifold": "yes",
+      "number_of_parts": 1,
+      "number_of_facets": 16,
+      "volume_mm3": 28.954067,
+      "size_mm": [
+        1.954026,
+        12.655133,
+        14.2806
+      ]
+    }
+  },
+  "final_print_part_count": 4,
+  "final_release_promoted": false,
+  "slicer_project_created_or_changed": false,
+  "physical_insertion_and_slicer_fit_pending": true
+}

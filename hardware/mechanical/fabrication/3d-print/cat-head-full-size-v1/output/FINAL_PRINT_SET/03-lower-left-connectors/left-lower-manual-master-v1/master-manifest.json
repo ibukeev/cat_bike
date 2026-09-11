@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "designation_date": "2026-08-21",
+  "authority": "USER_DESIGNATED_AUTHORITATIVE_LEFT_LOWER_MASTER",
+  "scope": "Manually edited left-lower complete opaque union with connector additions",
+  "cad_master": "LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1.FCStd",
+  "three_mf_companion": "LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1-Compound.3mf",
+  "source_directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/left-side-flange-completion-v2",
+  "output_directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1",
+  "files": [
+    {
+      "name": "LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1.FCStd",
+      "role": "authoritative_cad_master",
+      "size_bytes": 9072528,
+      "sha256": "3e52d392a40d570a0c0a04a3089bd496e30ff8197307e377c6236a01c982cbd4"
+    },
+    {
+      "name": "LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1-Compound.3mf",
+      "role": "user_saved_3mf_companion",
+      "size_bytes": 163680,
+      "sha256": "ed00bfadbb2120cb7dfc6c54085fccaff5169eaeaca246abc03970f18acfe8bc"
+    }
+  ],
+  "promotion": {
+    "copy_is_byte_for_byte": true,
+    "source_files_modified": false,
+    "freecad_opened": false,
+    "geometry_modified": false,
+    "mesh_export_performed": false,
+    "slicing_performed": false,
+    "gcode_created": false
+  },
+  "integrity_checks": {
+    "source_and_destination_sha256_match": true,
+    "fcstd_zip_archive_test": "PASS",
+    "three_mf_zip_archive_test": "PASS"
+  },
+  "not_performed": [
+    "FreeCAD geometry validation",
+    "topology or collision validation",
+    "slicer validation",
+    "physical-fit validation"
+  ],
+  "future_session_contract": "Use the exact hash-matched FCStd in this package as the sole source for all later left-lower work; preserve it unchanged and save later work under a fresh review/output name.",
+  "supersession": "Earlier left-lower review, mirrored, reconstructed, or automated union files are not authoritative starting sources."
+}

@@ -1,0 +1,191 @@
+{
+  "status": "visual review only; lossless lower-face exterior repartition with accepted Gate 8 opaque muzzle panels restored into retained lower shells and enlarged rear-cassette ownership; no STL, G-code, print, reinforcement redesign, or aluminum release",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate8_blend_sha256": "612943b2340677092057b0e160bd8ae3f866893a78e056c315135cc0febfb776",
+  "config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/rear-cassette-lossless-repartition-review-v5.json",
+  "shared_interface": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "repartition_equation": "original lower exteriors including accepted Gate 8 opaque muzzle panels = retained left/right lower shells + moved left/right cassette shells",
+  "moved_source_face_count": 10,
+  "moved_source_face_count_by_section": {
+    "left_lower_face": 5,
+    "right_lower_face": 5
+  },
+  "retained_source_face_count_by_section": {
+    "left_lower_face": 20,
+    "right_lower_face": 19
+  },
+  "restored_gate8_lower_opaque_panel_ids_by_section": {
+    "left_lower_face": [
+      "QUAD022",
+      "TRI042"
+    ],
+    "right_lower_face": [
+      "QUAD001",
+      "TRI003"
+    ]
+  },
+  "restored_gate8_lower_opaque_face_count_by_section": {
+    "left_lower_face": 3,
+    "right_lower_face": 3
+  },
+  "retained_closure_face_count_by_section": {
+    "left_lower_face": 1,
+    "right_lower_face": 1
+  },
+  "moved_source_panel_ids": [
+    "MANQ006_LEFT",
+    "MANQ006_RIGHT",
+    "MANQ007_LEFT",
+    "MANQ007_RIGHT",
+    "TRI030",
+    "TRI040",
+    "TRI058",
+    "TRI059",
+    "TRI062",
+    "TRI065"
+  ],
+  "exterior_face_ledger": {
+    "source_exterior_face_count_including_closures": 51,
+    "candidate_exterior_face_count_including_closures": 51,
+    "deleted_face_count": 0,
+    "unexpected_added_face_count": 0,
+    "duplicated_face_count": 0,
+    "source_exterior_fingerprint": "4787ed3e5bf7d8ae2540aa90894bcb9fcc97dd0c0aa54883b12db9127eb25b55",
+    "candidate_exterior_fingerprint": "4787ed3e5bf7d8ae2540aa90894bcb9fcc97dd0c0aa54883b12db9127eb25b55",
+    "fingerprints_match": true
+  },
+  "shell_metrics": {
+    "V5_RETAINED__left_lower_face_exterior_shell": {
+      "vertices": 44,
+      "edges": 104,
+      "faces": 62,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "volume_mm3": 43042.803,
+      "dimensions_mm": [
+        158.406,
+        200.784,
+        165.889
+      ]
+    },
+    "V5_CASSETTE__moved_from_left_lower_face": {
+      "vertices": 18,
+      "edges": 35,
+      "faces": 19,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "volume_mm3": 23618.029,
+      "dimensions_mm": [
+        126.939,
+        82.113,
+        89.167
+      ]
+    },
+    "V5_RETAINED__right_lower_face_exterior_shell": {
+      "vertices": 42,
+      "edges": 99,
+      "faces": 59,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "volume_mm3": 42706.705,
+      "dimensions_mm": [
+        128.29,
+        200.784,
+        165.889
+      ]
+    },
+    "V5_CASSETTE__moved_from_right_lower_face": {
+      "vertices": 18,
+      "edges": 35,
+      "faces": 19,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "volume_mm3": 23679.464,
+      "dimensions_mm": [
+        126.939,
+        82.029,
+        89.079
+      ]
+    }
+  },
+  "all_four_review_shells_closed_and_valid": true,
+  "protected_geometry_fingerprints_before": {
+    "left_upper_head": "10c0b10886731c872b046c511ec1081548c7c69834be0a004ff5689223d1cf71",
+    "right_upper_head": "5bdd51d2785eed9cfda4fbc7fafffa27763e3805a42df6e2d2c8866f38def54a",
+    "left_ear": "59dd7b1b34984493ae294a4d9888996bdbef9d5bb6c9e4bc8bca7df54b0d66ad",
+    "right_ear": "e9fe2c62c0d65d88190875acd1f25563285f433a22cf775c3ba199af15f1b238",
+    "rear_base": "f643a50349d3c44df8821bd4e536115d250976fdc191eeb8bc1377ae166fd78a",
+    "left_lower_face": "6df8b5171df922739e38c9935ae9130dd73e7ed7f452ad1add7986832f712e5a",
+    "right_lower_face": "a885d87f205575287a25bc78fb87874e4c9a0ff0165d3226d4303719bc08d9e9"
+  },
+  "protected_geometry_fingerprints_after": {
+    "left_upper_head": "10c0b10886731c872b046c511ec1081548c7c69834be0a004ff5689223d1cf71",
+    "right_upper_head": "5bdd51d2785eed9cfda4fbc7fafffa27763e3805a42df6e2d2c8866f38def54a",
+    "left_ear": "59dd7b1b34984493ae294a4d9888996bdbef9d5bb6c9e4bc8bca7df54b0d66ad",
+    "right_ear": "e9fe2c62c0d65d88190875acd1f25563285f433a22cf775c3ba199af15f1b238",
+    "rear_base": "f643a50349d3c44df8821bd4e536115d250976fdc191eeb8bc1377ae166fd78a",
+    "left_lower_face": "6df8b5171df922739e38c9935ae9130dd73e7ed7f452ad1add7986832f712e5a",
+    "right_lower_face": "a885d87f205575287a25bc78fb87874e4c9a0ff0165d3226d4303719bc08d9e9"
+  },
+  "protected_gate8_geometry_unchanged": true,
+  "source_gate8_lower_faces_modified": false,
+  "reinforcement_status": "all Gate 8 lower-face reinforcement is preserved unchanged in hidden source objects; V5 makes no reinforcement ownership claim",
+  "cassette_connection_status": "moved left/right rear shells and unchanged rear_base share cassette ownership but are not yet connected or reconciled with aluminum",
+  "removed_gate8_review_references": [
+    "gate8_left_aluminum_tube_reference",
+    "gate8_portal_fit_coupon_integrated_socket",
+    "gate8_right_aluminum_tube_reference",
+    "left_eye_led_reference_1",
+    "left_eye_led_reference_2",
+    "left_eye_led_reference_3",
+    "left_eye_led_reference_4",
+    "right_eye_led_reference_1",
+    "right_eye_led_reference_2",
+    "right_eye_led_reference_3",
+    "right_eye_led_reference_4"
+  ],
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5.blend",
+    "glb": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5.glb",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-full-front.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-full-rear.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-full-rear-left.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-full-rear-right.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-full-left.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-full-right.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-retained-lower-front.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-retained-lower-rear.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-retained-lower-left.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-retained-lower-right.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-cassette-front.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-cassette-rear.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-cassette-rear-left.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/20-rear-cassette/current-baseline-v5/renders/lossless-repartition-cassette-rear-right.png"
+    ]
+  },
+  "no_stl_or_gcode_exported": true,
+  "review_holds": [
+    "This review changes exterior facet ownership only; it does not subtract geometry from the assembled head.",
+    "The retained lower shells and moved cassette shells are regenerated from complementary source-facet sets, so their assembled exterior is exactly the original exterior.",
+    "The accepted Gate 8 opaque muzzle panels QUAD001/TRI003 and QUAD022/TRI042 remain owned by the right and left retained lower shells respectively.",
+    "The unchanged Gate 8 lower-face objects, including all internal reinforcement, remain hidden in the Blender file as source reference and are not modified.",
+    "Reinforcement ownership is intentionally not guessed in V5; it will be assigned whole-component-by-whole-component after this exterior repartition is approved.",
+    "The moved rear shells and unchanged rear_base are an ownership group, not yet one connected cassette body.",
+    "No upper-head, ear, eye, connector, reinforcement, socket, insert, rail, backplate, hardware, seal, drain, or wiring geometry is changed.",
+    "No STL or G-code is exported, and nothing in V5 is released for printing or aluminum fabrication."
+  ]
+}

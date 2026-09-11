@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0e1622"/>
+  <text x="60" y="72" fill="#f6f8fb" font-family="sans-serif" font-size="34">Rev113 mouth merge — numeric seam contract</text>
+  <polygon points="90,210 500,150 500,540 90,480" fill="#0f85ef" stroke="#8ec9ff" stroke-width="5"/>
+  <polygon points="700,150 1110,210 1110,480 700,540" fill="#15bfcf" stroke="#9af7ff" stroke-width="5"/>
+  <polygon points="500,150 700,150 700,540 500,540" fill="#73ff2e" stroke="#d3ffbd" stroke-width="5"/>
+  <line x1="500" y1="610" x2="700" y2="610" stroke="#ffffff" stroke-width="4"/>
+  <path d="M500 590 L500 630 M700 590 L700 630" stroke="#ffffff" stroke-width="4"/>
+  <text x="420" y="665" fill="#ffffff" font-family="monospace" font-size="30">measured gap: 0.594992 mm</text>
+  <text x="430" y="115" fill="#d3ffbd" font-family="monospace" font-size="28">seam-only ruled bridge: 28.9541 mm³</text>
+  <text x="90" y="575" fill="#b8dcff" font-family="sans-serif" font-size="24">Rev112 TRI005 preserved</text>
+  <text x="810" y="575" fill="#b8fbff" font-family="sans-serif" font-size="24">Rev112 TRI006 preserved</text>
+</svg>

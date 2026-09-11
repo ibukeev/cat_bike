@@ -1,0 +1,5265 @@
+{
+  "authority": "PRINT_RELEASE__USER_CORRECTED__ONE_COMPLETE_OPAQUE_STL__FCSTD_AND_STL_ONLY",
+  "checks": {
+    "all_35_opaque_owners_plus_approved_ledge_are_valid_closed_single_solid_constituents": true,
+    "all_geometry_tooling_and_rejected_v3_evidence_hashes_match": true,
+    "all_opaque_constituent_meshes_are_individually_clean_closed_manifold": true,
+    "all_required_over_nose_members_are_included": true,
+    "all_three_translucent_breps_remain_valid_closed_single_solids": true,
+    "all_three_translucent_meshes_remain_clean_closed_manifold_single_components": true,
+    "baseline_right_lower_owner_group_exactly_matches_all_35_contract_members": true,
+    "exactly_one_opaque_stl_filename_is_declared": true,
+    "named_defective_brep_retessellation_uses_exact_pinned_canonical_facets": true,
+    "negative_x_central_owner_plank_remains_absent": true,
+    "one_combined_opaque_mesh_is_closed_manifold_allowing_source_multi_shell_topology": true,
+    "opaque_compound_preserves_all_constituents_without_boolean_volume_loss": true,
+    "output_directory_is_fresh": true,
+    "protected_deleted_or_ungrouped_members_are_not_restored": true,
+    "release_contains_no_3mf_or_gcode_names": true,
+    "v3_geometry_reconstruction_passes_every_gate_except_existing_v3_output_identity": true
+  },
+  "failed_checks": [],
+  "io_trace": {
+    "fcstd_created": true,
+    "gcode_created": false,
+    "opaque_stl_count": 1,
+    "output_directory_created": true,
+    "preflight_report_created": true,
+    "slicing_performed": false,
+    "stl_count": 4,
+    "stl_created": true,
+    "three_mf_created": false,
+    "translucent_stl_count": 3
+  },
+  "opaque_constituent_meshes": {
+    "RIGHT_LEDGE_BASE_PLUS_EXACT_USER_EXTENSION": {
+      "angular_deflection_rad": 0.35,
+      "clean": true,
+      "conditioning": null,
+      "conditioning_allowed": false,
+      "conditioning_applied": false,
+      "conditioning_policy_checks": {},
+      "linear_deflection_mm": 0.08,
+      "meshing_method": "FreeCAD MeshPart.meshFromShape",
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            79.27670288085938,
+            199.95541381835938,
+            61.63900375366211
+          ],
+          "minimum": [
+            7.266363620758057,
+            182.20806884765625,
+            46.887271881103516
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 418,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 4916.446094244411,
+        "vertices": 207
+      },
+      "relative": false,
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            79.27670288085938,
+            199.95541381835938,
+            61.63900375366211
+          ],
+          "minimum": [
+            7.266363620758057,
+            182.20806884765625,
+            46.887271881103516
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 418,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 4916.446094244411,
+        "vertices": 207
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR": {
+      "angular_deflection_rad": 0.35,
+      "clean": true,
+      "conditioning": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "automatic_repair_used": false,
+        "conditioned": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              126.788818359375,
+              200.44166564941406,
+              126.39450073242188
+            ],
+            "minimum": [
+              0.0,
+              10.605006217956543,
+              -3.000000106112566e-06
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 1400,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 46022.79789174725,
+          "vertices": 684
+        },
+        "configured_weld_distance_mm": 0.0002,
+        "coordinate_search_used": false,
+        "hole_filling_used": false,
+        "maximum_allowed_weld_distance_mm": 0.0002,
+        "maximum_weld_displacement_mm": 9.192631114274263e-05,
+        "raw": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              126.788818359375,
+              200.44166564941406,
+              126.39450073242188
+            ],
+            "minimum": [
+              0.0,
+              10.605006217956543,
+              -3.000000106112566e-06
+            ]
+          },
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 1410,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 1,
+          "signed_volume_mm3": 46022.8568317685,
+          "vertices": 689
+        },
+        "release_algorithm_id": "bounded-deterministic-submicron-weld-and-zero-area-filter-v1",
+        "remeshing_used": false,
+        "removed_degenerate_source_facets": [
+          0,
+          7,
+          30,
+          34,
+          745,
+          860,
+          867,
+          980,
+          988,
+          989
+        ],
+        "removed_duplicate_source_facets": [],
+        "scaling_used": false,
+        "smoothing_used": false,
+        "weld_groups": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            370,
+            372
+          ],
+          [
+            467,
+            468,
+            476
+          ]
+        ]
+      },
+      "conditioning_allowed": true,
+      "conditioning_applied": true,
+      "conditioning_policy_checks": {
+        "conditioned_mesh_passes_clean_gate": true,
+        "maximum_weld_displacement_within_contract": true,
+        "no_prohibited_mesh_operation_used": true,
+        "raw_mesh_failed_clean_gate": true,
+        "removed_degenerate_facet_count_matches_contract": true,
+        "removed_duplicate_facet_count_matches_contract": true,
+        "reported_weld_distance_matches_contract": true,
+        "weld_group_count_matches_contract": true
+      },
+      "linear_deflection_mm": 0.08,
+      "meshing_method": "FreeCAD MeshPart.meshFromShape",
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            126.788818359375,
+            200.44166564941406,
+            126.39450073242188
+          ],
+          "minimum": [
+            0.0,
+            10.605006217956543,
+            -3.000000106112566e-06
+          ]
+        },
+        "clean": false,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 1410,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 1,
+        "signed_volume_mm3": 46022.8568317685,
+        "vertices": 689
+      },
+      "relative": false,
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            126.788818359375,
+            200.44166564941406,
+            126.39450073242188
+          ],
+          "minimum": [
+            0.0,
+            10.605006217956543,
+            -3.000000106112566e-06
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 1400,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 46022.79789174725,
+        "vertices": 684
+      },
+      "selection": "bounded_conditioned"
+    },
+    "RIGHT_LOWER_002_component_002": {
+      "angular_deflection_rad": 0.35,
+      "clean": true,
+      "conditioning": null,
+      "conditioning_allowed": false,
+      "conditioning_applied": false,
+      "conditioning_policy_checks": {},
+      "linear_deflection_mm": 0.08,
+      "meshing_method": "FreeCAD MeshPart.meshFromShape",
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            30.778499603271484,
+            16.082592010498047,
+            92.69255828857422
+          ],
+          "minimum": [
+            0.0,
+            0.0,
+            47.80350112915039
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 480,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 3634.9693616486284,
+        "vertices": 234
+      },
+      "relative": false,
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            30.778499603271484,
+            16.082592010498047,
+            92.69255828857422
+          ],
+          "minimum": [
+            0.0,
+            0.0,
+            47.80350112915039
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 480,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 3634.9693616486284,
+        "vertices": 234
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_003_component_003": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            15.498762130737305,
+            13.803221702575684,
+            73.17393493652344
+          ],
+          "minimum": [
+            4.933773040771484,
+            4.359385013580322,
+            64.03807067871094
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 154,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 2,
+        "signed_volume_mm3": 153.46490192252588,
+        "vertices": 77
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            15.498762130737305,
+            13.803221702575684,
+            73.17393493652344
+          ],
+          "minimum": [
+            4.933773040771484,
+            4.359385013580322,
+            64.03807067871094
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 154,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 2,
+        "signed_volume_mm3": 153.46490192252588,
+        "vertices": 77
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_004_component_004": {
+      "clean": true,
+      "conditioning_applied": false,
+      "override_evidence": {
+        "absolute_signed_volume_delta_mm3": 1.8609114249557024e-11,
+        "facet_count_delta": 0,
+        "maximum_bounds_delta_mm": 0.0,
+        "reason": "FreeCAD BRep retessellation duplicates three facets and creates nonmanifold edges; the pinned canonical source mesh has the same bounds, volume, and 38 facets with zero boundary, nonmanifold, degenerate, or duplicate facets.",
+        "selected_mesh": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              51.050323486328125,
+              24.787141799926758,
+              83.48733520507812
+            ],
+            "minimum": [
+              41.04875564575195,
+              19.38631820678711,
+              77.49176025390625
+            ]
+          },
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 38,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 128,
+          "signed_volume_mm3": 57.03149526449573,
+          "vertices": 21
+        },
+        "selection_policy": "unique separate mesh component with exact accepted-BRep bounds and signed volume",
+        "source_object": "FROZEN_RIGHT_LOWER_COMPONENTS_002_060_V34",
+        "source_separate_component_index": 8
+      },
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            51.050323486328125,
+            24.787141799926758,
+            83.48733520507812
+          ],
+          "minimum": [
+            41.04875564575195,
+            19.38631820678711,
+            77.49176025390625
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 38,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 128,
+        "signed_volume_mm3": 57.03149526449573,
+        "vertices": 21
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            51.050323486328125,
+            24.787141799926758,
+            83.48733520507812
+          ],
+          "minimum": [
+            41.04875564575195,
+            19.38631820678711,
+            77.49176025390625
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 38,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 128,
+        "signed_volume_mm3": 57.03149526449573,
+        "vertices": 21
+      },
+      "selection": "pinned_canonical_source_mesh_exact_match"
+    },
+    "RIGHT_LOWER_005_component_005": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            51.02250671386719,
+            24.801258087158203,
+            83.58837127685547
+          ],
+          "minimum": [
+            41.36187744140625,
+            20.016321182250977,
+            78.6470718383789
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 22,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 19.774111846988735,
+        "vertices": 13
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            51.02250671386719,
+            24.801258087158203,
+            83.58837127685547
+          ],
+          "minimum": [
+            41.36187744140625,
+            20.016321182250977,
+            78.6470718383789
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 22,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 19.774111846988735,
+        "vertices": 13
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_007_component_007__WITH_USER_HEAD_BOTTOM_FLANGE": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            83.24925994873047,
+            74.72797393798828,
+            122.08740234375
+          ],
+          "minimum": [
+            60.845924377441406,
+            58.34321975708008,
+            113.6905517578125
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 184,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 564.4928137337595,
+        "vertices": 92
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            83.24925994873047,
+            74.72797393798828,
+            122.08740234375
+          ],
+          "minimum": [
+            60.845924377441406,
+            58.34321975708008,
+            113.6905517578125
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 184,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 564.4928137337595,
+        "vertices": 92
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_011_component_011": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            30.317251205444336,
+            14.426065444946289,
+            94.26766204833984
+          ],
+          "minimum": [
+            16.88462257385254,
+            0.12940800189971924,
+            80.0447769165039
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 284.2873881363733,
+        "vertices": 8
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            30.317251205444336,
+            14.426065444946289,
+            94.26766204833984
+          ],
+          "minimum": [
+            16.88462257385254,
+            0.12940800189971924,
+            80.0447769165039
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 284.2873881363733,
+        "vertices": 8
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_012_component_012": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            33.821109771728516,
+            52.75176239013672,
+            127.4993667602539
+          ],
+          "minimum": [
+            25.515792846679688,
+            9.459338188171387,
+            80.24689483642578
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 980.7294983474885,
+        "vertices": 8
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            33.821109771728516,
+            52.75176239013672,
+            127.4993667602539
+          ],
+          "minimum": [
+            25.515792846679688,
+            9.459338188171387,
+            80.24689483642578
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 980.7294983474885,
+        "vertices": 8
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_013_component_013": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            43.96049880981445,
+            64.40020751953125,
+            165.88949584960938
+          ],
+          "minimum": [
+            18.346378326416016,
+            0.5504999756813049,
+            81.68343353271484
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 28,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 2906.757368073155,
+        "vertices": 16
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            43.96049880981445,
+            64.40020751953125,
+            165.88949584960938
+          ],
+          "minimum": [
+            18.346378326416016,
+            0.5504999756813049,
+            81.68343353271484
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 28,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 2906.757368073155,
+        "vertices": 16
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_015_component_015__retained": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            92.57406616210938,
+            189.27647399902344,
+            58.25730514526367
+          ],
+          "minimum": [
+            80.13607025146484,
+            178.58828735351562,
+            47.87517166137695
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 18,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 267.0174415391299,
+        "vertices": 11
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            92.57406616210938,
+            189.27647399902344,
+            58.25730514526367
+          ],
+          "minimum": [
+            80.13607025146484,
+            178.58828735351562,
+            47.87517166137695
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 18,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 267.0174415391299,
+        "vertices": 11
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_018_component_018__retained": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            6.800000190734863,
+            156.9468231201172,
+            46.05745315551758
+          ],
+          "minimum": [
+            0.800000011920929,
+            39.986083984375,
+            1.7197530269622803
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 5058.4000180295525,
+        "vertices": 8
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            6.800000190734863,
+            156.9468231201172,
+            46.05745315551758
+          ],
+          "minimum": [
+            0.800000011920929,
+            39.986083984375,
+            1.7197530269622803
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 5058.4000180295525,
+        "vertices": 8
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_021_component_021": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            6.936797142028809,
+            8.39758586883545,
+            80.02249908447266
+          ],
+          "minimum": [
+            0.852297842502594,
+            1.1521530151367188,
+            60.146240234375
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 92,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 822.5043910576686,
+        "vertices": 48
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            6.936797142028809,
+            8.39758586883545,
+            80.02249908447266
+          ],
+          "minimum": [
+            0.852297842502594,
+            1.1521530151367188,
+            60.146240234375
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 92,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 822.5043910576686,
+        "vertices": 48
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_024_component_024": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            120.0296630859375,
+            105.67982482910156,
+            115.19503784179688
+          ],
+          "minimum": [
+            117.20145416259766,
+            102.47161865234375,
+            111.95808410644531
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 4,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 0.8753201463738769,
+        "vertices": 4
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            120.0296630859375,
+            105.67982482910156,
+            115.19503784179688
+          ],
+          "minimum": [
+            117.20145416259766,
+            102.47161865234375,
+            111.95808410644531
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 4,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 0.8753201463738769,
+        "vertices": 4
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_026_component_026": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            43.84297561645508,
+            27.127410888671875,
+            29.339561462402344
+          ],
+          "minimum": [
+            33.83561325073242,
+            20.86957359313965,
+            15.617968559265137
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 10,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 171.66960195957253,
+        "vertices": 7
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            43.84297561645508,
+            27.127410888671875,
+            29.339561462402344
+          ],
+          "minimum": [
+            33.83561325073242,
+            20.86957359313965,
+            15.617968559265137
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 10,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 171.66960195957253,
+        "vertices": 7
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_027_component_027": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            67.5450668334961,
+            35.23935317993164,
+            79.32632446289062
+          ],
+          "minimum": [
+            59.34626007080078,
+            27.99985694885254,
+            67.81816864013672
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 10,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 155.0377621357015,
+        "vertices": 7
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            67.5450668334961,
+            35.23935317993164,
+            79.32632446289062
+          ],
+          "minimum": [
+            59.34626007080078,
+            27.99985694885254,
+            67.81816864013672
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 10,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 155.0377621357015,
+        "vertices": 7
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_028_component_028": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            63.58666229248047,
+            126.10879516601562,
+            34.5271110534668
+          ],
+          "minimum": [
+            53.437767028808594,
+            108.75786590576172,
+            27.09148406982422
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 10,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 340.1027801091094,
+        "vertices": 7
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            63.58666229248047,
+            126.10879516601562,
+            34.5271110534668
+          ],
+          "minimum": [
+            53.437767028808594,
+            108.75786590576172,
+            27.09148406982422
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 10,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 340.1027801091094,
+        "vertices": 7
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_029_component_029": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            90.61898803710938,
+            161.0358428955078,
+            63.91313171386719
+          ],
+          "minimum": [
+            80.99917602539062,
+            147.65737915039062,
+            52.080020904541016
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 46,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 304.14748635245553,
+        "vertices": 25
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            90.61898803710938,
+            161.0358428955078,
+            63.91313171386719
+          ],
+          "minimum": [
+            80.99917602539062,
+            147.65737915039062,
+            52.080020904541016
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 46,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 304.14748635245553,
+        "vertices": 25
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_030_component_030": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            38.967262268066406,
+            41.21504211425781,
+            24.087709426879883
+          ],
+          "minimum": [
+            28.421092987060547,
+            19.837081909179688,
+            3.3834009170532227
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 16,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 281.37765201775676,
+        "vertices": 10
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            38.967262268066406,
+            41.21504211425781,
+            24.087709426879883
+          ],
+          "minimum": [
+            28.421092987060547,
+            19.837081909179688,
+            3.3834009170532227
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 16,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 281.37765201775676,
+        "vertices": 10
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_031_component_031": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            39.822914123535156,
+            38.26740264892578,
+            20.76252555847168
+          ],
+          "minimum": [
+            30.47247886657715,
+            21.464855194091797,
+            4.414337158203125
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 89.88499116205617,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            39.822914123535156,
+            38.26740264892578,
+            20.76252555847168
+          ],
+          "minimum": [
+            30.47247886657715,
+            21.464855194091797,
+            4.414337158203125
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 89.88499116205617,
+        "vertices": 6
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_032_component_032": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            62.09483337402344,
+            79.66837310791016,
+            38.547691345214844
+          ],
+          "minimum": [
+            37.257774353027344,
+            22.347736358642578,
+            20.005586624145508
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 271.11422437644967,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            62.09483337402344,
+            79.66837310791016,
+            38.547691345214844
+          ],
+          "minimum": [
+            37.257774353027344,
+            22.347736358642578,
+            20.005586624145508
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 271.11422437644967,
+        "vertices": 6
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_034_component_034": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            60.12055969238281,
+            49.31504440307617,
+            121.26329803466797
+          ],
+          "minimum": [
+            31.821077346801758,
+            25.162353515625,
+            74.1004638671875
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 16,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 238.75497177689016,
+        "vertices": 10
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            60.12055969238281,
+            49.31504440307617,
+            121.26329803466797
+          ],
+          "minimum": [
+            31.821077346801758,
+            25.162353515625,
+            74.1004638671875
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 16,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 238.75497177689016,
+        "vertices": 10
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_035_component_035": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            64.7503662109375,
+            55.7203369140625,
+            122.84370422363281
+          ],
+          "minimum": [
+            34.66877746582031,
+            27.050464630126953,
+            71.8587875366211
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 20,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 685.3102818058129,
+        "vertices": 12
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            64.7503662109375,
+            55.7203369140625,
+            122.84370422363281
+          ],
+          "minimum": [
+            34.66877746582031,
+            27.050464630126953,
+            71.8587875366211
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 20,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 685.3102818058129,
+        "vertices": 12
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_036_component_036": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            79.68539428710938,
+            54.58341979980469,
+            86.30557250976562
+          ],
+          "minimum": [
+            59.20060729980469,
+            27.348583221435547,
+            73.03201293945312
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 20,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 337.9888808643502,
+        "vertices": 12
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            79.68539428710938,
+            54.58341979980469,
+            86.30557250976562
+          ],
+          "minimum": [
+            59.20060729980469,
+            27.348583221435547,
+            73.03201293945312
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 20,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 337.9888808643502,
+        "vertices": 12
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_037_component_037": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            79.00607299804688,
+            51.286502838134766,
+            83.24533081054688
+          ],
+          "minimum": [
+            62.18874740600586,
+            28.806673049926758,
+            72.52851104736328
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 111.05984720177594,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            79.00607299804688,
+            51.286502838134766,
+            83.24533081054688
+          ],
+          "minimum": [
+            62.18874740600586,
+            28.806673049926758,
+            72.52851104736328
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 111.05984720177594,
+        "vertices": 6
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_038_component_038": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            63.172698974609375,
+            110.78173065185547,
+            37.77631759643555
+          ],
+          "minimum": [
+            54.9724006652832,
+            87.51718139648438,
+            24.425432205200195
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 110.75751841043916,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            63.172698974609375,
+            110.78173065185547,
+            37.77631759643555
+          ],
+          "minimum": [
+            54.9724006652832,
+            87.51718139648438,
+            24.425432205200195
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 110.75751841043916,
+        "vertices": 6
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_039_component_039": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            65.28002166748047,
+            115.84256744384766,
+            45.05182647705078
+          ],
+          "minimum": [
+            57.35824203491211,
+            88.95299530029297,
+            26.2347469329834
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 16,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 297.7542521663317,
+        "vertices": 10
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            65.28002166748047,
+            115.84256744384766,
+            45.05182647705078
+          ],
+          "minimum": [
+            57.35824203491211,
+            88.95299530029297,
+            26.2347469329834
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 16,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 297.7542521663317,
+        "vertices": 10
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_040_component_040": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            88.78215789794922,
+            154.4754638671875,
+            58.56568145751953
+          ],
+          "minimum": [
+            55.12309646606445,
+            119.29071807861328,
+            24.150245666503906
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 603.4950603458169,
+        "vertices": 8
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            88.78215789794922,
+            154.4754638671875,
+            58.56568145751953
+          ],
+          "minimum": [
+            55.12309646606445,
+            119.29071807861328,
+            24.150245666503906
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 603.4950603458169,
+        "vertices": 8
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_041_component_041": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            89.30238342285156,
+            148.41416931152344,
+            56.96508026123047
+          ],
+          "minimum": [
+            59.73939514160156,
+            117.87825012207031,
+            27.75403594970703
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 20,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 187.49500843588862,
+        "vertices": 12
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            89.30238342285156,
+            148.41416931152344,
+            56.96508026123047
+          ],
+          "minimum": [
+            59.73939514160156,
+            117.87825012207031,
+            27.75403594970703
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 20,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 187.49500843588862,
+        "vertices": 12
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_042_component_042": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            79.9979019165039,
+            79.68081665039062,
+            81.76585388183594
+          ],
+          "minimum": [
+            61.35678482055664,
+            54.303707122802734,
+            43.785823822021484
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 198.74106929440723,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            79.9979019165039,
+            79.68081665039062,
+            81.76585388183594
+          ],
+          "minimum": [
+            61.35678482055664,
+            54.303707122802734,
+            43.785823822021484
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 198.74106929440723,
+        "vertices": 6
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_043_component_043": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            82.7663803100586,
+            86.79460906982422,
+            86.79625701904297
+          ],
+          "minimum": [
+            62.749393463134766,
+            56.021583557128906,
+            45.45096969604492
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 16,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 523.3489299243035,
+        "vertices": 10
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            82.7663803100586,
+            86.79460906982422,
+            86.79625701904297
+          ],
+          "minimum": [
+            62.749393463134766,
+            56.021583557128906,
+            45.45096969604492
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 16,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 523.3489299243035,
+        "vertices": 10
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_044_component_044": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            77.5024642944336,
+            53.556644439697266,
+            121.93791198730469
+          ],
+          "minimum": [
+            34.36933898925781,
+            48.4251708984375,
+            84.6431655883789
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 230.5933761946926,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            77.5024642944336,
+            53.556644439697266,
+            121.93791198730469
+          ],
+          "minimum": [
+            34.36933898925781,
+            48.4251708984375,
+            84.6431655883789
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 230.5933761946926,
+        "vertices": 6
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_051_component_051": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            101.39244842529297,
+            75.8315200805664,
+            117.79815673828125
+          ],
+          "minimum": [
+            78.74466705322266,
+            55.409629821777344,
+            88.0112075805664
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 417.6642239965313,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            101.39244842529297,
+            75.8315200805664,
+            117.79815673828125
+          ],
+          "minimum": [
+            78.74466705322266,
+            55.409629821777344,
+            88.0112075805664
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 417.6642239965313,
+        "vertices": 6
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_052_component_052": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            101.41858673095703,
+            73.59868621826172,
+            113.79058837890625
+          ],
+          "minimum": [
+            82.07622528076172,
+            56.52579879760742,
+            88.07926177978516
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 140.82461976602104,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            101.41858673095703,
+            73.59868621826172,
+            113.79058837890625
+          ],
+          "minimum": [
+            82.07622528076172,
+            56.52579879760742,
+            88.07926177978516
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 140.82461976602104,
+        "vertices": 6
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_053_component_053": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            91.05963897705078,
+            184.50726318359375,
+            58.80823516845703
+          ],
+          "minimum": [
+            81.24015808105469,
+            155.1168670654297,
+            46.38080596923828
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 344.66405347320915,
+        "vertices": 8
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            91.05963897705078,
+            184.50726318359375,
+            58.80823516845703
+          ],
+          "minimum": [
+            81.24015808105469,
+            155.1168670654297,
+            46.38080596923828
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 344.66405347320915,
+        "vertices": 8
+      },
+      "selection": "raw"
+    },
+    "RIGHT_LOWER_054_component_054": {
+      "clean": true,
+      "conditioning_applied": false,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            93.04653930664062,
+            183.83450317382812,
+            62.018489837646484
+          ],
+          "minimum": [
+            86.79967498779297,
+            158.47943115234375,
+            50.474700927734375
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 113.17516964999822,
+        "vertices": 6
+      },
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            93.04653930664062,
+            183.83450317382812,
+            62.018489837646484
+          ],
+          "minimum": [
+            86.79967498779297,
+            158.47943115234375,
+            50.474700927734375
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 8,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 113.17516964999822,
+        "vertices": 6
+      },
+      "selection": "raw"
+    }
+  },
+  "opaque_constituents": {
+    "RIGHT_LEDGE_BASE_PLUS_EXACT_USER_EXTENSION": {
+      "brep": {
+        "area_mm2": 3419.507635928196,
+        "bounds_mm": {
+          "maximum": [
+            79.2767054406037,
+            199.9554083308387,
+            61.63900477938781
+          ],
+          "minimum": [
+            7.266363659972352,
+            182.20806298638996,
+            46.88727018102837
+          ],
+          "size": [
+            72.01034178063135,
+            17.747345344448746,
+            14.751734598359441
+          ]
+        },
+        "brep_sha256": "4cffff3861652acdc1d2940040546c8fa613a2cec6eb3428b1eee2e3f64178fe",
+        "closed": true,
+        "cylinder_radii_mm": [
+          1.69,
+          1.7
+        ],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 102,
+          "faces": 39,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 67,
+          "wires": 45
+        },
+        "valid": true,
+        "volume_mm3": 4916.084576314994
+      },
+      "origin": "PINNED_BASELINE_LEDGE__APPROVED_EXACT_USER_EXTENSION_FUSED"
+    },
+    "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR": {
+      "brep": {
+        "area_mm2": 56264.94427112829,
+        "bounds_mm": {
+          "maximum": [
+            126.78881525899226,
+            200.44166394445313,
+            126.39450073242188
+          ],
+          "minimum": [
+            -1.4210854715202004e-14,
+            10.605006217956543,
+            -3.000000113217993e-06
+          ],
+          "size": [
+            126.78881525899227,
+            189.83665772649658,
+            126.39450373242198
+          ]
+        },
+        "brep_sha256": "7ae29f003350bebea43469c3195d60bee61797f94bbc26f745efa6943fa1799c",
+        "closed": true,
+        "cylinder_radii_mm": [
+          1.0,
+          2.0,
+          2.000000000000001
+        ],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 929,
+          "faces": 476,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 449,
+          "wires": 489
+        },
+        "valid": true,
+        "volume_mm3": 46022.54244351831
+      },
+      "origin": "PINNED_SOURCES__FACE6_HEALED_OWNER__APPROVED_BELOW_MOUTH_AND_OUTER_OPAQUE_TABS_FUSED"
+    },
+    "RIGHT_LOWER_002_component_002": {
+      "brep": {
+        "area_mm2": 3209.7379815563036,
+        "bounds_mm": {
+          "maximum": [
+            30.778499603271484,
+            16.082592010498047,
+            92.69255828857422
+          ],
+          "minimum": [
+            -1.78e-15,
+            0.0,
+            47.80350112915038
+          ],
+          "size": [
+            30.778499603271488,
+            16.082592010498047,
+            44.889057159423835
+          ]
+        },
+        "brep_sha256": "b15b31e866d4dbf39be2f43d66edc3b3e39f4bbb798f3d73c350a5b8e3a18718",
+        "closed": true,
+        "cylinder_radii_mm": [
+          2.0
+        ],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 326,
+          "faces": 184,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 138,
+          "wires": 186
+        },
+        "valid": true,
+        "volume_mm3": 3634.866622089893
+      },
+      "origin": "PINNED_BASELINE_OWNER__APPROVED_NOSE_TOP_OPAQUE_TAB_FUSED"
+    },
+    "RIGHT_LOWER_003_component_003": {
+      "brep": {
+        "area_mm2": 230.482045595759,
+        "bounds_mm": {
+          "maximum": [
+            15.498762130737305,
+            13.803221702575684,
+            73.17393493652344
+          ],
+          "minimum": [
+            4.933773040771484,
+            4.359385013580322,
+            64.03807067871094
+          ],
+          "size": [
+            10.56498908996582,
+            9.443836688995361,
+            9.1358642578125
+          ]
+        },
+        "brep_sha256": "06ac7afff868ac25fc15feff000164835d066d883db295a4f0f74f296c88541d",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 231,
+          "faces": 154,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 77,
+          "wires": 154
+        },
+        "valid": true,
+        "volume_mm3": 153.464901922528
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_004_component_004": {
+      "brep": {
+        "area_mm2": 167.91157492206688,
+        "bounds_mm": {
+          "maximum": [
+            51.050323486328125,
+            24.787141799926758,
+            83.48733520507812
+          ],
+          "minimum": [
+            41.04875564575195,
+            19.38631820678711,
+            77.49176025390625
+          ],
+          "size": [
+            10.001567840576172,
+            5.400823593139648,
+            5.995574951171875
+          ]
+        },
+        "brep_sha256": "28e37df7f10893e4335a99589f982d5b7dc293c9e7dffcd33f978384869cd06c",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 57,
+          "faces": 38,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 21,
+          "wires": 38
+        },
+        "valid": true,
+        "volume_mm3": 57.03149526451434
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_005_component_005": {
+      "brep": {
+        "area_mm2": 67.7321002605223,
+        "bounds_mm": {
+          "maximum": [
+            51.02250671386719,
+            24.801258087158203,
+            83.58837127685547
+          ],
+          "minimum": [
+            41.36187744140625,
+            20.016321182250977,
+            78.6470718383789
+          ],
+          "size": [
+            9.660629272460938,
+            4.784936904907227,
+            4.9412994384765625
+          ]
+        },
+        "brep_sha256": "9360efe32c73d073b5a62a32c43c0b7f0f6de75d5a25d53d3f02d2ca58869b77",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 33,
+          "faces": 22,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 13,
+          "wires": 22
+        },
+        "valid": true,
+        "volume_mm3": 19.774111846987797
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_007_component_007__WITH_USER_HEAD_BOTTOM_FLANGE": {
+      "brep": {
+        "area_mm2": 635.1614737303579,
+        "bounds_mm": {
+          "maximum": [
+            83.24925711181773,
+            74.72797428457918,
+            122.08740047097392
+          ],
+          "minimum": [
+            60.8459235242413,
+            58.34321826997018,
+            113.69054864359522
+          ],
+          "size": [
+            22.403333587576427,
+            16.384756014608996,
+            8.396851827378697
+          ]
+        },
+        "brep_sha256": "12ceff0f0170c4bf1c852db78295939f5efefc235f343fc4ba19826ee63d81cb",
+        "closed": true,
+        "cylinder_radii_mm": [
+          2.006127077231142
+        ],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 33,
+          "faces": 13,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 22,
+          "wires": 15
+        },
+        "valid": true,
+        "volume_mm3": 564.2364315389618
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_011_component_011": {
+      "brep": {
+        "area_mm2": 311.1186833951836,
+        "bounds_mm": {
+          "maximum": [
+            30.317251205444336,
+            14.42606544494629,
+            94.26766204833984
+          ],
+          "minimum": [
+            16.88462257385254,
+            0.12940800189971924,
+            80.0447769165039
+          ],
+          "size": [
+            13.432628631591797,
+            14.296657443046572,
+            14.222885131835938
+          ]
+        },
+        "brep_sha256": "d106f39d6e2d527b641aec5ce4a618a9f1507f12e34b2252cbd84616e387e083",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 18,
+          "faces": 12,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 8,
+          "wires": 12
+        },
+        "valid": true,
+        "volume_mm3": 284.287388136374
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_012_component_012": {
+      "brep": {
+        "area_mm2": 990.9787493323404,
+        "bounds_mm": {
+          "maximum": [
+            33.821109771728516,
+            52.75176239013672,
+            127.4993667602539
+          ],
+          "minimum": [
+            25.515792846679688,
+            9.459338188171387,
+            80.24689483642578
+          ],
+          "size": [
+            8.305316925048828,
+            43.29242420196533,
+            47.252471923828125
+          ]
+        },
+        "brep_sha256": "279b78d4c8e0a73f0af4289ee2996bd4fbd2a319b73948847f32671e033660d1",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 18,
+          "faces": 12,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 8,
+          "wires": 12
+        },
+        "valid": true,
+        "volume_mm3": 980.7294983474804
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_013_component_013": {
+      "brep": {
+        "area_mm2": 3688.59628406906,
+        "bounds_mm": {
+          "maximum": [
+            43.96049880981445,
+            64.40020854413335,
+            165.88949584960938
+          ],
+          "minimum": [
+            18.346378326416016,
+            0.5504999756813049,
+            81.68343353271484
+          ],
+          "size": [
+            25.614120483398438,
+            63.849708568452044,
+            84.20606231689453
+          ]
+        },
+        "brep_sha256": "a8e9dec6620980097c77c25a9be7e8666b6708f59bdabc56dd38c83c4385c6a9",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 33,
+          "faces": 19,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 16,
+          "wires": 19
+        },
+        "valid": true,
+        "volume_mm3": 2906.757131483465
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_015_component_015__retained": {
+      "brep": {
+        "area_mm2": 276.92116143474885,
+        "bounds_mm": {
+          "maximum": [
+            92.57406970663594,
+            189.27647033835947,
+            58.25730445612924
+          ],
+          "minimum": [
+            80.13606818354931,
+            178.58828735351562,
+            47.87517166137695
+          ],
+          "size": [
+            12.438001523086626,
+            10.688182984843849,
+            10.382132794752287
+          ]
+        },
+        "brep_sha256": "9e964c8ade806118a024fa439bc4d9b766987311e36a6967897b503a0581b635",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 19,
+          "faces": 10,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 11,
+          "wires": 10
+        },
+        "valid": true,
+        "volume_mm3": 267.01733790558023
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_018_component_018__retained": {
+      "brep": {
+        "area_mm2": 3220.14340498715,
+        "bounds_mm": {
+          "maximum": [
+            6.80000019073487,
+            156.94681676983421,
+            46.05745477674071
+          ],
+          "minimum": [
+            0.8000000119209147,
+            39.986083984375,
+            1.7197530269622732
+          ],
+          "size": [
+            6.000000178813956,
+            116.96073278545921,
+            44.33770174977844
+          ]
+        },
+        "brep_sha256": "6f38b546f7034c3db28587fbf6d07777a32c2cde6429c72a553f079bd46dc2d0",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 6,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 8,
+          "wires": 6
+        },
+        "valid": true,
+        "volume_mm3": 5058.400029689037
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_021_component_021": {
+      "brep": {
+        "area_mm2": 601.040243398534,
+        "bounds_mm": {
+          "maximum": [
+            6.936797015209113,
+            8.397585953017703,
+            80.02250099182129
+          ],
+          "minimum": [
+            0.8522978535582022,
+            1.1521530224953598,
+            60.14623832702637
+          ],
+          "size": [
+            6.084499161650911,
+            7.245432930522344,
+            19.876262664794922
+          ]
+        },
+        "brep_sha256": "a9d13777174a0ef55ff4072fdbbbf03352950e9923727e26d6ee89fa57af0199",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 81,
+          "faces": 35,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 48,
+          "wires": 35
+        },
+        "valid": true,
+        "volume_mm3": 822.5045517214929
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_024_component_024": {
+      "brep": {
+        "area_mm2": 10.359944431606246,
+        "bounds_mm": {
+          "maximum": [
+            120.0296630859375,
+            105.67982482910156,
+            115.19503784179688
+          ],
+          "minimum": [
+            117.20145416259766,
+            102.47161865234375,
+            111.95808410644531
+          ],
+          "size": [
+            2.8282089233398438,
+            3.2082061767578125,
+            3.2369537353515625
+          ]
+        },
+        "brep_sha256": "dd5577d27f13b9d7745eb6e2711ded57aa9ee15ce525fb5f53ea7ba7f86a74aa",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 6,
+          "faces": 4,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 4,
+          "wires": 4
+        },
+        "valid": true,
+        "volume_mm3": 0.875320146374128
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_026_component_026": {
+      "brep": {
+        "area_mm2": 214.63652147392008,
+        "bounds_mm": {
+          "maximum": [
+            43.84297561645508,
+            27.127410888671875,
+            29.339561462402344
+          ],
+          "minimum": [
+            33.83561325073242,
+            20.86957359313965,
+            15.617968559265137
+          ],
+          "size": [
+            10.007362365722656,
+            6.257837295532227,
+            13.721592903137207
+          ]
+        },
+        "brep_sha256": "96d97ad6f3b43b4f24a07961832dc4c39d18afc07b720d0998a52b5bcdee1fe9",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 15,
+          "faces": 10,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 7,
+          "wires": 10
+        },
+        "valid": true,
+        "volume_mm3": 171.6696019595724
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_027_component_027": {
+      "brep": {
+        "area_mm2": 185.78382107895504,
+        "bounds_mm": {
+          "maximum": [
+            67.5450668334961,
+            35.23935317993164,
+            79.32632446289062
+          ],
+          "minimum": [
+            59.34626007080078,
+            27.99985694885254,
+            67.81816864013672
+          ],
+          "size": [
+            8.198806762695312,
+            7.239496231079102,
+            11.508155822753906
+          ]
+        },
+        "brep_sha256": "43ce5303c7aa69b7cce8a88d95113dfb677b108338db79bf94a9020e1ebb8bad",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 15,
+          "faces": 10,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 7,
+          "wires": 10
+        },
+        "valid": true,
+        "volume_mm3": 155.03776213570188
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_028_component_028": {
+      "brep": {
+        "area_mm2": 326.90790831388,
+        "bounds_mm": {
+          "maximum": [
+            63.58666229248047,
+            126.10879516601562,
+            34.5271110534668
+          ],
+          "minimum": [
+            53.437767028808594,
+            108.75786590576172,
+            27.09148406982422
+          ],
+          "size": [
+            10.148895263671875,
+            17.350929260253906,
+            7.435626983642578
+          ]
+        },
+        "brep_sha256": "84636b0f72798466177fa7dbceb9add1d8c042cbf33b64fe7350915edb15b479",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 15,
+          "faces": 10,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 7,
+          "wires": 10
+        },
+        "valid": true,
+        "volume_mm3": 340.10278010910963
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_029_component_029": {
+      "brep": {
+        "area_mm2": 296.00810865584805,
+        "bounds_mm": {
+          "maximum": [
+            90.61898803710938,
+            161.0358428955078,
+            63.91313171386719
+          ],
+          "minimum": [
+            80.99917602539062,
+            147.65737915039062,
+            52.080020904541016
+          ],
+          "size": [
+            9.61981201171875,
+            13.378463745117188,
+            11.833110809326172
+          ]
+        },
+        "brep_sha256": "3add74d4df7ae22173cc3d20a8a27340ee2b359613eba5931df5b3eda41d06a1",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 69,
+          "faces": 46,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 25,
+          "wires": 46
+        },
+        "valid": true,
+        "volume_mm3": 304.1474863524585
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_030_component_030": {
+      "brep": {
+        "area_mm2": 431.5004822105634,
+        "bounds_mm": {
+          "maximum": [
+            38.967262268066406,
+            41.21504211425781,
+            24.087709426879883
+          ],
+          "minimum": [
+            28.421092987060547,
+            19.837081909179688,
+            3.383400917053221
+          ],
+          "size": [
+            10.54616928100586,
+            21.377960205078125,
+            20.70430850982666
+          ]
+        },
+        "brep_sha256": "bc4c33edc6fa700dbe0aa1c8c4e35358a1059fd3d778579f8e1139b354d9f1c3",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 24,
+          "faces": 16,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 10,
+          "wires": 16
+        },
+        "valid": true,
+        "volume_mm3": 281.3776520177564
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_031_component_031": {
+      "brep": {
+        "area_mm2": 238.27682952667627,
+        "bounds_mm": {
+          "maximum": [
+            39.822914123535156,
+            38.26740264892578,
+            20.76252555847168
+          ],
+          "minimum": [
+            30.47247886657715,
+            21.464855194091793,
+            4.414337158203123
+          ],
+          "size": [
+            9.350435256958008,
+            16.802547454833988,
+            16.348188400268555
+          ]
+        },
+        "brep_sha256": "d43b6452a8675e83c6345d53b7cf5bc08b52ac3b0ca5884721c38039e5d333c1",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 89.8849911620568
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_032_component_032": {
+      "brep": {
+        "area_mm2": 700.9555567575723,
+        "bounds_mm": {
+          "maximum": [
+            62.09483337402344,
+            79.66837310791016,
+            38.547691345214844
+          ],
+          "minimum": [
+            37.257774353027344,
+            22.347736358642578,
+            20.005586624145508
+          ],
+          "size": [
+            24.837059020996094,
+            57.32063674926758,
+            18.542104721069336
+          ]
+        },
+        "brep_sha256": "32ec4fab1c99a975efa292ea37a5c5eaff95e8f07076940407f6cce2eb649a16",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 271.1142243764482
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_034_component_034": {
+      "brep": {
+        "area_mm2": 624.3272102521994,
+        "bounds_mm": {
+          "maximum": [
+            60.12055969238281,
+            49.31504440307617,
+            121.26329803466797
+          ],
+          "minimum": [
+            31.821077346801758,
+            25.162353515624996,
+            74.1004638671875
+          ],
+          "size": [
+            28.299482345581055,
+            24.152690887451175,
+            47.16283416748047
+          ]
+        },
+        "brep_sha256": "776d0fef125b9a0d531003d5f301859c53e573c9636443f02ebf0be148ec3a3f",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 24,
+          "faces": 16,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 10,
+          "wires": 16
+        },
+        "valid": true,
+        "volume_mm3": 238.7549717768903
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_035_component_035": {
+      "brep": {
+        "area_mm2": 1018.6175688114241,
+        "bounds_mm": {
+          "maximum": [
+            64.7503662109375,
+            55.7203369140625,
+            122.84370422363281
+          ],
+          "minimum": [
+            34.66877746582031,
+            27.05046463012695,
+            71.8587875366211
+          ],
+          "size": [
+            30.081588745117188,
+            28.66987228393555,
+            50.98491668701172
+          ]
+        },
+        "brep_sha256": "590758fc58b4d7d261b5c75d53d49aec7b806050614d22a9778adbbb14648743",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 30,
+          "faces": 20,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 12,
+          "wires": 20
+        },
+        "valid": true,
+        "volume_mm3": 685.3102818058021
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_036_component_036": {
+      "brep": {
+        "area_mm2": 515.3715360486008,
+        "bounds_mm": {
+          "maximum": [
+            79.68539428710938,
+            54.58341979980469,
+            86.30557250976562
+          ],
+          "minimum": [
+            59.20060729980469,
+            27.348583221435543,
+            73.03201293945312
+          ],
+          "size": [
+            20.484786987304688,
+            27.234836578369144,
+            13.2735595703125
+          ]
+        },
+        "brep_sha256": "72c5691df8286e098c89122dfc96cd330253a2e97cb9efa85953655ac2970c1a",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 30,
+          "faces": 20,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 12,
+          "wires": 20
+        },
+        "valid": true,
+        "volume_mm3": 337.9888808643537
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_037_component_037": {
+      "brep": {
+        "area_mm2": 292.33625719887516,
+        "bounds_mm": {
+          "maximum": [
+            79.00607299804688,
+            51.286502838134766,
+            83.24533081054688
+          ],
+          "minimum": [
+            62.18874740600586,
+            28.806673049926758,
+            72.52851104736328
+          ],
+          "size": [
+            16.817325592041016,
+            22.479829788208008,
+            10.716819763183594
+          ]
+        },
+        "brep_sha256": "b52c6d6a16defd1f3c66bd57a8bf1cca2863c68604cf2a82919a86125ededca7",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 111.05984720177801
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_038_component_038": {
+      "brep": {
+        "area_mm2": 291.5642278914103,
+        "bounds_mm": {
+          "maximum": [
+            63.172698974609375,
+            110.78173065185547,
+            37.77631759643555
+          ],
+          "minimum": [
+            54.9724006652832,
+            87.51718139648438,
+            24.425432205200195
+          ],
+          "size": [
+            8.200298309326172,
+            23.264549255371094,
+            13.350885391235352
+          ]
+        },
+        "brep_sha256": "9b0b27d118fa5de62c33520c260ae3e66df054aa00501c57d0ec38e3e68bb962",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 110.75751841044071
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_039_component_039": {
+      "brep": {
+        "area_mm2": 476.4562984506589,
+        "bounds_mm": {
+          "maximum": [
+            65.28002166748047,
+            115.84256744384766,
+            45.05182647705078
+          ],
+          "minimum": [
+            57.35824203491211,
+            88.95299530029297,
+            26.2347469329834
+          ],
+          "size": [
+            7.921779632568359,
+            26.889572143554688,
+            18.817079544067383
+          ]
+        },
+        "brep_sha256": "8f68a40ff2a0453b7f90623c0148bcc05d05e493a16587a899ef51d724a2ddab",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 24,
+          "faces": 16,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 10,
+          "wires": 16
+        },
+        "valid": true,
+        "volume_mm3": 297.75425216633454
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_040_component_040": {
+      "brep": {
+        "area_mm2": 898.1230575019017,
+        "bounds_mm": {
+          "maximum": [
+            88.78215789794922,
+            154.4754638671875,
+            58.56568145751953
+          ],
+          "minimum": [
+            55.12309646606445,
+            119.29071807861328,
+            24.150245666503906
+          ],
+          "size": [
+            33.659061431884766,
+            35.18474578857422,
+            34.415435791015625
+          ]
+        },
+        "brep_sha256": "385ed4d7415efeaa32a36996d64a052a5a7d8f3ccd50fa1150a8ee69fecec52d",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 18,
+          "faces": 12,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 8,
+          "wires": 12
+        },
+        "valid": true,
+        "volume_mm3": 603.4950603458224
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_041_component_041": {
+      "brep": {
+        "area_mm2": 506.70113831928325,
+        "bounds_mm": {
+          "maximum": [
+            89.30238342285156,
+            148.41416931152344,
+            56.96508026123047
+          ],
+          "minimum": [
+            59.73939514160156,
+            117.87825012207031,
+            27.754035949707028
+          ],
+          "size": [
+            29.56298828125,
+            30.535919189453125,
+            29.21104431152344
+          ]
+        },
+        "brep_sha256": "b25a894fd1c0d83ff98dccf792872e8581ede648f109384ae38bd67af92a37ad",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 30,
+          "faces": 20,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 12,
+          "wires": 20
+        },
+        "valid": true,
+        "volume_mm3": 187.49500843589294
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_042_component_042": {
+      "brep": {
+        "area_mm2": 516.18612938614,
+        "bounds_mm": {
+          "maximum": [
+            79.9979019165039,
+            79.68081665039062,
+            81.76585388183594
+          ],
+          "minimum": [
+            61.35678482055664,
+            54.303707122802734,
+            43.785823822021484
+          ],
+          "size": [
+            18.641117095947266,
+            25.37710952758789,
+            37.98003005981445
+          ]
+        },
+        "brep_sha256": "c84d543b37e430c397645b203b86af22eabe1f2545cb30ad57e76483808aec55",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 198.7410692944112
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_043_component_043": {
+      "brep": {
+        "area_mm2": 807.9104570803473,
+        "bounds_mm": {
+          "maximum": [
+            82.7663803100586,
+            86.79460906982422,
+            86.79625701904297
+          ],
+          "minimum": [
+            62.749393463134766,
+            56.021583557128906,
+            45.45096969604492
+          ],
+          "size": [
+            20.016986846923828,
+            30.773025512695312,
+            41.34528732299805
+          ]
+        },
+        "brep_sha256": "91b64e5f4025f2e6e3816c8223a5963eaee74a6cb2e6bc9f8fc201c73ab595a2",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 24,
+          "faces": 16,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 10,
+          "wires": 16
+        },
+        "valid": true,
+        "volume_mm3": 523.3489299243042
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_044_component_044": {
+      "brep": {
+        "area_mm2": 597.5059639091803,
+        "bounds_mm": {
+          "maximum": [
+            77.5024642944336,
+            53.556644439697266,
+            121.93791198730469
+          ],
+          "minimum": [
+            34.36933898925781,
+            48.4251708984375,
+            84.6431655883789
+          ],
+          "size": [
+            43.13312530517578,
+            5.131473541259766,
+            37.29474639892578
+          ]
+        },
+        "brep_sha256": "0020a1d69c2044a638712a76e9f00615caa64c51a24e624b1baacf32b95d5e09",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 230.59337619469102
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_051_component_051": {
+      "brep": {
+        "area_mm2": 629.7337058155332,
+        "bounds_mm": {
+          "maximum": [
+            101.39244842529297,
+            75.8315200805664,
+            117.79815673828125
+          ],
+          "minimum": [
+            78.74466705322266,
+            55.409629821777344,
+            88.0112075805664
+          ],
+          "size": [
+            22.647781372070312,
+            20.421890258789062,
+            29.786949157714844
+          ]
+        },
+        "brep_sha256": "fb496244748e836ea16b3ded588438b08bbde829cf8e8242c073716a4f08f59b",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 417.66422399653055
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_052_component_052": {
+      "brep": {
+        "area_mm2": 368.32546230940363,
+        "bounds_mm": {
+          "maximum": [
+            101.41858673095703,
+            73.59868621826172,
+            113.79058837890625
+          ],
+          "minimum": [
+            82.07622528076172,
+            56.52579879760742,
+            88.07926177978516
+          ],
+          "size": [
+            19.342361450195312,
+            17.072887420654297,
+            25.711326599121094
+          ]
+        },
+        "brep_sha256": "6878636354e866f444860032808d3194eae3ceee30f9354680d2571bbe0059f1",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 140.82461976602207
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_053_component_053": {
+      "brep": {
+        "area_mm2": 523.3473669173686,
+        "bounds_mm": {
+          "maximum": [
+            91.05963897705078,
+            184.50726318359375,
+            58.80823516845703
+          ],
+          "minimum": [
+            81.24015808105469,
+            155.1168670654297,
+            46.38080596923828
+          ],
+          "size": [
+            9.819480895996094,
+            29.390396118164062,
+            12.42742919921875
+          ]
+        },
+        "brep_sha256": "03164f29447ee3dc6445145e3b58126c5acd16066598f188e42bdf6ecc706b3f",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 18,
+          "faces": 12,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 8,
+          "wires": 12
+        },
+        "valid": true,
+        "volume_mm3": 344.66405347321177
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    },
+    "RIGHT_LOWER_054_component_054": {
+      "brep": {
+        "area_mm2": 297.73668445947163,
+        "bounds_mm": {
+          "maximum": [
+            93.04653930664062,
+            183.83450317382812,
+            62.018489837646484
+          ],
+          "minimum": [
+            86.79967498779297,
+            158.47943115234375,
+            50.474700927734375
+          ],
+          "size": [
+            6.246864318847656,
+            25.355072021484375,
+            11.54378890991211
+          ]
+        },
+        "brep_sha256": "84f42cfa865d0ffa816db252aa5c7fb0afc550bfdaeec536955414d9ccc30e2b",
+        "closed": true,
+        "cylinder_radii_mm": [],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 12,
+          "faces": 8,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 6,
+          "wires": 8
+        },
+        "valid": true,
+        "volume_mm3": 113.17516964999847
+      },
+      "origin": "PINNED_MANUAL_BASELINE_GROUP_MEMBER"
+    }
+  },
+  "opaque_mesh_source_overrides": {
+    "RIGHT_LOWER_004_component_004": {
+      "absolute_signed_volume_delta_mm3": 1.8609114249557024e-11,
+      "facet_count_delta": 0,
+      "maximum_bounds_delta_mm": 0.0,
+      "reason": "FreeCAD BRep retessellation duplicates three facets and creates nonmanifold edges; the pinned canonical source mesh has the same bounds, volume, and 38 facets with zero boundary, nonmanifold, degenerate, or duplicate facets.",
+      "selected_mesh": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            51.050323486328125,
+            24.787141799926758,
+            83.48733520507812
+          ],
+          "minimum": [
+            41.04875564575195,
+            19.38631820678711,
+            77.49176025390625
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 38,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 128,
+        "signed_volume_mm3": 57.03149526449573,
+        "vertices": 21
+      },
+      "selection_policy": "unique separate mesh component with exact accepted-BRep bounds and signed volume",
+      "source_object": "FROZEN_RIGHT_LOWER_COMPONENTS_002_060_V34",
+      "source_separate_component_index": 8
+    }
+  },
+  "opaque_packaging": {
+    "compound_volume_residual_mm3": -0.009382396805449389,
+    "constituent_count_including_ledge": 36,
+    "constituent_order": [
+      "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR",
+      "RIGHT_LOWER_002_component_002",
+      "RIGHT_LOWER_003_component_003",
+      "RIGHT_LOWER_004_component_004",
+      "RIGHT_LOWER_005_component_005",
+      "RIGHT_LOWER_007_component_007__WITH_USER_HEAD_BOTTOM_FLANGE",
+      "RIGHT_LOWER_011_component_011",
+      "RIGHT_LOWER_012_component_012",
+      "RIGHT_LOWER_013_component_013",
+      "RIGHT_LOWER_015_component_015__retained",
+      "RIGHT_LOWER_018_component_018__retained",
+      "RIGHT_LOWER_021_component_021",
+      "RIGHT_LOWER_024_component_024",
+      "RIGHT_LOWER_026_component_026",
+      "RIGHT_LOWER_027_component_027",
+      "RIGHT_LOWER_028_component_028",
+      "RIGHT_LOWER_029_component_029",
+      "RIGHT_LOWER_030_component_030",
+      "RIGHT_LOWER_031_component_031",
+      "RIGHT_LOWER_032_component_032",
+      "RIGHT_LOWER_034_component_034",
+      "RIGHT_LOWER_035_component_035",
+      "RIGHT_LOWER_036_component_036",
+      "RIGHT_LOWER_037_component_037",
+      "RIGHT_LOWER_038_component_038",
+      "RIGHT_LOWER_039_component_039",
+      "RIGHT_LOWER_040_component_040",
+      "RIGHT_LOWER_041_component_041",
+      "RIGHT_LOWER_042_component_042",
+      "RIGHT_LOWER_043_component_043",
+      "RIGHT_LOWER_044_component_044",
+      "RIGHT_LOWER_051_component_051",
+      "RIGHT_LOWER_052_component_052",
+      "RIGHT_LOWER_053_component_053",
+      "RIGHT_LOWER_054_component_054",
+      "RIGHT_LEDGE_BASE_PLUS_EXACT_USER_EXTENSION"
+    ],
+    "global_boolean_union_used": false,
+    "invented_bridges_used": false,
+    "physical_topology_disclosure": "The accepted baseline is intrinsically multi-shell. Preserve every intended shell in one opaque STL file without inventing bridges.",
+    "protected_excluded_members": [
+      "RIGHT_LOWER_006_component_006",
+      "RIGHT_LOWER_008_component_008",
+      "RIGHT_LOWER_010_component_010",
+      "RIGHT_LOWER_014_component_014",
+      "RIGHT_LOWER_023_component_023"
+    ],
+    "required_over_nose_members": [
+      "RIGHT_LOWER_002_component_002",
+      "RIGHT_LOWER_003_component_003",
+      "RIGHT_LOWER_004_component_004",
+      "RIGHT_LOWER_005_component_005",
+      "RIGHT_LOWER_007_component_007__WITH_USER_HEAD_BOTTOM_FLANGE",
+      "RIGHT_LOWER_011_component_011",
+      "RIGHT_LOWER_012_component_012",
+      "RIGHT_LOWER_013_component_013"
+    ],
+    "single_opaque_stl_file": true,
+    "source_owner_count": 35,
+    "source_owner_names": [
+      "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR",
+      "RIGHT_LOWER_002_component_002",
+      "RIGHT_LOWER_003_component_003",
+      "RIGHT_LOWER_004_component_004",
+      "RIGHT_LOWER_005_component_005",
+      "RIGHT_LOWER_007_component_007__WITH_USER_HEAD_BOTTOM_FLANGE",
+      "RIGHT_LOWER_011_component_011",
+      "RIGHT_LOWER_012_component_012",
+      "RIGHT_LOWER_013_component_013",
+      "RIGHT_LOWER_015_component_015__retained",
+      "RIGHT_LOWER_018_component_018__retained",
+      "RIGHT_LOWER_021_component_021",
+      "RIGHT_LOWER_024_component_024",
+      "RIGHT_LOWER_026_component_026",
+      "RIGHT_LOWER_027_component_027",
+      "RIGHT_LOWER_028_component_028",
+      "RIGHT_LOWER_029_component_029",
+      "RIGHT_LOWER_030_component_030",
+      "RIGHT_LOWER_031_component_031",
+      "RIGHT_LOWER_032_component_032",
+      "RIGHT_LOWER_034_component_034",
+      "RIGHT_LOWER_035_component_035",
+      "RIGHT_LOWER_036_component_036",
+      "RIGHT_LOWER_037_component_037",
+      "RIGHT_LOWER_038_component_038",
+      "RIGHT_LOWER_039_component_039",
+      "RIGHT_LOWER_040_component_040",
+      "RIGHT_LOWER_041_component_041",
+      "RIGHT_LOWER_042_component_042",
+      "RIGHT_LOWER_043_component_043",
+      "RIGHT_LOWER_044_component_044",
+      "RIGHT_LOWER_051_component_051",
+      "RIGHT_LOWER_052_component_052",
+      "RIGHT_LOWER_053_component_053",
+      "RIGHT_LOWER_054_component_054"
+    ],
+    "source_volume_sum_mm3": 71843.53360134558
+  },
+  "output_files": {
+    "checkpoint": "CHECKPOINT_2026-08-21.md",
+    "fcstd": "LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4.FCStd",
+    "readme": "README.md",
+    "stls": {
+      "opaque_complete": "stl/RIGHT_LOWER_COMPLETE_OPAQUE_ASSEMBLY_WITH_APPROVED_TABS_AND_LEDGE_PRINT_V4.stl",
+      "translucent_central_component_03": "stl/RIGHT_TRANSLUCENT_CENTRAL_CLUSTER_RIGHT_HALF_WITH_NOSE_TOP_TAB_PRINT_V4.stl",
+      "translucent_quad003_component_01": "stl/RIGHT_TRANSLUCENT_QUAD003_COMPONENT_01_WITH_BELOW_MOUTH_TAB_PRINT_V4.stl",
+      "translucent_quad017_component_02": "stl/RIGHT_TRANSLUCENT_QUAD017_COMPONENT_02_WITH_OUTER_TAB_PRINT_V4.stl"
+    }
+  },
+  "output_sha256": {
+    "checkpoint": "94c0692cf36df5b4719c71daab5e3378eeecce5b03f8178cd8d061af998abe29",
+    "fcstd": "105215600a4c0ae4563400b42abe7e426c1021cf8f4d23ea7394f771ac9b2e0b",
+    "readme": "cfe4cc6b464aa5e8aa29636514d6783109bc59f9605f7c848cff25cd086f84df",
+    "stls": {
+      "opaque_complete": "f79c7ddfd6f8c75681107836219bbae8610bee54520d3c17f7217b9f408abbfe",
+      "translucent_central_component_03": "ba40c28280d1cf89ec8917732b922295f3066a691a216c01f3f19d57b1ca6b00",
+      "translucent_quad003_component_01": "bea1c78ab0756cd103a5eb8b4225b1713d8c059576f5067d4bd66f50182218b9",
+      "translucent_quad017_component_02": "a3490bc0bbd74f7b70ffa776e1b36627592868dd57e74f03edc6b5a7eb209d2a"
+    }
+  },
+  "part_breps": {
+    "opaque_complete": {
+      "area_mm2": 83852.9478465393,
+      "bounds_mm": {
+        "maximum": [
+          126.78881525899226,
+          200.44166394445313,
+          165.88949584960938
+        ],
+        "minimum": [
+          -1.4210854715202004e-14,
+          0.0,
+          -3.000000113217993e-06
+        ],
+        "size": [
+          126.78881525899227,
+          200.44166394445313,
+          165.88949884960948
+        ]
+      },
+      "brep_sha256": "5e39210ffa3d196fb6ad8ad5855ff1dcc24b34becfda68de4550d254ffdcca04",
+      "closed": true,
+      "cylinder_radii_mm": [
+        1.0,
+        1.69,
+        1.7,
+        2.0,
+        2.0,
+        2.000000000000001,
+        2.006127077231142
+      ],
+      "shape_type": "Compound",
+      "shell_count": 36,
+      "solid_count": 36,
+      "topology": {
+        "edges": 2342,
+        "faces": 1320,
+        "shells": 36,
+        "solids": 36,
+        "vertices": 1082,
+        "wires": 1343
+      },
+      "valid": true,
+      "volume_mm3": 71843.52421894878
+    },
+    "translucent_central_component_03": {
+      "area_mm2": 526.406464601999,
+      "bounds_mm": {
+        "maximum": [
+          20.015499114990234,
+          12.172489387673943,
+          92.85358202295497
+        ],
+        "minimum": [
+          0.0,
+          0.08960556983947397,
+          86.45775310011149
+        ],
+        "size": [
+          20.015499114990234,
+          12.08288381783447,
+          6.395828922843478
+        ]
+      },
+      "brep_sha256": "e3fcd776391e12f9c659a526e4fdcdcf96fa5d5db4a94e6f7cfe482c12893b59",
+      "closed": true,
+      "cylinder_radii_mm": [
+        2.0
+      ],
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "topology": {
+        "edges": 38,
+        "faces": 14,
+        "shells": 1,
+        "solids": 1,
+        "vertices": 26,
+        "wires": 16
+      },
+      "valid": true,
+      "volume_mm3": 393.83112051075824
+    },
+    "translucent_quad003_component_01": {
+      "area_mm2": 4973.059875905736,
+      "bounds_mm": {
+        "maximum": [
+          63.404560089111335,
+          28.148150496006547,
+          82.12250518798828
+        ],
+        "minimum": [
+          -0.243454247713089,
+          0.6781706213951075,
+          20.782846450805664
+        ],
+        "size": [
+          63.648014336824424,
+          27.46997987461144,
+          61.33965873718262
+        ]
+      },
+      "brep_sha256": "2b4a5173129317a8955fab45312241d6cb4619e5d00c9d2a69ee7ce1f5ec5b50",
+      "closed": true,
+      "cylinder_radii_mm": [
+        2.000000000000001
+      ],
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "topology": {
+        "edges": 36,
+        "faces": 19,
+        "shells": 1,
+        "solids": 1,
+        "vertices": 20,
+        "wires": 22
+      },
+      "valid": true,
+      "volume_mm3": 3593.6327480778614
+    },
+    "translucent_quad017_component_02": {
+      "area_mm2": 1135.8409362153895,
+      "bounds_mm": {
+        "maximum": [
+          125.15093042221251,
+          203.1222381591797,
+          112.0190658569336
+        ],
+        "minimum": [
+          89.17272186279297,
+          152.0162811279297,
+          58.57301712036132
+        ],
+        "size": [
+          35.97820855941954,
+          51.10595703125,
+          53.44604873657227
+        ]
+      },
+      "brep_sha256": "952a9ef5e5bb1b26dd1dce19fbdc854a8b9a4ca195676412fda8e73ae2e3a399",
+      "closed": true,
+      "cylinder_radii_mm": [
+        2.0
+      ],
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "topology": {
+        "edges": 92,
+        "faces": 33,
+        "shells": 1,
+        "solids": 1,
+        "vertices": 61,
+        "wires": 35
+      },
+      "valid": true,
+      "volume_mm3": 674.7815291883225
+    }
+  },
+  "part_meshes": {
+    "opaque_complete": {
+      "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+      "boundary_edges": 0,
+      "bounds_mm": {
+        "maximum": [
+          126.788818359375,
+          200.44166564941406,
+          165.88949584960938
+        ],
+        "minimum": [
+          0.0,
+          0.0,
+          -3.000000106112566e-06
+        ]
+      },
+      "connected_components": 36,
+      "constituent_count": 36,
+      "degenerate_facets": 0,
+      "duplicate_facets": 0,
+      "facets": 3170,
+      "multi_shell_closed_manifold": true,
+      "nonmanifold_edges": 0,
+      "outward_normals": true,
+      "self_intersection_count": 2621,
+      "signed_volume_mm3": 71844.50985715729,
+      "single_stl_file": true,
+      "vertices": 1623
+    },
+    "translucent_central_component_03": {
+      "angular_deflection_rad": 0.35,
+      "clean": true,
+      "conditioning": null,
+      "conditioning_allowed": false,
+      "conditioning_applied": false,
+      "conditioning_policy_checks": {},
+      "linear_deflection_mm": 0.08,
+      "meshing_method": "FreeCAD MeshPart.meshFromShape",
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            20.015499114990234,
+            12.172489166259766,
+            92.85358428955078
+          ],
+          "minimum": [
+            0.0,
+            0.08960556983947754,
+            86.45775604248047
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 244,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 393.9338814892323,
+        "vertices": 122
+      },
+      "relative": false,
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            20.015499114990234,
+            12.172489166259766,
+            92.85358428955078
+          ],
+          "minimum": [
+            0.0,
+            0.08960556983947754,
+            86.45775604248047
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 244,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 393.9338814892323,
+        "vertices": 122
+      },
+      "selection": "raw"
+    },
+    "translucent_quad003_component_01": {
+      "angular_deflection_rad": 0.35,
+      "clean": true,
+      "conditioning": null,
+      "conditioning_allowed": false,
+      "conditioning_applied": false,
+      "conditioning_policy_checks": {},
+      "linear_deflection_mm": 0.08,
+      "meshing_method": "FreeCAD MeshPart.meshFromShape",
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            63.40456008911133,
+            28.148151397705078,
+            82.12250518798828
+          ],
+          "minimum": [
+            -0.243454247713089,
+            0.6781706213951111,
+            20.782846450805664
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 180,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 3593.824051809036,
+        "vertices": 90
+      },
+      "relative": false,
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            63.40456008911133,
+            28.148151397705078,
+            82.12250518798828
+          ],
+          "minimum": [
+            -0.243454247713089,
+            0.6781706213951111,
+            20.782846450805664
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 180,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 3593.824051809036,
+        "vertices": 90
+      },
+      "selection": "raw"
+    },
+    "translucent_quad017_component_02": {
+      "angular_deflection_rad": 0.35,
+      "clean": true,
+      "conditioning": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "automatic_repair_used": false,
+        "conditioned": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              125.15093231201172,
+              203.1222381591797,
+              112.0190658569336
+            ],
+            "minimum": [
+              89.17272186279297,
+              152.0162811279297,
+              58.57301712036133
+            ]
+          },
+          "clean": true,
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 284,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 674.9212639169932,
+          "vertices": 142
+        },
+        "configured_weld_distance_mm": 0.00012,
+        "coordinate_search_used": false,
+        "hole_filling_used": false,
+        "maximum_allowed_weld_distance_mm": 0.00012,
+        "maximum_weld_displacement_mm": 5.017450881182062e-05,
+        "raw": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              125.15093231201172,
+              203.1222381591797,
+              112.0190658569336
+            ],
+            "minimum": [
+              89.17272186279297,
+              152.0162811279297,
+              58.57301712036133
+            ]
+          },
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 286,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 1,
+          "signed_volume_mm3": 674.9212639537382,
+          "vertices": 143
+        },
+        "release_algorithm_id": "bounded-deterministic-submicron-weld-and-zero-area-filter-v1",
+        "remeshing_used": false,
+        "removed_degenerate_source_facets": [
+          14,
+          60
+        ],
+        "removed_duplicate_source_facets": [],
+        "scaling_used": false,
+        "smoothing_used": false,
+        "weld_groups": [
+          [
+            18,
+            19
+          ]
+        ]
+      },
+      "conditioning_allowed": true,
+      "conditioning_applied": true,
+      "conditioning_policy_checks": {
+        "conditioned_mesh_passes_clean_gate": true,
+        "maximum_weld_displacement_within_contract": true,
+        "no_prohibited_mesh_operation_used": true,
+        "raw_mesh_failed_clean_gate": true,
+        "removed_degenerate_facet_count_matches_contract": true,
+        "removed_duplicate_facet_count_matches_contract": true,
+        "reported_weld_distance_matches_contract": true,
+        "weld_group_count_matches_contract": true
+      },
+      "linear_deflection_mm": 0.08,
+      "meshing_method": "FreeCAD MeshPart.meshFromShape",
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            125.15093231201172,
+            203.1222381591797,
+            112.0190658569336
+          ],
+          "minimum": [
+            89.17272186279297,
+            152.0162811279297,
+            58.57301712036133
+          ]
+        },
+        "clean": false,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 286,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 1,
+        "signed_volume_mm3": 674.9212639537382,
+        "vertices": 143
+      },
+      "relative": false,
+      "selected": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            125.15093231201172,
+            203.1222381591797,
+            112.0190658569336
+          ],
+          "minimum": [
+            89.17272186279297,
+            152.0162811279297,
+            58.57301712036133
+          ]
+        },
+        "clean": true,
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 284,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 674.9212639169932,
+        "vertices": 142
+      },
+      "selection": "bounded_conditioned"
+    }
+  },
+  "pins": {
+    "contract_sha256": "309b1a3fb931d526a2e16974e27def03bc8369467bc382fd36e299c26b63c4e3",
+    "exporter_sha256": "9d85b508bd3667775b9d956a14e1a134ceb1f50cb33fae169946f61239edcd54",
+    "verified_inputs": {
+      "approved_connector_v2": {
+        "path": "output/70-freecad-pilots/review-only/lower-front-parallel-feedback/03-translucent-connectors/STAGGERED_TRANSLUCENT_CONNECTOR_TABS_REVIEW_V2.FCStd",
+        "sha256": "663b42fc093d2956a067ab66203c77fe6b3ea8b7a0c6610e8d2f97d79bcf7684"
+      },
+      "approved_ledge_v2": {
+        "path": "output/70-freecad-pilots/review-only/lower-front-sequential-rerun-v1/02-ledge-extensions/BILATERAL_USER_LEDGE_EXTENSIONS_REVIEW_V2.FCStd",
+        "sha256": "acdd325ce8e72b86cf81c7e7d137100af149d471ed65f122df530e30650fea37"
+      },
+      "canonical_lower_mesh_source": {
+        "path": "output/70-freecad-pilots/serial-baselines/lower-c001-aperture-vertex0-relief-v1/CAT_HEAD_V34_LOWER_C001_RELIEF_V1.FCStd",
+        "sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca"
+      },
+      "manual_baseline": {
+        "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1.FCStd",
+        "sha256": "b9d882c32288d9e237a0a3321214ac2947623066275bab584e146b98ab9180b2"
+      },
+      "mesh_topology_checker": {
+        "path": "source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+        "sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e"
+      },
+      "rejected_v3_fcstd": {
+        "path": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v3/LOWER_RIGHT_CONNECTOR_INTEGRATION_PRINT_PARTS_V3.FCStd",
+        "sha256": "3553451328ebb4579246d5d4f029fc9a8701702220656133f77c7a8ec92761f3"
+      },
+      "rejected_v3_manifest": {
+        "path": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v3/release-manifest.json",
+        "sha256": "19d58690161a444fec1061dcc8c9736f75085745d05cfa198a7d1bcfe3661a2b"
+      },
+      "runtime_manifest": {
+        "path": "source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+        "sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+      },
+      "v1_exporter_tooling": {
+        "path": "source/cad-change-control/print-release/lower-right-connector-integration-v1/export_release.py",
+        "sha256": "95983b3d401371cccdfbf1573a2af4bc846bfa837799fab15f454ba61fe798aa"
+      },
+      "v2_exporter_tooling": {
+        "path": "source/cad-change-control/print-release/lower-right-connector-integration-v2/export_release.py",
+        "sha256": "fba526c6cec6fd3a762e00993b30c5ecb22e14e147ad7e8d6015edc719518e27"
+      },
+      "v3_contract_tooling": {
+        "path": "source/cad-change-control/print-release/lower-right-connector-integration-v3/contract.json",
+        "sha256": "c12218bcc71f8be25b34d17c0e99fd565116c4feb34c83dc70656518c5d2545c"
+      },
+      "v3_exporter_tooling": {
+        "path": "source/cad-change-control/print-release/lower-right-connector-integration-v3/export_release.py",
+        "sha256": "1319b1a2c57ac7a0d3fe6469188b8e387644fdd3ce928415ef543adb9faa3b82"
+      },
+      "validated_closed_component_001_source": {
+        "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V4.FCStd",
+        "sha256": "9d66ebfa314ce8f5522a7026811e441f21f3e68ff910f0532404a14c9279649c"
+      }
+    }
+  },
+  "prusa_slicer_validation": {
+    "parts": {
+      "opaque_complete": {
+        "exit_code": 0,
+        "facets_reversed": 0,
+        "manifold": "yes",
+        "number_of_facets": 3170,
+        "number_of_parts": 36,
+        "raw_output": "[RIGHT_LOWER_COMPLETE_OPAQUE_ASSEMBLY_WITH_APPROVED_TABS_AND_LEDGE_PRINT_V4.stl]\nsize_x = 126.788818\nsize_y = 200.441666\nsize_z = 165.889497\nmin_x = 0.000000\nmin_y = 0.000000\nmin_z = -0.000002\nmax_x = 126.788818\nmax_y = 200.441666\nmax_z = 165.889496\nnumber_of_facets = 3170\nmanifold = yes\nnumber_of_parts =  36\nvolume = 71844.390625",
+        "volume_mm3": 71844.390625
+      },
+      "translucent_central_component_03": {
+        "exit_code": 0,
+        "facets_reversed": 0,
+        "manifold": "yes",
+        "number_of_facets": 244,
+        "number_of_parts": 1,
+        "raw_output": "[RIGHT_TRANSLUCENT_CENTRAL_CLUSTER_RIGHT_HALF_WITH_NOSE_TOP_TAB_PRINT_V4.stl]\nsize_x = 20.015499\nsize_y = 12.082884\nsize_z = 6.395828\nmin_x = 0.000000\nmin_y = 0.089605\nmin_z = 86.457756\nmax_x = 20.015499\nmax_y = 12.172489\nmax_z = 92.853584\nnumber_of_facets = 244\nmanifold = yes\nnumber_of_parts =  1\nvolume = 393.933899",
+        "volume_mm3": 393.933899
+      },
+      "translucent_quad003_component_01": {
+        "exit_code": 0,
+        "facets_reversed": 0,
+        "manifold": "yes",
+        "number_of_facets": 180,
+        "number_of_parts": 1,
+        "raw_output": "[RIGHT_TRANSLUCENT_QUAD003_COMPONENT_01_WITH_BELOW_MOUTH_TAB_PRINT_V4.stl]\nsize_x = 63.648014\nsize_y = 27.469981\nsize_z = 61.339657\nmin_x = -0.243454\nmin_y = 0.678170\nmin_z = 20.782848\nmax_x = 63.404560\nmax_y = 28.148151\nmax_z = 82.122505\nnumber_of_facets = 180\nmanifold = yes\nnumber_of_parts =  1\nvolume = 3593.822021",
+        "volume_mm3": 3593.822021
+      },
+      "translucent_quad017_component_02": {
+        "exit_code": 0,
+        "facets_reversed": 0,
+        "manifold": "yes",
+        "number_of_facets": 284,
+        "number_of_parts": 1,
+        "raw_output": "[RIGHT_TRANSLUCENT_QUAD017_COMPONENT_02_WITH_OUTER_TAB_PRINT_V4.stl]\nsize_x = 35.978210\nsize_y = 51.105957\nsize_z = 53.446053\nmin_x = 89.172722\nmin_y = 152.016281\nmin_z = 58.573013\nmax_x = 125.150932\nmax_y = 203.122238\nmax_z = 112.019066\nnumber_of_facets = 284\nmanifold = yes\nnumber_of_parts =  1\nvolume = 674.920593",
+        "volume_mm3": 674.920593
+      }
+    },
+    "policy": "all_four_STLs_must_report_manifold_yes; each_translucent_STL_must_report_one_part; opaque_part_count_is_inherited_multi_shell_evidence"
+  },
+  "reloaded_stl_meshes": {
+    "opaque_complete": {
+      "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+      "boundary_edges": 0,
+      "bounds_mm": {
+        "maximum": [
+          126.788818359375,
+          200.44166564941406,
+          165.88949584960938
+        ],
+        "minimum": [
+          0.0,
+          0.0,
+          -3.000000106112566e-06
+        ]
+      },
+      "connected_components": 34,
+      "coordinate_identity_collapse_diagnostic": {
+        "duplicate_facets": 3,
+        "nonmanifold_edges": 9,
+        "policy": "STL does not preserve the intentionally separate coincident vertex identities present in the pinned multi-shell source; PrusaSlicer manifold=yes is the mandatory final print gate."
+      },
+      "degenerate_facets": 0,
+      "duplicate_facets": 3,
+      "facets": 3170,
+      "nonmanifold_edges": 9,
+      "outward_normals": true,
+      "self_intersection_count": 2573,
+      "signed_volume_mm3": 71844.5098571572,
+      "stl_container_has_no_open_boundaries": true,
+      "vertices": 1615
+    },
+    "translucent_central_component_03": {
+      "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+      "boundary_edges": 0,
+      "bounds_mm": {
+        "maximum": [
+          20.015499114990234,
+          12.172489166259766,
+          92.85358428955078
+        ],
+        "minimum": [
+          0.0,
+          0.08960556983947754,
+          86.45775604248047
+        ]
+      },
+      "clean": true,
+      "connected_components": 1,
+      "degenerate_facets": 0,
+      "duplicate_facets": 0,
+      "facets": 244,
+      "nonmanifold_edges": 0,
+      "outward_normals": true,
+      "self_intersection_count": 0,
+      "signed_volume_mm3": 393.933881489233,
+      "vertices": 122
+    },
+    "translucent_quad003_component_01": {
+      "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+      "boundary_edges": 0,
+      "bounds_mm": {
+        "maximum": [
+          63.40456008911133,
+          28.148151397705078,
+          82.12250518798828
+        ],
+        "minimum": [
+          -0.243454247713089,
+          0.6781706213951111,
+          20.782846450805664
+        ]
+      },
+      "clean": true,
+      "connected_components": 1,
+      "degenerate_facets": 0,
+      "duplicate_facets": 0,
+      "facets": 180,
+      "nonmanifold_edges": 0,
+      "outward_normals": true,
+      "self_intersection_count": 0,
+      "signed_volume_mm3": 3593.8240518090356,
+      "vertices": 90
+    },
+    "translucent_quad017_component_02": {
+      "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+      "boundary_edges": 0,
+      "bounds_mm": {
+        "maximum": [
+          125.15093231201172,
+          203.1222381591797,
+          112.0190658569336
+        ],
+        "minimum": [
+          89.17272186279297,
+          152.0162811279297,
+          58.57301712036133
+        ]
+      },
+      "clean": true,
+      "connected_components": 1,
+      "degenerate_facets": 0,
+      "duplicate_facets": 0,
+      "facets": 284,
+      "nonmanifold_edges": 0,
+      "outward_normals": true,
+      "self_intersection_count": 0,
+      "signed_volume_mm3": 674.9212639169908,
+      "vertices": 142
+    }
+  },
+  "runtime": {
+    "freecad_version": [
+      "1",
+      "1",
+      "3",
+      "20260725 (Git shallow)",
+      "Unknown",
+      "2026/07/25 04:52:02",
+      "grafted,grafted",
+      "145529fe741292ff0b3977a01195bf0247425794"
+    ]
+  },
+  "saved_fcstd_part_breps": {
+    "opaque_complete": {
+      "area_mm2": 83852.9478465393,
+      "bounds_mm": {
+        "maximum": [
+          126.78881525899226,
+          200.44166394445313,
+          165.88949584960938
+        ],
+        "minimum": [
+          -1.4210854715202004e-14,
+          0.0,
+          -3.000000113217993e-06
+        ],
+        "size": [
+          126.78881525899227,
+          200.44166394445313,
+          165.88949884960948
+        ]
+      },
+      "brep_sha256": "06bcf85a69cef0d620ef06f1b20b6c152dc06f264bdabdcc0d237cf4e4d565ec",
+      "closed": true,
+      "cylinder_radii_mm": [
+        1.0,
+        1.69,
+        1.7,
+        2.0,
+        2.0,
+        2.000000000000001,
+        2.006127077231142
+      ],
+      "shape_type": "Compound",
+      "shell_count": 36,
+      "solid_count": 36,
+      "topology": {
+        "edges": 2342,
+        "faces": 1320,
+        "shells": 36,
+        "solids": 36,
+        "vertices": 1082,
+        "wires": 1343
+      },
+      "valid": true,
+      "volume_mm3": 71843.52421894879
+    },
+    "translucent_central_component_03": {
+      "area_mm2": 526.406464601999,
+      "bounds_mm": {
+        "maximum": [
+          20.015499114990234,
+          12.172489387673943,
+          92.85358202295497
+        ],
+        "minimum": [
+          0.0,
+          0.08960556983947404,
+          86.45775310011149
+        ],
+        "size": [
+          20.015499114990234,
+          12.08288381783447,
+          6.395828922843478
+        ]
+      },
+      "brep_sha256": "6880fe4a910a2122e4f657e49a16c8627adaed264504c467023aba4640bd78ad",
+      "closed": true,
+      "cylinder_radii_mm": [
+        2.0
+      ],
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "topology": {
+        "edges": 38,
+        "faces": 14,
+        "shells": 1,
+        "solids": 1,
+        "vertices": 26,
+        "wires": 16
+      },
+      "valid": true,
+      "volume_mm3": 393.8311205107583
+    },
+    "translucent_quad003_component_01": {
+      "area_mm2": 4973.059875905736,
+      "bounds_mm": {
+        "maximum": [
+          63.404560089111335,
+          28.148150496006547,
+          82.12250518798828
+        ],
+        "minimum": [
+          -0.243454247713089,
+          0.6781706213951075,
+          20.782846450805664
+        ],
+        "size": [
+          63.648014336824424,
+          27.46997987461144,
+          61.33965873718262
+        ]
+      },
+      "brep_sha256": "c0d8798cc33230cfad39548930260a468c42b70c00b0b7bcd1a54b415cfa95ed",
+      "closed": true,
+      "cylinder_radii_mm": [
+        2.000000000000001
+      ],
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "topology": {
+        "edges": 36,
+        "faces": 19,
+        "shells": 1,
+        "solids": 1,
+        "vertices": 20,
+        "wires": 22
+      },
+      "valid": true,
+      "volume_mm3": 3593.6327480778623
+    },
+    "translucent_quad017_component_02": {
+      "area_mm2": 1135.8409362153895,
+      "bounds_mm": {
+        "maximum": [
+          125.15093042221251,
+          203.1222381591797,
+          112.0190658569336
+        ],
+        "minimum": [
+          89.17272186279297,
+          152.0162811279297,
+          58.57301712036132
+        ],
+        "size": [
+          35.97820855941954,
+          51.10595703125,
+          53.44604873657227
+        ]
+      },
+      "brep_sha256": "979b308c08a18177695911f5da5775115ccdb9a988d65ec0ed567eba625eee25",
+      "closed": true,
+      "cylinder_radii_mm": [
+        2.0
+      ],
+      "shape_type": "Compound",
+      "shell_count": 1,
+      "solid_count": 1,
+      "topology": {
+        "edges": 92,
+        "faces": 33,
+        "shells": 1,
+        "solids": 1,
+        "vertices": 61,
+        "wires": 35
+      },
+      "valid": true,
+      "volume_mm3": 674.7815291883222
+    }
+  },
+  "schema_version": "cat-head-lower-right-complete-opaque-release-manifest-v4",
+  "status": "PRINT_RELEASE_PASS__V4_ONE_COMPLETE_OPAQUE_STL_AND_THREE_TRANSLUCENT_STLS_READY",
+  "v3_source_reconstruction": {
+    "checks": {
+      "all_input_hashes_match_and_v1_v2_rejections_are_immutable": true,
+      "all_six_conditioned_tabs_are_valid_closed_one_solid": true,
+      "all_six_conditioned_tabs_keep_positive_intended_owner_overlap": true,
+      "all_six_d4_bores_remain_in_conditioned_tabs": true,
+      "all_six_generated_meshes_are_clean_closed_manifold_single_components": true,
+      "all_six_print_parts_are_valid_closed_one_solid": true,
+      "all_three_tab_pairs_keep_0p300_clearance_and_zero_intersection": true,
+      "approved_10mm_nose_tabs_are_restored_exactly_from_source": true,
+      "approved_right_ledge_extension_shape_is_exact": true,
+      "exact_opposite_owner_conditioning_removes_all_tab_cross_collision": true,
+      "final_fusions_add_no_cross_owner_collision": true,
+      "manual_component_001_defect_is_recorded": true,
+      "native_component_001_healing_removes_rejected_face6_within_bound": true,
+      "negative_x_central_owner_plank_is_removed_at_global_x0": true,
+      "only_two_named_raw_failures_receive_bounded_deterministic_conditioning": true,
+      "output_directory_is_fresh": false,
+      "rejected_face6_signature_absent_from_final_opaque_part": true,
+      "release_names_prohibit_3mf_and_gcode": true
+    },
+    "connector_station_evidence": {
+      "below_mouth": {
+        "opaque_conditioned_to_opposite_owner_mm3": 0.0,
+        "opaque_conditioned_volume_mm3": 357.93167195025626,
+        "opaque_intended_owner_overlap_mm3": 40.1948665168679,
+        "opaque_removed_cross_owner_mm3": 0.0,
+        "opaque_source_volume_mm3": 357.93167195025626,
+        "opaque_tab": {
+          "area_mm2": 419.3666519133714,
+          "bounds_mm": {
+            "maximum": [
+              50.56406442349049,
+              31.299718826173887,
+              44.71804604501626
+            ],
+            "minimum": [
+              36.557690920884426,
+              19.40872512899238,
+              30.423617914097804
+            ],
+            "size": [
+              14.006373502606067,
+              11.890993697181507,
+              14.294428130918455
+            ]
+          },
+          "brep_sha256": "9244cab372604ed1e587885f46e24f06747f13699cb60e0706e4d8c39445b4a1",
+          "closed": true,
+          "cylinder_radii_mm": [
+            2.000000000000001
+          ],
+          "shape_type": "Compound",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 15,
+            "faces": 7,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 10,
+            "wires": 9
+          },
+          "valid": true,
+          "volume_mm3": 357.93167195025626
+        },
+        "tab_pair_clearance_mm": 0.2999986783668234,
+        "tab_pair_intersection_mm3": 0.0,
+        "translucent_conditioned_to_opposite_owner_mm3": 0.0,
+        "translucent_conditioned_volume_mm3": 339.35721249571577,
+        "translucent_intended_owner_overlap_mm3": 43.059216762077206,
+        "translucent_removed_cross_owner_mm3": 13.416714002526021,
+        "translucent_source_volume_mm3": 352.7739264982418,
+        "translucent_tab": {
+          "area_mm2": 402.2949062952112,
+          "bounds_mm": {
+            "maximum": [
+              49.54054392346894,
+              28.148150496006547,
+              45.532988658027335
+            ],
+            "minimum": [
+              35.370857829421084,
+              17.55473034464402,
+              31.313106542024244
+            ],
+            "size": [
+              14.169686094047854,
+              10.593420151362526,
+              14.219882116003092
+            ]
+          },
+          "brep_sha256": "b51f120df0eabb6b0e724686c902540e8ace99b333704ce404c410989f0642c8",
+          "closed": true,
+          "cylinder_radii_mm": [
+            2.000000000000001
+          ],
+          "shape_type": "Compound",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 24,
+            "faces": 10,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 16,
+            "wires": 12
+          },
+          "valid": true,
+          "volume_mm3": 339.35721249571577
+        }
+      },
+      "nose_top": {
+        "opaque_conditioned_to_opposite_owner_mm3": 0.0,
+        "opaque_conditioned_volume_mm3": 316.6051611731687,
+        "opaque_intended_owner_overlap_mm3": 64.77033766225205,
+        "opaque_removed_cross_owner_mm3": 5.695701336723005,
+        "opaque_source_volume_mm3": 322.3008625098917,
+        "opaque_tab": {
+          "area_mm2": 377.8259337860304,
+          "bounds_mm": {
+            "maximum": [
+              14.402060178144788,
+              11.010240024668699,
+              89.76510759497066
+            ],
+            "minimum": [
+              2.357557048703672,
+              0.5383533432147649,
+              83.36927867212718
+            ],
+            "size": [
+              12.044503129441116,
+              10.471886681453935,
+              6.395828922843478
+            ]
+          },
+          "brep_sha256": "4b302d62cc3b8e0c47d20954684736c0b0a19b6471739700622c3f6148a9605f",
+          "closed": true,
+          "cylinder_radii_mm": [
+            2.0
+          ],
+          "shape_type": "Compound",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 20,
+            "faces": 8,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 14,
+            "wires": 10
+          },
+          "valid": true,
+          "volume_mm3": 316.6051611731687
+        },
+        "tab_pair_clearance_mm": 0.2999999999999921,
+        "tab_pair_intersection_mm3": 0.0,
+        "translucent_conditioned_to_opposite_owner_mm3": 0.0,
+        "translucent_conditioned_volume_mm3": 316.6584001912123,
+        "translucent_intended_owner_overlap_mm3": 18.901537474787812,
+        "translucent_removed_cross_owner_mm3": 5.642462318678781,
+        "translucent_source_volume_mm3": 322.3008625098911,
+        "translucent_tab": {
+          "area_mm2": 377.8622988699355,
+          "bounds_mm": {
+            "maximum": [
+              14.424468343639653,
+              12.172489387673943,
+              92.85358202295497
+            ],
+            "minimum": [
+              2.3799652141985366,
+              1.7006027062200104,
+              86.45775310011149
+            ],
+            "size": [
+              12.044503129441116,
+              10.471886681453933,
+              6.395828922843478
+            ]
+          },
+          "brep_sha256": "d296b67df0408ba973c64357ad39a230681cc603b2d2692a862d62de7c5c8b69",
+          "closed": true,
+          "cylinder_radii_mm": [
+            2.0
+          ],
+          "shape_type": "Compound",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 26,
+            "faces": 10,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 18,
+            "wires": 12
+          },
+          "valid": true,
+          "volume_mm3": 316.6584001912123
+        }
+      },
+      "outer_panel": {
+        "opaque_conditioned_to_opposite_owner_mm3": 0.0,
+        "opaque_conditioned_volume_mm3": 288.5194181028076,
+        "opaque_intended_owner_overlap_mm3": 32.53923165616133,
+        "opaque_removed_cross_owner_mm3": 33.78148126142736,
+        "opaque_source_volume_mm3": 322.30089936423497,
+        "opaque_tab": {
+          "area_mm2": 435.2385475623646,
+          "bounds_mm": {
+            "maximum": [
+              112.80234927841572,
+              182.05382020519616,
+              94.43189100481172
+            ],
+            "minimum": [
+              98.14284492415375,
+              171.54273299621312,
+              79.83810250845791
+            ],
+            "size": [
+              14.65950435426197,
+              10.511087208983042,
+              14.59378849635381
+            ]
+          },
+          "brep_sha256": "8fadb0462685daeaf1e4fe43efb549f489587424e9ba674ec74c99f91203a6ee",
+          "closed": true,
+          "cylinder_radii_mm": [
+            2.0
+          ],
+          "shape_type": "Compound",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 32,
+            "faces": 12,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 22,
+            "wires": 14
+          },
+          "valid": true,
+          "volume_mm3": 288.5194181028076
+        },
+        "tab_pair_clearance_mm": 0.2999999999999388,
+        "tab_pair_intersection_mm3": 0.0,
+        "translucent_conditioned_to_opposite_owner_mm3": 0.0,
+        "translucent_conditioned_volume_mm3": 322.3008837055102,
+        "translucent_intended_owner_overlap_mm3": 19.498659548320223,
+        "translucent_removed_cross_owner_mm3": 0.0,
+        "translucent_source_volume_mm3": 322.3008837055102,
+        "translucent_tab": {
+          "area_mm2": 384.5663617795081,
+          "bounds_mm": {
+            "maximum": [
+              110.26372624235441,
+              184.78531191875496,
+              93.5620202433506
+            ],
+            "minimum": [
+              95.60422188809244,
+              174.27422470977191,
+              78.96823174699679
+            ],
+            "size": [
+              14.65950435426197,
+              10.511087208983042,
+              14.59378849635381
+            ]
+          },
+          "brep_sha256": "4aca725bd939e8434355b7ed1f141269e08184724eccd29225f0876ea49ac44b",
+          "closed": true,
+          "cylinder_radii_mm": [
+            2.0
+          ],
+          "shape_type": "Compound",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 17,
+            "faces": 7,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 12,
+            "wires": 9
+          },
+          "valid": true,
+          "volume_mm3": 322.3008837055102
+        }
+      }
+    },
+    "permitted_predecessor_failure": [
+      "output_directory_is_fresh"
+    ],
+    "source_evidence": {
+      "central_translucent_owner_clip": {
+        "plane_x_mm": 0.0,
+        "removed": {
+          "area_mm2": 217.76103886508537,
+          "bounds_mm": {
+            "maximum": [
+              0.0,
+              3.596911907196045,
+              91.97927856445312
+            ],
+            "minimum": [
+              -20.015499114990234,
+              0.08960556983947397,
+              88.15611267089844
+            ],
+            "size": [
+              20.015499114990234,
+              3.507306337356571,
+              3.8231658935546875
+            ]
+          },
+          "brep_sha256": "f52d1e8633f121681c97a9271c8133633c8b8f2dbfa14c5b1a9e2ba7136b883e",
+          "closed": true,
+          "cylinder_radii_mm": [],
+          "shape_type": "Compound",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 12,
+            "faces": 6,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 8,
+            "wires": 6
+          },
+          "valid": true,
+          "volume_mm3": 96.07425780837937
+        },
+        "removed_max_x_mm": 0.0,
+        "removed_min_x_mm": -20.015499114990234,
+        "removed_volume_mm3": 96.07425780837937,
+        "retained": {
+          "area_mm2": 217.76103886508537,
+          "bounds_mm": {
+            "maximum": [
+              20.015499114990234,
+              3.596911907196045,
+              91.97927856445312
+            ],
+            "minimum": [
+              0.0,
+              0.08960556983947397,
+              88.15611267089844
+            ],
+            "size": [
+              20.015499114990234,
+              3.507306337356571,
+              3.8231658935546875
+            ]
+          },
+          "brep_sha256": "01bc4a164af09136a9a07be17a0662f7a40dc406e4f87466bebafa77d24fdfc0",
+          "closed": true,
+          "cylinder_radii_mm": [],
+          "shape_type": "Compound",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 12,
+            "faces": 6,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 8,
+            "wires": 6
+          },
+          "valid": true,
+          "volume_mm3": 96.07425780837937
+        },
+        "retained_max_x_mm": 20.015499114990234,
+        "retained_min_x_mm": 0.0,
+        "retained_to_removed_intersection_mm3": 0.0,
+        "retained_volume_mm3": 96.07425780837937,
+        "source": {
+          "area_mm2": 425.92209151384634,
+          "bounds_mm": {
+            "maximum": [
+              20.015499114990234,
+              3.596911907196045,
+              91.97927856445312
+            ],
+            "minimum": [
+              -20.015499114990234,
+              0.0896055698394771,
+              88.15611267089844
+            ],
+            "size": [
+              40.03099822998047,
+              3.507306337356568,
+              3.8231658935546875
+            ]
+          },
+          "brep_sha256": "80bf0929825f7c41964d6310909dd2f72cc7892430433e89efc9b40c37eb9363",
+          "closed": true,
+          "cylinder_radii_mm": [],
+          "shape_type": "Solid",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 12,
+            "faces": 6,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 8,
+            "wires": 6
+          },
+          "valid": true,
+          "volume_mm3": 192.14851561675889
+        },
+        "source_max_x_mm": 20.015499114990234,
+        "source_min_x_mm": -20.015499114990234,
+        "source_volume_mm3": 192.14851561675889,
+        "volume_conservation_residual_mm3": 1.4210854715202004e-13
+      },
+      "component_001_current": {
+        "area_mm2": 55609.31243264536,
+        "bounds_mm": {
+          "maximum": [
+            126.78881525899226,
+            200.44166394445313,
+            126.39450073242188
+          ],
+          "minimum": [
+            -1.4210854715202004e-14,
+            10.605006217956543,
+            -3.000000113217993e-06
+          ],
+          "size": [
+            126.78881525899227,
+            189.83665772649658,
+            126.39450373242198
+          ]
+        },
+        "brep_sha256": "68c0b28627b827a0892eab32c454bca8df16188239bbf5724bf68f7b619b3714",
+        "closed": false,
+        "cylinder_radii_mm": [
+          1.0
+        ],
+        "shape_type": "Solid",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 873,
+          "faces": 457,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 410,
+          "wires": 465
+        },
+        "valid": false,
+        "volume_mm3": 45448.82350999376
+      },
+      "component_001_healing": {
+        "absolute_volume_delta_mm3": 0.0002914285068982281,
+        "algorithm": "OCCT ShapeFix_FixSmallFace.fixStripFace(true)",
+        "corrected": {
+          "area_mm2": 55609.31149578381,
+          "bounds_mm": {
+            "maximum": [
+              126.78881525899226,
+              200.44166394445313,
+              126.39450073242188
+            ],
+            "minimum": [
+              -1.4210854715202004e-14,
+              10.605006217956543,
+              -3.000000113217993e-06
+            ],
+            "size": [
+              126.78881525899227,
+              189.83665772649658,
+              126.39450373242198
+            ]
+          },
+          "brep_sha256": "a81f7f8762ff2a886cf862100ea734af2f0009ac01fbbc5f2904421f1d7b5981",
+          "closed": true,
+          "cylinder_radii_mm": [
+            1.0
+          ],
+          "shape_type": "Solid",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 867,
+            "faces": 455,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 407,
+            "wires": 463
+          },
+          "valid": true,
+          "volume_mm3": 45448.82473665963
+        },
+        "maximum_tolerance_mm": 2e-05,
+        "minimum_tolerance_mm": 2e-06,
+        "operation_result": true,
+        "precision_mm": 2e-05,
+        "rejected_face_after": [],
+        "rejected_face_before": [
+          {
+            "area_mm2": 8.051036080771086e-05,
+            "bounds_mm": {
+              "maximum": [
+                0.522828996181488,
+                187.595280234877,
+                49.52399649722918
+              ],
+              "minimum": [
+                0.0014398276753839236,
+                118.73255920410156,
+                27.281129837036133
+              ],
+              "size": [
+                0.5213891685061041,
+                68.86272103077545,
+                22.242866660193044
+              ]
+            },
+            "edge_lengths_mm": [
+              2.2828090404658496e-06,
+              72.36774938198978,
+              72.36774989232094
+            ],
+            "face_index": 6
+          }
+        ],
+        "source": {
+          "area_mm2": 55609.31251315572,
+          "bounds_mm": {
+            "maximum": [
+              126.78881525899226,
+              200.44166394445313,
+              126.39450073242188
+            ],
+            "minimum": [
+              -1.4210854715202004e-14,
+              10.605006217956543,
+              -3.000000113217993e-06
+            ],
+            "size": [
+              126.78881525899227,
+              189.83665772649658,
+              126.39450373242198
+            ]
+          },
+          "brep_sha256": "c403665c5fd7e34878617fb54def696cace4c70ce0f4469f9516c7d008b1637a",
+          "closed": true,
+          "cylinder_radii_mm": [
+            1.0
+          ],
+          "shape_type": "Solid",
+          "shell_count": 1,
+          "solid_count": 1,
+          "topology": {
+            "edges": 873,
+            "faces": 458,
+            "shells": 1,
+            "solids": 1,
+            "vertices": 410,
+            "wires": 466
+          },
+          "valid": true,
+          "volume_mm3": 45448.82502808814
+        },
+        "symmetric_difference": {
+          "left_only_mm3": 0.0,
+          "right_only_mm3": 0.0,
+          "total_mm3": 0.0
+        }
+      },
+      "ledge_extension_approved": {
+        "area_mm2": 1649.0514312108987,
+        "bounds_mm": {
+          "maximum": [
+            66.95583457946778,
+            199.89567630064465,
+            58.235708354237296
+          ],
+          "minimum": [
+            29.955834579467773,
+            185.36355950646103,
+            48.16643447875977
+          ],
+          "size": [
+            37.0,
+            14.532116794183622,
+            10.069273875477528
+          ]
+        },
+        "brep_sha256": "a5267abd05974dc5c40a05aa050e75edfd55f88d79ebb94b3183263ab99df9d0",
+        "closed": true,
+        "cylinder_radii_mm": [
+          1.69
+        ],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 24,
+          "faces": 10,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 16,
+          "wires": 12
+        },
+        "valid": true,
+        "volume_mm3": 2239.3106528773187
+      },
+      "ledge_extension_current": {
+        "area_mm2": 1649.0514312108987,
+        "bounds_mm": {
+          "maximum": [
+            66.95583457946778,
+            199.89567630064465,
+            58.235708354237296
+          ],
+          "minimum": [
+            29.955834579467773,
+            185.36355950646103,
+            48.16643447875977
+          ],
+          "size": [
+            37.0,
+            14.532116794183622,
+            10.069273875477528
+          ]
+        },
+        "brep_sha256": "0f147d508ae3ff186574f3f0826bff2a35f398aab4db17b9c711f688e746f3d8",
+        "closed": true,
+        "cylinder_radii_mm": [
+          1.69
+        ],
+        "shape_type": "Compound",
+        "shell_count": 1,
+        "solid_count": 1,
+        "topology": {
+          "edges": 24,
+          "faces": 10,
+          "shells": 1,
+          "solids": 1,
+          "vertices": 16,
+          "wires": 12
+        },
+        "valid": true,
+        "volume_mm3": 2239.3106528773187
+      },
+      "ledge_extension_symmetric_difference": {
+        "left_only_mm3": 0.0,
+        "right_only_mm3": 0.0,
+        "total_mm3": 0.0
+      }
+    }
+  }
+}

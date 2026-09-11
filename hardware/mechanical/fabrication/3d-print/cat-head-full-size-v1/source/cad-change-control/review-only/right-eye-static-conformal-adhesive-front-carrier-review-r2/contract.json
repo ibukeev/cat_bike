@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "review_id": "right-eye-static-conformal-adhesive-front-carrier-review-r2",
+  "authority": "REVIEW_ONLY__NON_AUTHORITATIVE__NOT_A_PRINT_SOURCE",
+  "inputs": {
+    "held_candidate": {"path": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/candidate.FCStd", "sha256": "ec72a9480d105fdfdee2d509424b35de2e0abb0efb1eded14e718bfceb302f61", "object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34"},
+    "v1_contract": {"path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/right-eye-split-service-cassette-prototype-v1.json", "sha256": "08fa1c89ad307598e8b0edaa3dc55085cd2ddc977904209972ca698d21790b9f"},
+    "v1_generator": {"path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_right_eye_split_service_cassette_prototype_v1.py", "sha256": "611aa4b63a0cd81420a01507168095c9a0a4d967d306688d78fe69b5383815fc"},
+    "v1_validator": {"path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_right_eye_split_service_cassette_previsual_v1.py", "sha256": "d7ad39bea689e8df54484eaf97c9077df73d3c8c8eb03c18696859ea15133ccf"}
+  },
+  "architecture": {
+    "installation": "static exterior surface-mounted conformal adhesive-only carrier",
+    "upper_mount": "omitted; exact upper datum retained as reference metadata only",
+    "lower_mount_hooks_and_hardware": "omitted",
+    "rear_cartridge": "separate inside-installed service part",
+    "motion_or_insertion_sweep": "not applicable"
+  },
+  "surface_carrier": {
+    "outer_extension_from_v1_outer_front_mm": 4.0,
+    "exact_inner_wire": "aperture_lcs.visible_aperture_mm",
+    "face_sheet_front_depth_mm": -4.2,
+    "face_sheet_rear_depth_mm": -0.2,
+    "connector_rear_overlap_depth_mm": 0.1,
+    "protected_outward_face_wall_mm": 1.2,
+    "measured_maximum_conformal_cut_depth_mm": 1.9999999932134769,
+    "thickness_formula": "ceil(max_cut_depth*2)/2 + 1.5",
+    "deterministic_face_thickness_mm": 4.0,
+    "thickness_hard_cap_mm": 4.0,
+    "prior_3p5_mm_missing_protected_skin_mm3": 3.7078110060840204,
+    "contact_owner_keys": ["upper_C001", "upper_C032", "lower_C001", "lower_C012", "lower_C013"]
+  },
+  "adhesive_interface": {
+    "recommended": "roughened two-part epoxy; gel CA acceptable for prototype",
+    "prohibited": "VHB tape",
+    "support_probe_inward_depth_mm": 0.40,
+    "minimum_conformal_bearing_area_mm2": 80.0,
+    "surface_preparation": "abrade and degrease both mating surfaces",
+    "zero_distance_intended_mating_allowed": true
+  },
+  "limits": {
+    "maximum_positive_shell_intersection_mm3": 0.000001,
+    "maximum_frustum_or_unauthorized_exterior_mm3": 0.000001,
+    "minimum_rear_cartridge_clearance_mm": 0.35,
+    "maximum_aperture_or_lip_change_mm3": 0.000001
+  },
+  "output": {
+    "feasibility_report": "reports/generated/cat-head-cad-tooling/right-eye-static-conformal-adhesive-front-carrier-review-r2/feasibility.json",
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-static-conformal-adhesive-front-carrier-review-r2",
+    "fcstd": "RIGHT_EYE_STATIC_CONFORMAL_ADHESIVE_FRONT_CARRIER_REVIEW_ONLY_R2.FCStd",
+    "validation": "validation-review-only.json",
+    "views": ["front.png", "rear.png", "conformal-seat.png", "side.png", "inside-cartridge.png"]
+  },
+  "prohibited": ["canonical_save", "held_candidate_save", "stl", "step", "mesh", "integration", "mirror", "slicing", "gcode", "print_release", "promotion"]
+}

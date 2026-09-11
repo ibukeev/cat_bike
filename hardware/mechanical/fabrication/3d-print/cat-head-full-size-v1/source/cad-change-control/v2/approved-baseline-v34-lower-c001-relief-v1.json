@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "project": "cat-head-full-size-v1",
+  "baseline_id": "v34-lower-c001-relief-v1",
+  "state": "human_approved_canonical",
+  "assembly": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/serial-baselines/lower-c001-aperture-vertex0-relief-v1/CAT_HEAD_V34_LOWER_C001_RELIEF_V1.FCStd",
+    "sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca",
+    "format": "fcstd"
+  },
+  "review_pack": {
+    "front": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/front.png",
+      "sha256": "1b52648294a848b5ae0d71445c84c65b2184089f0f9b64cca9c81f38620469d4"
+    },
+    "rear": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/rear.png",
+      "sha256": "48c4dc47dcf5203274e19da1d92436fa9eaed13885d58d08dc1beb9ae354f00f"
+    },
+    "left": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/left.png",
+      "sha256": "a1b86a9aebae12ef4eef59a24c7b3b784001ec8bc2855d7e6b525c7d602e18b1"
+    },
+    "right": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/right.png",
+      "sha256": "0646ddd2a13f3192b1a2b2c61d396be16591c65104b57a06987574281d3312e7"
+    },
+    "top": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/top.png",
+      "sha256": "2f823bf25a39cf31a9a5b4b49191bb3ee678cdce07cc2b5c8d654a2cf3c32a2f"
+    },
+    "bottom": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/bottom.png",
+      "sha256": "a71f78d40af6528ece97dcfd0e8fb51750b4f9aedb184e3cd62fe40909c2ef4f"
+    }
+  },
+  "approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-18T14:55:00-07:00",
+    "note": "Serial downstream reference only. The user approved the exact lower-C001 relief and 0.58 mm cover-lip concept, visually accepted the review-only split-eye concept, and authorized autonomous continuation. Preservation passed and additive validator revision 001 passed R01-R14. This does not release, mirror, integrate, export, slice, or print the assembly."
+  }
+}

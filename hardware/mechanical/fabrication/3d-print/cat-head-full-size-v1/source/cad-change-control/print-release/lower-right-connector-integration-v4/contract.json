@@ -1,0 +1,179 @@
+{
+  "schema_version": "cat-head-lower-right-complete-opaque-print-release-v4",
+  "contract_id": "lower-right-connector-integration-v4",
+  "tooling_revision": 1,
+  "authority": "PRINT_RELEASE__USER_CORRECTED__ONE_COMPLETE_OPAQUE_STL__FCSTD_AND_STL_ONLY",
+  "date": "2026-08-21",
+  "user_approval": {
+    "original_release_instruction": "integrate on the right side and make it ready for printing (lower right)",
+    "autonomy_instruction": "OK, try to finish yourself - I'm going to sleep",
+    "v3_rejection": "You lost over the nose components",
+    "single_opaque_file_requirement": "when you create STLs - create one single opaque STL - I need to print it as a one piece!",
+    "freecad_closed_confirmation": "closed",
+    "right_side_only": true,
+    "fcstd_export_authorized": true,
+    "stl_export_authorized": true,
+    "slicing_and_gcode": "withheld; no printer profile or slicing instruction was provided"
+  },
+  "inputs": {
+    "manual_baseline": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1.FCStd",
+      "sha256": "b9d882c32288d9e237a0a3321214ac2947623066275bab584e146b98ab9180b2"
+    },
+    "validated_closed_component_001_source": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V4.FCStd",
+      "sha256": "9d66ebfa314ce8f5522a7026811e441f21f3e68ff910f0532404a14c9279649c"
+    },
+    "approved_connector_v2": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-parallel-feedback/03-translucent-connectors/STAGGERED_TRANSLUCENT_CONNECTOR_TABS_REVIEW_V2.FCStd",
+      "sha256": "663b42fc093d2956a067ab66203c77fe6b3ea8b7a0c6610e8d2f97d79bcf7684"
+    },
+    "approved_ledge_v2": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-sequential-rerun-v1/02-ledge-extensions/BILATERAL_USER_LEDGE_EXTENSIONS_REVIEW_V2.FCStd",
+      "sha256": "acdd325ce8e72b86cf81c7e7d137100af149d471ed65f122df530e30650fea37"
+    },
+    "mesh_topology_checker": {
+      "path": "source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+      "sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e"
+    },
+    "runtime_manifest": {
+      "path": "source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+      "sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+    },
+    "canonical_lower_mesh_source": {
+      "path": "output/70-freecad-pilots/serial-baselines/lower-c001-aperture-vertex0-relief-v1/CAT_HEAD_V34_LOWER_C001_RELIEF_V1.FCStd",
+      "sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca"
+    },
+    "v1_exporter_tooling": {
+      "path": "source/cad-change-control/print-release/lower-right-connector-integration-v1/export_release.py",
+      "sha256": "95983b3d401371cccdfbf1573a2af4bc846bfa837799fab15f454ba61fe798aa"
+    },
+    "v2_exporter_tooling": {
+      "path": "source/cad-change-control/print-release/lower-right-connector-integration-v2/export_release.py",
+      "sha256": "fba526c6cec6fd3a762e00993b30c5ecb22e14e147ad7e8d6015edc719518e27"
+    },
+    "v3_contract_tooling": {
+      "path": "source/cad-change-control/print-release/lower-right-connector-integration-v3/contract.json",
+      "sha256": "c12218bcc71f8be25b34d17c0e99fd565116c4feb34c83dc70656518c5d2545c"
+    },
+    "v3_exporter_tooling": {
+      "path": "source/cad-change-control/print-release/lower-right-connector-integration-v3/export_release.py",
+      "sha256": "1319b1a2c57ac7a0d3fe6469188b8e387644fdd3ce928415ef543adb9faa3b82"
+    },
+    "rejected_v3_fcstd": {
+      "path": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v3/LOWER_RIGHT_CONNECTOR_INTEGRATION_PRINT_PARTS_V3.FCStd",
+      "sha256": "3553451328ebb4579246d5d4f029fc9a8701702220656133f77c7a8ec92761f3"
+    },
+    "rejected_v3_manifest": {
+      "path": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v3/release-manifest.json",
+      "sha256": "19d58690161a444fec1061dcc8c9736f75085745d05cfa198a7d1bcfe3661a2b"
+    }
+  },
+  "opaque_policy": {
+    "source_group": "OPAQUE_RIGHT_LOWER_OWNERS",
+    "single_stl_file": true,
+    "physical_source_topology": "The accepted baseline is intrinsically multi-shell. Preserve every intended shell in one opaque STL file without inventing bridges.",
+    "brep_packaging": "Use one Part::Feature compound containing every accepted opaque owner, the approved opaque connector fusions, and the approved ledge. Do not apply a destructive global boolean union.",
+    "mesh_packaging": "Mesh every validated constituent and concatenate the facets into exactly one opaque STL file.",
+    "required_owner_count": 35,
+    "required_owner_names": [
+      "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR",
+      "RIGHT_LOWER_002_component_002",
+      "RIGHT_LOWER_003_component_003",
+      "RIGHT_LOWER_004_component_004",
+      "RIGHT_LOWER_005_component_005",
+      "RIGHT_LOWER_007_component_007__WITH_USER_HEAD_BOTTOM_FLANGE",
+      "RIGHT_LOWER_011_component_011",
+      "RIGHT_LOWER_012_component_012",
+      "RIGHT_LOWER_013_component_013",
+      "RIGHT_LOWER_015_component_015__retained",
+      "RIGHT_LOWER_018_component_018__retained",
+      "RIGHT_LOWER_021_component_021",
+      "RIGHT_LOWER_024_component_024",
+      "RIGHT_LOWER_026_component_026",
+      "RIGHT_LOWER_027_component_027",
+      "RIGHT_LOWER_028_component_028",
+      "RIGHT_LOWER_029_component_029",
+      "RIGHT_LOWER_030_component_030",
+      "RIGHT_LOWER_031_component_031",
+      "RIGHT_LOWER_032_component_032",
+      "RIGHT_LOWER_034_component_034",
+      "RIGHT_LOWER_035_component_035",
+      "RIGHT_LOWER_036_component_036",
+      "RIGHT_LOWER_037_component_037",
+      "RIGHT_LOWER_038_component_038",
+      "RIGHT_LOWER_039_component_039",
+      "RIGHT_LOWER_040_component_040",
+      "RIGHT_LOWER_041_component_041",
+      "RIGHT_LOWER_042_component_042",
+      "RIGHT_LOWER_043_component_043",
+      "RIGHT_LOWER_044_component_044",
+      "RIGHT_LOWER_051_component_051",
+      "RIGHT_LOWER_052_component_052",
+      "RIGHT_LOWER_053_component_053",
+      "RIGHT_LOWER_054_component_054"
+    ],
+    "required_over_nose_members": [
+      "RIGHT_LOWER_002_component_002",
+      "RIGHT_LOWER_003_component_003",
+      "RIGHT_LOWER_004_component_004",
+      "RIGHT_LOWER_005_component_005",
+      "RIGHT_LOWER_007_component_007__WITH_USER_HEAD_BOTTOM_FLANGE",
+      "RIGHT_LOWER_011_component_011",
+      "RIGHT_LOWER_012_component_012",
+      "RIGHT_LOWER_013_component_013"
+    ],
+    "protected_excluded_members": [
+      "RIGHT_LOWER_006_component_006",
+      "RIGHT_LOWER_008_component_008",
+      "RIGHT_LOWER_010_component_010",
+      "RIGHT_LOWER_014_component_014",
+      "RIGHT_LOWER_023_component_023"
+    ],
+    "substitutions": {
+      "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR": "V3 in-memory native Face6-healed owner fused with approved below-mouth and outer opaque tabs",
+      "RIGHT_LOWER_002_component_002": "V3 in-memory baseline owner fused with approved nose-top opaque tab"
+    },
+    "additional_constituent": "V3 in-memory approved right ledge plus exact user extension",
+    "expected_compound_solid_count": 36,
+    "mesh_source_overrides": {
+      "RIGHT_LOWER_004_component_004": {
+        "source_object": "FROZEN_RIGHT_LOWER_COMPONENTS_002_060_V34",
+        "selection": "unique separate mesh component with exact accepted-BRep bounds and signed volume",
+        "reason": "FreeCAD BRep retessellation duplicates three facets and creates nonmanifold edges; the pinned canonical source mesh has the same bounds, volume, and 38 facets with zero boundary, nonmanifold, degenerate, or duplicate facets."
+      }
+    }
+  },
+  "translucent_policy": {
+    "part_count": 3,
+    "central_owner_clip": "Retain only X>=0 exactly as validated in V3; the rejected negative-X plank must remain absent.",
+    "parts_remain_separate": true
+  },
+  "numeric_gates": {
+    "volume_epsilon_mm3": 0.000001,
+    "compound_volume_residual_mm3": 0.02,
+    "maximum_boundary_edges": 0,
+    "maximum_nonmanifold_edges": 0,
+    "maximum_degenerate_facets": 0,
+    "maximum_duplicate_facets": 0,
+    "maximum_self_intersections": 0,
+    "require_outward_normals": true,
+    "opaque_self_intersection_metric_policy": "diagnostic_only_for_the_inherited_multi_shell_faceted_source; final STL must still report manifold=yes in PrusaSlicer",
+    "translucent_self_intersection_metric_policy": "must_equal_zero"
+  },
+  "outputs": {
+    "directory": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4",
+    "fcstd": "LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4.FCStd",
+    "manifest": "release-manifest.json",
+    "checksums": "SHA256SUMS.txt",
+    "readme": "README.md",
+    "checkpoint": "CHECKPOINT_2026-08-21.md",
+    "stl_directory": "stl",
+    "parts": {
+      "opaque_complete": "RIGHT_LOWER_COMPLETE_OPAQUE_ASSEMBLY_WITH_APPROVED_TABS_AND_LEDGE_PRINT_V4.stl",
+      "translucent_quad003_component_01": "RIGHT_TRANSLUCENT_QUAD003_COMPONENT_01_WITH_BELOW_MOUTH_TAB_PRINT_V4.stl",
+      "translucent_central_component_03": "RIGHT_TRANSLUCENT_CENTRAL_CLUSTER_RIGHT_HALF_WITH_NOSE_TOP_TAB_PRINT_V4.stl",
+      "translucent_quad017_component_02": "RIGHT_TRANSLUCENT_QUAD017_COMPONENT_02_WITH_OUTER_TAB_PRINT_V4.stl"
+    }
+  }
+}

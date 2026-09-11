@@ -1,0 +1,324 @@
+{
+  "gate": "Gate 2 section topology",
+  "status": "review_required",
+  "belt_height_mm": 115.0,
+  "printer_envelope_mm": [
+    240.0,
+    200.0,
+    210.0
+  ],
+  "sections": {
+    "right_upper_head": {
+      "face_count": 16,
+      "source_panel_ids": [
+        "MANQ003",
+        "QUAD018",
+        "QUAD036",
+        "TRI013",
+        "TRI014",
+        "TRI015",
+        "TRI016",
+        "TRI025",
+        "TRI026",
+        "TRI028",
+        "TRI033",
+        "TRI036",
+        "TRI037"
+      ],
+      "edge_connected_components": 1,
+      "component_face_counts": [
+        16
+      ],
+      "detached_surface_island_panel_ids": [],
+      "axis_aligned_dimensions_mm": [
+        156.939,
+        206.289,
+        158.163
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.822995,
+        "oriented_dimensions_mm_sorted": [
+          161.391,
+          166.981,
+          197.519
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          105,
+          15
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_upper_head": {
+      "face_count": 15,
+      "source_panel_ids": [
+        "MANQ002",
+        "QUAD032",
+        "TRI018",
+        "TRI019",
+        "TRI034",
+        "TRI035",
+        "TRI046",
+        "TRI047",
+        "TRI053",
+        "TRI054",
+        "TRI056",
+        "TRI063",
+        "TRI064"
+      ],
+      "edge_connected_components": 1,
+      "component_face_counts": [
+        15
+      ],
+      "detached_surface_island_panel_ids": [],
+      "axis_aligned_dimensions_mm": [
+        127.152,
+        206.289,
+        158.163
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.78793,
+        "oriented_dimensions_mm_sorted": [
+          157.586,
+          158.163,
+          187.501
+        ],
+        "rotation_xyz_degrees": [
+          90,
+          120,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "right_lower_face": {
+      "face_count": 21,
+      "source_panel_ids": [
+        "MANQ006_RIGHT",
+        "MANQ007_RIGHT",
+        "MANQ008_RIGHT",
+        "QUAD002",
+        "QUAD006",
+        "QUAD013",
+        "QUAD014",
+        "TRI007",
+        "TRI020",
+        "TRI021",
+        "TRI022",
+        "TRI029",
+        "TRI030",
+        "TRI038",
+        "TRI039",
+        "TRI040",
+        "TRI065"
+      ],
+      "edge_connected_components": 3,
+      "component_face_counts": [
+        18,
+        2,
+        1
+      ],
+      "detached_surface_island_panel_ids": [
+        "MANQ008_RIGHT",
+        "QUAD002"
+      ],
+      "axis_aligned_dimensions_mm": [
+        128.291,
+        269.344,
+        136.002
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.961011,
+        "oriented_dimensions_mm_sorted": [
+          192.202,
+          196.572,
+          229.186
+        ],
+        "rotation_xyz_degrees": [
+          30,
+          0,
+          60
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_lower_face": {
+      "face_count": 22,
+      "source_panel_ids": [
+        "MANQ006_LEFT",
+        "MANQ007_LEFT",
+        "MANQ008_LEFT",
+        "QUAD004",
+        "QUAD023",
+        "QUAD027",
+        "QUAD028",
+        "TRI008",
+        "TRI009",
+        "TRI048",
+        "TRI049",
+        "TRI050",
+        "TRI057",
+        "TRI058",
+        "TRI059",
+        "TRI060",
+        "TRI061",
+        "TRI062"
+      ],
+      "edge_connected_components": 3,
+      "component_face_counts": [
+        19,
+        2,
+        1
+      ],
+      "detached_surface_island_panel_ids": [
+        "MANQ008_LEFT",
+        "QUAD004"
+      ],
+      "axis_aligned_dimensions_mm": [
+        158.406,
+        269.344,
+        136.002
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.961011,
+        "oriented_dimensions_mm_sorted": [
+          192.202,
+          196.572,
+          229.186
+        ],
+        "rotation_xyz_degrees": [
+          30,
+          0,
+          30
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "rear_base": {
+      "face_count": 0,
+      "source_panel_ids": [],
+      "edge_connected_components": 0,
+      "component_face_counts": [],
+      "detached_surface_island_panel_ids": [],
+      "generated_geometry": "procedural compact rear-base frame; no source faces",
+      "axis_aligned_dimensions_mm": null,
+      "orientation_search": {
+        "fits": true,
+        "not_applicable": true
+      }
+    },
+    "right_ear": {
+      "face_count": 5,
+      "source_panel_ids": [
+        "QUAD008",
+        "TRI010",
+        "TRI011",
+        "TRI012"
+      ],
+      "edge_connected_components": 1,
+      "component_face_counts": [
+        5
+      ],
+      "detached_surface_island_panel_ids": [],
+      "axis_aligned_dimensions_mm": [
+        96.119,
+        85.713,
+        142.743
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.472025,
+        "oriented_dimensions_mm_sorted": [
+          85.471,
+          99.125,
+          113.277
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          75,
+          75
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_ear": {
+      "face_count": 5,
+      "source_panel_ids": [
+        "QUAD025",
+        "TRI043",
+        "TRI044",
+        "TRI045"
+      ],
+      "edge_connected_components": 1,
+      "component_face_counts": [
+        5
+      ],
+      "detached_surface_island_panel_ids": [],
+      "axis_aligned_dimensions_mm": [
+        96.119,
+        85.713,
+        142.743
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.472025,
+        "oriented_dimensions_mm_sorted": [
+          85.471,
+          99.125,
+          113.277
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          105,
+          75
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    }
+  },
+  "removable_glow_face_count": 29,
+  "mouth_opening_face_count": 2,
+  "acceptance": {
+    "seven_structural_sections_defined": true,
+    "all_detached_surface_islands_have_planned_rear_bridges": true,
+    "all_sections_fit_orientation_search": true,
+    "no_glow_or_mouth_face_assigned_to_structure": true
+  },
+  "review_notes": [
+    "This is a face-level seven-section topology review, not a printable solid.",
+    "Glow panels and mouth-opening facets are excluded from structural sections.",
+    "The rear-facing MANQ006/MANQ007 surfaces are split on the centerline and integrated into the lower-face shells; a compact separate rear-base frame follows the upper-head rear plane around the upper rear opening.",
+    "The large bottom MANQ008 facet is subdivided on the centerline and integrated into the right and left lower-face shells.",
+    "The two opaque panels adjacent to the corrected eyes and the two center-split bottom halves are surface islands; internal frame ribs will make them integral with their lower shells.",
+    "Printer-fit checks use a 15-degree orientation search and require later slicer confirmation after walls and flanges exist."
+  ]
+}

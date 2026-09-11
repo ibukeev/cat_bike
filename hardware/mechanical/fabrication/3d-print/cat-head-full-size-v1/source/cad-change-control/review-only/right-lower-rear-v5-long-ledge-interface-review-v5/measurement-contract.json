@@ -1,0 +1,34 @@
+{
+  "schema_version": "cat-head-right-lower-rear-v5-long-ledge-measurement-v5",
+  "contract_id": "right-lower-rear-v5-long-ledge-measurement-v5",
+  "authority": "READ_ONLY_DIAGNOSTIC_NO_GEOMETRY_OUTPUT",
+  "inputs": {
+    "v4_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-seam-cleanup-review-v4/contract.json",
+      "sha256": "6079adb9caafeb5030a1007e20a3e2ea448055523f8adf22a8cf3f2071ae3c2a"
+    },
+    "v4_generator": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-seam-cleanup-review-v4/generate_freecad_review.py",
+      "sha256": "e8f69af71f748f45dc6cbffd393e1fe0017095f7842453b68e45d59197b25483"
+    },
+    "v4_review": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-seam-cleanup-review-v4/RIGHT_LOWER_REAR_V5_SEAM_CLEANUP_REVIEW_ONLY_V4.FCStd",
+      "sha256": "70d6b5cfdeb065eb4f898ee30b3ddfd43148e0ef309a340e183b5cd04c25be68"
+    },
+    "v4_validation": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-seam-cleanup-review-v4/validation.json",
+      "sha256": "29bf52af6ba311c52bd5d1ba55d53e9a9269cd36ccb29c8da5477233281e2971"
+    }
+  },
+  "sampling": {
+    "u_offsets_mm": [-36.0, -30.0, -25.0, -15.0, 0.0, 15.0, 25.0, 30.0, 36.0],
+    "n_offsets_mm": [-4.0, 4.0, 6.0, 8.0, 10.0, 12.0],
+    "v_ray_min_mm": -12.0,
+    "v_ray_max_mm": 20.0
+  },
+  "prohibited": [
+    "source or review save/mutation",
+    "proposal construction",
+    "FCStd, STEP, STL, 3MF, render, or G-code output"
+  ]
+}

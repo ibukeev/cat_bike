@@ -1,0 +1,90 @@
+{
+  "schema_version": "cat-head-right-lower-rear-v5-axis-straight-sector-review-v3",
+  "contract_id": "right-lower-rear-v5-axis-straight-sector-review-v3",
+  "tooling_revision": 1,
+  "authority": "REVIEW_ONLY_NON_AUTHORITATIVE_NOT_A_PRINT_SOURCE",
+  "physical_problem": "The user-selected lower shell sector is assigned to the rear cassette, forcing an unnecessary diagonal bite. Move that sector to the retained front lower part and use its existing nearly-X boundary as the local straight split.",
+  "inputs": {
+    "v2_review": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-production-repartition-review-v2/RIGHT_LOWER_REAR_V5_PRODUCTION_REPARTITION_REVIEW_ONLY_V2.FCStd",
+      "sha256": "6b4d0d52d5984a98c6e5dd8478108aa00288b06b6a492a18f5e341a3be3b6016"
+    },
+    "v2_validation": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-production-repartition-review-v2/validation.json",
+      "sha256": "e21335ce5e0afdd7e5d1f6607ba3b68d9cd1b10109e778e125e9672f8fcc2770"
+    },
+    "v2_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-production-repartition-review-v2/contract.json",
+      "sha256": "434c95a135f2152dfdfbdc566814d6c54190705ea08979ff144cd1cd7f88d830"
+    },
+    "v2_generator": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-production-repartition-review-v2/generate_freecad_review.py",
+      "sha256": "eecca61d7752808a311d4a243030189be2ce014241b4ab7590229ea0c5177f18"
+    },
+    "measurement_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/measurement-contract.json",
+      "sha256": "208eb1e660f42b97e54f8934cedf7aed78092da5a05c880718bf5a2471cf99c3"
+    },
+    "measurement_tool": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/measure_selected_sector.py",
+      "sha256": "6a03f727d40d3c231cfb4cfa5beaf4de2e6c62bbf72d735213606ab5103c13dc"
+    }
+  },
+  "selected_sector": {
+    "object_internal_name": "CAS_001",
+    "object_label": "CASSETTE_SPLIT \u2014 component_001_relief_main__cassette",
+    "face_index_1_based": 30,
+    "subelement": "Face30",
+    "face_area_mm2": 1373.8013108178106,
+    "face_center_world_mm": [30.628024155698157, 177.6974703174343, 46.30705503138728],
+    "straight_edge_index_1_based": 3,
+    "straight_edge_length_mm": 86.50262965779629,
+    "straight_edge_midpoint_world_mm": [43.27894931962105, 187.62752696335443, 49.506195577012136],
+    "straight_edge_direction_unit": [0.9999953872074454, -0.00263868230318262, -0.00150430034710222],
+    "straight_edge_unsigned_angle_to_global_x_deg": 0.17402825248426576
+  },
+  "local_partition": {
+    "point_world_mm": [43.27894931962105, 187.62752696335443, 49.506195577012136],
+    "axis_u_selected_edge_unit": [0.9999953872074454, -0.00263868230318262, -0.00150430034710222],
+    "axis_v_orthogonalized_shell_inward_unit": [-0.00005981280271183169, -0.5122769763690231, 0.8588202931374177],
+    "normal_toward_cassette_unit": [0.003036772342480212, 0.8588162416011439, 0.5122747711685847],
+    "mating_clearance_mm": 0.3,
+    "construction": "For canonical component 001 only: retained/front is the union of the approved V2 retained result and the selected-edge retained half-space; rear cassette is the intersection of the approved V2 cassette result and the selected-edge cassette half-space. Every other V2 piece is reused byte-for-byte in memory."
+  },
+  "numeric_gates": {
+    "kernel_tolerance_mm": 0.01,
+    "volume_epsilon_mm3": 0.00001,
+    "area_epsilon_mm2": 0.00001,
+    "minimum_selected_face_retained_fraction": 0.97,
+    "maximum_selected_face_rear_area_mm2": 0.00001,
+    "minimum_front_added_volume_mm3": 0.001,
+    "minimum_measured_piece_gap_mm": 0.29,
+    "maximum_axis_angle_to_global_x_deg": 0.2,
+    "require_component_001_front_valid_closed_one_solid": true,
+    "require_component_001_rear_valid_closed_one_solid": true,
+    "require_no_old_front_loss": true,
+    "require_no_new_rear_material": true,
+    "require_all_non_component_001_v2_shapes_reused_unchanged": true
+  },
+  "preserved": [
+    "all V2 owners except the component 001 retained/rear partition",
+    "all V2 mesh-only retained owners",
+    "manual HEAD_BOTTOM_FLANGE fusion in component 007",
+    "released V3 right-eye reference objects",
+    "canonical lower owner source geometry",
+    "approved V2 diagonal seam outside the component 001 union/intersection override"
+  ],
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/right-lower-rear-v5-axis-straight-sector-review-v3",
+    "fcstd": "RIGHT_LOWER_REAR_V5_AXIS_STRAIGHT_SECTOR_REVIEW_ONLY_V3.FCStd",
+    "validation": "validation.json"
+  },
+  "prohibited": [
+    "canonical save or mutation",
+    "V2 save or mutation",
+    "production fuse",
+    "bilateral mirror",
+    "STL, STEP, 3MF, or G-code export",
+    "slicing or print release"
+  ]
+}

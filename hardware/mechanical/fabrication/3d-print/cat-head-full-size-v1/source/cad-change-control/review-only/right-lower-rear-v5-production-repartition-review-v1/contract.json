@@ -1,0 +1,129 @@
+{
+  "schema_version": "cat-head-right-lower-rear-v5-production-repartition-review-v1",
+  "contract_id": "right-lower-rear-v5-production-repartition-review-v1",
+  "authority": "REVIEW_ONLY_NON_AUTHORITATIVE_NOT_A_PRINT_SOURCE",
+  "scope": {
+    "side": "right_only_before_mirror",
+    "intent": "Apply the already-approved V5 rear cassette exterior repartition to the accepted lower reinforcement system without redesigning the eye bucket.",
+    "approved_seam_is_frozen": true,
+    "eye_geometry_may_change": false,
+    "upper_head_geometry_may_change": false,
+    "aluminum_geometry_may_change": false,
+    "stl_or_gcode_allowed": false
+  },
+  "inputs": {
+    "accepted_structural_blend": {
+      "path": "output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1.blend",
+      "sha256": "b554b2cda215af06a11b845a670b4aabf73194521def2d9dfdcb8daa8184978a"
+    },
+    "accepted_structural_validation": {
+      "path": "output/30-reinforcement-baselines/requested-reinforcement-additions-review-v1/requested-reinforcement-additions-review-v1-validation.json",
+      "sha256": "817f56168f1e2257dc7ab3a25e8321a86daf7abe9cac187258bceeae88b523e9"
+    },
+    "approved_v5_validation": {
+      "path": "output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5-validation.json",
+      "sha256": "2f5f8b456687f6c2a85aa9c671434bcdef09d012da78d16d1443b8cb7af62a07"
+    },
+    "approved_v5_config": {
+      "path": "config/rear-cassette-lossless-repartition-review-v5.json",
+      "sha256": "58412ac566f456c6a8abb2c6f4b868cfd6fec21b75214f2f7815ca66ebe22c26"
+    },
+    "gate8_config": {
+      "path": "config/gate8-full-size-structural-iteration.json",
+      "sha256": "bd5e26fa7d52a072ca61710eeb41b8665a1c0f214af5511545cb0c11f08c6c99"
+    },
+    "shared_interface": {
+      "path": "../../../interfaces/cat-head-shell-aluminum-interface-v05.json",
+      "sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79"
+    },
+    "approved_seam_tooling": {
+      "path": "source/generate_rear_cassette_seam_review_v2.py",
+      "sha256": "3130aa7f011ac34d5c31ea802eebb270b42bf4e276556e8ef01c2e363f83f6c4"
+    },
+    "gate1_tooling": {
+      "path": "source/generate_gate1_master.py",
+      "sha256": "61955cf554acc147765390ea53e457c465a86c302b8fbaf6760927a21f54301e"
+    },
+    "ownership_validation": {
+      "path": "output/30-reinforcement-baselines/lower-reinforcement-ownership-review-v1/lower-reinforcement-ownership-review-v1-validation.json"
+    },
+    "relieved_shell_reference": {
+      "path": "output/70-freecad-pilots/serial-baselines/lower-c001-aperture-vertex0-relief-v1/CAT_HEAD_V34_LOWER_C001_RELIEF_V1.FCStd",
+      "sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca"
+    },
+    "user_manual_v8_reference": {
+      "path": "output/70-freecad-pilots/review-only/right-eye-head-mount-anchor-review-v8/RIGHT_EYE_HEAD_MOUNT_ANCHOR_REVIEW_ONLY_V8.FCStd",
+      "sha256": "0227665fcf5fa04063778aaf07acee527037783341f89ff7b6d88e706b4ed6b6"
+    },
+    "finished_right_eye_reference": {
+      "path": "output/FINAL_PRINT_SET/01-eye-modules/right/source/RIGHT_EYE_MANUAL_PRINT_MODULES_V1.FCStd",
+      "sha256": "8d5027656960e9f1131118138b071d467a071cd67ae91d7b1a22fbe79c7be4d4"
+    }
+  },
+  "approved_v5_ownership": {
+    "moved_panel_ids_right": [
+      "MANQ006_RIGHT",
+      "MANQ007_RIGHT",
+      "TRI030",
+      "TRI040",
+      "TRI065"
+    ],
+    "retained_opaque_panel_ids_right": ["QUAD001", "TRI003"],
+    "shell_wall_thickness_mm": 1.8,
+    "required_assembled_exterior_fingerprint": "4787ed3e",
+    "seam_display_object": "V5_BOUNDARY__right_lower_face",
+    "seam_definition": "the unique right-side diagonal edge returned by the approved V2 source-selection rule",
+    "expected_diagonal_seam_length_mm": 73.848,
+    "accepted_horizontal_rail_object": "H1_PROPOSED__right_lower_face__MANQ007_horizontal_boundary_rail"
+    ,
+    "right_partition_curtain": {
+      "seam_midpoint_mm": [107.94225311279297, 194.4952392578125, 78.93074798583984],
+      "seam_direction_unit": [-0.5144796371459961, -0.16674011945724487, -0.8411352634429932],
+      "shell_inward_unit": [-0.778976321220398, -0.31919121742248535, 0.5397341251373291],
+      "normal_toward_cassette_unit": [-0.358478307723999, 0.9329066276550293, 0.03433077037334442],
+      "retained_source_panel": "TRI029",
+      "cassette_source_panel": "TRI030",
+      "derivation": "curtain is spanned by the approved diagonal seam direction and average inward direction of adjacent TRI029/TRI030; positive curtain normal points into approved cassette ownership"
+    }
+  },
+  "right_reinforcement": {
+    "crossing_objects": [
+      "R1_CROSS__R__C000__flange",
+      "R1_CROSS__R__C015__rib",
+      "R1_CROSS__R__C025__rib",
+      "R1_CROSS__R__C049__rib"
+    ],
+    "excluded_rejected_objects": [
+      "R1_UNCL__R__C002__eye_mount",
+      "R1_UNCL__R__C062__rib"
+    ],
+    "accepted_additions": [
+      "H1_PROPOSED__right_lower_face__MANQ007_horizontal_boundary_rail",
+      "A1_PROPOSED__right_tie_C036_C038",
+      "A1_PROPOSED__right_tie_C026_C039",
+      "A1_PROPOSED__right_tie_C036_C003",
+      "A1_PROPOSED__right_mirror_of_L_C056__rib"
+    ],
+    "crossing_policy": "Terminate each crossing member at the frozen V5 seam and create complementary retained-side and cassette-side closed pieces. Never silently assign a whole crossing member to one owner.",
+    "minimum_owner_root_overlap_mm3": 1.0,
+    "mating_clearance_mm": 0.30
+  },
+  "required_gates": {
+    "source_hashes_match": true,
+    "all_named_objects_exist": true,
+    "approved_v5_exterior_unchanged": true,
+    "excluded_rejected_objects_absent_from_candidate": true,
+    "zero_unsplit_crossing_members": true,
+    "zero_loose_residues": true,
+    "one_connected_body_per_output_owner": true,
+    "eye_clearance_context_unchanged": true,
+    "no_output_during_inventory_or_preflight": true
+  },
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/right-lower-rear-v5-production-repartition-review-v1",
+    "blend": "RIGHT_LOWER_REAR_V5_PRODUCTION_REPARTITION_REVIEW_ONLY_V1.blend",
+    "fcstd": "RIGHT_LOWER_REAR_V5_PRODUCTION_REPARTITION_REVIEW_ONLY_V1.FCStd",
+    "validation": "validation.json",
+    "feasibility_report_sha256": null
+  }
+}

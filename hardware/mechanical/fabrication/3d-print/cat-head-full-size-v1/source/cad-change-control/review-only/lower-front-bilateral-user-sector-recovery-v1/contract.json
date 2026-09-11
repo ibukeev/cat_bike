@@ -1,0 +1,18 @@
+{
+  "schema_version": "cat-head-lower-front-user-sector-recovery-v1",
+  "authority": "RECOVERY_ONLY__NO_OTHER_GEOMETRY_CHANGES",
+  "source": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V5_FIN_REMOVED.FCStd",
+    "sha256": "3ec9bc94999a65a5c8ae497acf0a1c40e1388deaa4f3d9c498bfb912c3c983ab",
+    "object_name": "LEFT_LOWER_008_component_008"
+  },
+  "target": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1.FCStd",
+    "sha256": "592b54693003154c610cc4df37183b5681e28603ca222dc7f2f8af15b8930d0c"
+  },
+  "output": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1_RECOVERED_UNDER_MOUTH_SECTOR.FCStd",
+    "object_name": "RECOVERED_UNDER_MOUTH_OPAQUE_SECTOR",
+    "label": "RECOVERED — UNDER-MOUTH OPAQUE SECTOR — LEFT_LOWER_008"
+  }
+}

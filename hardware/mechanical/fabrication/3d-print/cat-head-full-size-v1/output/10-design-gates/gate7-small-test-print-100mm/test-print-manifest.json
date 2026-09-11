@@ -1,0 +1,396 @@
+{
+  "source": "output/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend",
+  "target_head_height_mm": 100.0,
+  "uniform_scale": 0.30303,
+  "overall_dimensions_xyz_mm": [
+    92.07,
+    81.78,
+    100.0
+  ],
+  "print_part_count": 20,
+  "parts": {
+    "shells": {
+      "small_right_upper_head": {
+        "vertices": 1114,
+        "faces": 786,
+        "connected_components": 36,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          47.86,
+          47.999,
+          62.512
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            33.2595,
+            81.2582
+          ]
+        ]
+      },
+      "small_left_upper_head": {
+        "vertices": 1127,
+        "faces": 782,
+        "connected_components": 37,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          39.239,
+          47.999,
+          62.512
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            33.2595,
+            81.2582
+          ]
+        ]
+      },
+      "small_right_lower_face": {
+        "vertices": 1300,
+        "faces": 921,
+        "connected_components": 53,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          38.876,
+          46.613,
+          81.62
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            0.0,
+            46.6128
+          ]
+        ]
+      },
+      "small_left_lower_face": {
+        "vertices": 1301,
+        "faces": 933,
+        "connected_components": 48,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          46.571,
+          48.002,
+          81.62
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            0.0,
+            46.5713
+          ]
+        ]
+      },
+      "small_rear_base": {
+        "vertices": 213,
+        "faces": 124,
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          8.638,
+          24.654,
+          36.364
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            39.3506,
+            64.0041
+          ]
+        ]
+      },
+      "small_right_ear": {
+        "vertices": 120,
+        "faces": 84,
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          25.974,
+          29.127,
+          43.255
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            56.7445,
+            100.0
+          ]
+        ]
+      },
+      "small_left_ear": {
+        "vertices": 122,
+        "faces": 84,
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          25.974,
+          29.127,
+          43.255
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            56.7445,
+            100.0
+          ]
+        ]
+      }
+    },
+    "glow_inserts": {
+      "small_glow_insert_central_12_panel_cluster": {
+        "vertices": 275,
+        "faces": 214,
+        "connected_components": 15,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          27.772,
+          27.883,
+          41.268
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            23.9758,
+            65.2443
+          ]
+        ]
+      },
+      "small_glow_insert_left_ear_root_cluster": {
+        "vertices": 147,
+        "faces": 78,
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          20.508,
+          24.253,
+          48.199
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            52.6938,
+            76.9467
+          ]
+        ]
+      },
+      "small_glow_insert_panel_QUAD003": {
+        "vertices": 126,
+        "faces": 75,
+        "connected_components": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          8.267,
+          20.386,
+          20.754
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            5.4729,
+            25.8592
+          ]
+        ]
+      },
+      "small_glow_insert_panel_QUAD005": {
+        "vertices": 105,
+        "faces": 72,
+        "connected_components": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          8.266,
+          20.392,
+          20.866
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            5.4703,
+            25.862
+          ]
+        ]
+      },
+      "small_glow_insert_panel_QUAD017": {
+        "vertices": 112,
+        "faces": 72,
+        "connected_components": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          19.975,
+          25.385,
+          37.055
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            11.6692,
+            37.0541
+          ]
+        ]
+      },
+      "small_glow_insert_panel_QUAD031": {
+        "vertices": 105,
+        "faces": 72,
+        "connected_components": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          19.975,
+          25.385,
+          37.055
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            11.6692,
+            37.0541
+          ]
+        ]
+      },
+      "small_glow_insert_right_ear_root_cluster": {
+        "vertices": 131,
+        "faces": 74,
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          20.508,
+          24.253,
+          48.199
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            52.6938,
+            76.9467
+          ]
+        ]
+      }
+    },
+    "eye_modules": {
+      "small_right_eye_bucket": {
+        "vertices": 362,
+        "faces": 201,
+        "connected_components": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          15.929,
+          18.307,
+          23.136
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            35.9022,
+            54.2093
+          ]
+        ]
+      },
+      "small_right_eye_diffuser": {
+        "vertices": 8,
+        "faces": 6,
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          12.183,
+          15.829,
+          20.856
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            37.9985,
+            53.8278
+          ]
+        ]
+      },
+      "small_right_eye_led_rear_cap": {
+        "vertices": 280,
+        "faces": 160,
+        "connected_components": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          15.868,
+          17.472,
+          23.055
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            36.5744,
+            54.0462
+          ]
+        ]
+      },
+      "small_left_eye_bucket": {
+        "vertices": 350,
+        "faces": 199,
+        "connected_components": 6,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          16.121,
+          18.427,
+          23.434
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            35.8686,
+            54.2956
+          ]
+        ]
+      },
+      "small_left_eye_diffuser": {
+        "vertices": 8,
+        "faces": 6,
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          12.43,
+          16.079,
+          21.364
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            37.8243,
+            53.903
+          ]
+        ]
+      },
+      "small_left_eye_led_rear_cap": {
+        "vertices": 282,
+        "faces": 160,
+        "connected_components": 7,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "dimensions_mm_sorted": [
+          16.081,
+          17.969,
+          23.428
+        ],
+        "merged_component_z_intervals_mm": [
+          [
+            36.1206,
+            54.0894
+          ]
+        ]
+      }
+    }
+  },
+  "acceptance": {
+    "seven_shell_parts_exported": true,
+    "seven_glow_inserts_exported": true,
+    "six_eye_module_parts_exported": true,
+    "all_exported_parts_closed_manifold": true,
+    "eye_head_mounts_have_valid_attachment_paths": true,
+    "no_vertically_isolated_shell_components": true,
+    "assembled_height_is_100mm": true,
+    "review_blend_created": true,
+    "combined_visual_assembly_created": true
+  },
+  "limitations": [
+    "This uniform-scale model is for visual, fit, seam, and material testing.",
+    "M3 and M2.5 holes are scaled to about 30.3 percent and do not accept the original hardware.",
+    "Use glue, tape, or temporary pins for the 100 mm assembly; validate real fasteners on full-size coupons.",
+    "Thin walls, ribs, roots, and retaining features are also uniformly scaled and may require a 0.25 mm nozzle or slicer thin-wall support."
+  ]
+}

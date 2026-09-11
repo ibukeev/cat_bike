@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="364mm"
+ height="114mm"
+ viewBox="-182 -57
+ 364 114">
+ <title>V0.4-M2 ordered-angle connector plan</title>
+ <style>
+  .outline{fill:#eaf1f5;stroke:#000;stroke-width:.25}
+  .adapter{fill:none;stroke:#8a2be2;stroke-width:.28}
+  .shell{fill:none;stroke:#126ec2;stroke-width:.28}
+  .shoe{fill:none;stroke:#e46c0a;stroke-width:.28}
+  .center{fill:none;stroke:#777;stroke-width:.18;stroke-dasharray:2 2}
+  .dim{fill:none;stroke:#c41e3a;stroke-width:.18}
+  .note{font:3px monospace;fill:#111}
+  .warn{font:3px monospace;fill:#c41e3a}
+ </style>
+ <g transform="scale(1,-1)"><rect class="outline" x="-22.5" y="0" width="45" height="29"/><text class="warn" x="-160" y="-44" transform="scale(1,-1)">HOLES ARE DELIBERATELY OMITTED: clamp each angle to the drilled backplate and transfer all three centers</text><text class="note" x="-160" y="-39" transform="scale(1,-1)">PRIMARY ANGLE: 2x 45 long; retain 38.1 upright; trim base to 29</text><text class="note" x="-160" y="-34" transform="scale(1,-1)">ORDERED STOCK: 6063-T6 equal angle 38.1 x 38.1 x 3.175</text><text class="note" x="-160" y="9" transform="scale(1,-1)">Use the three retained backplate centers: clamp to plate, transfer, 5.5 through, 90-deg countersink</text><text class="note" x="-160" y="14" transform="scale(1,-1)">OUTER CHEEKS: 2x 45 x 25 x 3.175</text><text class="warn" x="-160" y="19" transform="scale(1,-1)">M5 crossbolts at 14 and 29 from bearing centerline; hand-fit two metal tapered spacers per rail</text><text class="warn" x="-160" y="24" transform="scale(1,-1)">Cut one receipt/fit coupon before final parts; printed structural shims are prohibited</text></g>
+</svg>

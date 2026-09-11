@@ -1,0 +1,44 @@
+{
+  "gate": "Gate 4 complete coverage review",
+  "status": "review_required",
+  "structural_section_count": 7,
+  "temporary_glow_panel_count": 20,
+  "temporary_corrected_eye_count": 2,
+  "temporary_opaque_infill_count": 4,
+  "rear_service_opening": {
+    "width_mm": 100.0,
+    "height_mm": 80.0,
+    "center_x_mm": 0.0,
+    "center_y_mm": 255.0,
+    "center_z_mm": 95.0,
+    "cut_depth_mm": 80.0
+  },
+  "rear_service_cut_mesh_change": {
+    "vertices_before": 12,
+    "faces_before": 14,
+    "vertices_after": 32,
+    "faces_after": 22
+  },
+  "acceptance": {
+    "all_20_glow_panels_present": true,
+    "both_corrected_eye_inserts_present": true,
+    "both_under_ear_openings_closed": true,
+    "both_oversized_eye_openings_have_opaque_surrounds": true,
+    "all_review_objects_closed_manifold": true,
+    "rear_service_opening_cut_applied": true,
+    "mouth_faces_intentionally_absent": true
+  },
+  "intended_large_openings": [
+    "mouth",
+    "rear_service_100x80"
+  ],
+  "review_notes": [
+    "This is a coverage review assembly, not a set of fabrication-ready panel or joint files.",
+    "Purple temporary solids occupy every approved glow/light-transmitting opening.",
+    "Pale-cyan temporary eye solids use the corrected annotated silhouettes and the original eye carrier planes only for depth placement.",
+    "Opaque temporary backing panels close both rear/under-ear loops.",
+    "Opaque eye-surround rings close the original oversized eye openings so only the corrected eye shapes transmit light.",
+    "The red mouth opening and 100 x 80 mm rear service opening are the only intended large openings.",
+    "Rear ventilation and bottom drains are intentionally deferred until enclosure and joint coverage is approved."
+  ]
+}

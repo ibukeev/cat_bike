@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "status": "PASS_LAYOUT__HOLD_SOURCE_MESH_AND_PHYSICAL_FIRST_LAYER",
+  "approved_scope": "Right-upper slicer placement and brim only; no CAD or mesh geometry change",
+  "approval": {
+    "user_response": "Approve",
+    "date": "2026-08-25",
+    "approved_proposal": "RIGHT-UPPER 10MM BRIM LAYOUT V1"
+  },
+  "source_project": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/assembly.3mf",
+  "source_project_sha256": "ac800ac7470c61cf4d640af6d652b25ac080142826aaadb4d24842bb9440720b",
+  "source_stl": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/assembly.stl",
+  "source_stl_sha256": "6b7ced6a6cb86e5d7635f622f6e18df53bf616a378823443f98dd8aa1e4c2f4d",
+  "review_project": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-slicer-projects/right-upper-as-printed-10mm-brim-layout-v1/CAT_HEAD_RIGHT_UPPER_AS_PRINTED_10MM_BRIM_LAYOUT_V1.3mf",
+  "review_project_sha256": "8b2efa7a9d77a46f7fe0a82187518ffebf55d02b86a6eeb080362611293b2c4a",
+  "gcode": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-slicer-projects/right-upper-as-printed-10mm-brim-layout-v1/CAT_HEAD_RIGHT_UPPER_AS_PRINTED_10MM_BRIM_LAYOUT_V1.gcode",
+  "gcode_sha256": "c55b2455556b814c166e98b1ef7d6679641cc40c193c8eff15360c8346e29509",
+  "gcode_size_bytes": 36785948,
+  "evidence_svg": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/50-slicer-projects/right-upper-as-printed-10mm-brim-layout-v1/first-layer-brim-support-evidence-v1.svg",
+  "geometry_and_archive_preservation": {
+    "archive_member_set_and_order_unchanged": true,
+    "changed_members_exactly": [
+      "3D/3dmodel.model",
+      "Metadata/Slic3r_PE.config"
+    ],
+    "all_other_member_hashes_unchanged": true,
+    "unchanged_member_hashes": {
+      "[Content_Types].xml": "3abe745b54c9660c23346d7615561c1d231b398fe809e06239af54f755e524de",
+      "Metadata/thumbnail.png": "f0f2611b7a84e0cae89b358fab377654c4a9c5d199d8a6be150df73981cf8088",
+      "_rels/.rels": "886b9f5903de1b91221b2af3c4106b78a5cf0565ca8cf6ccfcfbbb7d5f063ba9",
+      "Metadata/Slic3r_PE_model.config": "f7182e8c428275fda247e11e46c6f1fa39748fbcd37ed33f1f1e302d20ae229d"
+    },
+    "model_change_only_build_transform": true,
+    "config_change_only_brim_type_and_width": true,
+    "mesh_vertices": 5036,
+    "mesh_triangles": 9556,
+    "mesh_topology_counts_unchanged": true,
+    "scale": [
+      0.9999999998742246,
+      1.0000000001839024,
+      1.0000000001126221
+    ],
+    "determinant": 1.0000000001707492,
+    "final_transform": [
+      -0.362612279462,
+      -0.819482334334,
+      0.443802927262,
+      -0.664989563555,
+      0.561156369453,
+      0.492841160774,
+      -0.652917464179,
+      -0.11641405707,
+      -0.748429390465,
+      116.43761295,
+      110.220650427,
+      58.3507280228
+    ],
+    "transform_expected": [
+      -0.362612279,
+      -0.819482334,
+      0.443802927,
+      -0.664989564,
+      0.561156369,
+      0.492841161,
+      -0.652917464,
+      -0.116414057,
+      -0.74842939,
+      116.43761295,
+      110.220650427,
+      58.350728023
+    ],
+    "transform_tolerance": 1e-08,
+    "transform_residuals": [
+      -4.619999938171304e-10,
+      -3.3399993881744194e-10,
+      2.619999772690562e-10,
+      4.4499992579716263e-10,
+      4.529999708680066e-10,
+      -2.2600005200601458e-10,
+      -1.790000370149869e-10,
+      -6.999999191403816e-11,
+      -4.650000384742725e-10,
+      0.0,
+      0.0,
+      -2.00003569261753e-10
+    ],
+    "object_bounds_min_mm": [
+      19.207167284544752,
+      15.02644408036609,
+      -1.1716849712684052e-11
+    ],
+    "object_bounds_max_mm": [
+      230.79283271574423,
+      194.97355592014975,
+      155.88891719680834
+    ],
+    "object_bbox_size_mm": [
+      211.58566543119946,
+      179.94711183978364,
+      155.88891719682005
+    ],
+    "object_bbox_expected_mm": [
+      211.585666,
+      179.947112,
+      155.888917
+    ],
+    "object_bbox_tolerance_mm": 1e-05,
+    "object_bbox_residuals_mm": [
+      -5.688005444426381e-07,
+      -1.602163592906436e-07,
+      1.9682005358845345e-07
+    ],
+    "brim_type": "outer_only",
+    "brim_width_mm": 10.0,
+    "brim_separation_mm": 0.1
+  },
+  "slice": {
+    "prusa_slicer": "PrusaSlicer 2.7.4 on 2026-08-25 at 17:06:09 UTC",
+    "slice_completed": true,
+    "brim_type": "outer_only",
+    "brim_width_mm": 10.0,
+    "support_material": true,
+    "support_material_auto": true,
+    "support_material_style": "snug",
+    "support_material_threshold_deg": 40.0,
+    "first_layer_line_width_mm": 0.5,
+    "first_layer_centerline_bounds_mm": [
+      15.141,
+      11.009,
+      235.446,
+      194.375
+    ],
+    "first_layer_extrusion_bounds_mm": [
+      14.891,
+      10.759,
+      235.696,
+      194.625
+    ],
+    "first_layer_extrusion_margins_mm": {
+      "left": 14.891,
+      "right": 14.304000000000002,
+      "front": 10.759,
+      "rear": 15.375
+    },
+    "minimum_required_first_layer_margin_mm": 5.0,
+    "first_layer_margin_pass": true,
+    "first_layer_segment_counts_by_type": {
+      "External perimeter": 5,
+      "Skirt/Brim": 672,
+      "Support material": 3008,
+      "Support material interface": 39
+    },
+    "brim_segment_count": 672,
+    "support_segment_count": 3047,
+    "m555_probe_footprint": {
+      "X": 14.8975,
+      "Y": 6.76616,
+      "W": 220.802,
+      "H": 187.84
+    },
+    "filament_length_mm": 91082.53,
+    "filament_volume_cm3": 219.08,
+    "filament_mass_g": 234.41,
+    "estimated_print_time": "16h 12m 34s"
+  },
+  "preexisting_source_mesh_slicer_info": {
+    "status": "PREEXISTING_SOURCE_MESH_HOLD",
+    "facets": 9556,
+    "manifold": false,
+    "open_edges": 75,
+    "facets_reversed": 16,
+    "backwards_edges": 48,
+    "parts": 166,
+    "observation_command": "prusa-slicer --info <review-project.3mf>"
+  },
+  "release_gates": {
+    "source_hashes_match": "PASS",
+    "mesh_geometry_and_topology_unchanged": "PASS",
+    "scale_1": "PASS",
+    "only_approved_3mf_members_changed": "PASS",
+    "approved_transform_exact": "PASS",
+    "outer_only_brim_10mm": "PASS",
+    "automatic_snug_supports_retained": "PASS",
+    "diagnostic_slice_completes": "PASS",
+    "actual_first_layer_minimum_5mm_bed_margin": "PASS",
+    "preexisting_non_manifold_source_mesh": "HOLD",
+    "physical_first_layer_observation": "REQUIRED",
+    "gcode_release_approved": false,
+    "overall": "PASS_LAYOUT__HOLD_SOURCE_MESH_AND_PHYSICAL_FIRST_LAYER"
+  },
+  "next_action": "Open the review 3MF in PrusaSlicer and inspect the first-layer brim/support preview. Before committing to the full ASA print, stop after the first layer and verify that every brim and support island is fully bonded with no lifted edge."
+}

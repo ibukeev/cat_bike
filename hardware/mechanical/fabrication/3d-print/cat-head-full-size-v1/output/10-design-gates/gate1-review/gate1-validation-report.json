@@ -1,0 +1,528 @@
+{
+  "gate": "Gate 1",
+  "status": "review_required",
+  "source": {
+    "accepted_surface_obj": "hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/assembly/accepted-panels-3d.obj",
+    "accepted_surface_sha256": "1e5460a10656c9293db1f706f840a89e5db6dd254542a0854c39a8f2ab3b2d36",
+    "panel_metadata_csv": "hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/data/cardboard_panels.csv",
+    "panel_metadata_sha256": "bc318069f1fad806f8be54e47f055f59e493d04cb27d26ef9e953592ede36221",
+    "eye_insert_obj": "hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/v1-shape-approved-cardboard-prototype/panel-candidates/eye-insert-panels.obj",
+    "eye_insert_sha256": "7ee5adf287b6f4bc21aedbbb2775f6b511b57e773671212cb1f762ed96815c41",
+    "role_config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate1-panel-roles.json",
+    "role_config_sha256": "5c0cca81954847b432da08badee3d5552ee855e2118e10ff81374ef911ffab37"
+  },
+  "transform": {
+    "uniform_scale": 1.5,
+    "source_origin_x_y_z_mm": [
+      0.0,
+      -66.884,
+      -110.0
+    ],
+    "coordinate_system": {
+      "x": "left/right centered on the face",
+      "y": "front to rear, nose-side minimum normalized to 0",
+      "z": "chin to ear tips, normalized to 0..330 mm"
+    }
+  },
+  "source_surface": {
+    "vertices": 67,
+    "faces": 115,
+    "panel_units": 88,
+    "bounds_mm": {
+      "x": [
+        -101.277,
+        101.277
+      ],
+      "y": [
+        -66.884,
+        112.679
+      ],
+      "z": [
+        -110.0,
+        110.0
+      ]
+    },
+    "dimensions_mm": [
+      202.554,
+      179.563,
+      220.0
+    ]
+  },
+  "target_master": {
+    "bounds_mm": {
+      "x": [
+        -151.9155,
+        151.9155
+      ],
+      "y": [
+        0.0,
+        269.3445
+      ],
+      "z": [
+        0.0,
+        330.0
+      ]
+    },
+    "dimensions_mm": [
+      303.831,
+      269.3445,
+      330.0
+    ],
+    "target_height_mm": 330.0,
+    "max_uniform_transform_residual_mm": 0.0,
+    "rear_service_plane_y_mm": 259.3445,
+    "rear_service_plane_inset_mm": 10.0,
+    "rear_service_plane_is_cut": false
+  },
+  "roles": {
+    "integrated_opaque_panel_units": 66,
+    "removable_glow_panel_units": 20,
+    "glow_transmitting_panel_units": 20,
+    "glow_transmitting_panels": [
+      "TRI027",
+      "TRI055",
+      "TRI017",
+      "TRI031",
+      "TRI001",
+      "TRI041",
+      "TRI002",
+      "TRI032",
+      "TRI003",
+      "TRI042",
+      "TRI004",
+      "QUAD001",
+      "QUAD022",
+      "MANQ001",
+      "QUAD003",
+      "QUAD005",
+      "QUAD017",
+      "QUAD031",
+      "QUAD021",
+      "QUAD035"
+    ],
+    "mouth_opening_panels": [
+      "TRI005",
+      "TRI006"
+    ],
+    "eye_material_aperture_count": 2,
+    "superseded_eye_placeholders": [
+      "EYE_RIGHT",
+      "EYE_LEFT"
+    ],
+    "selected_glow_units": [
+      {
+        "review_unit_id": "GLOW_TRI027",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "TRI027",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI027",
+        "zone": "right_cheek",
+        "area_source_mm2": 1485.067967,
+        "area_330mm_mm2": 3341.402926,
+        "centroid_source_mm": [
+          63.943,
+          20.81,
+          27.005
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI055",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "TRI055",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI055",
+        "zone": "left_cheek",
+        "area_source_mm2": 1485.067967,
+        "area_330mm_mm2": 3341.402926,
+        "centroid_source_mm": [
+          -63.943,
+          20.81,
+          27.005
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI017",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "TRI017",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI017",
+        "zone": "center_face",
+        "area_source_mm2": 501.119314,
+        "area_330mm_mm2": 1127.518456,
+        "centroid_source_mm": [
+          9.002,
+          -16.800667,
+          21.417
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI031",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "TRI031",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI031",
+        "zone": "center_face",
+        "area_source_mm2": 501.123695,
+        "area_330mm_mm2": 1127.528313,
+        "centroid_source_mm": [
+          -9.001333,
+          -16.800667,
+          21.417
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI001",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "TRI001",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI001",
+        "zone": "right_cheek",
+        "area_source_mm2": 311.142352,
+        "area_330mm_mm2": 700.070291,
+        "centroid_source_mm": [
+          23.13,
+          -26.234667,
+          5.510333
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI041",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "TRI041",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI041",
+        "zone": "left_cheek",
+        "area_source_mm2": 311.142352,
+        "area_330mm_mm2": 700.070291,
+        "centroid_source_mm": [
+          -23.13,
+          -26.234667,
+          5.510333
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI002",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "TRI002",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI002",
+        "zone": "center_face",
+        "area_source_mm2": 485.151802,
+        "area_330mm_mm2": 1091.591554,
+        "centroid_source_mm": [
+          13.361333,
+          -26.719667,
+          5.532
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI032",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "TRI032",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI032",
+        "zone": "center_face",
+        "area_source_mm2": 485.20238,
+        "area_330mm_mm2": 1091.705354,
+        "centroid_source_mm": [
+          -13.360667,
+          -26.719667,
+          5.532
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI003",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "TRI003",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI003",
+        "zone": "right_cheek",
+        "area_source_mm2": 192.976619,
+        "area_330mm_mm2": 434.197394,
+        "centroid_source_mm": [
+          21.538667,
+          -32.214667,
+          -13.463
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI042",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "TRI042",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI042",
+        "zone": "left_cheek",
+        "area_source_mm2": 192.976619,
+        "area_330mm_mm2": 434.197394,
+        "centroid_source_mm": [
+          -21.538667,
+          -32.214667,
+          -13.463
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_TRI004",
+        "pair_id": "",
+        "side": "center",
+        "source_panel_id": "TRI004",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 1,
+        "source_triangle_ids": "TRI004",
+        "zone": "center_face",
+        "area_source_mm2": 260.703889,
+        "area_330mm_mm2": 586.583751,
+        "centroid_source_mm": [
+          0.000333,
+          -34.315333,
+          -9.944
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_QUAD001",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "QUAD001",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "QUAD001-A QUAD001-B",
+        "zone": "center_face+right_cheek",
+        "area_source_mm2": 535.199414,
+        "area_330mm_mm2": 1204.198681,
+        "centroid_source_mm": [
+          17.32625,
+          -49.532,
+          -36.09625
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_QUAD022",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "QUAD022",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "QUAD022-A QUAD022-B",
+        "zone": "center_face+left_cheek",
+        "area_source_mm2": 535.199414,
+        "area_330mm_mm2": 1204.198681,
+        "centroid_source_mm": [
+          -17.32625,
+          -49.532,
+          -36.09625
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_MANQ001",
+        "pair_id": "",
+        "side": "center",
+        "source_panel_id": "MANQ001",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "MANQ001-B MANQ001-A",
+        "zone": "center_face",
+        "area_source_mm2": 1154.628997,
+        "area_330mm_mm2": 2597.915243,
+        "centroid_source_mm": [
+          0.0,
+          -52.4195,
+          -31.795
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_QUAD003",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "QUAD003",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "QUAD003-A QUAD003-B",
+        "zone": "bottom+right_cheek",
+        "area_source_mm2": 997.709075,
+        "area_330mm_mm2": 2244.845418,
+        "centroid_source_mm": [
+          22.56475,
+          -58.44025,
+          -72.81275
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_QUAD005",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "QUAD005",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "QUAD005-A QUAD005-B",
+        "zone": "bottom+left_cheek",
+        "area_source_mm2": 1002.581145,
+        "area_330mm_mm2": 2255.807576,
+        "centroid_source_mm": [
+          -22.50175,
+          -58.44025,
+          -72.81275
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_QUAD017",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "QUAD017",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "QUAD017-B QUAD017-A",
+        "zone": "right_cheek",
+        "area_source_mm2": 2675.104686,
+        "area_330mm_mm2": 6018.985544,
+        "centroid_source_mm": [
+          67.93275,
+          23.82675,
+          -55.49725
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_QUAD031",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "QUAD031",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "QUAD031-B QUAD031-A",
+        "zone": "left_cheek",
+        "area_source_mm2": 2675.104686,
+        "area_330mm_mm2": 6018.985544,
+        "centroid_source_mm": [
+          -67.93275,
+          23.82675,
+          -55.49725
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_QUAD021",
+        "pair_id": "",
+        "side": "right",
+        "source_panel_id": "QUAD021",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "QUAD021-A QUAD021-B",
+        "zone": "right_cheek",
+        "area_source_mm2": 2877.063858,
+        "area_330mm_mm2": 6473.39368,
+        "centroid_source_mm": [
+          56.07925,
+          64.39625,
+          34.93875
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      },
+      {
+        "review_unit_id": "GLOW_QUAD035",
+        "pair_id": "",
+        "side": "left",
+        "source_panel_id": "QUAD035",
+        "mirror_source_panel_id": "",
+        "description": "Removable glow/light-transmitting panel selected in annotated Gate 1 SVG",
+        "source_face_count": 2,
+        "source_triangle_ids": "QUAD035-A QUAD035-B",
+        "zone": "left_cheek",
+        "area_source_mm2": 2877.063858,
+        "area_330mm_mm2": 6473.39368,
+        "centroid_source_mm": [
+          -56.07925,
+          64.39625,
+          34.93875
+        ],
+        "mirror_residual_source_mm": 0.0,
+        "mirror_residual_330mm_mm": 0.0
+      }
+    ]
+  },
+  "review_notes": [
+    "This is a role-only review. No shell thickness, print-section split, seam flange, or mounting feature is present.",
+    "A selected quad remains one removable panel unit even though the accepted OBJ stores it as two triangles.",
+    "The rear-service plane is a planning reference only; it does not cut the Gate 1 exterior.",
+    "Only the panels marked purple in the annotated SVG are removable glow/light-transmitting panels; all former cyan candidates are opaque.",
+    "The eye silhouettes traced from the red annotations define the separate translucent eye material; the older cyan eye placeholders are not rendered."
+  ],
+  "acceptance": {
+    "all_source_panel_units_have_exactly_one_role": true,
+    "no_glow_panels_on_ears": true,
+    "glow_panel_count": 20,
+    "eye_material_count": 2
+  }
+}

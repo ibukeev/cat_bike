@@ -1,0 +1,21 @@
+review_unit_id,pair_id,side,source_panel_id,mirror_source_panel_id,source_face_count,source_triangle_ids,zone,area_source_mm2,area_330mm_mm2,centroid_source_mm,mirror_residual_source_mm,mirror_residual_330mm_mm,description
+GLOW_TRI027,,right,TRI027,,1,TRI027,right_cheek,1485.068,3341.403,63.943 20.810 27.005,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI055,,left,TRI055,,1,TRI055,left_cheek,1485.068,3341.403,-63.943 20.810 27.005,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI017,,right,TRI017,,1,TRI017,center_face,501.119,1127.518,9.002 -16.801 21.417,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI031,,left,TRI031,,1,TRI031,center_face,501.124,1127.528,-9.001 -16.801 21.417,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI001,,right,TRI001,,1,TRI001,right_cheek,311.142,700.070,23.130 -26.235 5.510,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI041,,left,TRI041,,1,TRI041,left_cheek,311.142,700.070,-23.130 -26.235 5.510,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI002,,right,TRI002,,1,TRI002,center_face,485.152,1091.592,13.361 -26.720 5.532,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI032,,left,TRI032,,1,TRI032,center_face,485.202,1091.705,-13.361 -26.720 5.532,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI003,,right,TRI003,,1,TRI003,right_cheek,192.977,434.197,21.539 -32.215 -13.463,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI042,,left,TRI042,,1,TRI042,left_cheek,192.977,434.197,-21.539 -32.215 -13.463,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_TRI004,,center,TRI004,,1,TRI004,center_face,260.704,586.584,0.000 -34.315 -9.944,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_QUAD001,,right,QUAD001,,2,QUAD001-A QUAD001-B,center_face+right_cheek,535.199,1204.199,17.326 -49.532 -36.096,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_QUAD022,,left,QUAD022,,2,QUAD022-A QUAD022-B,center_face+left_cheek,535.199,1204.199,-17.326 -49.532 -36.096,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_MANQ001,,center,MANQ001,,2,MANQ001-B MANQ001-A,center_face,1154.629,2597.915,0.000 -52.419 -31.795,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_QUAD003,,right,QUAD003,,2,QUAD003-A QUAD003-B,bottom+right_cheek,997.709,2244.845,22.565 -58.440 -72.813,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_QUAD005,,left,QUAD005,,2,QUAD005-A QUAD005-B,bottom+left_cheek,1002.581,2255.808,-22.502 -58.440 -72.813,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_QUAD017,,right,QUAD017,,2,QUAD017-B QUAD017-A,right_cheek,2675.105,6018.986,67.933 23.827 -55.497,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_QUAD031,,left,QUAD031,,2,QUAD031-B QUAD031-A,left_cheek,2675.105,6018.986,-67.933 23.827 -55.497,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_QUAD021,,right,QUAD021,,2,QUAD021-A QUAD021-B,right_cheek,2877.064,6473.394,56.079 64.396 34.939,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+GLOW_QUAD035,,left,QUAD035,,2,QUAD035-A QUAD035-B,left_cheek,2877.064,6473.394,-56.079 64.396 34.939,0.0000,0.0000,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG

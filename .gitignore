@@ -79,3 +79,12 @@ assets/references/cat-head/gemini_SVG.png
 *.log
 coverage/
 reports/generated/
+
+# Recoverable local project cleanups
+/.cleanup-recovery/
+/_archive_admin/
+/tmp/
+
+# CAD/editor backups are not working milestones
+*.FCBak
+*.orig

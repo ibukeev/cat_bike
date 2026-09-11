@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_LEFT_UPPER_HEAD_C001_TOPOLOGY_REPAIR_REVIEW_V2",
+  "status": "user-approved isolated digital proposal; FreeCAD Part and A/B review-copy union gates pass; controlled full-left-owner integration is authorized as the next separate bucket",
+  "user_approval": {
+    "decision": "LGTM",
+    "date": "2026-08-09",
+    "scope": "local C001 EarClip surface interpretation and the C001-plus-approved-A/B one-solid review copy",
+    "residue_disposition": "the apparent small-flange residue disappeared when the overlapping full-head reference was hidden; it is not present in the approved V2 integrated solid"
+  },
+  "source_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+  "source_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+  "source_object": "left_upper_head",
+  "proposal_object": "PROPOSED__LEFT_UPPER_HEAD_C001__TOPOLOGY_REPAIR_V2",
+  "output_dir": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-upper-head-c001-topology-repair-v2",
+  "proposal_blend_filename": "CAT_HEAD_LEFT_UPPER_HEAD_C001_TOPOLOGY_REPAIR_REVIEW_V2.blend",
+  "proposal_stl_filename": "PROPOSED__LEFT_UPPER_HEAD_C001__TOPOLOGY_REPAIR_V2.stl",
+  "contract": {
+    "operation": "isolate actual left C001; weld only its one exact coincident source-vertex pair; deterministically triangulate concave source faces by EarClip; reorient; preserve every retained coordinate and the exact C001 bounds",
+    "target_component_number": 1,
+    "expected_source_connected_components": 41,
+    "weld_tolerance_mm": 0.00001,
+    "expected_weld_pairs": 1,
+    "expected_removed_redundant_vertices": 1,
+    "triangulation_quad_method": "BEAUTY",
+    "triangulation_ngon_method": "EAR_CLIP",
+    "opposed_normal_dot_max": -0.999999,
+    "expected_pre_removal_nonmanifold_edges": 0,
+    "expected_removed_exact_opposed_face_pairs": 0,
+    "expected_removed_faces": 0,
+    "maximum_retained_vertex_displacement_mm": 0.0,
+    "maximum_bounding_box_change_mm": 0.0,
+    "required_boundary_edges": 0,
+    "required_nonmanifold_edges": 0,
+    "required_connected_components": 1,
+    "require_zero_blender_bvh_overlaps": false,
+    "maximum_bidirectional_sampled_surface_deviation_mm": 0.25,
+    "production_union_authorized": false,
+    "connector_positions_frozen": true,
+    "preserve_other_left_components_ears_eyes_lower_rear_reinforcement_c006_and_aluminum": true
+  },
+  "freecad_validation": {
+    "sewing_tolerance_mm": 0.00001,
+    "isolated_c001": {
+      "closed": true,
+      "valid": true,
+      "solids": 1,
+      "shells": 1,
+      "faces": 1949,
+      "edges": 3044,
+      "vertices": 1058,
+      "volume_mm3": 71319.33,
+      "occt_no_self_intersection": true
+    },
+    "c001_plus_approved_a_b_review_copy": {
+      "closed": true,
+      "valid": true,
+      "solids": 1,
+      "shells": 1,
+      "faces": 1954,
+      "edges": 3068,
+      "vertices": 1082,
+      "volume_mm3": 73455.26,
+      "occt_no_self_intersection": true,
+      "a_root_overlap_mm3": 129.8447,
+      "b_root_overlap_mm3": 124.9030,
+      "a_pair_gap_mm": 0.3,
+      "b_pair_gap_mm": 0.3,
+      "minimum_panel_clearance_mm": 0.0353
+    }
+  }
+}

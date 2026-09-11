@@ -1,0 +1,899 @@
+{
+  "gate": "Gate 7 grouped translucent glow-panel inserts",
+  "status": "review_required",
+  "groups": [
+    {
+      "name": "central_12_panel_cluster",
+      "panel_ids": [
+        "MANQ001",
+        "QUAD001",
+        "QUAD022",
+        "TRI001",
+        "TRI002",
+        "TRI003",
+        "TRI004",
+        "TRI017",
+        "TRI031",
+        "TRI032",
+        "TRI041",
+        "TRI042"
+      ],
+      "combined": true,
+      "source_panel_count": 12,
+      "boundary_edge_count": 11,
+      "hook_count": 2,
+      "m2_5_fastener_count": 2,
+      "hooks": [
+        {
+          "owner_shell": "right_upper_head",
+          "anchor_mm": [
+            20.2537,
+            82.251,
+            212.6948
+          ]
+        },
+        {
+          "owner_shell": "left_upper_head",
+          "anchor_mm": [
+            -20.2537,
+            82.251,
+            212.6948
+          ]
+        }
+      ],
+      "screw_mounts": [
+        {
+          "owner_shell": "right_lower_face",
+          "anchor_mm": [
+            32.0625,
+            30.3592,
+            104.4037
+          ],
+          "axis": [
+            -0.65998,
+            -0.53933,
+            0.52302
+          ],
+          "axis_parallel_to_panel": true
+        },
+        {
+          "owner_shell": "left_lower_face",
+          "anchor_mm": [
+            -32.0625,
+            30.3592,
+            104.4037
+          ],
+          "axis": [
+            0.65998,
+            -0.53933,
+            0.52302
+          ],
+          "axis_parallel_to_panel": true
+        }
+      ],
+      "ear_root_revision": null,
+      "ear_root_bridge": null,
+      "visible_seam_cap": {
+        "perimeter_clearance_mm": 0.05,
+        "surface_setback_mm": 0.15,
+        "thickness_mm": 0.5,
+        "body_attachment_triangle_intersections": 24,
+        "deep_body_clearance_mm": 0.35
+      }
+    },
+    {
+      "name": "left_ear_root_cluster",
+      "panel_ids": [
+        "QUAD035",
+        "TRI055"
+      ],
+      "combined": true,
+      "source_panel_count": 2,
+      "boundary_edge_count": 5,
+      "hook_count": 1,
+      "m2_5_fastener_count": 1,
+      "hooks": [
+        {
+          "owner_shell": "left_upper_head",
+          "anchor_mm": [
+            -112.8443,
+            125.799,
+            182.4668
+          ]
+        }
+      ],
+      "screw_mounts": [
+        {
+          "owner_shell": "left_upper_head",
+          "anchor_mm": [
+            -99.1305,
+            204.8947,
+            197.9782
+          ],
+          "axis": [
+            0.50226,
+            -0.47017,
+            0.72573
+          ],
+          "axis_parallel_to_panel": true
+        }
+      ],
+      "ear_root_revision": {
+        "clearance_mm": 0.8,
+        "corner_relief_depth_mm": 25.0,
+        "structural_gate5_connector_unchanged": true,
+        "translucent_ear_root_return_mm": 7.0,
+        "adjacent_hidden_returns_trimmed_to_relief": true,
+        "triangle_intersection_count": 0,
+        "minimum_connector_vertex_to_insert_surface_gap_mm": 2.1664,
+        "required_clearance_mm": 0.8
+      },
+      "ear_root_bridge": {
+        "name": "left_ear_root_bridge",
+        "source_vertices": [
+          47,
+          49,
+          48
+        ],
+        "connector_relief_vertices": [
+          48,
+          49
+        ],
+        "combined_with_insert": "left_ear_root_cluster",
+        "additional_printed_part": false,
+        "integrated_in_edge_connected_surface": true,
+        "visible_surface_plane_count": 3,
+        "visible_cap_perimeter_clearance_mm": 0.05
+      },
+      "visible_seam_cap": {
+        "perimeter_clearance_mm": 0.05,
+        "surface_setback_mm": 0.15,
+        "thickness_mm": 0.5,
+        "body_attachment_triangle_intersections": 11,
+        "deep_body_clearance_mm": 0.35
+      }
+    },
+    {
+      "name": "right_ear_root_cluster",
+      "panel_ids": [
+        "QUAD021",
+        "TRI027"
+      ],
+      "combined": true,
+      "source_panel_count": 2,
+      "boundary_edge_count": 5,
+      "hook_count": 1,
+      "m2_5_fastener_count": 1,
+      "hooks": [
+        {
+          "owner_shell": "right_upper_head",
+          "anchor_mm": [
+            112.8443,
+            125.799,
+            182.4668
+          ]
+        }
+      ],
+      "screw_mounts": [
+        {
+          "owner_shell": "right_upper_head",
+          "anchor_mm": [
+            99.1305,
+            204.8947,
+            197.9782
+          ],
+          "axis": [
+            -0.50226,
+            -0.47017,
+            0.72573
+          ],
+          "axis_parallel_to_panel": true
+        }
+      ],
+      "ear_root_revision": {
+        "clearance_mm": 0.8,
+        "corner_relief_depth_mm": 25.0,
+        "structural_gate5_connector_unchanged": true,
+        "translucent_ear_root_return_mm": 7.0,
+        "adjacent_hidden_returns_trimmed_to_relief": true,
+        "triangle_intersection_count": 0,
+        "minimum_connector_vertex_to_insert_surface_gap_mm": 2.1675,
+        "required_clearance_mm": 0.8
+      },
+      "ear_root_bridge": {
+        "name": "right_ear_root_bridge",
+        "source_vertices": [
+          23,
+          24,
+          25
+        ],
+        "connector_relief_vertices": [
+          24,
+          25
+        ],
+        "combined_with_insert": "right_ear_root_cluster",
+        "additional_printed_part": false,
+        "integrated_in_edge_connected_surface": true,
+        "visible_surface_plane_count": 3,
+        "visible_cap_perimeter_clearance_mm": 0.05
+      },
+      "visible_seam_cap": {
+        "perimeter_clearance_mm": 0.05,
+        "surface_setback_mm": 0.15,
+        "thickness_mm": 0.5,
+        "body_attachment_triangle_intersections": 11,
+        "deep_body_clearance_mm": 0.35
+      }
+    },
+    {
+      "name": "panel_QUAD003",
+      "panel_ids": [
+        "QUAD003"
+      ],
+      "combined": false,
+      "source_panel_count": 1,
+      "boundary_edge_count": 4,
+      "hook_count": 1,
+      "m2_5_fastener_count": 1,
+      "hooks": [
+        {
+          "owner_shell": "right_lower_face",
+          "anchor_mm": [
+            47.3475,
+            17.0557,
+            77.4495
+          ]
+        }
+      ],
+      "screw_mounts": [
+        {
+          "owner_shell": "right_lower_face",
+          "anchor_mm": [
+            15.4837,
+            5.3025,
+            65.1083
+          ],
+          "axis": [
+            0.67607,
+            0.27752,
+            -0.68258
+          ],
+          "axis_parallel_to_panel": true
+        }
+      ],
+      "ear_root_revision": null,
+      "ear_root_bridge": null,
+      "visible_seam_cap": {
+        "perimeter_clearance_mm": 0.05,
+        "surface_setback_mm": 0.15,
+        "thickness_mm": 0.5,
+        "body_attachment_triangle_intersections": 6,
+        "deep_body_clearance_mm": 0.35
+      }
+    },
+    {
+      "name": "panel_QUAD005",
+      "panel_ids": [
+        "QUAD005"
+      ],
+      "combined": false,
+      "source_panel_count": 1,
+      "boundary_edge_count": 4,
+      "hook_count": 1,
+      "m2_5_fastener_count": 1,
+      "hooks": [
+        {
+          "owner_shell": "left_lower_face",
+          "anchor_mm": [
+            -47.3475,
+            17.0557,
+            77.4495
+          ]
+        }
+      ],
+      "screw_mounts": [
+        {
+          "owner_shell": "left_lower_face",
+          "anchor_mm": [
+            -15.2948,
+            5.3025,
+            65.1083
+          ],
+          "axis": [
+            -0.67207,
+            0.2777,
+            -0.68644
+          ],
+          "axis_parallel_to_panel": true
+        }
+      ],
+      "ear_root_revision": null,
+      "ear_root_bridge": null,
+      "visible_seam_cap": {
+        "perimeter_clearance_mm": 0.05,
+        "surface_setback_mm": 0.15,
+        "thickness_mm": 0.5,
+        "body_attachment_triangle_intersections": 6,
+        "deep_body_clearance_mm": 0.35
+      }
+    },
+    {
+      "name": "panel_QUAD017",
+      "panel_ids": [
+        "QUAD017"
+      ],
+      "combined": false,
+      "source_panel_count": 1,
+      "boundary_edge_count": 4,
+      "hook_count": 1,
+      "m2_5_fastener_count": 1,
+      "hooks": [
+        {
+          "owner_shell": "right_lower_face",
+          "anchor_mm": [
+            109.7572,
+            176.5883,
+            84.5677
+          ]
+        }
+      ],
+      "screw_mounts": [
+        {
+          "owner_shell": "right_upper_head",
+          "anchor_mm": [
+            125.1413,
+            154.209,
+            114.0578
+          ],
+          "axis": [
+            -0.51126,
+            -0.05535,
+            -0.85764
+          ],
+          "axis_parallel_to_panel": true
+        }
+      ],
+      "ear_root_revision": null,
+      "ear_root_bridge": null,
+      "visible_seam_cap": {
+        "perimeter_clearance_mm": 0.05,
+        "surface_setback_mm": 0.15,
+        "thickness_mm": 0.5,
+        "body_attachment_triangle_intersections": 6,
+        "deep_body_clearance_mm": 0.35
+      }
+    },
+    {
+      "name": "panel_QUAD031",
+      "panel_ids": [
+        "QUAD031"
+      ],
+      "combined": false,
+      "source_panel_count": 1,
+      "boundary_edge_count": 4,
+      "hook_count": 1,
+      "m2_5_fastener_count": 1,
+      "hooks": [
+        {
+          "owner_shell": "left_lower_face",
+          "anchor_mm": [
+            -109.7572,
+            176.5883,
+            84.5677
+          ]
+        }
+      ],
+      "screw_mounts": [
+        {
+          "owner_shell": "left_upper_head",
+          "anchor_mm": [
+            -125.1413,
+            154.209,
+            114.0578
+          ],
+          "axis": [
+            0.51126,
+            -0.05535,
+            -0.85764
+          ],
+          "axis_parallel_to_panel": true
+        }
+      ],
+      "ear_root_revision": null,
+      "ear_root_bridge": null,
+      "visible_seam_cap": {
+        "perimeter_clearance_mm": 0.05,
+        "surface_setback_mm": 0.15,
+        "thickness_mm": 0.5,
+        "body_attachment_triangle_intersections": 6,
+        "deep_body_clearance_mm": 0.35
+      }
+    }
+  ],
+  "insert_metrics": {
+    "glow_insert_central_12_panel_cluster": {
+      "vertices": 275,
+      "faces": 214,
+      "connected_components": 15,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        91.646,
+        92.013,
+        136.186
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.533953,
+        "oriented_dimensions_mm_sorted": [
+          91.646,
+          112.13,
+          121.308
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          90,
+          45
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "glow_insert_left_ear_root_cluster": {
+      "vertices": 147,
+      "faces": 78,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        67.676,
+        80.035,
+        159.056
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.466406,
+        "oriented_dimensions_mm_sorted": [
+          86.123,
+          97.922,
+          111.938
+        ],
+        "rotation_xyz_degrees": [
+          30,
+          15,
+          75
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "glow_insert_right_ear_root_cluster": {
+      "vertices": 131,
+      "faces": 74,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        67.676,
+        80.035,
+        159.056
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.466406,
+        "oriented_dimensions_mm_sorted": [
+          86.123,
+          97.922,
+          111.938
+        ],
+        "rotation_xyz_degrees": [
+          30,
+          165,
+          165
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "glow_insert_panel_QUAD003": {
+      "vertices": 126,
+      "faces": 75,
+      "connected_components": 7,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        27.282,
+        67.275,
+        68.487
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.236568,
+        "oriented_dimensions_mm_sorted": [
+          42.567,
+          48.527,
+          56.776
+        ],
+        "rotation_xyz_degrees": [
+          150,
+          120,
+          15
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "glow_insert_panel_QUAD005": {
+      "vertices": 105,
+      "faces": 72,
+      "connected_components": 7,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        27.277,
+        67.293,
+        68.856
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.237938,
+        "oriented_dimensions_mm_sorted": [
+          42.582,
+          48.528,
+          57.105
+        ],
+        "rotation_xyz_degrees": [
+          150,
+          60,
+          15
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "glow_insert_panel_QUAD017": {
+      "vertices": 112,
+      "faces": 72,
+      "connected_components": 7,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        65.916,
+        83.77,
+        122.281
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.427227,
+        "oriented_dimensions_mm_sorted": [
+          85.445,
+          88.17,
+          102.14
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          165,
+          60
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "glow_insert_panel_QUAD031": {
+      "vertices": 105,
+      "faces": 72,
+      "connected_components": 7,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        65.916,
+        83.77,
+        122.281
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.427227,
+        "oriented_dimensions_mm_sorted": [
+          85.445,
+          88.17,
+          102.14
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          15,
+          60
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    }
+  },
+  "revised_shell_metrics": {
+    "right_upper_head": {
+      "vertices": 1114,
+      "faces": 786,
+      "connected_components": 36,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        157.937,
+        158.396,
+        206.289
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.822995,
+        "oriented_dimensions_mm_sorted": [
+          161.391,
+          167.139,
+          197.519
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          105,
+          15
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_upper_head": {
+      "vertices": 1127,
+      "faces": 782,
+      "connected_components": 37,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        129.49,
+        158.396,
+        206.289
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.78793,
+        "oriented_dimensions_mm_sorted": [
+          157.586,
+          158.396,
+          187.904
+        ],
+        "rotation_xyz_degrees": [
+          90,
+          120,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "right_lower_face": {
+      "vertices": 1300,
+      "faces": 921,
+      "connected_components": 53,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        128.29,
+        153.822,
+        269.345
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.968375,
+        "oriented_dimensions_mm_sorted": [
+          192.202,
+          203.359,
+          231.551
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          120,
+          105
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_lower_face": {
+      "vertices": 1301,
+      "faces": 933,
+      "connected_components": 48,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        153.685,
+        158.406,
+        269.345
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.969185,
+        "oriented_dimensions_mm_sorted": [
+          192.202,
+          203.529,
+          229.302
+        ],
+        "rotation_xyz_degrees": [
+          30,
+          0,
+          30
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "rear_base": {
+      "vertices": 213,
+      "faces": 124,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        28.504,
+        81.357,
+        120.0
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.460929,
+        "oriented_dimensions_mm_sorted": [
+          80.535,
+          96.795,
+          96.795
+        ],
+        "rotation_xyz_degrees": [
+          60,
+          45,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "right_ear": {
+      "vertices": 120,
+      "faces": 84,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        85.713,
+        96.118,
+        142.743
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.475164,
+        "oriented_dimensions_mm_sorted": [
+          85.471,
+          99.218,
+          114.039
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          75,
+          165
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    },
+    "left_ear": {
+      "vertices": 122,
+      "faces": 84,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm_sorted": [
+        85.713,
+        96.118,
+        142.743
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.475164,
+        "oriented_dimensions_mm_sorted": [
+          85.471,
+          99.218,
+          114.039
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          105,
+          165
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      }
+    }
+  },
+  "hardware": {
+    "m2_5_through_bolts": 8,
+    "m2_5_washers": 16,
+    "m2_5_loose_nyloc_nuts": 8,
+    "fixed_integrated_hooks": 8
+  },
+  "ear_connector_clearance_validation": {
+    "left_ear_root_cluster": {
+      "triangle_intersection_count": 0,
+      "minimum_connector_vertex_to_insert_surface_gap_mm": 2.1664,
+      "required_clearance_mm": 0.8
+    },
+    "right_ear_root_cluster": {
+      "triangle_intersection_count": 0,
+      "minimum_connector_vertex_to_insert_surface_gap_mm": 2.1675,
+      "required_clearance_mm": 0.8
+    }
+  },
+  "small_model_scale": 0.30303,
+  "acceptance": {
+    "all_20_approved_panels_covered": true,
+    "expected_printed_insert_count": true,
+    "central_12_panels_combined": true,
+    "central_mount_count": true,
+    "noncentral_insert_mount_counts": true,
+    "all_fastener_axes_parallel_to_local_panels": true,
+    "no_exterior_fastener_holes": true,
+    "ear_root_returns_and_connector_notches_mirrored": true,
+    "two_missing_ear_root_panes_added_without_extra_parts": true,
+    "all_inserts_have_near_edge_visible_caps": true,
+    "both_ear_root_clusters_are_integrated_three_plane_surfaces": true,
+    "both_ear_root_insert_meshes_are_single_component": true,
+    "ear_connectors_have_verified_clearance": true,
+    "all_inserts_closed_manifold": true,
+    "all_gate7_shells_closed_manifold": true,
+    "all_inserts_fit_printer": true,
+    "small_model_visual_export_created": true
+  },
+  "review_notes": [
+    "Normal source panels are combined only when they share complete mesh edges. Each explicit ear-root cluster becomes edge-connected through its synthetic bridge triangle.",
+    "The twelve connected centerline facets become one non-planar printed diffuser. Each TRI/bridge/QUAD ear-root region becomes one simplified three-plane insert, leaving seven printed translucent parts total.",
+    "Each insert has a shallow 0.05 mm-clearance visible seam cap over its 0.35 mm-clearance deeper fit body. This closes ordinary pane-to-shell and pane-to-pane visual gaps without making the entire insert a zero-clearance assembly fit.",
+    "Every insert seats behind the shell with a translucent overlap flange and thin black gasket, so it cannot fall through its exterior opening.",
+    "Fixed internal hooks carry one side of each insert. Internal M2.5 flange tabs retain the opposite side; both sit beneath the opaque shell border rather than behind the illuminated aperture.",
+    "TRI027, its synthetic bridge, and the outer plane of QUAD021 form one right ear-root insert; TRI055, its bridge, and the outer plane of QUAD035 form the mirrored left insert. Redundant contained coplanar QUAD faces are omitted. Each cluster is generated as one three-plane edge-connected surface, solidified once, retained at two hidden upper-head edges, and uses a 25 mm top-only relief plus 10 mm localized top-side setbacks around the recessed structural M3 ear flange pair. The long front and rear pane boundaries remain in contact with the head.",
+    "The central insert uses two hooks on upper-head interfaces and two M2.5 retainers on lower-face interfaces. Each isolated insert uses one hook and one retainer.",
+    "LED cassettes and individual light-blocking chambers remain a later gate; Gate 7 only creates printable diffusers and their mechanical attachment."
+  ]
+}

@@ -6,11 +6,15 @@ Define the draft Pixelblaze controller setup for the Cat Bike LED installation.
 
 ## Current Decisions
 
-- Use one Pixelblaze V3 Standard-compatible controller.
+- Use the in-hand Pixelblaze V3 Pico as the Phase 1 controller.
+- Keep the ordered Pixelblaze V3 Standard boards as hot spares/future upgrades.
 - Do not use multiple controllers for this bike unless future complexity forces it.
 - Mount the controller near the battery/power distribution enclosure, protected from dust, moisture, vibration, and cargo impacts.
 - Use one data output initially.
 - Keep the Pixelblaze Output Expander available as a future option, but do not include it in Phase 1.
+- Power either controller from one dedicated Magnolora 12 V to 5 V, 3 A converter.
+- Reserve a Standard-sized tray area; the insulated Pico may lie loose for the MVP.
+- Keep all LED load current out of the Pixelblaze power path.
 
 ## Physical Location
 
@@ -18,7 +22,7 @@ Preferred controller location:
 
 - In or near the rear power distribution area.
 - Protected enclosure near the under-rack / behind-seat / basket-area power box.
-- Close to the 5 V distribution system.
+- Close to the protected 12 V distribution and dedicated 5 V controller converter.
 - Accessible enough for service, reset, and Wi-Fi setup.
 
 Avoid:
@@ -97,8 +101,9 @@ Use it later only if:
 
 ## Open Items
 
-- Acquire and configure the selected Pixelblaze V3 Standard-compatible controller.
-- Confirm controller power input plan.
+- Identify the Pico antenna end and insulate the board without covering it.
+- Measure a Standard board when it arrives and finalize its interchangeable carrier.
+- Configure the Pico and verify the dedicated 5 V controller power connector polarity.
 - Assign the absolute S5 start offset after preceding whole-bike zones are measured.
 - Integrate the locked head-local 0-51 map into the whole-bike segment map.
 - Bench test current draw and brightness caps before bike installation.

@@ -1,0 +1,81 @@
+{
+  "schema_version": "cat-head-lower-front-bilateral-feedback-cleanup-review-v2",
+  "contract_id": "lower-front-bilateral-feedback-cleanup-review-v2",
+  "tooling_revision": 23,
+  "authority": "REVIEW_ONLY_NON_AUTHORITATIVE_NOT_A_PRINT_SOURCE",
+  "decision": {
+    "objective": "Apply the five user-approved lower-front cleanup changes while preserving the accepted V1 modular assembly and every predecessor artifact.",
+    "approved_changes": [
+      "Remove only the outboard Face30 transfer fin from component_001 on both sides.",
+      "Replace legacy component_007 eye/head flange geometry with the exact user HEAD_BOTTOM_FLANGE plus the smallest measured hidden legacy root, mirrored bilaterally.",
+      "Remove obsolete exterior reinforcement owner component_014 on both sides.",
+      "Keep only the centered half-length of nose connector owner component_021 on both sides.",
+      "Copy the existing accessible external M3 ear exactly 50 mm along each long ledge, retaining the same orientation, pad dimensions, through-bore, and loose-nut access."
+    ],
+    "preserve": [
+      "All owners other than components 001, 007, 014, and 021 remain byte-reconstructed and geometrically unchanged from V1.",
+      "The V1 translucent inserts, translucent mouth, mouth mounts, upper owners, and mesh-only context remain unchanged.",
+      "All predecessor FCStd files and canonical sources remain read-only.",
+      "Every lower owner, ledge, translucent component, mouth component, cleanup reference, and hardware reference remains separately selectable."
+    ],
+    "release_hold": "This package is a visual and physical review only. It does not authorize STL, STEP, 3MF, G-code, slicing, fusion into production, or print release."
+  },
+  "inputs": {
+    "v1_contract": {"path": "source/cad-change-control/review-only/lower-front-bilateral-modular-closure-review-v1/contract.json", "sha256": "f97287e41394038da444092301bb92693f68c5739d30677f893fe3a876748248"},
+    "v1_generator": {"path": "source/cad-change-control/review-only/lower-front-bilateral-modular-closure-review-v1/generate_freecad_review.py", "sha256": "f782d4a58c6637c332b4c388c47062343a10b3bb6aad8639560c35eacb4d8dca"},
+    "v5_contract": {"path": "source/cad-change-control/review-only/right-lower-rear-v5-long-ledge-interface-review-v5/contract.json", "sha256": "93afff7ea5109fd42f75bac6a0725084384b768d98935bbc1d5f6ca088c610df"},
+    "v5_generator": {"path": "source/cad-change-control/review-only/right-lower-rear-v5-long-ledge-interface-review-v5/generate_freecad_review.py", "sha256": "4b80ec1dece99c453473f6ac84cafe2933294c053669b0020b4673c4ac50a56a"},
+    "v3_generator": {"path": "source/cad-change-control/review-only/right-lower-rear-v5-axis-straight-sector-review-v3/generate_freecad_review.py", "sha256": "4227eab0cbf5dbbf606b3dcfce0fba5f273028ddcdd9eb87a0e69d5f216d18f4"},
+    "canonical_v34": {"path": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd", "sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584"},
+    "user_manual_v8": {"path": "output/70-freecad-pilots/review-only/right-eye-head-mount-anchor-review-v8/RIGHT_EYE_HEAD_MOUNT_ANCHOR_REVIEW_ONLY_V8.FCStd", "sha256": "0227665fcf5fa04063778aaf07acee527037783341f89ff7b6d88e706b4ed6b6"},
+    "inventory_tool": {"path": "source/cad-change-control/review-only/lower-front-bilateral-feedback-cleanup-review-v2/inspect_feedback.py", "sha256": "496901e31456eb4a8b71f5a1ffeb238cd4bbef6b4fe2db4ed18c48d303b11c39"}
+  },
+  "cleanup": {
+    "face30_fin": {"outboard_x_min_mm": 80.0, "box_minimum_world_mm": [80.0, 150.0, 30.0], "box_lengths_mm": [25.0, 45.0, 25.0], "expected_removed_transfer_volume_mm3": 23.1482, "maximum_removed_nontransfer_volume_mm3": 0.000001},
+    "component_007_manual_flange": {"source_object_label": "HEAD_BOTTOM_FLANGE", "hidden_root_bbox_margin_mm": 0.0, "minimum_root_to_manual_common_mm3": 80.0, "minimum_root_to_shell_common_mm3": 20.0, "expected_manual_volume_mm3": 564.2364315},
+    "component_014": {"policy": "omit_complete_obsolete_exterior_owner"},
+    "component_021": {"policy": "keep_center_half", "keep_z_min_mm": 60.14623832702637, "keep_z_max_mm": 80.02250099182129, "expected_kept_length_mm": 19.87626266479492, "minimum_component_002_root_common_mm3": 500.0}
+  },
+  "ledge_extension": {
+    "source_accessible_ear_u_mm": 24.0,
+    "ear_copy_offset_mm": 50.0,
+    "copy_bridge_step_mm": 6.0,
+    "station_n_mm": 7.0,
+    "local_pad_u_width_mm": 12.0,
+    "local_pad_n_width_mm": 10.0,
+    "local_pad_total_depth_mm": 8.0,
+    "continuous_extension_u_max_mm": 80.0,
+    "continuous_extension_inboard_overlap_mm": 18.0,
+    "minimum_added_integral_volume_mm3": 20.0,
+    "outboard_station_fastener_style": "M3_through_bolt_with_accessible_loose_nut",
+    "minimum_station_spacing_mm": 8.0,
+    "minimum_bore_edge_material_mm": 3.5,
+    "rear_sweep_clearance_margin_mm": 0.85,
+    "prior_measured_rear_clearance_mm": 0.1894852438879211,
+    "minimum_rear_clearance_mm": 0.30,
+    "allowed_integral_root_component_indices": [1, 15, 53],
+    "minimum_support_annulus_common_mm3": 20.0,
+    "slide_samples_mm": [0.0, 3.0, 6.0, 9.0, 12.0]
+  },
+  "numeric_gates": {
+    "volume_epsilon_mm3": 0.000001,
+    "distance_epsilon_mm": 0.00001,
+    "maximum_manual_flange_missing_volume_mm3": 0.000001,
+    "maximum_unchanged_owner_symmetric_difference_mm3": 0.000001,
+    "maximum_right_left_common_mm3": 0.000001,
+    "maximum_lower_upper_common_mm3": 0.000001,
+    "maximum_ledge_rear_common_mm3": 0.000001,
+    "maximum_ledge_non_component001_common_mm3": 0.000001
+  },
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v2",
+    "fcstd": "LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V2.FCStd",
+    "validation": "validation.json",
+    "views": ["01-front-assembled.png", "02-rear-assembled.png", "03-fin-and-reinforcement-cleanup.png", "04-manual-eye-flange-cleanup.png", "05-shortened-nose-connectors.png", "06-three-station-ledges.png"]
+  },
+  "tooling": {
+    "generator_sha256": "ba456611c38289b02d089346b08cffeb16c6cdafced1f81893309da3f5ffbc19",
+    "renderer_sha256": "5adc35dfa4ba2308575e2b7e12d6ef2e3264b2d2bcedb7019c9eb845832dc9bc",
+    "focused_test_sha256": "454d84624220b0be564f9dc49335b18b94d3f1743f2ce03c621a4e04e38c745d"
+  }
+}

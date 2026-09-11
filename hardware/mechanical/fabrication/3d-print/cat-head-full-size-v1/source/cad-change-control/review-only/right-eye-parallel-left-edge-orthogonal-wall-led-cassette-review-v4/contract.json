@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "review_id": "right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4",
+  "authority": "REVIEW_ONLY__NON_AUTHORITATIVE__NOT_A_PRINT_SOURCE",
+  "user_instruction": "Move the lower-left eye-opening corner closer to the outside shell corner, keep the selected left eye edge parallel to the adjacent outside shell edge, and make the LED-box walls perpendicular to the eye front plane.",
+  "problem": "V3 fits and preserves the global aperture shape, but its lower-left opening corner remains visually too far inboard and its tapered electronics-box walls appear angled.",
+  "supersedes_review_id": "right-eye-shape-preserved-expanded-led-cassette-review-v3",
+  "anchors": {
+    "selected_aperture_edge": {
+      "source": "V3 visible-aperture loop",
+      "vertex_indices": [0, 1],
+      "role": "user-highlighted left eye-opening edge"
+    },
+    "parallel_shell_edge": {
+      "source": "pinned shell_opening_boundary_mm",
+      "vertex_indices": [0, 1],
+      "role": "adjacent outside shell edge"
+    },
+    "moved_corner": {
+      "source": "V3 visible-aperture loop vertex 0",
+      "role": "user-selected lower-left corner"
+    },
+    "frozen_aperture_vertices": [2, 3]
+  },
+  "architecture": {
+    "carrier": "one opaque compact open-rear cassette wholly contained inside the eye opening",
+    "opening_cover_panel": "the V3 integral fitted face panel and complete lower filler remain present with a 0.60 mm perimeter gap",
+    "aperture_change": "replace only V3 edge 0-to-1 with an equal-length segment exactly parallel to shell-opening edge 0-to-1; vertices 2 and 3 remain exact V3 coordinates",
+    "box_walls": "constant-cross-section 1.20 mm ring extruded only along the pinned aperture inward normal; no tapered loft",
+    "lens": "new 0.90 mm translucent lens following the V4 aperture",
+    "rear_led_plate": "separate removable opaque plate installed from inside the head",
+    "head_attachment": "mounting flanges remain deferred until V4 visual LGTM",
+    "rear_plate_retention": "three small neutral-cure RTV dabs for review geometry; serviceable mechanical retention remains a later physical coupon decision"
+  },
+  "inputs": {
+    "v3_review_generator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-shape-preserved-expanded-led-cassette-review-v3/generate_review.py",
+      "sha256": "3986684f46547dc5e4b9f3060cf0a54e26eb89fe6b6bf21c3fb5d5468f656baa"
+    },
+    "v3_review_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-shape-preserved-expanded-led-cassette-review-v3/contract.json",
+      "sha256": "110867b0ba10e456d90eb7da4f69b819c75e5ecf0ea199ee52f0e813dcb2d890"
+    },
+    "geometry_generator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_right_eye_split_service_cassette_prototype_v1.py",
+      "sha256": "611aa4b63a0cd81420a01507168095c9a0a4d967d306688d78fe69b5383815fc"
+    },
+    "geometry_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/right-eye-split-service-cassette-prototype-v1.json",
+      "sha256": "08fa1c89ad307598e8b0edaa3dc55085cd2ddc977904209972ca698d21790b9f"
+    },
+    "relieved_head_manifest": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34-lower-c001-relief-v1.json",
+      "sha256": "f7225c42be8714a979962859991a7799e275a7d35fe4c774c6d7292019687ce3"
+    },
+    "relieved_head_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/serial-baselines/lower-c001-aperture-vertex0-relief-v1/CAT_HEAD_V34_LOWER_C001_RELIEF_V1.FCStd",
+      "sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca"
+    },
+    "former_lens_print_source_fcstd": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/print-source/right-eye-front-lens-print-source-v1/RIGHT_EYE_FRONT_LENS_PRINT_SOURCE_V1.FCStd",
+      "sha256": "2f74fb55ac69e6129d8a157d69b8e44884ffd076463b9c71ae834d2895fbcf2f",
+      "role": "read-only rejected-envelope provenance; geometry is not imported or reused"
+    }
+  },
+  "dimensions_mm": {
+    "opening_cover_perimeter_clearance": 0.6,
+    "opening_cover_front_depth": -0.75,
+    "opening_cover_rear_depth": 0.05,
+    "opening_cover_connector_front_depth": 0.0,
+    "opening_cover_connector_rear_depth": 0.85,
+    "front_perimeter_radial_inset": 1.2,
+    "rear_perimeter_radial_inset": 6.0,
+    "visible_aperture_uniform_scale": 0.88,
+    "superseded_v2_visible_aperture_radial_inset": 3.4,
+    "selected_left_edge_shell_normal_offset": 2.2,
+    "selected_left_edge_lower_along_shell_edge_inset": 2.2,
+    "selected_edge_deep_rim_relief_endpoint_extension": 3.0,
+    "selected_edge_deep_rim_relief_outward_span": 2.2,
+    "selected_edge_deep_rim_relief_inward_span": 0.6,
+    "selected_edge_deep_rim_relief_front_depth": -0.1,
+    "selected_edge_deep_rim_relief_rear_depth": 2.2,
+    "front_rim_width": 1.2,
+    "lens_outer_offset_from_new_aperture": 0.2,
+    "front_inner_radial_inset": 2.6,
+    "straight_box_outer_inset_from_aperture": 0.5,
+    "straight_sidewall_thickness": 1.2,
+    "lens_thickness": 0.9,
+    "front_depth": 0.8,
+    "bezel_rear_depth": 1.2,
+    "lens_surround_front_depth": 1.2,
+    "lens_surround_rear_depth": 2.1,
+    "sidewall_front_depth": 2.1,
+    "lens_seat_outer_offset_from_lens": 0.3,
+    "sidewall_rear_depth": 13.0,
+    "nominal_sidewall_thickness": 1.2,
+    "rear_plate_radial_clearance": 0.25,
+    "rear_plate_front_depth": 13.2,
+    "rear_plate_thickness": 1.5,
+    "wire_port_diameter": 4.0,
+    "wire_port_minor_axis_offset": 3.0,
+    "led_reference_diameter": 6.0,
+    "led_reference_depth": 2.0,
+    "led_reference_pitch": 9.0,
+    "pixel_count": 4
+  },
+  "gates": {
+    "minimum_actual_front_opening_gap_mm": 0.3,
+    "minimum_actual_sidewall_thickness_mm": 1.0,
+    "minimum_static_shell_clearance_mm": 0.3,
+    "minimum_led_to_lens_gap_mm": 9.0,
+    "maximum_visible_aperture_similarity_error": 0.000000001,
+    "maximum_visible_aperture_center_shift_mm": 0.000000001,
+    "minimum_visible_aperture_area_gain_fraction_over_v2": 0.05,
+    "maximum_selected_edge_parallel_angle_error_deg": 0.000001,
+    "maximum_selected_edge_length_change_mm": 0.000001,
+    "selected_edge_shell_offset_tolerance_mm": 0.000001,
+    "minimum_lower_left_corner_approach_gain_mm": 3.5,
+    "maximum_frozen_aperture_vertex_shift_mm": 0.000001,
+    "minimum_visible_aperture_area_gain_fraction_over_v3": 0.03,
+    "maximum_sidewall_perpendicular_angle_error_deg": 0.000001,
+    "maximum_sidewall_lateral_drift_mm": 0.000001,
+    "minimum_selected_edge_deep_rim_removed_volume_mm3": 0.01,
+    "maximum_positive_shell_intersection_mm3": 0.000001,
+    "maximum_lens_carrier_intersection_mm3": 0.000001,
+    "insertion_translation_start_mm": -18.0,
+    "insertion_translation_end_mm": 0.0,
+    "insertion_sample_count": 13,
+    "rear_plate_service_translation_mm": 10.0,
+    "rear_plate_service_sample_count": 6,
+    "require_valid_closed_one_solid_each_printed_part": true,
+    "require_deep_occt_clean_each_printed_part": true,
+    "require_all_shell_context_objects_unchanged": true
+  },
+  "electronics": {
+    "source_requirement": "four densely spaced 5 V WS2812/SK6812-compatible pixels per eye",
+    "led_mount": "flat adhesive landing on the removable rear plate",
+    "reflector": "white reflective liner inside otherwise opaque black cassette",
+    "wire_exit": "4 mm rear hole; seal around cable and provide external strain relief",
+    "optical_note": "9.1 mm nominal lens-to-LED reference gap; physical hotspot coupon remains required"
+  },
+  "output": {
+    "feasibility_report": "reports/generated/cat-head-cad-tooling/right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4/feasibility.json",
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-parallel-left-edge-orthogonal-wall-led-cassette-review-v4",
+    "fcstd": "RIGHT_EYE_PARALLEL_LEFT_EDGE_ORTHOGONAL_WALL_LED_CASSETTE_REVIEW_ONLY_V4.FCStd",
+    "validation": "validation-review-only.json",
+    "views": ["front.png", "rear.png", "side.png", "exploded.png", "inside-leds.png", "insertion.png", "anchor-edge.png", "wall-normal.png"]
+  },
+  "holds": [
+    "No STL, 3MF, slicing, G-code, print recommendation, canonical mutation, mirroring, integration, or promotion.",
+    "V3 remains preserved and is superseded only for the selected left aperture edge and box-wall direction.",
+    "Mounting flanges remain deferred until V4 receives visual LGTM.",
+    "Rear-plate retention and optical diffusion require physical coupons after visual approval."
+  ]
+}

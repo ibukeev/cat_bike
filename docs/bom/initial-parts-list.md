@@ -8,11 +8,11 @@ Track candidate parts for the Bio-Luminescent Abyssinian Cat Bike. This is a pla
 
 | Item | Qty | Status | Notes |
 |---|---:|---|---|
-| Pixelblaze V3 Standard-compatible controller | 1 | Selected / needed | One central controller and one initial data output. |
+| Pixelblaze V3 Pico plus V3 Standard spares | 1 + 2 | Pico in hand; Standards ordered | Use Pico for Phase 1. Universal box fits either model; one central controller and one data output. |
 | Cat-head addressable LEDs | 52 | Inventory check | 5 V RGB WS2812/SK6812-compatible: 16 whisker, 8 eye, and 28 facet pixels. Existing parts may be used when protocol and voltage match. |
 | 12 V LiFePO4 battery | 1 | Recommended | Baseline: 20 Ah / about 256 Wh. Consider 30 Ah / about 384 Wh if mounting works. |
 | 12 V LiFePO4 charger | 1 | Recommended | Use charger intended for 12 V / 4S LiFePO4 batteries, typically 14.4-14.6 V output. 5 A is a practical default for 20 Ah. |
-| 12 V to 5 V buck converter | 1 | Needed | Size for Phase 1 plus future expansion; likely 5 V 20-30 A class depending on final branch plan. |
+| Magnolora 12 V to 5 V, 3 A converter | 1 controller unit plus spares | In hand | Dedicate one unit to controller power. Do not power 12 V body LEDs through it or parallel converter outputs. Use a separate head converter/branch. |
 | Fuse holder and fuses | TBD | Needed | Size after power estimate. |
 | Master switch or emergency disconnect | 1 | Needed | Must be reachable. |
 | XT60 connector pair | TBD | Needed | Battery/main 12 V connector decision. |

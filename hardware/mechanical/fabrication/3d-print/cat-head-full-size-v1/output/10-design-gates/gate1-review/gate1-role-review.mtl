@@ -1,0 +1,25 @@
+# Gate 1 role-review materials
+newmtl integrated_opaque
+Kd 0.302 0.200 0.141
+Ka 0.080 0.050 0.035
+Ns 80.0
+
+newmtl removable_glow
+Kd 0.502 0.000 0.502
+Ka 0.150 0.000 0.150
+Ke 0.350 0.000 0.350
+d 0.65
+Ns 180.0
+
+newmtl mouth_opening
+Kd 1.000 0.000 0.000
+Ka 0.200 0.000 0.000
+d 0.35
+Ns 20.0
+
+newmtl eye_diffuser
+Kd 0.514 0.965 1.000
+Ka 0.100 0.400 0.450
+Ke 0.100 0.600 0.700
+d 0.78
+Ns 220.0

@@ -7,7 +7,7 @@ head module.
 
 This document covers eyes, illuminated facets, fiber-optic whisker light
 engines, wiring, and Pixelblaze segment behavior. Mechanical mounting is tracked
-separately in [Cat Head Mount Plan](../../mechanical/mounts/cat-head-mount-plan.md).
+separately in [frame-fixed aluminum mount](../../mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/README.md).
 
 The implementation sequence, physical approval gates, and acceptance criteria
 are controlled by the [330 mm Cat Head Lighting Development Plan](cat-head-lighting-development-plan.md).

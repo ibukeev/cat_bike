@@ -1,0 +1,10 @@
+# Selected mechanical CAD/print milestones use LFS; this does not approve geometry.
+hardware/mechanical/**/*.[fF][cC][sS][tT][dD] filter=lfs diff=lfs merge=lfs -text
+hardware/mechanical/**/*.[bB][lL][eE][nN][dD] filter=lfs diff=lfs merge=lfs -text
+hardware/mechanical/**/*.[sS][tT][lL] filter=lfs diff=lfs merge=lfs -text
+hardware/mechanical/**/*.[sS][tT][eE][pP] filter=lfs diff=lfs merge=lfs -text
+hardware/mechanical/**/*.[sS][tT][pP] filter=lfs diff=lfs merge=lfs -text
+hardware/mechanical/**/*.3[mM][fF] filter=lfs diff=lfs merge=lfs -text
+hardware/mechanical/**/*.[gG][lL][bB] filter=lfs diff=lfs merge=lfs -text
+hardware/mechanical/**/*.[oO][bB][jJ] filter=lfs diff=lfs merge=lfs -text
+hardware/mechanical/**/*.[gG][cC][oO][dD][eE] filter=lfs diff=lfs merge=lfs -text

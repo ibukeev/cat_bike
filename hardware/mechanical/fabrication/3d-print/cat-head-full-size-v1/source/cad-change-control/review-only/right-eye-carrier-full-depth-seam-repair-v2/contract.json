@@ -1,0 +1,70 @@
+{
+  "schema_version": "cat-head-right-eye-carrier-full-depth-seam-repair-v2",
+  "contract_id": "right-eye-carrier-full-depth-seam-repair-v2",
+  "tooling_revision": 1,
+  "authority": "REVIEW_ONLY__WITHDRAWN_V1_REPLACEMENT__NOT_A_PRINT_SOURCE",
+  "date": "2026-08-20",
+  "user_evidence": {
+    "finding": "The printed carrier's large front filler panel and eye-box frame separated, and visual review exposed an open full-depth seam beside the eye box.",
+    "printed_gcode_path": "/home/bsk/3d printing/CatBike/RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_V1_0.4n_0.2mm_ASA_MK4IS_49m.gcode",
+    "printed_gcode_sha256": "9e8dc42f9e22f96e396be05cc4d4635f113db1e32a1a6a4cdaa5d9f286edc586",
+    "withdrawn_v1_reason": "V1 bypassed later zero-overlap joints but did not bypass the two 8.83 mm3 front-panel roots or explicitly close the full-depth visible seam."
+  },
+  "inputs": {
+    "withdrawn_v1_contract": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-structural-root-repair-v1/contract.json",
+      "sha256": "3e50949a3bae375015aad2f8fc8f4743caee0421dde90781931295b61f960686"
+    },
+    "withdrawn_v1_generator": {
+      "path": "source/cad-change-control/review-only/right-eye-carrier-structural-root-repair-v1/generate_review.py",
+      "sha256": "fa90db7e6d695087240e62a2ad99c56e216b9d9f67ca69f43e64c681fbfe2334"
+    }
+  },
+  "repair_scope": {
+    "right_side_first": true,
+    "preserve_exact_user_final_carrier_and_manual_flange_additively": true,
+    "preserve_exact_lens_rear_plate_leds_wire_and_hardware": true,
+    "repair": "one continuous perimeter spine spanning behind the front filler panel through connector, bezel, lens surround, transition backing, and perpendicular box walls",
+    "exclusions": "subtract exact shell, lens, rear plate, screw, LED, and wire occupied volumes only from new material",
+    "left_side": "mirror only after explicit right-side visual approval"
+  },
+  "repair_dimensions_mm": {
+    "full_depth_spine_front_depth": -0.50,
+    "full_depth_spine_rear_depth": 3.70,
+    "structural_backing_outer_offset_from_aperture": 0.80,
+    "structural_backing_front_depth": 2.10,
+    "structural_backing_rear_depth": 3.70,
+    "mesh_linear_deflection": 0.08,
+    "mesh_angular_deflection": 0.35
+  },
+  "gates": {
+    "zero_removed_volume_from_user_carrier_mm3": 0.000001,
+    "minimum_spine_to_front_filler_overlap_mm3": 40.0,
+    "minimum_spine_to_opening_connector_overlap_mm3": 40.0,
+    "minimum_spine_to_bezel_overlap_mm3": 40.0,
+    "minimum_spine_to_lens_surround_overlap_mm3": 40.0,
+    "minimum_spine_to_backing_overlap_mm3": 40.0,
+    "minimum_backing_to_wall_overlap_mm3": 80.0,
+    "minimum_backing_to_transition_overlap_mm3": 20.0,
+    "minimum_full_depth_spine_span_mm": 4.20,
+    "zero_protected_intersection_mm3": 0.000001,
+    "require_full_depth_spine_one_valid_closed_solid": true,
+    "require_reinforcement_one_valid_closed_solid": true,
+    "require_candidate_one_valid_closed_solid": true,
+    "require_candidate_mesh_one_closed_manifold_component": true,
+    "require_clear_left_right_rear_and_aperture_normal_views": true,
+    "no_stl_3mf_or_final_overwrite_before_lgtm": true
+  },
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/right-eye-carrier-full-depth-seam-repair-v2",
+    "fcstd": "RIGHT_EYE_CARRIER_FULL_DEPTH_SEAM_REPAIR_REVIEW_ONLY_V2.FCStd",
+    "validation": "validation.json",
+    "views": [
+      "front-context.png",
+      "left-seam-source-vs-repair.png",
+      "right-seam-source-vs-repair.png",
+      "rear-seam-highlight.png",
+      "aperture-normal-highlight.png"
+    ]
+  }
+}

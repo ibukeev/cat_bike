@@ -1,0 +1,841 @@
+{
+  "files": {
+    "output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend": {
+      "bytes": 412753,
+      "reason_retained": "Frozen original Blender V10 full-head visual reference",
+      "sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62"
+    },
+    "output/10-design-gates/gate1-review/gate1-master-330mm.obj": {
+      "bytes": 4785,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "6efdbc9650830bd3f9236779441d09b6d28a5b274576103a18bb46fd96eba040"
+    },
+    "output/10-design-gates/gate1-review/gate1-role-review.obj": {
+      "bytes": 6663,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "884848392d8881df2901802041dad3991f62173f28fd163e178ca98044c235f6"
+    },
+    "output/10-design-gates/gate2-section-layout/gate2-section-layout.obj": {
+      "bytes": 5911,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "75fe3e5cf5e3679564fcce5021fc169011000cdf057526089f13cdee2c4341f7"
+    },
+    "output/10-design-gates/gate3-structural-shells/gate3-structural-shells.blend": {
+      "bytes": 107207,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "f8b8cac5116845d3f5648d1f095b557b17b0c9423c493ea9c59677caa55a6dd0"
+    },
+    "output/10-design-gates/gate3-structural-shells/gate3-structural-shells.glb": {
+      "bytes": 31972,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "e44365de09a036537caf609adb433489160a1c30beced1d0143071dc5dffacde"
+    },
+    "output/10-design-gates/gate3-structural-shells/left_ear.stl": {
+      "bytes": 1284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "9267159c1c4b337417ac64c50a85088b7766dda8284d342ff862ea0abf3bb24a"
+    },
+    "output/10-design-gates/gate3-structural-shells/left_lower_face.stl": {
+      "bytes": 5284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "7de315954df285a1a19112de406802762ee71390fddfc6e7796770512f73a824"
+    },
+    "output/10-design-gates/gate3-structural-shells/left_upper_head.stl": {
+      "bytes": 3284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "aeefe52a9335d8c890473d999819e6732875edab89f507953982c06c68ee00db"
+    },
+    "output/10-design-gates/gate3-structural-shells/rear_base.stl": {
+      "bytes": 1684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "c08ac3447ff8c879b2527da39318f0d7b276e1220f2a8cf1fa7cbe0e948da16d"
+    },
+    "output/10-design-gates/gate3-structural-shells/right_ear.stl": {
+      "bytes": 1284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "7d9987aae2ddd07814da9332c7e9ff16b0f6ad7957a4d41ea7ae22dde7cc8ae4"
+    },
+    "output/10-design-gates/gate3-structural-shells/right_lower_face.stl": {
+      "bytes": 5084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "91edd17e1c6b077c32dab24459832e6cab688ed743a294593d47b809503a2863"
+    },
+    "output/10-design-gates/gate3-structural-shells/right_upper_head.stl": {
+      "bytes": 3484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "a14b07fbbe50a079ffc225b87361ada85aa30d316b162f2d2ccae8565b803799"
+    },
+    "output/10-design-gates/gate4-assembly-review/corrected_eye_left.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "e33aab63361cac6f111a141e3ac7b484d02619a9abdd6f82c85b249e6434aed8"
+    },
+    "output/10-design-gates/gate4-assembly-review/corrected_eye_right.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "3d493c8871c042fd9689796d210bfe854a25bee591b67622727dcc4232fe6276"
+    },
+    "output/10-design-gates/gate4-assembly-review/gate4-complete-review-assembly.blend": {
+      "bytes": 122210,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "d106042095c10cb03cb5080559eabaf522a6d637a5ebd2bef10fea5dc7caa3a2"
+    },
+    "output/10-design-gates/gate4-assembly-review/gate4-complete-review-assembly.glb": {
+      "bytes": 68292,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "f23a6a57d2e8f3c5e54bc15183ef90c06eab3d10d89f7e4602025172d7526126"
+    },
+    "output/10-design-gates/gate4-assembly-review/gate4-complete-review-assembly.stl": {
+      "bytes": 36084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "f8b8fe901df074803403132c5cbb607795b30a18a16bce37129cdf3053bd5f2d"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_MANQ001.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "f439906a2308474d27136861719f7f710bb8a3d59a9b2dab3ddaf52a839a8463"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_QUAD001.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "b395e8fe233f85ef89e482adfbabf15b517dc537f7e9ce6082cdf636e70b702d"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_QUAD003.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "2e3d28d2d7ae5fd3544421ab2524419ab1502cc431ffa207c6f2b0f05f1a607f"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_QUAD005.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "0cae7a1780a14959a6e4b9e018fe7f4e8be789420757521c8ffb86ac2bead2ee"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_QUAD017.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "50cd4770848a6c16d9cda2b8b1aaef66e15e9713eb97cd0d0d74ca1735be16db"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_QUAD021.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "bc9b5bcfdc403d33fdfe91a5e56dd1ee812825ba0a15d9e4f7121a558085ee02"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_QUAD022.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "afb882bac3d06ac4f4609798304e2d51101a9c9b7d759d0c37b068a0cbbfa508"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_QUAD031.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "d6b3102db0599b1c573732e76a334d9917adbc635fb8e23c6940a69365389b5d"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_QUAD035.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "d0375b9450d745a1173cae18e6575ae3ea93fee3ec65e0b9fbf06f2db78a41a3"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI001.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "217369214b6c7bee382faeac8173e2b26acc068364e8d98a830ada97dc4ee4fa"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI002.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "4366b9d23c7bca9915d048f7afa5c26eeaf640bd6b67d1149b3b65e27a292c09"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI003.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "57d8ab50054dce0c9c7d10e627baf687eb1f4e9848a1b5de5e0cae255e8e542d"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI004.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "0903f6ffa86df906cf6bca03cdeb47bccc5ee1f7b6b658969dcd8ae8e0753b15"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI017.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "9676928fa5105c221d95094fe0b1cc130bfe80172b1ccd4c64527bf567d8db9b"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI027.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "5fba8315dbd9ff8cecb5048bf26696828dd50d40e765a9ead5ba5f50f1b63fb8"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI031.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "326fbf9a05cfae2265c966b776212fb3a47f73ef2a82bcce8ef1699d52be8c65"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI032.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "738c00d3f583b634fbca7b809ba79e61576dddcede55766ec3c9e03c4bf9e78a"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI041.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "d0b95f87ba8a6f38c38c5fcdcadd2870f9d2c769100da495638b8f696a9e7170"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI042.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "3984d72ef2b841755f531cc4c7564f49e56ba7d51ba0fe67ca63988ce4042eac"
+    },
+    "output/10-design-gates/gate4-assembly-review/glow_TRI055.stl": {
+      "bytes": 484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "f56e985f5664122ffab49025d705dff1d67edd02bd58c6f9d46c194a3d5f33c6"
+    },
+    "output/10-design-gates/gate4-assembly-review/opaque_left_eye_surround.stl": {
+      "bytes": 1684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "411501989794057e6651ed60eb2b2079f17335d513d0f15f3ddba28ebd872dd6"
+    },
+    "output/10-design-gates/gate4-assembly-review/opaque_left_under_ear.stl": {
+      "bytes": 884,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "406c90ac2990c445e32b26ddb16f66b561667c28bee685f93140665880bdf8c1"
+    },
+    "output/10-design-gates/gate4-assembly-review/opaque_right_eye_surround.stl": {
+      "bytes": 1684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "2d57fca665818cd0775c26a880a3be9402a320b44b1e5e9126b7e556bf4bfd95"
+    },
+    "output/10-design-gates/gate4-assembly-review/opaque_right_under_ear.stl": {
+      "bytes": 884,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "b47615ee4a63bd9a9751acad68e0930c6be21ea0807bee20c83197bcb238c66d"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.blend": {
+      "bytes": 214801,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ccdb744b1797616fe2f5a09118613e142edabb8dbeb25f4e1933c585fd110d7d"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.glb": {
+      "bytes": 490036,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "677b015eb215fdb6c9125f52c0f3a224ef58b48df6034be5f0b9d83d155241aa"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/gate5-internal-flange-tabs-review.stl": {
+      "bytes": 403584,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "e7766f24926f6d1f74f4b15aafaa6e191383f598efaf48b6e909c34050492482"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/shells/left_ear.stl": {
+      "bytes": 12684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ea3ed50080323194b4df6d00ddc6e3fdc38be13464f771cc9985216f80fac9c7"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/shells/left_lower_face.stl": {
+      "bytes": 91784,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "3d518771a10b02803a1572218d3048a857edeacf78460cb17bb539b39e4e35db"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/shells/left_upper_head.stl": {
+      "bytes": 87184,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "4210b82740a4b4c750e33796172037807573db0cef688decd32d35108db19107"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/shells/rear_base.stl": {
+      "bytes": 22584,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "a79dd0040331255386854cf104d89a332c3a824b2b3ac5f7f647ff8a66155b96"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/shells/right_ear.stl": {
+      "bytes": 12284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "75cc3bc5daf793ce5f7d2c164274644ef39bc61327c982022e84a1ba808c11ad"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/shells/right_lower_face.stl": {
+      "bytes": 90084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "61ac1bd327a9aa0283b166a81ff0cc5a9655d61eaa4e24679b26cf8388bac302"
+    },
+    "output/10-design-gates/gate5-ribs-and-joints/shells/right_upper_head.stl": {
+      "bytes": 87484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "26999bac7ba0a0f7ff45e5a5b75df8a4525a653f3655cd5351a31d20d3ab9874"
+    },
+    "output/10-design-gates/gate6-eye-modules/eyes/left_eye_bucket.stl": {
+      "bytes": 35084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "0af825bd374b90c80520ca974d621abef3576a16a660b355474b71309f3739b4"
+    },
+    "output/10-design-gates/gate6-eye-modules/eyes/left_eye_diffuser.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "96d8998a9dcfef0e453ce301f1e72f64e330154190d49952a6f1d38fb7c2ff66"
+    },
+    "output/10-design-gates/gate6-eye-modules/eyes/left_eye_led_rear_cap.stl": {
+      "bytes": 27484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ad7aaa70feceaffea8d70dd4c456da4262e7cf6598a5de91ad29a7c1c3625f3e"
+    },
+    "output/10-design-gates/gate6-eye-modules/eyes/right_eye_bucket.stl": {
+      "bytes": 36284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "107548d7d237a7f7f8c3262bf9c7fa69f521ddbdd3fdf5db3664857bbba718dc"
+    },
+    "output/10-design-gates/gate6-eye-modules/eyes/right_eye_diffuser.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "b9d4bcd2ca8e500b96de18bf47530a369bb21ec2ded95c8bcb24fa882e15c1b0"
+    },
+    "output/10-design-gates/gate6-eye-modules/eyes/right_eye_led_rear_cap.stl": {
+      "bytes": 27284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "0aaeca550eff798d8fb2ca5b2cc583915c0f58437756fd95a8b4dcd17b3fbdfb"
+    },
+    "output/10-design-gates/gate6-eye-modules/gate6-eye-modules-review.blend": {
+      "bytes": 278195,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "cac6a2ff9a8297e740caa5ab6b9c5958a7718fa848ecbd6ce308f94d6077a224"
+    },
+    "output/10-design-gates/gate6-eye-modules/gate6-eye-modules-review.glb": {
+      "bytes": 703704,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "542aba6eac25f9547a8094957d92568a8a3e88cbb99cebbf54a4dd5dff9018e7"
+    },
+    "output/10-design-gates/gate6-eye-modules/gate6-eye-modules-review.stl": {
+      "bytes": 589384,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "16f161e863cfaf01029f1c018328e0c7a4965e6a839a8b9b1469292e8ed022e7"
+    },
+    "output/10-design-gates/gate6-eye-modules/shells/left_ear.stl": {
+      "bytes": 12684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ea3ed50080323194b4df6d00ddc6e3fdc38be13464f771cc9985216f80fac9c7"
+    },
+    "output/10-design-gates/gate6-eye-modules/shells/left_lower_face.stl": {
+      "bytes": 105584,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "5685d4f3ddded6677feb7038efa1278ace2c6140cd064b642bbf1ee8f2065fd7"
+    },
+    "output/10-design-gates/gate6-eye-modules/shells/left_upper_head.stl": {
+      "bytes": 87184,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "4210b82740a4b4c750e33796172037807573db0cef688decd32d35108db19107"
+    },
+    "output/10-design-gates/gate6-eye-modules/shells/rear_base.stl": {
+      "bytes": 22584,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "a79dd0040331255386854cf104d89a332c3a824b2b3ac5f7f647ff8a66155b96"
+    },
+    "output/10-design-gates/gate6-eye-modules/shells/right_ear.stl": {
+      "bytes": 12284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "75cc3bc5daf793ce5f7d2c164274644ef39bc61327c982022e84a1ba808c11ad"
+    },
+    "output/10-design-gates/gate6-eye-modules/shells/right_lower_face.stl": {
+      "bytes": 104684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "d151094eb795d14a9cf99fab182d3dc63fb8b4cd1782d9ae8be5155043bbb9e3"
+    },
+    "output/10-design-gates/gate6-eye-modules/shells/right_upper_head.stl": {
+      "bytes": 87484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "26999bac7ba0a0f7ff45e5a5b75df8a4525a653f3655cd5351a31d20d3ab9874"
+    },
+    "output/10-design-gates/gate6-eye-modules/small-model-100mm/left_eye_module_visual_assembly.stl": {
+      "bytes": 63084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "de1448a307f79bb49762791b6c9c3313f6bac1f20db5297a0a9723e9459ca755"
+    },
+    "output/10-design-gates/gate6-eye-modules/small-model-100mm/right_eye_module_visual_assembly.stl": {
+      "bytes": 64084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "99e86d6beda9fa50fbd848e6159187daae26aa1b47c84903db43a270ce474fe4"
+    },
+    "output/10-design-gates/gate6-eye-modules/small-model-100mm/small_left_eye_bucket.stl": {
+      "bytes": 35084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "1c7aabdba1255dd7dfdc269cffe8ae1ab75727572c170913d18b58c486ccb4c4"
+    },
+    "output/10-design-gates/gate6-eye-modules/small-model-100mm/small_left_eye_diffuser.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "20a30ef20a454e594cc7ae36eef442c3deec27baa0c0f9a48578690b090e479a"
+    },
+    "output/10-design-gates/gate6-eye-modules/small-model-100mm/small_left_eye_led_rear_cap.stl": {
+      "bytes": 27484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "95424587293f550b5f969899001e35cd99ebfef9ad39b921ea99bd1bea4d9a77"
+    },
+    "output/10-design-gates/gate6-eye-modules/small-model-100mm/small_right_eye_bucket.stl": {
+      "bytes": 36284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "dbad07d6f957f22016b45e643c5bee2609c774a07ffa69cfa2a394767098f8f7"
+    },
+    "output/10-design-gates/gate6-eye-modules/small-model-100mm/small_right_eye_diffuser.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "7698aaca081de0dae8bcbe977463020a3be70075bae8d9b2a6416c2563598b1f"
+    },
+    "output/10-design-gates/gate6-eye-modules/small-model-100mm/small_right_eye_led_rear_cap.stl": {
+      "bytes": 27284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "258485620747f15b4bc09ac4ef83349b6f543a7f8c369ee216715ea759302362"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.blend": {
+      "bytes": 337479,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "72d85619e0c733c7af5e6e5a5383b296c13bcd03305c531386a44ed6b56c287b"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.glb": {
+      "bytes": 906476,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "108de201188348fcdcd183bfb11d53cac3553cc8468caaa59b6741fbdc51047b"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/gate7-glow-panel-inserts-review.stl": {
+      "bytes": 762884,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "f2403d07f5a8f2fa76380876bd5a0d58abcb8e5be5d8c39b4ad545a8816511ae"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/glow-inserts/glow_insert_central_12_panel_cluster.stl": {
+      "bytes": 24984,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "e797058397ef9a271480bc51b381eb672f81726215979a3ce5a77fada274b82c"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/glow-inserts/glow_insert_left_ear_root_cluster.stl": {
+      "bytes": 14784,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "2d968f423d75ed5cb41bea50aa13ce43d4d927a873e77ea800adaf78f08b9186"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/glow-inserts/glow_insert_panel_QUAD003.stl": {
+      "bytes": 11484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "97be67b45a0893cba65d003ef774933bf7a8faa42f5d95fab5af4732169774e1"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/glow-inserts/glow_insert_panel_QUAD005.stl": {
+      "bytes": 9384,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "f48911af0358c1be81e361c3206bc4fe0a548f28feed2da507aa0ff98242c273"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/glow-inserts/glow_insert_panel_QUAD017.stl": {
+      "bytes": 10084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "446cd8444c6c1adb869e2f34b4ada683f64a66a1f934416cb7641f4713e91636"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/glow-inserts/glow_insert_panel_QUAD031.stl": {
+      "bytes": 9384,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "d2c53cc2c71604bf97f10f65649f75292ea912c3bf7a42bc2544f1d263bf2164"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/glow-inserts/glow_insert_right_ear_root_cluster.stl": {
+      "bytes": 13184,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "2ac0e8c78f89cc1cd405c833f127ab30616c083d9f55045f3a0c4ed3774eb8f4"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/shells/left_ear.stl": {
+      "bytes": 12684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ea3ed50080323194b4df6d00ddc6e3fdc38be13464f771cc9985216f80fac9c7"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/shells/left_lower_face.stl": {
+      "bytes": 124784,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "0d17783538afa883d9f0559dae61bcc49d6f3c2c6fc3b8531c807c0074004a77"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/shells/left_upper_head.stl": {
+      "bytes": 109184,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "528e9d359904b4fcc1029e3fbe1765c428ad9b57337bd95a4ffc5d08f2aecb46"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/shells/rear_base.stl": {
+      "bytes": 22584,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "a79dd0040331255386854cf104d89a332c3a824b2b3ac5f7f647ff8a66155b96"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/shells/right_ear.stl": {
+      "bytes": 12284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "75cc3bc5daf793ce5f7d2c164274644ef39bc61327c982022e84a1ba808c11ad"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/shells/right_lower_face.stl": {
+      "bytes": 123684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "0e0c6a1dc6b47019fcfd9180b7eaa490aab16549fd360db35e2e4325688e5c74"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/shells/right_upper_head.stl": {
+      "bytes": 108084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "e76bb58ea41d827cacb128569f52303e58cdd5211582c69c10f9f9845a05e32f"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/gate7_grouped_glow_inserts_visual_assembly.stl": {
+      "bytes": 92784,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "0419e1cb870d3af323feaaa424f9914137cd36aa9b30052e729ee4f40240d46b"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/small_glow_insert_central_12_panel_cluster.stl": {
+      "bytes": 24984,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "7b8eaac4f5522577e8e4b372ee41bb80bb17ad611de1ccd8133fae77348e0c29"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/small_glow_insert_left_ear_root_cluster.stl": {
+      "bytes": 14784,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "41ff736a518db3bcda09f93af2c2a4d2de5195d5c93c910fd7697cfd539fb7fe"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/small_glow_insert_panel_QUAD003.stl": {
+      "bytes": 11484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "928a346b635f7f49b4926f0216e158ee472e34f80da2a575d81d13a245171494"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/small_glow_insert_panel_QUAD005.stl": {
+      "bytes": 9384,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "e79f7ee13d655793273c018b76a89066ce22b05492f47b37d031b89d752867e3"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/small_glow_insert_panel_QUAD017.stl": {
+      "bytes": 10084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "51e4654ac3284c380489c54d302ac5863e578e6f9183351531a76363871b3862"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/small_glow_insert_panel_QUAD031.stl": {
+      "bytes": 9384,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "20ab2f7d8d214fe4684a03dde7639ccafe56063986fd573d1372fe109b596999"
+    },
+    "output/10-design-gates/gate7-glow-panel-inserts/small-model-100mm/small_glow_insert_right_ear_root_cluster.stl": {
+      "bytes": 13184,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ab5efeeac90aab34c6eab272c8f187ad8694b3648ffb127dc9fbb2cc335f4d2d"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/cat_head_100mm_test_print_review.blend": {
+      "bytes": 330352,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "f2eab23cd948fc606b9b1044a78b1336ef7473fd6339badbe5c43c5cd637565e"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/cat_head_100mm_visual_assembly.stl": {
+      "bytes": 732484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ded8fd3ac4592c4aa60e76bca68de9574ffe5275f10fc3f4d4faaa19d465057c"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/eye-modules/eye_modules.3mf": {
+      "bytes": 90065,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "a4578859c190bf3974dc663a181ebbf0b4ead0bcf81cba0a16260af5d6b6b03b"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/eye-modules/small_left_eye_bucket.stl": {
+      "bytes": 35084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "1c7aabdba1255dd7dfdc269cffe8ae1ab75727572c170913d18b58c486ccb4c4"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/eye-modules/small_left_eye_diffuser.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "20a30ef20a454e594cc7ae36eef442c3deec27baa0c0f9a48578690b090e479a"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/eye-modules/small_left_eye_led_rear_cap.stl": {
+      "bytes": 27484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "95424587293f550b5f969899001e35cd99ebfef9ad39b921ea99bd1bea4d9a77"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/eye-modules/small_right_eye_bucket.stl": {
+      "bytes": 36284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "dbad07d6f957f22016b45e643c5bee2609c774a07ffa69cfa2a394767098f8f7"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/eye-modules/small_right_eye_diffuser.stl": {
+      "bytes": 684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "7698aaca081de0dae8bcbe977463020a3be70075bae8d9b2a6416c2563598b1f"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/eye-modules/small_right_eye_led_rear_cap.stl": {
+      "bytes": 27284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "258485620747f15b4bc09ac4ef83349b6f543a7f8c369ee216715ea759302362"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/glow-inserts/printing/glow_inserts.3mf": {
+      "bytes": 75956,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ee9cb39a600cfd229431436d726691bc0ccd7670f60174ff865f917775e246ba"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/glow-inserts/small_glow_insert_central_12_panel_cluster.stl": {
+      "bytes": 24984,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "7b8eaac4f5522577e8e4b372ee41bb80bb17ad611de1ccd8133fae77348e0c29"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/glow-inserts/small_glow_insert_left_ear_root_cluster.stl": {
+      "bytes": 14784,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "41ff736a518db3bcda09f93af2c2a4d2de5195d5c93c910fd7697cfd539fb7fe"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/glow-inserts/small_glow_insert_panel_QUAD003.stl": {
+      "bytes": 11484,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "928a346b635f7f49b4926f0216e158ee472e34f80da2a575d81d13a245171494"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/glow-inserts/small_glow_insert_panel_QUAD005.stl": {
+      "bytes": 9384,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "e79f7ee13d655793273c018b76a89066ce22b05492f47b37d031b89d752867e3"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/glow-inserts/small_glow_insert_panel_QUAD017.stl": {
+      "bytes": 10084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "51e4654ac3284c380489c54d302ac5863e578e6f9183351531a76363871b3862"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/glow-inserts/small_glow_insert_panel_QUAD031.stl": {
+      "bytes": 9384,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "20ab2f7d8d214fe4684a03dde7639ccafe56063986fd573d1372fe109b596999"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/glow-inserts/small_glow_insert_right_ear_root_cluster.stl": {
+      "bytes": 13184,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "ab5efeeac90aab34c6eab272c8f187ad8694b3648ffb127dc9fbb2cc335f4d2d"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/shells/printing/Head_Pruca_slicer.3mf": {
+      "bytes": 191018,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "aa17339fe2ee181b6b0a717050f4830aa626b57f1d977051af3e973c3d6f1cd9"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/shells/small_left_ear.stl": {
+      "bytes": 12684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "5fb3e377413190ccc01430f695a54937ca40db9f4e91fca75b44e9cafd054662"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/shells/small_left_lower_face.stl": {
+      "bytes": 124784,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "6622bac951882915c7cc3f37b9e959de1a08f4949ffdb3d56aeaf1cc5988fa38"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/shells/small_left_upper_head.stl": {
+      "bytes": 109184,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "332aee3647a9500b876a3627cdddd4586d84da4442416254ef7b385b6fd9c7ad"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/shells/small_rear_base.stl": {
+      "bytes": 22584,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "b7eee0ac0eba280cfe1e15ab58805dc1b9a2d72782aae824fe91ff5e58bf363a"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/shells/small_right_ear.stl": {
+      "bytes": 12284,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "d5add20c962d23ed97d95eebe80c0136db74aa025b75ad00ed4204143fb4278b"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/shells/small_right_lower_face.stl": {
+      "bytes": 123684,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "3d410e0b8bb53cbe8aead976f80861944ed893d71153e99e1e6996bf2f442eb8"
+    },
+    "output/10-design-gates/gate7-small-test-print-100mm/shells/small_right_upper_head.stl": {
+      "bytes": 108084,
+      "reason_retained": "Tiny 100 mm model and shared generator inputs",
+      "sha256": "c9d6f82be0d7123b870293693bc093a4c76bb0736d61aadacc2d107a16ab7308"
+    },
+    "output/20-rear-cassette/current-baseline-v5/rear-cassette-lossless-repartition-review-v5.blend": {
+      "bytes": 371387,
+      "reason_retained": "Selected rear-cassette ownership baseline",
+      "sha256": "ddb1219adb71472bb881a4d97fb8161191cd1147015b6391a9d671aed1fc0f16"
+    },
+    "output/50-slicer-projects/right-upper-as-printed-10mm-brim-layout-v1/CAT_HEAD_RIGHT_UPPER_AS_PRINTED_10MM_BRIM_LAYOUT_V1.3mf": {
+      "bytes": 150717,
+      "reason_retained": "Latest saved right-upper slicer layout and first-layer evidence",
+      "sha256": "342d2af41125eeafd6fd5c2187e4b25dcb185b3bf95b2ee8f9c0828221d6da77"
+    },
+    "output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/ear-root-insertion-fit-review-v3.blend": {
+      "bytes": 378173,
+      "reason_retained": "Accepted V3 fit-body reference",
+      "sha256": "700be473aeb81dfae889c719bc84ff47dc0b513a73ca9214c97d209e4c3a86c4"
+    },
+    "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/RIGHT_TOP_PRINT_2.3mf": {
+      "bytes": 200545,
+      "reason_retained": "User working/slicer companion; approval not inferred",
+      "sha256": "f5d9336dc1e6a7e0388cead8f2bdcf297735121f78ed67366988b382e19f77c9"
+    },
+    "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/RIGHT_UPPER_AS_PRINTED_WORKING_ASSEMBLY_V2.FCStd": {
+      "bytes": 20603687,
+      "reason_retained": "Selected lower-print editable source",
+      "sha256": "0db484f371aaa19276bea469c429098a0728f1c623fd6e058b718e5606df2c93"
+    },
+    "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/RIGHT_UPPER_AS_PRINTED_WORKING_ASSEMBLY_V5.FCStd": {
+      "bytes": 27419089,
+      "reason_retained": "Missing socket/root recovery source",
+      "sha256": "5c7de806142b1955c692def5717ed5b46a40ffcbe6db07fad078fbacca730c3e"
+    },
+    "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/RIGHT_UPPER_AS_PRINTED_WORKING_ASSEMBLY_V6.FCStd": {
+      "bytes": 25078715,
+      "reason_retained": "Latest documented working snapshot; not an approved rebuild baseline",
+      "sha256": "ef8d8bc5cddb949583787bcc1e9453105dd9bc93bdc2fef0f784866b1362b599"
+    },
+    "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/RIGHT_UPPER_AS_PRINTED_WORKING_ASSEMBLY_V6.stl": {
+      "bytes": 478484,
+      "reason_retained": "User working/slicer companion; approval not inferred",
+      "sha256": "7c04a7fb563b3439884a293818797e67f415db2732ca60c7930e35adecfb900b"
+    },
+    "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/assembly.3mf": {
+      "bytes": 150358,
+      "reason_retained": "User working/slicer companion; approval not inferred",
+      "sha256": "ac800ac7470c61cf4d640af6d652b25ac080142826aaadb4d24842bb9440720b"
+    },
+    "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/assembly.stl": {
+      "bytes": 477884,
+      "reason_retained": "User working/slicer companion; approval not inferred",
+      "sha256": "6b7ced6a6cb86e5d7635f622f6e18df53bf616a378823443f98dd8aa1e4c2f4d"
+    },
+    "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd": {
+      "bytes": 1999050,
+      "reason_retained": "Frozen V34 recovery context and recorded validation",
+      "sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584"
+    },
+    "output/70-freecad-pilots/print-source/right-eye-front-lens-print-source-v1/RIGHT_EYE_FRONT_LENS_PRINT_SOURCE_V1.FCStd": {
+      "bytes": 59899,
+      "reason_retained": "File accessed by existing off-device regression suite",
+      "sha256": "2f74fb55ac69e6129d8a157d69b8e44884ffd076463b9c71ae834d2895fbcf2f"
+    },
+    "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V5_FIN_REMOVED.FCStd": {
+      "bytes": 4345175,
+      "reason_retained": "Manual lower-front work and exact sector recovery source",
+      "sha256": "3ec9bc94999a65a5c8ae497acf0a1c40e1388deaa4f3d9c498bfb912c3c983ab"
+    },
+    "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1.FCStd": {
+      "bytes": 4354117,
+      "reason_retained": "Manual lower-front work and exact sector recovery source",
+      "sha256": "b9d882c32288d9e237a0a3321214ac2947623066275bab584e146b98ab9180b2"
+    },
+    "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1_RECOVERED_UNDER_MOUTH_SECTOR.FCStd": {
+      "bytes": 4211558,
+      "reason_retained": "Manual lower-front work and exact sector recovery source",
+      "sha256": "84e4e8f75c51b66983652986855bbecd07d0141b298e1eefa75f608c66c08aa5"
+    },
+    "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V2.FCStd": {
+      "bytes": 4189201,
+      "reason_retained": "Manual lower-front work and exact sector recovery source",
+      "sha256": "2dd79bfb6bd6f450f3844a66c7a7635daf68b769882ca44a4b1b37b8f371d758"
+    },
+    "output/70-freecad-pilots/review-only/right-eye-carrier-corner-clearance-repair-v3/RIGHT_EYE_CARRIER_CORNER_CLEARANCE_REPAIR_REVIEW_ONLY_V3.FCStd": {
+      "bytes": 1427673,
+      "reason_retained": "File accessed by existing off-device regression suite",
+      "sha256": "22dca83ac335ad9277ec89bd248f65c3646af4c6d5945b1e28367dfcee7ba94f"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/Both_eyes_PRINT_V1.3mf": {
+      "bytes": 108438,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "0b210cc3c35d875ede35fb70f2790901ad5d7d1264b68db811d1d56cd5e22578"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/left/LEFT_EYE_CARRIER_V3_CORNER_REPAIR_WITH_MIRRORED_MANUAL_FLANGE_PRINT_V1.stl": {
+      "bytes": 97184,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "8861aa33570dac2a41368756ed744e86a4e19a360c8fddb78f1b0e2d614ab597"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/left/LEFT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT_V1.stl": {
+      "bytes": 26884,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "8b4a512535b934577cced304303b3257af3e80d903cad1720b2b4672fd4840c1"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/left/LEFT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT_V1.stl": {
+      "bytes": 33484,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "0b0b94d329b6740b2b6d57ff127bc1c6c7761de4b5543a033aa81fb9e17e948c"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/left/LEFT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd": {
+      "bytes": 93644,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "f0502cef3b82b4095ea19dff735795948e31c7177e13fa32356ca470c6fd7bd9"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/right/RIGHT_EYE_CARRIER_V3_CORNER_REPAIR_WITH_MANUAL_FLANGE_PRINT_V1.stl": {
+      "bytes": 97184,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "0c55c550b5dc53962a984bf3b1fab1c167311d305b3ec1eaf1f33a3878c5fb20"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/right/RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT_V1.stl": {
+      "bytes": 26884,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "5fae236a190b781cf25fb635988c318b9b8423e8b638ce7247e52478c710b6a5"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/right/RIGHT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT_V1.stl": {
+      "bytes": 33484,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "a7a2f90ab5c6a065260e7a761f1a766d353cd0daba84aefcd26650573bbcd7d1"
+    },
+    "output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/right/RIGHT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd": {
+      "bytes": 96648,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "2acf712847bfbec14d7655ea046c7ac1156dfe7db678723af787470de3b6dbd2"
+    },
+    "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4.FCStd": {
+      "bytes": 606927,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "105215600a4c0ae4563400b42abe7e426c1021cf8f4d23ea7394f771ac9b2e0b"
+    },
+    "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4_Ilya.FCStd": {
+      "bytes": 3851282,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "ba1e933daef8921e3b38f9e3ad733eb3e557546f4fc95a1afe0d8d7180644974"
+    },
+    "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/stl/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4_Ilya-Compound.3mf": {
+      "bytes": 143865,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "6fad7b537bf7b13840a14f3e10fc1b8218c3ef7ad71fcd50552bd8c2eb06eb19"
+    },
+    "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/stl/RIGHT_LOWER_COMPLETE_OPAQUE_ASSEMBLY_WITH_APPROVED_TABS_AND_LEDGE_PRINT_V4.stl": {
+      "bytes": 158584,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "f79c7ddfd6f8c75681107836219bbae8610bee54520d3c17f7217b9f408abbfe"
+    },
+    "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/stl/RIGHT_TRANSLUCENT_CENTRAL_CLUSTER_RIGHT_HALF_WITH_NOSE_TOP_TAB_PRINT_V4.stl": {
+      "bytes": 12284,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "ba40c28280d1cf89ec8917732b922295f3066a691a216c01f3f19d57b1ca6b00"
+    },
+    "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/stl/RIGHT_TRANSLUCENT_QUAD003_COMPONENT_01_WITH_BELOW_MOUTH_TAB_PRINT_V4.stl": {
+      "bytes": 9084,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "bea1c78ab0756cd103a5eb8b4225b1713d8c059576f5067d4bd66f50182218b9"
+    },
+    "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/stl/RIGHT_TRANSLUCENT_QUAD017_COMPONENT_02_WITH_OUTER_TAB_PRINT_V4.stl": {
+      "bytes": 14284,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "a3490bc0bbd74f7b70ffa776e1b36627592868dd57e74f03edc6b5a7eb209d2a"
+    },
+    "output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1/LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1-Compound.3mf": {
+      "bytes": 163680,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "ed00bfadbb2120cb7dfc6c54085fccaff5169eaeaca246abc03970f18acfe8bc"
+    },
+    "output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1/LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1.FCStd": {
+      "bytes": 9072528,
+      "reason_retained": "Selected eye release or manual lower-head print master",
+      "sha256": "3e52d392a40d570a0c0a04a3089bd496e30ff8197307e377c6236a01c982cbd4"
+    },
+    "working/left-lower/input-overlap-compound.stl": {
+      "bytes": 377734,
+      "reason_retained": "Previously selected lower-shell print records",
+      "sha256": "222e6ea7afaa17226e0af700644c71b517e38f7474cd4a9651c9e8a30b9464c6"
+    },
+    "working/left-lower/left-lower-final-review-voxel-union-025mm.3mf": {
+      "bytes": 35984701,
+      "reason_retained": "Previously selected lower-shell print records",
+      "sha256": "e1f310cd832b791989e2326de6c07e8957283ecf21f6dcdc263d94fd9dd9dc54"
+    },
+    "working/left-lower/left-lower-final-review-voxel-union-025mm.stl": {
+      "bytes": 156159884,
+      "reason_retained": "Previously selected lower-shell print records",
+      "sha256": "572cb4c3c58cca2ca88e596e55b8b1263ad154108526ddecebd9c99dc20064a2"
+    },
+    "working/right-lower/input-overlap-compound.stl": {
+      "bytes": 432284,
+      "reason_retained": "Previously selected lower-shell print records",
+      "sha256": "51c36f662bc8a658c41b69d198164558cb7a9664542df6a1b27ac6cd40259d64"
+    },
+    "working/right-lower/right-lower-final-review-voxel-union-025mm.3mf": {
+      "bytes": 35755143,
+      "reason_retained": "Previously selected lower-shell print records",
+      "sha256": "2357994dd3be7524b50fe2208c9a5f1512d17d4b11546bbdb63f6a7ca2fa435a"
+    },
+    "working/right-lower/right-lower-final-review-voxel-union-025mm.stl": {
+      "bytes": 154527084,
+      "reason_retained": "Previously selected lower-shell print records",
+      "sha256": "7b25103f37bdf5aba3c0a35cf866eab0622a60afaf73b28b82013a266893282f"
+    }
+  },
+  "recorded": "2026-09-10",
+  "status": "FILESYSTEM_PRESERVATION_ONLY__NOT_GEOMETRY_VALIDATION_OR_PRINT_RELEASE"
+}

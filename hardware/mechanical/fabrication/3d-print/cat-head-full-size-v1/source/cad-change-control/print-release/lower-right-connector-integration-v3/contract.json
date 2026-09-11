@@ -1,0 +1,192 @@
+{
+  "schema_version": "cat-head-lower-right-connector-integration-print-release-v3",
+  "contract_id": "lower-right-connector-integration-v3",
+  "tooling_revision": 1,
+  "authority": "PRINT_RELEASE__USER_CORRECTED__FCSTD_AND_STL_ONLY",
+  "date": "2026-08-21",
+  "user_approval": {
+    "original_release_instruction": "integrate on the right side and make it ready for printing (lower right)",
+    "autonomy_instruction": "OK, try to finish yourself - I'm going to sleep",
+    "visual_rejection": "what is this plank? can you cut it so it does not stick out? also this 0 volume piece is back again",
+    "selected_plank_evidence": "The screenshot status bar identified Face4 of the fused translucent central component at X=-17.49 mm, proving the plank belongs to the negative-X opposite-side half of CENTRAL_6_PANEL_CLUSTER_COMPONENT_03, not to the approved nose tab.",
+    "freecad_closed_confirmation": "closed",
+    "right_side_only": true,
+    "fcstd_export_authorized": true,
+    "stl_export_authorized": true,
+    "slicing_and_gcode": "withheld; no printer profile or slicing instruction was provided"
+  },
+  "inputs": {
+    "manual_baseline": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_USER_EDIT_V1.FCStd",
+      "sha256": "b9d882c32288d9e237a0a3321214ac2947623066275bab584e146b98ab9180b2"
+    },
+    "validated_closed_component_001_source": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4/LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V4.FCStd",
+      "sha256": "9d66ebfa314ce8f5522a7026811e441f21f3e68ff910f0532404a14c9279649c"
+    },
+    "approved_connector_v2": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-parallel-feedback/03-translucent-connectors/STAGGERED_TRANSLUCENT_CONNECTOR_TABS_REVIEW_V2.FCStd",
+      "sha256": "663b42fc093d2956a067ab66203c77fe6b3ea8b7a0c6610e8d2f97d79bcf7684"
+    },
+    "approved_ledge_v2": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-sequential-rerun-v1/02-ledge-extensions/BILATERAL_USER_LEDGE_EXTENSIONS_REVIEW_V2.FCStd",
+      "sha256": "acdd325ce8e72b86cf81c7e7d137100af149d471ed65f122df530e30650fea37"
+    },
+    "mesh_topology_checker": {
+      "path": "source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+      "sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e"
+    },
+    "runtime_manifest": {
+      "path": "source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+      "sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+    },
+    "rejected_v1_fcstd": {
+      "path": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v1/LOWER_RIGHT_CONNECTOR_INTEGRATION_PRINT_PARTS_V1.FCStd",
+      "sha256": "9d7b5533cf60d3256078ef0fd44ff9dc8c37537502018719282833e78ba8a3f1"
+    },
+    "rejected_v1_manifest": {
+      "path": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v1/release-manifest.json",
+      "sha256": "02bcdaf6342fb819e4486d6a0250104647da7a0278e4ad6c221f475172138a23"
+    },
+    "withheld_v2_contract": {
+      "path": "source/cad-change-control/print-release/lower-right-connector-integration-v2/contract.json",
+      "sha256": "2d78bb974b2ebb73315271abb7d1a03bd8252536f58b0d4bf61ef6d65f2c6e61"
+    },
+    "withheld_v2_exporter": {
+      "path": "source/cad-change-control/print-release/lower-right-connector-integration-v2/export_release.py",
+      "sha256": "fba526c6cec6fd3a762e00993b30c5ecb22e14e147ad7e8d6015edc719518e27"
+    },
+    "withheld_v2_fcstd": {
+      "path": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v2/LOWER_RIGHT_CONNECTOR_INTEGRATION_PRINT_PARTS_V2.FCStd",
+      "sha256": "4dd8acb668dac45d82f5ad9c7153ed3bb10b4848627058ac54d6c71d11c599b2"
+    },
+    "withheld_v2_manifest": {
+      "path": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v2/release-manifest.json",
+      "sha256": "211973ca3961b4a14291e0be768d1ef98d0e9731146650e157b00294eb773bcc"
+    }
+  },
+  "part_policy": {
+    "source_modularity": "Each opaque owner and each connected translucent component remains a separate printable part.",
+    "release_scope": "Regenerate the same six right-side parts with only the user-identified opposite-side central-owner plank removed and long zero-area Face6 healed.",
+    "central_owner_correction": "Split CENTRAL_6_PANEL_CLUSTER_COMPONENT_03 exactly at global X=0 and retain only X>=0 for the lower-right print part. No positive-X source volume may be removed.",
+    "nose_tab_policy": "Restore and use both approved 10 mm nose-top connector tabs exactly from the pinned connector V2 source; V2's mistaken 8 mm tab trim is prohibited.",
+    "component_001_correction": "Apply OCCT ShapeFix_FixSmallFace.fixStripFace(true) to the validated closed V4 owner at a fixed 0.00002 mm tolerance, eliminating the rejected long zero-area Face6 while retaining one valid closed solid.",
+    "connector_conditioning": "Before owner fusion, subtract the exact opposite owner from each tab. Preserve positive intended-owner overlap, every D4 bore, and the 0.300 mm tab-pair gap.",
+    "rejected_outputs": "V1 and V2 are immutable rejection evidence and must never be overwritten or used as geometry sources.",
+    "unrelated_parts": "All other lower-right modular owners remain unchanged and are not re-exported."
+  },
+  "objects": {
+    "opaque_component_001_owner": "RIGHT_LOWER_001_component_001_relief_main__retained__WITH_AXIS_STRAIGHT_FACE30_SECTOR",
+    "opaque_component_002_owner": "RIGHT_LOWER_002_component_002",
+    "right_ledge_base": "RIGHT_V5_LONG_LEDGE_CLEAN_BASE",
+    "right_ledge_extension": "Body",
+    "below_mouth_opaque_tab": "RIGHT_BELOW_MOUTH_APPROVED_OPAQUE_TAB_D4",
+    "below_mouth_translucent_tab": "RIGHT_BELOW_MOUTH_APPROVED_TRANSLUCENT_TAB_D4",
+    "nose_top_opaque_tab": "RIGHT_NOSE_TOP_INWARD_EDGE_PARALLEL_OPAQUE_TAB_D4",
+    "nose_top_translucent_tab": "RIGHT_NOSE_TOP_INWARD_EDGE_PARALLEL_TRANSLUCENT_TAB_D4",
+    "outer_panel_opaque_tab": "RIGHT_OUTER_PANEL_EDGE_PARALLEL_OPAQUE_TAB_D4",
+    "outer_panel_translucent_tab": "RIGHT_OUTER_PANEL_EDGE_PARALLEL_TRANSLUCENT_TAB_D4",
+    "below_mouth_translucent_owner": "PANEL_QUAD003_COMPONENT_01",
+    "nose_top_translucent_owner": "CENTRAL_6_PANEL_CLUSTER_COMPONENT_03",
+    "outer_panel_translucent_owner": "PANEL_QUAD017_COMPONENT_02"
+  },
+  "component_001_healing": {
+    "algorithm": "OCCT ShapeFix_FixSmallFace.fixStripFace(true)",
+    "precision_mm": 0.00002,
+    "minimum_tolerance_mm": 0.000002,
+    "maximum_tolerance_mm": 0.00002,
+    "expected_topology": {
+      "faces": 455,
+      "edges": 867,
+      "vertices": 407,
+      "solids": 1
+    },
+    "rejected_face_signature": {
+      "source_face_index": 6,
+      "maximum_area_mm2": 0.001,
+      "maximum_x_mm": 1.0,
+      "minimum_y_span_mm": 60.0,
+      "minimum_z_span_mm": 20.0
+    }
+  },
+  "central_owner_clip": {
+    "plane": "global X=0",
+    "retained_halfspace": "X>=0",
+    "removed_halfspace": "X<=0",
+    "plane_x_mm": 0.0,
+    "coordinate_tolerance_mm": 0.0000001,
+    "expected_source_min_x_mm": -20.015499114990234,
+    "expected_source_max_x_mm": 20.015499114990234,
+    "expected_retained_volume_mm3": 96.07425780837937,
+    "expected_removed_volume_mm3": 96.07425780837937,
+    "volume_tolerance_mm3": 0.000001,
+    "maximum_partition_intersection_mm3": 0.000001,
+    "maximum_volume_conservation_residual_mm3": 0.000001
+  },
+  "approved_nose_tabs": {
+    "inward_depth_mm": 10.0,
+    "expected_opaque_source_volume_mm3": 322.3008625098917,
+    "expected_translucent_source_volume_mm3": 322.3008625098911,
+    "volume_tolerance_mm3": 0.000001
+  },
+  "numeric_gates": {
+    "volume_epsilon_mm3": 0.000001,
+    "component_001_maximum_symmetric_difference_mm3": 0.001,
+    "component_001_maximum_volume_delta_mm3": 0.001,
+    "minimum_intended_owner_overlap_mm3": 10.0,
+    "minimum_tab_pair_clearance_mm": 0.299,
+    "maximum_tab_pair_clearance_mm": 0.301,
+    "maximum_tab_pair_intersection_mm3": 0.000001,
+    "maximum_added_fused_pair_intersection_mm3": 0.000001,
+    "required_bore_radius_mm": 2.0,
+    "bore_radius_tolerance_mm": 0.00001
+  },
+  "mesh": {
+    "linear_deflection_mm": 0.08,
+    "angular_deflection_rad": 0.35,
+    "required_connected_components": 1,
+    "maximum_boundary_edges": 0,
+    "maximum_nonmanifold_edges": 0,
+    "maximum_degenerate_facets": 0,
+    "maximum_duplicate_facets": 0,
+    "maximum_self_intersections": 0,
+    "require_outward_normals": true,
+    "automatic_repair_allowed": false,
+    "deterministic_conditioning": {
+      "policy": "Condition only a named raw-failing mesh using deterministic bounded vertex welding and zero-area facet removal. No smoothing, hole filling, remeshing, scaling, decimation, or coordinate search.",
+      "parts": {
+        "opaque_component_001": {
+          "weld_distance_mm": 0.0002,
+          "maximum_weld_displacement_mm": 0.0001,
+          "expected_weld_group_count": 4,
+          "expected_removed_degenerate_facets": 10,
+          "expected_removed_duplicate_facets": 0
+        },
+        "translucent_quad017_component_02": {
+          "weld_distance_mm": 0.00012,
+          "maximum_weld_displacement_mm": 0.00006,
+          "expected_weld_group_count": 1,
+          "expected_removed_degenerate_facets": 2,
+          "expected_removed_duplicate_facets": 0
+        }
+      }
+    }
+  },
+  "outputs": {
+    "directory": "output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v3",
+    "fcstd": "LOWER_RIGHT_CONNECTOR_INTEGRATION_PRINT_PARTS_V3.FCStd",
+    "manifest": "release-manifest.json",
+    "checksums": "SHA256SUMS.txt",
+    "readme": "README.md",
+    "checkpoint": "CHECKPOINT_2026-08-21.md",
+    "stl_directory": "stl",
+    "parts": {
+      "opaque_component_001": "RIGHT_LOWER_OPAQUE_COMPONENT_001_WITH_BELOW_MOUTH_OUTER_TABS_PRINT_V3.stl",
+      "opaque_component_002": "RIGHT_LOWER_OPAQUE_COMPONENT_002_WITH_NOSE_TOP_TAB_PRINT_V3.stl",
+      "opaque_right_ledge": "RIGHT_LOWER_LEDGE_WITH_USER_EXTENSION_PRINT_V3.stl",
+      "translucent_quad003_component_01": "RIGHT_TRANSLUCENT_QUAD003_COMPONENT_01_WITH_BELOW_MOUTH_TAB_PRINT_V3.stl",
+      "translucent_central_component_03": "RIGHT_TRANSLUCENT_CENTRAL_CLUSTER_RIGHT_HALF_WITH_NOSE_TOP_TAB_PRINT_V3.stl",
+      "translucent_quad017_component_02": "RIGHT_TRANSLUCENT_QUAD017_COMPONENT_02_WITH_OUTER_TAB_PRINT_V3.stl"
+    }
+  }
+}

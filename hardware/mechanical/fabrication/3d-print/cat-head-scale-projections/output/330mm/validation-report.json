@@ -1,0 +1,37 @@
+{
+  "source_obj": "hardware/mechanical/fabrication/3d-print/cat-head-small-v1/output/cat-head-100mm-shell-mk4s.obj",
+  "source_dimensions_print_orientation_mm": [
+    92.07,
+    100.0,
+    74.6195
+  ],
+  "target_height_chin_to_ear_tip_mm": 330.0,
+  "target_front_width_mm": 303.831,
+  "target_side_depth_mm": 246.2445,
+  "uniform_scale_from_source_obj": 3.3,
+  "visible_projection_faces": {
+    "front": 154,
+    "side": 145
+  },
+  "letter_page_size_mm": [
+    279.4,
+    215.9
+  ],
+  "a3_page_size_mm": [
+    297.0,
+    420.0
+  ],
+  "letter_join_height_from_head_top_mm": 140.0,
+  "calibration_bar_mm": 50.0,
+  "print_instruction": "Print at 100% / Actual Size; disable Fit to Page",
+  "outputs": {
+    "front-letter-top": "hardware/mechanical/fabrication/3d-print/cat-head-scale-projections/output/330mm/svg/cat-head-330mm-front-letter-top.svg",
+    "front-letter-bottom": "hardware/mechanical/fabrication/3d-print/cat-head-scale-projections/output/330mm/svg/cat-head-330mm-front-letter-bottom.svg",
+    "front-a3": "hardware/mechanical/fabrication/3d-print/cat-head-scale-projections/output/330mm/svg/cat-head-330mm-front-a3.svg",
+    "side-letter-top": "hardware/mechanical/fabrication/3d-print/cat-head-scale-projections/output/330mm/svg/cat-head-330mm-side-letter-top.svg",
+    "side-letter-bottom": "hardware/mechanical/fabrication/3d-print/cat-head-scale-projections/output/330mm/svg/cat-head-330mm-side-letter-bottom.svg",
+    "side-a3": "hardware/mechanical/fabrication/3d-print/cat-head-scale-projections/output/330mm/svg/cat-head-330mm-side-a3.svg",
+    "letter_pdf": "hardware/mechanical/fabrication/3d-print/cat-head-scale-projections/output/330mm/cat-head-330mm-letter-tiled-print-pack.pdf",
+    "a3_pdf": "hardware/mechanical/fabrication/3d-print/cat-head-scale-projections/output/330mm/cat-head-330mm-a3-print-pack.pdf"
+  }
+}

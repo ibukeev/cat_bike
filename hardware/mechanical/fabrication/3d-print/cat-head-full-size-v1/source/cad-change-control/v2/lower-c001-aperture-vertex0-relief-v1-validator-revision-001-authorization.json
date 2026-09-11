@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "authorization_id": "lower-c001-aperture-vertex0-relief-v1-validator-revision-001",
+  "status": "APPROVED_ONE_SHOT",
+  "iteration_id": "lower-c001-aperture-vertex0-relief-v1",
+  "validator_revision": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_lower_c001_aperture_vertex0_relief_v1_validator_revision_001.py",
+    "sha256": "ecedd2fbbb1526bb5306a15e595320bbad84af3cf1fde804a64fc4b2837d4190"
+  },
+  "pinned_evidence": {
+    "baseline_manifest": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34.json",
+      "sha256": "a4144cc60dd38a9b42768e167b85c54d2ce21a875d3915fe5fa95f3e2c434824"
+    },
+    "contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/lower-c001-aperture-vertex0-relief-v1.json",
+      "sha256": "cc6acb209ba23a2e961e0b790aa06b24f6c9a3a3590fdb569cb4064a8b35d5fe"
+    },
+    "source_validator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_lower_c001_aperture_vertex0_relief_v1.py",
+      "sha256": "7a4369637eb87e5ea4303556cd15d8ac9a2d34cd8e75cadb603a7f79956204f1"
+    },
+    "candidate": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/candidate.FCStd",
+      "sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca"
+    },
+    "preservation_report": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/preservation-report.json",
+      "sha256": "592e4bd165fa52d37e2089771071120f8bf9becaf682f3a5f647b72fd8452ddf"
+    },
+    "consumed_failed_report": {
+      "path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/relief-validation.json",
+      "sha256": "a9ba97b6cf7f5fdd32c3dd25cbf5ac0283fe95b1ab38f2634fe2e7cc31af29cb"
+    }
+  },
+  "consumed_failure": {
+    "sole_failed_gate": "R05_SUBTRACTION_ONLY",
+    "unstable_reverse_boolean_added_volume_mm3": 78628.04975138359,
+    "candidate_minus_expected_candidate_mm3": 0.0,
+    "expected_candidate_minus_candidate_mm3": 0.0
+  },
+  "r05_rule": {
+    "measurement": "candidate_minus_exact_authorized_expected_candidate",
+    "boolean_volume_epsilon_mm3": 0.000001,
+    "positive_added_material_must_fail": true
+  },
+  "fresh_report_path": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/relief-validation-validator-revision-001.json",
+  "allowed_action": "one read-only validator revision execution creating only the fresh report",
+  "forbidden": [
+    "overwrite or rerun consumed relief-validation.json",
+    "candidate mutation, regeneration, retry, repair, or geometry change",
+    "contract parameter, tolerance, datum, aperture, or shell change",
+    "deep release, mirror, integration, export, slicing, promotion, or printing"
+  ]
+}

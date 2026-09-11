@@ -1,0 +1,323 @@
+{
+  "schema_version": "2.0",
+  "project": "cat-head-full-size-v1",
+  "iteration_id": "right-eye-parametric-fit-prototype-v2",
+  "state": "approved_for_one_candidate",
+  "baseline_id": "right-upper-c009-deletion-review-v34",
+  "user_approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-17",
+    "exact_instruction": "After that passes, inspect the existing quarantine renders. If the design looks sane, authorize exactly one fresh right-eye-parametric-fit-prototype-v2 run using the corrected runner. Do not restart the eye design from scratch."
+  },
+  "target_object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34",
+  "allowed_mutations": [
+    {
+      "kind": "replace_geometry",
+      "object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34",
+      "parameters": {
+        "purpose": "Replace the old fused eye internals with one genuinely new LCS-driven printable bucket; do not inspect, recover, repair, split, heal, or reuse the old target shape.",
+        "construction_features": [
+          "01_CONTINUOUS_FRONT_BEZEL",
+          "02_CONTINUOUS_DIFFUSER_SEAT_RETAINING_SHOULDER",
+          "03_HIDDEN_TAPERED_CHAMBER",
+          "04_REAR_CAP_SEAT_AND_TWO_BUCKET_SIDE_CONNECTOR_BOSSES",
+          "05_BROAD_UPPER_AND_LOWER_EYE_TO_HEAD_MOUNTING_ROOTS",
+          "06_FINAL_TRUE_BOOLEAN_UNION"
+        ],
+        "module_lcs": {
+          "origin_mm": [
+            64.501125,
+            68.88715,
+            153.583025
+          ],
+          "u": [
+            0.231983963,
+            0.35192547,
+            0.906825178
+          ],
+          "v": [
+            0.922209813,
+            0.216932857,
+            -0.320108101
+          ],
+          "inward_n": [
+            -0.309374371,
+            0.910543024,
+            -0.274224178
+          ]
+        },
+        "visible_aperture_mm": [
+          [
+            34.9453,
+            50.7759,
+            126.7901
+          ],
+          [
+            45.0804,
+            66.1511,
+            166.4082
+          ],
+          [
+            101.4953,
+            88.6294,
+            177.3997
+          ],
+          [
+            76.4835,
+            69.9922,
+            143.7341
+          ]
+        ],
+        "aperture_input_rounding_tolerance_mm": 0.00005,
+        "approved_shell_opening_boundary_mm": [
+          [
+            33.3465,
+            50.1135,
+            126.3945
+          ],
+          [
+            43.9605,
+            63.0555,
+            165.8895
+          ],
+          [
+            102.4275,
+            89.0295,
+            177.6765
+          ],
+          [
+            104.064,
+            71.7885,
+            118.5825
+          ]
+        ],
+        "shell_opening_boundary_derivation": "Gate-1 accepted-panel vertices [13,16,14,15], uniformly transformed to the approved 330 mm head, then projected only for the hidden bezel perimeter onto the protected aperture LCS plane.",
+        "shell_opening_clearance_mm": 0.3,
+        "bezel_thickness_mm": 1.5,
+        "diffuser_thickness_mm": 1.5,
+        "diffuser_overlap_mm": 1.2,
+        "diffuser_pocket_clearance_mm": 0.3,
+        "gasket_allowance_mm": 0.3,
+        "diffuser_start_depth_mm": 1.8,
+        "diffuser_end_depth_mm": 3.3,
+        "chamber_wall_thickness_mm": 2.4,
+        "chamber_depth_mm": 14,
+        "bezel_chamber_axial_overlap_mm": 3.3,
+        "bezel_chamber_internal_fillet_mm": 1,
+        "bezel_collar_outer_offset_mm": 4.2,
+        "bezel_collar_front_inner_offset_mm": 0.3,
+        "bezel_collar_start_depth_mm": 0.3,
+        "bezel_collar_end_depth_mm": 3.6,
+        "diffuser_seat_start_depth_mm": 3.3,
+        "diffuser_seat_end_depth_mm": 4.5,
+        "chamber_taper_start_depth_mm": 4.2,
+        "chamber_taper_end_depth_mm": 6.2,
+        "chamber_rear_inner_offset_mm": -0.5,
+        "led_emitter_reference_depth_mm": 13.35,
+        "led_to_diffuser_gap_mm": 10.05,
+        "cap_nominal_clearance_mm": 0.35,
+        "minimum_unrelated_bucket_cap_clearance_mm": 0.25,
+        "cap_reference_seating_translation_mm": 0.05,
+        "rear_cap_seat_front_depth_mm": 13,
+        "cap_boss_outer_diameter_mm": 6,
+        "cap_boss_engagement_depth_mm": 4,
+        "cap_boss_web_width_mm": 6,
+        "cap_boss_web_wall_overlap_mm": 1.5,
+        "cap_boss_web_end_overlap_mm": 1,
+        "cap_boss_bore_cutter_length_mm": 7,
+        "rear_cap_boss_centers_mm": {
+          "upper": [
+            72.2476,
+            78.1286,
+            175.5293
+          ],
+          "lower": [
+            66.305,
+            63.709,
+            134.355
+          ]
+        },
+        "rear_cap_boss_axis": "module_lcs.inward_n",
+        "diffuser_retainer_posts": 0,
+        "m2_5_clearance_diameter_mm": 2.8,
+        "mount_root_length_mm": 14,
+        "mount_root_depth_mm": 10,
+        "mount_root_front_depth_mm": 0.3,
+        "mount_root_thickness_mm": 4.8,
+        "bore_to_edge_minimum_mm": 3.5,
+        "mount_mating_gap_mm": 0.3,
+        "mount_web_width_mm": 10,
+        "mount_web_front_depth_mm": 2.2,
+        "mount_web_rear_depth_mm": 8.4,
+        "mount_web_landing_inset_mm": 4,
+        "mount_web_end_overlap_mm": 2,
+        "mount_bore_cutter_length_mm": 20,
+        "head_mounts": {
+          "upper": {
+            "lineage_role": "V5 outer-eye / V17 integrated upper root",
+            "bore_center_mm": [
+              100.44318,
+              85.00159,
+              147.11774
+            ],
+            "bore_axis": [
+              -0.931499,
+              -0.355313,
+              0.077868
+            ]
+          },
+          "lower": {
+            "lineage_role": "V5 lower-eye / V17 integrated lower root",
+            "bore_center_mm": [
+              66.77454,
+              66.06956,
+              122.28207
+            ],
+            "bore_axis": [
+              0.037231,
+              0.229102,
+              0.97269
+            ]
+          }
+        },
+        "fit_objectives": {
+          "maximum_positive_intersection_mm3": 0,
+          "upper_c001_clearance_outside_mount_interface_minimum_mm": 4,
+          "other_non_mating_shell_clearance_minimum_mm": 0.5,
+          "intended_insertion_direction": "negative module_lcs.inward_n to positive module_lcs.inward_n",
+          "intended_removal_direction": "positive module_lcs.inward_n to negative module_lcs.inward_n",
+          "construction_rule": "Use LCS/opening-boundary offsets and a named axial taper; never Boolean-carve shell shapes from the finished bucket."
+        },
+        "conflict_references": {
+          "upper_c001_object": "RETAINED_RIGHT_UPPER_C001_V34",
+          "lower_c001_object": "FROZEN_RIGHT_LOWER_MAIN_V34",
+          "lower_c012_reference": "fit_references.lower_c012_obj",
+          "lower_c013_reference": "fit_references.lower_c013_obj"
+        },
+        "fit_references": {
+          "exact_v9_cap": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/production/eye-modules-v9/right/right_eye_rear_cap_production_owner_v9.step",
+            "sha256": "fe647e10d1888211563bfe313adb27321a963c1a7beaf339e066f75b21ff444c"
+          },
+          "exact_diffuser": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate6-eye-modules/eyes/right_eye_diffuser.stl",
+            "sha256": "b9d4bcd2ca8e500b96de18bf47530a369bb21ec2ded95c8bcb24fa882e15c1b0"
+          },
+          "lower_c012_obj": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_012.obj",
+            "sha256": "69f242427e867b627eaf7e056d680bf07ec10a8bfbb712fdd9b21050e5090374"
+          },
+          "lower_c013_obj": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-lower-face-topology-repair-review-v12/components/v11_lower_component_013.obj",
+            "sha256": "2500266b992706bc41fdde6b24f3e9ecf88ee19a09b0ce8a6452d6e6a6dc6ba8"
+          },
+          "approved_opening_surface": {
+            "path": "hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/assembly/accepted-panels-3d.obj",
+            "sha256": "1e5460a10656c9293db1f706f840a89e5db6dd254542a0854c39a8f2ab3b2d36"
+          },
+          "approved_opening_mapping": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate4-assembly-review.json",
+            "sha256": "87d755902fd3b626c2fb4c331326d3b5d19b2ce736335bc25787f2ed242577c6"
+          },
+          "approved_head_scale": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/gate1-panel-roles.json",
+            "sha256": "5c0cca81954847b432da08badee3d5552ee855e2118e10ff81374ef911ffab37"
+          },
+          "approved_v5_mount_datums": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-eye-all-four-plain-flange-thickness-review-v5/validation-v5.json",
+            "sha256": "08e8f57ec4b2ea76dc3b3baa740dc1a21a8764be77e66df4d94a0d1434653290"
+          },
+          "approved_v17_mount_lineage": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/RIGHT_EYE_EXACT_OWNER_INTEGRATION_REVIEW_V17_CHECKPOINT_2026-08-14.md",
+            "sha256": "a870381573e7a6c96acabf3b653d31911b0400c324b0f1333666efc9ebd9d8bc"
+          }
+        },
+        "temporary_reference_policy": "Cap, diffuser, lower C012, lower C013, section, and insertion-axis shapes are in-memory review references only and must not be added to the saved FCStd.",
+        "review_artifacts": {
+          "isolated_front": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/isolated-front.png",
+          "isolated_rear": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/isolated-rear.png",
+          "longitudinal_section": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/longitudinal-section.png",
+          "cap_diffuser_fit": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/cap-diffuser-fit.png",
+          "four_conflict_overlay": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/four-conflict-overlay.png",
+          "insertion_axis": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/insertion-axis.png"
+        }
+      }
+    }
+  ],
+  "protected_objects": {
+    "mode": "all_except_target",
+    "invariants": [
+      "existence",
+      "internal_name",
+      "label",
+      "type",
+      "shape",
+      "placement",
+      "visibility",
+      "group_membership"
+    ]
+  },
+  "budget": {
+    "fresh_chat_required": true,
+    "resume_previous_chat": false,
+    "max_generation_seconds": 300,
+    "max_candidates": 1,
+    "max_repair_attempts": 0,
+    "automatic_retry": false
+  },
+  "runtime": {
+    "manifest_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+    "manifest_sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+  },
+  "generator": {
+    "script_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_right_eye_parametric_fit_prototype_v1.py",
+    "script_sha256": "6b2a23d7c88088d6d44ad39d992414746776cfbfe8f5c61315c89129b20b1a0a",
+    "arguments": [
+      "--baseline",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34.json",
+      "--contract",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/right-eye-parametric-fit-prototype-v2.json"
+    ],
+    "writes_only_output_directory": true
+  },
+  "review_gate": {
+    "required_views": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "top",
+      "bottom"
+    ],
+    "human_visual_approval_required": true,
+    "visual_approval_status": "pending",
+    "independent_verification_required": true,
+    "generator_may_write_validation": false,
+    "run_occt_before_visual_approval": false
+  },
+  "output": {
+    "directory": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2",
+    "candidate_fcstd": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/candidate.FCStd",
+    "no_op_snapshot_fcstd": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/no-op-snapshot.FCStd",
+    "review_files": {
+      "front": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/front.png",
+      "rear": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/rear.png",
+      "left": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/left.png",
+      "right": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/right.png",
+      "top": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/top.png",
+      "bottom": "reports/generated/cat-head-cad-iterations/right-eye-parametric-fit-prototype-v2/review/bottom.png"
+    }
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "three_mf": false,
+    "slicing": false,
+    "gcode": false,
+    "print": false,
+    "commit": false,
+    "promotion": false
+  }
+}

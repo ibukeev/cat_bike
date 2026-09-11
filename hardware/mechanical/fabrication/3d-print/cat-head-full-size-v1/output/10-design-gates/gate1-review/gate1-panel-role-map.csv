@@ -1,0 +1,89 @@
+source_panel_id,role,review_unit_id,pair_id,mirror_unit_id,zone,source_face_count,source_triangle_ids,area_source_mm2,area_330mm_mm2,centroid_source_mm,centroid_330mm,description
+MANQ001,removable_glow,GLOW_MANQ001,,,center_face,2,MANQ001-B MANQ001-A,1154.629,2597.915,0.000 -52.419 -31.795,0.000 21.697 117.308,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+MANQ002,integrated_opaque,,,,forehead,2,MANQ002-B MANQ002-A,933.175,2099.645,-19.632 39.013 64.052,-29.448 158.846 261.078,Default structural exterior facet
+MANQ003,integrated_opaque,,,,forehead,2,MANQ003-B MANQ003-A,933.325,2099.980,19.652 39.013 64.052,29.478 158.846 261.078,Default structural exterior facet
+MANQ006,integrated_opaque,,,,back,2,MANQ006-B MANQ006-A,3054.821,6873.347,0.000 100.656 -44.261,0.000 251.309 98.609,Default structural exterior facet
+MANQ007,integrated_opaque,,,,bottom,2,MANQ007-B MANQ007-A,2541.296,5717.916,0.000 73.654 -72.392,0.000 210.806 56.412,Default structural exterior facet
+MANQ008,integrated_opaque,,,,bottom,2,MANQ008-B MANQ008-A,8338.441,18761.491,0.000 9.250 -94.042,0.000 114.202 23.936,Default structural exterior facet
+QUAD001,removable_glow,GLOW_QUAD001,,,center_face+right_cheek,2,QUAD001-A QUAD001-B,535.199,1204.199,17.326 -49.532 -36.096,25.989 26.028 110.856,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+QUAD002,integrated_opaque,,,,center_face,2,QUAD002-A QUAD002-B,386.492,869.606,8.530 -64.933 -57.470,12.796 2.927 78.795,Default structural exterior facet
+QUAD003,removable_glow,GLOW_QUAD003,,,bottom+right_cheek,2,QUAD003-A QUAD003-B,997.709,2244.845,22.565 -58.440 -72.813,33.847 12.666 55.781,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+QUAD004,integrated_opaque,,,,center_face,2,QUAD004-A QUAD004-B,387.373,871.589,-8.467 -64.933 -57.470,-12.701 2.927 78.795,Default structural exterior facet
+QUAD005,removable_glow,GLOW_QUAD005,,,bottom+left_cheek,2,QUAD005-A QUAD005-B,1002.581,2255.808,-22.502 -58.440 -72.813,-33.753 12.666 55.781,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+QUAD006,integrated_opaque,,,,bottom,2,QUAD006-A QUAD006-B,1026.722,2310.125,32.721 -24.163 -96.043,49.081 64.082 20.936,Default structural exterior facet
+QUAD008,integrated_opaque,,,,ear_or_outer_top,2,QUAD008-B QUAD008-A,2520.517,5671.164,84.769 51.969 58.249,127.153 178.279 252.374,Default structural exterior facet
+QUAD013,integrated_opaque,,,,bottom+right_cheek,2,QUAD013-B QUAD013-A,1297.686,2919.794,41.954 -37.450 -73.728,62.932 44.151 54.408,Default structural exterior facet
+QUAD014,integrated_opaque,,,,right_cheek,2,QUAD014-B QUAD014-A,1274.544,2867.725,62.452 -14.200 -49.761,93.678 79.025 90.358,Default structural exterior facet
+QUAD017,removable_glow,GLOW_QUAD017,,,right_cheek,2,QUAD017-B QUAD017-A,2675.105,6018.986,67.933 23.827 -55.497,101.899 136.066 81.754,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+QUAD018,integrated_opaque,,,,back+right_cheek,2,QUAD018-A QUAD018-B,2902.431,6530.469,69.200 76.828 -3.009,103.800 215.568 160.487,Default structural exterior facet
+QUAD021,removable_glow,GLOW_QUAD021,,,right_cheek,2,QUAD021-A QUAD021-B,2877.064,6473.394,56.079 64.396 34.939,84.119 196.920 217.408,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+QUAD022,removable_glow,GLOW_QUAD022,,,center_face+left_cheek,2,QUAD022-A QUAD022-B,535.199,1204.199,-17.326 -49.532 -36.096,-25.989 26.028 110.856,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+QUAD023,integrated_opaque,,,,bottom,2,QUAD023-A QUAD023-B,1026.722,2310.125,-32.721 -24.163 -96.043,-49.081 64.082 20.936,Default structural exterior facet
+QUAD025,integrated_opaque,,,,ear_or_outer_top,2,QUAD025-B QUAD025-A,2520.517,5671.164,-84.769 51.969 58.249,-127.153 178.279 252.374,Default structural exterior facet
+QUAD027,integrated_opaque,,,,bottom+left_cheek,2,QUAD027-B QUAD027-A,1297.686,2919.794,-41.954 -37.450 -73.728,-62.932 44.151 54.408,Default structural exterior facet
+QUAD028,integrated_opaque,,,,left_cheek,2,QUAD028-B QUAD028-A,1274.544,2867.725,-62.452 -14.200 -49.761,-93.678 79.025 90.358,Default structural exterior facet
+QUAD031,removable_glow,GLOW_QUAD031,,,left_cheek,2,QUAD031-B QUAD031-A,2675.105,6018.986,-67.933 23.827 -55.497,-101.899 136.066 81.754,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+QUAD032,integrated_opaque,,,,back+left_cheek,2,QUAD032-A QUAD032-B,2902.431,6530.469,-69.200 76.828 -3.009,-103.800 215.568 160.487,Default structural exterior facet
+QUAD035,removable_glow,GLOW_QUAD035,,,left_cheek,2,QUAD035-A QUAD035-B,2877.064,6473.394,-56.079 64.396 34.939,-84.119 196.920 217.408,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+QUAD036,integrated_opaque,,,,back,2,QUAD036-B QUAD036-A,1397.648,3144.707,42.500 104.295 4.697,63.750 256.768 172.046,Default structural exterior facet
+TRI001,removable_glow,GLOW_TRI001,,,right_cheek,1,TRI001,311.142,700.070,23.130 -26.235 5.510,34.695 60.974 173.266,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI002,removable_glow,GLOW_TRI002,,,center_face,1,TRI002,485.152,1091.592,13.361 -26.720 5.532,20.042 60.246 173.298,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI003,removable_glow,GLOW_TRI003,,,right_cheek,1,TRI003,192.977,434.197,21.539 -32.215 -13.463,32.308 52.004 144.805,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI004,removable_glow,GLOW_TRI004,,,center_face,1,TRI004,260.704,586.584,0.000 -34.315 -9.944,0.001 48.853 150.084,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI005,mouth_opening,MOUTH_OPENING,,,bottom,1,TRI005,293.280,659.880,8.743 -58.683 -89.493,13.114 12.302 30.761,Remove this facet pair to form the mouth opening
+TRI006,mouth_opening,MOUTH_OPENING,,,bottom,1,TRI006,274.456,617.527,-9.259 -58.683 -89.493,-13.889 12.302 30.761,Remove this facet pair to form the mouth opening
+TRI007,integrated_opaque,,,,bottom,1,TRI007,291.160,655.111,15.693 -49.780 -100.116,23.540 25.657 14.827,Default structural exterior facet
+TRI008,integrated_opaque,,,,bottom,1,TRI008,434.976,978.697,-0.300 -44.554 -104.654,-0.451 33.494 8.020,Default structural exterior facet
+TRI009,integrated_opaque,,,,bottom,1,TRI009,272.622,613.400,-16.294 -49.780 -100.116,-24.441 25.657 14.827,Default structural exterior facet
+TRI010,integrated_opaque,,,,ear_or_outer_top,1,TRI010,724.004,1629.010,62.833 31.807 70.300,94.249 148.036 270.451,Default structural exterior facet
+TRI011,integrated_opaque,,,,ear_or_outer_top,1,TRI011,702.866,1581.449,59.749 41.426 76.870,89.623 162.465 280.305,Default structural exterior facet
+TRI012,integrated_opaque,,,,ear_or_outer_top,1,TRI012,1777.895,4000.264,64.274 56.345 68.595,96.411 184.844 267.892,Default structural exterior facet
+TRI013,integrated_opaque,,,,center_face,1,TRI013,668.595,1504.339,8.968 0.735 43.475,13.452 101.428 230.212,Default structural exterior facet
+TRI014,integrated_opaque,,,,forehead,1,TRI014,1111.747,2501.432,22.758 13.079 51.913,34.137 119.944 242.870,Default structural exterior facet
+TRI015,integrated_opaque,,,,right_cheek,1,TRI015,677.461,1524.287,41.532 -15.971 13.409,62.299 76.369 185.114,Default structural exterior facet
+TRI016,integrated_opaque,,,,right_cheek,1,TRI016,1263.731,2843.396,45.553 1.800 32.453,68.330 103.026 213.680,Default structural exterior facet
+TRI017,removable_glow,GLOW_TRI017,,,center_face,1,TRI017,501.119,1127.518,9.002 -16.801 21.417,13.503 75.125 197.125,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI018,integrated_opaque,,,,center_face,1,TRI018,669.177,1505.648,-9.035 0.735 43.475,-13.553 101.428 230.212,Default structural exterior facet
+TRI019,integrated_opaque,,,,forehead,1,TRI019,1106.678,2490.026,-22.825 13.079 51.913,-34.238 119.944 242.870,Default structural exterior facet
+TRI020,integrated_opaque,,,,right_cheek,1,TRI020,484.244,1089.549,28.454 -48.167 -47.490,42.680 28.075 93.764,Default structural exterior facet
+TRI021,integrated_opaque,,,,right_cheek,1,TRI021,521.626,1173.658,39.962 -38.696 -46.922,59.944 42.281 94.617,Default structural exterior facet
+TRI022,integrated_opaque,,,,right_cheek,1,TRI022,626.838,1410.385,48.884 -27.967 -36.678,73.326 58.376 109.982,Default structural exterior facet
+TRI025,integrated_opaque,,,,right_cheek,1,TRI025,544.467,1225.052,73.297 -7.199 -17.914,109.945 89.528 138.129,Default structural exterior facet
+TRI026,integrated_opaque,,,,right_cheek,1,TRI026,1092.651,2458.465,77.563 12.975 -2.653,116.344 119.788 161.020,Default structural exterior facet
+TRI027,removable_glow,GLOW_TRI027,,,right_cheek,1,TRI027,1485.068,3341.403,63.943 20.810 27.005,95.915 131.541 205.507,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI028,integrated_opaque,,,,right_cheek,1,TRI028,1527.718,3437.366,83.010 37.780 -17.695,124.514 156.995 138.458,Default structural exterior facet
+TRI029,integrated_opaque,,,,right_cheek,1,TRI029,612.715,1378.609,68.547 53.453 -61.776,102.820 180.505 72.336,Default structural exterior facet
+TRI030,integrated_opaque,,,,back,1,TRI030,1104.540,2485.215,67.974 75.520 -44.697,101.962 213.607 97.954,Default structural exterior facet
+TRI031,removable_glow,GLOW_TRI031,,,center_face,1,TRI031,501.124,1127.528,-9.001 -16.801 21.417,-13.502 75.125 197.125,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI032,removable_glow,GLOW_TRI032,,,center_face,1,TRI032,485.202,1091.705,-13.361 -26.720 5.532,-20.041 60.246 173.298,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI033,integrated_opaque,,,,forehead,1,TRI033,1256.755,2827.699,29.113 66.404 53.595,43.670 199.932 245.392,Default structural exterior facet
+TRI034,integrated_opaque,,,,forehead,1,TRI034,1265.314,2846.957,-29.019 66.404 53.595,-43.528 199.932 245.392,Default structural exterior facet
+TRI035,integrated_opaque,,,,back,1,TRI035,1002.309,2255.196,-23.286 86.614 42.903,-34.929 230.247 229.355,Default structural exterior facet
+TRI036,integrated_opaque,,,,back,1,TRI036,1243.204,2797.208,0.047 89.160 43.462,0.071 234.066 230.193,Default structural exterior facet
+TRI037,integrated_opaque,,,,back,1,TRI037,1001.559,2253.507,23.381 86.614 42.903,35.071 230.247 229.355,Default structural exterior facet
+TRI038,integrated_opaque,,,,bottom,1,TRI038,489.471,1101.310,48.206 11.391 -82.784,72.309 117.413 40.823,Default structural exterior facet
+TRI039,integrated_opaque,,,,bottom,1,TRI039,476.960,1073.159,53.586 34.728 -80.980,80.379 152.418 43.529,Default structural exterior facet
+TRI040,integrated_opaque,,,,back,1,TRI040,1568.313,3528.704,46.432 82.770 -54.705,69.648 224.480 82.942,Default structural exterior facet
+TRI041,removable_glow,GLOW_TRI041,,,left_cheek,1,TRI041,311.142,700.070,-23.130 -26.235 5.510,-34.695 60.974 173.266,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI042,removable_glow,GLOW_TRI042,,,left_cheek,1,TRI042,192.977,434.197,-21.539 -32.215 -13.463,-32.308 52.004 144.805,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI043,integrated_opaque,,,,ear_or_outer_top,1,TRI043,724.004,1629.010,-62.833 31.807 70.300,-94.249 148.036 270.451,Default structural exterior facet
+TRI044,integrated_opaque,,,,ear_or_outer_top,1,TRI044,702.866,1581.449,-59.749 41.426 76.870,-89.623 162.465 280.305,Default structural exterior facet
+TRI045,integrated_opaque,,,,ear_or_outer_top,1,TRI045,1777.895,4000.264,-64.274 56.345 68.595,-96.411 184.844 267.892,Default structural exterior facet
+TRI046,integrated_opaque,,,,left_cheek,1,TRI046,677.461,1524.287,-41.532 -15.971 13.409,-62.299 76.369 185.114,Default structural exterior facet
+TRI047,integrated_opaque,,,,left_cheek,1,TRI047,1263.731,2843.396,-45.553 1.800 32.453,-68.330 103.026 213.680,Default structural exterior facet
+TRI048,integrated_opaque,,,,left_cheek,1,TRI048,484.244,1089.549,-28.454 -48.167 -47.490,-42.680 28.075 93.764,Default structural exterior facet
+TRI049,integrated_opaque,,,,left_cheek,1,TRI049,521.626,1173.658,-39.962 -38.696 -46.922,-59.944 42.281 94.617,Default structural exterior facet
+TRI050,integrated_opaque,,,,left_cheek,1,TRI050,626.838,1410.385,-48.884 -27.967 -36.678,-73.326 58.376 109.982,Default structural exterior facet
+TRI053,integrated_opaque,,,,left_cheek,1,TRI053,544.467,1225.052,-73.297 -7.199 -17.914,-109.945 89.528 138.129,Default structural exterior facet
+TRI054,integrated_opaque,,,,left_cheek,1,TRI054,1092.651,2458.465,-77.563 12.975 -2.653,-116.344 119.788 161.020,Default structural exterior facet
+TRI055,removable_glow,GLOW_TRI055,,,left_cheek,1,TRI055,1485.068,3341.403,-63.943 20.810 27.005,-95.915 131.541 205.507,Removable glow/light-transmitting panel selected in annotated Gate 1 SVG
+TRI056,integrated_opaque,,,,left_cheek,1,TRI056,1527.718,3437.366,-83.010 37.780 -17.695,-124.514 156.995 138.458,Default structural exterior facet
+TRI057,integrated_opaque,,,,left_cheek,1,TRI057,612.715,1378.609,-68.547 53.453 -61.776,-102.820 180.505 72.336,Default structural exterior facet
+TRI058,integrated_opaque,,,,left_cheek,1,TRI058,1240.479,2791.079,-54.641 71.397 -60.486,-81.962 207.422 74.271,Default structural exterior facet
+TRI059,integrated_opaque,,,,back,1,TRI059,1432.756,3223.701,-54.875 85.506 -40.902,-82.313 228.585 103.647,Default structural exterior facet
+TRI060,integrated_opaque,,,,bottom,1,TRI060,489.471,1101.310,-48.206 11.391 -82.784,-72.309 117.413 40.823,Default structural exterior facet
+TRI061,integrated_opaque,,,,bottom,1,TRI061,476.960,1073.159,-53.586 34.728 -80.980,-80.379 152.418 43.529,Default structural exterior facet
+TRI062,integrated_opaque,,,,back,1,TRI062,626.516,1409.662,-40.000 100.771 -35.951,-60.000 251.483 111.074,Default structural exterior facet
+TRI063,integrated_opaque,,,,back,1,TRI063,577.032,1298.323,-50.000 103.870 -4.007,-75.000 256.132 158.989,Default structural exterior facet
+TRI064,integrated_opaque,,,,back,1,TRI064,820.615,1846.385,-36.667 105.392 12.707,-55.000 258.415 184.060,Default structural exterior facet
+TRI065,integrated_opaque,,,,back,1,TRI065,626.516,1409.662,40.000 100.771 -35.951,60.000 251.483 111.074,Default structural exterior facet

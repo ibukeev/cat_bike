@@ -1,0 +1,286 @@
+{
+  "gate": "Gate 3 structural shell baseline",
+  "status": "review_required",
+  "wall_thickness_mm": 1.8,
+  "solidify_offset": -1.0,
+  "use_even_offset": false,
+  "bottom_closure_faces": {
+    "right_lower_face": [
+      [
+        4,
+        26,
+        28
+      ]
+    ],
+    "left_lower_face": [
+      [
+        32,
+        50,
+        52
+      ]
+    ]
+  },
+  "sections": {
+    "right_upper_head": {
+      "vertices": 36,
+      "edges": 84,
+      "faces": 50,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        156.939,
+        206.289,
+        158.396
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.822995,
+        "oriented_dimensions_mm_sorted": [
+          161.391,
+          167.139,
+          197.519
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          105,
+          15
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      },
+      "boundary_vertex_fan_splits": 1,
+      "bottom_closure_face_count": 0,
+      "expected_connected_components_before_rear_ribs": 1
+    },
+    "left_upper_head": {
+      "vertices": 34,
+      "edges": 79,
+      "faces": 47,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        127.521,
+        206.289,
+        158.396
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.78793,
+        "oriented_dimensions_mm_sorted": [
+          157.586,
+          158.396,
+          187.501
+        ],
+        "rotation_xyz_degrees": [
+          90,
+          120,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      },
+      "boundary_vertex_fan_splits": 1,
+      "bottom_closure_face_count": 0,
+      "expected_connected_components_before_rear_ribs": 1
+    },
+    "right_lower_face": {
+      "vertices": 54,
+      "edges": 119,
+      "faces": 69,
+      "connected_components": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        128.291,
+        269.345,
+        136.952
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.961011,
+        "oriented_dimensions_mm_sorted": [
+          192.202,
+          196.572,
+          229.302
+        ],
+        "rotation_xyz_degrees": [
+          30,
+          0,
+          60
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      },
+      "boundary_vertex_fan_splits": 1,
+      "bottom_closure_face_count": 1,
+      "expected_connected_components_before_rear_ribs": 2
+    },
+    "left_lower_face": {
+      "vertices": 56,
+      "edges": 124,
+      "faces": 72,
+      "connected_components": 2,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        158.406,
+        269.345,
+        137.04
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.961011,
+        "oriented_dimensions_mm_sorted": [
+          192.202,
+          196.572,
+          229.302
+        ],
+        "rotation_xyz_degrees": [
+          30,
+          0,
+          120
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      },
+      "boundary_vertex_fan_splits": 1,
+      "bottom_closure_face_count": 1,
+      "expected_connected_components_before_rear_ribs": 2
+    },
+    "rear_base": {
+      "vertices": 16,
+      "edges": 32,
+      "faces": 16,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        120.0,
+        15.621,
+        79.616
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.420431,
+        "oriented_dimensions_mm_sorted": [
+          75.601,
+          88.291,
+          88.291
+        ],
+        "rotation_xyz_degrees": [
+          60,
+          45,
+          0
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      },
+      "boundary_vertex_fan_splits": 0,
+      "bottom_closure_face_count": 0,
+      "expected_connected_components_before_rear_ribs": 1
+    },
+    "right_ear": {
+      "vertices": 14,
+      "edges": 29,
+      "faces": 17,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        96.118,
+        85.713,
+        142.743
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.475164,
+        "oriented_dimensions_mm_sorted": [
+          85.471,
+          99.218,
+          114.039
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          75,
+          165
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      },
+      "boundary_vertex_fan_splits": 0,
+      "bottom_closure_face_count": 0,
+      "expected_connected_components_before_rear_ribs": 1
+    },
+    "left_ear": {
+      "vertices": 14,
+      "edges": 29,
+      "faces": 17,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "dimensions_mm": [
+        96.118,
+        85.713,
+        142.743
+      ],
+      "orientation_search": {
+        "fits": true,
+        "max_envelope_ratio": 0.475164,
+        "oriented_dimensions_mm_sorted": [
+          85.471,
+          99.218,
+          114.039
+        ],
+        "rotation_xyz_degrees": [
+          120,
+          105,
+          165
+        ],
+        "envelope_mm_sorted": [
+          200.0,
+          210.0,
+          240.0
+        ]
+      },
+      "boundary_vertex_fan_splits": 0,
+      "bottom_closure_face_count": 0,
+      "expected_connected_components_before_rear_ribs": 1
+    }
+  },
+  "acceptance": {
+    "all_sections_closed_manifold": true,
+    "all_sections_fit_orientation_search": true,
+    "approved_exterior_transform_unchanged": true,
+    "mirrored_bottom_throat_openings_closed": true,
+    "compact_rear_base_frame_generated": true
+  },
+  "review_notes": [
+    "Wall thickness is generated inward using a stable normal offset; the approved exterior vertices remain unchanged.",
+    "This baseline closes exposed section and panel-window boundaries with 1.8 mm rim walls.",
+    "The center-split bottom halves are joined to their lower shells by the lower-shell closure geometry; only the eye-adjacent opaque islands remain separate and require internal frame ribs.",
+    "The compact rear-base frame is coplanar with the sloped rear edges, uses a 20 mm structural surround, and extends 5 mm outward so it can be installed after the four main shells are assembled; the lower rear panels remain uncut.",
+    "The mirrored bottom/throat openings inherited from the accepted surface are closed integrally by the lower shells.",
+    "Ventilation is reserved for protected rear-facing features; bottom drainage will use small deliberate holes rather than an open throat.",
+    "Seam flanges, keys, fastener pockets, and ear-root hardware are not included yet."
+  ]
+}

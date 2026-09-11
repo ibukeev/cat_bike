@@ -1,0 +1,318 @@
+{
+  "status": "fit-only ear-root iteration for F-07/F-08/F-09; preserve accepted V2 visible saddle notch and exact Gate 8 shell geometry; remove obsolete hidden capture pads from the candidate so seated shell clearance and the verified mirrored outward/upward service path can be validated before F-10/F-11/F-12 retention redesign; no STL, G-code, print release, eye change, rear-cassette change, C006 change, or aluminum change",
+  "feedback_scope": [
+    "F-07",
+    "F-08",
+    "F-09"
+  ],
+  "physical_acceptance_test": "A-07 remains pending a physical coupon",
+  "source_gate8_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/gate8-full-size-structural-review.blend",
+  "source_gate6_blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/10-design-gates/gate8-full-size-structural-iteration/_stage6-eyes/gate6-eye-modules-review.blend",
+  "config": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/config/ear-root-insertion-fit-review-v3.json",
+  "physical_fit_feedback": "hardware/mechanical/CAT_HEAD_MOUNT_AND_SHELL_PHYSICAL_FIT_REVIEW_2026-07-28.md",
+  "interface_revision": "CAT-HEAD-SHELL-ALUMINUM-V0.5",
+  "exact_gate8_source_mesh_count": 31,
+  "exact_gate8_source_meshes_unchanged": true,
+  "accepted_v2_relief_preserved": {
+    "connector_clearance_mm": 1.2,
+    "connector_corner_relief_depth_mm": 13.0,
+    "connector_side_tip_setback_mm": 9.0
+  },
+  "fit_clearance": {
+    "previous_deep_body_perimeter_clearance_mm": 0.35,
+    "candidate_deep_body_perimeter_clearance_mm": 2.5,
+    "previous_visible_cap_perimeter_clearance_mm": 0.05,
+    "candidate_visible_cap_perimeter_clearance_mm": 1.0,
+    "exact_ear_local_clearance_mm": 0.4,
+    "deep_body_path_margin_mm": 0.4,
+    "legacy_hidden_capture_pads_included": false,
+    "legacy_m2_5_retainer_included": false,
+    "retention_redesign_deferred_feedback_ids": [
+      "F-10",
+      "F-11",
+      "F-12"
+    ]
+  },
+  "right_canonical_deep_body_ear_trim": {
+    "clearance_mm": 0.4,
+    "cutter_components_applied": 2,
+    "faces_before": 13,
+    "faces_after": 18,
+    "volume_before_mm3": 10830.1602,
+    "volume_after_mm3": 10791.9225,
+    "volume_removed_mm3": 38.2377,
+    "volume_removed_percent": 0.3531
+  },
+  "right_canonical_full_body_ear_trim": {
+    "clearance_mm": 0.4,
+    "cutter_components_applied": 2,
+    "faces_before": 25,
+    "faces_after": 35,
+    "volume_before_mm3": 14248.7479,
+    "volume_after_mm3": 14113.2356,
+    "volume_removed_mm3": 135.5123,
+    "volume_removed_percent": 0.951
+  },
+  "left_is_exact_mirror_of_right_after_ear_trim": true,
+  "maximum_mirror_bounds_error_mm": 0.0,
+  "side_records": [
+    {
+      "side": "left",
+      "candidate": "EAR3_FIT_BODY_ONLY__left_ear_root_insert",
+      "topology": {
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "seated_structural_shell_intersections": {},
+      "seated_all_structural_shells_clear": true,
+      "ear_installed_for_seated_check": true,
+      "ear_removed_for_insertion_path": true,
+      "saddle": {
+        "name": "internal_flange_tab_left_ear__left_upper_head_01",
+        "internal_m3_paths": 4,
+        "alignment_dowels": 0,
+        "exterior_fastener_holes": 0
+      },
+      "redundant_quad_face_proof": {
+        "panel": "QUAD035",
+        "retained_face_index": 44,
+        "omitted_face_index": 45,
+        "omitted_unique_vertex": 60,
+        "barycentric_in_retained_triangle": [
+          0.238257,
+          0.549221,
+          0.212523
+        ],
+        "plane_error_mm": 9.3e-05,
+        "fully_contained_and_coplanar": true,
+        "safe_to_add_as_overlapping_face": false
+      },
+      "path_validation": {
+        "side": "left",
+        "ear_removed_during_path": true,
+        "checked_structural_shells": [
+          "left_lower_face",
+          "left_upper_head",
+          "rear_base",
+          "right_ear",
+          "right_lower_face",
+          "right_upper_head"
+        ],
+        "sample_count": 41,
+        "maximum_actual_triangle_intersection_pairs": 0,
+        "deep_body_margin_mm": 0.4,
+        "maximum_deep_margin_triangle_intersection_pairs": 0,
+        "actual_path_clear": true,
+        "deep_margin_path_clear": true,
+        "keyframes": [
+          {
+            "phase": "translate_outward_up",
+            "step": 0,
+            "rotation_degrees": 0.0,
+            "translation_mm": 0.0
+          },
+          {
+            "phase": "translate_outward_up",
+            "step": 20,
+            "rotation_degrees": 0.0,
+            "translation_mm": 30.0
+          },
+          {
+            "phase": "translate_outward_up",
+            "step": 40,
+            "rotation_degrees": 0.0,
+            "translation_mm": 60.0
+          }
+        ]
+      }
+    },
+    {
+      "side": "right",
+      "candidate": "EAR3_FIT_BODY_ONLY__right_ear_root_insert",
+      "topology": {
+        "connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "seated_structural_shell_intersections": {},
+      "seated_all_structural_shells_clear": true,
+      "ear_installed_for_seated_check": true,
+      "ear_removed_for_insertion_path": true,
+      "saddle": {
+        "name": "internal_flange_tab_right_ear__right_upper_head_01",
+        "internal_m3_paths": 4,
+        "alignment_dowels": 0,
+        "exterior_fastener_holes": 0
+      },
+      "redundant_quad_face_proof": {
+        "panel": "QUAD021",
+        "retained_face_index": 28,
+        "omitted_face_index": 29,
+        "omitted_unique_vertex": 63,
+        "barycentric_in_retained_triangle": [
+          0.238257,
+          0.549221,
+          0.212523
+        ],
+        "plane_error_mm": 9.3e-05,
+        "fully_contained_and_coplanar": true,
+        "safe_to_add_as_overlapping_face": false
+      },
+      "path_validation": {
+        "side": "right",
+        "ear_removed_during_path": true,
+        "checked_structural_shells": [
+          "left_ear",
+          "left_lower_face",
+          "left_upper_head",
+          "rear_base",
+          "right_lower_face",
+          "right_upper_head"
+        ],
+        "sample_count": 41,
+        "maximum_actual_triangle_intersection_pairs": 0,
+        "deep_body_margin_mm": 0.4,
+        "maximum_deep_margin_triangle_intersection_pairs": 0,
+        "actual_path_clear": true,
+        "deep_margin_path_clear": true,
+        "keyframes": [
+          {
+            "phase": "translate_outward_up",
+            "step": 0,
+            "rotation_degrees": 0.0,
+            "translation_mm": 0.0
+          },
+          {
+            "phase": "translate_outward_up",
+            "step": 20,
+            "rotation_degrees": 0.0,
+            "translation_mm": 30.0
+          },
+          {
+            "phase": "translate_outward_up",
+            "step": 40,
+            "rotation_degrees": 0.0,
+            "translation_mm": 60.0
+          }
+        ]
+      }
+    }
+  ],
+  "path_validation": {
+    "left": {
+      "side": "left",
+      "ear_removed_during_path": true,
+      "checked_structural_shells": [
+        "left_lower_face",
+        "left_upper_head",
+        "rear_base",
+        "right_ear",
+        "right_lower_face",
+        "right_upper_head"
+      ],
+      "sample_count": 41,
+      "maximum_actual_triangle_intersection_pairs": 0,
+      "deep_body_margin_mm": 0.4,
+      "maximum_deep_margin_triangle_intersection_pairs": 0,
+      "actual_path_clear": true,
+      "deep_margin_path_clear": true,
+      "keyframes": [
+        {
+          "phase": "translate_outward_up",
+          "step": 0,
+          "rotation_degrees": 0.0,
+          "translation_mm": 0.0
+        },
+        {
+          "phase": "translate_outward_up",
+          "step": 20,
+          "rotation_degrees": 0.0,
+          "translation_mm": 30.0
+        },
+        {
+          "phase": "translate_outward_up",
+          "step": 40,
+          "rotation_degrees": 0.0,
+          "translation_mm": 60.0
+        }
+      ]
+    },
+    "right": {
+      "side": "right",
+      "ear_removed_during_path": true,
+      "checked_structural_shells": [
+        "left_ear",
+        "left_lower_face",
+        "left_upper_head",
+        "rear_base",
+        "right_lower_face",
+        "right_upper_head"
+      ],
+      "sample_count": 41,
+      "maximum_actual_triangle_intersection_pairs": 0,
+      "deep_body_margin_mm": 0.4,
+      "maximum_deep_margin_triangle_intersection_pairs": 0,
+      "actual_path_clear": true,
+      "deep_margin_path_clear": true,
+      "keyframes": [
+        {
+          "phase": "translate_outward_up",
+          "step": 0,
+          "rotation_degrees": 0.0,
+          "translation_mm": 0.0
+        },
+        {
+          "phase": "translate_outward_up",
+          "step": 20,
+          "rotation_degrees": 0.0,
+          "translation_mm": 30.0
+        },
+        {
+          "phase": "translate_outward_up",
+          "step": 40,
+          "rotation_degrees": 0.0,
+          "translation_mm": 60.0
+        }
+      ]
+    }
+  },
+  "total_path_samples_both_sides": 82,
+  "all_seated_structural_shell_checks_clear": true,
+  "all_actual_path_samples_clear": true,
+  "all_deep_margin_path_samples_clear": true,
+  "legacy_retention_geometry_in_candidate": false,
+  "retention_redesign_deferred": [
+    "F-10",
+    "F-11",
+    "F-12"
+  ],
+  "candidate_is_printable_finished_part": false,
+  "generated_files": {
+    "blend": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/ear-root-insertion-fit-review-v3.blend",
+    "renders": [
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-both-seated-interior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-left-seated-exterior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-right-seated-exterior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-left-seated-interior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-right-seated-interior.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-left-path-01-seated-ear-removed.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-left-path-02-outward-up-30mm.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-left-path-03-outward-up-60mm.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-right-path-01-seated-ear-removed.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-right-path-02-outward-up-30mm.png",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/60-ear-root-reviews/ear-root-insertion-fit-review-v3/renders/ear-root-fit-right-path-03-outward-up-60mm.png"
+    ]
+  },
+  "no_stl_or_gcode_exported": true,
+  "not_print_released": true,
+  "review_holds": [
+    "This V3 review addresses only physical-fit feedback F-07, F-08, and F-09: both upper corners, the lower-center region, and global snugness/insertion.",
+    "The accepted V2 13/9 mm saddle-notch boundary remains unchanged before the localized exact-ear clearance cut.",
+    "The old hidden overlap/capture pads and M2.5 retainer are intentionally absent because the audit proved they are the dominant inherited upper-head obstruction; this fit body is not retained and cannot be printed as a finished part.",
+    "Retention, seated datums, flange strength, hardware/tool access, and clamp behavior remain explicitly deferred to F-10/F-11/F-12 after the fit envelope is approved.",
+    "The ear and retainers are removed during the outward/upward path; the ear is checked separately in the final seated position.",
+    "Accepted eye mounts, lower-face/rear-cassette ownership, requested reinforcement direction, C006, and aluminum V0.5 remain unchanged.",
+    "No STL, G-code, slicer project, fabrication output, or print release is produced."
+  ]
+}

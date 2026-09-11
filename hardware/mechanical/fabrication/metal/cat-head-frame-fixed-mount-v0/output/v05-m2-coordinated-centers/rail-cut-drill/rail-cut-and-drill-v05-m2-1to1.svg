@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="354mm"
+ height="106mm"
+ viewBox="-177 -53
+ 354 106">
+ <title>V0.5-M2 rail compound cut and drill drawing</title>
+ <style>
+  .outline{fill:#eaf1f5;stroke:#000;stroke-width:.25}
+  .adapter{fill:none;stroke:#8a2be2;stroke-width:.28}
+  .shell{fill:none;stroke:#126ec2;stroke-width:.28}
+  .shoe{fill:none;stroke:#e46c0a;stroke-width:.28}
+  .center{fill:none;stroke:#777;stroke-width:.18;stroke-dasharray:2 2}
+  .dim{fill:none;stroke:#c41e3a;stroke-width:.18}
+  .note{font:3px monospace;fill:#111}
+  .warn{font:3px monospace;fill:#c41e3a}
+ </style>
+ <g transform="scale(1,-1)"><rect class="outline" x="0" y="-9.5" width="152.5" height="19"/><line class="dim" x1="0" y1="-9.5" x2="5.3845" y2="9.5"/><circle class="shoe" cx="14" cy="0" r="2.75"/><text class="note" x="9.5" y="15" transform="scale(1,-1)">M5 @ 14</text><circle class="shoe" cx="29" cy="0" r="2.75"/><text class="note" x="24.5" y="15" transform="scale(1,-1)">M5 @ 29</text><circle class="shell" cx="133.7761" cy="0" r="2.25"/><text class="note" x="125.7761" y="-14" transform="scale(1,-1)">M4 @ 133.776</text><text class="note" x="-155" y="-28" transform="scale(1,-1)">2x 19 x 19 x 2 tube | centerline 152.5 +/-0.25 | rough square cut 160</text><text class="note" x="-155" y="-23" transform="scale(1,-1)">compound lower end: longest 157.885, shortest 147.068; upper end square</text><text class="warn" x="-155" y="25" transform="scale(1,-1)">Fit/label solid plug, clamp rail on its angle bearing face, then transfer-drill complete stack</text><text class="warn" x="-155" y="30" transform="scale(1,-1)">Do not mark M5 stations from an arbitrary compound-cut corner: datum is bearing-plane centerline</text></g>
+</svg>

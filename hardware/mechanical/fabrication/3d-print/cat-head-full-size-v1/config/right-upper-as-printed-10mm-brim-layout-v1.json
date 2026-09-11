@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "status": "PASS_LAYOUT__HOLD_SOURCE_MESH_AND_PHYSICAL_FIRST_LAYER",
+  "scope": "Right-upper slicer placement and brim only; no CAD or mesh geometry change",
+  "approval": {
+    "user_response": "Approve",
+    "date": "2026-08-25",
+    "approved_proposal": "RIGHT-UPPER 10MM BRIM LAYOUT V1"
+  },
+  "source_project": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/assembly.3mf",
+  "source_project_sha256": "ac800ac7470c61cf4d640af6d652b25ac080142826aaadb4d24842bb9440720b",
+  "source_stl": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/assembly.stl",
+  "source_stl_sha256": "6b7ced6a6cb86e5d7635f622f6e18df53bf616a378823443f98dd8aa1e4c2f4d",
+  "output_project": "output/50-slicer-projects/right-upper-as-printed-10mm-brim-layout-v1/CAT_HEAD_RIGHT_UPPER_AS_PRINTED_10MM_BRIM_LAYOUT_V1.3mf",
+  "output_project_sha256": "8b2efa7a9d77a46f7fe0a82187518ffebf55d02b86a6eeb080362611293b2c4a",
+  "frozen": {
+    "mesh_vertices": 5036,
+    "mesh_triangles": 9556,
+    "scale": 1.0,
+    "freecad_sources": true,
+    "stl_source": true,
+    "filament_profile": "Prusament ASA @MK4",
+    "layer_height_mm": 0.2,
+    "infill_percent": 25,
+    "perimeters": 3,
+    "support_material": true,
+    "support_material_auto": true,
+    "support_material_style": "snug",
+    "support_threshold_deg": 40,
+    "prusa_slicer_info": {
+      "status": "PREEXISTING_SOURCE_MESH_HOLD",
+      "facets": 9556,
+      "manifold": false,
+      "open_edges": 75,
+      "facets_reversed": 16,
+      "backwards_edges": 48,
+      "parts": 166,
+      "observation_command": "prusa-slicer --info <review-project.3mf>"
+    }
+  },
+  "approved_change": {
+    "relative_world_x_tilt_deg": 22.0,
+    "relative_world_z_rotation_deg": -9.0,
+    "bed_center_xy_mm": [125.0, 105.0],
+    "drop_minimum_z_to_mm": 0.0,
+    "brim_type": "outer_only",
+    "brim_width_mm": 10.0,
+    "brim_separation_mm": 0.1,
+    "final_transform_3mf": [
+      -0.362612279,
+      -0.819482334,
+      0.443802927,
+      -0.664989564,
+      0.561156369,
+      0.492841161,
+      -0.652917464,
+      -0.116414057,
+      -0.748429390,
+      116.437612950,
+      110.220650427,
+      58.350728023
+    ]
+  },
+  "printer": {
+    "model": "Original Prusa MK4 Input Shaper",
+    "bed_mm": [250.0, 210.0, 220.0],
+    "nozzle_mm": 0.4
+  },
+  "pre_slice_envelope": {
+    "object_bbox_size_mm": [211.585666, 179.947112, 155.888917],
+    "object_margins_mm": {
+      "left": 19.207167,
+      "right": 19.207167,
+      "front": 15.026444,
+      "rear": 15.026444
+    },
+    "reserve_outside_conservative_10mm_envelope_mm": {
+      "left": 9.207167,
+      "right": 9.207167,
+      "front": 5.026444,
+      "rear": 5.026444
+    }
+  },
+  "release_gates": {
+    "source_hashes_match": "REQUIRED",
+    "only_build_transform_and_brim_settings_change": "REQUIRED",
+    "actual_slice_completes": "REQUIRED",
+    "actual_first_layer_inside_bed": "REQUIRED",
+    "actual_support_and_brim_visual_review": "PASS_RENDERED_FIRST_LAYER_EVIDENCE",
+    "actual_first_layer_extrusion_margins_mm": {
+      "left": 14.891,
+      "right": 14.304,
+      "front": 10.759,
+      "rear": 15.375
+    },
+    "preexisting_non_manifold_source_mesh": "HOLD",
+    "physical_first_layer_observation": "REQUIRED",
+    "print_release": "HOLD"
+  }
+}

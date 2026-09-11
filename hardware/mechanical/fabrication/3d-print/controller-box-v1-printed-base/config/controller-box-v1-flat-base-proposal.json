@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "design_status": "isolated_proposal_not_print_release",
+  "approved_contract": {
+    "problem": "Restore full ASA bed contact by removing Z-edge bevels from the base and mounting ears.",
+    "base_xy_corner_radius_mm": 4.0,
+    "mounting_ear_xy_corner_radius_mm": 2.0,
+    "bed_edge_radius_mm": 0.0,
+    "bed_datum_z_mm": 0.0,
+    "preserve_outer_envelope_mm": [132.0, 92.0, 42.0],
+    "preserve_maximum_footprint_mm": [132.0, 116.0],
+    "preserve_wall_mm": 2.8,
+    "preserve_floor_mm": 3.0,
+    "preserve_lid_interface": true,
+    "preserve_mounting_ear_positions_and_slots": true,
+    "approved_by_user": "2026-08-18"
+  },
+  "frozen_v0_baseline": {
+    "generator_sha256": "fbd1181eaa6e25136e7474f757d2e65e45b4b479a98bd136066d2529f186b5e9",
+    "config_sha256": "bc70051193fae52c1bbf89d68f0cbc271190f24a1cfd30f0670a9ddff27a7c59",
+    "base_stl_sha256": "59e1957b117d6584ce26e3d5fd4076a0d70529f0b5ad9710dcae0bccc9d7dc12"
+  },
+  "validation_gates": {
+    "bbox_tolerance_mm": 0.001,
+    "bed_datum_tolerance_mm": 0.0001,
+    "minimum_bottom_contact_area_mm2": 12000.0,
+    "require_closed_manifold": true,
+    "require_positive_volume": true
+  }
+}

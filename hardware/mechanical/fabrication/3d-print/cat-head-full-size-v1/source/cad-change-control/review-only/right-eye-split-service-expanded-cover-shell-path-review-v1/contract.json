@@ -1,0 +1,203 @@
+{
+  "schema_version": "cat-head-right-eye-split-service-expanded-cover-shell-path-review-v1",
+  "contract_id": "right-eye-split-service-expanded-cover-shell-path-review-v1",
+  "authority": "REVIEW_ONLY__NON_AUTHORITATIVE__NOT_A_PRINT_SOURCE",
+  "inputs": {
+    "held_candidate": {
+      "path": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/candidate.FCStd",
+      "sha256": "ec72a9480d105fdfdee2d509424b35de2e0abb0efb1eded14e718bfceb302f61",
+      "object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34"
+    },
+    "v1_generator_sha256": "611aa4b63a0cd81420a01507168095c9a0a4d967d306688d78fe69b5383815fc",
+    "v1_contract_sha256": "08fa1c89ad307598e8b0edaa3dc55085cd2ddc977904209972ca698d21790b9f",
+    "stage_a_provenance_sha256": "06d8481cfec3a35427ab07a0ae6d9a4601df65d89fa47392db2579a8af3fca81"
+  },
+  "motion": {
+    "peak_tilt_deg": 15.0,
+    "pivot_mm": [
+      66.77454,
+      66.06956,
+      122.28207
+    ],
+    "rotation_axis": [
+      0.40622750781416417,
+      -0.8911442067301298,
+      0.20209209461634217
+    ],
+    "translation_axis_inward_n": [
+      -0.3093743710330279,
+      0.9105430240972069,
+      -0.27422417802927535
+    ],
+    "required_clearance_mm": 0.5,
+    "dimensional_tolerance_mm": 0.01,
+    "cutter_bbox_padding_mm": 0.75,
+    "samples": [
+      [
+        0,
+        15.0,
+        -45.0
+      ],
+      [
+        1,
+        15.0,
+        -40.5
+      ],
+      [
+        2,
+        15.0,
+        -36.0
+      ],
+      [
+        3,
+        15.0,
+        -31.5
+      ],
+      [
+        4,
+        15.0,
+        -27.0
+      ],
+      [
+        5,
+        15.0,
+        -22.5
+      ],
+      [
+        6,
+        15.0,
+        -18.0
+      ],
+      [
+        7,
+        15.0,
+        -13.5
+      ],
+      [
+        8,
+        15.0,
+        -9.0
+      ],
+      [
+        9,
+        13.75,
+        -8.25
+      ],
+      [
+        10,
+        12.5,
+        -7.5
+      ],
+      [
+        11,
+        11.25,
+        -6.75
+      ],
+      [
+        12,
+        10.000000000000002,
+        -6.000000000000001
+      ],
+      [
+        13,
+        8.749999999999998,
+        -5.249999999999999
+      ],
+      [
+        14,
+        7.5,
+        -4.5
+      ],
+      [
+        15,
+        6.249999999999999,
+        -3.7499999999999996
+      ],
+      [
+        16,
+        5.000000000000001,
+        -3.0000000000000004
+      ],
+      [
+        17,
+        3.75,
+        -2.25
+      ],
+      [
+        18,
+        2.4999999999999996,
+        -1.4999999999999996
+      ],
+      [
+        19,
+        1.2500000000000004,
+        -0.7500000000000003
+      ],
+      [
+        20,
+        0.0,
+        -0.0
+      ]
+    ]
+  },
+  "serial_owner_stages": [
+    {
+      "owner": "lower_C001",
+      "collision_poses": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "owner": "lower_C013",
+      "collision_poses": [
+        17,
+        18
+      ]
+    }
+  ],
+  "coverage": {
+    "projection_depth_mm": 40.0,
+    "maximum_removed_volume_outside_coverage_mm3": 1e-06,
+    "baseline_source": "approved V1 bezel plus lower cover lip outward-facing planar faces",
+    "extension_construction": "unchanged exact visible-aperture inner wire plus radially expanded V1 outer-front perimeter",
+    "measurement_resolution_mm": 0.001,
+    "manufacturing_round_increment_mm": 0.5,
+    "manufacturing_extra_margin_mm": 0.5,
+    "maximum_selected_extension_mm": 3.0,
+    "selected_extension_mm": null,
+    "cover_axial_thickness_mm": 0.8
+  },
+  "preservation": {
+    "held_eye_target": "exact_read_only",
+    "visible_aperture": "exact",
+    "eye_mount_bore_centers_axes_and_seats": "exact_read_only",
+    "changed_shell_owners": [
+      "lower_C001",
+      "lower_C013"
+    ],
+    "all_other_shell_owners": "exact_read_only",
+    "external_skin": "unchanged_except_removed_volume_fully_inside_widened_review_cover_projection",
+    "minimum_wall_mm": 0.7
+  },
+  "outputs": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-split-service-expanded-cover-shell-path-review-v1",
+    "fcstd": "RIGHT_EYE_SPLIT_SERVICE_EXPANDED_COVER_SHELL_PATH_REVIEW_ONLY_NON_AUTHORITATIVE_V1.FCStd",
+    "validation": "validation.json",
+    "fixed_views": [
+      "front.png",
+      "rear.png",
+      "lower-path.png",
+      "side.png"
+    ]
+  },
+  "release_holds": [
+    "REVIEW_ONLY__NON_AUTHORITATIVE__NO_PRINT_NO_EXPORT_NO_PROMOTION",
+    "Lower receiving-owner seat remains a separate unresolved integration hold."
+  ]
+}

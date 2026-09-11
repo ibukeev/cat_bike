@@ -1,0 +1,122 @@
+{
+  "schema_version": "cat-head-right-lower-rear-v5-long-ledge-interface-review-v5",
+  "contract_id": "right-lower-rear-v5-long-ledge-interface-review-v5",
+  "tooling_revision": 10,
+  "authority": "REVIEW_ONLY_NON_AUTHORITATIVE_NOT_A_PRINT_SOURCE",
+  "user_decision": "Approve the V4 straight lower/rear ownership and proceed with one long internal ledge plus two widely spaced M3 fasteners. Small cosmetic cleanup is deferred.",
+  "change_bucket": "front_to_rear_connection_interface_only",
+  "inputs": {
+    "v4_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-seam-cleanup-review-v4/contract.json",
+      "sha256": "6079adb9caafeb5030a1007e20a3e2ea448055523f8adf22a8cf3f2071ae3c2a"
+    },
+    "v4_generator": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-seam-cleanup-review-v4/generate_freecad_review.py",
+      "sha256": "e8f69af71f748f45dc6cbffd393e1fe0017095f7842453b68e45d59197b25483"
+    },
+    "v4_review": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-seam-cleanup-review-v4/RIGHT_LOWER_REAR_V5_SEAM_CLEANUP_REVIEW_ONLY_V4.FCStd",
+      "sha256": "70d6b5cfdeb065eb4f898ee30b3ddfd43148e0ef309a340e183b5cd04c25be68"
+    },
+    "v4_validation": {
+      "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-seam-cleanup-review-v4/validation.json",
+      "sha256": "29bf52af6ba311c52bd5d1ba55d53e9a9269cd36ccb29c8da5477233281e2971"
+    },
+    "measurement_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-long-ledge-interface-review-v5/measurement-contract.json",
+      "sha256": "a1390d63d7b375a041bf891be10141746e227f31e78b3da1f8bbe4790c805828"
+    },
+    "measurement_tool": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-long-ledge-interface-review-v5/measure_seam_skin.py",
+      "sha256": "fb2b1dbae30e90f6a12060fe74a8b063b9e3e1cbf4e60feb6c475c66b0ecdca1"
+    }
+  },
+  "measurement_evidence": {
+    "temporary_report": "/tmp/right-lower-rear-v5-long-ledge-seam-measurement-20260820.json",
+    "sha256": "0a0b1fc04ae03c3714c4e51fc5b6a4d569185b901a9d59a877dbd05610f82c6f",
+    "sample_count": 54,
+    "populated_sample_count": 54,
+    "measured_inner_surface_v_per_n": -0.176416299625
+  },
+  "seam_frame": {
+    "origin_world_mm": [43.27894931962105, 187.62752696335443, 49.506195577012136],
+    "axis_u": [0.9999953872074454, -0.00263868230318262, -0.00150430034710222],
+    "axis_v_shell_inward": [-0.00005981280271183169, -0.5122769763690231, 0.8588202931374177],
+    "axis_n_toward_rear": [0.003036772342480212, 0.8588162416011439, 0.5122747711685847],
+    "surface_v_per_n": -0.176416299625,
+    "approved_straight_seam_gap_mm": 0.3
+  },
+  "ledge": {
+    "owner": "retained_front_component_001",
+    "u_min_mm": -36.0,
+    "u_max_mm": 36.0,
+    "n_min_mm": -4.0,
+    "n_max_mm": 13.0,
+    "bearing_clearance_inward_mm": 0.3,
+    "shelf_thickness_mm": 4.0,
+    "front_root_n_min_mm": -4.0,
+    "front_root_n_max_mm": -0.5,
+    "front_root_embed_outward_mm": 1.2,
+    "local_pad_u_width_mm": 12.0,
+    "local_pad_n_width_mm": 10.0,
+    "local_pad_total_depth_mm": 8.0,
+    "rear_sweep_clearance_margin_mm": 0.31,
+    "rear_sweep_clearance_policy": "subtract only 0.31 mm expanded AABBs of exact positive common volumes at the six pinned removal-slide samples",
+    "rear_assembled_clearance_margin_mm": 0.30,
+    "rear_assembled_clearance_owner_indices": [15, 45],
+    "rear_assembled_clearance_policy": "subtract 0.30 mm world-axis-expanded bounding pockets of only the two exact rear owners measured below the clearance gate: component_015 and component_045"
+  },
+  "fasteners": {
+    "standard": "M3",
+    "count": 2,
+    "station_u_mm": [-24.0, 24.0],
+    "station_n_mm": 7.0,
+    "station_span_mm": 48.0,
+    "rear_clearance_diameter_mm": 3.4,
+    "washer_outer_diameter_mm": 7.0,
+    "washer_thickness_mm": 0.8,
+    "screw_length_mm": 16.0,
+    "screw_head_diameter_mm": 5.5,
+    "screw_head_height_mm": 3.0,
+    "captive_nyloc_across_flats_mm": 5.7,
+    "captive_nyloc_height_mm": 4.0,
+    "driver_corridor_diameter_mm": 8.0,
+    "driver_corridor_length_mm": 12.0
+  },
+  "numeric_gates": {
+    "volume_epsilon_mm3": 0.000001,
+    "distance_epsilon_mm": 0.000001,
+    "minimum_rear_clearance_mm": 0.29,
+    "minimum_bore_to_edge_material_mm": 3.5,
+    "minimum_front_root_overlap_mm3": 80.0,
+    "minimum_rear_hole_common_mm3": 1.0,
+    "maximum_non_target_front_common_mm3": 0.000001,
+    "minimum_nut_radial_clearance_mm": 0.05,
+    "slide_samples_mm": [0.0, 5.0, 10.0, 15.0, 20.0, 25.0],
+    "require_one_valid_closed_ledge_solid": true,
+    "require_zero_rear_penetration": true,
+    "require_zero_unintended_front_owner_penetration": true,
+    "require_two_rear_clearance_paths": true,
+    "require_driver_corridors_clear": true,
+    "require_rear_removal_slide_clear": true,
+    "require_v4_shapes_unmodified": true
+  },
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/right-lower-rear-v5-long-ledge-interface-review-v5",
+    "fcstd": "RIGHT_LOWER_REAR_V5_LONG_LEDGE_INTERFACE_REVIEW_ONLY_V5.FCStd",
+    "validation": "validation.json"
+  },
+  "preserved": [
+    "all V4 front, rear, mesh-only, straight-seam, and right-eye reference shape objects",
+    "V4 ownership and 0.30 mm straight-seam gap",
+    "manual HEAD_BOTTOM_FLANGE fusion in component 007",
+    "all exterior appearance and all existing lower-head hardware"
+  ],
+  "prohibited": [
+    "mutation or save of V4, V3, or canonical geometry",
+    "fusion of the proposed ledge into the retained front owner",
+    "cutting the rear owner with the proposed clearance holes",
+    "cosmetic cleanup or unrelated lower-head edits",
+    "bilateral mirroring, STL, STEP, 3MF, G-code, slicing, or print release"
+  ]
+}

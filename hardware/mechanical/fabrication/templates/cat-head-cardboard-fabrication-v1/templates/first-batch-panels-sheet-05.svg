@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="279.4mm" height="215.9mm" viewBox="0 0 279.4 215.9">
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<text x="10" y="7" font-size="4.5" font-weight="700">Cat head first-batch panels - sheet 05 - print at 100%</text>
+<rect x="10" y="10" width="259.4" height="195.9" fill="none" stroke="#d1d5db" stroke-width="0.3" stroke-dasharray="3 2"/>
+<polygon points="18.000,18.000 48.102,18.000 46.197,60.471 29.461,55.379" fill="#dcfce7" stroke="#111827" stroke-width="0.35"/>
+<text x="35.440" y="33.962" font-size="4.2" text-anchor="middle" font-weight="700">MANQ003</text>
+<text x="35.440" y="39.462" font-size="3.1" text-anchor="middle">forehead</text>
+<text x="35.440" y="44.962" font-size="2.8" text-anchor="middle" fill="#b91c1c">warp 3.1mm</text>
+<line x1="18.000" y1="18.000" x2="46.197" y2="60.471" stroke="#b91c1c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<circle cx="18.000" cy="18.000" r="1.15" fill="#111827"/>
+<text x="19.800" y="16.200" font-size="2.5">P024</text>
+<circle cx="48.102" cy="18.000" r="1.15" fill="#111827"/>
+<text x="49.902" y="16.200" font-size="2.5">P010</text>
+<circle cx="46.197" cy="60.471" r="1.15" fill="#111827"/>
+<text x="47.997" y="58.671" font-size="2.5">P027</text>
+<circle cx="29.461" cy="55.379" r="1.15" fill="#111827"/>
+<text x="31.261" y="53.579" font-size="2.5">P028</text>
+<text x="33.051" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 33.051 18.000)" fill="#1f2937">E005 30.10mm</text>
+<text x="47.150" y="39.235" font-size="2.7" text-anchor="middle" transform="rotate(-87.43 47.150 39.235)" fill="#1f2937">E009 42.51mm</text>
+<text x="37.829" y="57.925" font-size="2.7" text-anchor="middle" transform="rotate(16.92 37.829 57.925)" fill="#1f2937">E010 17.76mm</text>
+<text x="23.731" y="36.689" font-size="2.7" text-anchor="middle" transform="rotate(72.95 23.731 36.689)" fill="#1f2937">E011 39.22mm</text>
+</svg>

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "review_id": "CAT_HEAD_BILATERAL_AB_MIRROR_REVIEW_V1",
+  "status": "partial HS-08 review: exact left feature-mirror placement user-approved; left panel integrated and valid; isolated actual-left C001 V2 and A/B review-copy union pass digitally but await visual approval and controlled integration; not print-ready",
+  "approved_source": {
+    "right_review": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-ab-owner-integration-review-v1/CAT_HEAD_RIGHT_AB_OWNER_INTEGRATION_REVIEW_V1.FCStd",
+    "right_review_sha256": "e9974661a5a0a71a12bcb6ab6d0d66ceae354fd8744486ff08ce72e20cf0376c",
+    "user_approval": "LGTM on 2026-08-09",
+    "mirror_plane": "head X = 0"
+  },
+  "exact_left_references": {
+    "source_blend": "output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend",
+    "source_blend_sha256": "cac7c0a1cfadfa0adbd469012b8c94b849b5f1d9a25488098c7e0baa533baa62",
+    "panel_object": "EAR10_ACCEPTED_V3_BODY__left",
+    "panel_stl_sha256": "ffccdf60cd7fb6df8eb2518c9e95695b6f17907cf8f5acc108ccdd2479874b42",
+    "upper_head_object": "left_upper_head",
+    "upper_head_stl_sha256": "23324a3854b75c2a0d8fcfbbc45e610c8693c8244e45995a4a0123c2ef499f13",
+    "ear_object": "left_ear",
+    "ear_stl_sha256": "89434f18296f2d06ab4685fb1f406e06a0e2b63a166deb6eab8618bed33e4fc2",
+    "reference_manifest": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/left-owner-reference-v1/reference-manifest.json"
+  },
+  "mirror_contract": {
+    "mirror_only_connector_features": true,
+    "mirror_entire_right_upper_head": false,
+    "panel_owner_basis": "V10 constructs EAR10_ACCEPTED_V3_BODY__left as the exact X mirror of the accepted right panel; the approved right valid panel owner is mirrored on the same X=0 datum",
+    "head_owner_basis": "actual asymmetric V10 left_upper_head, independently exported and audited; never replaced by the right upper head",
+    "tab_resize_mm": 0.0,
+    "tab_reposition_mm": 0.0,
+    "bore_diameter_mm": 3.4,
+    "pair_gap_mm": 0.3,
+    "surface_open_cavity_diameter_mm": 4.25,
+    "surface_open_cavity_depth_mm": 3.2,
+    "insert_recess_mm": 0.2,
+    "remaining_exterior_wall_mm": 0.8,
+    "minimum_owner_root_overlap_mm3": 80.0
+  },
+  "left_results": {
+    "placement_approval": "User visually approved the exact mirrored left A/B placement with 'LTGT' (interpreted as LGTM) on 2026-08-09; connector positions are frozen.",
+    "panel_integrated_object": "PROPOSED__LEFT_TRANSLUCENT_PANEL__A_B_INTEGRATED_V1",
+    "panel_valid": true,
+    "panel_closed": true,
+    "panel_solids": 1,
+    "panel_faces": 158,
+    "panel_edges": 261,
+    "panel_vertices": 103,
+    "panel_volume_mm3": 16327.43,
+    "head_tab_review_objects": [
+      "REVIEW_ONLY__LEFT_A_HEAD_TAB_EXACT_MIRROR_V1",
+      "REVIEW_ONLY__LEFT_B_HEAD_TAB_EXACT_MIRROR_V1"
+    ],
+    "root_overlap_mm3": {
+      "a_panel": 81.46,
+      "b_panel": 94.72,
+      "a_head": 129.84,
+      "b_head": 124.90
+    },
+    "pair_gap_mm": {
+      "a": 0.3,
+      "b": 0.3,
+      "derivation": "rigid X=0 mirror of the approved right tab pairs"
+    },
+    "clearance_mm": {
+      "integrated_panel_to_actual_left_c001": 0.0353,
+      "integrated_panel_to_left_ear": 0.0761,
+      "left_a_head_tab_to_left_ear": 27.4965,
+      "left_b_head_tab_to_left_ear": 13.2877
+    }
+  },
+  "left_owner_blocker": {
+    "actual_upper_head_components": 41,
+    "right_upper_head_components_for_comparison": 42,
+    "source_fingerprint": "805c480a8edfff9dacf99517cfa5ca8b98fbc198614cec74d22b046b8d88e956",
+    "source_unchanged": true,
+    "retained_vertex_displacement_mm": 0.0,
+    "bounds_preserved": true,
+    "diagnostic_validation_status": "SUPERSEDED_BY_ISOLATED_C001_V2_DIGITAL_PASS",
+    "diagnostic_failing_components": [
+      "PROPOSED__LEFT_UPPER_HEAD_REPAIRED_COMPONENT__C001",
+      "PROPOSED__LEFT_UPPER_HEAD_REPAIRED_COMPONENT__C003"
+    ],
+    "freecad_c001_result": "original closed but invalid; isolated C001 V2 is closed, valid, one solid and preserves retained coordinates/bounds",
+    "attempted_head_union_result": "valid compound with three solids, not a one-solid union",
+    "rejected_result_disposition": "deleted from the review document",
+    "required_next_step": "visually review the marked 0.234326631 mm triangulation reinterpretation in isolated V2; after approval integrate only actual left C001, then rerun bilateral access/collision/exterior/full-head gates"
+  },
+  "review_output": {
+    "freecad": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/bilateral-ab-mirror-review-v1/CAT_HEAD_BILATERAL_AB_MIRROR_REVIEW_V1.FCStd",
+    "freecad_sha256": "00f6305d62f8e3928e141291ad422ba880f388c5d58224fb06d0522cbf205d6d",
+    "freecad_size_bytes": 1645257,
+    "serialization_note": "Restored to the intended 29-object semantic contents after removing one accidentally saved V2 review reference; prior 30-object serialization is preserved in the isolated V2 review/audit folder.",
+    "fcstd_zip_validation": "PASS",
+    "context_image": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/bilateral-ab-mirror-review-v1/review/01-bilateral-upper-context-isometric.png",
+    "left_selected_tabs_image": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/bilateral-ab-mirror-review-v1/review/02-left-head-tabs-selected-side-context.png"
+  },
+  "review_holds": [
+    "Mirrored left A/B placement is visually approved and frozen; isolated C001 V2 plus A/B is one valid solid, but HS-08 stays open pending local-facet visual approval, controlled integration, and bilateral reruns.",
+    "No automatic repair, whole-right-shell mirror, exterior displacement, STL, slicing, G-code, ASA shell printing, or aluminum change is authorized.",
+    "The aluminum workstream remains frozen at CAT-HEAD-SHELL-ALUMINUM-V0.5-M2."
+  ]
+}

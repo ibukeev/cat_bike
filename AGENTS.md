@@ -14,6 +14,21 @@ This is a hardware-first repository for a Burning Man electric bike LED installa
 
 Prefer descriptive filenames that communicate the hardware or feature they affect, such as `docs/bom/led-strip-options.md` or `hardware/electrical/wiring/rear-harness.md`.
 
+Start at `hardware/mechanical/fabrication/3d-print/README.md` for retained
+fabrication milestones. The 2026-09-09 cleanup separated tiny and midsize heads
+while initially leaving large-head work for a separate review. On 2026-09-10 selected
+lower-shell print packages moved to cat-head-full-size-v1/working/ and all
+reports/ contents were retired. Historical report paths are no longer live.
+Legacy cat-head-small-v1 links outside reports/ remain. Midsize contracts
+now use retained package paths; their old generation authorizations remain
+fail-closed pending a fresh authorized preflight. Do not repin old validation
+evidence merely to bypass that hold.
+The user subsequently authorized large-head cleanup for a rebuild. Its README
+is the curated index of retained working states and frozen references; obsolete
+iterations and one-off tools were retired without changing retained geometry.
+Shared tiny/midsize dependencies remain. The cleanup record and local recovery
+location are in `docs/PROJECT_CLEANUP_PLAN.md`.
+
 ## Build, Test, and Development Commands
 
 No project-specific build system is committed yet. When adding one, document exact commands in `README.md` and keep this guide in sync:
@@ -30,6 +45,11 @@ Follow the conventions of the language introduced for each module. Use consisten
 
 Keep generated files, build outputs, caches, and local configuration out of version control. Add `.gitignore` entries as soon as toolchains are introduced.
 
+Exception: selected irreplaceable CAD/print milestones are tracked with Git LFS
+under the root .gitattributes policy. Install Git LFS and run git lfs pull before
+reading or hash-verifying those files. Do not confuse pointer files with geometry,
+force-add new generated iterations, or treat a backup commit as print approval.
+
 ## Testing Guidelines
 
 Place automated tests under `tests/automated/` using filenames that identify the unit or behavior under test, such as `test_pixel_map.py`. Place manual checklists under `tests/manual/`. Cover logic that can be tested off-device, especially LED mapping, generated configuration, timing assumptions, and power-budget calculations.
@@ -38,7 +58,7 @@ For hardware-dependent behavior, document manual verification steps until automa
 
 ## Commit & Pull Request Guidelines
 
-This repository has no commit history yet, so use a simple imperative commit style: `Add LED pattern controller`, `Document wiring layout`, or `Fix battery cutoff threshold`.
+Use a simple imperative commit style: `Add LED pattern controller`, `Document wiring layout`, or `Fix battery cutoff threshold`.
 
 Pull requests should include a short summary, testing performed, any hardware used for verification, and photos or screenshots when visual output, wiring, or enclosure changes are involved. Link related issues when available and call out any required setup, calibration, or flashing steps.
 

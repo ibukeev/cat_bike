@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "status": "REJECTED by user visual review; local ear-surface protrusion creates an unacceptable Frankenstein appearance",
+  "units": "mm",
+  "problem": "Move the two-bolt primary-ear flange pair inside the ear silhouette while retaining direct roots in both the ear and upper-head owners.",
+  "frozen_source": {
+    "review_file": "output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-primary-ear-legacy-flange-flush-owner-cut-review-v2/CAT_HEAD_RIGHT_PRIMARY_EAR_LEGACY_FLANGE_FLUSH_OWNER_CUT_REVIEW_V2.FCStd",
+    "ear_owner": "PROPOSED__RIGHT_EAR_C001__LEGACY_FLANGE_FLUSH_REMOVED_V2",
+    "upper_head_owner": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref_ref_ref_ref",
+    "flange_pair": "REVIEW__RIGHT_PRIMARY_EAR_DUAL_BOLT_FLANGE_PAIR_V1_ref_ref_ref",
+    "left_side_changed": false,
+    "aluminum_interface_changed": false
+  },
+  "approved_anchors": [
+    {
+      "role": "outer_two_bolt_flange_face",
+      "object": "REVIEW__RIGHT_PRIMARY_EAR_DUAL_BOLT_FLANGE_PAIR_V1_ref_ref_ref",
+      "subelement": "Face5",
+      "centroid": [55.75, 155.85, 251.39],
+      "normal": [-0.9405, -0.1415, -0.3088],
+      "area_mm2": 245.84
+    },
+    {
+      "role": "ear_inboard_surface",
+      "object": "PROPOSED__RIGHT_EAR_C001__LEGACY_FLANGE_FLUSH_REMOVED_V2",
+      "subelement": "Face32",
+      "centroid": [89.62, 162.47, 280.30],
+      "normal": [-0.5303, -0.3728, 0.7615],
+      "area_mm2": 1581.45
+    },
+    {
+      "role": "upper_head_receiving_surface",
+      "object": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref_ref_ref_ref",
+      "subelement": "Face359",
+      "centroid": [39.36, 165.20, 259.69],
+      "normal": [0.0648, -0.2832, 0.9569],
+      "area_mm2": 661.69
+    },
+    {
+      "role": "ear_boundary_direction",
+      "object": "PROPOSED__RIGHT_EAR_C001__LEGACY_FLANGE_FLUSH_REMOVED_V2",
+      "subelement": "Edge57",
+      "length_mm": 123.26,
+      "user_hover_point": [65.72, 144.41, 254.82]
+    }
+  ],
+  "proposal": {
+    "operation": "rigid translation of complete paired flange geometry without rotation",
+    "distance_mm": 9.2,
+    "direction_unit_xyz": [0.448889, -0.885739, -0.118174],
+    "translation_xyz_mm": [4.130, -8.149, -1.087],
+    "bolt_count": 2,
+    "fastener": "M3",
+    "clearance_diameter_mm": 3.4,
+    "flange_geometry_changed": false
+  },
+  "validation_gates": {
+    "valid_closed_solids": true,
+    "self_intersection_free": true,
+    "face_count": 19,
+    "solid_count": 2,
+    "pair_volume_mm3": 1944.97,
+    "ear_root_intersection_mm3": 399.8546,
+    "upper_head_root_intersection_mm3": 135.9381,
+    "minimum_root_intersection_mm3": 80.0,
+    "pair_bbox_x_mm": [55.83, 71.79],
+    "ear_bbox_x_mm": [55.80, 151.92],
+    "bounding_box_overhang": false,
+    "visual_exterior_and_tool_access_approval": false,
+    "visual_failure": "The complete moved flange pair still sticks beyond the local ear surface. Bounding-box containment was an invalid proxy for the actual silhouette."
+  },
+  "rejected_variants": [
+    "V1: 8 mm motion was 93.6% along the bolt axis and disconnected the upper-head root.",
+    "V2: corrected perpendicular construction used the wrong sign and produced 7.6908 mm X-side overhang.",
+    "V3: correct sign and both roots passed, but 0.5088 mm X-side overhang remained.",
+    "V4: bounding-box overhang reached zero, but user visual review showed unacceptable local-surface protrusion and a Frankenstein appearance. The complete-pair translation approach is rejected."
+  ],
+  "release_holds": [
+    "No production union or owner cut before visual approval.",
+    "No left mirror before right-side approval.",
+    "No STL, slicing, G-code, ASA recommendation, or print release.",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2 remains frozen."
+  ]
+}

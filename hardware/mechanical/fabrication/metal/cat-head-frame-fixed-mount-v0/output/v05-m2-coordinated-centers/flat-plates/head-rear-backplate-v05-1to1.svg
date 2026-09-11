@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="344mm"
+ height="139mm"
+ viewBox="-172 -69.5
+ 344 139">
+ <title>V0.5-M2 ordered-angle aluminum backplate 1:1</title>
+ <style>
+  .outline{fill:#eaf1f5;stroke:#000;stroke-width:.25}
+  .adapter{fill:none;stroke:#8a2be2;stroke-width:.28}
+  .shell{fill:none;stroke:#126ec2;stroke-width:.28}
+  .shoe{fill:none;stroke:#e46c0a;stroke-width:.28}
+  .center{fill:none;stroke:#777;stroke-width:.18;stroke-dasharray:2 2}
+  .dim{fill:none;stroke:#c41e3a;stroke-width:.18}
+  .note{font:3px monospace;fill:#111}
+  .warn{font:3px monospace;fill:#c41e3a}
+ </style>
+ <g transform="scale(1,-1)"><polygon class="outline" points="-60,-39.8319 60,-39.8319 30,39.8319 -30,39.8319"/><circle class="adapter" cx="-22" cy="-20" r="3.3"/><circle class="adapter" cx="-22" cy="20" r="3.3"/><circle class="adapter" cx="22" cy="-20" r="3.3"/><circle class="adapter" cx="22" cy="20" r="3.3"/><circle class="shell" cx="-10" cy="30" r="2.75"/><circle class="shell" cx="10" cy="30" r="2.75"/><circle class="shell" cx="-20" cy="0" r="2.75"/><circle class="shell" cx="20" cy="0" r="2.75"/><circle class="shell" cx="-7.4" cy="-30" r="2.75"/><circle class="shell" cx="7.4" cy="-30" r="2.75"/><circle class="shoe" cx="-36" cy="-30" r="2.75"/><circle class="shoe" cx="-47.4" cy="-30" r="2.75"/><circle class="shoe" cx="-38" cy="-9" r="2.75"/><circle class="shoe" cx="36" cy="-30" r="2.75"/><circle class="shoe" cx="47.4" cy="-30" r="2.75"/><circle class="shoe" cx="38" cy="-9" r="2.75"/><path class="center" d="M -60,0 H 60 M 0,-39.8319 V 39.8319"/><text class="note" x="-59" y="-49" transform="scale(1,-1)">V0.5 HEAD BACKPLATE | 3 mm 6061-T6 | PRINT 100%</text><text class="note" x="-59" y="-45" transform="scale(1,-1)">purple 4x dia6.6 adapter | blue 6x dia5.5 shell | orange 6x dia5.5 angle bases</text><text class="warn" x="-59" y="48" transform="scale(1,-1)">V0.5-M2 ORDERED-ANGLE METAL-SIDE PATTERN; PHYSICAL COUPON + ASA INTEGRATION REQUIRED</text></g>
+</svg>

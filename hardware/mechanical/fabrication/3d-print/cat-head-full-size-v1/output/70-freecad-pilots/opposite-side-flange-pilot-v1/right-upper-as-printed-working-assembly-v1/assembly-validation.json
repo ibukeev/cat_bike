@@ -1,0 +1,1959 @@
+{
+  "assembly_fused": false,
+  "contract_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-upper-as-printed-working-assembly-v1/contract.json",
+  "contract_sha256": "89dff6f5d1cdb25a1e7a68f17e247b79221a0c7291304558679dddb81ffcb6da",
+  "copied_shape_signatures": {
+    "APPROVED_LEFT_EAR_CONTEXT": {
+      "copy": {
+        "bounds_mm": [
+          -151.91549682617188,
+          124.44599914550781,
+          187.2570037841797,
+          -55.797000885009766,
+          210.15899658203125,
+          330.0
+        ],
+        "closed": true,
+        "face_count": 57,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 17567.11223159986
+      },
+      "source": {
+        "bounds_mm": [
+          -151.91549682617188,
+          124.44599914550781,
+          187.2570037841797,
+          -55.797000885009766,
+          210.15899658203125,
+          330.0
+        ],
+        "closed": true,
+        "face_count": 57,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 17567.11223159986
+      }
+    },
+    "APPROVED_RIGHT_EAR_CONTEXT": {
+      "copy": {
+        "bounds_mm": [
+          55.797000885009766,
+          124.44599914550781,
+          187.2570037841797,
+          151.91549682617188,
+          210.15899658203125,
+          330.0
+        ],
+        "closed": true,
+        "face_count": 57,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 17567.11223159989
+      },
+      "source": {
+        "bounds_mm": [
+          55.797000885009766,
+          124.44599914550781,
+          187.2570037841797,
+          151.91549682617188,
+          210.15899658203125,
+          330.0
+        ],
+        "closed": true,
+        "face_count": 57,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 17567.11223159989
+      }
+    },
+    "PRINTED_LEFT_LOWER_FROZEN_DATUM": {
+      "copy": {
+        "bounds_mm": [
+          -126.78881525899226,
+          0.0,
+          -0.31688440344471,
+          31.466999053955078,
+          200.44166394445313,
+          165.88949584960938
+        ],
+        "closed": true,
+        "face_count": 1000,
+        "shape_type": "Compound",
+        "solid_count": 5,
+        "valid": false,
+        "volume_mm3": 57781.458061743375
+      },
+      "source": {
+        "bounds_mm": [
+          -126.78881525899226,
+          0.0,
+          -0.31688440344471,
+          31.466999053955078,
+          200.44166394445313,
+          165.88949584960938
+        ],
+        "closed": true,
+        "face_count": 1000,
+        "shape_type": "Compound",
+        "solid_count": 5,
+        "valid": false,
+        "volume_mm3": 57781.458061743375
+      }
+    },
+    "PRINTED_LEFT_OPAQUE_EYE_CARRIER_DATUM": {
+      "copy": {
+        "bounds_mm": [
+          -103.70903541108439,
+          49.82680664068036,
+          119.1471641026206,
+          -32.5827159564931,
+          97.456280459535,
+          177.16672769092378
+        ],
+        "closed": true,
+        "face_count": 124,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 5575.014164388369
+      },
+      "source": {
+        "bounds_mm": [
+          -103.70903541108439,
+          49.82680664068036,
+          119.1471641026206,
+          -32.5827159564931,
+          97.456280459535,
+          177.16672769092378
+        ],
+        "closed": true,
+        "face_count": 124,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 5575.014164388369
+      }
+    },
+    "PRINTED_LEFT_OPAQUE_EYE_REAR_PLATE_DATUM": {
+      "copy": {
+        "bounds_mm": [
+          -88.29996329777802,
+          65.34799924991947,
+          127.00655466041772,
+          -34.14629835480113,
+          97.14501187243307,
+          167.89108314340658
+        ],
+        "closed": true,
+        "face_count": 29,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1514.964062580624
+      },
+      "source": {
+        "bounds_mm": [
+          -88.29996329777802,
+          65.34799924991947,
+          127.00655466041772,
+          -34.14629835480113,
+          97.14501187243307,
+          167.89108314340658
+        ],
+        "closed": true,
+        "face_count": 29,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1514.964062580624
+      }
+    },
+    "PRINTED_RIGHT_LOWER_FROZEN_DATUM": {
+      "copy": {
+        "bounds_mm": [
+          -1.4210854715202004e-14,
+          0.0,
+          -3.000000113217993e-06,
+          126.78881525899226,
+          200.44166394445313,
+          165.88949584960938
+        ],
+        "closed": true,
+        "face_count": 2496,
+        "shape_type": "Compound",
+        "solid_count": 68,
+        "valid": true,
+        "volume_mm3": 136814.28140107755
+      },
+      "source": {
+        "bounds_mm": [
+          -1.4210854715202004e-14,
+          0.0,
+          -3.000000113217993e-06,
+          126.78881525899226,
+          200.44166394445313,
+          165.88949584960938
+        ],
+        "closed": true,
+        "face_count": 2496,
+        "shape_type": "Compound",
+        "solid_count": 68,
+        "valid": true,
+        "volume_mm3": 136814.28140107755
+      }
+    },
+    "PRINTED_RIGHT_OPAQUE_EYE_CARRIER_DATUM": {
+      "copy": {
+        "bounds_mm": [
+          32.582715956493104,
+          49.82680664068036,
+          119.1471641026206,
+          103.70903541108439,
+          97.456280459535,
+          177.16672769092378
+        ],
+        "closed": true,
+        "face_count": 124,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 5575.014164388363
+      },
+      "source": {
+        "bounds_mm": [
+          32.582715956493104,
+          49.82680664068036,
+          119.1471641026206,
+          103.70903541108439,
+          97.456280459535,
+          177.16672769092378
+        ],
+        "closed": true,
+        "face_count": 124,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 5575.014164388363
+      }
+    },
+    "PRINTED_RIGHT_OPAQUE_EYE_REAR_PLATE_DATUM": {
+      "copy": {
+        "bounds_mm": [
+          34.14629835480114,
+          65.34799924991947,
+          127.00655466041772,
+          88.29996329777802,
+          97.14501187243307,
+          167.89108314340658
+        ],
+        "closed": true,
+        "face_count": 29,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1514.9640625806235
+      },
+      "source": {
+        "bounds_mm": [
+          34.14629835480114,
+          65.34799924991947,
+          127.00655466041772,
+          88.29996329777802,
+          97.14501187243307,
+          167.89108314340658
+        ],
+        "closed": true,
+        "face_count": 29,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1514.9640625806235
+      }
+    },
+    "UNPRINTED_LEFT_TRANSLUCENT_LENS_CONTEXT": {
+      "copy": {
+        "bounds_mm": [
+          -97.16396240651159,
+          52.25659976841489,
+          126.76881712891122,
+          -34.946163401419504,
+          88.4289023198403,
+          174.52348979045385
+        ],
+        "closed": true,
+        "face_count": 30,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1473.3233138375408
+      },
+      "source": {
+        "bounds_mm": [
+          -97.16396240651159,
+          52.25659976841489,
+          126.76881712891122,
+          -34.946163401419504,
+          88.4289023198403,
+          174.52348979045385
+        ],
+        "closed": true,
+        "face_count": 30,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1473.3233138375408
+      }
+    },
+    "UNPRINTED_RIGHT_TRANSLUCENT_LENS_CONTEXT": {
+      "copy": {
+        "bounds_mm": [
+          34.946163401419504,
+          52.25659976841489,
+          126.76881712891122,
+          97.16396240651159,
+          88.4289023198403,
+          174.52348979045385
+        ],
+        "closed": true,
+        "face_count": 30,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1473.3233138375408
+      },
+      "source": {
+        "bounds_mm": [
+          34.946163401419504,
+          52.25659976841489,
+          126.76881712891122,
+          97.16396240651159,
+          88.4289023198403,
+          174.52348979045385
+        ],
+        "closed": true,
+        "face_count": 30,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1473.3233138375408
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C001": {
+      "copy": {
+        "bounds_mm": [
+          -30.0,
+          63.05550003051758,
+          109.75635528564452,
+          126.93900299072266,
+          269.3445129394531,
+          268.1520080566406
+        ],
+        "closed": true,
+        "face_count": 1859,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 75969.39034165144
+      },
+      "source": {
+        "bounds_mm": [
+          -30.0,
+          63.05550003051758,
+          109.75635528564452,
+          126.93900299072266,
+          269.3445129394531,
+          268.1520080566406
+        ],
+        "closed": true,
+        "face_count": 1859,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 75969.39034165144
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C002": {
+      "copy": {
+        "bounds_mm": [
+          35.8066291809082,
+          105.2105941772461,
+          170.14976501464844,
+          71.43737030029297,
+          151.3447265625,
+          212.66758728027344
+        ],
+        "closed": true,
+        "face_count": 177,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 24722.725809962278
+      },
+      "source": {
+        "bounds_mm": [
+          35.8066291809082,
+          105.2105941772461,
+          170.14976501464844,
+          71.43737030029297,
+          151.3447265625,
+          212.66758728027344
+        ],
+        "closed": true,
+        "face_count": 177,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 24722.725809962278
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C003": {
+      "copy": {
+        "bounds_mm": [
+          119.11318969726562,
+          149.7776641845703,
+          119.01981353759766,
+          123.45652770996094,
+          160.2225341796875,
+          124.2865982055664
+        ],
+        "closed": true,
+        "face_count": 139,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 79.41804244406237
+      },
+      "source": {
+        "bounds_mm": [
+          119.11318969726562,
+          149.7776641845703,
+          119.01981353759766,
+          123.45652770996094,
+          160.2225341796875,
+          124.2865982055664
+        ],
+        "closed": true,
+        "face_count": 139,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 79.41804244406237
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C004": {
+      "copy": {
+        "bounds_mm": [
+          36.7574577331543,
+          79.49799346923828,
+          205.46530151367188,
+          48.497066497802734,
+          89.07881164550781,
+          216.6722869873047
+        ],
+        "closed": true,
+        "face_count": 40,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 363.520707312277
+      },
+      "source": {
+        "bounds_mm": [
+          36.7574577331543,
+          79.49799346923828,
+          205.46530151367188,
+          48.497066497802734,
+          89.07881164550781,
+          216.6722869873047
+        ],
+        "closed": true,
+        "face_count": 40,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 363.520707312277
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C005": {
+      "copy": {
+        "bounds_mm": [
+          -1.4775915145874023,
+          180.7490692138672,
+          256.7641906738281,
+          9.222989082336426,
+          192.04415893554688,
+          265.7010498046875
+        ],
+        "closed": true,
+        "face_count": 15,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 259.77304519571294
+      },
+      "source": {
+        "bounds_mm": [
+          -1.4775915145874023,
+          180.7490692138672,
+          256.7641906738281,
+          9.222989082336426,
+          192.04415893554688,
+          265.7010498046875
+        ],
+        "closed": true,
+        "face_count": 15,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 259.77304519571294
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C006": {
+      "copy": {
+        "bounds_mm": [
+          64.25968933105469,
+          241.38156127929688,
+          198.20504760742188,
+          75.90563201904297,
+          249.18516540527344,
+          212.44601440429688
+        ],
+        "closed": true,
+        "face_count": 15,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 324.9883488050836
+      },
+      "source": {
+        "bounds_mm": [
+          64.25968933105469,
+          241.38156127929688,
+          198.20504760742188,
+          75.90563201904297,
+          249.18516540527344,
+          212.44601440429688
+        ],
+        "closed": true,
+        "face_count": 15,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 324.9883488050836
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C007": {
+      "copy": {
+        "bounds_mm": [
+          84.66181945800781,
+          195.57754516601562,
+          110.0214614868164,
+          125.00123596191406,
+          249.1077880859375,
+          140.97439575195312
+        ],
+        "closed": true,
+        "face_count": 34,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 2647.3092989250745
+      },
+      "source": {
+        "bounds_mm": [
+          84.66181945800781,
+          195.57754516601562,
+          110.0214614868164,
+          125.00123596191406,
+          249.1077880859375,
+          140.97439575195312
+        ],
+        "closed": true,
+        "face_count": 34,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 2647.3092989250745
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C008": {
+      "copy": {
+        "bounds_mm": [
+          115.07359313964844,
+          105.95421600341797,
+          117.08519744873047,
+          122.51583099365234,
+          117.12479400634766,
+          127.63970947265625
+        ],
+        "closed": true,
+        "face_count": 19,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 197.3743203829809
+      },
+      "source": {
+        "bounds_mm": [
+          115.07359313964844,
+          105.95421600341797,
+          117.08519744873047,
+          122.51583099365234,
+          117.12479400634766,
+          127.63970947265625
+        ],
+        "closed": true,
+        "face_count": 19,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 197.3743203829809
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C010": {
+      "copy": {
+        "bounds_mm": [
+          115.46953582763672,
+          157.4049835205078,
+          176.99679565429688,
+          122.63642883300781,
+          166.1315460205078,
+          187.02474975585938
+        ],
+        "closed": true,
+        "face_count": 21,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 134.92831859712248
+      },
+      "source": {
+        "bounds_mm": [
+          115.46953582763672,
+          157.4049835205078,
+          176.99679565429688,
+          122.63642883300781,
+          166.1315460205078,
+          187.02474975585938
+        ],
+        "closed": true,
+        "face_count": 21,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 134.92831859712248
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C011": {
+      "copy": {
+        "bounds_mm": [
+          0.792330801486969,
+          90.10750579833984,
+          209.82688903808594,
+          7.892384052276611,
+          143.4830322265625,
+          263.5096740722656
+        ],
+        "closed": true,
+        "face_count": 27,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 2830.2625764243367
+      },
+      "source": {
+        "bounds_mm": [
+          0.792330801486969,
+          90.10750579833984,
+          209.82688903808594,
+          7.892384052276611,
+          143.4830322265625,
+          263.5096740722656
+        ],
+        "closed": true,
+        "face_count": 27,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 2830.2625764243367
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C012": {
+      "copy": {
+        "bounds_mm": [
+          99.941019287695,
+          92.39849387545974,
+          121.70966339111328,
+          121.93273162841797,
+          112.72796630859375,
+          170.7237068522267
+        ],
+        "closed": true,
+        "face_count": 22,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 606.5389591603521
+      },
+      "source": {
+        "bounds_mm": [
+          99.941019287695,
+          92.39849387545974,
+          121.70966339111328,
+          121.93273162841797,
+          112.72796630859375,
+          170.7237068522267
+        ],
+        "closed": true,
+        "face_count": 22,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 606.5389591603521
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C013": {
+      "copy": {
+        "bounds_mm": [
+          124.75738525390625,
+          149.59182739257812,
+          117.80858612060547,
+          126.7354736328125,
+          159.8231201171875,
+          121.67919158935547
+        ],
+        "closed": true,
+        "face_count": 21,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 26.32215856838985
+      },
+      "source": {
+        "bounds_mm": [
+          124.75738525390625,
+          149.59182739257812,
+          117.80858612060547,
+          126.7354736328125,
+          159.8231201171875,
+          121.67919158935547
+        ],
+        "closed": true,
+        "face_count": 21,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 26.32215856838985
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C014": {
+      "copy": {
+        "bounds_mm": [
+          97.3553466796875,
+          74.52473449707031,
+          117.6665267944336,
+          120.76880645751953,
+          109.85922241210938,
+          125.10718536376953
+        ],
+        "closed": true,
+        "face_count": 22,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1483.2716169528974
+      },
+      "source": {
+        "bounds_mm": [
+          97.3553466796875,
+          74.52473449707031,
+          117.6665267944336,
+          120.76880645751953,
+          109.85922241210938,
+          125.10718536376953
+        ],
+        "closed": true,
+        "face_count": 22,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1483.2716169528974
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C015": {
+      "copy": {
+        "bounds_mm": [
+          -1.7581180334091204,
+          134.43145751953125,
+          254.99554443359375,
+          8.382979393005371,
+          144.10379028320312,
+          262.2369079589844
+        ],
+        "closed": true,
+        "face_count": 9,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 107.91155180060923
+      },
+      "source": {
+        "bounds_mm": [
+          -1.7581180334091204,
+          134.43145751953125,
+          254.99554443359375,
+          8.382979393005371,
+          144.10379028320312,
+          262.2369079589844
+        ],
+        "closed": true,
+        "face_count": 9,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 107.91155180060923
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C016": {
+      "copy": {
+        "bounds_mm": [
+          27.54237937927246,
+          246.53628540039062,
+          204.8726348876953,
+          38.43785858154297,
+          255.51046752929688,
+          215.76052856445312
+        ],
+        "closed": true,
+        "face_count": 10,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 278.4161900882888
+      },
+      "source": {
+        "bounds_mm": [
+          27.54237937927246,
+          246.53628540039062,
+          204.8726348876953,
+          38.43785858154297,
+          255.51046752929688,
+          215.76052856445312
+        ],
+        "closed": true,
+        "face_count": 10,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 278.4161900882888
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C017": {
+      "copy": {
+        "bounds_mm": [
+          51.525814056396484,
+          136.19456481933594,
+          240.07212829589844,
+          62.90990447998047,
+          147.4311981201172,
+          252.43438720703125
+        ],
+        "closed": true,
+        "face_count": 10,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 267.907006140642
+      },
+      "source": {
+        "bounds_mm": [
+          51.525814056396484,
+          136.19456481933594,
+          240.07212829589844,
+          62.90990447998047,
+          147.4311981201172,
+          252.43438720703125
+        ],
+        "closed": true,
+        "face_count": 10,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 267.907006140642
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C018": {
+      "copy": {
+        "bounds_mm": [
+          99.12217712402344,
+          88.61701965332031,
+          121.69927215576172,
+          120.80785369873047,
+          105.98320007324219,
+          171.8891143798828
+        ],
+        "closed": true,
+        "face_count": 17,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 236.8901438810333
+      },
+      "source": {
+        "bounds_mm": [
+          99.12217712402344,
+          88.61701965332031,
+          121.69927215576172,
+          120.80785369873047,
+          105.98320007324219,
+          171.8891143798828
+        ],
+        "closed": true,
+        "face_count": 17,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 236.8901438810333
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C019": {
+      "copy": {
+        "bounds_mm": [
+          43.04035568237305,
+          77.23881530761719,
+          176.82603454589844,
+          96.82984924316406,
+          91.16621398925781,
+          208.18125915527344
+        ],
+        "closed": true,
+        "face_count": 19,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 262.5434202190768
+      },
+      "source": {
+        "bounds_mm": [
+          43.04035568237305,
+          77.23881530761719,
+          176.82603454589844,
+          96.82984924316406,
+          91.16621398925781,
+          208.18125915527344
+        ],
+        "closed": true,
+        "face_count": 19,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 262.5434202190768
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C020": {
+      "copy": {
+        "bounds_mm": [
+          41.684383392333984,
+          80.9884033203125,
+          206.724609375,
+          64.25602722167969,
+          143.81137084960938,
+          248.6524200439453
+        ],
+        "closed": true,
+        "face_count": 22,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 833.4202296905747
+      },
+      "source": {
+        "bounds_mm": [
+          41.684383392333984,
+          80.9884033203125,
+          206.724609375,
+          64.25602722167969,
+          143.81137084960938,
+          248.6524200439453
+        ],
+        "closed": true,
+        "face_count": 22,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 833.4202296905747
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C021": {
+      "copy": {
+        "bounds_mm": [
+          73.56221771240234,
+          242.810546875,
+          141.0174560546875,
+          89.83847045898438,
+          250.60946655273438,
+          202.88784790039062
+        ],
+        "closed": true,
+        "face_count": 19,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 274.3125032008793
+      },
+      "source": {
+        "bounds_mm": [
+          73.56221771240234,
+          242.810546875,
+          141.0174560546875,
+          89.83847045898438,
+          250.60946655273438,
+          202.88784790039062
+        ],
+        "closed": true,
+        "face_count": 19,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 274.3125032008793
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C022": {
+      "copy": {
+        "bounds_mm": [
+          1.8480937480926514,
+          81.84324645996092,
+          209.08506774902344,
+          42.460472106933594,
+          142.96383666992188,
+          262.582763671875
+        ],
+        "closed": true,
+        "face_count": 14,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 967.9780582259567
+      },
+      "source": {
+        "bounds_mm": [
+          1.8480937480926514,
+          81.84324645996092,
+          209.08506774902344,
+          42.460472106933594,
+          142.96383666992188,
+          262.582763671875
+        ],
+        "closed": true,
+        "face_count": 14,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 967.9780582259567
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C023": {
+      "copy": {
+        "bounds_mm": [
+          -1.7234668731689453,
+          186.10971069335938,
+          204.0854034423828,
+          71.78121185302734,
+          247.31600952148438,
+          265.12481689453125
+        ],
+        "closed": true,
+        "face_count": 14,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1230.74980846892
+      },
+      "source": {
+        "bounds_mm": [
+          -1.7234668731689453,
+          186.10971069335938,
+          204.0854034423828,
+          71.78121185302734,
+          247.31600952148438,
+          265.12481689453125
+        ],
+        "closed": true,
+        "face_count": 14,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1230.74980846892
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C024": {
+      "copy": {
+        "bounds_mm": [
+          117.78590393066406,
+          109.61192321777344,
+          123.16670989990234,
+          122.68601989746094,
+          158.3087615966797,
+          183.33106994628906
+        ],
+        "closed": true,
+        "face_count": 22,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 325.7219827925878
+      },
+      "source": {
+        "bounds_mm": [
+          117.78590393066406,
+          109.61192321777344,
+          123.16670989990234,
+          122.68601989746094,
+          158.3087615966797,
+          183.33106994628906
+        ],
+        "closed": true,
+        "face_count": 22,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 325.7219827925878
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C025": {
+      "copy": {
+        "bounds_mm": [
+          117.99002838134766,
+          165.32034301757812,
+          115.15295410156249,
+          125.96356201171875,
+          199.9953155517578,
+          182.7810516357422
+        ],
+        "closed": true,
+        "face_count": 16,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 326.269693003096
+      },
+      "source": {
+        "bounds_mm": [
+          117.99002838134766,
+          165.32034301757812,
+          115.15295410156249,
+          125.96356201171875,
+          199.9953155517578,
+          182.7810516357422
+        ],
+        "closed": true,
+        "face_count": 16,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 326.269693003096
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C026": {
+      "copy": {
+        "bounds_mm": [
+          68.6848373413086,
+          243.87879943847656,
+          138.21490478515625,
+          88.2836685180664,
+          252.98770141601562,
+          204.2668914794922
+        ],
+        "closed": true,
+        "face_count": 15,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 768.742488201487
+      },
+      "source": {
+        "bounds_mm": [
+          68.6848373413086,
+          243.87879943847656,
+          138.21490478515625,
+          88.2836685180664,
+          252.98770141601562,
+          204.2668914794922
+        ],
+        "closed": true,
+        "face_count": 15,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 768.742488201487
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C027": {
+      "copy": {
+        "bounds_mm": [
+          35.9580192565918,
+          64.79872053350759,
+          173.34303631612272,
+          44.209158618345214,
+          81.18762969970703,
+          211.46197509765625
+        ],
+        "closed": true,
+        "face_count": 8,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 646.0048239195407
+      },
+      "source": {
+        "bounds_mm": [
+          35.9580192565918,
+          64.79872053350759,
+          173.34303631612272,
+          44.209158618345214,
+          81.18762969970703,
+          211.46197509765625
+        ],
+        "closed": true,
+        "face_count": 8,
+        "shape_type": "Compound",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 646.0048239195407
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C028": {
+      "copy": {
+        "bounds_mm": [
+          -28.468322753906257,
+          182.03529357910156,
+          205.05067443847656,
+          5.911230564117439,
+          257.84393310546875,
+          265.7572021484375
+        ],
+        "closed": true,
+        "face_count": 10,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 3906.5472832210016
+      },
+      "source": {
+        "bounds_mm": [
+          -28.468322753906257,
+          182.03529357910156,
+          205.05067443847656,
+          5.911230564117439,
+          257.84393310546875,
+          265.7572021484375
+        ],
+        "closed": true,
+        "face_count": 10,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 3906.5472832210016
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C029": {
+      "copy": {
+        "bounds_mm": [
+          -1.0880789756774902,
+          142.34768676757812,
+          256.1380310058594,
+          6.613045692443848,
+          182.90533447265625,
+          266.8433532714844
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1686.4509313192743
+      },
+      "source": {
+        "bounds_mm": [
+          -1.0880789756774902,
+          142.34768676757812,
+          256.1380310058594,
+          6.613045692443848,
+          182.90533447265625,
+          266.8433532714844
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1686.4509313192743
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C030": {
+      "copy": {
+        "bounds_mm": [
+          49.271297454833984,
+          143.97061157226562,
+          244.61622619628906,
+          60.627010345458984,
+          167.48495483398438,
+          257.63775634765625
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 908.7389487785985
+      },
+      "source": {
+        "bounds_mm": [
+          49.271297454833984,
+          143.97061157226562,
+          244.61622619628906,
+          60.627010345458984,
+          167.48495483398438,
+          257.63775634765625
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 908.7389487785985
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C031": {
+      "copy": {
+        "bounds_mm": [
+          57.12397003173828,
+          245.6405029296875,
+          132.08465576171875,
+          87.23406219482422,
+          267.1650695800781,
+          142.25930786132812
+        ],
+        "closed": true,
+        "face_count": 10,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1257.4418287858641
+      },
+      "source": {
+        "bounds_mm": [
+          57.12397003173828,
+          245.6405029296875,
+          132.08465576171875,
+          87.23406219482422,
+          267.1650695800781,
+          142.25930786132812
+        ],
+        "closed": true,
+        "face_count": 10,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1257.4418287858641
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C032": {
+      "copy": {
+        "bounds_mm": [
+          18.851289749145508,
+          42.842998504638665,
+          141.6056365966797,
+          43.96049880981445,
+          78.56495666503906,
+          211.77450561523438
+        ],
+        "closed": true,
+        "face_count": 8,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1260.128471650347
+      },
+      "source": {
+        "bounds_mm": [
+          18.851289749145508,
+          42.842998504638665,
+          141.6056365966797,
+          43.96049880981445,
+          78.56495666503906,
+          211.77450561523438
+        ],
+        "closed": true,
+        "face_count": 8,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1260.128471650347
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C033": {
+      "copy": {
+        "bounds_mm": [
+          2.0004758834838867,
+          136.80101013183594,
+          244.48155212402344,
+          57.908321380615234,
+          142.96002197265625,
+          263.3077392578125
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 646.9375980196721
+      },
+      "source": {
+        "bounds_mm": [
+          2.0004758834838867,
+          136.80101013183594,
+          244.48155212402344,
+          57.908321380615234,
+          142.96002197265625,
+          263.3077392578125
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 646.9375980196721
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C034": {
+      "copy": {
+        "bounds_mm": [
+          4.560638427734368,
+          140.86175537109375,
+          248.4024200439453,
+          56.088512420654304,
+          145.7706298828125,
+          263.77545166015625
+        ],
+        "closed": true,
+        "face_count": 8,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 227.79077368047615
+      },
+      "source": {
+        "bounds_mm": [
+          4.560638427734368,
+          140.86175537109375,
+          248.4024200439453,
+          56.088512420654304,
+          145.7706298828125,
+          263.77545166015625
+        ],
+        "closed": true,
+        "face_count": 8,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 227.79077368047615
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C035": {
+      "copy": {
+        "bounds_mm": [
+          38.546974182128906,
+          82.27900695800781,
+          211.7642364501953,
+          59.65167236328125,
+          141.05120849609375,
+          249.15875244140625
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 299.3568932562154
+      },
+      "source": {
+        "bounds_mm": [
+          38.546974182128906,
+          82.27900695800781,
+          211.7642364501953,
+          59.65167236328125,
+          141.05120849609375,
+          249.15875244140625
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 299.3568932562154
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C036": {
+      "copy": {
+        "bounds_mm": [
+          -0.5806927680969243,
+          187.09950256347656,
+          210.39158630371094,
+          27.45969009399414,
+          254.57046508789062,
+          264.2056884765625
+        ],
+        "closed": true,
+        "face_count": 5,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 377.8838360716668
+      },
+      "source": {
+        "bounds_mm": [
+          -0.5806927680969243,
+          187.09950256347656,
+          210.39158630371094,
+          27.45969009399414,
+          254.57046508789062,
+          264.2056884765625
+        ],
+        "closed": true,
+        "face_count": 5,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 377.8838360716668
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C037": {
+      "copy": {
+        "bounds_mm": [
+          2.8905255794525146,
+          168.84616088867188,
+          251.867431640625,
+          52.52290725708008,
+          186.96717834472656,
+          266.4512634277344
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 589.5510628115934
+      },
+      "source": {
+        "bounds_mm": [
+          2.8905255794525146,
+          168.84616088867188,
+          251.867431640625,
+          52.52290725708008,
+          186.96717834472656,
+          266.4512634277344
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 589.5510628115934
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C038": {
+      "copy": {
+        "bounds_mm": [
+          1.7114531993865962,
+          182.506591796875,
+          208.13702392578125,
+          32.80095291137695,
+          254.9310302734375,
+          265.13690185546875
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1042.6399630332307
+      },
+      "source": {
+        "bounds_mm": [
+          1.7114531993865962,
+          182.506591796875,
+          208.13702392578125,
+          32.80095291137695,
+          254.9310302734375,
+          265.13690185546875
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 1042.6399630332307
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C039": {
+      "copy": {
+        "bounds_mm": [
+          4.689523696899414,
+          167.07823181152344,
+          254.9491424560547,
+          49.860923767089844,
+          182.52476501464844,
+          266.6824035644531
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 206.02320591729045
+      },
+      "source": {
+        "bounds_mm": [
+          4.689523696899414,
+          167.07823181152344,
+          254.9491424560547,
+          49.860923767089844,
+          182.52476501464844,
+          266.6824035644531
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 206.02320591729045
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C040": {
+      "copy": {
+        "bounds_mm": [
+          31.839374542236328,
+          240.86851501464844,
+          205.99713134765625,
+          70.85818481445312,
+          256.7423095703125,
+          212.79364013671875
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 446.64316998098303
+      },
+      "source": {
+        "bounds_mm": [
+          31.839374542236328,
+          240.86851501464844,
+          205.99713134765625,
+          70.85818481445312,
+          256.7423095703125,
+          212.79364013671875
+        ],
+        "closed": true,
+        "face_count": 6,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 446.64316998098303
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C041": {
+      "copy": {
+        "bounds_mm": [
+          34.60659408569336,
+          244.81051635742188,
+          205.27658081054688,
+          69.10425567626953,
+          257.4542236328125,
+          210.0699462890625
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 151.81586630600484
+      },
+      "source": {
+        "bounds_mm": [
+          34.60659408569336,
+          244.81051635742188,
+          205.27658081054688,
+          69.10425567626953,
+          257.4542236328125,
+          210.0699462890625
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 151.81586630600484
+      }
+    },
+    "WORKING_RIGHT_UPPER_OWNER_C042": {
+      "copy": {
+        "bounds_mm": [
+          41.35002517700195,
+          85.79447174072266,
+          177.8885498046875,
+          91.13245391845703,
+          139.6789093017578,
+          238.91958618164062
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 21036.57558650993
+      },
+      "source": {
+        "bounds_mm": [
+          41.35002517700195,
+          85.79447174072266,
+          177.8885498046875,
+          91.13245391845703,
+          139.6789093017578,
+          238.91958618164062
+        ],
+        "closed": true,
+        "face_count": 7,
+        "shape_type": "Solid",
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 21036.57558650993
+      }
+    }
+  },
+  "created_shape_object_count_before_save": 73,
+  "created_utc": "2026-08-22T04:23:09.090006+00:00",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "generator_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-upper-as-printed-working-assembly-v1/generate.py",
+  "generator_sha256": "c25e49b3d61a1c729a9836e5f801cd40970280eee2c1ebe58def11861f7c8a23",
+  "geometry_exported": false,
+  "left_upper_owner_present": false,
+  "limitations": [
+    "This is a non-fused working assembly, not a print release.",
+    "The lower masters and printed eye parts are frozen context copies.",
+    "The translucent lenses are approved but not yet physically printed.",
+    "No trusted LEFT-upper owner is present.",
+    "The aluminum socket shapes are clearance targets, not production receiver bodies.",
+    "Exact collision classification remains the next gate."
+  ],
+  "output_fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1/RIGHT_UPPER_AS_PRINTED_WORKING_ASSEMBLY_V1.FCStd",
+  "output_fcstd_sha256": "81cd156d42afb21b829f775b735cd92e97bc863c8e58622ef215011fffc4ecc2",
+  "reopened": {
+    "document_label": "RIGHT_UPPER_AS_PRINTED_WORKING_ASSEMBLY_V1",
+    "object_count": 77,
+    "right_upper_owner_count": 41,
+    "shape_object_count": 73
+  },
+  "right_upper_component_count": 41,
+  "right_upper_component_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "schema_version": "cat-head-right-upper-as-printed-working-assembly-validation-v1",
+  "sliced": false,
+  "source_documents_saved": false,
+  "source_geometry_modified": false,
+  "source_hashes_unchanged": true,
+  "source_pins_after": {
+    "aluminum_interface": {
+      "actual_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79",
+      "expected_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79",
+      "match": true,
+      "path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json"
+    },
+    "aluminum_metal_config": {
+      "actual_sha256": "848bc977d7d8c69ea93eb14f5832a8a2918f8dd073057a86212f162ae7ae5c31",
+      "expected_sha256": "848bc977d7d8c69ea93eb14f5832a8a2918f8dd073057a86212f162ae7ae5c31",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/config/frame-fixed-mount-v05-final.json"
+    },
+    "approved_ears_fcstd": {
+      "actual_sha256": "37ddff37e81a820de3f4bea46c4b476d09217399dd32a24cc8a2aec640a50425",
+      "expected_sha256": "37ddff37e81a820de3f4bea46c4b476d09217399dd32a24cc8a2aec640a50425",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/primary-ear-bilateral-exact-mirror-review-v2/CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd"
+    },
+    "left_eye_fcstd": {
+      "actual_sha256": "f0502cef3b82b4095ea19dff735795948e31c7177e13fa32356ca470c6fd7bd9",
+      "expected_sha256": "f0502cef3b82b4095ea19dff735795948e31c7177e13fa32356ca470c6fd7bd9",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/left/LEFT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd"
+    },
+    "left_lower_3mf": {
+      "actual_sha256": "ed00bfadbb2120cb7dfc6c54085fccaff5169eaeaca246abc03970f18acfe8bc",
+      "expected_sha256": "ed00bfadbb2120cb7dfc6c54085fccaff5169eaeaca246abc03970f18acfe8bc",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1/LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1-Compound.3mf"
+    },
+    "left_lower_fcstd": {
+      "actual_sha256": "3e52d392a40d570a0c0a04a3089bd496e30ff8197307e377c6236a01c982cbd4",
+      "expected_sha256": "3e52d392a40d570a0c0a04a3089bd496e30ff8197307e377c6236a01c982cbd4",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1/LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1.FCStd"
+    },
+    "opaque_eye_3mf": {
+      "actual_sha256": "0b210cc3c35d875ede35fb70f2790901ad5d7d1264b68db811d1d56cd5e22578",
+      "expected_sha256": "0b210cc3c35d875ede35fb70f2790901ad5d7d1264b68db811d1d56cd5e22578",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/Both_eyes_PRINT_V1.3mf"
+    },
+    "right_eye_fcstd": {
+      "actual_sha256": "2acf712847bfbec14d7655ea046c7ac1156dfe7db678723af787470de3b6dbd2",
+      "expected_sha256": "2acf712847bfbec14d7655ea046c7ac1156dfe7db678723af787470de3b6dbd2",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/right/RIGHT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd"
+    },
+    "right_lower_3mf": {
+      "actual_sha256": "6fad7b537bf7b13840a14f3e10fc1b8218c3ef7ad71fcd50552bd8c2eb06eb19",
+      "expected_sha256": "6fad7b537bf7b13840a14f3e10fc1b8218c3ef7ad71fcd50552bd8c2eb06eb19",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/stl/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4_Ilya-Compound.3mf"
+    },
+    "right_lower_fcstd": {
+      "actual_sha256": "ba1e933daef8921e3b38f9e3ad733eb3e557546f4fc95a1afe0d8d7180644974",
+      "expected_sha256": "ba1e933daef8921e3b38f9e3ad733eb3e557546f4fc95a1afe0d8d7180644974",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4_Ilya.FCStd"
+    },
+    "right_upper_fcstd": {
+      "actual_sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584",
+      "expected_sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd"
+    }
+  },
+  "source_pins_before": {
+    "aluminum_interface": {
+      "actual_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79",
+      "expected_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79",
+      "match": true,
+      "path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json"
+    },
+    "aluminum_metal_config": {
+      "actual_sha256": "848bc977d7d8c69ea93eb14f5832a8a2918f8dd073057a86212f162ae7ae5c31",
+      "expected_sha256": "848bc977d7d8c69ea93eb14f5832a8a2918f8dd073057a86212f162ae7ae5c31",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/config/frame-fixed-mount-v05-final.json"
+    },
+    "approved_ears_fcstd": {
+      "actual_sha256": "37ddff37e81a820de3f4bea46c4b476d09217399dd32a24cc8a2aec640a50425",
+      "expected_sha256": "37ddff37e81a820de3f4bea46c4b476d09217399dd32a24cc8a2aec640a50425",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/primary-ear-bilateral-exact-mirror-review-v2/CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd"
+    },
+    "left_eye_fcstd": {
+      "actual_sha256": "f0502cef3b82b4095ea19dff735795948e31c7177e13fa32356ca470c6fd7bd9",
+      "expected_sha256": "f0502cef3b82b4095ea19dff735795948e31c7177e13fa32356ca470c6fd7bd9",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/left/LEFT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd"
+    },
+    "left_lower_3mf": {
+      "actual_sha256": "ed00bfadbb2120cb7dfc6c54085fccaff5169eaeaca246abc03970f18acfe8bc",
+      "expected_sha256": "ed00bfadbb2120cb7dfc6c54085fccaff5169eaeaca246abc03970f18acfe8bc",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1/LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1-Compound.3mf"
+    },
+    "left_lower_fcstd": {
+      "actual_sha256": "3e52d392a40d570a0c0a04a3089bd496e30ff8197307e377c6236a01c982cbd4",
+      "expected_sha256": "3e52d392a40d570a0c0a04a3089bd496e30ff8197307e377c6236a01c982cbd4",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1/LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1.FCStd"
+    },
+    "opaque_eye_3mf": {
+      "actual_sha256": "0b210cc3c35d875ede35fb70f2790901ad5d7d1264b68db811d1d56cd5e22578",
+      "expected_sha256": "0b210cc3c35d875ede35fb70f2790901ad5d7d1264b68db811d1d56cd5e22578",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/Both_eyes_PRINT_V1.3mf"
+    },
+    "right_eye_fcstd": {
+      "actual_sha256": "2acf712847bfbec14d7655ea046c7ac1156dfe7db678723af787470de3b6dbd2",
+      "expected_sha256": "2acf712847bfbec14d7655ea046c7ac1156dfe7db678723af787470de3b6dbd2",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/right/RIGHT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd"
+    },
+    "right_lower_3mf": {
+      "actual_sha256": "6fad7b537bf7b13840a14f3e10fc1b8218c3ef7ad71fcd50552bd8c2eb06eb19",
+      "expected_sha256": "6fad7b537bf7b13840a14f3e10fc1b8218c3ef7ad71fcd50552bd8c2eb06eb19",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/stl/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4_Ilya-Compound.3mf"
+    },
+    "right_lower_fcstd": {
+      "actual_sha256": "ba1e933daef8921e3b38f9e3ad733eb3e557546f4fc95a1afe0d8d7180644974",
+      "expected_sha256": "ba1e933daef8921e3b38f9e3ad733eb3e557546f4fc95a1afe0d8d7180644974",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4_Ilya.FCStd"
+    },
+    "right_upper_fcstd": {
+      "actual_sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584",
+      "expected_sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584",
+      "match": true,
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd"
+    }
+  },
+  "status": "PASS__WORKING_ASSEMBLY_CREATED__NOT_PRINT_APPROVED"
+}

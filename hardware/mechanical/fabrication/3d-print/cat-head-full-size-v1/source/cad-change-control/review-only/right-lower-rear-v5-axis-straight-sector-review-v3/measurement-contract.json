@@ -1,0 +1,40 @@
+{
+  "schema_version": "cat-head-right-lower-rear-v5-axis-straight-sector-measurement-v3",
+  "contract_id": "right-lower-rear-v5-axis-straight-sector-review-v3",
+  "tooling_revision": 3,
+  "authority": "REVIEW_ONLY_NON_AUTHORITATIVE_NOT_A_PRINT_SOURCE",
+  "input": {
+    "path": "output/70-freecad-pilots/review-only/right-lower-rear-v5-production-repartition-review-v2/RIGHT_LOWER_REAR_V5_PRODUCTION_REPARTITION_REVIEW_ONLY_V2.FCStd",
+    "sha256": "6b4d0d52d5984a98c6e5dd8478108aa00288b06b6a492a18f5e341a3be3b6016",
+    "contract_path": "source/cad-change-control/review-only/right-lower-rear-v5-production-repartition-review-v2/contract.json",
+    "contract_sha256": "434c95a135f2152dfdfbdc566814d6c54190705ea08979ff144cd1cd7f88d830",
+    "generator_path": "source/cad-change-control/review-only/right-lower-rear-v5-production-repartition-review-v2/generate_freecad_review.py",
+    "generator_sha256": "eecca61d7752808a311d4a243030189be2ce014241b4ab7590229ea0c5177f18"
+  },
+  "selection": {
+    "object_internal_name": "CAS_001",
+    "object_label": "CASSETTE_SPLIT \u2014 component_001_relief_main__cassette",
+    "subelement": "Face30",
+    "face_index_1_based": 30,
+    "source": "explicit user selection in FreeCAD status bar and tree"
+  },
+  "requested_behavior": {
+    "single_change": "reassign the exact selected shell sector from rear cassette ownership to retained front ownership",
+    "straightening_rule": "use the selected face's actual boundary direction closest to one existing global model axis",
+    "preserve": [
+      "all other V2 ownership",
+      "all other V2 seam geometry",
+      "approved V2 0.30 mm separation",
+      "manual bottom flange",
+      "released V3 right eye reference",
+      "canonical lower-owner source geometry"
+    ]
+  },
+  "measurement_only": {
+    "geometry_created": false,
+    "input_saved": false,
+    "review_saved": false,
+    "geometry_export_created": false,
+    "production_output_created": false
+  }
+}

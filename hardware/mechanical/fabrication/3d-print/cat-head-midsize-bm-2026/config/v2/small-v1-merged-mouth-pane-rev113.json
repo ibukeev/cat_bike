@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0",
+  "iteration_id": "small-v1-merged-mouth-pane-rev113",
+  "design_id": "CAT_HEAD_MEDIUM_ILYA_MERGED_MOUTH_PANE_REV113",
+  "tooling_revision": 2,
+  "review_state": "ISOLATED_MOUTH_MERGE_CANDIDATE__NOT_FINAL_RELEASE",
+  "approval": {
+    "approval_date": "2026-08-27",
+    "user_instruction": "Can you merge mouth translucent panels into one single?",
+    "merge_exact_two_rev112_mouth_panes_authorized": true,
+    "create_isolated_rev113_candidate_fcstd_authorized": true,
+    "export_rev113_review_candidate_print_parts_authorized": true,
+    "overwrite_rev112_authorized": false,
+    "change_head_authorized": false,
+    "change_eye_panes_authorized": false,
+    "change_stops_cutters_or_zip_tie_slots_authorized": false,
+    "change_mouth_outer_surfaces_authorized": false,
+    "promote_final_release_authorized": false,
+    "slicer_profile_3mf_or_gcode_authorized": false,
+    "unrelated_geometry_authorized": false
+  },
+  "source": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_ILYA_FINAL_CUT_HOLES_REV112.FCStd",
+    "sha256": "4a0ae787902be81ecccfadedd46603064b4729de4b71231e17e63add87477e85",
+    "head_object": "PRINT__CAT_HEAD_FINAL_CUT_HOLES_REV112",
+    "right_eye_object": "PRINT__RIGHT_EYE_TRANSLUCENT_PANE_REV112",
+    "left_eye_object": "PRINT__LEFT_EYE_TRANSLUCENT_PANE_REV112",
+    "mouth_tri005_object": "PRINT__MOUTH_TRI005_TRANSLUCENT_PANE_REV112",
+    "mouth_tri006_object": "PRINT__MOUTH_TRI006_TRANSLUCENT_PANE_REV112",
+    "right_zip_tie_corridor_object": "REVIEW_ONLY__RIGHT_ZIP_TIE_CORRIDOR_REV112",
+    "left_zip_tie_corridor_object": "REVIEW_ONLY__LEFT_ZIP_TIE_CORRIDOR_REV112",
+    "expected_brep_sha256": {
+      "head": "9b2b2353d0e5bc63263bdd9655c9ee13d1695cdd28e8830737d07663ea611919",
+      "right_eye": "4cf446e46601b806cfd338a58c98a02e9737e80184c28fd468db4ba0f58bcdb0",
+      "left_eye": "80ddea35759f74141baddb2974730ae03fc12fc35272025e2410e9b902f0e564",
+      "mouth_tri005": "b816f5182a0f8d20251a8c8aec31ab993cb37265e86bcc5765bf111bbe3df7b7",
+      "mouth_tri006": "e37859f0b9fe494b3a185bc8f6fa626725f5a28c3228e259dca7e82d7f56a1d9"
+    },
+    "rev112_stl_sha256": {
+      "head": "eae4d27e8f18762e0deb6fe7bf95d62fb9a99a93ed8decc2eb8aad9af85891c6",
+      "right_eye": "739f584563eb2797eaa72fd9d4d9ebbfa7df3ffe62080475511f21bf4b410ee5",
+      "left_eye": "62380023c9379d2c1a1f984fa453a3187870f04ce150f745d9861e0060141d84"
+    },
+    "rev112_stl_paths": {
+      "head": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_ILYA_FINAL_HEAD_CUT_HOLES_REV112.stl",
+      "right_eye": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_RIGHT_EYE_TRANSLUCENT_PANE_REV112.stl",
+      "left_eye": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_LEFT_EYE_TRANSLUCENT_PANE_REV112.stl"
+    }
+  },
+  "operation": {
+    "method": "RULED_SOLID_LOFT_BETWEEN_PINNED_CENTER_SEAM_FACES_THEN_FUSE",
+    "first_anchor": {
+      "object": "PRINT__MOUTH_TRI005_TRANSLUCENT_PANE_REV112",
+      "face": "Face1",
+      "face_index": 1,
+      "area_mm2": 34.277611260220496,
+      "normal": [-0.9909976219211293, 0.06288170808562271, 0.11819307989430299]
+    },
+    "second_anchor": {
+      "object": "PRINT__MOUTH_TRI006_TRANSLUCENT_PANE_REV112",
+      "face": "Face1",
+      "face_index": 1,
+      "area_mm2": 34.191861845001135,
+      "normal": [0.989887241358865, 0.1328744483511569, 0.0496752490714652]
+    },
+    "measured_minimum_seam_gap_mm": 0.5949922084458888,
+    "expected_bridge_volume_mm3": 28.95407782429441,
+    "expected_merged_volume_mm3": 792.5075282477266,
+    "expected_merged_bbox_min_mm": [-22.704068132268727, 0.3559369391856742, 12.062686189247712],
+    "expected_merged_bbox_max_mm": [22.693496267955844, 13.011069998980279, 28.332656873717973],
+    "expected_final_print_part_count": 4,
+    "expected_merged_mouth_solid_count": 1,
+    "expected_petg_thickness_mm": 2.0,
+    "expected_hole_count": 0,
+    "permitted_addition": "Only the ruled solid bounded by the two pinned Face1 outer wires",
+    "frozen_geometry": [
+      "Rev112 final head including four cutter holes, twelve stops, and two zip-tie slots",
+      "Rev112 right and left eye panes",
+      "Every point and surface of both Rev112 mouth panes outside the new center bridge"
+    ]
+  },
+  "validation": {
+    "shape_volume_tolerance_mm3": 0.000001,
+    "boolean_residual_volume_maximum_mm3": 0.000001,
+    "bbox_tolerance_mm": 0.000001,
+    "face_area_tolerance_mm2": 0.000001,
+    "normal_component_tolerance": 0.000001,
+    "distance_tolerance_mm": 0.000001,
+    "pane_head_overlap_maximum_mm3": 0.000001,
+    "zip_tie_corridor_residual_volume_maximum_mm3": 0.000001,
+    "mesh_linear_deflection_mm": 0.08,
+    "mesh_angular_deflection_rad": 0.17453292519943295,
+    "manual_review_holds": [
+      "The one-piece mouth panel remains physically insertable and seats against the existing four mouth stops",
+      "The center bridge is visually acceptable from the exterior and does not create a light-blocking band",
+      "No slicer profile, 3MF project, or G-code is changed or created",
+      "Rev113 is not promoted over the Rev112 final MVP until visual and slicer review"
+    ]
+  },
+  "output": {
+    "candidate_directory": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/mouth-rev113",
+    "candidate_fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/mouth-rev113/CAT_HEAD_MEDIUM_ILYA_MERGED_MOUTH_REV113.FCStd",
+    "generation_report": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/mouth-rev113/generation-report.json",
+    "preflight_report": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/validation/small-v1-merged-mouth-pane-rev113/preflight-report.json",
+    "head_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/mouth-rev113/CAT_HEAD_MEDIUM_ILYA_FINAL_HEAD_REV113.stl",
+    "right_eye_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/mouth-rev113/CAT_HEAD_MEDIUM_RIGHT_EYE_TRANSLUCENT_PANE_REV113.stl",
+    "left_eye_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/mouth-rev113/CAT_HEAD_MEDIUM_LEFT_EYE_TRANSLUCENT_PANE_REV113.stl",
+    "merged_mouth_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/mouth-rev113/CAT_HEAD_MEDIUM_MERGED_MOUTH_TRANSLUCENT_PANE_REV113.stl",
+    "bridge_review_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/mouth-rev113/REVIEW_ONLY__MOUTH_CENTER_SEAM_BRIDGE_REV113.stl",
+    "review_directory": "hardware/mechanical/fabrication/3d-print/cat-head-small-v1/review/editable-base-v1/merged-mouth-pane-rev113-review-2026-08-27"
+  }
+}

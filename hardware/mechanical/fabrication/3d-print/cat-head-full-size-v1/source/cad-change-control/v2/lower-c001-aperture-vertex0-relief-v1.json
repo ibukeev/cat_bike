@@ -1,0 +1,220 @@
+{
+  "schema_version": "2.0",
+  "project": "cat-head-full-size-v1",
+  "iteration_id": "lower-c001-aperture-vertex0-relief-v1",
+  "state": "approved_for_one_candidate",
+  "baseline_id": "right-upper-c009-deletion-review-v34",
+  "user_approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-18",
+    "exact_instruction": "APPROVE LOWER-C001 0.411 MM RELIEF; APPROVE 0.58 MM LOWER BEZEL COVER LIP; REVIEW_ONLY split-eye/relief/0.58-mm lower cover-lip concept LGTM. Modify lower_C001 only by the exact single connected V0 exclusion-envelope intersection; retain the 0.410 mm nominal and 0.411 mm hard retreat cap, post-span at least 1.000 mm, exact aperture, and exact preservation of all other shell owners. The sole 0.47532604762257014 mm2 exterior relief patch on pinned Face321 must be completely covered by the pinned lip envelope under the 0.010 mm adverse dimensional allowance; no other exterior deviation is allowed. The isolated relief candidate contains no eye geometry and remains subject to preservation, physical validation, and fixed-view review before the eye stage."
+  },
+  "target_object": "FROZEN_RIGHT_LOWER_MAIN_V34",
+  "allowed_mutations": [
+    {
+      "kind": "replace_geometry",
+      "object": "FROZEN_RIGHT_LOWER_MAIN_V34",
+      "parameters": {
+        "purpose": "One isolated lower-C001 shell relief at immutable eye-aperture vertex V0; no eye geometry is present or mutable in this candidate.",
+        "design_control": {
+          "design_id": "lower-c001-aperture-vertex0-relief-A",
+          "tooling_revision": 3,
+          "approval": true,
+          "design_signature": {
+            "algorithm": "sha256-canonical-json-decimal-v1",
+            "signed_fields": [
+              "construction_algorithm_id",
+              "relief",
+              "cover_lip_interface",
+              "aperture_lcs",
+              "shell_opening_boundary_mm"
+            ],
+            "sha256": "db2f342e43b200d9db3f5983945e19481eda10ed15cf005f04d9521017c5a1fe"
+          },
+          "rejected_signature_registry": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/rejected-design-signatures.json",
+            "sha256": "754dca4cea3dc27ed349ba8f75fe433b71595affb059d5834bb7a7e3a4658606"
+          }
+        },
+        "construction_algorithm_id": "lower-c001-v0-staged-clean-intersection-relief-A@3",
+        "relief": {
+          "authorized_owner": "FROZEN_RIGHT_LOWER_MAIN_V34",
+          "vertex_id": "V0",
+          "vertex0_head_mm": [34.9453, 50.7759, 126.7901],
+          "vertex0_aperture_lcs_mm": [-37.52678656346036, -22.608964678289247, 0.0],
+          "exclusion_envelope_radius_mm": 1.0,
+          "approved_pre_relief_span_mm": 0.5902236635536819,
+          "required_post_relief_span_mm": 1.0,
+          "nominal_maximum_retreat_mm": 0.41,
+          "hard_cap_retreat_mm": 0.411,
+          "coordinate_tolerance_mm": 0.00005,
+          "measurement_tolerance_mm": 0.001,
+          "boolean_volume_epsilon_mm3": 0.000001,
+          "immutable_aperture_coordinates_sha256": "25692991fd204898e4f1d811c094e560ab4390a37656727070a6f8381ce05cbc"
+        },
+        "cover_lip_interface": {
+          "source_eye_iteration_id": "right-eye-split-service-cassette-prototype-v1",
+          "source_eye_design_id": "right-eye-split-service-cassette-D",
+          "source_eye_design_signature_sha256": "362d5bf06ab5dbf94a087dc0a40977d8277e9281a358d98a25a8043a1865ce73",
+          "review_only_fcstd_sha256": "975ec98589860d37cefe2e90c62463fd062b3fa4ea76c8e00ec6d176ee2899f5",
+          "review_only_manifest_sha256": "d229aff26bfc0c9200334cdacf87f4f5cfda014a4b7e7825b1a7addc785d8979",
+          "baseline_exterior_face_index": 321,
+          "source_front_outer_vertex_insets_mm": [0.3, 0.3, 0.3, 0.3],
+          "source_outer_edge_vertex_indices": [0, 3],
+          "nominal_in_plane_reach_mm": 0.58,
+          "measured_tolerance_inclusive_required_reach_mm": 0.578376,
+          "adverse_dimensional_tolerance_mm": 0.01,
+          "tangent_start_mm": 0.0,
+          "tangent_length_mm": 3.0,
+          "nominal_outward_axial_cover_mm": 0.022,
+          "required_measured_outward_cover_mm": 0.011005,
+          "coverage_envelope_inward_depth_mm": 0.012,
+          "minimum_printed_wall_mm": 0.7,
+          "expected_exterior_relief_patch_area_mm2": 0.47532604762257014,
+          "patch_area_tolerance_mm2": 0.000001,
+          "maximum_uncovered_patch_area_mm2": 0.000001
+        },
+        "aperture_lcs": {
+          "origin_mm": [64.501125, 68.88715, 153.583025],
+          "u": [0.231983963, 0.35192547, 0.906825178],
+          "v": [0.922209813, 0.216932857, -0.320108101],
+          "inward_n": [-0.309374371, 0.910543024, -0.274224178],
+          "visible_aperture_mm": [
+            [34.9453, 50.7759, 126.7901],
+            [45.0804, 66.1511, 166.4082],
+            [101.4953, 88.6294, 177.3997],
+            [76.4835, 69.9922, 143.7341]
+          ],
+          "aperture_rounding_tolerance_mm": 0.00005
+        },
+        "shell_opening_boundary_mm": [
+          [33.3465, 50.1135, 126.3945],
+          [43.9605, 63.0555, 165.8895],
+          [102.4275, 89.0295, 177.6765],
+          [104.064, 71.7885, 118.5825]
+        ],
+        "required_invariants": [
+          "exact immutable aperture coordinate digest and V0 head coordinate",
+          "single connected subtractive relief only",
+          "post-relief aperture-to-lower-C001 span at least 1.000 mm",
+          "maximum retreat no more than 0.411 mm",
+          "the exact pinned Face321 exterior relief patch is fully covered by the adverse-tolerance 0.58 mm lip envelope",
+          "zero uncovered exterior relief area and zero exterior deviation outside the pinned Face321 patch",
+          "target remains one valid closed solid with identity placement",
+          "every non-target object is exactly preserved"
+        ],
+        "prohibited": [
+          "eye geometry or eye-interface mutation",
+          "upper-C001 or lower-C013 mutation",
+          "any other shell-owner mutation",
+          "aperture movement or resize",
+          "coverage credit from any eye design, lip footprint, or exterior face other than the exact signed interface",
+          "automatic retry or repair",
+          "baseline overwrite, integration, mirror, export, slicing, printing, promotion, or commit"
+        ],
+        "tooling_dependencies": {
+          "shared_validator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_iteration_v2.py",
+            "sha256": "bb5df3fd5974118b0007c7c3768edbc7a6066dd276ea873d5417aa59b3bc5c64"
+          },
+          "shared_runner": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/run_iteration_v2.py",
+            "sha256": "67f3c56ea377a90097a61df9618b8978c00d73b830c9e71e1867a639cdaae1c5"
+          },
+          "shared_preservation_module": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/fcstd_preservation_v2.py",
+            "sha256": "41a2df91f10dee979b18680fb3f9d4cc3806b287b46c74066f1c96614f1d715c"
+          },
+          "shared_preservation_comparator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/compare_fcstd_preservation_v2.py",
+            "sha256": "260e71cb5b95777f7dd11101217c0a06cb58736645e8967b9f8aa85c9695f6e4"
+          },
+          "independent_physical_validator": {
+            "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_lower_c001_aperture_vertex0_relief_v1.py",
+            "sha256": "7a4369637eb87e5ea4303556cd15d8ac9a2d34cd8e75cadb603a7f79956204f1"
+          },
+          "deterministic_test": {
+            "path": "tests/automated/test_lower_c001_aperture_vertex0_relief_tooling_v1.py",
+            "sha256": "af4377407f5509154a0e3ec36b2141d7ba6b8dac9778ac3c0e28101a26b52420"
+          }
+        },
+        "review_artifacts": {
+          "focused_exterior": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/focused-exterior.png",
+          "focused_interior": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/focused-interior.png",
+          "relief_overlay": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/relief-overlay.png",
+          "clearance_section": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/clearance-section.png"
+        },
+        "held_candidate_evidence": {
+          "status": "VALIDATOR_TOOLING_HOLD__CANDIDATE_UNCHANGED",
+          "candidate_sha256": "b9f5c48b881f73f311b7b3bf4ce07226fc473fec03d04fdaf69dab54ba2767ca",
+          "preservation_report_sha256": "592e4bd165fa52d37e2089771071120f8bf9becaf682f3a5f647b72fd8452ddf",
+          "runner_result_sha256": "f0f44b895bafc066830cf52341ff42863e06fd0f086c5485900a5443192486ff",
+          "preservation_status": "PASS__READY_FOR_FIXED_VIEW_REVIEW",
+          "validator_defect": "baseline.cut(candidate) returned the entire baseline plus the exact relief and a 1.2988714950460622e-15 mm3 fragment even though candidate and exact authorized result have zero two-way volume difference",
+          "candidate_regeneration_allowed": false,
+          "physical_geometry_changed_by_correction": false
+        }
+      }
+    }
+  ],
+  "protected_objects": {
+    "mode": "all_except_target",
+    "invariants": ["existence", "internal_name", "label", "type", "shape", "placement", "visibility", "group_membership"]
+  },
+  "budget": {
+    "fresh_chat_required": true,
+    "resume_previous_chat": false,
+    "max_generation_seconds": 300,
+    "max_candidates": 1,
+    "max_repair_attempts": 0,
+    "automatic_retry": false
+  },
+  "runtime": {
+    "manifest_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+    "manifest_sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+  },
+  "generator": {
+    "script_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_lower_c001_aperture_vertex0_relief_v1.py",
+    "script_sha256": "aab9444c99f4312c1b9db75af5b9b978f030897e4007ea96c233472c3a087fec",
+    "arguments": [
+      "--baseline",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/approved-baseline-v34.json",
+      "--contract",
+      "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/lower-c001-aperture-vertex0-relief-v1.json"
+    ],
+    "writes_only_output_directory": true
+  },
+  "review_gate": {
+    "required_views": ["front", "rear", "left", "right", "top", "bottom"],
+    "human_visual_approval_required": true,
+    "visual_approval_status": "pending",
+    "independent_verification_required": true,
+    "generator_may_write_validation": false,
+    "run_occt_before_visual_approval": false
+  },
+  "output": {
+    "directory": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1",
+    "candidate_fcstd": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/candidate.FCStd",
+    "no_op_snapshot_fcstd": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/no-op-snapshot.FCStd",
+    "review_files": {
+      "front": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/front.png",
+      "rear": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/rear.png",
+      "left": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/left.png",
+      "right": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/right.png",
+      "top": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/top.png",
+      "bottom": "reports/generated/cat-head-cad-iterations/lower-c001-aperture-vertex0-relief-v1/review/bottom.png"
+    }
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "three_mf": false,
+    "slicing": false,
+    "gcode": false,
+    "print": false,
+    "commit": false,
+    "promotion": false
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "authority": "USER_DELEGATED_ENGINEERING_ADJUDICATION__2026-08-19",
+  "elapsed_seconds": 36.31960162706673,
+  "failed_gates": [],
+  "gates": {
+    "aperture_preserved": true,
+    "continuous_rear_lens_seat_preserved": true,
+    "front_all_non_wall_physical_gates_unchanged": true,
+    "front_local_wall_above_accepted_1p15_mm_floor": true,
+    "front_mesh_clean": true,
+    "front_mesh_conditioning_bounded": true,
+    "front_structural_wall_above_0p70_mm": true,
+    "front_valid_closed_one_solid_deep_clean": true,
+    "hidden_groove_removal_below_0p001_mm3": true,
+    "input_front_exactly_reconstructed": true,
+    "integrated_review_pinned_and_all_pass": true,
+    "lens_mesh_clean_without_conditioning": true,
+    "lens_thickness_exact_0p90_mm": true,
+    "lens_valid_closed_one_solid_deep_clean": true,
+    "no_cyanoacrylate_no_lens_screws": true,
+    "subtraction_only": true
+  },
+  "io_trace": {
+    "canonical_opened": false,
+    "canonical_saved": false,
+    "gcode_created": false,
+    "review_inputs_opened_read_only": true,
+    "review_inputs_saved": false,
+    "stl_created": false,
+    "three_mf_created": false
+  },
+  "manufacturing_conditioning": {
+    "brep": {
+      "added_mm3": 0.0,
+      "end_extension_each_mm": 0.025,
+      "end_mm": [
+        43.784324645996094,
+        63.768150329589844,
+        168.23056030273438
+      ],
+      "lens_distance_mm": 3.557446336892567,
+      "maximum_removed_mm3": 0.001,
+      "operation": "hidden square seam groove subtraction",
+      "removed_mm3": 0.0008093288119008287,
+      "start_mm": [
+        43.96049880981445,
+        63.05550003051758,
+        165.88949584960938
+      ],
+      "width_mm": 0.025
+    },
+    "front_mesh": {
+      "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+      "automatic_repair_used": false,
+      "conditioned": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            107.90666961669922,
+            90.23110961914062,
+            180.95428466796875
+          ],
+          "minimum": [
+            31.39605712890625,
+            44.932987213134766,
+            116.46712493896484
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 370,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 11401.241121942701,
+        "vertices": 185
+      },
+      "coordinate_search_used": false,
+      "hole_filling_used": false,
+      "maximum_allowed_weld_distance_mm": 2e-05,
+      "maximum_weld_displacement_mm": 7.864199877963372e-06,
+      "raw": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            107.90666961669922,
+            90.23110961914062,
+            180.95428466796875
+          ],
+          "minimum": [
+            31.39605712890625,
+            44.932987213134766,
+            116.46712493896484
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 2,
+        "duplicate_facets": 0,
+        "facets": 386,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 3,
+        "signed_volume_mm3": 11401.241125427168,
+        "vertices": 193
+      },
+      "remeshing_used": false,
+      "removed_degenerate_source_facets": [
+        125,
+        244,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        302,
+        303,
+        304,
+        319,
+        320,
+        321
+      ],
+      "removed_duplicate_source_facets": [],
+      "scaling_used": false,
+      "smoothing_used": false,
+      "weld_groups": [
+        [
+          82,
+          83
+        ],
+        [
+          85,
+          155
+        ],
+        [
+          87,
+          163,
+          179,
+          180
+        ],
+        [
+          105,
+          156,
+          177,
+          178
+        ]
+      ]
+    },
+    "lens_mesh": {
+      "automatic_repair_used": false,
+      "conditioned": false,
+      "measurements": {
+        "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+        "boundary_edges": 0,
+        "bounds_mm": {
+          "maximum": [
+            101.9295425415039,
+            90.97138977050781,
+            177.58920288085938
+          ],
+          "minimum": [
+            33.5872688293457,
+            51.434478759765625,
+            125.57209777832031
+          ]
+        },
+        "connected_components": 1,
+        "degenerate_facets": 0,
+        "duplicate_facets": 0,
+        "facets": 12,
+        "nonmanifold_edges": 0,
+        "outward_normals": true,
+        "self_intersection_count": 0,
+        "signed_volume_mm3": 1650.8361389531678,
+        "vertices": 8
+      }
+    }
+  },
+  "physical_validation": {
+    "accepted_local_wall_deviation": {
+      "accepted_local_floor_mm": 1.15,
+      "affected_area_mm2": 0.07351877921206218,
+      "measured_minimum_wall_mm": 1.1687372792919657,
+      "nominal_wall_gate_retained_as_false": true,
+      "structural_floor_mm": 0.7
+    },
+    "checks": {
+      "approved_lip_preserved": true,
+      "conformal_bearing_area_at_least_80": true,
+      "exact_aperture_unoccupied": true,
+      "hidden_frustum_clear": true,
+      "no_mount_or_hardware_geometry": true,
+      "protected_outward_1p2_wall_unchanged": false,
+      "rear_cartridge_separate_and_clear": true,
+      "unauthorized_exterior_clear": true,
+      "valid_closed_one_solid": true,
+      "zero_distance_conformal_seat_allowed": true,
+      "zero_positive_shell_intersection": true
+    },
+    "measurements": {
+      "adhesive_recommendation": "roughened two-part epoxy; gel CA acceptable for prototype",
+      "approved_lip_missing_volume_mm3": 0.0,
+      "conformal_adhesive_bearing_area_mm2": 85.50801689031286,
+      "conformal_carrier_volume_mm3": 11401.001235943982,
+      "conformal_contact_reference_volume_mm3": 34.20320675612515,
+      "face_sheet_aperture_frustum_intersection_mm3": 0.0,
+      "hidden_frustum_intersection_mm3": 0.0,
+      "maximum_shell_intersection_mm3": 0.0,
+      "minimum_shell_distance_mm": 0.0,
+      "protected_outward_skin_missing_mm3": 0.0007661325615264362,
+      "protected_outward_wall_mm": 1.2,
+      "raw_carrier_volume_mm3": 11665.984721539504,
+      "rear_cartridge_clearance_mm": 2.29999999936516,
+      "rear_cartridge_intersection_mm3": 0.0,
+      "shell_intersections_mm3": {},
+      "shell_removed_from_underside_mm3": 264.9834855955214,
+      "unauthorized_exterior_intersection_mm3": 0.0
+    }
+  },
+  "pins": {
+    "front_generator_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-static-conformal-adhesive-front-carrier-review-r2/generate_review.py",
+    "front_generator_sha256": "537c8c3e5ea4d6c18459b6c0dc524b8bfef910f60bb21cc81ccf6e95d2fe8143",
+    "generator_sha256": "4477cda1040574c4bae431bc9df9eb0e76a5adeda7b9ac02cf972245f8bccf6f",
+    "integrated_review_fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-translucent-lens-insert-v1/RIGHT_EYE_FRONT_CARRIER_AND_TRANSLUCENT_LENS_REVIEW_ONLY_V1.FCStd",
+    "integrated_review_fcstd_sha256": "06fc8db668b23f9a91796df22fa0fc34c7cc552b25ddde8dd8cf7424dce77be1",
+    "integrated_review_validation_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-translucent-lens-insert-v1/validation-review-only.json",
+    "integrated_review_validation_sha256": "a8ed3ae544eb5af94ccc868dc64ca118d8902741b635fe053f99edf24888dc45",
+    "mesh_conditioner_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/right_eye_manufacturing_mesh_conditioning_v1.py",
+    "mesh_conditioner_sha256": "92b44b1db5d1fdd788df337f9a4f27107b71869a5c89ceda797c6243f9a19e6e"
+  },
+  "print_packaging": {
+    "assembly": {
+      "cyanoacrylate": "PROHIBITED near translucent lens",
+      "front_to_shell": "roughen mating surfaces; use two-part epoxy and clamp until fully cured",
+      "lens_screws": "PROHIBITED; unnecessary",
+      "lens_to_front": "exactly three tiny evenly spaced dabs of clear neutral-cure silicone on the continuous rear seat"
+    },
+    "bed_face_outward_normals": {
+      "front_carrier": [
+        -0.3093743710330279,
+        0.9105430240972069,
+        -0.27422417802927535
+      ],
+      "translucent_eye_glass": [
+        0.3093743710330279,
+        -0.9105430240972069,
+        0.27422417802927535
+      ]
+    },
+    "object_names": {
+      "front_carrier": "PRINT_RELEASE__RIGHT_EYE_FRONT_CARRIER",
+      "translucent_eye_glass": "PRINT_RELEASE__RIGHT_EYE_TRANSLUCENT_LENS"
+    },
+    "parts": {
+      "front_carrier": {
+        "aperture_preserved": true,
+        "closed": true,
+        "manufacturing_mesh": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              107.90666961669922,
+              90.23110961914062,
+              180.95428466796875
+            ],
+            "minimum": [
+              31.39605712890625,
+              44.932987213134766,
+              116.46712493896484
+            ]
+          },
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 370,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 11401.241121942701,
+          "vertices": 185
+        },
+        "minimum_wall_mm": 1.1687372792919657,
+        "occt_check_messages": [],
+        "rear_eye_glass_seat_continuous": true,
+        "self_intersection_count": 0,
+        "solid_count": 1,
+        "valid": true,
+        "volume_mm3": 11401.001235943982
+      },
+      "translucent_eye_glass": {
+        "closed": true,
+        "manufacturing_mesh": {
+          "algorithm_id": "micron-weld-and-zero-area-filter-v1",
+          "boundary_edges": 0,
+          "bounds_mm": {
+            "maximum": [
+              101.9295425415039,
+              90.97138977050781,
+              177.58920288085938
+            ],
+            "minimum": [
+              33.5872688293457,
+              51.434478759765625,
+              125.57209777832031
+            ]
+          },
+          "connected_components": 1,
+          "degenerate_facets": 0,
+          "duplicate_facets": 0,
+          "facets": 12,
+          "nonmanifold_edges": 0,
+          "outward_normals": true,
+          "self_intersection_count": 0,
+          "signed_volume_mm3": 1650.8361389531678,
+          "vertices": 8
+        },
+        "minimum_wall_mm": 0.9,
+        "occt_check_messages": [],
+        "self_intersection_count": 0,
+        "solid_count": 1,
+        "thickness_mm": 0.9,
+        "valid": true,
+        "volume_mm3": 1650.8368434489694
+      }
+    }
+  },
+  "printing_authorized": true,
+  "saved_fcstd_brep_evidence": {
+    "front_carrier": {
+      "closed": true,
+      "occt_check_messages": [],
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 11401.001235943982
+    },
+    "translucent_eye_glass": {
+      "closed": true,
+      "occt_check_messages": [],
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 1650.8368434489694
+    }
+  },
+  "schema_version": 1,
+  "scope": "two parts only: static conformal opaque-PETG front carrier and separate 0.90 mm translucent-PETG lens",
+  "source_fcstd": "/home/bsk/Projects/BM_personal_LED-projects /cat_bike/hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/print-source/right-eye-front-lens-print-source-v1/RIGHT_EYE_FRONT_LENS_PRINT_SOURCE_V1.FCStd",
+  "source_fcstd_sha256": "2f74fb55ac69e6129d8a157d69b8e44884ffd076463b9c71ae834d2895fbcf2f",
+  "status": "PASS__PRINTING_AUTHORIZED__RIGHT_EYE_FRONT_LENS_PRINT_SOURCE_V1"
+}

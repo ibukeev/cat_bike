@@ -1,0 +1,83 @@
+{
+  "schema_version": "2.0",
+  "iteration_id": "small-v1-final-user-cutter-holes-rev112",
+  "design_id": "CAT_HEAD_MEDIUM_ILYA_FINAL_USER_CUTTER_HOLES_REV112",
+  "tooling_revision": 1,
+  "approval": {
+    "approval_date": "2026-08-27",
+    "user_instruction": "Use the four objects in the Cutters body to cut holes in CAT_HEAD_MEDIUM_Ilya_FINAL_EDITS.FCStd, then create a final head body and printable STL exports.",
+    "subtract_all_four_user_cutters_authorized": true,
+    "create_new_final_head_body_authorized": true,
+    "export_head_and_four_translucent_panels_authorized": true,
+    "overwrite_source_fcstd_authorized": false,
+    "change_translucent_panels_authorized": false,
+    "change_existing_zip_tie_slots_authorized": false,
+    "slicer_profile_or_gcode_authorized": false,
+    "unrelated_geometry_authorized": false
+  },
+  "source": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-small-v1/review/editable-base-v1/eye-mouth-stops-print-package-rev108-review-2026-08-27/CAT_HEAD_MEDIUM_Ilya_FINAL_EDITS.FCStd",
+    "sha256": "8114b71e27ff0e90a68d21bfc0b77f894bcfb8800760dd74a7e9a8a6cccfeb24",
+    "approved_head_object": "PRINT__CAT_HEAD_WITH_INTEGRATED_STOPS_REV108",
+    "cutter_body_object": "Body",
+    "cutter_body_label": "Cutters",
+    "cumulative_tip_object": "Pad003",
+    "expected_cutter_count": 4,
+    "expected_cutter_compound_solid_count": 4,
+    "individual_cutter_shape_property": "AddSubShape",
+    "individual_cutters": [
+      {"object": "Pad", "label": "Cutter1", "expected_length_mm": -10.0},
+      {"object": "Pad001", "label": "Cutter2", "expected_length_mm": -10.0},
+      {"object": "Pad002", "label": "Cutter3", "expected_length_mm": -10.0},
+      {"object": "Pad003", "label": "Cutter4", "expected_length_mm": -10.0}
+    ],
+    "protected_panes": {
+      "right_eye": "PRINT__RIGHT_EYE_TRANSLUCENT_PANE_REV108",
+      "left_eye": "PRINT__LEFT_EYE_TRANSLUCENT_PANE_REV108",
+      "mouth_TRI005": "PRINT__MOUTH_TRI005_TRANSLUCENT_PANE_REV108",
+      "mouth_TRI006": "PRINT__MOUTH_TRI006_TRANSLUCENT_PANE_REV108"
+    },
+    "existing_zip_tie_corridors": {
+      "right": "REVIEW_ONLY__RIGHT_ZIP_TIE_SLOT_CORRIDOR_REV108",
+      "left": "REVIEW_ONLY__LEFT_ZIP_TIE_SLOT_CORRIDOR_REV108"
+    }
+  },
+  "operation": {
+    "method": "TARGET_MINUS_CUMULATIVE_CUTTER_BODY_ONCE",
+    "allowed_additions": 0,
+    "expected_final_head_solid_count": 1,
+    "expected_protected_pane_count": 4,
+    "expected_zip_tie_through_slot_count": 2
+  },
+  "validation": {
+    "minimum_individual_cutter_overlap_mm3": 1.0,
+    "shape_volume_tolerance_mm3": 0.001,
+    "boolean_residual_volume_maximum_mm3": 0.00001,
+    "pane_shape_residual_volume_maximum_mm3": 0.000001,
+    "pane_head_overlap_maximum_mm3": 0.000001,
+    "zip_tie_corridor_residual_volume_maximum_mm3": 0.000001,
+    "bbox_tolerance_mm": 0.001,
+    "length_tolerance_mm": 0.000001,
+    "mesh_linear_deflection_mm": 0.08,
+    "mesh_angular_deflection_rad": 0.17453292519943295,
+    "manual_review_holds": [
+      "All four user cutter pads form real openings through the final head",
+      "The final head remains one closed printable solid",
+      "Both existing 12 x 5 mm zip-tie slots remain through-open",
+      "The four translucent panes remain separate and geometrically unchanged",
+      "No slicer profile, 3MF project, or G-code is changed or created"
+    ]
+  },
+  "output": {
+    "candidate_directory": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112",
+    "candidate_fcstd": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_ILYA_FINAL_CUT_HOLES_REV112.FCStd",
+    "generation_report": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/generation-report.json",
+    "preflight_report": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/validation/small-v1-final-user-cutter-holes-rev112/preflight-report.json",
+    "head_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_ILYA_FINAL_HEAD_CUT_HOLES_REV112.stl",
+    "right_eye_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_RIGHT_EYE_TRANSLUCENT_PANE_REV112.stl",
+    "left_eye_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_LEFT_EYE_TRANSLUCENT_PANE_REV112.stl",
+    "mouth_tri005_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_MOUTH_TRI005_TRANSLUCENT_PANE_REV112.stl",
+    "mouth_tri006_stl": "hardware/mechanical/fabrication/3d-print/cat-head-midsize-bm-2026/releases/head-rev112/CAT_HEAD_MEDIUM_MOUTH_TRI006_TRANSLUCENT_PANE_REV112.stl",
+    "review_directory": "hardware/mechanical/fabrication/3d-print/cat-head-small-v1/review/editable-base-v1/final-user-cutter-holes-rev112-review-2026-08-27"
+  }
+}

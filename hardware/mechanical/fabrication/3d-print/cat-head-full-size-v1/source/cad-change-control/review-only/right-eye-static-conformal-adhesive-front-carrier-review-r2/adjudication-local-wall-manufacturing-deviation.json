@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "checkpoint_id": "right-eye-static-conformal-adhesive-front-carrier-r2-local-wall-deviation-v1",
+  "authority": "HUMAN_ENGINEERING_ADJUDICATION__REVIEW_ONLY__NON_AUTHORITATIVE",
+  "disposition": "FRONT_CARRIER_ACCEPTED__LOCAL_WALL_MANUFACTURING_DEVIATION",
+  "geometry_change": "none",
+  "source_evidence": {
+    "no_save_attribution_session": 59816,
+    "generator_sha256": "537c8c3e5ea4d6c18459b6c0dc524b8bfef910f60bb21cc81ccf6e95d2fe8143",
+    "contract_sha256": "b1446892311ebee3ddbd9875e5479c9a78eb6c534691c816753db65430ee96e7",
+    "held_candidate_sha256": "ec72a9480d105fdfdee2d509424b35de2e0abb0efb1eded14e718bfceb302f61"
+  },
+  "measured_local_deviation": {
+    "minimum_wall_mm": 1.1687372792919657,
+    "accepted_local_manufacturing_floor_mm": 1.15,
+    "structural_minimum_mm": 0.70,
+    "maximum_nominal_deficit_mm": 0.031262720708034264,
+    "affected_rear_plane_area_mm2": 0.07351877921206218,
+    "affected_projected_lcs_bbox_area_mm2": 0.15286278469126116,
+    "residue_volume_mm3": 0.0007661325615264362,
+    "affected_lcs_bbox_spans_mm": {
+      "u": 1.0271585272037784,
+      "v": 0.1488210248396591,
+      "inward_n": 0.03126272910148975
+    }
+  },
+  "engineering_basis": [
+    "The measured local wall remains above the explicit 1.15 mm manufacturing floor.",
+    "The measured local wall remains well above the 0.70 mm structural minimum.",
+    "The deviation is confined to 0.0735187792 mm2 at the protected-wall rear plane.",
+    "The exact-volume predicate remains failed and is not relabeled as a validator defect.",
+    "All non-wall feasibility gates remain required without relaxation."
+  ],
+  "release_limits": [
+    "review-only human inspection",
+    "not authoritative",
+    "not a print source",
+    "no STL or mesh export",
+    "no canonical V34 mutation",
+    "no geometry parameter change"
+  ]
+}

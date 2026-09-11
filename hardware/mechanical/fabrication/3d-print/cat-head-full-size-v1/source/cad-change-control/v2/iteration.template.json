@@ -1,0 +1,75 @@
+{
+  "schema_version": "2.0",
+  "project": "cat-head-full-size-v1",
+  "iteration_id": "UNSELECTED",
+  "state": "blocked_until_baseline_approved",
+  "baseline_id": "UNSELECTED",
+  "user_approval": {
+    "status": "pending",
+    "approved_by": "",
+    "approved_at": "",
+    "exact_instruction": ""
+  },
+  "target_object": "",
+  "allowed_mutations": [
+    {
+      "kind": "trim_end",
+      "object": "",
+      "parameters": {}
+    }
+  ],
+  "protected_objects": {
+    "mode": "all_except_target",
+    "invariants": ["existence", "internal_name", "label", "type", "shape", "placement", "visibility", "group_membership"]
+  },
+  "budget": {
+    "fresh_chat_required": true,
+    "resume_previous_chat": false,
+    "max_generation_seconds": 300,
+    "max_candidates": 1,
+    "max_repair_attempts": 0,
+    "automatic_retry": false
+  },
+  "runtime": {
+    "manifest_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/freecad-runtime-1.1.3-r20260725-occt-7.8.1.json",
+    "manifest_sha256": "0051cd65fc00f3270aadecd992ad7f571a327646054399e9ee17f39ae48c4bf1"
+  },
+  "generator": {
+    "script_path": "",
+    "script_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "arguments": [],
+    "writes_only_output_directory": true
+  },
+  "review_gate": {
+    "required_views": ["front", "rear", "left", "right", "top", "bottom"],
+    "human_visual_approval_required": true,
+    "visual_approval_status": "pending",
+    "independent_verification_required": true,
+    "generator_may_write_validation": false,
+    "run_occt_before_visual_approval": false
+  },
+  "output": {
+    "directory": "reports/generated/cat-head-cad-iterations/UNSELECTED",
+    "candidate_fcstd": "reports/generated/cat-head-cad-iterations/UNSELECTED/candidate.FCStd",
+    "no_op_snapshot_fcstd": "reports/generated/cat-head-cad-iterations/UNSELECTED/no-op-snapshot.FCStd",
+    "review_files": {
+      "front": "reports/generated/cat-head-cad-iterations/UNSELECTED/review/front.png",
+      "rear": "reports/generated/cat-head-cad-iterations/UNSELECTED/review/rear.png",
+      "left": "reports/generated/cat-head-cad-iterations/UNSELECTED/review/left.png",
+      "right": "reports/generated/cat-head-cad-iterations/UNSELECTED/review/right.png",
+      "top": "reports/generated/cat-head-cad-iterations/UNSELECTED/review/top.png",
+      "bottom": "reports/generated/cat-head-cad-iterations/UNSELECTED/review/bottom.png"
+    }
+  },
+  "release_holds": {
+    "mirror": false,
+    "production_union": false,
+    "stl": false,
+    "three_mf": false,
+    "slicing": false,
+    "gcode": false,
+    "print": false,
+    "commit": false,
+    "promotion": false
+  }
+}

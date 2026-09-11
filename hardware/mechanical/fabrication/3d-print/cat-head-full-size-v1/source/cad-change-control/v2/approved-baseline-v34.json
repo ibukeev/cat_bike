@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "project": "cat-head-full-size-v1",
+  "baseline_id": "right-upper-c009-deletion-review-v34",
+  "state": "human_approved_canonical",
+  "assembly": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+    "sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584",
+    "format": "fcstd"
+  },
+  "review_pack": {
+    "front": {
+      "path": "reports/generated/cat-head-cad-baseline-shortlist/v34-latest-intact-context/front.png",
+      "sha256": "4ae243a1b9fd2fee04bc09632bd25d623ddd8b42cb74b52c12a2b13567e93a35"
+    },
+    "rear": {
+      "path": "reports/generated/cat-head-cad-baseline-shortlist/v34-latest-intact-context/rear.png",
+      "sha256": "b80f580b934c36377600b4208e2c78774998c8958b955695e418ef9c3577dfec"
+    },
+    "left": {
+      "path": "reports/generated/cat-head-cad-baseline-shortlist/v34-latest-intact-context/left.png",
+      "sha256": "f2df4f84841cb9e6cf67f6a6a6d1711508c59886e144546024b37fc2ba784247"
+    },
+    "right": {
+      "path": "reports/generated/cat-head-cad-baseline-shortlist/v34-latest-intact-context/right.png",
+      "sha256": "b40e93cb9ec807517c7f851149365a47ec20248e144494f455b4ad309515d720"
+    },
+    "top": {
+      "path": "reports/generated/cat-head-cad-baseline-shortlist/v34-latest-intact-context/top.png",
+      "sha256": "2ab6f94eeb5680a45e2173efcf5b6afdbafde34d838566449a8cbeb259479b8b"
+    },
+    "bottom": {
+      "path": "reports/generated/cat-head-cad-baseline-shortlist/v34-latest-intact-context/bottom.png",
+      "sha256": "6f066aad9effba0e88afefcdb3c816fef03f0d066e61c9c40db05ae7b154afa4"
+    }
+  },
+  "approval": {
+    "status": "approved",
+    "approved_by": "user",
+    "approved_at": "2026-08-16T19:04:39-07:00",
+    "note": "User visually inspected V34 and stated: 'V34 is a reasonable baseline.' This approves it only as the recovery baseline, not as print-ready geometry; known eye/socket and flange defects remain iteration targets."
+  }
+}

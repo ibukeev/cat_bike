@@ -1,0 +1,29 @@
+{
+  "vertices": 154,
+  "triangles": 312,
+  "edges": 468,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "connected_components": 1,
+  "volume_mm3": 40067.205,
+  "dimensions_mm": [
+    92.07,
+    100.0,
+    74.62
+  ],
+  "fits_mk4s": true,
+  "target_concept_height_mm": 100.0,
+  "wall_thickness_mm": 1.2,
+  "rear_opening_inset_mm": 7.0,
+  "source_scale": 0.45454545,
+  "source_boundary_edges_closed": 31,
+  "preserved_inner_ear_openings": 2,
+  "source_obj": "hardware/mechanical/fabrication/templates/cat-head-cardboard-fabrication-v1/assembly/accepted-panels-3d.obj",
+  "approved_package": "hardware/mechanical/fabrication/templates/cat-head-wireframe-prototype/versions/v1-shape-approved-cardboard-prototype",
+  "print_orientation": "flat rear opening on printer Z=0",
+  "mk4s_build_volume_mm": [
+    250.0,
+    210.0,
+    220.0
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "REJECTED_BY_USER_2026-08-11",
+  "units": "mm",
+  "problem": "Replace the rejected oversized pair with the compact rectangular legacy four-aperture flange style, using two M3 holes and less projection.",
+  "frozen": {
+    "clean_ear_owner": "PROPOSED__RIGHT_EAR_C001__LEGACY_FLANGE_FLUSH_REMOVED_V2_ref",
+    "upper_head_owner": "PROPOSED__RIGHT_UPPER_HEAD_REPAIRED_COMPONENT__C001_SOLID_V3_ref_ref",
+    "left_side_changed": false,
+    "aluminum_interface_changed": false,
+    "owner_union_or_cut_performed": false
+  },
+  "legacy_reference": {
+    "source_body_mm": [23.97, 8.0, 3.8],
+    "local_long_axis": [-0.2348988232, 0.9275953528, 0.2904985446],
+    "local_width_axis": [-0.2453551020, -0.3457658901, 0.9056747889],
+    "bolt_axis_head_to_ear": [0.9405442131, 0.1414666420, 0.3088102530],
+    "approved_root_anchor": "legacy Face200 frame",
+    "user_direction": "reuse old four-hole flange style; change to two holes and reduce projection"
+  },
+  "proposal": {
+    "flange_count": 2,
+    "flange_size_mm": [20.0, 11.0, 3.0],
+    "combined_projection_including_gap_mm": 6.3,
+    "rejected_pair_combined_projection_mm": 8.35,
+    "projection_reduction_mm": 2.05,
+    "projection_reduction_percent": 24.55,
+    "mating_gap_mm": 0.3,
+    "hole_count_per_flange": 2,
+    "hole_type": "round",
+    "m3_clearance_diameter_mm": 3.4,
+    "bolt_center_spacing_mm": 9.5,
+    "end_bore_edge_material_mm": 3.55,
+    "side_bore_edge_material_mm": 3.8,
+    "fastener": "2 x M3 through-bolts with washers and nylocs; final length after stack measurement"
+  },
+  "validation": {
+    "head_flange_valid_closed_solid": true,
+    "ear_flange_valid_closed_solid": true,
+    "head_flange_volume_mm3": 605.52,
+    "ear_flange_volume_mm3": 605.52,
+    "head_owner_root_overlap_mm3": 375.0564,
+    "ear_owner_root_overlap_mm3": 374.9478,
+    "minimum_owner_root_overlap_mm3": 80.0,
+    "flange_gap_mm": 0.3,
+    "head_flange_to_ear_owner_clearance_mm": 0.1480,
+    "ear_flange_to_head_owner_clearance_mm": 0.1511,
+    "visual_exterior_and_hardware_access": "pending"
+  },
+  "release_holds": [
+    "Rejected: replacement compact plates misunderstood the request and visually buried/partially destroyed the established two-flange interface.",
+    "No owner integration before user visual approval.",
+    "No left mirror before approved right-side integration.",
+    "No STL, slicing, G-code, ASA recommendation, or print release.",
+    "CAT-HEAD-SHELL-ALUMINUM-V0.5-M2 remains frozen."
+  ]
+}

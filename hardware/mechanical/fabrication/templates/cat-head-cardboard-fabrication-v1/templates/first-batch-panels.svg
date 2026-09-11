@@ -1,0 +1,501 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="279.4mm" height="1143.5mm" viewBox="0 0 279.4 1143.5">
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<g transform="translate(0 0.000)">
+<text x="10" y="7" font-size="4.5" font-weight="700">Sheet 01</text>
+<rect x="0" y="0" width="279.4" height="215.9" fill="none" stroke="#9ca3af" stroke-width="0.35"/>
+<polygon points="18.000,18.000 49.758,18.000 48.565,29.754 39.804,36.939" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="39.032" y="21.673" font-size="4.2" text-anchor="middle" font-weight="700">QUAD004</text>
+<text x="39.032" y="27.173" font-size="3.1" text-anchor="middle">center_face</text>
+<text x="39.032" y="32.673" font-size="2.8" text-anchor="middle" fill="#b91c1c">warp 7.3mm</text>
+<line x1="18.000" y1="18.000" x2="48.565" y2="29.754" stroke="#b91c1c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<circle cx="18.000" cy="18.000" r="1.15" fill="#111827"/>
+<text x="19.800" y="16.200" font-size="2.5">P003</text>
+<circle cx="49.758" cy="18.000" r="1.15" fill="#111827"/>
+<text x="51.558" y="16.200" font-size="2.5">P040</text>
+<circle cx="48.565" cy="29.754" r="1.15" fill="#111827"/>
+<text x="50.365" y="27.954" font-size="2.5">P034</text>
+<circle cx="39.804" cy="36.939" r="1.15" fill="#111827"/>
+<text x="41.604" y="35.139" font-size="2.5">P059</text>
+<text x="33.879" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 33.879 18.000)" fill="#1f2937">E031 31.76mm</text>
+<text x="49.161" y="23.877" font-size="2.7" text-anchor="middle" transform="rotate(-84.21 49.161 23.877)" fill="#1f2937">E032 11.81mm</text>
+<text x="44.184" y="33.347" font-size="2.7" text-anchor="middle" transform="rotate(-39.36 44.184 33.347)" fill="#1f2937">E033 13.48mm</text>
+<text x="28.902" y="27.470" font-size="2.7" text-anchor="middle" transform="rotate(40.98 28.902 27.470)" fill="#1f2937">E026 29.79mm</text>
+<polygon points="81.791,18.000 93.605,18.000 90.549,49.446 73.758,25.959" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="84.926" y="23.851" font-size="4.2" text-anchor="middle" font-weight="700">QUAD002</text>
+<text x="84.926" y="29.351" font-size="3.1" text-anchor="middle">center_face</text>
+<text x="84.926" y="34.851" font-size="2.8" text-anchor="middle" fill="#b91c1c">warp 7.3mm</text>
+<line x1="81.791" y1="18.000" x2="90.549" y2="49.446" stroke="#b91c1c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<circle cx="81.791" cy="18.000" r="1.15" fill="#111827"/>
+<text x="83.591" y="16.200" font-size="2.5">P002</text>
+<circle cx="93.605" cy="18.000" r="1.15" fill="#111827"/>
+<text x="95.405" y="16.200" font-size="2.5">P011</text>
+<circle cx="90.549" cy="49.446" r="1.15" fill="#111827"/>
+<text x="92.349" y="47.646" font-size="2.5">P003</text>
+<circle cx="73.758" cy="25.959" r="1.15" fill="#111827"/>
+<text x="75.558" y="24.159" font-size="2.5">P059</text>
+<text x="87.698" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 87.698 18.000)" fill="#1f2937">E022 11.81mm</text>
+<text x="92.077" y="33.723" font-size="2.7" text-anchor="middle" transform="rotate(-84.45 92.077 33.723)" fill="#1f2937">E025 31.59mm</text>
+<text x="82.154" y="37.703" font-size="2.7" text-anchor="middle" transform="rotate(54.44 82.154 37.703)" fill="#1f2937">E026 29.79mm</text>
+<text x="77.774" y="21.980" font-size="2.7" text-anchor="middle" transform="rotate(-44.74 77.774 21.980)" fill="#1f2937">E027 13.48mm</text>
+<polygon points="117.605,18.000 161.087,18.000 161.916,29.786 122.533,31.856" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="140.785" y="20.410" font-size="4.2" text-anchor="middle" font-weight="700">QUAD022</text>
+<text x="140.785" y="25.910" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="117.605" cy="18.000" r="1.15" fill="#111827"/>
+<text x="119.405" y="16.200" font-size="2.5">P033</text>
+<circle cx="161.087" cy="18.000" r="1.15" fill="#111827"/>
+<text x="162.887" y="16.200" font-size="2.5">P034</text>
+<circle cx="161.916" cy="29.786" r="1.15" fill="#111827"/>
+<text x="163.716" y="27.986" font-size="2.5">P040</text>
+<circle cx="122.533" cy="31.856" r="1.15" fill="#111827"/>
+<text x="124.333" y="30.056" font-size="2.5">P044</text>
+<text x="139.346" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 139.346 18.000)" fill="#1f2937">E004 43.48mm</text>
+<text x="161.502" y="23.893" font-size="2.7" text-anchor="middle" transform="rotate(85.98 161.502 23.893)" fill="#1f2937">E032 11.81mm</text>
+<text x="142.224" y="30.821" font-size="2.7" text-anchor="middle" transform="rotate(-3.01 142.224 30.821)" fill="#1f2937">E064 39.45mm</text>
+<text x="120.069" y="24.928" font-size="2.7" text-anchor="middle" transform="rotate(70.42 120.069 24.928)" fill="#1f2937">E065 14.74mm</text>
+<polygon points="185.916,18.000 229.398,18.000 230.227,29.786 190.844,31.856" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="209.096" y="20.410" font-size="4.2" text-anchor="middle" font-weight="700">QUAD001</text>
+<text x="209.096" y="25.910" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="185.916" cy="18.000" r="1.15" fill="#111827"/>
+<text x="187.716" y="16.200" font-size="2.5">P001</text>
+<circle cx="229.398" cy="18.000" r="1.15" fill="#111827"/>
+<text x="231.198" y="16.200" font-size="2.5">P002</text>
+<circle cx="230.227" cy="29.786" r="1.15" fill="#111827"/>
+<text x="232.027" y="27.986" font-size="2.5">P011</text>
+<circle cx="190.844" cy="31.856" r="1.15" fill="#111827"/>
+<text x="192.644" y="30.056" font-size="2.5">P015</text>
+<text x="207.657" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 207.657 18.000)" fill="#1f2937">E002 43.48mm</text>
+<text x="229.813" y="23.893" font-size="2.7" text-anchor="middle" transform="rotate(85.98 229.813 23.893)" fill="#1f2937">E022 11.81mm</text>
+<text x="210.535" y="30.821" font-size="2.7" text-anchor="middle" transform="rotate(-3.01 210.535 30.821)" fill="#1f2937">E023 39.45mm</text>
+<text x="188.380" y="24.928" font-size="2.7" text-anchor="middle" transform="rotate(70.42 188.380 24.928)" fill="#1f2937">E024 14.74mm</text>
+<polygon points="18.399,73.446 44.555,73.446 44.954,116.927 18.000,116.927" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="31.477" y="91.186" font-size="4.2" text-anchor="middle" font-weight="700">MANQ001</text>
+<text x="31.477" y="96.686" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="18.399" cy="73.446" r="1.15" fill="#111827"/>
+<text x="20.199" y="71.646" font-size="2.5">P033</text>
+<circle cx="44.555" cy="73.446" r="1.15" fill="#111827"/>
+<text x="46.355" y="71.646" font-size="2.5">P001</text>
+<circle cx="44.954" cy="116.927" r="1.15" fill="#111827"/>
+<text x="46.754" y="115.127" font-size="2.5">P002</text>
+<circle cx="18.000" cy="116.927" r="1.15" fill="#111827"/>
+<text x="19.800" y="115.127" font-size="2.5">P034</text>
+<text x="31.477" y="73.446" font-size="2.7" text-anchor="middle" transform="rotate(0.00 31.477 73.446)" fill="#1f2937">E001 26.16mm</text>
+<text x="44.755" y="95.186" font-size="2.7" text-anchor="middle" transform="rotate(89.47 44.755 95.186)" fill="#1f2937">E002 43.48mm</text>
+<text x="31.477" y="116.927" font-size="2.7" text-anchor="middle" transform="rotate(0.00 31.477 116.927)" fill="#1f2937">E003 26.95mm</text>
+<text x="18.200" y="95.186" font-size="2.7" text-anchor="middle" transform="rotate(-89.47 18.200 95.186)" fill="#1f2937">E004 43.48mm</text>
+<polygon points="68.954,73.446 92.795,73.446 83.301,95.316" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="81.683" y="76.736" font-size="4.2" text-anchor="middle" font-weight="700">TRI004</text>
+<text x="81.683" y="82.236" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="68.954" cy="73.446" r="1.15" fill="#111827"/>
+<text x="70.754" y="71.646" font-size="2.5">P001</text>
+<circle cx="92.795" cy="73.446" r="1.15" fill="#111827"/>
+<text x="94.595" y="71.646" font-size="2.5">P022</text>
+<circle cx="83.301" cy="95.316" r="1.15" fill="#111827"/>
+<text x="85.101" y="93.516" font-size="2.5">P033</text>
+<text x="80.875" y="73.446" font-size="2.7" text-anchor="middle" transform="rotate(0.00 80.875 73.446)" fill="#1f2937">E095 23.84mm</text>
+<text x="88.048" y="84.381" font-size="2.7" text-anchor="middle" transform="rotate(-66.53 88.048 84.381)" fill="#1f2937">E097 23.84mm</text>
+<text x="76.127" y="84.381" font-size="2.7" text-anchor="middle" transform="rotate(56.74 76.127 84.381)" fill="#1f2937">E001 26.16mm</text>
+<polygon points="127.769,73.446 151.611,73.446 116.795,114.147" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="132.058" y="83.013" font-size="4.2" text-anchor="middle" font-weight="700">TRI032</text>
+<text x="132.058" y="88.513" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="127.769" cy="73.446" r="1.15" fill="#111827"/>
+<text x="129.569" y="71.646" font-size="2.5">P022</text>
+<circle cx="151.611" cy="73.446" r="1.15" fill="#111827"/>
+<text x="153.411" y="71.646" font-size="2.5">P033</text>
+<circle cx="116.795" cy="114.147" r="1.15" fill="#111827"/>
+<text x="118.595" y="112.347" font-size="2.5">P039</text>
+<text x="139.690" y="73.446" font-size="2.7" text-anchor="middle" transform="rotate(0.00 139.690 73.446)" fill="#1f2937">E097 23.84mm</text>
+<text x="134.203" y="93.797" font-size="2.7" text-anchor="middle" transform="rotate(-49.46 134.203 93.797)" fill="#1f2937">E126 53.56mm</text>
+<text x="122.282" y="93.797" font-size="2.7" text-anchor="middle" transform="rotate(-74.91 122.282 93.797)" fill="#1f2937">E047 42.15mm</text>
+<polygon points="175.611,73.446 229.172,73.446 191.110,91.562" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="198.631" y="75.485" font-size="4.2" text-anchor="middle" font-weight="700">TRI002</text>
+<text x="198.631" y="80.985" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="175.611" cy="73.446" r="1.15" fill="#111827"/>
+<text x="177.411" y="71.646" font-size="2.5">P001</text>
+<circle cx="229.172" cy="73.446" r="1.15" fill="#111827"/>
+<text x="230.972" y="71.646" font-size="2.5">P009</text>
+<circle cx="191.110" cy="91.562" r="1.15" fill="#111827"/>
+<text x="192.910" y="89.762" font-size="2.5">P022</text>
+<text x="202.391" y="73.446" font-size="2.7" text-anchor="middle" transform="rotate(0.00 202.391 73.446)" fill="#1f2937">E092 53.56mm</text>
+<text x="210.141" y="82.504" font-size="2.7" text-anchor="middle" transform="rotate(-25.45 210.141 82.504)" fill="#1f2937">E048 42.15mm</text>
+<text x="183.360" y="82.504" font-size="2.7" text-anchor="middle" transform="rotate(49.45 183.360 82.504)" fill="#1f2937">E095 23.84mm</text>
+<polygon points="18.000,140.927 54.370,140.927 49.901,168.484" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="40.757" y="146.113" font-size="4.2" text-anchor="middle" font-weight="700">TRI031</text>
+<text x="40.757" y="151.613" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="18.000" cy="140.927" r="1.15" fill="#111827"/>
+<text x="19.800" y="139.127" font-size="2.5">P022</text>
+<circle cx="54.370" cy="140.927" r="1.15" fill="#111827"/>
+<text x="56.170" y="139.127" font-size="2.5">P023</text>
+<circle cx="49.901" cy="168.484" r="1.15" fill="#111827"/>
+<text x="51.701" y="166.684" font-size="2.5">P039</text>
+<text x="36.185" y="140.927" font-size="2.7" text-anchor="middle" transform="rotate(0.00 36.185 140.927)" fill="#1f2937">E113 36.37mm</text>
+<text x="52.135" y="154.705" font-size="2.7" text-anchor="middle" transform="rotate(-80.79 52.135 154.705)" fill="#1f2937">E114 27.92mm</text>
+<text x="33.950" y="154.705" font-size="2.7" text-anchor="middle" transform="rotate(40.82 33.950 154.705)" fill="#1f2937">E047 42.15mm</text>
+<polygon points="78.370,140.927 120.524,140.927 93.001,164.703" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="97.298" y="144.852" font-size="4.2" text-anchor="middle" font-weight="700">TRI017</text>
+<text x="97.298" y="150.352" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="78.370" cy="140.927" r="1.15" fill="#111827"/>
+<text x="80.170" y="139.127" font-size="2.5">P009</text>
+<circle cx="120.524" cy="140.927" r="1.15" fill="#111827"/>
+<text x="122.324" y="139.127" font-size="2.5">P022</text>
+<circle cx="93.001" cy="164.703" r="1.15" fill="#111827"/>
+<text x="94.801" y="162.903" font-size="2.5">P023</text>
+<text x="99.447" y="140.927" font-size="2.7" text-anchor="middle" transform="rotate(0.00 99.447 140.927)" fill="#1f2937">E048 42.15mm</text>
+<text x="106.762" y="152.815" font-size="2.7" text-anchor="middle" transform="rotate(-40.82 106.762 152.815)" fill="#1f2937">E113 36.37mm</text>
+<text x="85.685" y="152.815" font-size="2.7" text-anchor="middle" transform="rotate(58.39 85.685 152.815)" fill="#1f2937">E108 27.92mm</text>
+<polygon points="157.686,140.927 218.973,140.927 181.574,189.367 144.524,177.527" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="175.689" y="158.187" font-size="4.2" text-anchor="middle" font-weight="700">QUAD010</text>
+<text x="175.689" y="163.687" font-size="3.1" text-anchor="middle">center_face</text>
+<text x="175.689" y="169.187" font-size="2.8" text-anchor="middle" fill="#b91c1c">warp 16.3mm</text>
+<line x1="157.686" y1="140.927" x2="181.574" y2="189.367" stroke="#b91c1c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<circle cx="157.686" cy="140.927" r="1.15" fill="#111827"/>
+<text x="159.486" y="139.127" font-size="2.5">P009</text>
+<circle cx="218.973" cy="140.927" r="1.15" fill="#111827"/>
+<text x="220.773" y="139.127" font-size="2.5">P010</text>
+<circle cx="181.574" cy="189.367" r="1.15" fill="#111827"/>
+<text x="183.374" y="187.567" font-size="2.5">P039</text>
+<circle cx="144.524" cy="177.527" r="1.15" fill="#111827"/>
+<text x="146.324" y="175.727" font-size="2.5">P022</text>
+<text x="188.330" y="140.927" font-size="2.7" text-anchor="middle" transform="rotate(0.00 188.330 140.927)" fill="#1f2937">E045 61.29mm</text>
+<text x="200.274" y="165.147" font-size="2.7" text-anchor="middle" transform="rotate(-52.33 200.274 165.147)" fill="#1f2937">E046 61.20mm</text>
+<text x="163.049" y="183.447" font-size="2.7" text-anchor="middle" transform="rotate(17.72 163.049 183.447)" fill="#1f2937">E047 42.15mm</text>
+<text x="151.105" y="159.227" font-size="2.7" text-anchor="middle" transform="rotate(-70.22 151.105 159.227)" fill="#1f2937">E048 42.15mm</text>
+</g>
+<g transform="translate(0 231.900)">
+<text x="10" y="7" font-size="4.5" font-weight="700">Sheet 02</text>
+<rect x="0" y="0" width="279.4" height="215.9" fill="none" stroke="#9ca3af" stroke-width="0.35"/>
+<polygon points="18.000,18.000 66.997,18.000 72.764,45.315" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="52.587" y="23.105" font-size="4.2" text-anchor="middle" font-weight="700">TRI018</text>
+<text x="52.587" y="28.605" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="18.000" cy="18.000" r="1.15" fill="#111827"/>
+<text x="19.800" y="16.200" font-size="2.5">P010</text>
+<circle cx="66.997" cy="18.000" r="1.15" fill="#111827"/>
+<text x="68.797" y="16.200" font-size="2.5">P023</text>
+<circle cx="72.764" cy="45.315" r="1.15" fill="#111827"/>
+<text x="74.564" y="43.515" font-size="2.5">P039</text>
+<text x="42.499" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 42.499 18.000)" fill="#1f2937">E107 49.00mm</text>
+<text x="69.881" y="31.657" font-size="2.7" text-anchor="middle" transform="rotate(78.08 69.881 31.657)" fill="#1f2937">E114 27.92mm</text>
+<text x="45.382" y="31.657" font-size="2.7" text-anchor="middle" transform="rotate(26.51 45.382 31.657)" fill="#1f2937">E046 61.20mm</text>
+<polygon points="96.764,18.000 158.051,18.000 114.180,39.818" fill="#fef3c7" stroke="#111827" stroke-width="0.35"/>
+<text x="122.998" y="21.273" font-size="4.2" text-anchor="middle" font-weight="700">TRI013</text>
+<text x="122.998" y="26.773" font-size="3.1" text-anchor="middle">center_face</text>
+<circle cx="96.764" cy="18.000" r="1.15" fill="#111827"/>
+<text x="98.564" y="16.200" font-size="2.5">P009</text>
+<circle cx="158.051" cy="18.000" r="1.15" fill="#111827"/>
+<text x="159.851" y="16.200" font-size="2.5">P010</text>
+<circle cx="114.180" cy="39.818" r="1.15" fill="#111827"/>
+<text x="115.980" y="38.018" font-size="2.5">P023</text>
+<text x="127.408" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 127.408 18.000)" fill="#1f2937">E045 61.29mm</text>
+<text x="136.115" y="28.909" font-size="2.7" text-anchor="middle" transform="rotate(-26.44 136.115 28.909)" fill="#1f2937">E107 49.00mm</text>
+<text x="105.472" y="28.909" font-size="2.7" text-anchor="middle" transform="rotate(51.40 105.472 28.909)" fill="#1f2937">E108 27.92mm</text>
+<polygon points="182.051,18.000 206.665,18.000 184.908,57.348" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="191.208" y="27.116" font-size="4.2" text-anchor="middle" font-weight="700">TRI020</text>
+<text x="191.208" y="32.616" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="182.051" cy="18.000" r="1.15" fill="#111827"/>
+<text x="183.851" y="16.200" font-size="2.5">P011</text>
+<circle cx="206.665" cy="18.000" r="1.15" fill="#111827"/>
+<text x="208.465" y="16.200" font-size="2.5">P012</text>
+<circle cx="184.908" cy="57.348" r="1.15" fill="#111827"/>
+<text x="186.708" y="55.548" font-size="2.5">P015</text>
+<text x="194.358" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 194.358 18.000)" fill="#1f2937">E028 24.61mm</text>
+<text x="195.786" y="37.674" font-size="2.7" text-anchor="middle" transform="rotate(-61.06 195.786 37.674)" fill="#1f2937">E116 44.96mm</text>
+<text x="183.479" y="37.674" font-size="2.7" text-anchor="middle" transform="rotate(85.85 183.479 37.674)" fill="#1f2937">E023 39.45mm</text>
+<polygon points="230.665,18.000 255.492,18.000 246.661,60.020" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="244.273" y="28.007" font-size="4.2" text-anchor="middle" font-weight="700">TRI021</text>
+<text x="244.273" y="33.507" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="230.665" cy="18.000" r="1.15" fill="#111827"/>
+<text x="232.465" y="16.200" font-size="2.5">P012</text>
+<circle cx="255.492" cy="18.000" r="1.15" fill="#111827"/>
+<text x="257.292" y="16.200" font-size="2.5">P014</text>
+<circle cx="246.661" cy="60.020" r="1.15" fill="#111827"/>
+<text x="248.461" y="58.220" font-size="2.5">P015</text>
+<text x="243.079" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 243.079 18.000)" fill="#1f2937">E050 24.83mm</text>
+<text x="251.077" y="39.010" font-size="2.7" text-anchor="middle" transform="rotate(-78.13 251.077 39.010)" fill="#1f2937">E117 42.94mm</text>
+<text x="238.663" y="39.010" font-size="2.7" text-anchor="middle" transform="rotate(69.16 238.663 39.010)" fill="#1f2937">E116 44.96mm</text>
+<polygon points="18.000,84.020 60.938,84.020 20.862,113.217" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="33.267" y="89.752" font-size="4.2" text-anchor="middle" font-weight="700">TRI022</text>
+<text x="33.267" y="95.252" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="18.000" cy="84.020" r="1.15" fill="#111827"/>
+<text x="19.800" y="82.220" font-size="2.5">P014</text>
+<circle cx="60.938" cy="84.020" r="1.15" fill="#111827"/>
+<text x="62.738" y="82.220" font-size="2.5">P015</text>
+<circle cx="20.862" cy="113.217" r="1.15" fill="#111827"/>
+<text x="22.662" y="111.417" font-size="2.5">P017</text>
+<text x="39.469" y="84.020" font-size="2.7" text-anchor="middle" transform="rotate(0.00 39.469 84.020)" fill="#1f2937">E117 42.94mm</text>
+<text x="40.900" y="98.619" font-size="2.7" text-anchor="middle" transform="rotate(-36.07 40.900 98.619)" fill="#1f2937">E118 49.58mm</text>
+<text x="19.431" y="98.619" font-size="2.7" text-anchor="middle" transform="rotate(84.40 19.431 98.619)" fill="#1f2937">E051 29.34mm</text>
+<polygon points="84.938,84.020 125.991,84.020 119.909,110.545" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="110.279" y="88.862" font-size="4.2" text-anchor="middle" font-weight="700">TRI025</text>
+<text x="110.279" y="94.362" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="84.938" cy="84.020" r="1.15" fill="#111827"/>
+<text x="86.738" y="82.220" font-size="2.5">P016</text>
+<circle cx="125.991" cy="84.020" r="1.15" fill="#111827"/>
+<text x="127.791" y="82.220" font-size="2.5">P017</text>
+<circle cx="119.909" cy="110.545" r="1.15" fill="#111827"/>
+<text x="121.709" y="108.745" font-size="2.5">P020</text>
+<text x="105.464" y="84.020" font-size="2.7" text-anchor="middle" transform="rotate(0.00 105.464 84.020)" fill="#1f2937">E119 41.05mm</text>
+<text x="122.950" y="97.283" font-size="2.7" text-anchor="middle" transform="rotate(-77.09 122.950 97.283)" fill="#1f2937">E052 27.21mm</text>
+<text x="102.423" y="97.283" font-size="2.7" text-anchor="middle" transform="rotate(37.18 102.423 97.283)" fill="#1f2937">E120 43.89mm</text>
+<polygon points="149.991,84.020 164.734,84.020 153.225,110.199" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="155.983" y="88.746" font-size="4.2" text-anchor="middle" font-weight="700">TRI003</text>
+<text x="155.983" y="94.246" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="149.991" cy="84.020" r="1.15" fill="#111827"/>
+<text x="151.791" y="82.220" font-size="2.5">P001</text>
+<circle cx="164.734" cy="84.020" r="1.15" fill="#111827"/>
+<text x="166.534" y="82.220" font-size="2.5">P015</text>
+<circle cx="153.225" cy="110.199" r="1.15" fill="#111827"/>
+<text x="155.025" y="108.399" font-size="2.5">P019</text>
+<text x="157.362" y="84.020" font-size="2.7" text-anchor="middle" transform="rotate(0.00 157.362 84.020)" fill="#1f2937">E024 14.74mm</text>
+<text x="158.980" y="97.109" font-size="2.7" text-anchor="middle" transform="rotate(-66.27 158.980 97.109)" fill="#1f2937">E096 28.60mm</text>
+<text x="151.608" y="97.109" font-size="2.7" text-anchor="middle" transform="rotate(82.96 151.608 97.109)" fill="#1f2937">E094 26.38mm</text>
+<polygon points="188.734,84.020 232.626,84.020 201.321,133.808" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="207.561" y="96.616" font-size="4.2" text-anchor="middle" font-weight="700">TRI026</text>
+<text x="207.561" y="102.116" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="188.734" cy="84.020" r="1.15" fill="#111827"/>
+<text x="190.534" y="82.220" font-size="2.5">P016</text>
+<circle cx="232.626" cy="84.020" r="1.15" fill="#111827"/>
+<text x="234.426" y="82.220" font-size="2.5">P020</text>
+<circle cx="201.321" cy="133.808" r="1.15" fill="#111827"/>
+<text x="203.121" y="132.008" font-size="2.5">P026</text>
+<text x="210.680" y="84.020" font-size="2.7" text-anchor="middle" transform="rotate(0.00 210.680 84.020)" fill="#1f2937">E120 43.89mm</text>
+<text x="216.974" y="108.914" font-size="2.7" text-anchor="middle" transform="rotate(-57.84 216.974 108.914)" fill="#1f2937">E121 58.81mm</text>
+<text x="195.028" y="108.914" font-size="2.7" text-anchor="middle" transform="rotate(75.81 195.028 108.914)" fill="#1f2937">E122 51.35mm</text>
+<polygon points="18.000,157.808 71.561,157.808 41.682,169.426" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="43.747" y="157.681" font-size="4.2" text-anchor="middle" font-weight="700">TRI001</text>
+<text x="43.747" y="163.181" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="18.000" cy="157.808" r="1.15" fill="#111827"/>
+<text x="19.800" y="156.008" font-size="2.5">P001</text>
+<circle cx="71.561" cy="157.808" r="1.15" fill="#111827"/>
+<text x="73.361" y="156.008" font-size="2.5">P009</text>
+<circle cx="41.682" cy="169.426" r="1.15" fill="#111827"/>
+<text x="43.482" y="167.626" font-size="2.5">P019</text>
+<text x="44.780" y="157.808" font-size="2.7" text-anchor="middle" transform="rotate(0.00 44.780 157.808)" fill="#1f2937">E092 53.56mm</text>
+<text x="56.621" y="163.617" font-size="2.7" text-anchor="middle" transform="rotate(-21.25 56.621 163.617)" fill="#1f2937">E093 32.06mm</text>
+<text x="29.841" y="163.617" font-size="2.7" text-anchor="middle" transform="rotate(26.13 29.841 163.617)" fill="#1f2937">E094 26.38mm</text>
+<polygon points="95.561,157.808 143.361,157.808 110.537,186.154" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="116.486" y="163.257" font-size="4.2" text-anchor="middle" font-weight="700">TRI015</text>
+<text x="116.486" y="168.757" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="95.561" cy="157.808" r="1.15" fill="#111827"/>
+<text x="97.361" y="156.008" font-size="2.5">P009</text>
+<circle cx="143.361" cy="157.808" r="1.15" fill="#111827"/>
+<text x="145.161" y="156.008" font-size="2.5">P016</text>
+<circle cx="110.537" cy="186.154" r="1.15" fill="#111827"/>
+<text x="112.337" y="184.354" font-size="2.5">P019</text>
+<text x="119.461" y="157.808" font-size="2.7" text-anchor="middle" transform="rotate(0.00 119.461 157.808)" fill="#1f2937">E110 47.80mm</text>
+<text x="126.949" y="171.981" font-size="2.7" text-anchor="middle" transform="rotate(-40.81 126.949 171.981)" fill="#1f2937">E111 43.37mm</text>
+<text x="103.049" y="171.981" font-size="2.7" text-anchor="middle" transform="rotate(62.15 103.049 171.981)" fill="#1f2937">E093 32.06mm</text>
+</g>
+<g transform="translate(0 463.800)">
+<text x="10" y="7" font-size="4.5" font-weight="700">Sheet 03</text>
+<rect x="0" y="0" width="279.4" height="215.9" fill="none" stroke="#9ca3af" stroke-width="0.35"/>
+<polygon points="18.000,18.000 69.354,18.000 51.214,75.836" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="46.189" y="33.279" font-size="4.2" text-anchor="middle" font-weight="700">TRI027</text>
+<text x="46.189" y="38.779" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="18.000" cy="18.000" r="1.15" fill="#111827"/>
+<text x="19.800" y="16.200" font-size="2.5">P016</text>
+<circle cx="69.354" cy="18.000" r="1.15" fill="#111827"/>
+<text x="71.154" y="16.200" font-size="2.5">P026</text>
+<circle cx="51.214" cy="75.836" r="1.15" fill="#111827"/>
+<text x="53.014" y="74.036" font-size="2.5">P027</text>
+<text x="43.677" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 43.677 18.000)" fill="#1f2937">E122 51.35mm</text>
+<text x="60.284" y="46.918" font-size="2.7" text-anchor="middle" transform="rotate(-72.59 60.284 46.918)" fill="#1f2937">E061 60.61mm</text>
+<text x="34.607" y="46.918" font-size="2.7" text-anchor="middle" transform="rotate(60.13 34.607 46.918)" fill="#1f2937">E112 66.70mm</text>
+<polygon points="93.354,18.000 141.154,18.000 100.505,70.876" fill="#dbeafe" stroke="#111827" stroke-width="0.35"/>
+<text x="111.671" y="31.625" font-size="4.2" text-anchor="middle" font-weight="700">TRI016</text>
+<text x="111.671" y="37.125" font-size="3.1" text-anchor="middle">right_cheek</text>
+<circle cx="93.354" cy="18.000" r="1.15" fill="#111827"/>
+<text x="95.154" y="16.200" font-size="2.5">P009</text>
+<circle cx="141.154" cy="18.000" r="1.15" fill="#111827"/>
+<text x="142.954" y="16.200" font-size="2.5">P016</text>
+<circle cx="100.505" cy="70.876" r="1.15" fill="#111827"/>
+<text x="102.305" y="69.076" font-size="2.5">P027</text>
+<text x="117.254" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 117.254 18.000)" fill="#1f2937">E110 47.80mm</text>
+<text x="120.829" y="44.438" font-size="2.7" text-anchor="middle" transform="rotate(-52.45 120.829 44.438)" fill="#1f2937">E112 66.70mm</text>
+<text x="96.929" y="44.438" font-size="2.7" text-anchor="middle" transform="rotate(82.30 96.929 44.438)" fill="#1f2937">E109 53.36mm</text>
+<polygon points="165.154,18.000 189.768,18.000 168.011,57.348" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="174.311" y="27.116" font-size="4.2" text-anchor="middle" font-weight="700">TRI048</text>
+<text x="174.311" y="32.616" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="165.154" cy="18.000" r="1.15" fill="#111827"/>
+<text x="166.954" y="16.200" font-size="2.5">P040</text>
+<circle cx="189.768" cy="18.000" r="1.15" fill="#111827"/>
+<text x="191.568" y="16.200" font-size="2.5">P041</text>
+<circle cx="168.011" cy="57.348" r="1.15" fill="#111827"/>
+<text x="169.811" y="55.548" font-size="2.5">P044</text>
+<text x="177.461" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 177.461 18.000)" fill="#1f2937">E034 24.61mm</text>
+<text x="178.889" y="37.674" font-size="2.7" text-anchor="middle" transform="rotate(-61.06 178.889 37.674)" fill="#1f2937">E146 44.96mm</text>
+<text x="166.582" y="37.674" font-size="2.7" text-anchor="middle" transform="rotate(85.85 166.582 37.674)" fill="#1f2937">E064 39.45mm</text>
+<polygon points="213.768,18.000 238.595,18.000 229.764,60.020" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="227.376" y="28.007" font-size="4.2" text-anchor="middle" font-weight="700">TRI049</text>
+<text x="227.376" y="33.507" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="213.768" cy="18.000" r="1.15" fill="#111827"/>
+<text x="215.568" y="16.200" font-size="2.5">P041</text>
+<circle cx="238.595" cy="18.000" r="1.15" fill="#111827"/>
+<text x="240.395" y="16.200" font-size="2.5">P043</text>
+<circle cx="229.764" cy="60.020" r="1.15" fill="#111827"/>
+<text x="231.564" y="58.220" font-size="2.5">P044</text>
+<text x="226.182" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 226.182 18.000)" fill="#1f2937">E075 24.83mm</text>
+<text x="234.180" y="39.010" font-size="2.7" text-anchor="middle" transform="rotate(-78.13 234.180 39.010)" fill="#1f2937">E147 42.94mm</text>
+<text x="221.766" y="39.010" font-size="2.7" text-anchor="middle" transform="rotate(69.16 221.766 39.010)" fill="#1f2937">E146 44.96mm</text>
+<polygon points="18.000,99.836 60.938,99.836 20.862,129.033" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="33.267" y="105.568" font-size="4.2" text-anchor="middle" font-weight="700">TRI050</text>
+<text x="33.267" y="111.068" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="18.000" cy="99.836" r="1.15" fill="#111827"/>
+<text x="19.800" y="98.036" font-size="2.5">P043</text>
+<circle cx="60.938" cy="99.836" r="1.15" fill="#111827"/>
+<text x="62.738" y="98.036" font-size="2.5">P044</text>
+<circle cx="20.862" cy="129.033" r="1.15" fill="#111827"/>
+<text x="22.662" y="127.233" font-size="2.5">P046</text>
+<text x="39.469" y="99.836" font-size="2.7" text-anchor="middle" transform="rotate(0.00 39.469 99.836)" fill="#1f2937">E147 42.94mm</text>
+<text x="40.900" y="114.435" font-size="2.7" text-anchor="middle" transform="rotate(-36.07 40.900 114.435)" fill="#1f2937">E148 49.58mm</text>
+<text x="19.431" y="114.435" font-size="2.7" text-anchor="middle" transform="rotate(84.40 19.431 114.435)" fill="#1f2937">E076 29.34mm</text>
+<polygon points="84.938,99.836 125.991,99.836 119.909,126.361" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="110.279" y="104.678" font-size="4.2" text-anchor="middle" font-weight="700">TRI053</text>
+<text x="110.279" y="110.178" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="84.938" cy="99.836" r="1.15" fill="#111827"/>
+<text x="86.738" y="98.036" font-size="2.5">P045</text>
+<circle cx="125.991" cy="99.836" r="1.15" fill="#111827"/>
+<text x="127.791" y="98.036" font-size="2.5">P046</text>
+<circle cx="119.909" cy="126.361" r="1.15" fill="#111827"/>
+<text x="121.709" y="124.561" font-size="2.5">P049</text>
+<text x="105.464" y="99.836" font-size="2.7" text-anchor="middle" transform="rotate(0.00 105.464 99.836)" fill="#1f2937">E149 41.05mm</text>
+<text x="122.950" y="113.099" font-size="2.7" text-anchor="middle" transform="rotate(-77.09 122.950 113.099)" fill="#1f2937">E077 27.21mm</text>
+<text x="102.423" y="113.099" font-size="2.7" text-anchor="middle" transform="rotate(37.18 102.423 113.099)" fill="#1f2937">E150 43.89mm</text>
+<polygon points="149.991,99.836 164.734,99.836 153.225,126.015" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="155.983" y="104.562" font-size="4.2" text-anchor="middle" font-weight="700">TRI042</text>
+<text x="155.983" y="110.062" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="149.991" cy="99.836" r="1.15" fill="#111827"/>
+<text x="151.791" y="98.036" font-size="2.5">P033</text>
+<circle cx="164.734" cy="99.836" r="1.15" fill="#111827"/>
+<text x="166.534" y="98.036" font-size="2.5">P044</text>
+<circle cx="153.225" cy="126.015" r="1.15" fill="#111827"/>
+<text x="155.025" y="124.215" font-size="2.5">P048</text>
+<text x="157.362" y="99.836" font-size="2.7" text-anchor="middle" transform="rotate(0.00 157.362 99.836)" fill="#1f2937">E065 14.74mm</text>
+<text x="158.980" y="112.925" font-size="2.7" text-anchor="middle" transform="rotate(-66.27 158.980 112.925)" fill="#1f2937">E138 28.60mm</text>
+<text x="151.608" y="112.925" font-size="2.7" text-anchor="middle" transform="rotate(82.96 151.608 112.925)" fill="#1f2937">E137 26.38mm</text>
+<polygon points="188.734,99.836 232.626,99.836 201.321,149.624" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="207.561" y="112.432" font-size="4.2" text-anchor="middle" font-weight="700">TRI054</text>
+<text x="207.561" y="117.932" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="188.734" cy="99.836" r="1.15" fill="#111827"/>
+<text x="190.534" y="98.036" font-size="2.5">P045</text>
+<circle cx="232.626" cy="99.836" r="1.15" fill="#111827"/>
+<text x="234.426" y="98.036" font-size="2.5">P049</text>
+<circle cx="201.321" cy="149.624" r="1.15" fill="#111827"/>
+<text x="203.121" y="147.824" font-size="2.5">P052</text>
+<text x="210.680" y="99.836" font-size="2.7" text-anchor="middle" transform="rotate(0.00 210.680 99.836)" fill="#1f2937">E150 43.89mm</text>
+<text x="216.974" y="124.730" font-size="2.7" text-anchor="middle" transform="rotate(-57.84 216.974 124.730)" fill="#1f2937">E151 58.81mm</text>
+<text x="195.028" y="124.730" font-size="2.7" text-anchor="middle" transform="rotate(75.81 195.028 124.730)" fill="#1f2937">E152 51.35mm</text>
+<polygon points="18.000,173.624 71.561,173.624 41.682,185.242" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="43.747" y="173.497" font-size="4.2" text-anchor="middle" font-weight="700">TRI041</text>
+<text x="43.747" y="178.997" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="18.000" cy="173.624" r="1.15" fill="#111827"/>
+<text x="19.800" y="171.824" font-size="2.5">P033</text>
+<circle cx="71.561" cy="173.624" r="1.15" fill="#111827"/>
+<text x="73.361" y="171.824" font-size="2.5">P039</text>
+<circle cx="41.682" cy="185.242" r="1.15" fill="#111827"/>
+<text x="43.482" y="183.442" font-size="2.5">P048</text>
+<text x="44.780" y="173.624" font-size="2.7" text-anchor="middle" transform="rotate(0.00 44.780 173.624)" fill="#1f2937">E126 53.56mm</text>
+<text x="56.621" y="179.433" font-size="2.7" text-anchor="middle" transform="rotate(-21.25 56.621 179.433)" fill="#1f2937">E136 32.06mm</text>
+<text x="29.841" y="179.433" font-size="2.7" text-anchor="middle" transform="rotate(26.13 29.841 179.433)" fill="#1f2937">E137 26.38mm</text>
+</g>
+<g transform="translate(0 695.700)">
+<text x="10" y="7" font-size="4.5" font-weight="700">Sheet 04</text>
+<rect x="0" y="0" width="279.4" height="215.9" fill="none" stroke="#9ca3af" stroke-width="0.35"/>
+<polygon points="18.000,18.000 65.800,18.000 32.976,46.346" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="38.925" y="23.449" font-size="4.2" text-anchor="middle" font-weight="700">TRI046</text>
+<text x="38.925" y="28.949" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="18.000" cy="18.000" r="1.15" fill="#111827"/>
+<text x="19.800" y="16.200" font-size="2.5">P039</text>
+<circle cx="65.800" cy="18.000" r="1.15" fill="#111827"/>
+<text x="67.600" y="16.200" font-size="2.5">P045</text>
+<circle cx="32.976" cy="46.346" r="1.15" fill="#111827"/>
+<text x="34.776" y="44.546" font-size="2.5">P048</text>
+<text x="41.900" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(-0.00 41.900 18.000)" fill="#1f2937">E143 47.80mm</text>
+<text x="49.388" y="32.173" font-size="2.7" text-anchor="middle" transform="rotate(-40.81 49.388 32.173)" fill="#1f2937">E144 43.37mm</text>
+<text x="25.488" y="32.173" font-size="2.7" text-anchor="middle" transform="rotate(62.15 25.488 32.173)" fill="#1f2937">E136 32.06mm</text>
+<polygon points="89.800,18.000 141.154,18.000 123.014,75.836" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="117.989" y="33.279" font-size="4.2" text-anchor="middle" font-weight="700">TRI055</text>
+<text x="117.989" y="38.779" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="89.800" cy="18.000" r="1.15" fill="#111827"/>
+<text x="91.600" y="16.200" font-size="2.5">P045</text>
+<circle cx="141.154" cy="18.000" r="1.15" fill="#111827"/>
+<text x="142.954" y="16.200" font-size="2.5">P052</text>
+<circle cx="123.014" cy="75.836" r="1.15" fill="#111827"/>
+<text x="124.814" y="74.036" font-size="2.5">P053</text>
+<text x="115.477" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 115.477 18.000)" fill="#1f2937">E152 51.35mm</text>
+<text x="132.084" y="46.918" font-size="2.7" text-anchor="middle" transform="rotate(-72.59 132.084 46.918)" fill="#1f2937">E086 60.61mm</text>
+<text x="106.407" y="46.918" font-size="2.7" text-anchor="middle" transform="rotate(60.13 106.407 46.918)" fill="#1f2937">E145 66.70mm</text>
+<polygon points="165.154,18.000 212.954,18.000 172.305,70.876" fill="#e0f2fe" stroke="#111827" stroke-width="0.35"/>
+<text x="183.471" y="31.625" font-size="4.2" text-anchor="middle" font-weight="700">TRI047</text>
+<text x="183.471" y="37.125" font-size="3.1" text-anchor="middle">left_cheek</text>
+<circle cx="165.154" cy="18.000" r="1.15" fill="#111827"/>
+<text x="166.954" y="16.200" font-size="2.5">P039</text>
+<circle cx="212.954" cy="18.000" r="1.15" fill="#111827"/>
+<text x="214.754" y="16.200" font-size="2.5">P045</text>
+<circle cx="172.305" cy="70.876" r="1.15" fill="#111827"/>
+<text x="174.105" y="69.076" font-size="2.5">P053</text>
+<text x="189.054" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 189.054 18.000)" fill="#1f2937">E143 47.80mm</text>
+<text x="192.629" y="44.438" font-size="2.7" text-anchor="middle" transform="rotate(-52.45 192.629 44.438)" fill="#1f2937">E145 66.70mm</text>
+<text x="168.729" y="44.438" font-size="2.7" text-anchor="middle" transform="rotate(82.30 168.729 44.438)" fill="#1f2937">E115 53.36mm</text>
+<polygon points="18.000,99.836 79.198,99.836 39.969,136.003" fill="#dcfce7" stroke="#111827" stroke-width="0.35"/>
+<text x="45.722" y="107.892" font-size="4.2" text-anchor="middle" font-weight="700">TRI019</text>
+<text x="45.722" y="113.392" font-size="3.1" text-anchor="middle">forehead</text>
+<circle cx="18.000" cy="99.836" r="1.15" fill="#111827"/>
+<text x="19.800" y="98.036" font-size="2.5">P010</text>
+<circle cx="79.198" cy="99.836" r="1.15" fill="#111827"/>
+<text x="80.998" y="98.036" font-size="2.5">P039</text>
+<circle cx="39.969" cy="136.003" r="1.15" fill="#111827"/>
+<text x="41.769" y="134.203" font-size="2.5">P053</text>
+<text x="48.599" y="99.836" font-size="2.7" text-anchor="middle" transform="rotate(0.00 48.599 99.836)" fill="#1f2937">E046 61.20mm</text>
+<text x="59.583" y="117.920" font-size="2.7" text-anchor="middle" transform="rotate(-42.67 59.583 117.920)" fill="#1f2937">E115 53.36mm</text>
+<text x="28.985" y="117.920" font-size="2.7" text-anchor="middle" transform="rotate(58.72 28.985 117.920)" fill="#1f2937">E006 42.32mm</text>
+<polygon points="103.198,99.836 164.485,99.836 142.323,136.116" fill="#dcfce7" stroke="#111827" stroke-width="0.35"/>
+<text x="136.669" y="107.929" font-size="4.2" text-anchor="middle" font-weight="700">TRI014</text>
+<text x="136.669" y="113.429" font-size="3.1" text-anchor="middle">forehead</text>
+<circle cx="103.198" cy="99.836" r="1.15" fill="#111827"/>
+<text x="104.998" y="98.036" font-size="2.5">P009</text>
+<circle cx="164.485" cy="99.836" r="1.15" fill="#111827"/>
+<text x="166.285" y="98.036" font-size="2.5">P010</text>
+<circle cx="142.323" cy="136.116" r="1.15" fill="#111827"/>
+<text x="144.123" y="134.316" font-size="2.5">P027</text>
+<text x="133.842" y="99.836" font-size="2.7" text-anchor="middle" transform="rotate(0.00 133.842 99.836)" fill="#1f2937">E045 61.29mm</text>
+<text x="153.404" y="117.976" font-size="2.7" text-anchor="middle" transform="rotate(-58.58 153.404 117.976)" fill="#1f2937">E009 42.51mm</text>
+<text x="122.760" y="117.976" font-size="2.7" text-anchor="middle" transform="rotate(42.84 122.760 117.976)" fill="#1f2937">E109 53.36mm</text>
+<polygon points="188.485,99.836 218.587,99.836 217.350,142.135 200.547,137.304" fill="#dcfce7" stroke="#111827" stroke-width="0.35"/>
+<text x="206.242" y="115.778" font-size="4.2" text-anchor="middle" font-weight="700">MANQ002</text>
+<text x="206.242" y="121.278" font-size="3.1" text-anchor="middle">forehead</text>
+<text x="206.242" y="126.778" font-size="2.8" text-anchor="middle" fill="#b91c1c">warp 3.1mm</text>
+<line x1="188.485" y1="99.836" x2="217.350" y2="142.135" stroke="#b91c1c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<circle cx="188.485" cy="99.836" r="1.15" fill="#111827"/>
+<text x="190.285" y="98.036" font-size="2.5">P024</text>
+<circle cx="218.587" cy="99.836" r="1.15" fill="#111827"/>
+<text x="220.387" y="98.036" font-size="2.5">P010</text>
+<circle cx="217.350" cy="142.135" r="1.15" fill="#111827"/>
+<text x="219.150" y="140.335" font-size="2.5">P053</text>
+<circle cx="200.547" cy="137.304" r="1.15" fill="#111827"/>
+<text x="202.347" y="135.504" font-size="2.5">P054</text>
+<text x="203.536" y="99.836" font-size="2.7" text-anchor="middle" transform="rotate(0.00 203.536 99.836)" fill="#1f2937">E005 30.10mm</text>
+<text x="217.969" y="120.985" font-size="2.7" text-anchor="middle" transform="rotate(-88.32 217.969 120.985)" fill="#1f2937">E006 42.32mm</text>
+<text x="208.948" y="139.719" font-size="2.7" text-anchor="middle" transform="rotate(16.04 208.948 139.719)" fill="#1f2937">E007 17.76mm</text>
+<text x="194.516" y="118.570" font-size="2.7" text-anchor="middle" transform="rotate(72.16 194.516 118.570)" fill="#1f2937">E008 39.48mm</text>
+</g>
+<g transform="translate(0 927.600)">
+<text x="10" y="7" font-size="4.5" font-weight="700">Sheet 05</text>
+<rect x="0" y="0" width="279.4" height="215.9" fill="none" stroke="#9ca3af" stroke-width="0.35"/>
+<polygon points="18.000,18.000 48.102,18.000 46.197,60.471 29.461,55.379" fill="#dcfce7" stroke="#111827" stroke-width="0.35"/>
+<text x="35.440" y="33.962" font-size="4.2" text-anchor="middle" font-weight="700">MANQ003</text>
+<text x="35.440" y="39.462" font-size="3.1" text-anchor="middle">forehead</text>
+<text x="35.440" y="44.962" font-size="2.8" text-anchor="middle" fill="#b91c1c">warp 3.1mm</text>
+<line x1="18.000" y1="18.000" x2="46.197" y2="60.471" stroke="#b91c1c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<circle cx="18.000" cy="18.000" r="1.15" fill="#111827"/>
+<text x="19.800" y="16.200" font-size="2.5">P024</text>
+<circle cx="48.102" cy="18.000" r="1.15" fill="#111827"/>
+<text x="49.902" y="16.200" font-size="2.5">P010</text>
+<circle cx="46.197" cy="60.471" r="1.15" fill="#111827"/>
+<text x="47.997" y="58.671" font-size="2.5">P027</text>
+<circle cx="29.461" cy="55.379" r="1.15" fill="#111827"/>
+<text x="31.261" y="53.579" font-size="2.5">P028</text>
+<text x="33.051" y="18.000" font-size="2.7" text-anchor="middle" transform="rotate(0.00 33.051 18.000)" fill="#1f2937">E005 30.10mm</text>
+<text x="47.150" y="39.235" font-size="2.7" text-anchor="middle" transform="rotate(-87.43 47.150 39.235)" fill="#1f2937">E009 42.51mm</text>
+<text x="37.829" y="57.925" font-size="2.7" text-anchor="middle" transform="rotate(16.92 37.829 57.925)" fill="#1f2937">E010 17.76mm</text>
+<text x="23.731" y="36.689" font-size="2.7" text-anchor="middle" transform="rotate(72.95 23.731 36.689)" fill="#1f2937">E011 39.22mm</text>
+</g>
+</svg>

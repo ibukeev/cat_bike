@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "review_id": "right-eye-lower-rim-hook-retention-review-r1",
+  "authority": "REVIEW_ONLY__NON_AUTHORITATIVE__NOT_A_PRINT_SOURCE",
+  "inputs": {
+    "held_candidate": {
+      "path": "reports/generated/cat-head-cad-iterations/right-eye-split-service-cassette-prototype-v1/candidate.FCStd",
+      "sha256": "ec72a9480d105fdfdee2d509424b35de2e0abb0efb1eded14e718bfceb302f61",
+      "object": "FROZEN_REPAIRED_RIGHT_EYE_V4_V34"
+    },
+    "v1_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/v2/right-eye-split-service-cassette-prototype-v1.json",
+      "sha256": "08fa1c89ad307598e8b0edaa3dc55085cd2ddc977904209972ca698d21790b9f"
+    },
+    "v1_generator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/generate_right_eye_split_service_cassette_prototype_v1.py",
+      "sha256": "611aa4b63a0cd81420a01507168095c9a0a4d967d306688d78fe69b5383815fc"
+    },
+    "v1_validator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/validate_right_eye_split_service_cassette_previsual_v1.py",
+      "sha256": "d7ad39bea689e8df54484eaf97c9077df73d3c8c8eb03c18696859ea15133ccf"
+    },
+    "stage_a": {
+      "path": "/tmp/right-eye-split-service-cassette-angle-probe-v2/stage-a.json",
+      "sha256": "06d8481cfec3a35427ab07a0ae6d9a4601df65d89fa47392db2579a8af3fca81"
+    },
+    "expanded_cover_shell_contract": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-split-service-expanded-cover-shell-path-review-v1/contract.json",
+      "provisional_sha256": "ce4dd6ca4d6f6f9c33c3553c09b93f75979520762a39828b3166aa3e09ddd91a",
+      "final_sha256_required_before_review_save": "PENDING_SHELL_AGENT_FINAL_PIN"
+    },
+    "expanded_cover_shell_generator": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/review-only/right-eye-split-service-expanded-cover-shell-path-review-v1/generate.py",
+      "provisional_sha256": "6515f5a6d7511da4dfe78007aae1afc4366febcac26cdb698c0f9bfa0f984f4f",
+      "final_sha256_required_before_review_save": "PENDING_SHELL_AGENT_FINAL_PIN"
+    }
+  },
+  "motion": {
+    "pivot_mm": [66.77454, 66.06956, 122.28207],
+    "rotation_axis": [0.40622750781416417, -0.8911442067301298, 0.20209209461634217],
+    "translation_axis_inward_n": [-0.3093743710330279, 0.9105430240972069, -0.27422417802927535],
+    "required_hook_clearance_mm": 0.30,
+    "samples": [
+      [0, 15.0, -45.0], [1, 15.0, -40.5], [2, 15.0, -36.0],
+      [3, 15.0, -31.5], [4, 15.0, -27.0], [5, 15.0, -22.5],
+      [6, 15.0, -18.0], [7, 15.0, -13.5], [8, 15.0, -9.0],
+      [9, 13.75, -8.25], [10, 12.5, -7.5], [11, 11.25, -6.75],
+      [12, 10.000000000000002, -6.000000000000001],
+      [13, 8.749999999999998, -5.249999999999999], [14, 7.5, -4.5],
+      [15, 6.249999999999999, -3.7499999999999996],
+      [16, 5.000000000000001, -3.0000000000000004], [17, 3.75, -2.25],
+      [18, 2.4999999999999996, -1.4999999999999996],
+      [19, 1.2500000000000004, -0.7500000000000003], [20, 0.0, -0.0]
+    ]
+  },
+  "expanded_cover": {
+    "authority": "provisional conservative shell-thread envelope",
+    "radial_extension_from_v1_outer_front_mm": 3.0,
+    "exact_inner_wire": "aperture_lcs.visible_aperture_mm",
+    "axial_cover_thickness_mm": 0.8,
+    "front_depth_mm": -0.8,
+    "rear_depth_mm": 0.0,
+    "coverage_projection_each_direction_mm": 40.0
+  },
+  "hooks": {
+    "lower_opening_edge_indices": [0, 3],
+    "station_fractions": [0.28, 0.68],
+    "tangent_width_mm": 4.0,
+    "root_wall_mm": 1.2,
+    "minimum_wall_mm": 0.8,
+    "stem_inside_edge_clearance_mm": 0.30,
+    "rim_probe_outward_mm": 0.8,
+    "barb_outward_overhang_mm": 1.2,
+    "barb_axial_wall_mm": 1.2,
+    "rear_clearance_mm": 0.30,
+    "root_front_depth_mm": 0.0,
+    "retention_test_outward_translations_mm": [0.0, 0.15, 0.30, 0.45, 0.60, 0.90],
+    "material_note": "PETG or nylon preferred for repeated snap flex; PLA is reviewable but not recommended if measured assembly deflection exceeds 0.6 mm"
+  },
+  "limits": {
+    "maximum_positive_intersection_mm3": 0.000001,
+    "maximum_aperture_or_exterior_hook_occupancy_mm3": 0.000001,
+    "minimum_outward_retention_collision_mm3": 0.001,
+    "cartridge_service_distance_mm": 25.0,
+    "cartridge_service_samples": 31
+  },
+  "output": {
+    "feasibility_report": "reports/generated/cat-head-cad-tooling/right-eye-lower-rim-hook-retention-review-r1/feasibility.json",
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/review-only/right-eye-lower-rim-hook-retention-review-r1",
+    "fcstd": "RIGHT_EYE_LOWER_RIM_HOOK_RETENTION_REVIEW_ONLY_R1.FCStd",
+    "validation": "validation-review-only.json",
+    "views": ["front.png", "rear.png", "lower-hooks.png", "side.png", "insertion-15deg.png"]
+  },
+  "prohibited": ["canonical_save", "held_candidate_save", "stl", "step", "mesh", "integration", "mirror", "slicing", "gcode", "print_release", "promotion"]
+}

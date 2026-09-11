@@ -1,0 +1,102 @@
+{
+  "schema_version": "cat-head-right-upper-as-printed-working-assembly-v1",
+  "status": "USER_APPROVED_WORKING_ASSEMBLY_BASELINE__NOT_PRINT_APPROVED",
+  "approval": {
+    "date": "2026-08-21",
+    "decision": "Use the exact current V34 FCStd as the RIGHT-upper recovery baseline and assemble it non-destructively with the as-printed context.",
+    "right_upper_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+    "right_upper_sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584"
+  },
+  "policies": {
+    "source_fcstd_files_are_read_only": true,
+    "lower_masters_are_frozen_context_only": true,
+    "assembly_is_non_fused": true,
+    "no_geometry_is_mirrored": true,
+    "no_stl_or_3mf_is_exported": true,
+    "no_slicing_is_performed": true,
+    "left_upper_owner_is_intentionally_absent": true,
+    "output_is_not_print_approved": true,
+    "freecad_writing_sessions_allowed": 1
+  },
+  "output": {
+    "directory": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-as-printed-working-assembly-v1",
+    "fcstd": "RIGHT_UPPER_AS_PRINTED_WORKING_ASSEMBLY_V1.FCStd",
+    "validation": "assembly-validation.json"
+  },
+  "right_upper": {
+    "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/right-upper-c009-deletion-review-v34/CAT_HEAD_RIGHT_UPPER_C009_DELETION_REVIEW_V34.FCStd",
+    "sha256": "9cf0b72f711c8f0eb15d8825e430e9bf6ec0dc9611ac7c297b90fafa9b554584",
+    "expected_component_ids": [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
+  },
+  "frozen_lowers": {
+    "right": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4_Ilya.FCStd",
+      "fcstd_sha256": "ba1e933daef8921e3b38f9e3ad733eb3e557546f4fc95a1afe0d8d7180644974",
+      "object": "Compound",
+      "three_mf_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/02-lower-right-connectors/lower-right-connector-integration-v4/stl/LOWER_RIGHT_COMPLETE_OPAQUE_INTEGRATION_PRINT_PARTS_V4_Ilya-Compound.3mf",
+      "three_mf_sha256": "6fad7b537bf7b13840a14f3e10fc1b8218c3ef7ad71fcd50552bd8c2eb06eb19",
+      "physical_status": "PRINTED"
+    },
+    "left": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1/LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1.FCStd",
+      "fcstd_sha256": "3e52d392a40d570a0c0a04a3089bd496e30ff8197307e377c6236a01c982cbd4",
+      "object": "Compound",
+      "three_mf_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/03-lower-left-connectors/left-lower-manual-master-v1/LEFT_LOWER_COMPLETE_OPAQUE_UNION_WITH_CONNECTORS_V1-Compound.3mf",
+      "three_mf_sha256": "ed00bfadbb2120cb7dfc6c54085fccaff5169eaeaca246abc03970f18acfe8bc",
+      "physical_status": "PRINTED__USER_CONFIRMED"
+    }
+  },
+  "eyes": {
+    "right": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/right/RIGHT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd",
+      "fcstd_sha256": "2acf712847bfbec14d7655ea046c7ac1156dfe7db678723af787470de3b6dbd2",
+      "objects": {
+        "carrier": "RIGHT_EYE_CARRIER_V3_CORNER_REPAIR_PRINT",
+        "lens": "RIGHT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT",
+        "rear_plate": "RIGHT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT"
+      }
+    },
+    "left": {
+      "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/left/LEFT_EYE_V3_CORNER_REPAIR_PRINT_MODULES_V1.FCStd",
+      "fcstd_sha256": "f0502cef3b82b4095ea19dff735795948e31c7177e13fa32356ca470c6fd7bd9",
+      "objects": {
+        "carrier": "LEFT_EYE_CARRIER_V3_CORNER_REPAIR_PRINT",
+        "lens": "LEFT_EYE_TRANSLUCENT_LENS_WITH_SIDE_FLANGES_PRINT",
+        "rear_plate": "LEFT_EYE_REMOVABLE_LED_REAR_PLATE_PRINT"
+      }
+    },
+    "opaque_physical_status": "PRINTED__USER_CONFIRMED",
+    "translucent_lens_physical_status": "NOT_YET_PRINTED__APPROVED_CAD_CONTEXT",
+    "opaque_print_project": {
+      "path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/FINAL_PRINT_SET/01-eye-modules/v3-corner-repair-release-v1/Both_eyes_PRINT_V1.3mf",
+      "sha256": "0b210cc3c35d875ede35fb70f2790901ad5d7d1264b68db811d1d56cd5e22578",
+      "note": "Contains both V3 carriers and the left rear plate. User confirmed the right rear plate was printed separately."
+    }
+  },
+  "approved_ears": {
+    "fcstd_path": "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/70-freecad-pilots/opposite-side-flange-pilot-v1/primary-ear-bilateral-exact-mirror-review-v2/CAT_HEAD_PRIMARY_EAR_BILATERAL_EXACT_MIRROR_REVIEW_V2.FCStd",
+    "fcstd_sha256": "37ddff37e81a820de3f4bea46c4b476d09217399dd32a24cc8a2aec640a50425",
+    "right_object": "PROPOSED__RIGHT_EAR_PRIMARY_EAR_ROUND_PLUS_SLOT_CHANNELS_INTEGRATED_V3_ref",
+    "left_object": "PROPOSED__LEFT_EAR_PRIMARY_EAR_INTEGRATED_EXACT_MIRROR_V2",
+    "physical_status": "APPROVED_CAD_CONTEXT__PRINT_STATUS_NOT_ASSERTED"
+  },
+  "aluminum_context": {
+    "interface_path": "hardware/mechanical/interfaces/cat-head-shell-aluminum-interface-v05.json",
+    "interface_sha256": "6326b211e4eef8c87a2b17687e2d68406682d21a6fa7c81ad52c8a1b9e713c79",
+    "metal_config_path": "hardware/mechanical/fabrication/metal/cat-head-frame-fixed-mount-v0/config/frame-fixed-mount-v05-final.json",
+    "metal_config_sha256": "848bc977d7d8c69ea93eb14f5832a8a2918f8dd073057a86212f162ae7ae5c31",
+    "included": [
+      "exact rear-interface plane and trapezoidal backplate outer envelope",
+      "exact V0.5 nominal 19 mm rail outer envelopes and accepted axes",
+      "21 mm square by 30 mm socket clearance target envelopes",
+      "six 14 mm shell-fastener tool envelopes",
+      "left and right upper-shell search target markers"
+    ],
+    "excluded": [
+      "production socket body",
+      "angle-stock bracket solids",
+      "fastener solids",
+      "fabrication-release claim"
+    ]
+  }
+}

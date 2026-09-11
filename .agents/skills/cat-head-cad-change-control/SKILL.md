@@ -52,7 +52,49 @@ Stop and ask if a missing value would materially change the design. Do not
 optimize a proxy metric, such as root volume, at the expense of the user's
 stated physical objective, such as opposite-side leverage.
 
-## 4. Build one isolated proposal
+## 4. Prove the tooling before consuming a candidate
+
+Tooling development and candidate generation are separate phases.
+
+1. Put all construction mathematics and candidate-finalization behavior in
+   shared version-controlled functions. The no-output preflight and eventual
+   generator must call those same functions; copied or independently
+   reimplemented construction, metadata, or finalization logic is not
+   acceptable.
+2. Run deterministic unit and synthetic regression tests first, but never treat
+   them as proof that real FreeCAD geometry is constructible.
+3. Then run the complete kernel and finalizer through the user-approved, pinned
+   FreeCAD/OCCT runtime with the baseline read-only. In a disposable unsaved
+   target, construct all shapes and Booleans, assign the target shape, create
+   and assign every typed property/metadata field, recompute, and exercise the
+   final identity, placement, single-solid, and product-defect gates. Close the
+   document without saving or exporting anything.
+4. Create no candidate directory, FCStd, STEP, mesh, render pack, or promotion
+   artifact during this loop. Diagnostic text or JSON may be written only to a
+   separate tooling-report location and must not masquerade as candidate
+   validation.
+5. Tooling may be corrected and the no-output preflight repeated in the same
+   chat while the approved dimensions, datums, topology intent, and physical
+   behavior remain unchanged. Increment only `tooling_revision` when its
+   implementation changes.
+6. A failure before any candidate is persisted is `TOOLING_FAILURE`; it does
+   not reject the design signature or consume a candidate version. A change to
+   the numeric contract or intended geometry is a design change and requires
+   explicit user approval.
+7. Do not authorize the one-shot candidate runner until the exact tooling hash,
+   pinned runtime, deterministic tests, and full in-memory construction
+   preflight all pass and are recorded in the checkpoint.
+8. The preflight report must explicitly state that target assignment, typed
+   metadata assignment, recompute, and final assertions ran, while `saveAs`,
+   document save, candidate creation, and geometry export remained false.
+   A shape-only preflight is insufficient.
+
+Authoritative datums always control construction. A face, edge, centroid, or
+derived vector may locate an approved root or provide corroborating evidence,
+but it must not silently replace a signed axis, plane, coordinate frame, or
+mount datum declared by the contract.
+
+## 5. Build one isolated proposal
 
 1. Work on one side only until the user approves it.
 2. Create new parametric objects under a `PROPOSED__` group or body.
@@ -63,7 +105,7 @@ stated physical objective, such as opposite-side leverage.
    reinforcement, printing cuts, or aluminum changes.
 6. Preserve a checkpoint before any later iteration replaces the proposal.
 
-## 5. Validate before showing the proposal
+## 6. Validate before showing the proposal
 
 Use dedicated FreeCAD tools or the controlled validation-script exception
 defined below, not arbitrary Python or visual guesses.
@@ -83,7 +125,49 @@ Fail closed. If a gate fails, report the failed physical requirement and return
 to the anchor or design-contract phase. Do not silently move geometry somewhere
 else to make validation pass.
 
-## 6. Produce a review pack
+### Numeric tolerance policy
+
+- Hashes, object identity, labels, placements, contract values, and stored
+  datum coordinates/directions remain exact data comparisons.
+- Measurements reconstructed by FreeCAD/OCCT must use a gate-specific numeric
+  tolerance declared before candidate generation. Base it on kernel precision,
+  input precision, and the measurement method rather than an arbitrary desire
+  for mathematical exactness.
+- Report raw values, expected values, tolerance, and residual separately.
+- Never broaden a tolerance after seeing a candidate failure. If a gate used
+  the wrong physical predicate, classify and correct the validator defect,
+  preserve the candidate unchanged, and rerun only with explicit authorization.
+- Prefer comparing authoritative stored datums directly instead of recovering
+  them from tessellation, fragmented faces, or recomputed topology.
+
+### Validator timeout and implementation-defect policy
+
+If candidate generation completed and independent preservation passed, a
+timeout, crash, or implementation defect in a later read-only validator is not
+a geometry failure. Record `VALIDATOR_HOLD__CANDIDATE_IMMUTABLE`, pin the
+candidate and preservation hashes, prohibit visual approval, and stop the
+validator session. Do not regenerate the candidate and do not rerun the same
+validator unchanged.
+
+A separate tooling session may optimize or correct the validator while keeping
+the candidate read-only and every physical gate, datum, and tolerance fixed.
+Before authorizing a new validator revision, require:
+
+- stage-level progress and elapsed-time diagnostics;
+- cheap AABB rejection before OCCT Boolean or distance work;
+- no distance calculation for a collision-only gate after separation or
+  positive overlap is already established;
+- regression equivalence for every physical gate and deliberately failing
+  fixture;
+- a bounded workload/performance preflight that completes below the production
+  timeout with explicit margin; and
+- a new hash-pinned validator contract and fresh verifier session.
+
+The revised validator may inspect the exact held candidate hash read-only. It
+may not alter, heal, resave, export, promote, or use that candidate as the
+source of another geometry candidate.
+
+## 7. Produce a review pack
 
 Always provide:
 
@@ -99,7 +183,7 @@ State separately what is baseline, proposed, hidden review evidence, and absent.
 Never describe an object as integrated when it is only overlapping review
 geometry.
 
-## 7. Wait for explicit approval
+## 8. Wait for explicit approval
 
 Do not mirror, integrate, export STL, create G-code, update print release state,
 or recommend printing until the user explicitly approves the one-side proposal.
@@ -151,3 +235,28 @@ may run through `freecad.cmd` when all of the following are true:
 This exception authorizes measurement and validation only. It does not
 authorize proposal generation, production Boolean operations, mirroring, STL
 export, slicing, G-code, or print release.
+
+### Controlled in-memory construction-preflight exception
+
+Version-controlled tooling under
+`hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/`
+may construct disposable proposal geometry through the pinned FreeCAD runtime
+before candidate generation only when all of the following are true:
+
+1. An approved numeric design contract and hash-pinned canonical baseline
+   already exist.
+2. The baseline is opened read-only and never saved or mutated.
+3. The exact shared geometry kernel and finalization functions intended for
+   candidate generation are used.
+4. All shapes, Booleans, target assignment, typed metadata/property writes,
+   recompute, and final assertions occur only in a disposable unsaved document;
+   the script creates no candidate directory, CAD file, geometry export,
+   render, or modified source artifact.
+5. The script fails closed on runtime, hash, datum, frame, construction,
+   topology, or known-defect regression failures.
+6. Repetition is limited to tooling correction. Dimensions, datums, topology
+   intent, and physical behavior may not change without new user approval.
+
+This exception exists to catch deterministic tooling defects before the
+one-shot persisted candidate boundary. It does not authorize integration,
+mirroring, export, slicing, promotion, or print release.

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="154mm"
+ height="109mm"
+ viewBox="-77 -54.5
+ 154 109">
+ <title>V0.4 lower rail shoe plan</title>
+ <style>
+  .outline{fill:#eaf1f5;stroke:#000;stroke-width:.25}
+  .adapter{fill:none;stroke:#8a2be2;stroke-width:.28}
+  .shell{fill:none;stroke:#126ec2;stroke-width:.28}
+  .shoe{fill:none;stroke:#e46c0a;stroke-width:.28}
+  .center{fill:none;stroke:#777;stroke-width:.18;stroke-dasharray:2 2}
+  .dim{fill:none;stroke:#c41e3a;stroke-width:.18}
+  .note{font:3px monospace;fill:#111}
+  .warn{font:3px monospace;fill:#c41e3a}
+ </style>
+ <g transform="scale(1,-1)"><polygon class="outline" points="29.5,-37 56,-37 44,-1 30.5,-1"/><circle class="shoe" cx="36" cy="-30" r="2.1"/><circle class="shoe" cx="47.4" cy="-30" r="2.1"/><circle class="shoe" cx="38" cy="-9" r="2.1"/><circle class="center" cx="40" cy="-24.8319" r="1"/><text class="note" x="2" y="-15" transform="scale(1,-1)">RIGHT SHOE BACKPLATE FACE | mirror X for left | 10 mm 6061-T6 billet foot</text><text class="note" x="2" y="-10" transform="scale(1,-1)">3x M5 blind taps: 4.2 tap drill, 9 deep, minimum 8 thread engagement</text><text class="note" x="2" y="-5" transform="scale(1,-1)">14.7 square fitted plug: start axis+5.3, end axis+45.0; rail seats at axis+8.0</text><text class="note" x="2" y="0" transform="scale(1,-1)">plug 1.2 long-edge chamfers + 1.0 nose chamfer; fit actual deburred tube</text><text class="warn" x="2" y="46" transform="scale(1,-1)">MONOLITHIC CNC PART - NO WELD - DO NOT TIGHTEN CROSS-BOLT WITHOUT FITTED PLUG</text></g>
+</svg>

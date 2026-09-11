@@ -1,0 +1,142 @@
+{
+  "gate": "Gate 5 seam audit",
+  "seams": {
+    "pair_count": 6,
+    "pairs": {
+      "left_ear__left_upper_head": {
+        "edge_count": 1,
+        "usable_edge_count": 1,
+        "total_length_mm": 26.637,
+        "usable_lengths_mm": [
+          26.637
+        ],
+        "face_groups": [
+          [
+            "TRI044",
+            "MANQ002-B"
+          ]
+        ]
+      },
+      "left_lower_face__left_upper_head": {
+        "edge_count": 3,
+        "usable_edge_count": 3,
+        "total_length_mm": 144.025,
+        "usable_lengths_mm": [
+          68.266,
+          40.82,
+          34.939
+        ],
+        "face_groups": [
+          [
+            "TRI059",
+            "QUAD032-B"
+          ],
+          [
+            "QUAD028-A",
+            "TRI053"
+          ],
+          [
+            "TRI062",
+            "TRI063"
+          ]
+        ]
+      },
+      "left_lower_face__right_lower_face": {
+        "edge_count": 5,
+        "usable_edge_count": 5,
+        "total_length_mm": 370.15,
+        "usable_lengths_mm": [
+          155.81,
+          76.371,
+          48.072,
+          45.215,
+          44.683
+        ],
+        "face_groups": [
+          [
+            "MANQ008_LEFT",
+            "MANQ008_RIGHT"
+          ],
+          [
+            "MANQ006_LEFT",
+            "MANQ006_RIGHT"
+          ],
+          [
+            "MANQ007_LEFT",
+            "MANQ007_RIGHT"
+          ],
+          [
+            "TRI008",
+            "TRI007"
+          ],
+          [
+            "QUAD004-B",
+            "QUAD002-B"
+          ]
+        ]
+      },
+      "left_upper_head__right_upper_head": {
+        "edge_count": 3,
+        "usable_edge_count": 3,
+        "total_length_mm": 216.663,
+        "usable_lengths_mm": [
+          98.013,
+          73.496,
+          45.154
+        ],
+        "face_groups": [
+          [
+            "TRI035",
+            "TRI036"
+          ],
+          [
+            "TRI018",
+            "TRI013"
+          ],
+          [
+            "MANQ002-A",
+            "MANQ003-A"
+          ]
+        ]
+      },
+      "right_ear__right_upper_head": {
+        "edge_count": 1,
+        "usable_edge_count": 1,
+        "total_length_mm": 26.637,
+        "usable_lengths_mm": [
+          26.637
+        ],
+        "face_groups": [
+          [
+            "TRI011",
+            "MANQ003-B"
+          ]
+        ]
+      },
+      "right_lower_face__right_upper_head": {
+        "edge_count": 3,
+        "usable_edge_count": 3,
+        "total_length_mm": 144.025,
+        "usable_lengths_mm": [
+          68.266,
+          40.82,
+          34.939
+        ],
+        "face_groups": [
+          [
+            "TRI030",
+            "QUAD018-B"
+          ],
+          [
+            "QUAD014-A",
+            "TRI025"
+          ],
+          [
+            "TRI065",
+            "QUAD036-B"
+          ]
+        ]
+      }
+    }
+  }
+}

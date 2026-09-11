@@ -1,0 +1,70 @@
+{
+  "schema_version": "cat-head-lower-front-bilateral-feedback-cleanup-review-v4",
+  "contract_id": "lower-front-bilateral-feedback-cleanup-review-v4",
+  "tooling_revision": 1,
+  "authority": "REVIEW_ONLY_NON_AUTHORITATIVE_NOT_A_PRINT_SOURCE",
+  "inputs": {
+    "v3_contract": {
+      "path": "source/cad-change-control/review-only/lower-front-bilateral-feedback-cleanup-review-v3/contract.json",
+      "sha256": "c08fe16724da149166516d9446696d67214e4639674584b365e2559bd192439e"
+    },
+    "v3_generator": {
+      "path": "source/cad-change-control/review-only/lower-front-bilateral-feedback-cleanup-review-v3/generate_freecad_review.py",
+      "sha256": "58e666622b82301563d970c869457f8b3aabd683b63f6f96109c52e071239e30"
+    },
+    "v5_contract": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-long-ledge-interface-review-v5/contract.json",
+      "sha256": "93afff7ea5109fd42f75bac6a0725084384b768d98935bbc1d5f6ca088c610df"
+    },
+    "v5_generator": {
+      "path": "source/cad-change-control/review-only/right-lower-rear-v5-long-ledge-interface-review-v5/generate_freecad_review.py",
+      "sha256": "4b80ec1dece99c453473f6ac84cafe2933294c053669b0020b4673c4ac50a56a"
+    },
+    "v3_review_fcstd": {
+      "path": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v3/LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V3.FCStd",
+      "sha256": "de2dbe9a5dc324fed91170fc31a6c7167f90bc6e65ca5402192cc095534ca929"
+    }
+  },
+  "cleanup": {
+    "keep_largest_solid_for_components": ["component_001", "component_010"],
+    "obsolete_components_removed": ["component_006", "component_014", "component_023"],
+    "component_007_policy": "preserve_exact_user_head_bottom_flange_only",
+    "component_021_policy": "preserve_shortened_center_half_only"
+  },
+  "mouth": {
+    "pair_translation_toward_panel_mm": 3.9,
+    "pair_gap_mm": 0.3,
+    "preserve_panel_geometry": true
+  },
+  "ledge": {
+    "source_station_u_mm": 24.0,
+    "copied_station_u_mm": -13.0,
+    "copy_offset_mm": -37.0,
+    "clear_gap_mm": 25.0,
+    "station_n_mm": 7.0,
+    "pad_u_mm": 12.0,
+    "pad_n_mm": 10.0,
+    "pad_depth_mm": 8.0,
+    "bore_diameter_mm": 3.4,
+    "shape_policy": "exact_rectangular_copy_of_source_ear"
+  },
+  "connector_tabs": {
+    "length_mm": 10.0,
+    "width_mm": 8.0,
+    "thickness_mm": 2.4,
+    "embed_mm": 0.4,
+    "pair_gap_mm": 0.3,
+    "bore_diameter_mm": 3.4,
+    "stations": [
+      {"id": "below_mouth", "component": "component_001", "face": 226, "anchor_mm": [-49.81, 23.62, 42.60]},
+      {"id": "nose_top", "component": "component_002", "face": 136, "anchor_mm": [-8.39, 2.30, 91.40]},
+      {"id": "side_panel", "component": "component_003", "face": 100, "anchor_mm": [-11.13, 13.11, 70.87]},
+      {"id": "outer_panel", "component": "component_010", "face": 4, "anchor_mm": [-102.84, 179.00, 84.41]}
+    ]
+  },
+  "outputs": {
+    "directory": "output/70-freecad-pilots/review-only/lower-front-bilateral-feedback-cleanup-review-v4",
+    "fcstd": "LOWER_FRONT_BILATERAL_FEEDBACK_CLEANUP_REVIEW_ONLY_V4.FCStd",
+    "validation": "validation.json"
+  }
+}
