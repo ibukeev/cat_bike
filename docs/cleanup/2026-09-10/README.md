@@ -26,10 +26,25 @@ and 7,478,525,952 allocated bytes (about 6.97 GiB). Local Git/LFS storage remain
 - The exact 10-file recovery inventory and retained-file preservation checks
   passed before deletion; retained files were checked again afterward.
 
-The backup contains retained work, not either deleted archive payload. Previously
-untracked historical tests remain local and were not silently published. Existing
-Git history was not rewritten. The broad historical test suite has its recorded
-pre-existing failures and is not claimed to pass.
+The backup contains retained work, not either deleted archive payload. At that
+checkpoint the remaining untracked historical tests were intentionally excluded;
+the separately authorized follow-up below resolves them. Existing Git history was
+not rewritten. The broad historical test suite is not claimed to pass.
+
+## Follow-up: untracked-file triage
+
+The user subsequently authorized deleting or committing the 29 untracked tests
+and root probe marker. Twenty-four tests with retained source/contracts were
+selected for commit unchanged. One exact duplicate and four stale tests expecting
+now-rejected eye designs to be accepted were permanently deleted, along with the
+temporary marker. This did not change CAD source, geometry, approval flags, numeric
+gates, or rejection/hash guards. The original file hashes remain in the retirement
+inventory; it is a historical snapshot, not a promise that those deleted tests exist.
+
+See [the test guide](../../../tests/README.md) for the exact removal rationale,
+35 passing focused checks, all 10 passing lighting patterns and the remaining
+full-suite failures. No backup copy of the obsolete untracked tests was created;
+the duplicate's content remains in the retained V2 test.
 
 The three original cleanup manifests and the rejected-output checkpoint are
 preserved here byte-for-byte for provenance. They describe historical snapshots;
