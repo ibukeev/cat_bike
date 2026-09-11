@@ -5,7 +5,10 @@
 The user authorized aggressive filesystem cleanup because the large head will
 be rebuilt. README.md is now the curated index. V6/V5/V2 working snapshots,
 manual print masters, frozen references, and shared tiny/midsize dependencies
-remain byte-identical. Removed history is SHA-verified in local recovery.
+remain byte-identical. Removed history was SHA-verified before retirement; both
+archive roots are now permanently deleted. Their inventories are preserved in
+docs/cleanup/2026-09-10/ at repository root. The retained working files were
+download-verified from GitHub before .cleanup-recovery/ was deleted.
 This is not selection or approval of a new canonical rebuild baseline.
 No geometry was regenerated and no authorization/hash guards were changed.
 Read REBUILD_CHECKPOINT_2026-09-10.md before resuming work.
@@ -15,9 +18,10 @@ Read REBUILD_CHECKPOINT_2026-09-10.md before resuming work.
 The user authorized emptying reports/ and preserving selected lower-shell
 print files in working/. Geometry and release status are unchanged.
 Historical report inputs, including V34 baseline images and quarantined
-candidates, are in the recovery archive documented in
-../../../../../docs/PROJECT_CLEANUP_PLAN.md. Restore and hash-verify required
-inputs before resuming their workflows; do not bypass missing-input guards.
+candidates, were retired. The local recovery archive is now permanently deleted;
+see ../../../../../docs/PROJECT_CLEANUP_PLAN.md. Do not promise local restoration.
+If required evidence is absent, stop until an explicitly approved source is
+available and hash-verified; do not bypass missing-input guards.
 Midsize contracts received path-only migrations. Their old generator pins
 intentionally remain fail-closed pending a fresh authorized preflight.
 That reports cleanup was followed by the separately authorized large-head

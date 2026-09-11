@@ -13,7 +13,9 @@ The 2026-09-09 cleanup excluded the large-head tree, its rejected-work archive,
 metal interfaces, scale projections, whisker carrier, and shared template
 inputs. The user later authorized large-head cleanup for a rebuild on 2026-09-10.
 Only selected states and shared dependencies remain inside cat-head-full-size-v1;
-its separate rejected-work archive and the other excluded packages are unchanged.
+The separate rejected-work archive and cleanup-recovery folder were subsequently
+permanently deleted after the retained work was backed up and independently
+download-verified from GitHub. The other excluded packages remain unchanged.
 
 The old `cat-head-small-v1/` directory contains compatibility links. All
 `reports/` contents and its four aliases were retired on 2026-09-10.
@@ -21,7 +23,7 @@ Midsize contracts now use the retained package directly. Original generator
 authorization pins intentionally fail closed after those path-only edits;
 regeneration needs a fresh authorized preflight and reviewed pin update.
 
-Cleanup details and recovery instructions are in
+Cleanup details, verified backup and preserved inventories are in
 [the cleanup record](../../../../docs/PROJECT_CLEANUP_PLAN.md).
 
 The user deleted controller-box-v0 and controller-box-v1-complete-enclosure-proposal

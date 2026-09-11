@@ -7,11 +7,29 @@ Current status: _archive_admin/ was permanently deleted (946 files,
 and after deletion. The rejected generated outputs are no longer recoverable
 from this working tree; existing tracked source history and its archive branch remain.
 
-.cleanup-recovery/ is still intact. The proposed GitHub checkpoint is staged,
-but permission review blocked the commit/push pending explicit approval of the
-destination and payload: ibukeev/cat_bike, main, with selected sources/docs and
-209 retained CAD/print files (586,451,221 file bytes) via Git LFS.
-No commit or push occurred. Verify a remote backup before deleting this second folder.
+.cleanup-recovery/ was then permanently deleted after the user explicitly
+approved the GitHub destination and payload and the independent download passed.
+Both archive roots are absent: 956 files removed, 7,474,979,380 regular-file bytes
+and 7,478,525,952 allocated bytes (about 6.97 GiB). Local Git/LFS storage remains.
+
+## Verified retained-file backup
+
+- Repository/branch: ibukeev/cat_bike, main.
+- Initial checkpoint: 8a49229b7fe511f7f276a3dd46bb32a0622efb8a.
+- Verified backup: bd84d8449205c2828a92f32adfedc204fe48b4f8, including the
+  LFS attribute correction for four compact OBJ templates stored in ordinary Git.
+- A fresh network clone plus Git LFS pull reproduced all 952 tracked files/links
+  byte-for-byte, including 209 CAD/print paths / 187 unique LFS objects and all
+  167 selected large-head geometry files.
+- Git LFS fsck passed. The 17 focused Python tests and mapper/all 10 lighting
+  patterns also passed inside that independent checkout.
+- The exact 10-file recovery inventory and retained-file preservation checks
+  passed before deletion; retained files were checked again afterward.
+
+The backup contains retained work, not either deleted archive payload. Previously
+untracked historical tests remain local and were not silently published. Existing
+Git history was not rewritten. The broad historical test suite has its recorded
+pre-existing failures and is not claimed to pass.
 
 The three original cleanup manifests and the rejected-output checkpoint are
 preserved here byte-for-byte for provenance. They describe historical snapshots;
@@ -23,4 +41,4 @@ packages. No CAD geometry, design dimensions, approval or generation pins change
 The separate Git archive branch and existing Git history are not being deleted.
 
 The adjacent archive-retirement.json records the exact deletion targets, preserved
-file hashes, staged backup scope, completed rejected-archive deletion and backup hold.
+file hashes, verified backup scope and completed permanent deletion of both archives.

@@ -37,7 +37,7 @@ are not being retained as another active archive.
 - Reuse the measured fit feedback and aluminum interface records; do not
   reconstruct a new baseline by mixing objects from these historical versions.
 
-## Shared dependencies and recovery
+## Shared dependencies and backup
 
 Gate 1–7 inputs and the modular 100 mm prototype remain under output/10-design-gates/
 because the separate [tiny prototype package](../cat-head-tiny-prototypes/README.md)
@@ -45,9 +45,11 @@ uses them. Final midsize Rev112/113 tooling and its runtime manifest remain at
 their pinned paths. Existing generation holds were not changed or bypassed.
 
 One-off scripts/configs, intermediate reviews, caches, backups, rejected print
-versions and trial G-code were archived. Remaining source includes reusable
-checks and code still read by existing tests; old generators may require archived
-inputs and are not a supported one-command rebuild pipeline.
+versions and trial G-code were retired; their local recovery archives were later
+permanently deleted after independent GitHub download verification of retained
+work. Only the inventories remain. Remaining source includes reusable checks and
+code still read by existing tests; old generators may require unavailable inputs
+and are not a supported one-command rebuild pipeline. Do not bypass their guards.
 
 See [the checkpoint](REBUILD_CHECKPOINT_2026-09-10.md),
 [retained geometry hashes](RETAINED_FILES.json), and

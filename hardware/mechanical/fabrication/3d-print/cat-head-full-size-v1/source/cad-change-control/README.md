@@ -9,10 +9,12 @@ Before CAD work read [the scoped rules](../../AGENTS.md) and
 [WORKFLOW_V2.md](WORKFLOW_V2.md). Cleanup did not authorize a new baseline,
 construction, rendering, integration, export, slicing, or print release.
 
-Many retained regression contracts are historical and still name archived inputs.
-Preservation of their code does not make those old workflows runnable. Restore
-and hash-verify necessary evidence for an explicitly approved task; never invent
-replacement input geometry, repin stale PASS reports, or bypass missing-file guards.
+Many retained regression contracts are historical and still name retired inputs.
+The local cleanup-recovery archives are now permanently deleted. Preservation of
+the code does not make those old workflows runnable. If required evidence is
+absent, stop until an explicitly approved source is available and hash-verified;
+never invent replacement input geometry, repin stale PASS reports, or bypass
+missing-file guards. Workflow redesign remains a separate user-aligned task.
 
 The final midsize head/mouth wrappers remain deliberately fail-closed following
 the earlier path-only contract migration. Their geometry and all authorization

@@ -14,6 +14,21 @@
     "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/source/cad-change-control/README.md",
     "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/working/README.md"
   ],
+  "backup": {
+    "branch": "main",
+    "broad_historical_suite": "Known pre-existing failures; not represented as all green.",
+    "commit": "bd84d8449205c2828a92f32adfedc204fe48b4f8",
+    "focused_python_tests_passed": 17,
+    "initial_backup_commit": "8a49229b7fe511f7f276a3dd46bb32a0622efb8a",
+    "lfs_attribute_correction": "Four existing compact OBJ text templates remain ordinary Git files; their downloaded bytes match the originals. LFS fsck passes after the explicit attribute exceptions.",
+    "lfs_file_paths_verified": 209,
+    "lighting_patterns_passed": 10,
+    "remote": "git@github.com-personal:ibukeev/cat_bike.git",
+    "retained_large_head_geometry_files_verified": 167,
+    "tracked_files_and_links_verified": 952,
+    "unique_lfs_objects_verified": 187,
+    "verification": "Independent network clone with Git LFS pull; all tracked working-file bytes and symlink targets matched the local checkpoint."
+  },
   "backup_scope": {
     "lfs_files": {
       "hardware/mechanical/fabrication/3d-print/cat-head-full-size-v1/output/00-current-review/ear-root-marked-relocation-m3-through-bolt-review-v10.blend": {
@@ -1818,7 +1833,7 @@
     "scope": "Staged project source, documentation, tests and 209 selected CAD/print files through Git LFS; verify remote download before deleting .cleanup-recovery.",
     "user_reply": "go for it"
   },
-  "github_backup_blocker": "Resolved by explicit user approval of the stated destination and payload on 2026-09-10. Backup upload and independent download verification are still pending.",
+  "github_backup_blocker": null,
   "head_before": "7a2f3a871242dddd09cc7136e7e1d3b4303afa37",
   "preserved_inventory_copies": [
     {
@@ -8091,7 +8106,7 @@
     }
   },
   "retained_geometry_files_verified": 167,
-  "state": "REJECTED_ARCHIVE_DELETED__GITHUB_BACKUP_AUTHORIZED",
+  "state": "DELETED_AND_VERIFIED",
   "targets": {
     ".cleanup-recovery": {
       "disk_bytes": 2075877376,
@@ -8147,6 +8162,7 @@
           "type": "file"
         }
       },
+      "permanently_deleted": true,
       "regular_bytes": 2075833298
     },
     "_archive_admin": {
@@ -12889,12 +12905,13 @@
   },
   "user_authorized_permanent_deletion": true,
   "verification": {
-    "cleanup_recovery_preserved": true,
-    "commit_created": false,
-    "pushed": false,
-    "rejected_archive_absent": true,
-    "rejected_entries_removed": 946,
-    "rejected_regular_bytes_removed": 5399146082,
+    "both_archive_roots_absent": true,
+    "commit_created": true,
+    "pushed": true,
+    "remote_download_verified_before_recovery_deletion": true,
+    "removed_disk_bytes": 7478525952,
+    "removed_file_entries": 956,
+    "removed_regular_bytes": 7474979380,
     "retained_worktree_unchanged": true
   }
 }

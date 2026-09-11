@@ -26,8 +26,10 @@ evidence merely to bypass that hold.
 The user subsequently authorized large-head cleanup for a rebuild. Its README
 is the curated index of retained working states and frozen references; obsolete
 iterations and one-off tools were retired without changing retained geometry.
-Shared tiny/midsize dependencies remain. The cleanup record and local recovery
-location are in `docs/PROJECT_CLEANUP_PLAN.md`.
+Shared tiny/midsize dependencies remain. Both _archive_admin/ and
+.cleanup-recovery/ were subsequently permanently deleted after a verified
+GitHub backup of the retained work. Do not offer restoration from those folders.
+The current record and preserved inventories are in `docs/PROJECT_CLEANUP_PLAN.md`.
 
 ## Build, Test, and Development Commands
 

@@ -1,8 +1,8 @@
 # Large-head rebuild checkpoint — 2026-09-10
 
-Subsequent archive retirement: _archive_admin/ was permanently removed after
-hash verification. .cleanup-recovery/ remains intact pending explicit GitHub
-backup approval. Current state and inventories are in
+Subsequent archive retirement: both _archive_admin/ and .cleanup-recovery/ were
+permanently deleted. Retained tracked files were independently downloaded from
+GitHub and hash-verified before the final recovery deletion. Current proof is in
 [the retirement record](../../../../../docs/cleanup/2026-09-10/README.md).
 The cleanup verifiers below describe earlier snapshots and are not current
 whole-repository verification commands after that later deletion.
@@ -25,7 +25,7 @@ Lower-print voxel size remains 0.25 mm, with 27 right and 16 left connected
 shells; the old right slicer handoff reported eight auto-repaired errors.
 No new structural or physical validation was performed.
 
-## Removed and recoverable
+## Removed history — recovery subsequently deleted
 
 Removed 2,956 obsolete files/links: old review trees, staging, caches, backups,
 unnamed copies, withheld lower V1–V3 prints, trial G-code and one-off tooling.
@@ -37,20 +37,11 @@ RIGHT_TOP_PRINT.3mf was the stopped missing-socket trial: do not resume it.
 RIGHT_TOP_PRINT_2.3mf and assembly.3mf are user records with unconfirmed print
 status. Existing output names and validation files do not approve later edits.
 
-Recovery archive:
-`.cleanup-recovery/2026-09-10-large-head/retired-files.tar.gz`
-(1,392,631,518 bytes, about 1.30 GiB). The adjacent manifest contains the
-archive SHA-256, original hashes, exact keep/remove list and verification.
-Each archived entry was read back and verified before deletion.
-The archive remains on this disk and is ignored by Git; active-folder reduction
-is not the same as net disk space freed.
-
-Extract into a fresh directory, never over the cleaned files:
-
-```bash
-large_head_recovery="$(mktemp -d /tmp/cat-bike-large-head-recovery.XXXXXX)"
-tar -xzf .cleanup-recovery/2026-09-10-large-head/retired-files.tar.gz -C "$large_head_recovery"
-```
+The former large-head recovery archive (1,392,631,518 bytes) was permanently
+deleted after verifying the retained-file GitHub backup. It is no longer a
+restore source. Its original manifest is preserved byte-for-byte as
+docs/cleanup/2026-09-10/large-head-manifest.json at repository root, alongside
+the final retirement proof. Inventories cannot recreate deleted geometry.
 
 ## Verification
 
@@ -62,19 +53,21 @@ tar -xzf .cleanup-recovery/2026-09-10-large-head/retired-files.tar.gz -C "$large
   No contracts, validation pins or safety guards were changed to mask failures.
 - The 17 final-head/tooling tests pass. Mapper and all 10 lighting patterns pass.
 
-Commands from repository root:
+Retained-file checks from repository root:
 
 ```bash
-python3 -B .cleanup-recovery/2026-09-10-large-head/cleanup.py verify
+git lfs pull
+git lfs fsck --dry-run HEAD
 env -u CAT_HEAD_FREECAD_APPDIR PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests/automated
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.automated.test_small_v1_final_user_cutter_holes_rev112_contract tests.automated.test_small_v1_merged_mouth_pane_rev113_contract tests.automated.test_cat_head_visible_freecad_review_copy
 node tests/automated/validate_mvp_bike_patterns.js
 ```
 
-The broad-suite command still exits nonzero. Matching its earlier result proves
-cleanup preservation, not all-green CAD tooling. Prepare/apply are one-time phases:
-do not repeat them. Earlier cleanup manifests describe earlier repository snapshots;
-use this large-head manifest for current whole-repository verification.
+The broad-suite command still exits nonzero. Its historical before/after match
+proved cleanup preservation, not all-green CAD tooling. The old cleanup scripts
+were permanently deleted; do not try to rerun prepare/apply/verify from recovery.
+Earlier manifests describe historical snapshots. The final retirement proof records
+the later independent GitHub download and retained-file hash checks.
 
 ## Regeneration and next physical review
 
@@ -89,16 +82,20 @@ Review actual BM parts, record fit/failures, confirm which shell, eyes, ears,
 rail and aluminum dimensions carry forward, then ask the user to select one
 canonical source and a bounded numeric design contract before CAD work.
 
-## GitHub backup — awaiting explicit approval
+## GitHub backup — verified before final recovery deletion
 
 Git LFS 3.8.0 is installed user-locally and configured only for this repository.
 Root .gitattributes defines the mechanical large-file policy. Selected source,
-docs, tests and retained build packages are staged, including all 167 geometry
+docs, tests and retained build packages are committed and pushed, including all 167 geometry
 files in RETAINED_FILES.json; their LFS SHA-256 values match the original bytes.
-The complete staged LFS selection has 209 paths / 187 unique objects.
+The complete LFS selection has 209 paths / 187 unique objects.
 Archive payloads, tmp diagnostics and unselected historical tests are excluded.
 
-Permission review blocked committing/pushing that payload to ibukeev/cat_bike
-main until the user explicitly approves the destination and files. No commit,
-push or history rewrite occurred. The large-head cleanup recovery archive is
-still available; finish and verify the remote backup before deleting it.
+The user explicitly approved ibukeev/cat_bike main and the selected payload.
+Backup commit bd84d8449205c2828a92f32adfedc204fe48b4f8 was independently
+downloaded; all 952 tracked files/links matched local bytes, Git LFS fsck passed,
+and the 17 focused tests plus all 10 lighting patterns passed in that checkout.
+Only then was .cleanup-recovery/ permanently deleted. Existing history was not
+rewritten. The backup protects retained work, not deleted archive payloads.
+Workflow revision is still pending user alignment; no CAD rules or approvals
+were relaxed by this filesystem cleanup and backup.

@@ -27,7 +27,7 @@ The meshes use 0.25 mm voxel union. Saved health records report 27 connected
 shells on the right and 16 on the left; the historical right-hand slicer
 handoff reported eight auto-repaired errors. These are not validated
 monolithic structural solids. The earlier 34-component 3 mm preview was
-held from printing and is now in recovery, not this working set.
+held from printing and was permanently retired, not included in this working set.
 
 See [the print decision](../ACTIVE_WORKING_LOWER_PRINT_SOURCES_2026-08-22.md),
 [right checkpoint](../RIGHT_LOWER_FINAL_REVIEW_VOXEL_UNION_CHECKPOINT_2026-08-21.md)
@@ -36,17 +36,22 @@ for provenance and historical regeneration commands. Scripts now use these
 working paths; none were run. Future generation requires explicit authorization
 and must not overwrite this retained print evidence.
 
-## Verification and recovery
+## Verification and retained-file backup
 
 From the repository root:
 
 ```bash
-python3 -B .cleanup-recovery/2026-09-10-large-head/cleanup.py verify
+git lfs pull
+git lfs fsck --dry-run HEAD
 ```
 
-See [the cleanup record](../../../../../../docs/PROJECT_CLEANUP_PLAN.md) for
-the recovery archive and old/new path/hash mapping. Reports is empty, with no
-legacy links.
+These commands check/download the versioned LFS data, not physical print fitness.
+The cleanup retirement independently downloaded and hash-verified all retained
+tracked files before permanently deleting .cleanup-recovery/. Its old verifier
+and recovery archives no longer exist. See
+[the cleanup record](../../../../../../docs/PROJECT_CLEANUP_PLAN.md) for backup
+proof and preserved old/new path/hash inventories. Reports is empty, with no
+legacy links. Deleted archive payloads are not included in the new GitHub backup.
 
 Next physical review: record print history, fit, seams, mounting clearance
 and shell-to-shell movement before selecting another print iteration.

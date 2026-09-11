@@ -9,15 +9,29 @@ _archive_admin/ has now been deleted: 946 files, 5,399,146,082 regular-file byte
 The active retained worktree was hash-verified unchanged before and after removal.
 Its rejected generated outputs are gone; previously tracked source history remains.
 
-.cleanup-recovery/ is still intact pending explicit GitHub backup authorization.
-Git LFS is installed user-locally and configured for this repository. Selected
-working files are staged, including all 167 retained large-head geometry files.
-No commit or push occurred: permission review blocked the proposed GitHub write.
+.cleanup-recovery/ was also permanently deleted after explicit user approval of
+the backup destination and verification of the uploaded retained files. Both
+archive roots are absent: 956 files, about 6.97 GiB of allocated archive data.
+Deleted archive payloads are not recoverable from this working tree or the new
+retained-file backup. Their small inventories remain for provenance.
 
-See [the retirement record](cleanup/2026-09-10/README.md) for the exact pending
-backup scope and preserved inventories. Earlier sections below describe historical
-cleanup snapshots, not the current availability of _archive_admin/. Their old
-whole-repository verification commands should not be run after this retirement.
+Backup commit bd84d8449205c2828a92f32adfedc204fe48b4f8 is on ibukeev/cat_bike
+main. An independent network clone plus Git LFS pull reproduced all 952 tracked
+files/links, including 209 LFS paths and all 167 retained large-head geometry
+files. Git LFS fsck, 17 focused Python tests and all 10 lighting patterns passed
+in the downloaded checkout. Existing Git history was not rewritten.
+
+See [the completed retirement record](cleanup/2026-09-10/README.md) for the
+exact backup proof and preserved inventories. The retained geometry, assets,
+design dimensions, generation guards and print-approval states are unchanged.
+
+## Historical cleanup snapshots — not current instructions
+
+Everything below records earlier stages before permanent archive retirement.
+References to local recovery, deferred cleanup or an uncommitted worktree describe
+those past snapshots only. The old cleanup/restore commands are no longer runnable;
+do not execute them or interpret their statements of recoverability as current.
+The preserved original manifests are in docs/cleanup/2026-09-10/.
 
 ## Large-head rebuild cleanup — 2026-09-10
 

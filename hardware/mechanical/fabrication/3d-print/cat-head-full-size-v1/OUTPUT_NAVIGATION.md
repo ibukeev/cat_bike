@@ -1,7 +1,8 @@
 # Large-head output navigation
 
-The historical chronological ledger was retired on 2026-09-10. It is recoverable
-with the other removed files; obsolete entries labelled Current are not live instructions.
+The historical chronological ledger was retired on 2026-09-10. Its local recovery
+archive has since been permanently deleted. Old entries labelled Current are not
+live instructions; use this curated index and the verified retained-file backup.
 
 - [Selected working states and frozen references](README.md).
 - [Lower-shell working print files](working/README.md).
